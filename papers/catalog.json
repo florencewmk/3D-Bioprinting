@@ -1,0 +1,390 @@
+{
+  "archived_on": "2026-10-17",
+  "scope": "Available project-local full texts relevant to the SOFE topic; no new online acquisition performed",
+  "reference_numbering": "presentation/transcript.md, scientific references 1-10 on slides 23-24; this is not a figure-provenance audit",
+  "documents": [
+    {
+      "title": "3-D bioprinting technologies in tissue engineering and regenerative medicine: Current and future trends",
+      "doi": "10.1016/j.gendis.2017.10.002",
+      "source_url": "https://doi.org/10.1016/j.gendis.2017.10.002",
+      "path": "papers/supporting/3-D-bioprinting-technologies-in-tissue-engineering-and-regenerative-medicine-Current-and-future-trends.pdf",
+      "original_filename": "3-D bioprinting technologies in tissue engineering and regenerative medicine- Current and future trends.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 804091,
+      "pages": 11,
+      "sha256": "77496a0e676a4834ff1538da850535a3b3045913105abb480855242a842a3102",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "3D printing by stereolithography using thermal initiators",
+      "doi": "10.1038/s41467-024-46532-0",
+      "source_url": "https://doi.org/10.1038/s41467-024-46532-0",
+      "path": "papers/supporting/3D-printing-by-stereolithography-using-thermal-initiators.pdf",
+      "original_filename": "3D printing by stereolithography using thermal initiators.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 3513559,
+      "pages": 10,
+      "sha256": "2e68a76aaf40d2ce398c2b531abd200ab48e562f6fb253fa6aeeecfffc9b2576",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "3D printing of new biobased unsaturated polyesters by microstereo-thermal-lithography",
+      "doi": "10.1088/1758-5082/6/3/035024",
+      "source_url": "https://doi.org/10.1088/1758-5082/6/3/035024",
+      "path": "papers/supporting/3D-printing-of-new-biobased-unsaturated-polyesters-by-microstereo-thermal-lithography.pdf",
+      "original_filename": "3D printing of new biobased unsaturated polyesters by microstereo-thermal-lithography.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 1997320,
+      "pages": 15,
+      "sha256": "805fbfe779940a14883c8137eb3c4b841f3c5c37e73a35acac22d63be1e551e4",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "3D printing preview for stereo-lithography based on photopolymerization kinetic models",
+      "doi": "10.1016/j.bioactmat.2020.05.006",
+      "source_url": "https://doi.org/10.1016/j.bioactmat.2020.05.006",
+      "path": "papers/supporting/3D-printing-preview-for-stereo-lithography-based-on-photopolymerization-kinetic-models.pdf",
+      "original_filename": "3D printing preview for stereo-lithography based on photopolymerization kinetic models.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 3267927,
+      "pages": 10,
+      "sha256": "c3a4bb3a7cb263a764edeac382254d4b3380789ab7569e6c465aadd2c0352019",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Advanced Near‐Infrared Light for Monitoring and Modulating the Spatiotemporal Dynamics of Cell Functions in Living Systems",
+      "doi": "10.1002/advs.201903783",
+      "source_url": "https://doi.org/10.1002/advs.201903783",
+      "path": "papers/cited/Chen-2020-Advanced-NIR-Light-Cell-Functions.pdf",
+      "original_filename": "Advanced Near-Infrared Light for Monitoringand Modulating the Spatiotemporal Dynamics of CellFunctions in Living Systems.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 7198160,
+      "pages": 27,
+      "sha256": "08a2328bc05c3a388b8d5a9d727578b612f9291975ae4fdeccda33cd4e7b9d43",
+      "reference_numbers": [
+        6
+      ],
+      "relationship": "Exact match to numbered main reference",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Imaging‐Guided Microscale Photothermal Stereolithography Bioprinting",
+      "doi": "10.1002/advs.202500640",
+      "source_url": "https://doi.org/10.1002/advs.202500640",
+      "path": "papers/supporting/ImagingGuided-Microscale-Photothermal-Stereolithography-Bioprinting.pdf",
+      "original_filename": "Imaging‐Guided Microscale Photothermal Stereolithography Bioprinting.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 17278599,
+      "pages": 17,
+      "sha256": "c16eb1e444245fc8bfc2ad11df0448ff53ae103332e201a3326dc9df0825e0fc",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Photocrosslinkable Materials for the Fabrication of Tissue-Engineered Constructs by Stereolithography",
+      "doi": "10.1007/978-94-007-7073-7_8",
+      "source_url": "https://doi.org/10.1007/978-94-007-7073-7_8",
+      "path": "papers/supporting/Photocrosslinkable-Materials-for-the-Fabrication-of-Tissue-Engineered-Constructs-by-Stereolithography.pdf",
+      "original_filename": "Photocrosslinkable Materials for the Fabrication of Tissue-Engineered Constructs by Stereolithography.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 2492266,
+      "pages": 30,
+      "sha256": "7f6cb8be6b7d76e449dec30893dec4ee1ccbbe31a502121df24094bf93e0a2ff",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "book_chapter",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Polyethylene Glycol and Polyethylene Glycol/Hydroxyapatite Constructs Produced through Stereo-Thermal Lithography",
+      "doi": "10.4028/www.scientific.net/AMR.749.87",
+      "source_url": "https://doi.org/10.4028/www.scientific.net/AMR.749.87",
+      "path": "papers/supporting/Polyethylene-Glycol-and-Polyethylene-Glycol-hydroxyapatite-Constructs-Produced-through-Stereo-thermal-lithogra.pdf",
+      "original_filename": "Polyethylene Glycol and Polyethylene Glycol:hydroxyapatite Constructs Produced through Stereo-thermal-lithography.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 474639,
+      "pages": 6,
+      "sha256": "d633ad27708265747e8141ce1c0157c4fc1ff2c4c0dbc419e6b06987087ce32d",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Printing biological solutions through laser-induced forward transfer",
+      "doi": "10.1007/s00339-008-4741-6",
+      "source_url": "https://doi.org/10.1007/s00339-008-4741-6",
+      "path": "papers/supporting/Printing-biological-solutions-through-laser-induced-forward-transfer.pdf",
+      "original_filename": "Printing biological solutions through laser-induced forward transfer.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 1614498,
+      "pages": 5,
+      "sha256": "94fbcc015e06b1d608aad42045118d98cd0e6cf61454dfca9e036289eec17c01",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Recent advances in the development of stereolithography-based additive manufacturing processes: A review of applications and challenges",
+      "doi": "10.1016/j.bprint.2024.e00360",
+      "source_url": "https://doi.org/10.1016/j.bprint.2024.e00360",
+      "path": "papers/supporting/Recent-advances-in-the-development-of-stereolithography-based-additive-manufacturing-processes-A-review-of-app.pdf",
+      "original_filename": "Recent advances in the development of stereolithography-based additive manufacturing processes- A review of applications and challenges.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 16907838,
+      "pages": 27,
+      "sha256": "d2cf7c75fb2cd21c47cde94678af715c63bf4d3da3709b612da9086a9eee589a",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Stereo-thermallithography- a new principle for rapid prototyping",
+      "doi": "10.1108/13552540310477454",
+      "source_url": "https://doi.org/10.1108/13552540310477454",
+      "path": "papers/cited/Bartolo-Mitchell-2003-Stereo-thermal-lithography.pdf",
+      "original_filename": "Stereo-thermallithography- a new principle for rapid prototyping.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 222609,
+      "pages": 7,
+      "sha256": "062464d3d5b1cc58a042178593b1fbaf333449b2ddeefbd18498f68c7912ab10",
+      "reference_numbers": [
+        3
+      ],
+      "relationship": "Exact match to numbered main reference",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Stereolithographic 3D Bioprinting for Biomedical Applications",
+      "doi": "10.1016/B978-0-12-800972-7.00006-2",
+      "source_url": "https://doi.org/10.1016/B978-0-12-800972-7.00006-2",
+      "path": "papers/supporting/Stereolithographic-3D-Bioprinting-for-Biomedical-Applications.pdf",
+      "original_filename": "Stereolithographic 3D Bioprinting for Biomedical Applications.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 8915402,
+      "pages": 33,
+      "sha256": "a0870394e61be12037ee752236afc2b50d0184340abd065db3a630316a630c92",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "book_chapter",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Stereolithography 3D printing upon near-infrared photopolymerization",
+      "doi": "10.1016/j.cej.2025.160857",
+      "source_url": "https://doi.org/10.1016/j.cej.2025.160857",
+      "path": "papers/supporting/Stereolithography-3D-printing-upon-near-infrared-photopolymerization.pdf",
+      "original_filename": "Stereolithography 3D printing upon near-infrared photopolymerization.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 7036089,
+      "pages": 11,
+      "sha256": "3d5efe786b986d6b3e936171809b3b52109c723d2379fd91ad3a9c5a849d8c33",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Stereolithography apparatus and digital light processing-based 3D bioprinting for tissue fabrication",
+      "doi": "10.1016/j.isci.2023.106039",
+      "source_url": "https://doi.org/10.1016/j.isci.2023.106039",
+      "path": "papers/supporting/Stereolithography-apparatus-and-digital-light-processing-based-3D-bioprinting-for-tissue-fabrication.pdf",
+      "original_filename": "Stereolithography apparatus and digital light processing-based 3D bioprinting for tissue fabrication.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 6587358,
+      "pages": 21,
+      "sha256": "1c0a1d76da7822b9b56b0a076b1bd1e1856e31ffa19d8ec2f98b2536e20ad9ea",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Stereolithography in tissue engineering",
+      "doi": "10.1007/s10856-013-5107-y",
+      "source_url": "https://doi.org/10.1007/s10856-013-5107-y",
+      "path": "papers/supporting/Stereolithography-in-tissue-engineering.pdf",
+      "original_filename": "Stereolithography in tissue engineering.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 2769173,
+      "pages": 12,
+      "sha256": "b522b257943cdfd4367a135d46530853810d25f841ed5876ef3d8ae6024e0c79",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "Stereolithography: Materials, Processes and Applications",
+      "doi": "10.1007/978-0-387-92904-0",
+      "source_url": "https://doi.org/10.1007/978-0-387-92904-0",
+      "path": "papers/cited/Bartolo-2011-Stereolithography-Materials-Processes-Applications.pdf",
+      "original_filename": "Stereolithography.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 10315109,
+      "pages": 345,
+      "sha256": "496dd15efb1664454f41b54dfe6598aa8727403fea0fd08c90b5b18044699b78",
+      "reference_numbers": [
+        4
+      ],
+      "relationship": "Exact match to numbered main reference",
+      "document_type": "book",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "The potential of unsaturated polyesters in biomedicine and tissue engineering: Synthesis, structure-properties relationships and additive manufacturing",
+      "doi": "10.1016/j.progpolymsci.2016.12.008",
+      "source_url": "https://doi.org/10.1016/j.progpolymsci.2016.12.008",
+      "path": "papers/supporting/The-potential-of-unsaturated-polyesters-in-biomedicine-and-tissue-engineering-Synthesis-structure-properties-r.pdf",
+      "original_filename": "The potential of unsaturated polyesters in biomedicine and tissue engineering- Synthesis, structure-properties relationships and additive manufacturing.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 7960982,
+      "pages": 34,
+      "sha256": "bc87809ddeab83a13c4f74dd57fdab27067f4c8435e827f2185aa19f2703ecd4",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "mSLAb – An open-source masked stereolithography (mSLA) bioprinter",
+      "doi": "10.1016/j.ohx.2024.e00543",
+      "source_url": "https://doi.org/10.1016/j.ohx.2024.e00543",
+      "path": "papers/supporting/mSLAb-An-open-source-masked-stereolithography-mSLA-bioprinter.pdf",
+      "original_filename": "mSLAb – An open-source masked stereolithography (mSLA) bioprinter.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 14462622,
+      "pages": 16,
+      "sha256": "70b30c59fd6f7331fb9f1ffb312678287e7f7946eac52166122905f6f0b22e2b",
+      "reference_numbers": [],
+      "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    },
+    {
+      "title": "3D bioprinting: current status and trends—a guide to the literature and industrial practice",
+      "doi": "10.1007/s42242-021-00165-0",
+      "source_url": "https://doi.org/10.1007/s42242-021-00165-0",
+      "path": "papers/cited/Santoni-2022-3D-Bioprinting-Current-Status-Trends.pdf",
+      "original_filename": "3D bioprinting- current status and trends - a guide to the literature and industrial practice.pdf",
+      "archived_on": "2026-10-17",
+      "bytes": 3134944,
+      "pages": 29,
+      "sha256": "72b6e15f039c1906dab28a032f0907e20c4f150b5fe0e31e84e9fb64e366b5f5",
+      "reference_numbers": [
+        7
+      ],
+      "relationship": "Exact match to numbered main reference",
+      "document_type": "journal_article",
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+    }
+  ],
+  "presentation_references": [
+    {
+      "number": 1,
+      "citation": "Soleymani Eil Bakhtiari, S. S., et al. (2021). 3-Dimensional printing of hydrogel-based nanocomposites: A comprehensive review on the technology description, properties, and applications. Advanced Engineering Materials, 23, 2100477. https://doi.org/10.1002/adem.202100477",
+      "doi": "10.1002/adem.202100477",
+      "reference_slide": 23,
+      "status": "full_text_missing",
+      "paths": []
+    },
+    {
+      "number": 2,
+      "citation": "He, X., et al. (2023). Cyanine/iodonium salt as a broad-absorbing photoinitiating system for radical photopolymerization under near-UV, visible and NIR light. Polymer Chemistry, 14, 1543–1553. https://doi.org/10.1039/D2PY01466A",
+      "doi": "10.1039/D2PY01466A",
+      "reference_slide": 23,
+      "status": "full_text_missing",
+      "paths": []
+    },
+    {
+      "number": 3,
+      "citation": "Bártolo, P. J., & Mitchell, G. (2003). Stereo-thermal-lithography: A new principle for rapid prototyping. Rapid Prototyping Journal, 9(3), 150–156. https://doi.org/10.1108/13552540310477454",
+      "doi": "10.1108/13552540310477454",
+      "reference_slide": 23,
+      "status": "archived",
+      "paths": [
+        "papers/cited/Bartolo-Mitchell-2003-Stereo-thermal-lithography.pdf"
+      ]
+    },
+    {
+      "number": 4,
+      "citation": "Bártolo, P. J. (Ed.). (2011). Stereolithography: Materials, Processes and Applications. Springer.",
+      "doi": "10.1007/978-0-387-92904-0",
+      "reference_slide": 23,
+      "status": "archived",
+      "paths": [
+        "papers/cited/Bartolo-2011-Stereolithography-Materials-Processes-Applications.pdf"
+      ]
+    },
+    {
+      "number": 5,
+      "citation": "O’Halloran, S., Pandit, A., Heise, A., & Kellett, A. (2023). Two-photon polymerization: Fundamentals, materials, and chemical modification strategies. Advanced Science, 10, 2204072. https://doi.org/10.1002/advs.202204072",
+      "doi": "10.1002/advs.202204072",
+      "reference_slide": 23,
+      "status": "full_text_missing",
+      "paths": []
+    },
+    {
+      "number": 6,
+      "citation": "Chen, G., et al. (2020). Advanced near-infrared light for monitoring and modulating the spatiotemporal dynamics of cell functions in living systems. Advanced Science, 7, 1903783. https://doi.org/10.1002/advs.201903783",
+      "doi": "10.1002/advs.201903783",
+      "reference_slide": 24,
+      "status": "archived",
+      "paths": [
+        "papers/cited/Chen-2020-Advanced-NIR-Light-Cell-Functions.pdf"
+      ]
+    },
+    {
+      "number": 7,
+      "citation": "Santoni, S., et al. (2022). 3D bioprinting: Current status and trends—a guide to the literature and industrial practice. Bio-Design and Manufacturing, 5, 14–42. https://doi.org/10.1007/s42242-021-00165-0",
+      "doi": "10.1007/s42242-021-00165-0",
+      "reference_slide": 24,
+      "status": "archived",
+      "paths": [
+        "papers/cited/Santoni-2022-3D-Bioprinting-Current-Status-Trends.pdf"
+      ]
+    },
+    {
+      "number": 8,
+      "citation": "Van Ombergen, A., et al. (2023). 3D bioprinting in microgravity: Opportunities, challenges, and possible applications in space. Advanced Healthcare Materials, 12, 2300443. https://doi.org/10.1002/adhm.202300443",
+      "doi": "10.1002/adhm.202300443",
+      "reference_slide": 24,
+      "status": "full_text_missing",
+      "paths": []
+    },
+    {
+      "number": 9,
+      "citation": "Higher pulse frequency of near-infrared laser irradiation increases penetration depth for novel biomedical applications. (2021). PLOS ONE. https://doi.org/10.1371/journal.pone.0245350",
+      "doi": "10.1371/journal.pone.0245350",
+      "reference_slide": 24,
+      "status": "full_text_missing",
+      "paths": []
+    },
+    {
+      "number": 10,
+      "citation": "Grigoryan, B., et al. (2019). Multivascular networks and functional intravascular topologies within biocompatible hydrogels. Science, 364(6439), 458–464. https://doi.org/10.1126/science.aav9750",
+      "doi": "10.1126/science.aav9750",
+      "reference_slide": 24,
+      "status": "full_text_missing",
+      "paths": []
+    }
+  ]
+}

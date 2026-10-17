@@ -46,6 +46,10 @@ Slide images, SVG artwork, both videos, and fonts are also available separately
 in [materials/](materials/), with a slide-to-file inventory and SHA-256 hashes.
 Repository maintenance rules are in [AGENTS.md](AGENTS.md).
 
+Available full-text papers, cited books/chapters, and supporting reading are
+stored in [papers/](papers/), with a DOI/file inventory and an explicit list of
+references whose full texts are still missing.
+
 ## Maintain the presentation
 
 The self-contained deck is in `presentation/index.html`; theme, controller and conversion scripts are in `tools/`. The original PowerPoint is kept outside this repository. Rebuilding the web deck omits the personal introduction.
