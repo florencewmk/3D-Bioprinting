@@ -19,7 +19,7 @@ css='/* === PUBLICATION_CHART_STYLE_BEGIN === */\n'+(TOOLS/'publication-chart.cs
 new=re.sub(r'/\* === PUBLICATION_CHART_STYLE_BEGIN === \*/.*?/\* === PUBLICATION_CHART_STYLE_END === \*/','',new,flags=re.S)
 new=new.replace('</style>',css+'\n</style>',1)
 script_start=new.index('/* === SOURCE DATA AND LOCAL TEXT EDITING === */');script_end=new.index('</script>',script_start)
-new=new[:script_start]+(TOOLS/'deck.js').read_text()+'\n'+(TOOLS/'publication-chart.js').read_text()+new[script_end:]
+new=new[:script_start]+(TOOLS/'deck.js').read_text()+'\n'+(TOOLS/'publication-chart.js').read_text()+'\n'+(TOOLS/'organ-chart.js').read_text()+new[script_end:]
 updated=re.findall(pattern,new,re.S)
 assert len(updated)==51
 # Match complete individual sections rather than captures of section content.

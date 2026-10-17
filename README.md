@@ -67,3 +67,7 @@ All 51 slides were browser-rendered at 1280 × 720 and visually reviewed. Browse
 ## Credits
 
 Scientific sources and image credits are retained on the slides and in the transcript. Third-party photographs, figures and videos retain their respective rights; the repository license does not relicense those materials. Jost is bundled under the [SIL Open Font License](presentation/Jost-OFL.txt).
+
+## Organ-transplant timeline (slide 9)
+
+[Data and source definitions](data/organ-transplants/README.md) cover 2015–2024 annual-report snapshots plus separately flagged 2025 homepage highlights. Slide 9 animates the chart from left to right with pause/replay/year selection. The 2025 transplant count remains an exclusive lower bound, not an exact observation; kidney waiting-list callouts remain 2024. Rebuild only this slide with `python3 tools/update_organ_slide.py`; check the data contract with `python3 tools/check_organ_data.py`.

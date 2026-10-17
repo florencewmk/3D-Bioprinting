@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-17",
+  "last_verified_report_year": 2024,
+  "rows": [
+    {
+      "year": 2015,
+      "deceased_donors": 31812,
+      "solid_organ_transplant_procedures": 126670,
+      "source": "https://www.transplant-observatory.org/wp-content/uploads/2017/10/Report-2015_def.pdf",
+      "status": "annual_report_snapshot",
+      "transplants_relation": "exact"
+    },
+    {
+      "year": 2016,
+      "deceased_donors": 34854,
+      "solid_organ_transplant_procedures": 135860,
+      "source": "https://www.transplant-observatory.org/wp-content/uploads/2018/12/DATOS-2016fw.pdf",
+      "status": "annual_report_snapshot",
+      "transplants_relation": "exact"
+    },
+    {
+      "year": 2017,
+      "deceased_donors": 37447,
+      "solid_organ_transplant_procedures": 139024,
+      "source": "https://www.transplant-observatory.org/wp-content/uploads/2019/11/glorep2017.pdf",
+      "status": "annual_report_snapshot",
+      "transplants_relation": "exact"
+    },
+    {
+      "year": 2018,
+      "deceased_donors": 39357,
+      "solid_organ_transplant_procedures": 146840,
+      "source": "https://www.transplant-observatory.org/wp-content/uploads/2020/10/glorep2018-2.pdf",
+      "status": "annual_report_snapshot",
+      "transplants_relation": "exact"
+    },
+    {
+      "year": 2019,
+      "deceased_donors": 40608,
+      "solid_organ_transplant_procedures": 153863,
+      "source": "https://www.transplant-observatory.org/wp-content/uploads/2021/06/GODT2019-data_web_updated-June-2021.pdf",
+      "status": "annual_report_snapshot",
+      "transplants_relation": "exact"
+    },
+    {
+      "year": 2020,
+      "deceased_donors": 36100,
+      "solid_organ_transplant_procedures": 129681,
+      "source": "https://www.transplant-observatory.org/wp-content/uploads/2022/07/2020-Global-report-para-web.pdf",
+      "status": "annual_report_snapshot",
+      "transplants_relation": "exact"
+    },
+    {
+      "year": 2021,
+      "deceased_donors": 38156,
+      "solid_organ_transplant_procedures": 144302,
+      "source": "https://www.transplant-observatory.org/wp-content/uploads/2022/12/2021-data-global-report.pdf",
+      "status": "annual_report_snapshot",
+      "transplants_relation": "exact"
+    },
+    {
+      "year": 2022,
+      "deceased_donors": 41792,
+      "solid_organ_transplant_procedures": 157494,
+      "source": "https://www.transplant-observatory.org/wp-content/uploads/2016/02/2022-data-global-report_VF_2.pdf",
+      "status": "annual_report_snapshot",
+      "transplants_relation": "exact"
+    },
+    {
+      "year": 2023,
+      "deceased_donors": 45861,
+      "solid_organ_transplant_procedures": 172409,
+      "source": "https://www.transplant-observatory.org/wp-content/uploads/2025/02/2023-data-global-report-20022025.pdf",
+      "status": "annual_report_snapshot",
+      "transplants_relation": "exact"
+    },
+    {
+      "year": 2024,
+      "deceased_donors": 47180,
+      "solid_organ_transplant_procedures": 173727,
+      "source": "https://www.transplant-observatory.org/wp-content/uploads/2025/12/2024-data-global-report.pdf",
+      "status": "annual_report_snapshot",
+      "transplants_relation": "exact"
+    },
+    {
+      "year": 2025,
+      "deceased_donors": 49169,
+      "solid_organ_transplant_procedures": null,
+      "transplants_lower_bound_exclusive": 183800,
+      "transplants_relation": "greater_than",
+      "living_donor_transplant_procedures": 54600,
+      "reporting_countries": 96,
+      "source": "https://data.transplant-observatory.org/",
+      "status": "homepage_highlights_full_report_not_verified"
+    }
+  ],
+  "kidney_waiting_list": {
+    "year": 2024,
+    "waiting_year_end": 377902,
+    "deaths_during_year": 19936,
+    "source": "https://www.transplant-observatory.org/wp-content/uploads/2025/12/2024-data-global-report.pdf",
+    "pdf_page": 65,
+    "coverage": "Reporting countries; not complete worldwide totals"
+  },
+  "limitations": [
+    "Donors are actual deceased donors, excluding living and registered potential donors.",
+    "Transplants are organ procedures, not unique recipients.",
+    "Annual report snapshots have different country coverage and may later be revised.",
+    "2025 homepage says more than 183800; exact total is unknown. Plot uses an open lower-bound marker and a dashed connection.",
+    "2025 homepage contains inconsistent fields; full annual report not verified.",
+    "Waiting-list figures are kidney-only 2024, not 2025; people not registered are excluded."
+  ]
+}
