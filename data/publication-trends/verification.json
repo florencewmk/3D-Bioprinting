@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-17",
+  "source_values_checked": 96,
+  "ppt_native_series_match": true,
+  "source_totals": {
+    "Laser-assisted": 152,
+    "Inkjet": 309,
+    "Stereolithography": 769,
+    "Extrusion": 1385
+  },
+  "other_50_slide_sections_unchanged": true,
+  "browser_url": "http://127.0.0.1:3000/presentation/index.html#8",
+  "observed": {
+    "auto_start": 2000,
+    "auto_progression_observed": 2001,
+    "replay_start": 2000,
+    "slider_2023": {
+      "Laser-assisted": 22,
+      "Inkjet": 43,
+      "Stereolithography": 143,
+      "Extrusion": 285,
+      "category_matches": 493
+    },
+    "slider_2026": "Not verified · year to date; all counts shown as em dash",
+    "auto_completion": 2023
+  },
+  "extension_status": "2024–2026 not verified; institutional login/data export required"
+}

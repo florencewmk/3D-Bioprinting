@@ -1,0 +1,2 @@
+# Preserve the original CSV snapshot bytes, including its standard CRLF endings.
+data/publication-trends/*.csv -text whitespace=cr-at-eol

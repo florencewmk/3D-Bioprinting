@@ -8,6 +8,7 @@ import pymupdf as fitz
 from pptx import Presentation
 from PIL import Image
 from io import BytesIO
+from publication_chart import render_publication_slide
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('source',type=Path,help='Original competition PPTX')
 parser.add_argument('pdf',type=Path,help='PDF exported with Arial substitution')
@@ -48,7 +49,7 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
  notes=slide.notes_slide.notes_text_frame.text if slide.has_notes_slide and slide.notes_slide.notes_text_frame is not None else ''
  data.append({'number':n,'title':title,'text':'\n\n'.join(src),'notes':notes})
  # Posters are rebuilt directly in semantic HTML in the chosen design.
- special=n in [1,3,4,16,22,23,29] or 24<=n<=28
+ special=n in [1,3,4,8,16,22,23,29] or 24<=n<=28
  art='';native=[]
  if not special:
   dictionary=page.get_text('dict')
@@ -100,6 +101,7 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
   svg=svg_scope(svg,n)
   art='<div class="source-art" aria-hidden="true">'+svg+'</div>'+''.join(native)
   if n==13:art+='<div class="route-note editable" data-edit="routes-subtitle">4 types of STLG bioprinting methods</div>'
+ if n==8:art=render_publication_slide()
  if n==1:
   art='''<div class="lattice" aria-hidden="true"></div><div class="hero"><p class="eyebrow editable" data-edit="cover-event">SOFE · BERLIN · 2026</p><h1><span class="editable" data-edit="cover-title">Stereolithographic</span><br><em class="editable gradient" data-edit="cover-subtitle">Bioprinting</em></h1><p class="hero-sub editable" data-edit="cover-tagline">3D bioprinting using light</p></div><p class="signature editable" data-edit="cover-author">Florence Mei Kuan Wong</p>'''
  if n==3:
@@ -160,7 +162,7 @@ for d in data:
  transcript+=f'## {d["number"]:02d}. {d["title"]}\n\n{d["text"]}\n\n'
  if d['notes']:transcript+='### Speaker notes\n\n'+d['notes']+'\n\n'
 (OUT/'transcript.md').write_text('\n'.join(line.rstrip() for line in transcript.splitlines()).rstrip()+'\n')
-css=(Path(__file__).parent/'deck.css').read_text();js=(Path(__file__).parent/'deck.js').read_text()
+css=(Path(__file__).parent/'deck.css').read_text()+'\n'+(Path(__file__).parent/'publication-chart.css').read_text();js=(Path(__file__).parent/'deck.js').read_text()+'\n'+(Path(__file__).parent/'publication-chart.js').read_text()
 shell=(Path(__file__).parent/'shell.html').read_text()
 result=shell.replace('FONT_CSS',(Path(__file__).parent/'fonts.css').read_text()).replace('BASE_CSS',base).replace('DECK_CSS',css).replace('SLIDE_SECTIONS','\n'.join(sections)).replace('SOURCE_DATA',json.dumps(data,ensure_ascii=False).replace('</','<\\/')).replace('DECK_JS',js)
 (OUT/'index.html').write_text('\n'.join(line.rstrip() for line in result.splitlines()).rstrip()+'\n')

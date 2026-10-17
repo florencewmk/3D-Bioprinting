@@ -32,6 +32,22 @@ The 51 source slides remain in their original order. Scientific diagrams and cha
 
 A readable [source transcript and speaker notes](presentation/transcript.md) accompany the deck. Text edits in the HTML do not rewrite this original-source transcript or speaker notes.
 
+## Slide 8: publication data and animation
+
+The [publication-trends data directory](data/publication-trends/) contains the original 2000–2023 CSV, the exact WoS searches, provenance/coverage notes and presentation-ready CSV/JSON. All 96 annual values match the source PowerPoint chart series exactly.
+
+Slide 8 automatically animates **2000 → 2023** in approximately 12 seconds. Use Play/Pause, Replay, the year slider or click a bar to inspect individual-year counts. The plot is rebuilt from the data, so the scientific values are independent of the artwork conversion.
+
+**2024–2026 remain unverified.** They are represented by `null` in JSON and blank numeric CSV cells, with a shaded region in the chart. They are not zero observations. Updated WoS access/export is required; 2026 must be labeled year to date with its retrieval date. The earlier institutional database was frozen, so a fresh full-period rerun is preferable to silently splicing new years onto the old snapshot.
+
+After updating `data/publication-trends/annual_counts.json`, run:
+
+```sh
+python tools/update_publication_slide.py
+```
+
+The updater verifies that all other 50 slide sections remain unchanged. Chart CSS/JS live in `tools/publication-chart.css` and `tools/publication-chart.js`. `tools/check_publication_data.py` checks the current historical snapshot and explicitly unknown extension rows; revise the extension assertions when verified new observations are added.
+
 ## Rebuild
 
 The original PPTX is kept outside this repository. The conversion source was `SoFe Competition.pptx`, SHA-256 `c40db77325caf103a88d7b2fdfc6cfc97601140c86f5c9bd071ff266d2756407`.

@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "title": "Bioprinting publication trends",
+  "last_verified_year": 2023,
+  "display_end_year": 2026,
+  "as_of": "2026-10-17",
+  "source": {
+    "database": "Web of Science Core Collection",
+    "retrieved": "2026-10-14",
+    "scope": "All available editions in the institutional session",
+    "year_field": "Default Publication Years facet; Show Final Publication Year off",
+    "language": "English",
+    "document_types": [
+      "Article",
+      "Review"
+    ],
+    "coverage": "Frozen institutional collection; recent-year coverage may be incomplete",
+    "counting_unit": "Keyword-matched publications within each technique; techniques can overlap",
+    "original_study_doi": "10.1007/s42242-021-00165-0",
+    "source_csv_sha256": "5fb353d06835fc1a0a1e3323b5018514b47d416e39663b3744428ac1bae14280"
+  },
+  "techniques": [
+    {
+      "key": "Laser-assisted",
+      "color": "#D08AB6",
+      "verified_snapshot_total": 152
+    },
+    {
+      "key": "Inkjet",
+      "color": "#B59BC8",
+      "verified_snapshot_total": 309
+    },
+    {
+      "key": "Stereolithography",
+      "color": "#8FB79B",
+      "verified_snapshot_total": 769
+    },
+    {
+      "key": "Extrusion",
+      "color": "#7FA4C8",
+      "verified_snapshot_total": 1385
+    }
+  ],
+  "rows": [
+    {
+      "year": 2000,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 0,
+        "Inkjet": 0,
+        "Stereolithography": 0,
+        "Extrusion": 0
+      }
+    },
+    {
+      "year": 2001,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 0,
+        "Inkjet": 0,
+        "Stereolithography": 0,
+        "Extrusion": 1
+      }
+    },
+    {
+      "year": 2002,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 0,
+        "Inkjet": 0,
+        "Stereolithography": 2,
+        "Extrusion": 1
+      }
+    },
+    {
+      "year": 2003,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 0,
+        "Inkjet": 0,
+        "Stereolithography": 2,
+        "Extrusion": 0
+      }
+    },
+    {
+      "year": 2004,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 1,
+        "Inkjet": 2,
+        "Stereolithography": 3,
+        "Extrusion": 0
+      }
+    },
+    {
+      "year": 2005,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 0,
+        "Inkjet": 2,
+        "Stereolithography": 3,
+        "Extrusion": 1
+      }
+    },
+    {
+      "year": 2006,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 0,
+        "Inkjet": 2,
+        "Stereolithography": 5,
+        "Extrusion": 1
+      }
+    },
+    {
+      "year": 2007,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 1,
+        "Inkjet": 5,
+        "Stereolithography": 2,
+        "Extrusion": 2
+      }
+    },
+    {
+      "year": 2008,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 0,
+        "Inkjet": 7,
+        "Stereolithography": 3,
+        "Extrusion": 4
+      }
+    },
+    {
+      "year": 2009,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 1,
+        "Inkjet": 5,
+        "Stereolithography": 7,
+        "Extrusion": 2
+      }
+    },
+    {
+      "year": 2010,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 6,
+        "Inkjet": 7,
+        "Stereolithography": 8,
+        "Extrusion": 2
+      }
+    },
+    {
+      "year": 2011,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 8,
+        "Inkjet": 8,
+        "Stereolithography": 14,
+        "Extrusion": 3
+      }
+    },
+    {
+      "year": 2012,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 3,
+        "Inkjet": 9,
+        "Stereolithography": 11,
+        "Extrusion": 4
+      }
+    },
+    {
+      "year": 2013,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 4,
+        "Inkjet": 12,
+        "Stereolithography": 12,
+        "Extrusion": 8
+      }
+    },
+    {
+      "year": 2014,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 3,
+        "Inkjet": 11,
+        "Stereolithography": 18,
+        "Extrusion": 7
+      }
+    },
+    {
+      "year": 2015,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 6,
+        "Inkjet": 14,
+        "Stereolithography": 20,
+        "Extrusion": 26
+      }
+    },
+    {
+      "year": 2016,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 12,
+        "Inkjet": 21,
+        "Stereolithography": 34,
+        "Extrusion": 37
+      }
+    },
+    {
+      "year": 2017,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 14,
+        "Inkjet": 12,
+        "Stereolithography": 46,
+        "Extrusion": 57
+      }
+    },
+    {
+      "year": 2018,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 16,
+        "Inkjet": 25,
+        "Stereolithography": 63,
+        "Extrusion": 90
+      }
+    },
+    {
+      "year": 2019,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 14,
+        "Inkjet": 29,
+        "Stereolithography": 66,
+        "Extrusion": 133
+      }
+    },
+    {
+      "year": 2020,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 11,
+        "Inkjet": 35,
+        "Stereolithography": 89,
+        "Extrusion": 194
+      }
+    },
+    {
+      "year": 2021,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 18,
+        "Inkjet": 22,
+        "Stereolithography": 107,
+        "Extrusion": 258
+      }
+    },
+    {
+      "year": 2022,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 12,
+        "Inkjet": 38,
+        "Stereolithography": 111,
+        "Extrusion": 269
+      }
+    },
+    {
+      "year": 2023,
+      "status": "verified_snapshot",
+      "counts": {
+        "Laser-assisted": 22,
+        "Inkjet": 43,
+        "Stereolithography": 143,
+        "Extrusion": 285
+      }
+    },
+    {
+      "year": 2024,
+      "status": "awaiting_comparable_source",
+      "counts": {
+        "Laser-assisted": null,
+        "Inkjet": null,
+        "Stereolithography": null,
+        "Extrusion": null
+      },
+      "note": "Requires updated database access/export"
+    },
+    {
+      "year": 2025,
+      "status": "awaiting_comparable_source",
+      "counts": {
+        "Laser-assisted": null,
+        "Inkjet": null,
+        "Stereolithography": null,
+        "Extrusion": null
+      },
+      "note": "Requires updated database access/export"
+    },
+    {
+      "year": 2026,
+      "status": "awaiting_comparable_source",
+      "counts": {
+        "Laser-assisted": null,
+        "Inkjet": null,
+        "Stereolithography": null,
+        "Extrusion": null
+      },
+      "note": "Year to date when retrieved; calendar year incomplete"
+    }
+  ]
+}
