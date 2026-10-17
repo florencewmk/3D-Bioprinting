@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="960.00949" height="540" viewBox="0 0 960.00949 540">
+<defs>
+<clipPath id="s32_clip_1">
+<path transform="matrix(1,0,0,-1,0,540)" d="M0 .028H959.981V540H0Z" clip-rule="evenodd"/>
+</clipPath>
+<clipPath id="s32_clip_2">
+<path transform="matrix(1,0,0,-1,0,540)" d="M31.38 24.803H928.319V31.607H31.38Z" clip-rule="evenodd"/>
+</clipPath>
+</defs>
+<g>
+<g clip-path="url(#s32_clip_1)">
+<g opacity=".35">
+<g clip-path="url(#s32_clip_2)">
+</g>
+</g>
+<path transform="matrix(1,0,0,-1,0,540)" d="M508.762 406.602H873.524V365.754H508.762V406.602Z" fill="#302b39" fill-rule="evenodd"/>
+<path transform="matrix(1,0,0,-1,0,540)" d="M508.762 365.754H873.524V185.783H508.762V365.754Z" fill="#302b39" fill-rule="evenodd"/>
+<path transform="matrix(1,0,0,-1,0,540)" stroke-width=".8501" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#211b1a" d="M508.337 406.602H873.95"/>
+<path transform="matrix(1,0,0,-1,0,540)" stroke-width=".8501" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#211b1a" d="M508.762 407.027V185.357"/>
+<path transform="matrix(1,0,0,-1,0,540)" stroke-width=".8501" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#211b1a" d="M873.524 407.027V185.357"/>
+<path transform="matrix(1,0,0,-1,0,540)" stroke-width=".8501" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#211b1a" d="M508.337 365.754H873.95"/>
+<path transform="matrix(1,0,0,-1,0,540)" stroke-width=".8501" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#211b1a" d="M508.337 185.783H873.95"/>
+<path transform="matrix(1,0,0,-1,0,540)" d="M75.458 404.872H440.22V364.025H75.458V404.872Z" fill="#302b39" fill-rule="evenodd"/>
+<path transform="matrix(1,0,0,-1,0,540)" d="M75.458 364.025H440.22V184.054H75.458V364.025Z" fill="#302b39" fill-rule="evenodd"/>
+<path transform="matrix(1,0,0,-1,0,540)" stroke-width=".8501" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#211b1a" d="M75.033 404.872H440.646"/>
+<path transform="matrix(1,0,0,-1,0,540)" stroke-width=".8501" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#211b1a" d="M75.458 405.298V183.628"/>
+<path transform="matrix(1,0,0,-1,0,540)" stroke-width=".8501" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#211b1a" d="M440.22 405.298V183.628"/>
+<path transform="matrix(1,0,0,-1,0,540)" stroke-width=".8501" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#211b1a" d="M75.033 364.025H440.646"/>
+<path transform="matrix(1,0,0,-1,0,540)" stroke-width=".8501" stroke-linecap="butt" stroke-linejoin="round" fill="none" stroke="#211b1a" d="M75.033 184.054H440.646"/>
+</g>
+</g>
+</svg>

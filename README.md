@@ -42,6 +42,10 @@ Horizontal swipes and the mouse wheel also navigate. Link to a specific slide wi
 
 Both charts have playback controls and year selection. Their data directories include raw values, sources and coverage limitations.
 
+Slide images, SVG artwork, both videos, and fonts are also available separately
+in [materials/](materials/), with a slide-to-file inventory and SHA-256 hashes.
+Repository maintenance rules are in [AGENTS.md](AGENTS.md).
+
 ## Maintain the presentation
 
 The self-contained deck is in `presentation/index.html`; theme, controller and conversion scripts are in `tools/`. The original PowerPoint is kept outside this repository. Rebuilding the web deck omits the personal introduction.
