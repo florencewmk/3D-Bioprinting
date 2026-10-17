@@ -1,0 +1,52 @@
+{
+  "errors": [],
+  "slides": 51,
+  "fonts": true,
+  "checks": [
+    [
+      "keyboard",
+      true
+    ],
+    [
+      "overview",
+      true
+    ],
+    [
+      "notes",
+      true
+    ],
+    [
+      "video-15",
+      true
+    ],
+    [
+      "video-16",
+      true
+    ],
+    [
+      "editing",
+      true
+    ],
+    [
+      "autosave",
+      true
+    ]
+  ],
+  "overflow": [],
+  "phone": {
+    "x": 0,
+    "y": 312.3125,
+    "width": 390,
+    "height": 219.375
+  },
+  "final": {
+    "errors": [],
+    "offlineFont": true,
+    "uniqueSvgIds": true,
+    "exported": {
+      "slides": 51,
+      "overview": 51
+    }
+  },
+  "source_sha256": "c40db77325caf103a88d7b2fdfc6cfc97601140c86f5c9bd071ff266d2756407"
+}
