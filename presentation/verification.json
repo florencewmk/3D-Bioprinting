@@ -1,52 +1,88 @@
 {
-  "errors": [],
-  "slides": 51,
-  "fonts": true,
-  "checks": [
-    [
-      "keyboard",
-      true
+  "verified_on": "2026-10-17",
+  "slides": 50,
+  "removed_slide": "About me",
+  "checks": {
+    "sequential_ids_and_notes": true,
+    "retained_slide_content_unchanged_except_numbering": true,
+    "overview_entries": 50,
+    "contents_targets": [
+      3,
+      9,
+      15,
+      20
     ],
-    [
-      "overview",
-      true
-    ],
-    [
-      "notes",
-      true
-    ],
-    [
-      "video-15",
-      true
-    ],
-    [
-      "video-16",
-      true
-    ],
-    [
-      "editing",
-      true
-    ],
-    [
-      "autosave",
-      true
-    ]
-  ],
-  "overflow": [],
+    "publication_animation_slide": 7,
+    "organ_animation_slide": 8,
+    "chart_updaters_preserve_other_49_sections": true,
+    "data_contracts": true,
+    "embedded_videos": 2,
+    "javascript_syntax": true,
+    "browser_errors": []
+  },
+  "desktop": {
+    "width": 1280,
+    "height": 720,
+    "visual_review": "Contents"
+  },
   "phone": {
-    "x": 0,
-    "y": 312.3125,
-    "width": 390,
-    "height": 219.375
+    "viewport_width": 390,
+    "viewport_height": 844,
+    "stage_width": 390,
+    "stage_height": 219.375,
+    "horizontal_overflow": false,
+    "visual_review": "Contents"
   },
-  "final": {
+  "original_conversion": {
     "errors": [],
-    "offlineFont": true,
-    "uniqueSvgIds": true,
-    "exported": {
-      "slides": 51,
-      "overview": 51
-    }
-  },
-  "source_sha256": "c40db77325caf103a88d7b2fdfc6cfc97601140c86f5c9bd071ff266d2756407"
+    "slides": 51,
+    "fonts": true,
+    "checks": [
+      [
+        "keyboard",
+        true
+      ],
+      [
+        "overview",
+        true
+      ],
+      [
+        "notes",
+        true
+      ],
+      [
+        "video-15",
+        true
+      ],
+      [
+        "video-16",
+        true
+      ],
+      [
+        "editing",
+        true
+      ],
+      [
+        "autosave",
+        true
+      ]
+    ],
+    "overflow": [],
+    "phone": {
+      "x": 0,
+      "y": 312.3125,
+      "width": 390,
+      "height": 219.375
+    },
+    "final": {
+      "errors": [],
+      "offlineFont": true,
+      "uniqueSvgIds": true,
+      "exported": {
+        "slides": 51,
+        "overview": 51
+      }
+    },
+    "source_sha256": "c40db77325caf103a88d7b2fdfc6cfc97601140c86f5c9bd071ff266d2756407"
+  }
 }

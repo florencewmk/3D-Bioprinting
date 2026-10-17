@@ -11,8 +11,8 @@ assert rows[-1]['transplants_relation']=='greater_than'
 assert rows[-1]['deceased_donors']==49169
 assert d['kidney_waiting_list']['year']==2024 and d['kidney_waiting_list']['waiting_year_end']==377902 and d['kidney_waiting_list']['deaths_during_year']==19936
 s=(ROOT/'presentation/index.html').read_text();embedded=json.loads(re.search(r'<script id="organData" type="application/json">(.*?)</script>',s,re.S).group(1));assert embedded==d
-assert len(re.findall(r'<section\b[^>]*\bid="slide-\d+"',s))==51
+assert len(re.findall(r'<section\b[^>]*\bid="slide-\d+"',s))==50
 assert s.count('class OrganTimeline')==1 and s.count('class PublicationTimeline')==1
-assert 'window.organTimeline?.activate(next===8)' in s
+assert "window.organTimeline?.activate(this.slides[next].contains(document.getElementById('organChart')))" in s
 assert '2025 waiting-list data not verified' in s
-print('PASS: 11 years, 2025 exclusive bound, 2024 kidney-only figures, HTML/data identity, 51 slides and both controllers')
+print('PASS: 11 years, 2025 exclusive bound, 2024 kidney-only figures, HTML/data identity, 50 slides and both controllers')

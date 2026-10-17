@@ -1,4 +1,4 @@
-# Publication trends used by presentation slide 8
+# Publication trends used by presentation slide 7
 
 The 96 historical values (24 years × 4 techniques) match both native charts in slide 8 of `SoFe Competition.pptx`, including the 2019–2023 inset. Comparison was performed directly against the PowerPoint chart series; no image digitization or estimated values are used.
 

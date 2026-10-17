@@ -1,6 +1,6 @@
 # Organ donation and transplantation
 
-Retrieved/checked 17 October 2026. `annual_counts.json` is the source for presentation slide 9 and is embedded into the HTML for offline use.
+Retrieved/checked 17 October 2026. `annual_counts.json` is the source for presentation slide 8 and is embedded into the HTML for offline use.
 
 - 2015–2024: WHO–ONT GODT annual report snapshots; source URL accompanies every row. Original report links also in `report_sources.json`.
 - 2025: [GODT homepage highlights](https://data.transplant-observatory.org/): **more than 183,800 solid organ transplant procedures**, 49,169 actual deceased donors, 54,600 living-donor transplant procedures, 96 reporting countries. This is a homepage snapshot, not a verified full annual report. The page also has zero-valued counters and inconsistent year fields.
@@ -13,4 +13,4 @@ Counts are not interchangeable: one deceased donor can provide multiple organs; 
 
 ## Rebuild
 
-Run `python3 tools/update_organ_slide.py` from the repo root after editing data/CSS/controller. This changes slide 9 only and asserts the other 50 sections are byte-identical. `tools/build_deck.py` also includes the chart for full source builds.
+Run `python3 tools/update_organ_slide.py` from the repo root after editing data/CSS/controller. This changes slide 8 only and asserts the other 49 sections are byte-identical. `tools/build_deck.py` also includes the chart for full source builds.

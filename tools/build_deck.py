@@ -10,6 +10,7 @@ from PIL import Image
 from io import BytesIO
 from publication_chart import render_publication_slide
 from organ_chart import render_organ_slide
+from deck_structure import display_number, web_section, write_transcript
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('source',type=Path,help='Original competition PPTX')
 parser.add_argument('pdf',type=Path,help='PDF exported with Arial substitution')
@@ -46,9 +47,12 @@ def svg_scope(svg,n):
 TITLES=['Stereolithographic Bioprinting','About me','Contents','What comes to your mind?','From everyday objects to living tissue','From research to real-world use','The bioprinting landscape','Publication trends · 2000–2023','The organ shortage persists','Bioprinting technologies','A structure forms one layer at a time','SLA · DLP · multiphoton lithography','Four light-based curing routes','UV / violet and NIR','Thermal activation','Precision is a beginning','Tissue engineering in practice','From bioinks to bioprinters','Soft tissue research in orbit','3D-printed bio-plaster on ISS','Layers to living tissue','Engineering tomorrow’s possibilities','Thank you · Questions','Scientific references · 1','Scientific references · 2','Data and online sources · 1','Data and online sources · 2','Image references','Technical backup']
 sections=[];data=[];manifest=[]
 for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
- n=i+1;src=texts(slide);title=TITLES[i] if i<len(TITLES) else (src[0] if src else f'Slide {n}')
+ n=i+1
+ if n==2:continue
+ src=texts(slide);title=TITLES[i] if i<len(TITLES) else (src[0] if src else f'Slide {n}')
  notes=slide.notes_slide.notes_text_frame.text if slide.has_notes_slide and slide.notes_slide.notes_text_frame is not None else ''
- data.append({'number':n,'title':title,'text':'\n\n'.join(src),'notes':notes})
+ data.append({'number':display_number(n),'title':title,'text':'\n\n'.join(src),'notes':notes})
+ if n==3:data[-1]['text']=re.sub(r'Page (\d+)',lambda m:f'Page {display_number(int(m[1])):02d}',data[-1]['text'])
  # Posters are rebuilt directly in semantic HTML in the chosen design.
  special=n in [1,3,4,8,16,22,23,29] or 24<=n<=28
  art='';native=[]
@@ -147,7 +151,7 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
    if rid:
     part=slide.part.related_part(rid);poster=uri(part.blob,part.content_type)
   videos.append(f'<video controls playsinline preload="metadata" aria-label="{H(sh.name)}" poster="{poster}" style="left:{x:.1f}px;top:{y:.1f}px;width:{w:.1f}px;height:{h:.1f}px" src="{video_src}"></video>')
-  manifest.append({'slide':n,'media':sh.name,'bytes':len(blob)})
+  manifest.append({'slide':display_number(n),'media':sh.name,'bytes':len(blob)})
  if n==16:art+='<p class="media-credit">Source: Readily3D · Tomolite Bioprinter · accessed 14 October 2026</p>'
  section='Introduction' if n<10 else 'Printing methods' if n<16 else 'Applications' if n<21 else 'Conclusion' if n<24 else 'References' if n<29 else 'Technical backup'
  nav=''
@@ -155,15 +159,11 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
   nav='<nav class="section-nav" aria-label="Talk sections">'+''.join(f'<button data-goto="{start}" class="{"current" if label==section else ""}">{label}</button>' for label,start in [('Introduction',4),('Printing methods',10),('Applications',16),('Conclusion',21)])+f'<span>{"REFERENCES" if 24<=n<29 else "BACKUP" if n>=29 else ""}</span></nav>'
  footer=f'<footer><span>15 October 2026</span><span>Florence Mei Kuan Wong</span><span>{n:02d} / 51</span></footer>' if n!=1 else ''
  comment=notes.replace('--','—').replace('<','&lt;')
- sections.append(f'<section class="slide {"active visible" if n==1 else ""} {"poster-slide" if special else ""}" id="slide-{n}" aria-label="{n}. {H(title)}" aria-hidden="{str(n!=1).lower()}">{nav}{art}{"".join(videos)}{footer}<div class="sr-only">{H(chr(10).join(src))}</div><!-- Speaker notes: {comment} --></section>')
+ sections.append(web_section(f'<section class="slide {"active visible" if n==1 else ""} {"poster-slide" if special else ""}" id="slide-{n}" aria-label="{n}. {H(title)}" aria-hidden="{str(n!=1).lower()}">{nav}{art}{"".join(videos)}{footer}<div class="sr-only">{H(chr(10).join(src))}</div><!-- Speaker notes: {comment} --></section>',n))
 (BUILD/'deck-data.json').write_text(json.dumps(data,ensure_ascii=False,indent=2))
 (BUILD/'media-manifest.json').write_text(json.dumps(manifest,indent=2))
 # A readable transcript is a separate artifact, while presentation notes remain embedded.
-transcript='# Stereolithographic Bioprinting\n\nSource: SoFe Competition.pptx · 51 slides · 15 October 2026\n\n'
-for d in data:
- transcript+=f'## {d["number"]:02d}. {d["title"]}\n\n{d["text"]}\n\n'
- if d['notes']:transcript+='### Speaker notes\n\n'+d['notes']+'\n\n'
-(OUT/'transcript.md').write_text('\n'.join(line.rstrip() for line in transcript.splitlines()).rstrip()+'\n')
+write_transcript(OUT/'transcript.md',data)
 css=(Path(__file__).parent/'deck.css').read_text()+'\n'+(Path(__file__).parent/'publication-chart.css').read_text()+'\n'+(Path(__file__).parent/'organ-chart.css').read_text();js=(Path(__file__).parent/'deck.js').read_text()+'\n'+(Path(__file__).parent/'publication-chart.js').read_text()+'\n'+(Path(__file__).parent/'organ-chart.js').read_text()
 shell=(Path(__file__).parent/'shell.html').read_text()
 result=shell.replace('FONT_CSS',(Path(__file__).parent/'fonts.css').read_text()).replace('BASE_CSS',base).replace('DECK_CSS',css).replace('SLIDE_SECTIONS','\n'.join(sections)).replace('SOURCE_DATA',json.dumps(data,ensure_ascii=False).replace('</','<\\/')).replace('DECK_JS',js)

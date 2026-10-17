@@ -1,73 +1,60 @@
-# 3D Bioprinting
+# Stereolithographic Bioprinting
 
-**Stereolithographic Bioprinting — 3D bioprinting using light**
+**3D bioprinting using light**
+
 Florence Mei Kuan Wong · SOFE Berlin · 15 October 2026
 
-## Open the presentation
+![Presentation cover](presentation/cover.jpg)
 
-Open [`presentation/index.html`](presentation/index.html) in a browser, or download that file and double-click it. It is a single self-contained HTML file (approximately 25 MB), including Jost fonts, scientific artwork and two MP4 videos. No installation, build step or internet connection is needed for viewing.
+## View the slides
 
-The selected design uses a black background, lavender/pink/cyan typography, and a restrained layer motif. All slides keep a fixed 1920 × 1080 stage, scaled uniformly to any screen.
+Open [the presentation](presentation/index.html) in a browser. You can also download the HTML file and open it offline; fonts, figures and two videos are included. No installation is required.
 
-![Cover](presentation/cover.jpg)
-
-## Contents
+The deck contains **50 slides**:
 
 | Slides | Content |
 | --- | --- |
-| 1–23 | Main talk |
-| 24–28 | References and image credits |
-| 29–51 | Technical backup |
+| 1–22 | Main talk |
+| 23–27 | References and image credits |
+| 28–50 | Technical backup |
 
-The 51 source slides remain in their original order. Scientific diagrams and chart geometry are vector artwork where possible; source photographs and paper figures remain images. Most slide text is editable HTML. Text embedded in scientific figures is preserved within the artwork. Source PowerPoint object animations are replaced with web transitions; both embedded videos retain manual playback controls.
+[Transcript and speaker notes](presentation/transcript.md)
 
 ## Controls
 
-- **Arrow keys / Space / Page Up / Page Down**: navigate; horizontal swipes and mouse wheel also work.
-- **O**: overview. **N**: original speaker notes and source transcript. **F**: fullscreen.
-- **Home / End**: first or last slide. **Esc**: close panels.
-- **E**: enable text editing, then click text. Edits autosave in this browser.
-- **Ctrl/Cmd + S**: download an HTML copy containing your edits.
-- Slide hashes such as `presentation/index.html#15` open a specific slide.
+| Key | Action |
+| --- | --- |
+| Arrow keys / Space / Page Up / Page Down | Navigate |
+| O | Slide overview |
+| N | Speaker notes |
+| F | Fullscreen |
+| Home / End | First / last slide |
+| Esc | Close panels |
+| E | Edit slide text; changes save in your browser |
+| Ctrl/Cmd + S | Download an HTML copy with your edits |
 
-A readable [source transcript and speaker notes](presentation/transcript.md) accompany the deck. Text edits in the HTML do not rewrite this original-source transcript or speaker notes.
+Horizontal swipes and the mouse wheel also navigate. Link to a specific slide with a hash, such as `presentation/index.html#7`. Text inside figure images is not editable; browser edits do not update the transcript.
 
-## Slide 8: publication data and animation
+## Data and sources
 
-The [publication-trends data directory](data/publication-trends/) contains the original 2000–2023 CSV, the exact WoS searches, provenance/coverage notes and presentation-ready CSV/JSON. All 96 annual values match the source PowerPoint chart series exactly.
+- **[Publication trends · slide 7](data/publication-trends/):** verified annual counts for 2000–2023, with year-by-year animation. Values for 2024–2026 remain unverified and are shown as missing.
+- **[Organ-transplant timeline · slide 8](data/organ-transplants/):** annual-report snapshots for 2015–2024 and separately flagged 2025 homepage highlights. The 2025 transplant figure is a lower bound; kidney waiting-list figures are from 2024.
 
-Slide 8 automatically animates **2000 → 2023** in approximately 12 seconds. Use Play/Pause, Replay, the year slider or click a bar to inspect individual-year counts. The plot is rebuilt from the data, so the scientific values are independent of the artwork conversion.
+Both charts have playback controls and year selection. Their data directories include raw values, sources and coverage limitations.
 
-**2024–2026 remain unverified.** They are represented by `null` in JSON and blank numeric CSV cells, with a shaded region in the chart. They are not zero observations. Updated WoS access/export is required; 2026 must be labeled year to date with its retrieval date. The earlier institutional database was frozen, so a fresh full-period rerun is preferable to silently splicing new years onto the old snapshot.
+## Maintain the presentation
 
-After updating `data/publication-trends/annual_counts.json`, run:
+The self-contained deck is in `presentation/index.html`; theme, controller and conversion scripts are in `tools/`. The original PowerPoint is kept outside this repository. Rebuilding the web deck omits the personal introduction.
 
-```sh
-python tools/update_publication_slide.py
-```
-
-The updater verifies that all other 50 slide sections remain unchanged. Chart CSS/JS live in `tools/publication-chart.css` and `tools/publication-chart.js`. `tools/check_publication_data.py` checks the current historical snapshot and explicitly unknown extension rows; revise the extension assertions when verified new observations are added.
-
-## Rebuild
-
-The original PPTX is kept outside this repository. The conversion source was `SoFe Competition.pptx`, SHA-256 `c40db77325caf103a88d7b2fdfc6cfc97601140c86f5c9bd071ff266d2756407`.
-
-The conversion uses Python 3 with `python-pptx`, `Pillow`, and `pymupdf`, plus LibreOffice for intermediate rendering. Run `python tools/render_source.py /path/to/SoFe-Competition.pptx /tmp/sofe-render`, then:
+After changing chart data, run the corresponding updater from the repository root:
 
 ```sh
-python tools/build_deck.py /path/to/SoFe-Competition.pptx /tmp/sofe-render/render-source.pdf
+python3 tools/update_publication_slide.py
+python3 tools/update_organ_slide.py
 ```
 
-`tools/deck.css`, `tools/deck.js` and `tools/shell.html` contain the presentation theme and controller. `tools/viewport-base.css` contains the fixed stage rules. `tools/fonts.css` embeds the font data. Temporary PDF/render files and the original PPTX are not required to view the final deck.
-
-## Verification
-
-All 51 slides were browser-rendered at 1280 × 720 and visually reviewed. Browser checks cover navigation, notes, overview, editing/autosave, video playback and fixed 16:9 scaling at 390 × 844. Historical data and scientific claims are carried over from the source; this conversion is not a new literature review.
+Each updater preserves the other 49 slide sections. Check the data with `tools/check_publication_data.py` and `tools/check_organ_data.py`. Full conversion requires Python with `python-pptx`, Pillow and PyMuPDF, plus LibreOffice; see `tools/render_source.py` and `tools/build_deck.py` for their command-line arguments.
 
 ## Credits
 
-Scientific sources and image credits are retained on the slides and in the transcript. Third-party photographs, figures and videos retain their respective rights; the repository license does not relicense those materials. Jost is bundled under the [SIL Open Font License](presentation/Jost-OFL.txt).
-
-## Organ-transplant timeline (slide 9)
-
-[Data and source definitions](data/organ-transplants/README.md) cover 2015–2024 annual-report snapshots plus separately flagged 2025 homepage highlights. Slide 9 animates the chart from left to right with pause/replay/year selection. The 2025 transplant count remains an exclusive lower bound, not an exact observation; kidney waiting-list callouts remain 2024. Rebuild only this slide with `python3 tools/update_organ_slide.py`; check the data contract with `python3 tools/check_organ_data.py`.
+Scientific sources and image credits are retained in the deck and transcript. Third-party figures, photographs and videos retain their respective rights. Jost is bundled under the [SIL Open Font License](presentation/Jost-OFL.txt).

@@ -11,5 +11,5 @@ class OrganTimeline{
  activate(active){if(this.active===active)return;this.active=active;if(!active)this.pause();else if(this.reduced)this.draw(10);else this.play(true)}
  bind(){document.getElementById('organPlay').onclick=()=>this.running?this.pause():this.play();document.getElementById('organReplay').onclick=()=>this.reduced?(this.pause(),this.draw(10)):this.play(true);this.slider.addEventListener('input',()=>{this.pause();this.draw(Number(this.slider.value)-2015)});this.svg.querySelectorAll('[data-organ-year]').forEach(el=>el.addEventListener('click',()=>{this.pause();this.draw(Number(el.dataset.organYear))}));for(const name of ['wheel','touchstart'])this.root.addEventListener(name,e=>e.stopPropagation(),{passive:true});this.root.addEventListener('keydown',e=>{if(e.target===this.slider)e.stopPropagation()});document.addEventListener('visibilitychange',()=>{if(document.hidden)this.pause()});addEventListener('beforeprint',()=>{this.pause();this.draw(10)})}
 }
-window.organTimeline=new OrganTimeline();window.organTimeline.activate(presentation.current===8);
+window.organTimeline=new OrganTimeline();window.organTimeline.activate(document.querySelector('.slide.active').contains(document.getElementById('organChart')));
 /* === ORGAN_CHART_SCRIPT_END === */
