@@ -175,36 +175,16 @@ But it is a snapshot, rather than a complete global census.
 For example, Berlin research groups are not fully represented. Charité is also very actively doing research in bioprinting.
 
 
-## 07. Publication trends · 2000–2023
+## 07. Bioprinting publications · 2000–2026
 
-Source: Web of Science Core Collection, 2000–2023;
-
-Publication trend for different printing procedures, 2000–2023
-
-Last 5-year trend (2019–2023)
-
-Laser-assisted
-
-Inkjet
-
-Stereolithography
-
-Extrusion
-
-Number of published papers per year
-
-Publication year
+Source: Scopus (Elsevier), English journal articles and reviews, retrieved 27 October 2026.
+Annual keyword matches for laser-assisted, inkjet, stereolithography and extrusion; categories overlap.
+2026 is partial / indexed as of retrieval and can include assigned publication years.
+The year-by-year animation runs from 2000 to 2026 in approximately five seconds.
 
 ### Speaker notes
 
-I also looked into Web Of Science to get more data. However, TU Berlin only has access to Web of Science until 2023. So I can’t get the total published paper in bioprinting after 2023. But this doesn’t matter much. As we can see, the publication chart shows growing research activity across several bioprinting methods in the dataset.
-
-Extrusion contributes the largest number of keyword-matched publications, while stereolithography also shows substantial growth.
-
-These categories can overlap, and publication counts do not directly measure clinical readiness.
-
-For today, the important point is that researchers are exploring different manufacturing routes because no single method meets every biological and engineering requirement.
-
+These searches use Scopus across the entire 2000–2026 period. Extrusion contributes the largest number of keyword-matched publications, while stereolithography also shows substantial growth. The final year is partial and should not be interpreted as a completed calendar year. Categories overlap, and publication counts do not directly measure clinical readiness.
 
 ## 08. The organ shortage persists
 
