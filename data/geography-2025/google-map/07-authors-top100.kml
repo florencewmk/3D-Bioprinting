@@ -1,0 +1,3280 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Authors — top 100, institutional locations</name>
+    <Style id="marker">
+      <IconStyle>
+        <color>ff357AE5</color>
+        <scale>1.0</scale>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>Anthony Atala — Wake Forest University</name>
+      <description>Recent publication rank: 9
+Works 2021–2025: 31
+Works 2000–2025: 96
+Institution: Wake Forest University
+Country: United States
+City: Winston-Salem
+Last observed affiliation date: 2025-07-21
+Author ID: https://openalex.org/A5046942201
+ORCID: https://orcid.org/0000-0001-8186-2160
+Evidence work IDs: https://openalex.org/W4412515645
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-80.24422,36.09986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tao Xu — Research Institute of Tsinghua University in Shenzhen</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 36
+Institution: Research Institute of Tsinghua University in Shenzhen
+Country: China
+City: Shenzhen
+Last observed affiliation date: 2025-07-21
+Author ID: https://openalex.org/A5081656092
+ORCID: https://orcid.org/0000-0002-5783-6859
+Evidence work IDs: https://openalex.org/W4412504964
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>114.0683,22.54554,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tao Xu — Tsinghua Shenzhen International Graduate School</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 36
+Institution: Tsinghua Shenzhen International Graduate School
+Country: China
+City: Shenzhen
+Last observed affiliation date: 2025-07-21
+Author ID: https://openalex.org/A5081656092
+ORCID: https://orcid.org/0000-0002-5783-6859
+Evidence work IDs: https://openalex.org/W4412504964
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>114.0683,22.54554,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tao Xu — Tsinghua University</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 36
+Institution: Tsinghua University
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-07-21
+Author ID: https://openalex.org/A5081656092
+ORCID: https://orcid.org/0000-0002-5783-6859
+Evidence work IDs: https://openalex.org/W4412504964
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>James J. Yoo — Wake Forest University Health Sciences</name>
+      <description>Recent publication rank: 16
+Works 2021–2025: 27
+Works 2000–2025: 74
+Institution: Wake Forest University Health Sciences
+Country: United States
+City: Winston-Salem
+Last observed affiliation date: 2025-06-26
+Author ID: https://openalex.org/A5101449554
+ORCID: https://orcid.org/0000-0002-7827-3848
+Evidence work IDs: https://openalex.org/W4411706814
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-80.24422,36.09986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>James J. Yoo — Wake Forest University</name>
+      <description>Recent publication rank: 16
+Works 2021–2025: 27
+Works 2000–2025: 74
+Institution: Wake Forest University
+Country: United States
+City: Winston-Salem
+Last observed affiliation date: 2025-06-26
+Author ID: https://openalex.org/A5101449554
+ORCID: https://orcid.org/0000-0002-7827-3848
+Evidence work IDs: https://openalex.org/W4411706814
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-80.24422,36.09986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carmine Gentile — University of Technology Sydney</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 20
+Institution: University of Technology Sydney
+Country: Australia
+City: Sydney
+Last observed affiliation date: 2024-05-22
+Author ID: https://openalex.org/A5048884410
+ORCID: https://orcid.org/0000-0002-3689-4275
+Evidence work IDs: https://openalex.org/W4398193059
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>151.20732,-33.86785,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carmine Gentile — The University of Sydney</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 20
+Institution: The University of Sydney
+Country: Australia
+City: Sydney
+Last observed affiliation date: 2024-05-22
+Author ID: https://openalex.org/A5048884410
+ORCID: https://orcid.org/0000-0002-3689-4275
+Evidence work IDs: https://openalex.org/W4398193059
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>151.20732,-33.86785,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carmine Gentile — The Heart Research Institute</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 20
+Institution: The Heart Research Institute
+Country: Australia
+City: Newtown
+Last observed affiliation date: 2024-05-22
+Author ID: https://openalex.org/A5048884410
+ORCID: https://orcid.org/0000-0002-3689-4275
+Evidence work IDs: https://openalex.org/W4398193059
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>151.17754,-33.89835,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ali Khademhosseini — Terasaki Foundation</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 84
+Institution: Terasaki Foundation
+Country: United States
+City: Los Angeles
+Last observed affiliation date: 2024-08-09
+Author ID: https://openalex.org/A5033056518
+ORCID: https://orcid.org/0000-0002-2692-1524
+Evidence work IDs: https://openalex.org/W4401448050
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-118.44550323486328,34.03628158569336,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jos Malda — Utrecht University</name>
+      <description>Recent publication rank: 11
+Works 2021–2025: 29
+Works 2000–2025: 70
+Institution: Utrecht University
+Country: Netherlands
+City: Utrecht
+Last observed affiliation date: 2025-07-10
+Author ID: https://openalex.org/A5053597612
+ORCID: https://orcid.org/0000-0002-9241-7676
+Evidence work IDs: https://openalex.org/W4412174014
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>5.12222,52.09083,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jos Malda — University Medical Center Utrecht</name>
+      <description>Recent publication rank: 11
+Works 2021–2025: 29
+Works 2000–2025: 70
+Institution: University Medical Center Utrecht
+Country: Netherlands
+City: Utrecht
+Last observed affiliation date: 2025-07-10
+Author ID: https://openalex.org/A5053597612
+ORCID: https://orcid.org/0000-0002-9241-7676
+Evidence work IDs: https://openalex.org/W4412174014
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>5.12222,52.09083,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carmelo De Maria — University of Pisa</name>
+      <description>Recent publication rank: 16
+Works 2021–2025: 27
+Works 2000–2025: 34
+Institution: University of Pisa
+Country: Italy
+City: Pisa
+Last observed affiliation date: 2025-10-23
+Author ID: https://openalex.org/A5050458592
+ORCID: https://orcid.org/0000-0002-1368-3571
+Evidence work IDs: https://openalex.org/W4415461928
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>10.4036,43.70853,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Giovanni Vozzi — University of Pisa</name>
+      <description>Recent publication rank: 25
+Works 2021–2025: 22
+Works 2000–2025: 32
+Institution: University of Pisa
+Country: Italy
+City: Pisa
+Last observed affiliation date: 2025-03-01
+Author ID: https://openalex.org/A5038985451
+ORCID: https://orcid.org/0000-0002-9414-9994
+Evidence work IDs: https://openalex.org/W4408549128
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>10.4036,43.70853,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Lorenzo Moroni — Maastricht University</name>
+      <description>Recent publication rank: 5
+Works 2021–2025: 38
+Works 2000–2025: 56
+Institution: Maastricht University
+Country: Netherlands
+City: Maastricht
+Last observed affiliation date: 2025-12-29
+Author ID: https://openalex.org/A5058423562
+ORCID: https://orcid.org/0000-0003-1298-6025
+Evidence work IDs: https://openalex.org/W7117475736
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>5.68889,50.84833,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jinah Jang — Pohang University of Science and Technology</name>
+      <description>Recent publication rank: 3
+Works 2021–2025: 43
+Works 2000–2025: 63
+Institution: Pohang University of Science and Technology
+Country: South Korea
+City: Pohang
+Last observed affiliation date: 2025-11-17
+Author ID: https://openalex.org/A5039843081
+ORCID: https://orcid.org/0000-0001-9046-3495
+Evidence work IDs: https://openalex.org/W4416300221
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>129.36480712890625,36.029170989990234,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jinah Jang — Yonsei University</name>
+      <description>Recent publication rank: 3
+Works 2021–2025: 43
+Works 2000–2025: 63
+Institution: Yonsei University
+Country: South Korea
+City: Seoul
+Last observed affiliation date: 2025-11-17
+Author ID: https://openalex.org/A5039843081
+ORCID: https://orcid.org/0000-0001-9046-3495
+Evidence work IDs: https://openalex.org/W4416300221
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>126.9784,37.566,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dong‐Woo Cho — Pohang University of Science and Technology</name>
+      <description>Recent publication rank: 13
+Works 2021–2025: 28
+Works 2000–2025: 48
+Institution: Pohang University of Science and Technology
+Country: South Korea
+City: Pohang
+Last observed affiliation date: 2025-09-01
+Author ID: https://openalex.org/A5013808012
+ORCID: https://orcid.org/0000-0001-5869-4330
+Evidence work IDs: https://openalex.org/W4414848166
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>129.36480712890625,36.029170989990234,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dong‐Woo Cho — Yonsei University</name>
+      <description>Recent publication rank: 13
+Works 2021–2025: 28
+Works 2000–2025: 48
+Institution: Yonsei University
+Country: South Korea
+City: Seoul
+Last observed affiliation date: 2025-09-01
+Author ID: https://openalex.org/A5013808012
+ORCID: https://orcid.org/0000-0001-5869-4330
+Evidence work IDs: https://openalex.org/W4414848166
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>126.9784,37.566,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Hyun‐Wook Kang — Ulsan National Institute of Science and Technology</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 29
+Institution: Ulsan National Institute of Science and Technology
+Country: South Korea
+City: Ulsan
+Last observed affiliation date: 2025-07-02
+Author ID: https://openalex.org/A5058433282
+ORCID: https://orcid.org/0000-0001-5335-5604
+Evidence work IDs: https://openalex.org/W4411921933
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>129.31667,35.53722,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sang Jin Lee — Atrium Health Wake Forest Baptist</name>
+      <description>Recent publication rank: 6
+Works 2021–2025: 33
+Works 2000–2025: 69
+Institution: Atrium Health Wake Forest Baptist
+Country: United States
+City: Winston-Salem
+Last observed affiliation date: 2025-09-04
+Author ID: https://openalex.org/A5100735614
+ORCID: https://orcid.org/0000-0002-3899-1909
+Evidence work IDs: https://openalex.org/W4413995859
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-80.24422,36.09986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sang Jin Lee — Wake Forest University Health Sciences</name>
+      <description>Recent publication rank: 6
+Works 2021–2025: 33
+Works 2000–2025: 69
+Institution: Wake Forest University Health Sciences
+Country: United States
+City: Winston-Salem
+Last observed affiliation date: 2025-09-04
+Author ID: https://openalex.org/A5100735614
+ORCID: https://orcid.org/0000-0002-3899-1909
+Evidence work IDs: https://openalex.org/W4413995859
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-80.24422,36.09986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sang Jin Lee — Wake Forest University</name>
+      <description>Recent publication rank: 6
+Works 2021–2025: 33
+Works 2000–2025: 69
+Institution: Wake Forest University
+Country: United States
+City: Winston-Salem
+Last observed affiliation date: 2025-09-04
+Author ID: https://openalex.org/A5100735614
+ORCID: https://orcid.org/0000-0002-3899-1909
+Evidence work IDs: https://openalex.org/W4413995859
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-80.24422,36.09986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Gordon G. Wallace — University of Wollongong</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 54
+Institution: University of Wollongong
+Country: Australia
+City: Wollongong
+Last observed affiliation date: 2025-10-02
+Author ID: https://openalex.org/A5074748535
+ORCID: https://orcid.org/0000-0002-0381-7273
+Evidence work IDs: https://openalex.org/W4414773417
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>150.89344787597656,-34.42399978637695,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ibrahim Tarik Ozbolat — Pennsylvania State University</name>
+      <description>Recent publication rank: 2
+Works 2021–2025: 50
+Works 2000–2025: 103
+Institution: Pennsylvania State University
+Country: United States
+City: State College
+Last observed affiliation date: 2025-11-27
+Author ID: https://openalex.org/A5083046197
+ORCID: https://orcid.org/0000-0001-8328-4528
+Evidence work IDs: https://openalex.org/W4417427117
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-77.86,40.79339,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ibrahim Tarik Ozbolat — Penn State Cancer Institute</name>
+      <description>Recent publication rank: 2
+Works 2021–2025: 50
+Works 2000–2025: 103
+Institution: Penn State Cancer Institute
+Country: United States
+City: Hershey
+Last observed affiliation date: 2025-11-27
+Author ID: https://openalex.org/A5083046197
+ORCID: https://orcid.org/0000-0001-8328-4528
+Evidence work IDs: https://openalex.org/W4417427117
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-76.65025,40.28592,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ibrahim Tarik Ozbolat — Cukurova University</name>
+      <description>Recent publication rank: 2
+Works 2021–2025: 50
+Works 2000–2025: 103
+Institution: Cukurova University
+Country: Türkiye
+City: Adana
+Last observed affiliation date: 2025-11-27
+Author ID: https://openalex.org/A5083046197
+ORCID: https://orcid.org/0000-0001-8328-4528
+Evidence work IDs: https://openalex.org/W4417427117
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>35.32530975341797,36.986148834228516,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Marcy Zenobi‐Wong — ETH Zurich</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 34
+Institution: ETH Zurich
+Country: Switzerland
+City: Zurich
+Last observed affiliation date: 2025-09-23
+Author ID: https://openalex.org/A5016954935
+ORCID: https://orcid.org/0000-0002-8522-9909
+Evidence work IDs: https://openalex.org/W4414421174
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>8.55,47.36667,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Marcy Zenobi‐Wong — Institute for Biomechanics</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 34
+Institution: Institute for Biomechanics
+Country: Switzerland
+City: Zurich
+Last observed affiliation date: 2025-09-23
+Author ID: https://openalex.org/A5016954935
+ORCID: https://orcid.org/0000-0002-8522-9909
+Evidence work IDs: https://openalex.org/W4414421174
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>8.55,47.36667,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Shaochen Chen — University of California San Diego</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 45
+Institution: University of California San Diego
+Country: United States
+City: San Diego
+Last observed affiliation date: 2025-10-14
+Author ID: https://openalex.org/A5018690367
+ORCID: https://orcid.org/0000-0001-6876-497X
+Evidence work IDs: https://openalex.org/W4415139512
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-117.16472,32.71571,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Liliang Ouyang — State Key Laboratory of Tribology</name>
+      <description>Recent publication rank: 52
+Works 2021–2025: 18
+Works 2000–2025: 24
+Institution: State Key Laboratory of Tribology
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-11-01
+Author ID: https://openalex.org/A5001320729
+ORCID: https://orcid.org/0000-0003-4177-8698
+Evidence work IDs: https://openalex.org/W4415984172
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723205566406,39.907501220703125,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Liliang Ouyang — Tsinghua University</name>
+      <description>Recent publication rank: 52
+Works 2021–2025: 18
+Works 2000–2025: 24
+Institution: Tsinghua University
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-11-01
+Author ID: https://openalex.org/A5001320729
+ORCID: https://orcid.org/0000-0003-4177-8698
+Evidence work IDs: https://openalex.org/W4415984172
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Falguni Pati — Indian Institute of Technology Hyderabad</name>
+      <description>Recent publication rank: 25
+Works 2021–2025: 22
+Works 2000–2025: 27
+Institution: Indian Institute of Technology Hyderabad
+Country: India
+City: Sangāreddi
+Last observed affiliation date: 2025-10-28
+Author ID: https://openalex.org/A5088113593
+ORCID: https://orcid.org/0000-0002-3588-1800
+Evidence work IDs: https://openalex.org/W4415621214
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>78.08669,17.62477,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Riccardo Levato — Utrecht University</name>
+      <description>Recent publication rank: 9
+Works 2021–2025: 31
+Works 2000–2025: 48
+Institution: Utrecht University
+Country: Netherlands
+City: Utrecht
+Last observed affiliation date: 2025-12-09
+Author ID: https://openalex.org/A5052979435
+ORCID: https://orcid.org/0000-0002-3795-3804
+Evidence work IDs: https://openalex.org/W4417184810
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>5.12222,52.09083,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Riccardo Levato — University Medical Center Utrecht</name>
+      <description>Recent publication rank: 9
+Works 2021–2025: 31
+Works 2000–2025: 48
+Institution: University Medical Center Utrecht
+Country: Netherlands
+City: Utrecht
+Last observed affiliation date: 2025-12-09
+Author ID: https://openalex.org/A5052979435
+ORCID: https://orcid.org/0000-0002-3795-3804
+Evidence work IDs: https://openalex.org/W4417184810
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>5.12222,52.09083,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>João Filipe Mano — University of Aveiro</name>
+      <description>Recent publication rank: 13
+Works 2021–2025: 28
+Works 2000–2025: 34
+Institution: University of Aveiro
+Country: Portugal
+City: Aveiro
+Last observed affiliation date: 2025-11-24
+Author ID: https://openalex.org/A5054484005
+ORCID: https://orcid.org/0000-0002-2342-3765
+Evidence work IDs: https://openalex.org/W4416606668
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-8.64643,40.64575,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Rui Luís Reis — 3B's Research Group</name>
+      <description>Recent publication rank: 22
+Works 2021–2025: 25
+Works 2000–2025: 41
+Institution: 3B's Research Group
+Country: Portugal
+City: Barco
+Last observed affiliation date: 2025-11-15
+Author ID: https://openalex.org/A5081499203
+ORCID: https://orcid.org/0000-0002-4295-6129
+Evidence work IDs: https://openalex.org/W4416411775
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-7.6014,40.17147,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Rui Luís Reis — University of Minho</name>
+      <description>Recent publication rank: 22
+Works 2021–2025: 25
+Works 2000–2025: 41
+Institution: University of Minho
+Country: Portugal
+City: Braga
+Last observed affiliation date: 2025-11-15
+Author ID: https://openalex.org/A5081499203
+ORCID: https://orcid.org/0000-0002-4295-6129
+Evidence work IDs: https://openalex.org/W4416411775
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-8.42311,41.5514,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sourabh Ghosh — Indian Institute of Technology Delhi</name>
+      <description>Recent publication rank: 52
+Works 2021–2025: 18
+Works 2000–2025: 29
+Institution: Indian Institute of Technology Delhi
+Country: India
+City: New Delhi
+Last observed affiliation date: 2025-07-24
+Author ID: https://openalex.org/A5017091864
+ORCID: https://orcid.org/0000-0002-1091-9614
+Evidence work IDs: https://openalex.org/W4412620555
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>77.21479797363281,28.621370315551758,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wai Yee Yeong — Nanyang Technological University</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 46
+Institution: Nanyang Technological University
+Country: Singapore
+City: Singapore
+Last observed affiliation date: 2025-09-04
+Author ID: https://openalex.org/A5066648757
+ORCID: https://orcid.org/0000-0003-3640-0877
+Evidence work IDs: https://openalex.org/W4413989147
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>103.85007,1.28967,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Anja Lode — Technische Universität Dresden</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 44
+Institution: Technische Universität Dresden
+Country: Germany
+City: Dresden
+Last observed affiliation date: 2025-12-01
+Author ID: https://openalex.org/A5076719079
+ORCID: https://orcid.org/0000-0001-7704-6435
+Evidence work IDs: https://openalex.org/W7117648762
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>13.73832,51.05089,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Michael Gelinsky — Technische Universität Dresden</name>
+      <description>Recent publication rank: 8
+Works 2021–2025: 32
+Works 2000–2025: 62
+Institution: Technische Universität Dresden
+Country: Germany
+City: Dresden
+Last observed affiliation date: 2025-12-01
+Author ID: https://openalex.org/A5032402362
+ORCID: https://orcid.org/0000-0001-9075-5121
+Evidence work IDs: https://openalex.org/W7117648762
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>13.73832,51.05089,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Daniel Chen — University of Saskatchewan</name>
+      <description>Recent publication rank: 13
+Works 2021–2025: 28
+Works 2000–2025: 49
+Institution: University of Saskatchewan
+Country: Canada
+City: Saskatoon
+Last observed affiliation date: 2025-09-24
+Author ID: https://openalex.org/A5100696404
+ORCID: https://orcid.org/0000-0002-4716-549X
+Evidence work IDs: https://openalex.org/W4414487125
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-106.66892,52.13238,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Qi Gu — Chinese Academy of Sciences</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 27
+Institution: Chinese Academy of Sciences
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-07-01
+Author ID: https://openalex.org/A5061609447
+ORCID: https://orcid.org/0000-0001-9387-9525
+Evidence work IDs: https://openalex.org/W4412827369
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Qi Gu — University of Chinese Academy of Sciences</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 27
+Institution: University of Chinese Academy of Sciences
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-07-01
+Author ID: https://openalex.org/A5061609447
+ORCID: https://orcid.org/0000-0001-9387-9525
+Evidence work IDs: https://openalex.org/W4412827369
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Qi Gu — Institute of Zoology</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 27
+Institution: Institute of Zoology
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-07-01
+Author ID: https://openalex.org/A5061609447
+ORCID: https://orcid.org/0000-0001-9387-9525
+Evidence work IDs: https://openalex.org/W4412827369
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Qi Gu — Beijing Institute for Stem Cell and Regenerative Medicine</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 27
+Institution: Beijing Institute for Stem Cell and Regenerative Medicine
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-07-01
+Author ID: https://openalex.org/A5061609447
+ORCID: https://orcid.org/0000-0001-9387-9525
+Evidence work IDs: https://openalex.org/W4412827369
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>GeunHyung Kim — Sungkyunkwan University</name>
+      <description>Recent publication rank: 4
+Works 2021–2025: 40
+Works 2000–2025: 56
+Institution: Sungkyunkwan University
+Country: South Korea
+City: Suwon
+Last observed affiliation date: 2025-12-19
+Author ID: https://openalex.org/A5019245212
+ORCID: https://orcid.org/0000-0002-2965-2171
+Evidence work IDs: https://openalex.org/W4417507949
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>127.00889,37.29111,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yong He — Second Affiliated Hospital of Zhejiang University</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 51
+Institution: Second Affiliated Hospital of Zhejiang University
+Country: China
+City: Hangzhou
+Last observed affiliation date: 2025-07-30
+Author ID: https://openalex.org/A5100342981
+ORCID: https://orcid.org/0000-0002-9099-0831
+Evidence work IDs: https://openalex.org/W4412762161
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>120.17648315429688,30.25167465209961,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yong He — State Key Laboratory Fluid Power and Mechatronic Systems</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 51
+Institution: State Key Laboratory Fluid Power and Mechatronic Systems
+Country: China
+City: Hangzhou
+Last observed affiliation date: 2025-07-30
+Author ID: https://openalex.org/A5100342981
+ORCID: https://orcid.org/0000-0002-9099-0831
+Evidence work IDs: https://openalex.org/W4412762161
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>120.16142,30.29365,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yong He — Zhejiang University</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 51
+Institution: Zhejiang University
+Country: China
+City: Hangzhou
+Last observed affiliation date: 2025-07-30
+Author ID: https://openalex.org/A5100342981
+ORCID: https://orcid.org/0000-0002-9099-0831
+Evidence work IDs: https://openalex.org/W4412762161
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>120.16142,30.29365,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jeroen Leijten — University of Twente</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 23
+Institution: University of Twente
+Country: Netherlands
+City: Enschede
+Last observed affiliation date: 2025-09-01
+Author ID: https://openalex.org/A5090812801
+ORCID: https://orcid.org/0000-0002-8063-207X
+Evidence work IDs: https://openalex.org/W4414362431
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>6.89583,52.21833,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jürgen Gröll — Universitätsklinikum Würzburg</name>
+      <description>Recent publication rank: 57
+Works 2021–2025: 17
+Works 2000–2025: 34
+Institution: Universitätsklinikum Würzburg
+Country: Germany
+City: Würzburg
+Last observed affiliation date: 2025-11-07
+Author ID: https://openalex.org/A5017257466
+ORCID: https://orcid.org/0000-0003-3167-8466
+Evidence work IDs: https://openalex.org/W4415986346
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>9.95121,49.79391,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jiankang He — National Medical Products Administration</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 20
+Institution: National Medical Products Administration
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-09-02
+Author ID: https://openalex.org/A5031332659
+ORCID: https://orcid.org/0000-0002-9386-5833
+Evidence work IDs: https://openalex.org/W4413931126
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jiankang He — Xi'an Jiaotong University</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 20
+Institution: Xi'an Jiaotong University
+Country: China
+City: Xi'an
+Last observed affiliation date: 2025-09-02
+Author ID: https://openalex.org/A5031332659
+ORCID: https://orcid.org/0000-0002-9386-5833
+Evidence work IDs: https://openalex.org/W4413931126
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>108.92861,34.25833,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ali Tamayol — University of Connecticut</name>
+      <description>Recent publication rank: 46
+Works 2021–2025: 19
+Works 2000–2025: 31
+Institution: University of Connecticut
+Country: United States
+City: Storrs
+Last observed affiliation date: 2024-12-03
+Author ID: https://openalex.org/A5082068459
+ORCID: https://orcid.org/0000-0003-1801-2889
+Evidence work IDs: https://openalex.org/W4404944843
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-72.24952,41.80843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ali Tamayol — UConn Health</name>
+      <description>Recent publication rank: 46
+Works 2021–2025: 19
+Works 2000–2025: 31
+Institution: UConn Health
+Country: United States
+City: Farmington
+Last observed affiliation date: 2024-12-03
+Author ID: https://openalex.org/A5082068459
+ORCID: https://orcid.org/0000-0003-1801-2889
+Evidence work IDs: https://openalex.org/W4404944843
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-72.83204,41.71982,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Grissel Trujillo‐de Santiago — Tecnológico de Monterrey</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 31
+Institution: Tecnológico de Monterrey
+Country: Mexico
+City: Monterrey
+Last observed affiliation date: 2025-11-13
+Author ID: https://openalex.org/A5068221636
+ORCID: https://orcid.org/0000-0001-9230-4607
+Evidence work IDs: https://openalex.org/W4416169037
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-100.31721,25.68435,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mario Moisés Álvarez — Tecnológico de Monterrey</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 31
+Institution: Tecnológico de Monterrey
+Country: Mexico
+City: Monterrey
+Last observed affiliation date: 2025-11-13
+Author ID: https://openalex.org/A5025861420
+ORCID: https://orcid.org/0000-0002-9131-5344
+Evidence work IDs: https://openalex.org/W4416169037
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-100.31721,25.68435,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Hyeongjin Lee — Korea University</name>
+      <description>Recent publication rank: 52
+Works 2021–2025: 18
+Works 2000–2025: 24
+Institution: Korea University
+Country: South Korea
+City: Seoul
+Last observed affiliation date: 2025-10-30
+Author ID: https://openalex.org/A5103059393
+ORCID: https://orcid.org/0000-0002-8922-3870
+Evidence work IDs: https://openalex.org/W4415724611
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>126.9784,37.566,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Keekyoung Kim — University of Calgary</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 24
+Institution: University of Calgary
+Country: Canada
+City: Calgary
+Last observed affiliation date: 2025-08-31
+Author ID: https://openalex.org/A5090097404
+ORCID: https://orcid.org/0000-0002-7442-7117
+Evidence work IDs: https://openalex.org/W4413916381
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-114.08529,51.05011,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Charlotte A. E. Hauser — King Abdullah University of Science and Technology</name>
+      <description>Recent publication rank: 57
+Works 2021–2025: 17
+Works 2000–2025: 25
+Institution: King Abdullah University of Science and Technology
+Country: Saudi Arabia
+City: Jeddah
+Last observed affiliation date: 2023-03-24
+Author ID: https://openalex.org/A5049475925
+ORCID: https://orcid.org/0000-0001-8251-7246
+Evidence work IDs: https://openalex.org/W4360865734
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>39.18624,21.49012,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yongcong Fang — State Key Laboratory of Tribology</name>
+      <description>Recent publication rank: 52
+Works 2021–2025: 18
+Works 2000–2025: 19
+Institution: State Key Laboratory of Tribology
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-10-01
+Author ID: https://openalex.org/A5005755579
+ORCID: https://orcid.org/0000-0002-1582-9474
+Evidence work IDs: https://openalex.org/W4414715726
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723205566406,39.907501220703125,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yongcong Fang — Tsinghua University</name>
+      <description>Recent publication rank: 52
+Works 2021–2025: 18
+Works 2000–2025: 19
+Institution: Tsinghua University
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-10-01
+Author ID: https://openalex.org/A5005755579
+ORCID: https://orcid.org/0000-0002-1582-9474
+Evidence work IDs: https://openalex.org/W4414715726
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Christophe André Marquette — Lyon 1 Université</name>
+      <description>Recent publication rank: 57
+Works 2021–2025: 17
+Works 2000–2025: 28
+Institution: Lyon 1 Université
+Country: France
+City: Villeurbanne
+Last observed affiliation date: 2025-09-09
+Author ID: https://openalex.org/A5101540593
+ORCID: https://orcid.org/0000-0003-3019-0696
+Evidence work IDs: https://openalex.org/W4414082416
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>4.8795,45.76601,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Christophe André Marquette — Centre National de la Recherche Scientifique</name>
+      <description>Recent publication rank: 57
+Works 2021–2025: 17
+Works 2000–2025: 28
+Institution: Centre National de la Recherche Scientifique
+Country: France
+City: Paris
+Last observed affiliation date: 2025-09-09
+Author ID: https://openalex.org/A5101540593
+ORCID: https://orcid.org/0000-0003-3019-0696
+Evidence work IDs: https://openalex.org/W4414082416
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>2.3488,48.85341,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Christophe André Marquette — Institut National des Sciences Appliquées de Lyon</name>
+      <description>Recent publication rank: 57
+Works 2021–2025: 17
+Works 2000–2025: 28
+Institution: Institut National des Sciences Appliquées de Lyon
+Country: France
+City: Lyon
+Last observed affiliation date: 2025-09-09
+Author ID: https://openalex.org/A5101540593
+ORCID: https://orcid.org/0000-0003-3019-0696
+Evidence work IDs: https://openalex.org/W4414082416
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>4.84789,45.74906,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yu Shrike Zhang — Broad Institute</name>
+      <description>Recent publication rank: 1
+Works 2021–2025: 67
+Works 2000–2025: 122
+Institution: Broad Institute
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5067842712
+ORCID: https://orcid.org/0000-0002-0045-0808
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yu Shrike Zhang — Brigham and Women's Hospital</name>
+      <description>Recent publication rank: 1
+Works 2021–2025: 67
+Works 2000–2025: 122
+Institution: Brigham and Women's Hospital
+Country: United States
+City: Boston
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5067842712
+ORCID: https://orcid.org/0000-0002-0045-0808
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.05977,42.35843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yu Shrike Zhang — Harvard University</name>
+      <description>Recent publication rank: 1
+Works 2021–2025: 67
+Works 2000–2025: 122
+Institution: Harvard University
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5067842712
+ORCID: https://orcid.org/0000-0002-0045-0808
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yu Shrike Zhang — Harvard Stem Cell Institute</name>
+      <description>Recent publication rank: 1
+Works 2021–2025: 67
+Works 2000–2025: 122
+Institution: Harvard Stem Cell Institute
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5067842712
+ORCID: https://orcid.org/0000-0002-0045-0808
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.1056137084961,42.375099182128906,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yu Shrike Zhang — Massachusetts Institute of Technology</name>
+      <description>Recent publication rank: 1
+Works 2021–2025: 67
+Works 2000–2025: 122
+Institution: Massachusetts Institute of Technology
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5067842712
+ORCID: https://orcid.org/0000-0002-0045-0808
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sanjairaj Vijayavenkataraman — New York University Abu Dhabi</name>
+      <description>Recent publication rank: 46
+Works 2021–2025: 19
+Works 2000–2025: 32
+Institution: New York University Abu Dhabi
+Country: United Arab Emirates
+City: Abu Dhabi
+Last observed affiliation date: 2025-08-05
+Author ID: https://openalex.org/A5009269751
+ORCID: https://orcid.org/0000-0001-7644-0721
+Evidence work IDs: https://openalex.org/W4412951983
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>54.39696,24.45118,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sanjairaj Vijayavenkataraman — New York University</name>
+      <description>Recent publication rank: 46
+Works 2021–2025: 19
+Works 2000–2025: 32
+Institution: New York University
+Country: United States
+City: New York
+Last observed affiliation date: 2025-08-05
+Author ID: https://openalex.org/A5009269751
+ORCID: https://orcid.org/0000-0001-7644-0721
+Evidence work IDs: https://openalex.org/W4412951983
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-74.00597,40.71427,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Byoung Soo Kim — Pusan National University Yangsan Hospital</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 17
+Institution: Pusan National University Yangsan Hospital
+Country: South Korea
+City: Yangsan
+Last observed affiliation date: 2025-07-07
+Author ID: https://openalex.org/A5101466544
+ORCID: https://orcid.org/0000-0002-6693-0003
+Evidence work IDs: https://openalex.org/W4412097092
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>129.03358,35.34199,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Byoung Soo Kim — Pusan National University</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 17
+Institution: Pusan National University
+Country: South Korea
+City: Busan
+Last observed affiliation date: 2025-07-07
+Author ID: https://openalex.org/A5101466544
+ORCID: https://orcid.org/0000-0002-6693-0003
+Evidence work IDs: https://openalex.org/W4412097092
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>129.03004,35.10168,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Liqun Ning — Cleveland State University</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 35
+Institution: Cleveland State University
+Country: United States
+City: Cleveland
+Last observed affiliation date: 2025-08-26
+Author ID: https://openalex.org/A5032723509
+ORCID: https://orcid.org/0000-0002-3651-7410
+Evidence work IDs: https://openalex.org/W4413637528
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-81.6954116821289,41.4995002746582,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Eben Alsberg — University of Illinois Chicago</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 24
+Institution: University of Illinois Chicago
+Country: United States
+City: Chicago
+Last observed affiliation date: 2025-09-11
+Author ID: https://openalex.org/A5063000923
+ORCID: https://orcid.org/0000-0002-3487-4625
+Evidence work IDs: https://openalex.org/W4414121495
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-87.65005,41.85003,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Eben Alsberg — Jesse Brown VA Medical Center</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 24
+Institution: Jesse Brown VA Medical Center
+Country: United States
+City: Chicago
+Last observed affiliation date: 2025-09-11
+Author ID: https://openalex.org/A5063000923
+ORCID: https://orcid.org/0000-0002-3487-4625
+Evidence work IDs: https://openalex.org/W4414121495
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-87.65005,41.85003,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Daniel John Kelly — Royal College of Surgeons in Ireland</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 37
+Institution: Royal College of Surgeons in Ireland
+Country: Ireland
+City: Dublin
+Last observed affiliation date: 2025-12-29
+Author ID: https://openalex.org/A5045482826
+ORCID: https://orcid.org/0000-0003-4091-0992
+Evidence work IDs: https://openalex.org/W7117456735
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-6.248889923095703,53.33306121826172,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Daniel John Kelly — Trinity College Dublin</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 37
+Institution: Trinity College Dublin
+Country: Ireland
+City: Dublin
+Last observed affiliation date: 2025-12-29
+Author ID: https://openalex.org/A5045482826
+ORCID: https://orcid.org/0000-0003-4091-0992
+Evidence work IDs: https://openalex.org/W7117456735
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-6.248889923095703,53.33306121826172,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Daniel John Kelly — Advanced Materials and BioEngineering Research</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 37
+Institution: Advanced Materials and BioEngineering Research
+Country: Ireland
+City: Dublin
+Last observed affiliation date: 2025-12-29
+Author ID: https://openalex.org/A5045482826
+ORCID: https://orcid.org/0000-0003-4091-0992
+Evidence work IDs: https://openalex.org/W7117456735
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-6.248889923095703,53.33306121826172,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Shinji Sakai — The University of Osaka</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 31
+Institution: The University of Osaka
+Country: Japan
+City: Osaka
+Last observed affiliation date: 2025-12-05
+Author ID: https://openalex.org/A5030157124
+ORCID: https://orcid.org/0000-0002-1041-4798
+Evidence work IDs: https://openalex.org/W4417064585
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>135.50107,34.69379,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dhakshinamoorthy Sundaramurthi — SASTRA University</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 17
+Institution: SASTRA University
+Country: India
+City: Thanjavur
+Last observed affiliation date: 2025-07-02
+Author ID: https://openalex.org/A5018566945
+ORCID: https://orcid.org/0000-0001-5493-3613
+Evidence work IDs: https://openalex.org/W4411956377
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>79.13909,10.78523,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carlos Mota — Maastricht University</name>
+      <description>Recent publication rank: 16
+Works 2021–2025: 27
+Works 2000–2025: 34
+Institution: Maastricht University
+Country: Netherlands
+City: Maastricht
+Last observed affiliation date: 2025-12-26
+Author ID: https://openalex.org/A5058979303
+ORCID: https://orcid.org/0000-0001-5935-6245
+Evidence work IDs: https://openalex.org/W7117327142
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>5.68889,50.84833,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ge Gao — Beijing Institute of Technology</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 15
+Institution: Beijing Institute of Technology
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-06-24
+Author ID: https://openalex.org/A5055694167
+ORCID: https://orcid.org/0000-0003-3328-2879
+Evidence work IDs: https://openalex.org/W4411577116
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sandra Van Vlierberghe — Ghent University</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 23
+Institution: Ghent University
+Country: Belgium
+City: Ghent
+Last observed affiliation date: 2025-11-11
+Author ID: https://openalex.org/A5027016284
+ORCID: https://orcid.org/0000-0001-7688-1682
+Evidence work IDs: https://openalex.org/W4416118258
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>3.71667,51.05,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ting Zhang — State Key Laboratory of Tribology</name>
+      <description>Recent publication rank: 57
+Works 2021–2025: 17
+Works 2000–2025: 18
+Institution: State Key Laboratory of Tribology
+Country: 
+City: Beijing
+Last observed affiliation date: 2025-07-01
+Author ID: https://openalex.org/A5100458309
+ORCID: https://orcid.org/0000-0002-3619-2492
+Evidence work IDs: https://openalex.org/W4412510932
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723205566406,39.907501220703125,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Ting Zhang — Tsinghua University</name>
+      <description>Recent publication rank: 57
+Works 2021–2025: 17
+Works 2000–2025: 18
+Institution: Tsinghua University
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-07-01
+Author ID: https://openalex.org/A5100458309
+ORCID: https://orcid.org/0000-0002-3619-2492
+Evidence work IDs: https://openalex.org/W4412510932
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Swaminathan Sethuraman — SASTRA University</name>
+      <description>Recent publication rank: 57
+Works 2021–2025: 17
+Works 2000–2025: 19
+Institution: SASTRA University
+Country: India
+City: Thanjavur
+Last observed affiliation date: 2025-07-02
+Author ID: https://openalex.org/A5054878329
+ORCID: https://orcid.org/0000-0002-3771-3990
+Evidence work IDs: https://openalex.org/W4411956377
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>79.13909,10.78523,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Changshun Ruan — Chinese Academy of Sciences</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 20
+Institution: Chinese Academy of Sciences
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-11-26
+Author ID: https://openalex.org/A5068419450
+ORCID: https://orcid.org/0000-0001-6320-7189
+Evidence work IDs: https://openalex.org/W4416820245
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Changshun Ruan — Shenzhen Institutes of Advanced Technology</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 20
+Institution: Shenzhen Institutes of Advanced Technology
+Country: China
+City: Shenzhen
+Last observed affiliation date: 2025-11-26
+Author ID: https://openalex.org/A5068419450
+ORCID: https://orcid.org/0000-0001-6320-7189
+Evidence work IDs: https://openalex.org/W4416820245
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>114.0683,22.54554,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Changshun Ruan — University of Chinese Academy of Sciences</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 20
+Institution: University of Chinese Academy of Sciences
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-11-26
+Author ID: https://openalex.org/A5068419450
+ORCID: https://orcid.org/0000-0001-6320-7189
+Evidence work IDs: https://openalex.org/W4416820245
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Huayong Yang — State Key Laboratory Fluid Power and Mechatronic Systems</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 25
+Institution: State Key Laboratory Fluid Power and Mechatronic Systems
+Country: China
+City: Hangzhou
+Last observed affiliation date: 2025-11-12
+Author ID: https://openalex.org/A5017718826
+ORCID: https://orcid.org/0000-0002-3578-5819
+Evidence work IDs: https://openalex.org/W4416155332
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>120.16142,30.29365,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Huayong Yang — Zhejiang University</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 25
+Institution: Zhejiang University
+Country: China
+City: Hangzhou
+Last observed affiliation date: 2025-11-12
+Author ID: https://openalex.org/A5017718826
+ORCID: https://orcid.org/0000-0002-3578-5819
+Evidence work IDs: https://openalex.org/W4416155332
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>120.16142,30.29365,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Adam W. Feinberg — Carnegie Mellon University</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 29
+Institution: Carnegie Mellon University
+Country: United States
+City: Pittsburgh
+Last observed affiliation date: 2025-06-12
+Author ID: https://openalex.org/A5086659893
+ORCID: https://orcid.org/0000-0003-3338-5456
+Evidence work IDs: https://openalex.org/W4386271217
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-79.99589,40.44062,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Vahid Serpooshan — Georgia Institute of Technology</name>
+      <description>Recent publication rank: 16
+Works 2021–2025: 27
+Works 2000–2025: 37
+Institution: Georgia Institute of Technology
+Country: United States
+City: Atlanta
+Last observed affiliation date: 2025-07-22
+Author ID: https://openalex.org/A5090798369
+ORCID: https://orcid.org/0000-0002-5304-095X
+Evidence work IDs: https://openalex.org/W4412558171
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-84.38798,33.749,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Vahid Serpooshan — Emory University</name>
+      <description>Recent publication rank: 16
+Works 2021–2025: 27
+Works 2000–2025: 37
+Institution: Emory University
+Country: United States
+City: Atlanta
+Last observed affiliation date: 2025-07-22
+Author ID: https://openalex.org/A5090798369
+ORCID: https://orcid.org/0000-0002-5304-095X
+Evidence work IDs: https://openalex.org/W4412558171
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-84.38798,33.749,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Vahid Serpooshan — The Wallace H. Coulter Department of Biomedical Engineering</name>
+      <description>Recent publication rank: 16
+Works 2021–2025: 27
+Works 2000–2025: 37
+Institution: The Wallace H. Coulter Department of Biomedical Engineering
+Country: United States
+City: Atlanta
+Last observed affiliation date: 2025-07-22
+Author ID: https://openalex.org/A5090798369
+ORCID: https://orcid.org/0000-0002-5304-095X
+Evidence work IDs: https://openalex.org/W4412558171
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-84.38797760009766,33.749000549316406,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Vahid Serpooshan — Children's Healthcare of Atlanta</name>
+      <description>Recent publication rank: 16
+Works 2021–2025: 27
+Works 2000–2025: 37
+Institution: Children's Healthcare of Atlanta
+Country: United States
+City: Atlanta
+Last observed affiliation date: 2025-07-22
+Author ID: https://openalex.org/A5090798369
+ORCID: https://orcid.org/0000-0002-5304-095X
+Evidence work IDs: https://openalex.org/W4412558171
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-84.38798,33.749,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Stephanie Michelle Willerth — University of Victoria</name>
+      <description>Recent publication rank: 11
+Works 2021–2025: 29
+Works 2000–2025: 45
+Institution: University of Victoria
+Country: Canada
+City: Victoria
+Last observed affiliation date: 2025-11-12
+Author ID: https://openalex.org/A5089438441
+ORCID: https://orcid.org/0000-0002-1665-7723
+Evidence work IDs: https://openalex.org/W4416127968
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-123.35155,48.4359,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Biman B. Mandal — Indian Institute of Technology Guwahati</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 22
+Institution: Indian Institute of Technology Guwahati
+Country: India
+City: Guwahati
+Last observed affiliation date: 2025-09-14
+Author ID: https://openalex.org/A5014552541
+ORCID: https://orcid.org/0000-0003-3936-4621
+Evidence work IDs: https://openalex.org/W4414422833
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>91.74579620361328,26.18440055847168,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>David Kilian — University Hospital Carl Gustav Carus</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 21
+Institution: University Hospital Carl Gustav Carus
+Country: Germany
+City: Dresden
+Last observed affiliation date: 2025-02-25
+Author ID: https://openalex.org/A5018908324
+ORCID: https://orcid.org/0000-0003-3151-3637
+Evidence work IDs: https://openalex.org/W4407945035
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>13.73832,51.05089,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>David Kilian — Technische Universität Dresden</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 21
+Institution: Technische Universität Dresden
+Country: Germany
+City: Dresden
+Last observed affiliation date: 2025-02-25
+Author ID: https://openalex.org/A5018908324
+ORCID: https://orcid.org/0000-0003-3151-3637
+Evidence work IDs: https://openalex.org/W4407945035
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>13.73832,51.05089,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>David Kilian — Stanford University</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 21
+Institution: Stanford University
+Country: United States
+City: Stanford
+Last observed affiliation date: 2025-02-25
+Author ID: https://openalex.org/A5018908324
+ORCID: https://orcid.org/0000-0003-3151-3637
+Evidence work IDs: https://openalex.org/W4407945035
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-122.16608,37.42411,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Khoon S. Lim — The University of Sydney</name>
+      <description>Recent publication rank: 46
+Works 2021–2025: 19
+Works 2000–2025: 28
+Institution: The University of Sydney
+Country: Australia
+City: Sydney
+Last observed affiliation date: 2025-10-16
+Author ID: https://openalex.org/A5015866577
+ORCID: https://orcid.org/0000-0002-2486-196X
+Evidence work IDs: https://openalex.org/W4415263446
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>151.20732,-33.86785,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Aldo Roberto Boccaccini — Friedrich-Alexander-Universität Erlangen-Nürnberg</name>
+      <description>Recent publication rank: 6
+Works 2021–2025: 33
+Works 2000–2025: 42
+Institution: Friedrich-Alexander-Universität Erlangen-Nürnberg
+Country: Germany
+City: Erlangen
+Last observed affiliation date: 2025-12-07
+Author ID: https://openalex.org/A5043592882
+ORCID: https://orcid.org/0000-0002-7377-2955
+Evidence work IDs: https://openalex.org/W4417102398
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>11.00783,49.59099,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jun Yin — State Key Laboratory Fluid Power and Mechatronic Systems</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 21
+Institution: State Key Laboratory Fluid Power and Mechatronic Systems
+Country: China
+City: Hangzhou
+Last observed affiliation date: 2025-03-27
+Author ID: https://openalex.org/A5068080404
+ORCID: https://orcid.org/0000-0002-1937-6812
+Evidence work IDs: https://openalex.org/W4408957190
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>120.16142,30.29365,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jun Yin — Zhejiang University</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 21
+Institution: Zhejiang University
+Country: China
+City: Hangzhou
+Last observed affiliation date: 2025-03-27
+Author ID: https://openalex.org/A5068080404
+ORCID: https://orcid.org/0000-0002-1937-6812
+Evidence work IDs: https://openalex.org/W4408957190
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>120.16142,30.29365,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Marta Klak — Fundacja Badań i Rozwoju Nauki</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 24
+Institution: Fundacja Badań i Rozwoju Nauki
+Country: Poland
+City: Warsaw
+Last observed affiliation date: 2025-10-23
+Author ID: https://openalex.org/A5075690140
+ORCID: https://orcid.org/0000-0003-3901-586X
+Evidence work IDs: https://openalex.org/W4415457238
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>21.01178,52.22977,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Michał Wszola — Fundacja Badań i Rozwoju Nauki</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 24
+Institution: Fundacja Badań i Rozwoju Nauki
+Country: Poland
+City: Warsaw
+Last observed affiliation date: 2025-10-23
+Author ID: https://openalex.org/A5002245829
+ORCID: https://orcid.org/0000-0001-5920-4065
+Evidence work IDs: https://openalex.org/W4415457238
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>21.01178,52.22977,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sushila Maharjan — Brigham and Women's Hospital</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 29
+Institution: Brigham and Women's Hospital
+Country: United States
+City: Boston
+Last observed affiliation date: 2025-07-28
+Author ID: https://openalex.org/A5007552775
+ORCID: https://orcid.org/0000-0003-3957-3976
+Evidence work IDs: https://openalex.org/W4412701137
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.05977,42.35843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sushila Maharjan — Harvard University</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 29
+Institution: Harvard University
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2025-07-28
+Author ID: https://openalex.org/A5007552775
+ORCID: https://orcid.org/0000-0003-3957-3976
+Evidence work IDs: https://openalex.org/W4412701137
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Miji Yeo — Pennsylvania State University</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 17
+Institution: Pennsylvania State University
+Country: United States
+City: State College
+Last observed affiliation date: 2025-09-13
+Author ID: https://openalex.org/A5073352347
+ORCID: https://orcid.org/0009-0003-6475-8603
+Evidence work IDs: https://openalex.org/W4414382355
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-77.86,40.79339,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Xiao Kuang — Brigham and Women's Hospital</name>
+      <description>Recent publication rank: 46
+Works 2021–2025: 19
+Works 2000–2025: 20
+Institution: Brigham and Women's Hospital
+Country: United States
+City: Boston
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5023152887
+ORCID: https://orcid.org/0000-0001-6596-1417
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.05977,42.35843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Xiao Kuang — Harvard University</name>
+      <description>Recent publication rank: 46
+Works 2021–2025: 19
+Works 2000–2025: 20
+Institution: Harvard University
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5023152887
+ORCID: https://orcid.org/0000-0001-6596-1417
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Martin L. Tomov — Georgia Institute of Technology</name>
+      <description>Recent publication rank: 46
+Works 2021–2025: 19
+Works 2000–2025: 26
+Institution: Georgia Institute of Technology
+Country: United States
+City: Atlanta
+Last observed affiliation date: 2025-04-08
+Author ID: https://openalex.org/A5050476826
+ORCID: https://orcid.org/0000-0002-3281-3220
+Evidence work IDs: https://openalex.org/W4409257044
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-84.38798,33.749,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Martin L. Tomov — Emory University</name>
+      <description>Recent publication rank: 46
+Works 2021–2025: 19
+Works 2000–2025: 26
+Institution: Emory University
+Country: United States
+City: Atlanta
+Last observed affiliation date: 2025-04-08
+Author ID: https://openalex.org/A5050476826
+ORCID: https://orcid.org/0000-0002-3281-3220
+Evidence work IDs: https://openalex.org/W4409257044
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-84.38798,33.749,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Martin L. Tomov — The Wallace H. Coulter Department of Biomedical Engineering</name>
+      <description>Recent publication rank: 46
+Works 2021–2025: 19
+Works 2000–2025: 26
+Institution: The Wallace H. Coulter Department of Biomedical Engineering
+Country: United States
+City: Atlanta
+Last observed affiliation date: 2025-04-08
+Author ID: https://openalex.org/A5050476826
+ORCID: https://orcid.org/0000-0002-3281-3220
+Evidence work IDs: https://openalex.org/W4409257044
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-84.38797760009766,33.749000549316406,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jinwu Wang — Shanghai Jiao Tong University</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 17
+Institution: Shanghai Jiao Tong University
+Country: China
+City: Shanghai
+Last observed affiliation date: 2025-05-01
+Author ID: https://openalex.org/A5100709230
+ORCID: https://orcid.org/0000-0003-1411-057X
+Evidence work IDs: https://openalex.org/W4410541754
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>121.45806,31.22222,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jinwu Wang — Shanghai Ninth People's Hospital</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 17
+Institution: Shanghai Ninth People's Hospital
+Country: China
+City: Shanghai
+Last observed affiliation date: 2025-05-01
+Author ID: https://openalex.org/A5100709230
+ORCID: https://orcid.org/0000-0003-1411-057X
+Evidence work IDs: https://openalex.org/W4410541754
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>121.48551940917969,31.202590942382812,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jinwu Wang — Southwest Jiaotong University</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 17
+Institution: Southwest Jiaotong University
+Country: China
+City: Chengdu
+Last observed affiliation date: 2025-05-01
+Author ID: https://openalex.org/A5100709230
+ORCID: https://orcid.org/0000-0003-1411-057X
+Evidence work IDs: https://openalex.org/W4410541754
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>104.06667,30.66667,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Gianluca Cidonio — Italian Institute of Technology</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 18
+Institution: Italian Institute of Technology
+Country: Italy
+City: Genoa
+Last observed affiliation date: 2025-07-23
+Author ID: https://openalex.org/A5014788691
+ORCID: https://orcid.org/0000-0002-9445-6994
+Evidence work IDs: https://openalex.org/W4412618026
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>8.94439,44.40478,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Gianluca Cidonio — Sapienza University of Rome</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 18
+Institution: Sapienza University of Rome
+Country: Italy
+City: Rome
+Last observed affiliation date: 2025-07-23
+Author ID: https://openalex.org/A5014788691
+ORCID: https://orcid.org/0000-0002-9445-6994
+Evidence work IDs: https://openalex.org/W4412618026
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>12.51133,41.89193,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>José Luís Pedraz — University of the Basque Country</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 17
+Institution: University of the Basque Country
+Country: Spain
+City: Leioa
+Last observed affiliation date: 2025-07-18
+Author ID: https://openalex.org/A5070577695
+ORCID: https://orcid.org/0000-0002-3938-2267
+Evidence work IDs: https://openalex.org/W4412724737
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-2.98884,43.32686,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>José Luís Pedraz — Biomedical Research Networking Center in Bioengineering, Biomaterials and Nanomedicine</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 17
+Institution: Biomedical Research Networking Center in Bioengineering, Biomaterials and Nanomedicine
+Country: Spain
+City: Madrid
+Last observed affiliation date: 2025-07-18
+Author ID: https://openalex.org/A5070577695
+ORCID: https://orcid.org/0000-0002-3938-2267
+Evidence work IDs: https://openalex.org/W4412724737
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-3.70256,40.4165,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Peter  S. Timashev — Sechenov University</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 22
+Institution: Sechenov University
+Country: Russia
+City: Moscow
+Last observed affiliation date: 2025-12-12
+Author ID: https://openalex.org/A5086299939
+ORCID: https://orcid.org/0000-0001-7773-2435
+Evidence work IDs: https://openalex.org/W4417268782
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>37.61781,55.75204,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Franca Scocozza — University of Pavia</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 17
+Institution: University of Pavia
+Country: Italy
+City: Pavia
+Last observed affiliation date: 2025-02-20
+Author ID: https://openalex.org/A5057511663
+ORCID: https://orcid.org/0000-0003-0125-3651
+Evidence work IDs: https://openalex.org/W4407782285
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>9.15917,45.19205,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Michele Conti — University of Pavia</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 18
+Institution: University of Pavia
+Country: Italy
+City: Pavia
+Last observed affiliation date: 2025-02-20
+Author ID: https://openalex.org/A5069653622
+ORCID: https://orcid.org/0000-0003-1275-0653
+Evidence work IDs: https://openalex.org/W4407782285
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>9.15917,45.19205,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Michele Conti — IRCCS Policlinico San Donato</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 18
+Institution: IRCCS Policlinico San Donato
+Country: Italy
+City: San Donato Milanese
+Last observed affiliation date: 2025-02-20
+Author ID: https://openalex.org/A5069653622
+ORCID: https://orcid.org/0000-0003-1275-0653
+Evidence work IDs: https://openalex.org/W4407782285
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>9.26838,45.41047,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Daniel John Shiwarski — University of Pittsburgh</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 17
+Institution: University of Pittsburgh
+Country: United States
+City: Pittsburgh
+Last observed affiliation date: 2025-12-12
+Author ID: https://openalex.org/A5030632784
+ORCID: https://orcid.org/0000-0001-6978-303X
+Evidence work IDs: https://openalex.org/W4417279876
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-79.99589,40.44062,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Daniel John Shiwarski — University of Pittsburgh Medical Center</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 17
+Institution: University of Pittsburgh Medical Center
+Country: United States
+City: Pittsburgh
+Last observed affiliation date: 2025-12-12
+Author ID: https://openalex.org/A5030632784
+ORCID: https://orcid.org/0000-0001-6978-303X
+Evidence work IDs: https://openalex.org/W4417279876
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-79.99589,40.44062,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Paulina Núñez Bernal — University Medical Center Utrecht</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 18
+Institution: University Medical Center Utrecht
+Country: Netherlands
+City: Utrecht
+Last observed affiliation date: 2025-09-08
+Author ID: https://openalex.org/A5068324864
+ORCID: https://orcid.org/0000-0002-0875-5438
+Evidence work IDs: https://openalex.org/W4414065912
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>5.12222,52.09083,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yogendra Pratap Singh — Pennsylvania State University</name>
+      <description>Recent publication rank: 57
+Works 2021–2025: 17
+Works 2000–2025: 18
+Institution: Pennsylvania State University
+Country: United States
+City: State College
+Last observed affiliation date: 2025-11-27
+Author ID: https://openalex.org/A5089180739
+ORCID: https://orcid.org/0000-0003-4941-9323
+Evidence work IDs: https://openalex.org/W4417427117
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-77.86,40.79339,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yogendra Pratap Singh — Vellore Institute of Technology University</name>
+      <description>Recent publication rank: 57
+Works 2021–2025: 17
+Works 2000–2025: 18
+Institution: Vellore Institute of Technology University
+Country: India
+City: Vellore
+Last observed affiliation date: 2025-11-27
+Author ID: https://openalex.org/A5089180739
+ORCID: https://orcid.org/0000-0003-4941-9323
+Evidence work IDs: https://openalex.org/W4417427117
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>79.13255,12.9184,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Won-Jin Kim — Sungkyunkwan University</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 24
+Institution: Sungkyunkwan University
+Country: South Korea
+City: Suwon
+Last observed affiliation date: 2025-12-01
+Author ID: https://openalex.org/A5071396425
+ORCID: https://orcid.org/0000-0003-2473-815X
+Evidence work IDs: https://openalex.org/W4416971862
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>127.00889,37.29111,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chengtie Wu — Chinese Academy of Sciences</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 17
+Institution: Chinese Academy of Sciences
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-10-17
+Author ID: https://openalex.org/A5059670783
+ORCID: https://orcid.org/0000-0002-5986-591X
+Evidence work IDs: https://openalex.org/W4415278441
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chengtie Wu — Suzhou Institute of Biomedical Engineering and Technology</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 17
+Institution: Suzhou Institute of Biomedical Engineering and Technology
+Country: China
+City: Suzhou
+Last observed affiliation date: 2025-10-17
+Author ID: https://openalex.org/A5059670783
+ORCID: https://orcid.org/0000-0002-5986-591X
+Evidence work IDs: https://openalex.org/W4415278441
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>120.59538,31.30408,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chengtie Wu — Shanghai Institute of Ceramics</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 17
+Institution: Shanghai Institute of Ceramics
+Country: China
+City: Shanghai
+Last observed affiliation date: 2025-10-17
+Author ID: https://openalex.org/A5059670783
+ORCID: https://orcid.org/0000-0002-5986-591X
+Evidence work IDs: https://openalex.org/W4415278441
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>121.45806121826172,31.222219467163086,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chengtie Wu — University of Chinese Academy of Sciences</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 17
+Institution: University of Chinese Academy of Sciences
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-10-17
+Author ID: https://openalex.org/A5059670783
+ORCID: https://orcid.org/0000-0002-5986-591X
+Evidence work IDs: https://openalex.org/W4415278441
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chengtie Wu — State Key Laboratory of High Performance Ceramics and Superfine Microstructure</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 17
+Institution: State Key Laboratory of High Performance Ceramics and Superfine Microstructure
+Country: China
+City: Shanghai
+Last observed affiliation date: 2025-10-17
+Author ID: https://openalex.org/A5059670783
+ORCID: https://orcid.org/0000-0002-5986-591X
+Evidence work IDs: https://openalex.org/W4415278441
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>121.45806121826172,31.222219467163086,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Huayu Yang — Chinese Academy of Medical Sciences &amp; Peking Union Medical College</name>
+      <description>Recent publication rank: 25
+Works 2021–2025: 22
+Works 2000–2025: 27
+Institution: Chinese Academy of Medical Sciences &amp; Peking Union Medical College
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-12-18
+Author ID: https://openalex.org/A5066205186
+ORCID: https://orcid.org/0000-0001-9791-3559
+Evidence work IDs: https://openalex.org/W4417465560
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Huayu Yang — Peking Union Medical College Hospital</name>
+      <description>Recent publication rank: 25
+Works 2021–2025: 22
+Works 2000–2025: 27
+Institution: Peking Union Medical College Hospital
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-12-18
+Author ID: https://openalex.org/A5066205186
+ORCID: https://orcid.org/0000-0001-9791-3559
+Evidence work IDs: https://openalex.org/W4417465560
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yilei Mao — Chinese Academy of Medical Sciences &amp; Peking Union Medical College</name>
+      <description>Recent publication rank: 52
+Works 2021–2025: 18
+Works 2000–2025: 23
+Institution: Chinese Academy of Medical Sciences &amp; Peking Union Medical College
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-12-18
+Author ID: https://openalex.org/A5088394227
+ORCID: https://orcid.org/0000-0003-0449-4223
+Evidence work IDs: https://openalex.org/W4417465560
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yilei Mao — Peking Union Medical College Hospital</name>
+      <description>Recent publication rank: 52
+Works 2021–2025: 18
+Works 2000–2025: 23
+Institution: Peking Union Medical College Hospital
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-12-18
+Author ID: https://openalex.org/A5088394227
+ORCID: https://orcid.org/0000-0003-0449-4223
+Evidence work IDs: https://openalex.org/W4417465560
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wanlu Li — Brigham and Women's Hospital</name>
+      <description>Recent publication rank: 22
+Works 2021–2025: 25
+Works 2000–2025: 28
+Institution: Brigham and Women's Hospital
+Country: United States
+City: Boston
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5100759492
+ORCID: https://orcid.org/0000-0003-2677-2765
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.05977,42.35843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wanlu Li — Harvard University</name>
+      <description>Recent publication rank: 22
+Works 2021–2025: 25
+Works 2000–2025: 28
+Institution: Harvard University
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5100759492
+ORCID: https://orcid.org/0000-0003-2677-2765
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mh Busra Fauzi — National University of Malaysia</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 21
+Institution: National University of Malaysia
+Country: Malaysia
+City: Bangi
+Last observed affiliation date: 2025-10-02
+Author ID: https://openalex.org/A5069499664
+ORCID: https://orcid.org/0000-0001-6449-639X
+Evidence work IDs: https://openalex.org/W4414756664
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>101.78333,2.9,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Dong‐Wook Han — Pusan National University</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 15
+Institution: Pusan National University
+Country: South Korea
+City: Busan
+Last observed affiliation date: 2025-01-13
+Author ID: https://openalex.org/A5100450847
+ORCID: https://orcid.org/0000-0001-8314-1981
+Evidence work IDs: https://openalex.org/W4407001697
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>129.03004,35.10168,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Guosheng Tang — Brigham and Women's Hospital</name>
+      <description>Recent publication rank: 16
+Works 2021–2025: 27
+Works 2000–2025: 28
+Institution: Brigham and Women's Hospital
+Country: United States
+City: Boston
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5108944334
+ORCID: https://orcid.org/0009-0009-2791-8448
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.05977,42.35843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Guosheng Tang — Harvard University</name>
+      <description>Recent publication rank: 16
+Works 2021–2025: 27
+Works 2000–2025: 28
+Institution: Harvard University
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5108944334
+ORCID: https://orcid.org/0009-0009-2791-8448
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Marimelia  Aparecida Porcionatto — Universidade Federal de São Paulo</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 16
+Institution: Universidade Federal de São Paulo
+Country: Brazil
+City: São Paulo
+Last observed affiliation date: 2025-09-01
+Author ID: https://openalex.org/A5042522822
+ORCID: https://orcid.org/0000-0001-6287-916X
+Evidence work IDs: https://openalex.org/W4414145747
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-46.63611,-23.5475,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wonwoo Jeong — Atrium Health Wake Forest Baptist</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 15
+Institution: Atrium Health Wake Forest Baptist
+Country: United States
+City: Winston-Salem
+Last observed affiliation date: 2025-09-04
+Author ID: https://openalex.org/A5083921866
+ORCID: https://orcid.org/0000-0002-9527-5976
+Evidence work IDs: https://openalex.org/W4413995859
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-80.24422,36.09986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wonwoo Jeong — Wake Forest University Health Sciences</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 15
+Institution: Wake Forest University Health Sciences
+Country: United States
+City: Winston-Salem
+Last observed affiliation date: 2025-09-04
+Author ID: https://openalex.org/A5083921866
+ORCID: https://orcid.org/0000-0002-9527-5976
+Evidence work IDs: https://openalex.org/W4413995859
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-80.24422,36.09986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wonwoo Jeong — Wake Forest University</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 15
+Institution: Wake Forest University
+Country: United States
+City: Winston-Salem
+Last observed affiliation date: 2025-09-04
+Author ID: https://openalex.org/A5083921866
+ORCID: https://orcid.org/0000-0002-9527-5976
+Evidence work IDs: https://openalex.org/W4413995859
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-80.24422,36.09986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Shulamit Levenberg — Technion – Israel Institute of Technology</name>
+      <description>Recent publication rank: 46
+Works 2021–2025: 19
+Works 2000–2025: 19
+Institution: Technion – Israel Institute of Technology
+Country: Israel
+City: Haifa
+Last observed affiliation date: 2025-11-20
+Author ID: https://openalex.org/A5012769290
+ORCID: https://orcid.org/0000-0001-5471-7339
+Evidence work IDs: https://openalex.org/W4416510037
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>34.99928,32.81303,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yi Xiang — University of California San Diego</name>
+      <description>Recent publication rank: 57
+Works 2021–2025: 17
+Works 2000–2025: 17
+Institution: University of California San Diego
+Country: United States
+City: San Diego
+Last observed affiliation date: 2025-10-14
+Author ID: https://openalex.org/A5014811920
+ORCID: https://orcid.org/0000-0002-1154-5802
+Evidence work IDs: https://openalex.org/W4415139512
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-117.16472,32.71571,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mian Wang — Brigham and Women's Hospital</name>
+      <description>Recent publication rank: 24
+Works 2021–2025: 24
+Works 2000–2025: 24
+Institution: Brigham and Women's Hospital
+Country: United States
+City: Boston
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5100784742
+ORCID: https://orcid.org/0000-0001-8311-8394
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.05977,42.35843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Mian Wang — Harvard University</name>
+      <description>Recent publication rank: 24
+Works 2021–2025: 24
+Works 2000–2025: 24
+Institution: Harvard University
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5100784742
+ORCID: https://orcid.org/0000-0001-8311-8394
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carlos Ezio Garciamendez‐Mijares — Brigham and Women's Hospital</name>
+      <description>Recent publication rank: 21
+Works 2021–2025: 26
+Works 2000–2025: 26
+Institution: Brigham and Women's Hospital
+Country: United States
+City: Boston
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5088795495
+ORCID: https://orcid.org/0000-0003-2433-9773
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.05977,42.35843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carlos Ezio Garciamendez‐Mijares — Harvard University</name>
+      <description>Recent publication rank: 21
+Works 2021–2025: 26
+Works 2000–2025: 26
+Institution: Harvard University
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2025-12-08
+Author ID: https://openalex.org/A5088795495
+ORCID: https://orcid.org/0000-0003-2433-9773
+Evidence work IDs: https://openalex.org/W4417128635
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Zhuo Xiong — State Key Laboratory of Tribology</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 21
+Institution: State Key Laboratory of Tribology
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-10-01
+Author ID: https://openalex.org/A5101815723
+ORCID: https://orcid.org/0000-0002-9205-086X
+Evidence work IDs: https://openalex.org/W4414715726
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723205566406,39.907501220703125,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Zhuo Xiong — Tsinghua University</name>
+      <description>Recent publication rank: 28
+Works 2021–2025: 21
+Works 2000–2025: 21
+Institution: Tsinghua University
+Country: China
+City: Beijing
+Last observed affiliation date: 2025-10-01
+Author ID: https://openalex.org/A5101815723
+ORCID: https://orcid.org/0000-0002-9205-086X
+Evidence work IDs: https://openalex.org/W4414715726
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Liming Lian — Brigham and Women's Hospital</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 15
+Institution: Brigham and Women's Hospital
+Country: United States
+City: Boston
+Last observed affiliation date: 2024-08-01
+Author ID: https://openalex.org/A5011548060
+ORCID: https://orcid.org/0000-0002-4350-6744
+Evidence work IDs: https://openalex.org/W4401777383
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.05977,42.35843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Liming Lian — Harvard University</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 15
+Institution: Harvard University
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2024-08-01
+Author ID: https://openalex.org/A5011548060
+ORCID: https://orcid.org/0000-0002-4350-6744
+Evidence work IDs: https://openalex.org/W4401777383
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Maobin Xie — Guangzhou Medical University</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 15
+Institution: Guangzhou Medical University
+Country: China
+City: Guangzhou
+Last observed affiliation date: 2025-06-01
+Author ID: https://openalex.org/A5007943648
+ORCID: https://orcid.org/0000-0001-9082-4510
+Evidence work IDs: https://openalex.org/W4410982188
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>113.25,23.11667,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Di Wang — Brigham and Women's Hospital</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 16
+Institution: Brigham and Women's Hospital
+Country: United States
+City: Boston
+Last observed affiliation date: 2024-08-01
+Author ID: https://openalex.org/A5100401450
+ORCID: https://orcid.org/0000-0002-8904-2981
+Evidence work IDs: https://openalex.org/W4401777383
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.05977,42.35843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Di Wang — Harvard University</name>
+      <description>Recent publication rank: 64
+Works 2021–2025: 16
+Works 2000–2025: 16
+Institution: Harvard University
+Country: United States
+City: Cambridge
+Last observed affiliation date: 2024-08-01
+Author ID: https://openalex.org/A5100401450
+ORCID: https://orcid.org/0000-0002-8904-2981
+Evidence work IDs: https://openalex.org/W4401777383
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kirthanashri Srinivasan Vasanthan — Manipal Academy of Higher Education</name>
+      <description>Recent publication rank: 73
+Works 2021–2025: 15
+Works 2000–2025: 15
+Institution: Manipal Academy of Higher Education
+Country: India
+City: Manipal
+Last observed affiliation date: 2025-12-11
+Author ID: https://openalex.org/A5063348067
+ORCID: https://orcid.org/0000-0003-2115-153X
+Evidence work IDs: https://openalex.org/W4417257909
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>74.78333,13.35,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kaushik Chatterjee — Indian Institute of Science Bangalore</name>
+      <description>Recent publication rank: 90
+Works 2021–2025: 14
+Works 2000–2025: 14
+Institution: Indian Institute of Science Bangalore
+Country: India
+City: Bengaluru
+Last observed affiliation date: 2025-09-24
+Author ID: https://openalex.org/A5066057843
+ORCID: https://orcid.org/0000-0002-7204-2926
+Evidence work IDs: https://openalex.org/W4414476079
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>77.59369,12.97194,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jiacan Su — Shanghai University</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 20
+Institution: Shanghai University
+Country: China
+City: Shanghai
+Last observed affiliation date: 2025-10-06
+Author ID: https://openalex.org/A5108054104
+ORCID: https://orcid.org/0000-0001-7080-263X
+Evidence work IDs: https://openalex.org/W4414841193
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>121.45806121826172,31.222219467163086,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Jiacan Su — XinHua Hospital</name>
+      <description>Recent publication rank: 36
+Works 2021–2025: 20
+Works 2000–2025: 20
+Institution: XinHua Hospital
+Country: China
+City: Shanghai
+Last observed affiliation date: 2025-10-06
+Author ID: https://openalex.org/A5108054104
+ORCID: https://orcid.org/0000-0001-7080-263X
+Evidence work IDs: https://openalex.org/W4414841193
+Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>121.45806,31.22222,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

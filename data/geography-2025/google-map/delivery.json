@@ -1,0 +1,30 @@
+{
+  "created_date": "2026-10-27",
+  "platform": "Google My Maps",
+  "map_id": "1xMICGif7YhqVEFiDnPdq-cAFGzoo6v0",
+  "viewer_url": "https://www.google.com/maps/d/u/0/viewer?mid=1xMICGif7YhqVEFiDnPdq-cAFGzoo6v0&ll=0%2C10&z=1",
+  "editor_url": "https://www.google.com/maps/d/u/0/edit?mid=1xMICGif7YhqVEFiDnPdq-cAFGzoo6v0",
+  "sharing": "Existing owner-account permissions unchanged; not tested signed out",
+  "verified_layer_counts": [
+    19,
+    19,
+    100,
+    1900,
+    2000,
+    1342,
+    172,
+    20
+  ],
+  "total_features": 5572,
+  "default_visible": [
+    "01-companies-2025.csv",
+    "03-affiliations-top100.kml"
+  ],
+  "ui_checks": [
+    "Native imported counts for eight layers",
+    "Company activity/location URLs retained",
+    "Institution counts/OpenAlex/ROR metadata retained",
+    "Viewer layer controls and default visibility"
+  ],
+  "screenshot": "Not included in repository because browser chrome contains account details; project output holds a local screenshot."
+}

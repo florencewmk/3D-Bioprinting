@@ -1,0 +1,1812 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Research affiliations — top 100</name>
+    <Style id="marker">
+      <IconStyle>
+        <color>ffBA5881</color>
+        <scale>1.0</scale>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>Chinese Academy of Sciences</name>
+      <description>Country: China
+City: Beijing
+Recent publication rank: 1
+Works 2021–2025: 145
+Works 2000–2025: 193
+Works 2025: 36
+Institution: https://openalex.org/I19820366
+ROR: https://ror.org/034t30j35
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Harvard University</name>
+      <description>Country: United States
+City: Cambridge
+Recent publication rank: 2
+Works 2021–2025: 131
+Works 2000–2025: 275
+Works 2025: 25
+Institution: https://openalex.org/I136199984
+ROR: https://ror.org/03vek6s52
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.10561,42.3751,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Shanghai Jiao Tong University</name>
+      <description>Country: China
+City: Shanghai
+Recent publication rank: 3
+Works 2021–2025: 116
+Works 2000–2025: 147
+Works 2025: 25
+Institution: https://openalex.org/I183067930
+ROR: https://ror.org/0220qvk04
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>121.45806,31.22222,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tsinghua University</name>
+      <description>Country: China
+City: Beijing
+Recent publication rank: 3
+Works 2021–2025: 116
+Works 2000–2025: 178
+Works 2025: 30
+Institution: https://openalex.org/I99065089
+ROR: https://ror.org/03cve4549
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Zhejiang University</name>
+      <description>Country: China
+City: Hangzhou
+Recent publication rank: 5
+Works 2021–2025: 112
+Works 2000–2025: 174
+Works 2025: 28
+Institution: https://openalex.org/I76130692
+ROR: https://ror.org/00a2xv884
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>120.16142,30.29365,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Brigham and Women's Hospital</name>
+      <description>Country: United States
+City: Boston
+Recent publication rank: 6
+Works 2021–2025: 92
+Works 2000–2025: 206
+Works 2025: 15
+Institution: https://openalex.org/I1283280774
+ROR: https://ror.org/04b6nzv94
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-71.05977,42.35843,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pohang University of Science and Technology</name>
+      <description>Country: South Korea
+City: Pohang
+Recent publication rank: 7
+Works 2021–2025: 81
+Works 2000–2025: 115
+Works 2025: 19
+Institution: https://openalex.org/I123900574
+ROR: https://ror.org/04xysgw12
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>129.36480712890625,36.029170989990234,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sichuan University</name>
+      <description>Country: China
+City: Chengdu
+Recent publication rank: 8
+Works 2021–2025: 79
+Works 2000–2025: 97
+Works 2025: 24
+Institution: https://openalex.org/I24185976
+ROR: https://ror.org/011ashp19
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>104.06667,30.66667,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chinese Academy of Medical Sciences &amp; Peking Union Medical College</name>
+      <description>Country: China
+City: Beijing
+Recent publication rank: 9
+Works 2021–2025: 76
+Works 2000–2025: 91
+Works 2025: 29
+Institution: https://openalex.org/I200296433
+ROR: https://ror.org/02drdmm93
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Chinese Academy of Sciences</name>
+      <description>Country: China
+City: Beijing
+Recent publication rank: 10
+Works 2021–2025: 75
+Works 2000–2025: 86
+Works 2025: 17
+Institution: https://openalex.org/I4210165038
+ROR: https://ror.org/05qbk4x57
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wake Forest University</name>
+      <description>Country: United States
+City: Winston-Salem
+Recent publication rank: 11
+Works 2021–2025: 69
+Works 2000–2025: 153
+Works 2025: 18
+Institution: https://openalex.org/I47251452
+ROR: https://ror.org/0207ad724
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-80.24422,36.09986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Centre National de la Recherche Scientifique</name>
+      <description>Country: France
+City: Paris
+Recent publication rank: 12
+Works 2021–2025: 68
+Works 2000–2025: 100
+Works 2025: 10
+Institution: https://openalex.org/I1294671590
+ROR: https://ror.org/02feahw73
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>2.3488,48.85341,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pennsylvania State University</name>
+      <description>Country: United States
+City: State College
+Recent publication rank: 13
+Works 2021–2025: 65
+Works 2000–2025: 105
+Works 2025: 20
+Institution: https://openalex.org/I130769515
+ROR: https://ror.org/04p491231
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-77.86,40.79339,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Stanford University</name>
+      <description>Country: United States
+City: Stanford
+Recent publication rank: 13
+Works 2021–2025: 65
+Works 2000–2025: 103
+Works 2025: 18
+Institution: https://openalex.org/I97018004
+ROR: https://ror.org/00f54p054
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-122.16608,37.42411,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Yonsei University</name>
+      <description>Country: South Korea
+City: Seoul
+Recent publication rank: 15
+Works 2021–2025: 64
+Works 2000–2025: 74
+Works 2025: 15
+Institution: https://openalex.org/I193775966
+ROR: https://ror.org/01wjejq96
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>126.9784,37.566,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Friedrich-Alexander-Universität Erlangen-Nürnberg</name>
+      <description>Country: Germany
+City: Erlangen
+Recent publication rank: 16
+Works 2021–2025: 63
+Works 2000–2025: 77
+Works 2025: 15
+Institution: https://openalex.org/I181369854
+ROR: https://ror.org/00f7hpc57
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>11.00783,49.59099,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>State Key Laboratory Fluid Power and Mechatronic Systems</name>
+      <description>Country: China
+City: Hangzhou
+Recent publication rank: 17
+Works 2021–2025: 59
+Works 2000–2025: 101
+Works 2025: 12
+Institution: https://openalex.org/I4391767679
+ROR: https://ror.org/01h0g5x34
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>120.16142,30.29365,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>National University of Singapore</name>
+      <description>Country: Singapore
+City: Singapore
+Recent publication rank: 18
+Works 2021–2025: 58
+Works 2000–2025: 86
+Works 2025: 14
+Institution: https://openalex.org/I165932596
+ROR: https://ror.org/01tgyzw49
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>103.85007,1.28967,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Inserm</name>
+      <description>Country: France
+City: Paris
+Recent publication rank: 19
+Works 2021–2025: 57
+Works 2000–2025: 97
+Works 2025: 10
+Institution: https://openalex.org/I154526488
+ROR: https://ror.org/02vjkv261
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>2.3488,48.85341,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>West China Hospital of Sichuan University</name>
+      <description>Country: China
+City: Chengdu
+Recent publication rank: 20
+Works 2021–2025: 56
+Works 2000–2025: 69
+Works 2025: 19
+Institution: https://openalex.org/I4210089761
+ROR: https://ror.org/007mrxy13
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>104.06667,30.66667,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Shanghai Ninth People's Hospital</name>
+      <description>Country: China
+City: Shanghai
+Recent publication rank: 21
+Works 2021–2025: 55
+Works 2000–2025: 69
+Works 2025: 10
+Institution: https://openalex.org/I4210097066
+ROR: https://ror.org/010826a91
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>121.48551940917969,31.202590942382812,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Wake Forest University Health Sciences</name>
+      <description>Country: United States
+City: Winston-Salem
+Recent publication rank: 21
+Works 2021–2025: 55
+Works 2000–2025: 130
+Works 2025: 11
+Institution: https://openalex.org/I4405269449
+ROR: https://ror.org/046r1r105
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-80.24422,36.09986,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Shanghai University</name>
+      <description>Country: China
+City: Shanghai
+Recent publication rank: 23
+Works 2021–2025: 54
+Works 2000–2025: 63
+Works 2025: 12
+Institution: https://openalex.org/I113940042
+ROR: https://ror.org/006teas31
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>121.45806121826172,31.222219467163086,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sungkyunkwan University</name>
+      <description>Country: South Korea
+City: Suwon
+Recent publication rank: 23
+Works 2021–2025: 54
+Works 2000–2025: 76
+Works 2025: 8
+Institution: https://openalex.org/I848706
+ROR: https://ror.org/04q78tk20
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>127.00889,37.29111,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The University of Sydney</name>
+      <description>Country: Australia
+City: Sydney
+Recent publication rank: 23
+Works 2021–2025: 54
+Works 2000–2025: 72
+Works 2025: 13
+Institution: https://openalex.org/I129604602
+ROR: https://ror.org/0384j8v12
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>151.20732,-33.86785,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Biomedical Research Networking Center in Bioengineering, Biomaterials and Nanomedicine</name>
+      <description>Country: Spain
+City: Madrid
+Recent publication rank: 26
+Works 2021–2025: 52
+Works 2000–2025: 68
+Works 2025: 14
+Institution: https://openalex.org/I4210105141
+ROR: https://ror.org/01gm5f004
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-3.70256,40.4165,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>ETH Zurich</name>
+      <description>Country: Switzerland
+City: Zurich
+Recent publication rank: 27
+Works 2021–2025: 51
+Works 2000–2025: 79
+Works 2025: 16
+Institution: https://openalex.org/I35440088
+ROR: https://ror.org/05a28rw58
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>8.55,47.36667,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of British Columbia</name>
+      <description>Country: Canada
+City: Vancouver
+Recent publication rank: 27
+Works 2021–2025: 51
+Works 2000–2025: 79
+Works 2025: 15
+Institution: https://openalex.org/I141945490
+ROR: https://ror.org/03rmrcq20
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-123.11934,49.24966,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Maastricht University</name>
+      <description>Country: Netherlands
+City: Maastricht
+Recent publication rank: 29
+Works 2021–2025: 50
+Works 2000–2025: 66
+Works 2025: 20
+Institution: https://openalex.org/I34352273
+ROR: https://ror.org/02jz4aj89
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>5.68889,50.84833,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>National Research Council</name>
+      <description>Country: Italy
+City: Rome
+Recent publication rank: 29
+Works 2021–2025: 50
+Works 2000–2025: 58
+Works 2025: 17
+Institution: https://openalex.org/I4210155236
+ROR: https://ror.org/04zaypm56
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>12.51133,41.89193,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University Medical Center Utrecht</name>
+      <description>Country: Netherlands
+City: Utrecht
+Recent publication rank: 29
+Works 2021–2025: 50
+Works 2000–2025: 99
+Works 2025: 11
+Institution: https://openalex.org/I3018483916
+ROR: https://ror.org/0575yy874
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>5.12222,52.09083,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Utrecht University</name>
+      <description>Country: Netherlands
+City: Utrecht
+Recent publication rank: 29
+Works 2021–2025: 50
+Works 2000–2025: 94
+Works 2025: 11
+Institution: https://openalex.org/I193662353
+ROR: https://ror.org/04pp8hn57
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>5.12222,52.09083,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Chinese PLA General Hospital</name>
+      <description>Country: China
+City: Beijing
+Recent publication rank: 33
+Works 2021–2025: 49
+Works 2000–2025: 74
+Works 2025: 17
+Institution: https://openalex.org/I2802939634
+ROR: https://ror.org/04gw3ra78
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University College London</name>
+      <description>Country: United Kingdom
+City: London
+Recent publication rank: 33
+Works 2021–2025: 49
+Works 2000–2025: 67
+Works 2025: 9
+Institution: https://openalex.org/I45129253
+ROR: https://ror.org/02jx3x895
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-0.12574,51.50853,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Saveetha University</name>
+      <description>Country: India
+City: Chennai
+Recent publication rank: 35
+Works 2021–2025: 48
+Works 2000–2025: 48
+Works 2025: 28
+Institution: https://openalex.org/I85461943
+ROR: https://ror.org/0034me914
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>80.27847,13.08784,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Seoul National University</name>
+      <description>Country: South Korea
+City: Seoul
+Recent publication rank: 36
+Works 2021–2025: 47
+Works 2000–2025: 64
+Works 2025: 11
+Institution: https://openalex.org/I139264467
+ROR: https://ror.org/04h9pn542
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>126.9784,37.566,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Technology Sydney</name>
+      <description>Country: Australia
+City: Sydney
+Recent publication rank: 36
+Works 2021–2025: 47
+Works 2000–2025: 53
+Works 2025: 12
+Institution: https://openalex.org/I114017466
+ROR: https://ror.org/03f0f6041
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>151.20732,-33.86785,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of the Basque Country</name>
+      <description>Country: Spain
+City: Leioa
+Recent publication rank: 38
+Works 2021–2025: 46
+Works 2000–2025: 51
+Works 2025: 14
+Institution: https://openalex.org/I169108374
+ROR: https://ror.org/000xsnr85
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-2.98884,43.32686,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Politecnico di Milano</name>
+      <description>Country: Italy
+City: Milan
+Recent publication rank: 39
+Works 2021–2025: 45
+Works 2000–2025: 53
+Works 2025: 9
+Institution: https://openalex.org/I93860229
+ROR: https://ror.org/01nffqt88
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>9.18951,45.46427,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>UNSW Sydney</name>
+      <description>Country: Australia
+City: Sydney
+Recent publication rank: 39
+Works 2021–2025: 45
+Works 2000–2025: 53
+Works 2025: 8
+Institution: https://openalex.org/I31746571
+ROR: https://ror.org/03r8z3t63
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>151.20732,-33.86785,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of California San Diego</name>
+      <description>Country: United States
+City: San Diego
+Recent publication rank: 39
+Works 2021–2025: 45
+Works 2000–2025: 77
+Works 2025: 12
+Institution: https://openalex.org/I36258959
+ROR: https://ror.org/0168r3w48
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-117.16472,32.71571,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Pusan National University</name>
+      <description>Country: South Korea
+City: Busan
+Recent publication rank: 42
+Works 2021–2025: 42
+Works 2000–2025: 47
+Works 2025: 13
+Institution: https://openalex.org/I4921948
+ROR: https://ror.org/01an57a31
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>129.03004,35.10168,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Xi'an Jiaotong University</name>
+      <description>Country: China
+City: Xi'an
+Recent publication rank: 42
+Works 2021–2025: 42
+Works 2000–2025: 64
+Works 2025: 8
+Institution: https://openalex.org/I87445476
+ROR: https://ror.org/017zhmm22
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>108.92861,34.25833,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Georgia Institute of Technology</name>
+      <description>Country: United States
+City: Atlanta
+Recent publication rank: 44
+Works 2021–2025: 40
+Works 2000–2025: 61
+Works 2025: 11
+Institution: https://openalex.org/I130701444
+ROR: https://ror.org/01zkghx44
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-84.38798,33.749,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Manipal Academy of Higher Education</name>
+      <description>Country: India
+City: Manipal
+Recent publication rank: 45
+Works 2021–2025: 39
+Works 2000–2025: 40
+Works 2025: 22
+Institution: https://openalex.org/I164861460
+ROR: https://ror.org/02xzytt36
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>74.78333,13.35,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>McGill University</name>
+      <description>Country: Canada
+City: Montreal
+Recent publication rank: 45
+Works 2021–2025: 39
+Works 2000–2025: 50
+Works 2025: 6
+Institution: https://openalex.org/I5023651
+ROR: https://ror.org/01pxwe438
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-73.58781,45.50884,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Nanyang Technological University</name>
+      <description>Country: Singapore
+City: Singapore
+Recent publication rank: 45
+Works 2021–2025: 39
+Works 2000–2025: 111
+Works 2025: 14
+Institution: https://openalex.org/I172675005
+ROR: https://ror.org/02e7b5302
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>103.85007,1.28967,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Technische Universität Dresden</name>
+      <description>Country: Germany
+City: Dresden
+Recent publication rank: 45
+Works 2021–2025: 39
+Works 2000–2025: 65
+Works 2025: 8
+Institution: https://openalex.org/I78650965
+ROR: https://ror.org/042aqky30
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>13.73832,51.05089,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tehran University of Medical Sciences</name>
+      <description>Country: Iran
+City: Tehran
+Recent publication rank: 45
+Works 2021–2025: 39
+Works 2000–2025: 45
+Works 2025: 15
+Institution: https://openalex.org/I70640408
+ROR: https://ror.org/01c4pz451
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>51.42151,35.69439,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Pisa</name>
+      <description>Country: Italy
+City: Pisa
+Recent publication rank: 45
+Works 2021–2025: 39
+Works 2000–2025: 51
+Works 2025: 7
+Institution: https://openalex.org/I108290504
+ROR: https://ror.org/03ad39j10
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>10.4036,43.70853,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Victoria</name>
+      <description>Country: Canada
+City: Victoria
+Recent publication rank: 51
+Works 2021–2025: 38
+Works 2000–2025: 59
+Works 2025: 9
+Institution: https://openalex.org/I212119943
+ROR: https://ror.org/04s5mat29
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-123.35155,48.4359,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Cukurova University</name>
+      <description>Country: Türkiye
+City: Adana
+Recent publication rank: 52
+Works 2021–2025: 37
+Works 2000–2025: 44
+Works 2025: 7
+Institution: https://openalex.org/I55931168
+ROR: https://ror.org/05wxkj555
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>35.32530975341797,36.986148834228516,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Fudan University</name>
+      <description>Country: China
+City: Shanghai
+Recent publication rank: 52
+Works 2021–2025: 37
+Works 2000–2025: 57
+Works 2025: 10
+Institution: https://openalex.org/I24943067
+ROR: https://ror.org/013q1eq08
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>121.45806,31.22222,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Tecnológico de Monterrey</name>
+      <description>Country: Mexico
+City: Monterrey
+Recent publication rank: 52
+Works 2021–2025: 37
+Works 2000–2025: 60
+Works 2025: 9
+Institution: https://openalex.org/I98461037
+ROR: https://ror.org/03ayjn504
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-100.31721,25.68435,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Aveiro</name>
+      <description>Country: Portugal
+City: Aveiro
+Recent publication rank: 52
+Works 2021–2025: 37
+Works 2000–2025: 42
+Works 2025: 7
+Institution: https://openalex.org/I60858718
+ROR: https://ror.org/00nt41z93
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-8.64643,40.64575,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of California, Los Angeles</name>
+      <description>Country: United States
+City: Los Angeles
+Recent publication rank: 52
+Works 2021–2025: 37
+Works 2000–2025: 91
+Works 2025: 8
+Institution: https://openalex.org/I161318765
+ROR: https://ror.org/046rm7j60
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-118.24368,34.05223,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Würzburg</name>
+      <description>Country: Germany
+City: Würzburg
+Recent publication rank: 52
+Works 2021–2025: 37
+Works 2000–2025: 57
+Works 2025: 14
+Institution: https://openalex.org/I25974101
+ROR: https://ror.org/00fbnyb24
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>9.95121,49.79391,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Emory University</name>
+      <description>Country: United States
+City: Atlanta
+Recent publication rank: 58
+Works 2021–2025: 35
+Works 2000–2025: 51
+Works 2025: 9
+Institution: https://openalex.org/I150468666
+ROR: https://ror.org/03czfpz43
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-84.38798,33.749,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Korea University</name>
+      <description>Country: South Korea
+City: Seoul
+Recent publication rank: 58
+Works 2021–2025: 35
+Works 2000–2025: 47
+Works 2025: 10
+Institution: https://openalex.org/I197347611
+ROR: https://ror.org/047dqcg40
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>126.9784,37.566,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Tehran</name>
+      <description>Country: Iran
+City: Tehran
+Recent publication rank: 58
+Works 2021–2025: 35
+Works 2000–2025: 43
+Works 2025: 7
+Institution: https://openalex.org/I23946033
+ROR: https://ror.org/05vf56z40
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>51.42151,35.69439,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Huazhong University of Science and Technology</name>
+      <description>Country: China
+City: Wuhan
+Recent publication rank: 61
+Works 2021–2025: 34
+Works 2000–2025: 57
+Works 2025: 11
+Institution: https://openalex.org/I47720641
+ROR: https://ror.org/00p991c53
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>114.26667,30.58333,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Indian Institute of Science Bangalore</name>
+      <description>Country: India
+City: Bengaluru
+Recent publication rank: 61
+Works 2021–2025: 34
+Works 2000–2025: 36
+Works 2025: 10
+Institution: https://openalex.org/I59270414
+ROR: https://ror.org/04dese585
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>77.59369,12.97194,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Italian Institute of Technology</name>
+      <description>Country: Italy
+City: Genoa
+Recent publication rank: 61
+Works 2021–2025: 34
+Works 2000–2025: 41
+Works 2025: 9
+Institution: https://openalex.org/I30771326
+ROR: https://ror.org/042t93s57
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>8.94439,44.40478,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sun Yat-sen University</name>
+      <description>Country: China
+City: Guangzhou
+Recent publication rank: 61
+Works 2021–2025: 34
+Works 2000–2025: 44
+Works 2025: 12
+Institution: https://openalex.org/I157773358
+ROR: https://ror.org/0064kty71
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>113.25,23.11667,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Amirkabir University of Technology</name>
+      <description>Country: Iran
+City: Tehran
+Recent publication rank: 65
+Works 2021–2025: 33
+Works 2000–2025: 44
+Works 2025: 11
+Institution: https://openalex.org/I158248296
+ROR: https://ror.org/04gzbav43
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>51.42151,35.69439,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>China Medical University</name>
+      <description>Country: China
+City: Shenyang
+Recent publication rank: 65
+Works 2021–2025: 33
+Works 2000–2025: 41
+Works 2025: 12
+Institution: https://openalex.org/I91656880
+ROR: https://ror.org/032d4f246
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>123.43278,41.79222,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Stanford Medicine</name>
+      <description>Country: United States
+City: Stanford
+Recent publication rank: 65
+Works 2021–2025: 33
+Works 2000–2025: 51
+Works 2025: 9
+Institution: https://openalex.org/I4210137306
+ROR: https://ror.org/03mtd9a03
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-122.16608,37.42411,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Hong Kong</name>
+      <description>Country: Hong Kong
+City: Pok Fu Lam
+Recent publication rank: 65
+Works 2021–2025: 33
+Works 2000–2025: 41
+Works 2025: 11
+Institution: https://openalex.org/I889458895
+ROR: https://ror.org/02zhqgq86
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>114.12924,22.26861,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Minho</name>
+      <description>Country: Portugal
+City: Braga
+Recent publication rank: 65
+Works 2021–2025: 33
+Works 2000–2025: 51
+Works 2025: 6
+Institution: https://openalex.org/I99682543
+ROR: https://ror.org/037wpkx04
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-8.42311,41.5514,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Pavia</name>
+      <description>Country: Italy
+City: Pavia
+Recent publication rank: 65
+Works 2021–2025: 33
+Works 2000–2025: 40
+Works 2025: 1
+Institution: https://openalex.org/I25217355
+ROR: https://ror.org/00s6t1f81
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>9.15917,45.19205,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Southern Medical University</name>
+      <description>Country: China
+City: Guangzhou
+Recent publication rank: 71
+Works 2021–2025: 32
+Works 2000–2025: 43
+Works 2025: 11
+Institution: https://openalex.org/I58200834
+ROR: https://ror.org/01vjw4z39
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>113.25,23.116670608520508,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Universidade do Porto</name>
+      <description>Country: Portugal
+City: Porto
+Recent publication rank: 71
+Works 2021–2025: 32
+Works 2000–2025: 41
+Works 2025: 8
+Institution: https://openalex.org/I182534213
+ROR: https://ror.org/043pwc612
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-8.61097,41.1485,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Carnegie Mellon University</name>
+      <description>Country: United States
+City: Pittsburgh
+Recent publication rank: 73
+Works 2021–2025: 31
+Works 2000–2025: 49
+Works 2025: 7
+Institution: https://openalex.org/I74973139
+ROR: https://ror.org/05x2bcf33
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-79.99589,40.44062,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Peking Union Medical College Hospital</name>
+      <description>Country: China
+City: Beijing
+Recent publication rank: 73
+Works 2021–2025: 31
+Works 2000–2025: 37
+Works 2025: 12
+Institution: https://openalex.org/I2801228662
+ROR: https://ror.org/04jztag35
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>116.39723,39.9075,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Manchester</name>
+      <description>Country: United Kingdom
+City: Manchester
+Recent publication rank: 73
+Works 2021–2025: 31
+Works 2000–2025: 53
+Works 2025: 10
+Institution: https://openalex.org/I28407311
+ROR: https://ror.org/027m9bs27
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-2.23743,53.48095,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Saskatchewan</name>
+      <description>Country: Canada
+City: Saskatoon
+Recent publication rank: 73
+Works 2021–2025: 31
+Works 2000–2025: 56
+Works 2025: 6
+Institution: https://openalex.org/I32625721
+ROR: https://ror.org/010x8gc63
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-106.66892,52.13238,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Bavarian Polymer Institute</name>
+      <description>Country: Germany
+City: Bayreuth
+Recent publication rank: 77
+Works 2021–2025: 30
+Works 2000–2025: 43
+Works 2025: 6
+Institution: https://openalex.org/I4210148454
+ROR: https://ror.org/054zwas39
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>11.578929901123047,49.947818756103516,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Royal College of Surgeons in Ireland</name>
+      <description>Country: Ireland
+City: Dublin
+Recent publication rank: 77
+Works 2021–2025: 30
+Works 2000–2025: 44
+Works 2025: 2
+Institution: https://openalex.org/I142762351
+ROR: https://ror.org/01hxy9878
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-6.248889923095703,53.33306121826172,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Shenzhen Institutes of Advanced Technology</name>
+      <description>Country: China
+City: Shenzhen
+Recent publication rank: 77
+Works 2021–2025: 30
+Works 2000–2025: 41
+Works 2025: 10
+Institution: https://openalex.org/I4210145761
+ROR: https://ror.org/04gh4er46
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>114.0683,22.54554,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Universidade Estadual de Campinas (UNICAMP)</name>
+      <description>Country: Brazil
+City: Campinas
+Recent publication rank: 77
+Works 2021–2025: 30
+Works 2000–2025: 39
+Works 2025: 8
+Institution: https://openalex.org/I181391015
+ROR: https://ror.org/04wffgt70
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-47.06083,-22.90556,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Central South University</name>
+      <description>Country: China
+City: Changsha
+Recent publication rank: 81
+Works 2021–2025: 29
+Works 2000–2025: 35
+Works 2025: 7
+Institution: https://openalex.org/I139660479
+ROR: https://ror.org/00f1zfq44
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>112.97087,28.19874,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Indian Institute of Technology Hyderabad</name>
+      <description>Country: India
+City: Sangāreddi
+Recent publication rank: 81
+Works 2021–2025: 29
+Works 2000–2025: 33
+Works 2025: 7
+Institution: https://openalex.org/I65181880
+ROR: https://ror.org/01j4v3x97
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>78.08669,17.62477,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>National University of Malaysia</name>
+      <description>Country: Malaysia
+City: Bangi
+Recent publication rank: 81
+Works 2021–2025: 29
+Works 2000–2025: 36
+Works 2025: 8
+Institution: https://openalex.org/I885383172
+ROR: https://ror.org/00bw8d226
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>101.78333,2.9,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Polish Academy of Sciences</name>
+      <description>Country: Poland
+City: Warsaw
+Recent publication rank: 81
+Works 2021–2025: 29
+Works 2000–2025: 37
+Works 2025: 7
+Institution: https://openalex.org/I99542240
+ROR: https://ror.org/01dr6c206
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>21.01178,52.22977,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Soochow University</name>
+      <description>Country: China
+City: Suzhou
+Recent publication rank: 81
+Works 2021–2025: 29
+Works 2000–2025: 37
+Works 2025: 6
+Institution: https://openalex.org/I3923682
+ROR: https://ror.org/05t8y2r12
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>120.59538,31.30408,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Technion – Israel Institute of Technology</name>
+      <description>Country: Israel
+City: Haifa
+Recent publication rank: 81
+Works 2021–2025: 29
+Works 2000–2025: 34
+Works 2025: 6
+Institution: https://openalex.org/I174306211
+ROR: https://ror.org/03qryx823
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>34.99928,32.81303,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Universidade de São Paulo</name>
+      <description>Country: Brazil
+City: São Paulo
+Recent publication rank: 81
+Works 2021–2025: 29
+Works 2000–2025: 36
+Works 2025: 12
+Institution: https://openalex.org/I17974374
+ROR: https://ror.org/036rp1748
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-46.63611,-23.5475,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Michigan</name>
+      <description>Country: United States
+City: Ann Arbor
+Recent publication rank: 81
+Works 2021–2025: 29
+Works 2000–2025: 33
+Works 2025: 8
+Institution: https://openalex.org/I27837315
+ROR: https://ror.org/00jmfr291
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-83.74088,42.27756,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Zhengzhou University</name>
+      <description>Country: China
+City: Zhengzhou
+Recent publication rank: 81
+Works 2021–2025: 29
+Works 2000–2025: 37
+Works 2025: 2
+Institution: https://openalex.org/I38877650
+ROR: https://ror.org/04ypx8c21
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>113.64861,34.75778,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>3B's Research Group</name>
+      <description>Country: Portugal
+City: Barco
+Recent publication rank: 90
+Works 2021–2025: 28
+Works 2000–2025: 43
+Works 2025: 5
+Institution: https://openalex.org/I4405254055
+ROR: https://ror.org/01bw9nb45
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-7.6014,40.17147,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>KU Leuven</name>
+      <description>Country: Belgium
+City: Leuven
+Recent publication rank: 90
+Works 2021–2025: 28
+Works 2000–2025: 32
+Works 2025: 4
+Institution: https://openalex.org/I99464096
+ROR: https://ror.org/05f950310
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>4.70093,50.87959,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Nanjing University</name>
+      <description>Country: China
+City: Nanjing
+Recent publication rank: 90
+Works 2021–2025: 28
+Works 2000–2025: 34
+Works 2025: 4
+Institution: https://openalex.org/I881766915
+ROR: https://ror.org/01rxvg760
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>118.77778,32.06167,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>The University of Osaka</name>
+      <description>Country: Japan
+City: Osaka
+Recent publication rank: 90
+Works 2021–2025: 28
+Works 2000–2025: 42
+Works 2025: 7
+Institution: https://openalex.org/I98285908
+ROR: https://ror.org/035t8zc32
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>135.50107,34.69379,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Science and Technology of China</name>
+      <description>Country: China
+City: Hefei
+Recent publication rank: 90
+Works 2021–2025: 28
+Works 2000–2025: 32
+Works 2025: 5
+Institution: https://openalex.org/I126520041
+ROR: https://ror.org/04c4dkn09
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>117.28083,31.86389,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Twente</name>
+      <description>Country: Netherlands
+City: Enschede
+Recent publication rank: 90
+Works 2021–2025: 28
+Works 2000–2025: 52
+Works 2025: 6
+Institution: https://openalex.org/I94624287
+ROR: https://ror.org/006hf6230
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>6.89583,52.21833,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Kangwon National University</name>
+      <description>Country: South Korea
+City: Chuncheon
+Recent publication rank: 96
+Works 2021–2025: 27
+Works 2000–2025: 31
+Works 2025: 8
+Institution: https://openalex.org/I165507594
+ROR: https://ror.org/01mh5ph17
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>127.73416900634766,37.87472152709961,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Sapienza University of Rome</name>
+      <description>Country: Italy
+City: Rome
+Recent publication rank: 96
+Works 2021–2025: 27
+Works 2000–2025: 42
+Works 2025: 9
+Institution: https://openalex.org/I861853513
+ROR: https://ror.org/02be6w209
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>12.51133,41.89193,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Southeast University</name>
+      <description>Country: China
+City: Nanjing
+Recent publication rank: 96
+Works 2021–2025: 27
+Works 2000–2025: 38
+Works 2025: 8
+Institution: https://openalex.org/I76569877
+ROR: https://ror.org/04ct4d772
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>118.77778,32.06167,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Trinity College Dublin</name>
+      <description>Country: Ireland
+City: Dublin
+Recent publication rank: 96
+Works 2021–2025: 27
+Works 2000–2025: 44
+Works 2025: 3
+Institution: https://openalex.org/I205274468
+ROR: https://ror.org/02tyrky19
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>-6.248889923095703,53.33306121826172,0</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>University of Cambridge</name>
+      <description>Country: United Kingdom
+City: Cambridge
+Recent publication rank: 96
+Works 2021–2025: 27
+Works 2000–2025: 32
+Works 2025: 6
+Institution: https://openalex.org/I241749
+ROR: https://ror.org/013meh722
+Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.
+Keyword-defined articles/reviews; institution IDs can include parent/child organizations.
+https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
+      <styleUrl>#marker</styleUrl>
+      <Point>
+        <coordinates>0.11667,52.2,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

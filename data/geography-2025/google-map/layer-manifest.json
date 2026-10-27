@@ -1,0 +1,89 @@
+{
+  "source_retrieval_date": "2026-10-27",
+  "source_dataset": "https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025",
+  "map_title": "Bioprinting World Map — Research & Companies through 2025",
+  "layers": [
+    {
+      "file": "01-companies-2025.csv",
+      "layer_title": "Companies — 2025 activity documented",
+      "features": 19,
+      "geometry": "Google geocodes city/country, approximate",
+      "position_column": "Location",
+      "title_column": "Name",
+      "sha256": "b7a523ed638d8c5ce24deabade3c2f2847dceac2d68328ddfe8094809fc52c72"
+    },
+    {
+      "file": "02-companies-other-evidence.csv",
+      "layer_title": "Companies — older or unconfirmed evidence",
+      "features": 19,
+      "geometry": "Google geocodes city/country, approximate",
+      "position_column": "Location",
+      "title_column": "Name",
+      "sha256": "0d45ffb032174e888e30f56038a1d682aa3ed488a9950aef6601ed40b1a9a7ae"
+    },
+    {
+      "file": "03-affiliations-top100.kml",
+      "layer_title": "Research affiliations — top 100",
+      "features": 100,
+      "geometry": "Institution coordinates",
+      "color": "#8158BA",
+      "sha256": "2cde700a40e0fca07582e2373ade10e1bdf6fed19c35f26fcbcda72a7bc33e39"
+    },
+    {
+      "file": "04-affiliations-other-1.kml",
+      "layer_title": "Other affiliations — part 1",
+      "features": 1900,
+      "geometry": "Institution coordinates",
+      "color": "#A894C1",
+      "sha256": "f4d8a6dc69fcd7295cf6be19e74bcf945c65042c5edb5ca0836a7fe2ffb42f98"
+    },
+    {
+      "file": "05-affiliations-other-2.kml",
+      "layer_title": "Other affiliations — part 2",
+      "features": 2000,
+      "geometry": "Institution coordinates",
+      "color": "#A894C1",
+      "sha256": "78d7f3a3e768da161788c262776ca324e3b44056eb70feff04027d6ef4b85463"
+    },
+    {
+      "file": "06-affiliations-other-3.kml",
+      "layer_title": "Other affiliations — part 3",
+      "features": 1342,
+      "geometry": "Institution coordinates",
+      "color": "#A894C1",
+      "sha256": "4310ab2432c4eff56d4da3e2690f2bca57e41b80db7d2899eda335400695e65f"
+    },
+    {
+      "file": "07-authors-top100.kml",
+      "layer_title": "Authors — top 100, institutional locations",
+      "features": 172,
+      "geometry": "Institution coordinates",
+      "color": "#E57A35",
+      "sha256": "3701f2aeaee88846943854966d1153b0750911ebde48f9a9713fd18e85b39de8"
+    },
+    {
+      "file": "08-top20-countries.csv",
+      "layer_title": "Top 20 countries — publications 2000–2025",
+      "features": 20,
+      "geometry": "Google country place-name geocoding",
+      "position_column": "Location",
+      "title_column": "Name",
+      "sha256": "10b7f8279a0b76995a0060b4e352fc2ed467d08dd65920ce40bff7a3dfeac3c9"
+    }
+  ],
+  "total_features": 5572,
+  "affiliation_records": 5343,
+  "mapped_authors": 100,
+  "selected_authors": 100,
+  "unmapped_records": 1,
+  "excluded_company_records": [
+    "Allevi — production ended 2023",
+    "Allegro 3D — grouped under CELLINK"
+  ],
+  "default_visible": [
+    "01-companies-2025.csv",
+    "03-affiliations-top100.kml"
+  ],
+  "company_precision": "City-level Google geocoding, not office coordinates",
+  "author_precision": "Last observed institutional affiliation through 2025; not current person location"
+}
