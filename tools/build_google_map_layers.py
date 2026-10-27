@@ -87,18 +87,17 @@ def main():
         records.append((a['name']+' — '+r['institution_name'],desc,*xy))
     for aid in set(chosen)-located:missing.append({'type':'author','id':aid,'name':chosen[aid]['name'],'reason':'No valid coordinates on last-observed institution links'})
     manifest.append(kml('07-authors-top100.kml','Authors — top 100, institutional locations',records,'E57A35'))
-    for documented,file,title in [(True,'01-companies-2025.csv','Companies — 2025 activity documented'),
-                                  (False,'02-companies-other-evidence.csv','Companies — older or unconfirmed evidence')]:
-        rows=[]
-        for c in companies:
-            if not c['independent_sample_included'] or c['documented_2025_activity']!=documented:continue
-            city=c['city_or_site'].split(' / ')[0].replace(' (Zwijnaarde)','').replace(' (Agia Paraskevi)','').replace(' area','')
-            country=countries.get(c['country_code'],c['country_code'])
-            rows.append({'Name':c['company_name'],'Location':f'{city}, {country}',
-                'Role':c['role'],'Product':c['product_or_platform'],'2025 status':c['status_at_2025_cutoff'],
-                'Evidence and sources':f"Activity: {c['activity_source_url']}\nLocation: {c['location_source_url']}\n{c['notes']}\nCity-level approximation, not a precise office. Location dates are source-specific; current sources retrieved 27 October 2026.\n{SOURCE}"})
-        write_csv(file,rows);manifest.append({'file':file,'layer_title':title,'features':len(rows),
-            'geometry':'Google geocodes city/country, approximate','position_column':'Location','title_column':'Name'})
+    file='01-companies.csv';title='Companies'
+    rows=[]
+    for c in companies:
+        if not c['independent_sample_included']:continue
+        city=c['city_or_site'].split(' / ')[0].replace(' (Zwijnaarde)','').replace(' (Agia Paraskevi)','').replace(' area','')
+        country=countries.get(c['country_code'],c['country_code'])
+        rows.append({'Name':c['company_name'],'Location':f'{city}, {country}',
+            'Role':c['role'],'Product':c['product_or_platform'],'2025 status':c['status_at_2025_cutoff'],
+            'Evidence and sources':f"Activity: {c['activity_source_url']}\nLocation: {c['location_source_url']}\n{c['notes']}\nCity-level approximation, not a precise office. Location dates are source-specific; current sources retrieved 27 October 2026.\n{SOURCE}"})
+    write_csv(file,rows);manifest.append({'file':file,'layer_title':title,'features':len(rows),
+        'geometry':'Google geocodes city/country, approximate','position_column':'Location','title_column':'Name'})
     rows=[]
     for r in read('top20_countries_2000_2025.csv'):
         rows.append({'Name':f"{r['rank_2000_2025']}. {r['country']} — {int(r['works_2000_2025']):,} works",
@@ -114,7 +113,7 @@ def main():
         'layers':manifest,'total_features':sum(r['features'] for r in manifest),
         'affiliation_records':len(institutions),'mapped_authors':len(located),'selected_authors':len(chosen),
         'unmapped_records':len(missing),'excluded_company_records':['Allevi — production ended 2023','Allegro 3D — grouped under CELLINK'],
-        'default_visible':['01-companies-2025.csv','03-affiliations-top100.kml'],
+        'default_visible':['01-companies.csv','03-affiliations-top100.kml'],
         'company_precision':'City-level Google geocoding, not office coordinates',
         'author_precision':'Last observed institutional affiliation through 2025; not current person location'}
     assert summary['total_features']<10000

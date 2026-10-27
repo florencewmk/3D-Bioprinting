@@ -6,8 +6,7 @@
   "editor_url": "https://www.google.com/maps/d/u/0/edit?mid=1xMICGif7YhqVEFiDnPdq-cAFGzoo6v0",
   "sharing": "Existing owner-account permissions unchanged; not tested signed out",
   "verified_layer_counts": [
-    19,
-    19,
+    38,
     100,
     1900,
     2000,
@@ -17,14 +16,14 @@
   ],
   "total_features": 5572,
   "default_visible": [
-    "01-companies-2025.csv",
+    "01-companies.csv",
     "03-affiliations-top100.kml"
   ],
   "ui_checks": [
-    "Native imported counts for eight layers",
-    "Company activity/location URLs retained",
-    "Institution counts/OpenAlex/ROR metadata retained",
+    "Seven layers; one Companies layer with 38 features and uniform style",
+    "Company names and source fields retained",
     "Viewer layer controls and default visibility"
   ],
-  "screenshot": "Not included in repository because browser chrome contains account details; project output holds a local screenshot."
+  "screenshot": "Not included in repository because browser chrome contains account details; project output holds a local screenshot.",
+  "updated_date": "2026-10-27"
 }

@@ -4,22 +4,13 @@
   "map_title": "Bioprinting World Map — Research & Companies through 2025",
   "layers": [
     {
-      "file": "01-companies-2025.csv",
-      "layer_title": "Companies — 2025 activity documented",
-      "features": 19,
+      "file": "01-companies.csv",
+      "layer_title": "Companies",
+      "features": 38,
       "geometry": "Google geocodes city/country, approximate",
       "position_column": "Location",
       "title_column": "Name",
-      "sha256": "b7a523ed638d8c5ce24deabade3c2f2847dceac2d68328ddfe8094809fc52c72"
-    },
-    {
-      "file": "02-companies-other-evidence.csv",
-      "layer_title": "Companies — older or unconfirmed evidence",
-      "features": 19,
-      "geometry": "Google geocodes city/country, approximate",
-      "position_column": "Location",
-      "title_column": "Name",
-      "sha256": "0d45ffb032174e888e30f56038a1d682aa3ed488a9950aef6601ed40b1a9a7ae"
+      "sha256": "3dd1752718b01624faf89297804e321ea0f5bce7e0a05a183d6282d8ccb2bebd"
     },
     {
       "file": "03-affiliations-top100.kml",
@@ -81,7 +72,7 @@
     "Allegro 3D — grouped under CELLINK"
   ],
   "default_visible": [
-    "01-companies-2025.csv",
+    "01-companies.csv",
     "03-affiliations-top100.kml"
   ],
   "company_precision": "City-level Google geocoding, not office coordinates",
