@@ -37,6 +37,7 @@ Horizontal swipes and the mouse wheel also navigate. Link to a specific slide wi
 
 ## Data and sources
 
+- **[Worldwide bioprinting geography through 2025](data/geography-2025/):** Excel workbook and CSV files with top-20 country rankings, full author/affiliation tables, institutional coordinates, and a sourced company register with historical and unconfirmed status flags.
 - **[Publication trends · slide 7](data/publication-trends/):** verified annual counts for 2000–2023, with year-by-year animation. Values for 2024–2026 remain unverified and are shown as missing.
 - **[Organ-transplant timeline · slide 8](data/organ-transplants/):** annual-report snapshots for 2015–2024 and separately flagged 2025 homepage highlights. The 2025 transplant figure is a lower bound; kidney waiting-list figures are from 2024.
 

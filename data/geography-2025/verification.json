@@ -1,0 +1,345 @@
+{
+  "retrieved_date": "2026-10-27",
+  "publication_window": [
+    "2000-01-01",
+    "2025-12-31"
+  ],
+  "recent_window": [
+    "2021-01-01",
+    "2025-12-31"
+  ],
+  "retrieved_rows": 11102,
+  "retrieved_unique_ids_before_date_screen": 11101,
+  "duplicate_rows_removed": 1,
+  "duplicate_ids": [
+    "https://openalex.org/W4286697157"
+  ],
+  "excluded_before_2000": 30,
+  "included_works": 11071,
+  "included_works_2021_2025": 7503,
+  "included_works_2025": 2186,
+  "distinct_country_region_codes": 112,
+  "distinct_affiliation_ids": 5343,
+  "distinct_author_ids": 35300,
+  "works_without_institution_country": 1453,
+  "works_without_institution_country_2021_2025": 791,
+  "works_without_any_institution": 1448,
+  "author_ids_without_last_observed_institution": 3779,
+  "institution_ids_without_current_metadata": [
+    "https://openalex.org/I4210133110"
+  ],
+  "truncated_authorship_work_count": 0,
+  "annual_api_reconciliation": "PASS: all 2000–2025 annual totals match separately archived year aggregation",
+  "fractional_country_reconciliation": "PASS: sums to works with at least one known institution country",
+  "initial_country_api_total": 11103,
+  "initial_year_api_total": 11101,
+  "api_live_update_note": "Initial country query count differs from year/export control; use archived deduplicated corpus, not a splice of live aggregate calls.",
+  "company_records": 40,
+  "company_countries": 21,
+  "company_records_2025_activity_documented": 19,
+  "supplier_sample": 21,
+  "top20_recent_codes": [
+    "CN",
+    "US",
+    "IN",
+    "KR",
+    "DE",
+    "IT",
+    "GB",
+    "CA",
+    "AU",
+    "IR",
+    "ES",
+    "TR",
+    "NL",
+    "BR",
+    "FR",
+    "PL",
+    "RU",
+    "PT",
+    "SG",
+    "CH"
+  ],
+  "page_metadata": [
+    {
+      "file": "historical-001.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-002.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-003.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-004.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-005.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-006.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-007.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-008.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-009.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-010.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-011.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-012.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-013.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-014.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-015.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-016.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-017.json.gz",
+      "count": 3598,
+      "rows": 200
+    },
+    {
+      "file": "historical-018.json.gz",
+      "count": 3598,
+      "rows": 198
+    },
+    {
+      "file": "recent-001.json.gz",
+      "count": 7503,
+      "rows": 200
+    },
+    {
+      "file": "recent-002.json.gz",
+      "count": 7503,
+      "rows": 200
+    },
+    {
+      "file": "recent-003.json.gz",
+      "count": 7503,
+      "rows": 200
+    },
+    {
+      "file": "recent-004.json.gz",
+      "count": 7503,
+      "rows": 200
+    },
+    {
+      "file": "recent-005.json.gz",
+      "count": 7503,
+      "rows": 200
+    },
+    {
+      "file": "recent-006.json.gz",
+      "count": 7503,
+      "rows": 200
+    },
+    {
+      "file": "recent-007.json.gz",
+      "count": 7503,
+      "rows": 200
+    },
+    {
+      "file": "recent-008.json.gz",
+      "count": 7503,
+      "rows": 200
+    },
+    {
+      "file": "recent-009.json.gz",
+      "count": 7503,
+      "rows": 200
+    },
+    {
+      "file": "recent-010.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-011.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-012.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-013.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-014.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-015.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-016.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-017.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-018.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-019.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-020.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-021.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-022.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-023.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-024.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-025.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-026.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-027.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-028.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-029.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-030.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-031.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-032.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-033.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-034.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-035.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-036.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-037.json.gz",
+      "count": 7504,
+      "rows": 200
+    },
+    {
+      "file": "recent-038.json.gz",
+      "count": 7504,
+      "rows": 104
+    }
+  ]
+}

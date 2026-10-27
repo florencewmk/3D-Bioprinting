@@ -1,0 +1,22 @@
+country_code,country,researched_records,independent_company_sample,supplier_sample,companies_with_2025_activity_evidence,suppliers_with_2025_activity_evidence,scope
+CH,Switzerland,4,4,3,1,0,Research sample only; unlisted companies are not zeros in the global population
+DE,Germany,3,3,2,1,0,Research sample only; unlisted companies are not zeros in the global population
+IN,India,2,2,2,1,1,Research sample only; unlisted companies are not zeros in the global population
+KR,South Korea,2,2,2,1,1,Research sample only; unlisted companies are not zeros in the global population
+SE,Sweden,2,2,2,2,2,Research sample only; unlisted companies are not zeros in the global population
+AT,Austria,1,1,1,0,0,Research sample only; unlisted companies are not zeros in the global population
+AU,Australia,1,1,1,1,1,Research sample only; unlisted companies are not zeros in the global population
+BR,Brazil,1,1,1,1,1,Research sample only; unlisted companies are not zeros in the global population
+ES,Spain,1,1,1,1,1,Research sample only; unlisted companies are not zeros in the global population
+FI,Finland,1,1,1,0,0,Research sample only; unlisted companies are not zeros in the global population
+FR,France,2,2,1,1,1,Research sample only; unlisted companies are not zeros in the global population
+JP,Japan,1,1,1,1,1,Research sample only; unlisted companies are not zeros in the global population
+RU,Russia,1,1,1,0,0,Research sample only; unlisted companies are not zeros in the global population
+TR,Türkiye,1,1,1,0,0,Research sample only; unlisted companies are not zeros in the global population
+US,United States,9,7,1,4,0,Research sample only; unlisted companies are not zeros in the global population
+BE,Belgium,1,1,0,0,0,Research sample only; unlisted companies are not zeros in the global population
+CA,Canada,3,3,0,3,0,Research sample only; unlisted companies are not zeros in the global population
+CN,China,1,1,0,0,0,Research sample only; unlisted companies are not zeros in the global population
+GB,United Kingdom,1,1,0,0,0,Research sample only; unlisted companies are not zeros in the global population
+GR,Greece,1,1,0,0,0,Research sample only; unlisted companies are not zeros in the global population
+IL,Israel,1,1,0,1,0,Research sample only; unlisted companies are not zeros in the global population

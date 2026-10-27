@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "notice": "No API key, so this request shares one free daily budget ($0.10) with everyone on your network's IP address. Get a free key with its own $1/day at https://openalex.org/settings/api and add api_key=YOUR_KEY to your requests. An AI agent can get one for its user in one call: POST https://api.openalex.org/api-keys with {\"email\": \"<your user's email>\"}; we email them a link, and the key works once they click it. Docs for agents: https://help.openalex.org/llms.txt",
+    "count": 11101,
+    "db_response_time_ms": 143,
+    "page": 1,
+    "per_page": 200,
+    "groups_count": 47,
+    "x_query": {
+      "oql": "get the count of non-retracted works with (\"bio printed\" OR \"bio printer\" OR \"bio printers\" OR \"bio printing\" OR bioprint*) in the title or abstract where type is ([article](article) or [review](review)) by year through 2025-12-31",
+      "x_new_oql": "get the count of non-retracted works with (\"bio printed\" OR \"bio printer\" OR \"bio printers\" OR \"bio printing\" OR bioprint*) in the title or abstract where type is ([article](article) or [review](review)) by year through 2025-12-31",
+      "oqo": {
+        "get_rows": "works",
+        "filter_rows": [
+          {
+            "column_id": "is_retracted",
+            "value": false
+          },
+          {
+            "column_id": "to_publication_date",
+            "value": "2025-12-31"
+          },
+          {
+            "join": "or",
+            "filters": [
+              {
+                "column_id": "title_and_abstract.search.exact",
+                "value": "\"bio printed\"",
+                "operator": "has"
+              },
+              {
+                "column_id": "title_and_abstract.search.exact",
+                "value": "\"bio printer\"",
+                "operator": "has"
+              },
+              {
+                "column_id": "title_and_abstract.search.exact",
+                "value": "\"bio printers\"",
+                "operator": "has"
+              },
+              {
+                "column_id": "title_and_abstract.search.exact",
+                "value": "\"bio printing\"",
+                "operator": "has"
+              },
+              {
+                "column_id": "title_and_abstract.search.exact",
+                "value": "bioprint*",
+                "operator": "has"
+              }
+            ]
+          },
+          {
+            "join": "or",
+            "filters": [
+              {
+                "column_id": "type",
+                "value": "article"
+              },
+              {
+                "column_id": "type",
+                "value": "review"
+              }
+            ]
+          }
+        ],
+        "group_by": [
+          {
+            "column_id": "publication_year"
+          }
+        ]
+      },
+      "url": "/works?filter=is_retracted:false,to_publication_date:2025-12-31,title_and_abstract.search.exact:%22bio printed%22|%22bio printer%22|%22bio printers%22|%22bio printing%22|bioprint%2A,type:article|review&group_by=publication_year&per_page=200",
+      "order": "oldest first",
+      "order_default": true
+    },
+    "cost_usd": 0.001
+  },
+  "group_by": [
+    {
+      "key": "2025",
+      "key_display_name": "2025",
+      "count": 2186
+    },
+    {
+      "key": "2024",
+      "key_display_name": "2024",
+      "count": 1601
+    },
+    {
+      "key": "2023",
+      "key_display_name": "2023",
+      "count": 1371
+    },
+    {
+      "key": "2022",
+      "key_display_name": "2022",
+      "count": 1244
+    },
+    {
+      "key": "2021",
+      "key_display_name": "2021",
+      "count": 1101
+    },
+    {
+      "key": "2020",
+      "key_display_name": "2020",
+      "count": 871
+    },
+    {
+      "key": "2019",
+      "key_display_name": "2019",
+      "count": 695
+    },
+    {
+      "key": "2018",
+      "key_display_name": "2018",
+      "count": 552
+    },
+    {
+      "key": "2017",
+      "key_display_name": "2017",
+      "count": 467
+    },
+    {
+      "key": "2016",
+      "key_display_name": "2016",
+      "count": 433
+    },
+    {
+      "key": "2015",
+      "key_display_name": "2015",
+      "count": 178
+    },
+    {
+      "key": "2014",
+      "key_display_name": "2014",
+      "count": 110
+    },
+    {
+      "key": "2013",
+      "key_display_name": "2013",
+      "count": 66
+    },
+    {
+      "key": "2012",
+      "key_display_name": "2012",
+      "count": 51
+    },
+    {
+      "key": "2011",
+      "key_display_name": "2011",
+      "count": 46
+    },
+    {
+      "key": "2010",
+      "key_display_name": "2010",
+      "count": 31
+    },
+    {
+      "key": "2009",
+      "key_display_name": "2009",
+      "count": 20
+    },
+    {
+      "key": "2008",
+      "key_display_name": "2008",
+      "count": 13
+    },
+    {
+      "key": "2006",
+      "key_display_name": "2006",
+      "count": 9
+    },
+    {
+      "key": "2007",
+      "key_display_name": "2007",
+      "count": 9
+    },
+    {
+      "key": "2003",
+      "key_display_name": "2003",
+      "count": 4
+    },
+    {
+      "key": "2004",
+      "key_display_name": "2004",
+      "count": 4
+    },
+    {
+      "key": "2005",
+      "key_display_name": "2005",
+      "count": 4
+    },
+    {
+      "key": "1970",
+      "key_display_name": "1970",
+      "count": 3
+    },
+    {
+      "key": "1980",
+      "key_display_name": "1980",
+      "count": 3
+    },
+    {
+      "key": "1950",
+      "key_display_name": "1950",
+      "count": 2
+    },
+    {
+      "key": "1987",
+      "key_display_name": "1987",
+      "count": 2
+    },
+    {
+      "key": "1989",
+      "key_display_name": "1989",
+      "count": 2
+    },
+    {
+      "key": "1991",
+      "key_display_name": "1991",
+      "count": 2
+    },
+    {
+      "key": "1998",
+      "key_display_name": "1998",
+      "count": 2
+    },
+    {
+      "key": "2000",
+      "key_display_name": "2000",
+      "count": 2
+    },
+    {
+      "key": "2001",
+      "key_display_name": "2001",
+      "count": 2
+    },
+    {
+      "key": "1929",
+      "key_display_name": "1929",
+      "count": 1
+    },
+    {
+      "key": "1952",
+      "key_display_name": "1952",
+      "count": 1
+    },
+    {
+      "key": "1954",
+      "key_display_name": "1954",
+      "count": 1
+    },
+    {
+      "key": "1957",
+      "key_display_name": "1957",
+      "count": 1
+    },
+    {
+      "key": "1964",
+      "key_display_name": "1964",
+      "count": 1
+    },
+    {
+      "key": "1981",
+      "key_display_name": "1981",
+      "count": 1
+    },
+    {
+      "key": "1982",
+      "key_display_name": "1982",
+      "count": 1
+    },
+    {
+      "key": "1988",
+      "key_display_name": "1988",
+      "count": 1
+    },
+    {
+      "key": "1990",
+      "key_display_name": "1990",
+      "count": 1
+    },
+    {
+      "key": "1992",
+      "key_display_name": "1992",
+      "count": 1
+    },
+    {
+      "key": "1994",
+      "key_display_name": "1994",
+      "count": 1
+    },
+    {
+      "key": "1995",
+      "key_display_name": "1995",
+      "count": 1
+    },
+    {
+      "key": "1997",
+      "key_display_name": "1997",
+      "count": 1
+    },
+    {
+      "key": "1999",
+      "key_display_name": "1999",
+      "count": 1
+    },
+    {
+      "key": "2002",
+      "key_display_name": "2002",
+      "count": 1
+    }
+  ]
+}
