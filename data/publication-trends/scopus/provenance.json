@@ -1,0 +1,48 @@
+{
+  "database": "Scopus (Elsevier)",
+  "retrieved": "2026-10-27",
+  "year_convention": "Scopus YEAR facet / PUBYEAR as exported",
+  "partial_year": 2026,
+  "sources": {
+    "Laser-assisted": {
+      "raw_file": "data/publication-trends/scopus/raw/laser_assisted_filter_counts_2026-10-27.csv",
+      "sha256": "b6fd3d135d5c344c7be126dd18c703d961f08b2143e02862f187c7c1871403f7",
+      "search_total": 334,
+      "year_sum": 334,
+      "document_types": {
+        "Review": 168,
+        "Article": 166
+      }
+    },
+    "Inkjet": {
+      "raw_file": "data/publication-trends/scopus/raw/inkjet_filter_counts_2026-10-27.csv",
+      "sha256": "4c920afe70c7f5ec3daa78b3c32643d053aa393f16a672f6d66de6f2df5faee4",
+      "search_total": 595,
+      "year_sum": 595,
+      "document_types": {
+        "Article": 317,
+        "Review": 278
+      }
+    },
+    "Stereolithography": {
+      "raw_file": "data/publication-trends/scopus/raw/stereolithography_filter_counts_2026-10-27.csv",
+      "sha256": "eb1e2d497dc03c0418e564d7873e8b905bee3bd5d0e4050ed230722fe9e08bdc",
+      "search_total": 1497,
+      "year_sum": 1497,
+      "document_types": {
+        "Article": 962,
+        "Review": 535
+      }
+    },
+    "Extrusion": {
+      "raw_file": "data/publication-trends/scopus/raw/extrusion_filter_counts_2026-10-27.csv",
+      "sha256": "0073f3bfd473ea53ad238dc24721f6eebfc5355ad54258a0004ae6bc6511eb3f",
+      "search_total": 2515,
+      "year_sum": 2515,
+      "document_types": {
+        "Article": 1977,
+        "Review": 538
+      }
+    }
+  }
+}

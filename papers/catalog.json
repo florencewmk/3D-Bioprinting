@@ -386,5 +386,21 @@
       "status": "full_text_missing",
       "paths": []
     }
+  ],
+  "supplements": [
+    {
+      "title": "Supplementary Information for 3D Bioprinting Current status and trends",
+      "parent_path": "papers/cited/Santoni-2022-3D-Bioprinting-Current-Status-Trends.pdf",
+      "doi": "10.1007/s42242-021-00165-0",
+      "source_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs42242-021-00165-0/MediaObjects/42242_2021_165_MOESM1_ESM.docx",
+      "path": "papers/supplements/Santoni-2022-Supplement.docx",
+      "original_filename": "42242_2021_165_MOESM1_ESM.docx",
+      "retrieved_on": "2026-10-14",
+      "archived_on": "2026-10-27",
+      "bytes": 1655368,
+      "sha256": "27ba398153bb48b43e4e5a2f252f302b0a7a5e537ae2cbb9b1e1d0806fc2a13a",
+      "relationship": "Source of original broad Scopus query; four-technique classifier is newly documented separately",
+      "rights": "Unchanged publisher supplement; third-party notices retained; not covered by repository MIT license"
+    }
   ]
 }

@@ -58,3 +58,7 @@ python3 tools/check_papers.py
 ```
 
 Current reference numbers follow the web deck after removal of the personal introduction. Recheck mappings if references or slide order change.
+
+## Paper supplements
+
+[The Santoni et al. supplement](supplements/Santoni-2022-Supplement.docx) is archived unchanged with its parent reference 7. It provides the original Scopus broad search reused for the [2026 Scopus publication dataset](../data/publication-trends/scopus/). Retrieval, archive date and hash are listed under `supplements` in catalog.json.

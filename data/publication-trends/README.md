@@ -37,3 +37,7 @@ Keep the year convention explicit. In WoS, the default year facet may use the ea
 For 2026, mark the actual retrieval date and **year to date**; it must not be presented as a complete calendar year. If an alternative source is used, rerun the full period under a documented consistent method and keep that series separate from this WoS snapshot.
 
 The presentation shows unavailable years as a separate shaded region with “Not verified”, never as zero-height observed bars. The timeline accepts future verified rows without changing the chart code.
+
+## New Scopus series
+
+[Scopus 2000–2026](scopus/) contains a fresh all-years Elsevier dataset retrieved 27 October 2026, original filter-count exports, exact queries, provenance and an updated chart. 2026 is year-to-date. It is kept separate from this historical WoS snapshot; the presentation has not yet been switched to the new series.
