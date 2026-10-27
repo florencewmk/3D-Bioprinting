@@ -1,6 +1,6 @@
 """Prepare Google My Maps layers from the saved geography snapshot.
 
-KML contains only name/description attributes to stay within My Maps cell limits.
+KML contains name, description and Country to stay within My Maps cell limits.
 Company/country CSVs use Google place-name geocoding at city/country precision.
 """
 import csv
@@ -36,17 +36,19 @@ def kml(name,title,records,color):
     root=ET.Element('{'+NS+'}kml');d=elem(root,'Document');elem(d,'name',title)
     s=elem(d,'Style');s.set('id','marker');ic=elem(s,'IconStyle')
     elem(ic,'color','ff'+color[4:6]+color[2:4]+color[0:2]);elem(ic,'scale','1.0')
-    for label,description,lat,lon in records:
+    for label,description,lat,lon,country in records:
         pm=elem(d,'Placemark');elem(pm,'name',label);elem(pm,'description',description);elem(pm,'styleUrl','#marker')
+        field=elem(elem(pm,'ExtendedData'),'Data');field.set('name','Country');elem(field,'value',country or 'Unknown country')
         elem(elem(pm,'Point'),'coordinates',f'{lon},{lat},0')
     ET.indent(root)
     dest=OUT/name;ET.ElementTree(root).write(dest,encoding='utf-8',xml_declaration=True)
     assert len(records)<=2000 and dest.stat().st_size<5_000_000
-    return {'file':name,'layer_title':title,'features':len(records),'geometry':'Institution coordinates','color':'#'+color}
+    return {'file':name,'layer_title':title,'features':len(records),'geometry':'Institution coordinates','color':'#'+color,
+        'group_by':'Country','country_groups':len({r[4] or 'Unknown country' for r in records})}
 
 def write_csv(name,rows):
     with (OUT/name).open('w',newline='',encoding='utf-8') as f:
-        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
@@ -69,7 +71,7 @@ def main():
                 f"Works 2025: {r['works_2025']}\nInstitution: {r['id']}\nROR: {r['ror']}\n"
                 "Institution point from OpenAlex metadata retrieved 27 October 2026; not a historical campus audit.\n"
                 "Keyword-defined articles/reviews; institution IDs can include parent/child organizations.\n"+SOURCE)
-            records.append((r['name'],desc,*xy))
+            records.append((r['name'],desc,*xy,r['country']))
         manifest.append(kml(name,title,records,color))
     chosen={r['id']:r for r in authors[:100]};records=[];located=set()
     for r in locations:
@@ -84,7 +86,7 @@ def main():
             f"ORCID: {a['orcid']}\nEvidence work IDs: {r['location_source_work_ids']}\n"
             "Point locates an affiliated institution, not a person. Not current employment or nationality. "
             "Multiple markers can represent one author's multiple affiliations.\n"+SOURCE)
-        records.append((a['name']+' — '+r['institution_name'],desc,*xy))
+        records.append((a['name']+' — '+r['institution_name'],desc,*xy,countries.get(r['country_code'],r['country_code'])))
     for aid in set(chosen)-located:missing.append({'type':'author','id':aid,'name':chosen[aid]['name'],'reason':'No valid coordinates on last-observed institution links'})
     manifest.append(kml('07-authors-top100.kml','Authors — top 100, institutional locations',records,'E57A35'))
     file='01-companies.csv';title='Companies'
@@ -93,11 +95,12 @@ def main():
         if not c['independent_sample_included']:continue
         city=c['city_or_site'].split(' / ')[0].replace(' (Zwijnaarde)','').replace(' (Agia Paraskevi)','').replace(' area','')
         country=countries.get(c['country_code'],c['country_code'])
-        rows.append({'Name':c['company_name'],'Location':f'{city}, {country}',
+        rows.append({'Name':c['company_name'],'Location':f'{city}, {country}','Country':country,
             'Role':c['role'],'Product':c['product_or_platform'],'2025 status':c['status_at_2025_cutoff'],
             'Evidence and sources':f"Activity: {c['activity_source_url']}\nLocation: {c['location_source_url']}\n{c['notes']}\nCity-level approximation, not a precise office. Location dates are source-specific; current sources retrieved 27 October 2026.\n{SOURCE}"})
     write_csv(file,rows);manifest.append({'file':file,'layer_title':title,'features':len(rows),
-        'geometry':'Google geocodes city/country, approximate','position_column':'Location','title_column':'Name'})
+        'geometry':'Google geocodes city/country, approximate','position_column':'Location','title_column':'Name',
+        'group_by':'Country','country_groups':len({r['Country'] for r in rows})})
     rows=[]
     for r in read('top20_countries_2000_2025.csv'):
         rows.append({'Name':f"{r['rank_2000_2025']}. {r['country']} — {int(r['works_2000_2025']):,} works",
@@ -114,9 +117,14 @@ def main():
         'affiliation_records':len(institutions),'mapped_authors':len(located),'selected_authors':len(chosen),
         'unmapped_records':len(missing),'excluded_company_records':['Allevi — production ended 2023','Allegro 3D — grouped under CELLINK'],
         'default_visible':['01-companies.csv','03-affiliations-top100.kml'],
+        'country_grouping':{'field':'Country','ui_named_group_limit':20,
+            'overflow_group':'Other / No value','main_checkbox':'Shows or hides every country in that layer'},
+        'estimated_data_cells':sum(r['features']*(3 if r['file'].endswith('.kml') else
+            (7 if r['file']=='01-companies.csv' else 6)) for r in manifest),
         'company_precision':'City-level Google geocoding, not office coordinates',
         'author_precision':'Last observed institutional affiliation through 2025; not current person location'}
     assert summary['total_features']<10000
+    assert summary['estimated_data_cells']<20000
     (OUT/'layer-manifest.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(summary,ensure_ascii=False,indent=2))
 

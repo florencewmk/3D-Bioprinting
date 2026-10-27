@@ -20,10 +20,22 @@
     "03-affiliations-top100.kml"
   ],
   "ui_checks": [
-    "Seven layers; one Companies layer with 38 features and uniform style",
-    "Company names and source fields retained",
-    "Viewer layer controls and default visibility"
+    "Country styles persisted after editor reload on all six entity layers",
+    "All six country-group sums match original feature counts",
+    "Each main checkbox toggled off/on and default visibility restored",
+    "Seven layers, one Companies layer with 38 records",
+    "Viewer country legends and main checkbox visibility",
+    "Viewer main Companies label click toggles the whole layer off/on"
   ],
   "screenshot": "Not included in repository because browser chrome contains account details; project output holds a local screenshot.",
-  "updated_date": "2026-10-27"
+  "updated_date": "2026-10-27",
+  "group_by": "Country",
+  "country_grouping_limits": {
+    "named_groups_per_layer": 20,
+    "overflow": "Other / No value",
+    "other_affiliations_parts": 3,
+    "country_subgroups_are_filters": false,
+    "viewer_overflow_label": "Other / No data"
+  },
+  "verification_file": "country-grouping-verification.json"
 }

@@ -10,7 +10,9 @@
       "geometry": "Google geocodes city/country, approximate",
       "position_column": "Location",
       "title_column": "Name",
-      "sha256": "3dd1752718b01624faf89297804e321ea0f5bce7e0a05a183d6282d8ccb2bebd"
+      "group_by": "Country",
+      "country_groups": 21,
+      "sha256": "cdcc8d603d02a85032669127e0f939b6f42e808600e56e33cfadc30610df203e"
     },
     {
       "file": "03-affiliations-top100.kml",
@@ -18,7 +20,9 @@
       "features": 100,
       "geometry": "Institution coordinates",
       "color": "#8158BA",
-      "sha256": "2cde700a40e0fca07582e2373ade10e1bdf6fed19c35f26fcbcda72a7bc33e39"
+      "group_by": "Country",
+      "country_groups": 26,
+      "sha256": "49770d1a08c287f397bca90aa9d43c68cc86c59fdcce0a731249f656977214de"
     },
     {
       "file": "04-affiliations-other-1.kml",
@@ -26,7 +30,9 @@
       "features": 1900,
       "geometry": "Institution coordinates",
       "color": "#A894C1",
-      "sha256": "f4d8a6dc69fcd7295cf6be19e74bcf945c65042c5edb5ca0836a7fe2ffb42f98"
+      "group_by": "Country",
+      "country_groups": 81,
+      "sha256": "ee89ed242a96b51d9457df3df8dab39a208f6f4fb3e8c6c0198c9b678b3a7bfc"
     },
     {
       "file": "05-affiliations-other-2.kml",
@@ -34,7 +40,9 @@
       "features": 2000,
       "geometry": "Institution coordinates",
       "color": "#A894C1",
-      "sha256": "78d7f3a3e768da161788c262776ca324e3b44056eb70feff04027d6ef4b85463"
+      "group_by": "Country",
+      "country_groups": 100,
+      "sha256": "e156d621e2f346e728f984c78a1509b682c8764650bbc782b0e8877b2aa2d5f6"
     },
     {
       "file": "06-affiliations-other-3.kml",
@@ -42,7 +50,9 @@
       "features": 1342,
       "geometry": "Institution coordinates",
       "color": "#A894C1",
-      "sha256": "4310ab2432c4eff56d4da3e2690f2bca57e41b80db7d2899eda335400695e65f"
+      "group_by": "Country",
+      "country_groups": 93,
+      "sha256": "c7f7f440278982f2f740f516d9914f677f03f112f2f45c6494abaaf9c9d2ab0c"
     },
     {
       "file": "07-authors-top100.kml",
@@ -50,7 +60,9 @@
       "features": 172,
       "geometry": "Institution coordinates",
       "color": "#E57A35",
-      "sha256": "3701f2aeaee88846943854966d1153b0750911ebde48f9a9713fd18e85b39de8"
+      "group_by": "Country",
+      "country_groups": 27,
+      "sha256": "5ae8e2d238937dc16be89ec8407e565d222508b08aeb134a2d38516066f381ec"
     },
     {
       "file": "08-top20-countries.csv",
@@ -59,7 +71,7 @@
       "geometry": "Google country place-name geocoding",
       "position_column": "Location",
       "title_column": "Name",
-      "sha256": "10b7f8279a0b76995a0060b4e352fc2ed467d08dd65920ce40bff7a3dfeac3c9"
+      "sha256": "81484343de6576ee1f4c12c73fc50d59a7a3ac16ef3c2089130b67d23e583d68"
     }
   ],
   "total_features": 5572,
@@ -75,6 +87,13 @@
     "01-companies.csv",
     "03-affiliations-top100.kml"
   ],
+  "country_grouping": {
+    "field": "Country",
+    "ui_named_group_limit": 20,
+    "overflow_group": "Other / No value",
+    "main_checkbox": "Shows or hides every country in that layer"
+  },
+  "estimated_data_cells": 16928,
   "company_precision": "City-level Google geocoding, not office coordinates",
   "author_precision": "Last observed institutional affiliation through 2025; not current person location"
 }

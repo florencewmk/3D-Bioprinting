@@ -23,6 +23,11 @@ Evidence work IDs: https://openalex.org/W4412515645
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-80.24422,36.09986,0</coordinates>
       </Point>
@@ -42,6 +47,11 @@ Evidence work IDs: https://openalex.org/W4412504964
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>114.0683,22.54554,0</coordinates>
       </Point>
@@ -61,6 +71,11 @@ Evidence work IDs: https://openalex.org/W4412504964
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>114.0683,22.54554,0</coordinates>
       </Point>
@@ -80,6 +95,11 @@ Evidence work IDs: https://openalex.org/W4412504964
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -99,6 +119,11 @@ Evidence work IDs: https://openalex.org/W4411706814
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-80.24422,36.09986,0</coordinates>
       </Point>
@@ -118,6 +143,11 @@ Evidence work IDs: https://openalex.org/W4411706814
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-80.24422,36.09986,0</coordinates>
       </Point>
@@ -137,6 +167,11 @@ Evidence work IDs: https://openalex.org/W4398193059
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Australia</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>151.20732,-33.86785,0</coordinates>
       </Point>
@@ -156,6 +191,11 @@ Evidence work IDs: https://openalex.org/W4398193059
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Australia</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>151.20732,-33.86785,0</coordinates>
       </Point>
@@ -175,6 +215,11 @@ Evidence work IDs: https://openalex.org/W4398193059
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Australia</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>151.17754,-33.89835,0</coordinates>
       </Point>
@@ -194,6 +239,11 @@ Evidence work IDs: https://openalex.org/W4401448050
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-118.44550323486328,34.03628158569336,0</coordinates>
       </Point>
@@ -213,6 +263,11 @@ Evidence work IDs: https://openalex.org/W4412174014
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Netherlands</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>5.12222,52.09083,0</coordinates>
       </Point>
@@ -232,6 +287,11 @@ Evidence work IDs: https://openalex.org/W4412174014
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Netherlands</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>5.12222,52.09083,0</coordinates>
       </Point>
@@ -251,6 +311,11 @@ Evidence work IDs: https://openalex.org/W4415461928
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Italy</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>10.4036,43.70853,0</coordinates>
       </Point>
@@ -270,6 +335,11 @@ Evidence work IDs: https://openalex.org/W4408549128
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Italy</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>10.4036,43.70853,0</coordinates>
       </Point>
@@ -289,6 +359,11 @@ Evidence work IDs: https://openalex.org/W7117475736
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Netherlands</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>5.68889,50.84833,0</coordinates>
       </Point>
@@ -308,6 +383,11 @@ Evidence work IDs: https://openalex.org/W4416300221
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>South Korea</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>129.36480712890625,36.029170989990234,0</coordinates>
       </Point>
@@ -327,6 +407,11 @@ Evidence work IDs: https://openalex.org/W4416300221
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>South Korea</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>126.9784,37.566,0</coordinates>
       </Point>
@@ -346,6 +431,11 @@ Evidence work IDs: https://openalex.org/W4414848166
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>South Korea</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>129.36480712890625,36.029170989990234,0</coordinates>
       </Point>
@@ -365,6 +455,11 @@ Evidence work IDs: https://openalex.org/W4414848166
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>South Korea</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>126.9784,37.566,0</coordinates>
       </Point>
@@ -384,6 +479,11 @@ Evidence work IDs: https://openalex.org/W4411921933
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>South Korea</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>129.31667,35.53722,0</coordinates>
       </Point>
@@ -403,6 +503,11 @@ Evidence work IDs: https://openalex.org/W4413995859
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-80.24422,36.09986,0</coordinates>
       </Point>
@@ -422,6 +527,11 @@ Evidence work IDs: https://openalex.org/W4413995859
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-80.24422,36.09986,0</coordinates>
       </Point>
@@ -441,6 +551,11 @@ Evidence work IDs: https://openalex.org/W4413995859
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-80.24422,36.09986,0</coordinates>
       </Point>
@@ -460,6 +575,11 @@ Evidence work IDs: https://openalex.org/W4414773417
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Australia</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>150.89344787597656,-34.42399978637695,0</coordinates>
       </Point>
@@ -479,6 +599,11 @@ Evidence work IDs: https://openalex.org/W4417427117
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-77.86,40.79339,0</coordinates>
       </Point>
@@ -498,6 +623,11 @@ Evidence work IDs: https://openalex.org/W4417427117
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-76.65025,40.28592,0</coordinates>
       </Point>
@@ -517,6 +647,11 @@ Evidence work IDs: https://openalex.org/W4417427117
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Türkiye</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>35.32530975341797,36.986148834228516,0</coordinates>
       </Point>
@@ -536,6 +671,11 @@ Evidence work IDs: https://openalex.org/W4414421174
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Switzerland</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>8.55,47.36667,0</coordinates>
       </Point>
@@ -555,6 +695,11 @@ Evidence work IDs: https://openalex.org/W4414421174
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Switzerland</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>8.55,47.36667,0</coordinates>
       </Point>
@@ -574,6 +719,11 @@ Evidence work IDs: https://openalex.org/W4415139512
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-117.16472,32.71571,0</coordinates>
       </Point>
@@ -593,6 +743,11 @@ Evidence work IDs: https://openalex.org/W4415984172
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723205566406,39.907501220703125,0</coordinates>
       </Point>
@@ -612,6 +767,11 @@ Evidence work IDs: https://openalex.org/W4415984172
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -631,6 +791,11 @@ Evidence work IDs: https://openalex.org/W4415621214
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>India</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>78.08669,17.62477,0</coordinates>
       </Point>
@@ -650,6 +815,11 @@ Evidence work IDs: https://openalex.org/W4417184810
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Netherlands</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>5.12222,52.09083,0</coordinates>
       </Point>
@@ -669,6 +839,11 @@ Evidence work IDs: https://openalex.org/W4417184810
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Netherlands</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>5.12222,52.09083,0</coordinates>
       </Point>
@@ -688,6 +863,11 @@ Evidence work IDs: https://openalex.org/W4416606668
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Portugal</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-8.64643,40.64575,0</coordinates>
       </Point>
@@ -707,6 +887,11 @@ Evidence work IDs: https://openalex.org/W4416411775
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Portugal</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-7.6014,40.17147,0</coordinates>
       </Point>
@@ -726,6 +911,11 @@ Evidence work IDs: https://openalex.org/W4416411775
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Portugal</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-8.42311,41.5514,0</coordinates>
       </Point>
@@ -745,6 +935,11 @@ Evidence work IDs: https://openalex.org/W4412620555
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>India</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>77.21479797363281,28.621370315551758,0</coordinates>
       </Point>
@@ -764,6 +959,11 @@ Evidence work IDs: https://openalex.org/W4413989147
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Singapore</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>103.85007,1.28967,0</coordinates>
       </Point>
@@ -783,6 +983,11 @@ Evidence work IDs: https://openalex.org/W7117648762
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Germany</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>13.73832,51.05089,0</coordinates>
       </Point>
@@ -802,6 +1007,11 @@ Evidence work IDs: https://openalex.org/W7117648762
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Germany</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>13.73832,51.05089,0</coordinates>
       </Point>
@@ -821,6 +1031,11 @@ Evidence work IDs: https://openalex.org/W4414487125
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Canada</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-106.66892,52.13238,0</coordinates>
       </Point>
@@ -840,6 +1055,11 @@ Evidence work IDs: https://openalex.org/W4412827369
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -859,6 +1079,11 @@ Evidence work IDs: https://openalex.org/W4412827369
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -878,6 +1103,11 @@ Evidence work IDs: https://openalex.org/W4412827369
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -897,6 +1127,11 @@ Evidence work IDs: https://openalex.org/W4412827369
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -916,6 +1151,11 @@ Evidence work IDs: https://openalex.org/W4417507949
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>South Korea</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>127.00889,37.29111,0</coordinates>
       </Point>
@@ -935,6 +1175,11 @@ Evidence work IDs: https://openalex.org/W4412762161
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>120.17648315429688,30.25167465209961,0</coordinates>
       </Point>
@@ -954,6 +1199,11 @@ Evidence work IDs: https://openalex.org/W4412762161
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>120.16142,30.29365,0</coordinates>
       </Point>
@@ -973,6 +1223,11 @@ Evidence work IDs: https://openalex.org/W4412762161
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>120.16142,30.29365,0</coordinates>
       </Point>
@@ -992,6 +1247,11 @@ Evidence work IDs: https://openalex.org/W4414362431
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Netherlands</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>6.89583,52.21833,0</coordinates>
       </Point>
@@ -1011,6 +1271,11 @@ Evidence work IDs: https://openalex.org/W4415986346
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Germany</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>9.95121,49.79391,0</coordinates>
       </Point>
@@ -1030,6 +1295,11 @@ Evidence work IDs: https://openalex.org/W4413931126
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -1049,6 +1319,11 @@ Evidence work IDs: https://openalex.org/W4413931126
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>108.92861,34.25833,0</coordinates>
       </Point>
@@ -1068,6 +1343,11 @@ Evidence work IDs: https://openalex.org/W4404944843
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-72.24952,41.80843,0</coordinates>
       </Point>
@@ -1087,6 +1367,11 @@ Evidence work IDs: https://openalex.org/W4404944843
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-72.83204,41.71982,0</coordinates>
       </Point>
@@ -1106,6 +1391,11 @@ Evidence work IDs: https://openalex.org/W4416169037
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Mexico</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-100.31721,25.68435,0</coordinates>
       </Point>
@@ -1125,6 +1415,11 @@ Evidence work IDs: https://openalex.org/W4416169037
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Mexico</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-100.31721,25.68435,0</coordinates>
       </Point>
@@ -1144,6 +1439,11 @@ Evidence work IDs: https://openalex.org/W4415724611
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>South Korea</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>126.9784,37.566,0</coordinates>
       </Point>
@@ -1163,6 +1463,11 @@ Evidence work IDs: https://openalex.org/W4413916381
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Canada</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-114.08529,51.05011,0</coordinates>
       </Point>
@@ -1182,6 +1487,11 @@ Evidence work IDs: https://openalex.org/W4360865734
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Saudi Arabia</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>39.18624,21.49012,0</coordinates>
       </Point>
@@ -1201,6 +1511,11 @@ Evidence work IDs: https://openalex.org/W4414715726
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723205566406,39.907501220703125,0</coordinates>
       </Point>
@@ -1220,6 +1535,11 @@ Evidence work IDs: https://openalex.org/W4414715726
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -1239,6 +1559,11 @@ Evidence work IDs: https://openalex.org/W4414082416
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>France</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>4.8795,45.76601,0</coordinates>
       </Point>
@@ -1258,6 +1583,11 @@ Evidence work IDs: https://openalex.org/W4414082416
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>France</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>2.3488,48.85341,0</coordinates>
       </Point>
@@ -1277,6 +1607,11 @@ Evidence work IDs: https://openalex.org/W4414082416
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>France</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>4.84789,45.74906,0</coordinates>
       </Point>
@@ -1296,6 +1631,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.10561,42.3751,0</coordinates>
       </Point>
@@ -1315,6 +1655,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.05977,42.35843,0</coordinates>
       </Point>
@@ -1334,6 +1679,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.10561,42.3751,0</coordinates>
       </Point>
@@ -1353,6 +1703,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.1056137084961,42.375099182128906,0</coordinates>
       </Point>
@@ -1372,6 +1727,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.10561,42.3751,0</coordinates>
       </Point>
@@ -1391,6 +1751,11 @@ Evidence work IDs: https://openalex.org/W4412951983
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United Arab Emirates</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>54.39696,24.45118,0</coordinates>
       </Point>
@@ -1410,6 +1775,11 @@ Evidence work IDs: https://openalex.org/W4412951983
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-74.00597,40.71427,0</coordinates>
       </Point>
@@ -1429,6 +1799,11 @@ Evidence work IDs: https://openalex.org/W4412097092
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>South Korea</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>129.03358,35.34199,0</coordinates>
       </Point>
@@ -1448,6 +1823,11 @@ Evidence work IDs: https://openalex.org/W4412097092
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>South Korea</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>129.03004,35.10168,0</coordinates>
       </Point>
@@ -1467,6 +1847,11 @@ Evidence work IDs: https://openalex.org/W4413637528
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-81.6954116821289,41.4995002746582,0</coordinates>
       </Point>
@@ -1486,6 +1871,11 @@ Evidence work IDs: https://openalex.org/W4414121495
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-87.65005,41.85003,0</coordinates>
       </Point>
@@ -1505,6 +1895,11 @@ Evidence work IDs: https://openalex.org/W4414121495
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-87.65005,41.85003,0</coordinates>
       </Point>
@@ -1524,6 +1919,11 @@ Evidence work IDs: https://openalex.org/W7117456735
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Ireland</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-6.248889923095703,53.33306121826172,0</coordinates>
       </Point>
@@ -1543,6 +1943,11 @@ Evidence work IDs: https://openalex.org/W7117456735
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Ireland</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-6.248889923095703,53.33306121826172,0</coordinates>
       </Point>
@@ -1562,6 +1967,11 @@ Evidence work IDs: https://openalex.org/W7117456735
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Ireland</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-6.248889923095703,53.33306121826172,0</coordinates>
       </Point>
@@ -1581,6 +1991,11 @@ Evidence work IDs: https://openalex.org/W4417064585
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Japan</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>135.50107,34.69379,0</coordinates>
       </Point>
@@ -1600,6 +2015,11 @@ Evidence work IDs: https://openalex.org/W4411956377
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>India</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>79.13909,10.78523,0</coordinates>
       </Point>
@@ -1619,6 +2039,11 @@ Evidence work IDs: https://openalex.org/W7117327142
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Netherlands</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>5.68889,50.84833,0</coordinates>
       </Point>
@@ -1638,6 +2063,11 @@ Evidence work IDs: https://openalex.org/W4411577116
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -1657,6 +2087,11 @@ Evidence work IDs: https://openalex.org/W4416118258
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Belgium</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>3.71667,51.05,0</coordinates>
       </Point>
@@ -1676,6 +2111,11 @@ Evidence work IDs: https://openalex.org/W4412510932
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Unknown country</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723205566406,39.907501220703125,0</coordinates>
       </Point>
@@ -1695,6 +2135,11 @@ Evidence work IDs: https://openalex.org/W4412510932
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -1714,6 +2159,11 @@ Evidence work IDs: https://openalex.org/W4411956377
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>India</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>79.13909,10.78523,0</coordinates>
       </Point>
@@ -1733,6 +2183,11 @@ Evidence work IDs: https://openalex.org/W4416820245
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -1752,6 +2207,11 @@ Evidence work IDs: https://openalex.org/W4416820245
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>114.0683,22.54554,0</coordinates>
       </Point>
@@ -1771,6 +2231,11 @@ Evidence work IDs: https://openalex.org/W4416820245
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -1790,6 +2255,11 @@ Evidence work IDs: https://openalex.org/W4416155332
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>120.16142,30.29365,0</coordinates>
       </Point>
@@ -1809,6 +2279,11 @@ Evidence work IDs: https://openalex.org/W4416155332
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>120.16142,30.29365,0</coordinates>
       </Point>
@@ -1828,6 +2303,11 @@ Evidence work IDs: https://openalex.org/W4386271217
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-79.99589,40.44062,0</coordinates>
       </Point>
@@ -1847,6 +2327,11 @@ Evidence work IDs: https://openalex.org/W4412558171
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-84.38798,33.749,0</coordinates>
       </Point>
@@ -1866,6 +2351,11 @@ Evidence work IDs: https://openalex.org/W4412558171
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-84.38798,33.749,0</coordinates>
       </Point>
@@ -1885,6 +2375,11 @@ Evidence work IDs: https://openalex.org/W4412558171
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-84.38797760009766,33.749000549316406,0</coordinates>
       </Point>
@@ -1904,6 +2399,11 @@ Evidence work IDs: https://openalex.org/W4412558171
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-84.38798,33.749,0</coordinates>
       </Point>
@@ -1923,6 +2423,11 @@ Evidence work IDs: https://openalex.org/W4416127968
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Canada</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-123.35155,48.4359,0</coordinates>
       </Point>
@@ -1942,6 +2447,11 @@ Evidence work IDs: https://openalex.org/W4414422833
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>India</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>91.74579620361328,26.18440055847168,0</coordinates>
       </Point>
@@ -1961,6 +2471,11 @@ Evidence work IDs: https://openalex.org/W4407945035
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Germany</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>13.73832,51.05089,0</coordinates>
       </Point>
@@ -1980,6 +2495,11 @@ Evidence work IDs: https://openalex.org/W4407945035
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Germany</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>13.73832,51.05089,0</coordinates>
       </Point>
@@ -1999,6 +2519,11 @@ Evidence work IDs: https://openalex.org/W4407945035
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-122.16608,37.42411,0</coordinates>
       </Point>
@@ -2018,6 +2543,11 @@ Evidence work IDs: https://openalex.org/W4415263446
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Australia</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>151.20732,-33.86785,0</coordinates>
       </Point>
@@ -2037,6 +2567,11 @@ Evidence work IDs: https://openalex.org/W4417102398
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Germany</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>11.00783,49.59099,0</coordinates>
       </Point>
@@ -2056,6 +2591,11 @@ Evidence work IDs: https://openalex.org/W4408957190
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>120.16142,30.29365,0</coordinates>
       </Point>
@@ -2075,6 +2615,11 @@ Evidence work IDs: https://openalex.org/W4408957190
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>120.16142,30.29365,0</coordinates>
       </Point>
@@ -2094,6 +2639,11 @@ Evidence work IDs: https://openalex.org/W4415457238
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Poland</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>21.01178,52.22977,0</coordinates>
       </Point>
@@ -2113,6 +2663,11 @@ Evidence work IDs: https://openalex.org/W4415457238
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Poland</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>21.01178,52.22977,0</coordinates>
       </Point>
@@ -2132,6 +2687,11 @@ Evidence work IDs: https://openalex.org/W4412701137
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.05977,42.35843,0</coordinates>
       </Point>
@@ -2151,6 +2711,11 @@ Evidence work IDs: https://openalex.org/W4412701137
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.10561,42.3751,0</coordinates>
       </Point>
@@ -2170,6 +2735,11 @@ Evidence work IDs: https://openalex.org/W4414382355
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-77.86,40.79339,0</coordinates>
       </Point>
@@ -2189,6 +2759,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.05977,42.35843,0</coordinates>
       </Point>
@@ -2208,6 +2783,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.10561,42.3751,0</coordinates>
       </Point>
@@ -2227,6 +2807,11 @@ Evidence work IDs: https://openalex.org/W4409257044
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-84.38798,33.749,0</coordinates>
       </Point>
@@ -2246,6 +2831,11 @@ Evidence work IDs: https://openalex.org/W4409257044
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-84.38798,33.749,0</coordinates>
       </Point>
@@ -2265,6 +2855,11 @@ Evidence work IDs: https://openalex.org/W4409257044
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-84.38797760009766,33.749000549316406,0</coordinates>
       </Point>
@@ -2284,6 +2879,11 @@ Evidence work IDs: https://openalex.org/W4410541754
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>121.45806,31.22222,0</coordinates>
       </Point>
@@ -2303,6 +2903,11 @@ Evidence work IDs: https://openalex.org/W4410541754
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>121.48551940917969,31.202590942382812,0</coordinates>
       </Point>
@@ -2322,6 +2927,11 @@ Evidence work IDs: https://openalex.org/W4410541754
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>104.06667,30.66667,0</coordinates>
       </Point>
@@ -2341,6 +2951,11 @@ Evidence work IDs: https://openalex.org/W4412618026
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Italy</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>8.94439,44.40478,0</coordinates>
       </Point>
@@ -2360,6 +2975,11 @@ Evidence work IDs: https://openalex.org/W4412618026
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Italy</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>12.51133,41.89193,0</coordinates>
       </Point>
@@ -2379,6 +2999,11 @@ Evidence work IDs: https://openalex.org/W4412724737
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Spain</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-2.98884,43.32686,0</coordinates>
       </Point>
@@ -2398,6 +3023,11 @@ Evidence work IDs: https://openalex.org/W4412724737
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Spain</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-3.70256,40.4165,0</coordinates>
       </Point>
@@ -2417,6 +3047,11 @@ Evidence work IDs: https://openalex.org/W4417268782
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Russia</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>37.61781,55.75204,0</coordinates>
       </Point>
@@ -2436,6 +3071,11 @@ Evidence work IDs: https://openalex.org/W4407782285
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Italy</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>9.15917,45.19205,0</coordinates>
       </Point>
@@ -2455,6 +3095,11 @@ Evidence work IDs: https://openalex.org/W4407782285
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Italy</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>9.15917,45.19205,0</coordinates>
       </Point>
@@ -2474,6 +3119,11 @@ Evidence work IDs: https://openalex.org/W4407782285
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Italy</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>9.26838,45.41047,0</coordinates>
       </Point>
@@ -2493,6 +3143,11 @@ Evidence work IDs: https://openalex.org/W4417279876
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-79.99589,40.44062,0</coordinates>
       </Point>
@@ -2512,6 +3167,11 @@ Evidence work IDs: https://openalex.org/W4417279876
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-79.99589,40.44062,0</coordinates>
       </Point>
@@ -2531,6 +3191,11 @@ Evidence work IDs: https://openalex.org/W4414065912
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Netherlands</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>5.12222,52.09083,0</coordinates>
       </Point>
@@ -2550,6 +3215,11 @@ Evidence work IDs: https://openalex.org/W4417427117
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-77.86,40.79339,0</coordinates>
       </Point>
@@ -2569,6 +3239,11 @@ Evidence work IDs: https://openalex.org/W4417427117
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>India</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>79.13255,12.9184,0</coordinates>
       </Point>
@@ -2588,6 +3263,11 @@ Evidence work IDs: https://openalex.org/W4416971862
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>South Korea</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>127.00889,37.29111,0</coordinates>
       </Point>
@@ -2607,6 +3287,11 @@ Evidence work IDs: https://openalex.org/W4415278441
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -2626,6 +3311,11 @@ Evidence work IDs: https://openalex.org/W4415278441
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>120.59538,31.30408,0</coordinates>
       </Point>
@@ -2645,6 +3335,11 @@ Evidence work IDs: https://openalex.org/W4415278441
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>121.45806121826172,31.222219467163086,0</coordinates>
       </Point>
@@ -2664,6 +3359,11 @@ Evidence work IDs: https://openalex.org/W4415278441
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -2683,6 +3383,11 @@ Evidence work IDs: https://openalex.org/W4415278441
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>121.45806121826172,31.222219467163086,0</coordinates>
       </Point>
@@ -2702,6 +3407,11 @@ Evidence work IDs: https://openalex.org/W4417465560
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -2721,6 +3431,11 @@ Evidence work IDs: https://openalex.org/W4417465560
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -2740,6 +3455,11 @@ Evidence work IDs: https://openalex.org/W4417465560
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -2759,6 +3479,11 @@ Evidence work IDs: https://openalex.org/W4417465560
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -2778,6 +3503,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.05977,42.35843,0</coordinates>
       </Point>
@@ -2797,6 +3527,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.10561,42.3751,0</coordinates>
       </Point>
@@ -2816,6 +3551,11 @@ Evidence work IDs: https://openalex.org/W4414756664
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Malaysia</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>101.78333,2.9,0</coordinates>
       </Point>
@@ -2835,6 +3575,11 @@ Evidence work IDs: https://openalex.org/W4407001697
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>South Korea</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>129.03004,35.10168,0</coordinates>
       </Point>
@@ -2854,6 +3599,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.05977,42.35843,0</coordinates>
       </Point>
@@ -2873,6 +3623,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.10561,42.3751,0</coordinates>
       </Point>
@@ -2892,6 +3647,11 @@ Evidence work IDs: https://openalex.org/W4414145747
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Brazil</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-46.63611,-23.5475,0</coordinates>
       </Point>
@@ -2911,6 +3671,11 @@ Evidence work IDs: https://openalex.org/W4413995859
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-80.24422,36.09986,0</coordinates>
       </Point>
@@ -2930,6 +3695,11 @@ Evidence work IDs: https://openalex.org/W4413995859
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-80.24422,36.09986,0</coordinates>
       </Point>
@@ -2949,6 +3719,11 @@ Evidence work IDs: https://openalex.org/W4413995859
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-80.24422,36.09986,0</coordinates>
       </Point>
@@ -2968,6 +3743,11 @@ Evidence work IDs: https://openalex.org/W4416510037
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>Israel</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>34.99928,32.81303,0</coordinates>
       </Point>
@@ -2987,6 +3767,11 @@ Evidence work IDs: https://openalex.org/W4415139512
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-117.16472,32.71571,0</coordinates>
       </Point>
@@ -3006,6 +3791,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.05977,42.35843,0</coordinates>
       </Point>
@@ -3025,6 +3815,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.10561,42.3751,0</coordinates>
       </Point>
@@ -3044,6 +3839,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.05977,42.35843,0</coordinates>
       </Point>
@@ -3063,6 +3863,11 @@ Evidence work IDs: https://openalex.org/W4417128635
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.10561,42.3751,0</coordinates>
       </Point>
@@ -3082,6 +3887,11 @@ Evidence work IDs: https://openalex.org/W4414715726
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723205566406,39.907501220703125,0</coordinates>
       </Point>
@@ -3101,6 +3911,11 @@ Evidence work IDs: https://openalex.org/W4414715726
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>116.39723,39.9075,0</coordinates>
       </Point>
@@ -3120,6 +3935,11 @@ Evidence work IDs: https://openalex.org/W4401777383
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.05977,42.35843,0</coordinates>
       </Point>
@@ -3139,6 +3959,11 @@ Evidence work IDs: https://openalex.org/W4401777383
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.10561,42.3751,0</coordinates>
       </Point>
@@ -3158,6 +3983,11 @@ Evidence work IDs: https://openalex.org/W4410982188
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>113.25,23.11667,0</coordinates>
       </Point>
@@ -3177,6 +4007,11 @@ Evidence work IDs: https://openalex.org/W4401777383
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.05977,42.35843,0</coordinates>
       </Point>
@@ -3196,6 +4031,11 @@ Evidence work IDs: https://openalex.org/W4401777383
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>United States</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>-71.10561,42.3751,0</coordinates>
       </Point>
@@ -3215,6 +4055,11 @@ Evidence work IDs: https://openalex.org/W4417257909
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>India</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>74.78333,13.35,0</coordinates>
       </Point>
@@ -3234,6 +4079,11 @@ Evidence work IDs: https://openalex.org/W4414476079
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>India</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>77.59369,12.97194,0</coordinates>
       </Point>
@@ -3253,6 +4103,11 @@ Evidence work IDs: https://openalex.org/W4414841193
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>121.45806121826172,31.222219467163086,0</coordinates>
       </Point>
@@ -3272,6 +4127,11 @@ Evidence work IDs: https://openalex.org/W4414841193
 Point locates an affiliated institution, not a person. Not current employment or nationality. Multiple markers can represent one author's multiple affiliations.
 https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025</description>
       <styleUrl>#marker</styleUrl>
+      <ExtendedData>
+        <Data name="Country">
+          <value>China</value>
+        </Data>
+      </ExtendedData>
       <Point>
         <coordinates>121.45806,31.22222,0</coordinates>
       </Point>

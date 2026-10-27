@@ -1,0 +1,67 @@
+{
+  "verified_date": "2026-10-27",
+  "map_id": "1xMICGif7YhqVEFiDnPdq-cAFGzoo6v0",
+  "verification": "Native editor after reload; each main checkbox toggled off/on; group counts include overflow",
+  "layers": [
+    {
+      "layer": "Research affiliations — top 100",
+      "expected_features": 100,
+      "group_sum": 100,
+      "country_style_persisted": true,
+      "main_checkbox_off_verified": true,
+      "default_visible": true,
+      "legend": "Research affiliations — top 100\nStyled by Country\nChina(26)\nUnited States(13)\nSouth Korea(7)\nItaly(6)\nCanada(4)\nGermany(4)\nIndia(4)\nNetherlands(4)\nPortugal(4)\nAustralia(3)\nIran(3)\nUnited Kingdom(3)\nBrazil(2)\nFrance(2)\nIreland(2)\nSingapore(2)\nSpain(2)\nBelgium(1)\nHong Kong(1)\nIsrael(1)\nOther / No value(6)"
+    },
+    {
+      "layer": "Other affiliations — part 1",
+      "expected_features": 1900,
+      "group_sum": 1900,
+      "country_style_persisted": true,
+      "main_checkbox_off_verified": true,
+      "default_visible": false,
+      "legend": "Other affiliations — part 1\nStyled by Country\nChina(372)\nUnited States(259)\nIndia(143)\nGermany(90)\nFrance(79)\nItaly(76)\nSpain(74)\nSouth Korea(69)\nIran(49)\nUnited Kingdom(48)\nRussia(46)\nCanada(42)\nAustralia(41)\nTürkiye(37)\nBrazil(34)\nTaiwan(29)\nPoland(28)\nPortugal(23)\nJapan(19)\nSwitzerland(19)\nOther / No value(323)"
+    },
+    {
+      "layer": "Other affiliations — part 2",
+      "expected_features": 2000,
+      "group_sum": 2000,
+      "country_style_persisted": true,
+      "main_checkbox_off_verified": true,
+      "default_visible": false,
+      "legend": "Other affiliations — part 2\nStyled by Country\nChina(246)\nUnited States(227)\nIndia(212)\nFrance(103)\nItaly(82)\nGermany(81)\nUnited Kingdom(70)\nRussia(67)\nJapan(62)\nSouth Korea(55)\nSpain(55)\nTürkiye(43)\nIran(41)\nAustralia(38)\nBrazil(38)\nPakistan(34)\nPortugal(25)\nSaudi Arabia(25)\nPoland(24)\nCanada(20)\nOther / No value(452)"
+    },
+    {
+      "layer": "Other affiliations — part 3",
+      "expected_features": 1342,
+      "group_sum": 1342,
+      "country_style_persisted": true,
+      "main_checkbox_off_verified": true,
+      "default_visible": false,
+      "legend": "Other affiliations — part 3\nStyled by Country\nUnited States(251)\nChina(191)\nFrance(89)\nIndia(71)\nUnited Kingdom(70)\nGermany(44)\nSpain(39)\nJapan(34)\nRussia(32)\nBrazil(27)\nSouth Korea(27)\nItaly(25)\nAustralia(23)\nIran(20)\nCanada(19)\nMexico(19)\nSingapore(17)\nTürkiye(17)\nPakistan(16)\nPoland(14)\nOther / No value(297)"
+    },
+    {
+      "layer": "Authors — top 100, institutional locations",
+      "expected_features": 172,
+      "group_sum": 172,
+      "country_style_persisted": true,
+      "main_checkbox_off_verified": true,
+      "default_visible": false,
+      "legend": "Authors — top 100, institutional locations\nStyled by Country\nUnited States(54)\nChina(42)\nSouth Korea(11)\nIndia(8)\nNetherlands(8)\nItaly(7)\nGermany(6)\nAustralia(5)\nCanada(3)\nFrance(3)\nIreland(3)\nPortugal(3)\nMexico(2)\nPoland(2)\nSpain(2)\nSwitzerland(2)\nBelgium(1)\nBrazil(1)\nIsrael(1)\nJapan(1)\nOther / No value(7)"
+    },
+    {
+      "layer": "Companies",
+      "expected_features": 38,
+      "group_sum": 38,
+      "country_style_persisted": true,
+      "main_checkbox_off_verified": true,
+      "default_visible": true,
+      "legend": "Companies\nStyled by Country\nUnited States(7)\nSwitzerland(4)\nCanada(3)\nGermany(3)\nFrance(2)\nIndia(2)\nSouth Korea(2)\nSweden(2)\nAustralia(1)\nAustria(1)\nBelgium(1)\nBrazil(1)\nChina(1)\nFinland(1)\nGreece(1)\nIsrael(1)\nJapan(1)\nRussia(1)\nSpain(1)\nTürkiye(1)\nOther / No value(1)"
+    }
+  ],
+  "viewer_main_category_click": {
+    "layer": "Companies",
+    "off_state": false,
+    "restored_on_state": true
+  },
+  "viewer_overflow_label": "Other / No data"
+}
