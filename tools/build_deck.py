@@ -10,6 +10,7 @@ from PIL import Image
 from io import BytesIO
 from publication_chart import render_publication_slide
 from organ_chart import render_organ_slide
+from cover_slide import render_cover
 from deck_structure import display_number, web_section, write_transcript
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('source',type=Path,help='Original competition PPTX')
@@ -109,7 +110,8 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
  if n==8:art=render_publication_slide()
  if n==9:art=render_organ_slide()
  if n==1:
-  art='''<div class="lattice" aria-hidden="true"></div><div class="hero"><p class="eyebrow editable" data-edit="cover-event">SOFE · BERLIN · 2026</p><h1><span class="editable" data-edit="cover-title">Stereolithographic</span><br><em class="editable gradient" data-edit="cover-subtitle">Bioprinting</em></h1><p class="hero-sub editable" data-edit="cover-tagline">3D bioprinting using light</p></div><p class="signature editable" data-edit="cover-author">Florence Mei Kuan Wong</p>'''
+  data[-1]['text']='SOfE · BERLIN · 2026\n\n'+data[-1]['text']
+  art=render_cover()
  if n==3:
   art='<div class="contents-heading"><p class="eyebrow">THE TALK</p><h1 class="editable" data-edit="contents-title">Contents</h1></div><div class="contents-list">'
   for k,(label,start) in enumerate([('Introduction',4),('Printing methods',10),('Applications',16),('Conclusion and discussion',21)]):

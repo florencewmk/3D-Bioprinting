@@ -36,3 +36,14 @@ python3 tools/archive_materials.py --check
 The archiver does not remove old files. Review and remove unused archived files
 explicitly when retiring a material. The original PPTX and PDF conversion inputs
 are not part of this archive; a full source conversion still requires them.
+
+## Cover photograph
+
+Slide 1 restores the lung anatomical-model photograph supplied by the user on
+3 November 2026. The unchanged PNG is archived at
+[`images/9d7286d75b51d262d1a1e6fa60fa9596a1a3df095bcac5aca852fd1692f96222.png`](images/9d7286d75b51d262d1a1e6fa60fa9596a1a3df095bcac5aca852fd1692f96222.png)
+and embedded in the offline HTML. The filename is its SHA-256. The original
+speaker notes identify a 2015 exhibition model reported by The Independent;
+photographer and exact original image URL remain unresolved. Existing image
+credits and third-party rights continue to apply. `tools/cover_slide.py` uses
+this repository copy when rebuilding the cover.

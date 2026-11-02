@@ -2,7 +2,7 @@
 
 **3D bioprinting using light**
 
-Florence Mei Kuan Wong · SOFE Berlin · 15 October 2026
+Florence Mei Kuan Wong · SOfE Berlin · 15 October 2026
 
 ![Presentation cover](presentation/cover.jpg)
 

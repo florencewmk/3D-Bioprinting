@@ -4,6 +4,8 @@
 
 ## 01. Stereolithographic Bioprinting
 
+SOfE · BERLIN · 2026
+
 Stereolithographic
 
 Bioprinting
