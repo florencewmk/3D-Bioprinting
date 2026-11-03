@@ -9,6 +9,7 @@ Custom interface requested on 3 November 2026. It uses the same 5,572 research/c
 - A country checkbox selects or clears its points.
 - Each country's **List** checkbox independently opens or closes its list of names. Lists start closed.
 - Individual records have selection checkboxes; clicking a name opens its marker and source details.
+- **Sort countries** offers Name A–Z, Name Z–A, Most entries first, and Fewest entries first. It changes country order in every category without changing selected points or open name lists. Counts follow search matches while search is active.
 - Search filters names/countries among the selected map points. It does not silently select hidden categories. Selection controls still apply to the full category/country, even while search is active.
 - **Collapse lists** closes every menu without changing selection. **Fit selection** frames the currently shown points.
 
@@ -31,3 +32,9 @@ The My Maps export preserved addresses but omitted coordinates for company and c
 - OpenStreetMap base map: © OpenStreetMap contributors, https://www.openstreetmap.org/copyright.
 
 The original Google map is retained and its sharing settings are unchanged. The custom Site deployment identity lives in the separate project workspace, not in the research repository.
+
+## English-default map labels
+
+The background uses CARTO Positron vector tiles, rendered through MapLibre GL JS 5.6.1 and the MapLibre Leaflet adapter 0.1.3. The existing Leaflet markers, filters and layout are retained. `basemap-english.json` prefers `name:en` / `name_en` for place labels, with a single proper-name fallback where the geographic source has no English variant. Official company, author and institution names remain unchanged. This replaces the former raster background whose local-language names were baked into images. No Google API key or Google Cloud project is used.
+
+MapLibre is BSD 3-Clause (`vendor/maplibre-LICENSE`); the adapter license is in `vendor/leaflet-maplibre-LICENSE`. Style source: https://basemaps.cartocdn.com/gl/positron-gl-style/style.json; English label rules are saved locally rather than depending on a changing remote style. CARTO attribution is visible on the map.

@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-03",
+  "sortChecks": [
+    {
+      "mode": "az",
+      "first": [
+        {
+          "count": "1",
+          "country": "Australia"
+        },
+        {
+          "count": "1",
+          "country": "Austria"
+        },
+        {
+          "count": "1",
+          "country": "Belgium"
+        },
+        {
+          "count": "1",
+          "country": "Brazil"
+        }
+      ],
+      "selected": "138 / 5,572 points",
+      "lists": 1
+    },
+    {
+      "mode": "za",
+      "first": [
+        {
+          "count": "7",
+          "country": "United States"
+        },
+        {
+          "count": "1",
+          "country": "United Kingdom"
+        },
+        {
+          "count": "1",
+          "country": "Türkiye"
+        },
+        {
+          "count": "4",
+          "country": "Switzerland"
+        }
+      ],
+      "selected": "138 / 5,572 points",
+      "lists": 1
+    },
+    {
+      "mode": "most",
+      "first": [
+        {
+          "count": "7",
+          "country": "United States"
+        },
+        {
+          "count": "4",
+          "country": "Switzerland"
+        },
+        {
+          "count": "3",
+          "country": "Canada"
+        },
+        {
+          "count": "3",
+          "country": "Germany"
+        }
+      ],
+      "selected": "138 / 5,572 points",
+      "lists": 1
+    },
+    {
+      "mode": "fewest",
+      "first": [
+        {
+          "count": "1",
+          "country": "Australia"
+        },
+        {
+          "count": "1",
+          "country": "Austria"
+        },
+        {
+          "count": "1",
+          "country": "Belgium"
+        },
+        {
+          "count": "1",
+          "country": "Brazil"
+        }
+      ],
+      "selected": "138 / 5,572 points",
+      "lists": 1
+    }
+  ],
+  "mobile": {
+    "documentWidth": 390,
+    "firstCountry": "United States",
+    "visible": "138 / 5,572 points",
+    "width": 390
+  },
+  "englishLabelsVisuallyVerified": [
+    "Germany",
+    "Cologne",
+    "Nuremberg",
+    "Prague",
+    "Tokyo",
+    "Kyoto"
+  ],
+  "dataRecordsUnchanged": 5572,
+  "newBackground": "CARTO Positron vector, English preferred",
+  "defaultCountryOrder": "az"
+}

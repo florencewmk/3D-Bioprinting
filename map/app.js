@@ -4,6 +4,7 @@
   const $ = id => document.getElementById(id);
   const esc = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const fmt = n => n.toLocaleString('en-US');
+  const englishOrder = new Intl.Collator('en', {sensitivity:'base',numeric:true});
   const arrow = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 6 6-6 6"/></svg>';
   const mobile = matchMedia('(max-width:760px)').matches;
   if (mobile) $('app').classList.add('sidebar-closed');
@@ -20,7 +21,7 @@
   const byId = new Map(data.points.map(p => [p.id, p]));
   const selected = new Set(data.points.filter(p => categories.find(c => c.id === p.category).defaultVisible).map(p => p.id));
   const expandedCategories = new Set(), expandedCountries = new Set(), listLimits = new Map();
-  let query = $('search').value.trim().toLocaleLowerCase(), debounce, renderTicket;
+  let query = $('search').value.trim().toLocaleLowerCase(), debounce, renderTicket, countrySort = 'az';
   const models = categories.map(cat => {
     const points = data.points.filter(p => p.category === cat.id);
     const countryMap = new Map();
@@ -29,14 +30,15 @@
       if (!countryMap.has(point.country)) countryMap.set(point.country, []);
       countryMap.get(point.country).push(point);
     }
-    return {...cat, points, countries: [...countryMap].sort((a,b) => a[0].localeCompare(b[0])).map(([name, points], index) => ({name, points: points.sort((a,b) => a.name.localeCompare(b.name, undefined, {numeric:true})), key: `${cat.id}-${index}`}))};
+    return {...cat, points, countries: [...countryMap].sort((a,b) => englishOrder.compare(a[0],b[0])).map(([name, points], index) => ({name, points: points.sort((a,b) => englishOrder.compare(a.name,b.name)), key: `${cat.id}-${index}`}))};
   });
   const map = L.map('map', {zoomControl:false, minZoom:2, maxZoom:19, zoomSnap:.25, worldCopyJump:true}).setView([22,7],2);
   L.control.zoom({position:'bottomright'}).addTo(map);
   L.control.scale({position:'bottomleft', imperial:false}).addTo(map);
-  const tileLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom:19, attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors'}).addTo(map);
-  let tileErrors = 0;
-  tileLayer.on('tileerror', () => { if (++tileErrors > 4) { $('map-notice').textContent = 'Base map tiles are unavailable. Points and filters still work.'; $('map-notice').hidden = false; } });
+  const tileLayer = L.maplibreGL({style:'basemap-english.json',interactive:false,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>'}).addTo(map);
+  const background = tileLayer.getMaplibreMap();
+  background.on('load', () => {$('map').dataset.labelLanguage='en';});
+  background.on('error', () => {if(!background.isStyleLoaded()){$('map-notice').textContent='The background map could not load. Points and filters still work.';$('map-notice').hidden=false;}});
   const cluster = L.markerClusterGroup({maxClusterRadius:44, showCoverageOnHover:false, spiderfyOnMaxZoom:true, removeOutsideVisibleBounds:true, animate:false, iconCreateFunction:c => L.divIcon({html:`<span class="cluster-bubble">${fmt(c.getChildCount())}</span>`, className:'cluster-icon',iconSize:[38,38]})}).addTo(map);
   const markers = new Map();
   function popup(point) {
@@ -52,6 +54,17 @@
     markers.set(point.id, marker);
   }
   const match = point => !query || point.search.includes(query);
+  function orderedCountries(countries) {
+    return countries.filter(c => c.points.some(match)).sort((a,b) => {
+      const name = englishOrder.compare(a.name,b.name);
+      if(countrySort==='za') return -name;
+      if(countrySort==='most'||countrySort==='fewest'){
+        const difference=a.points.filter(match).length-b.points.filter(match).length;
+        return (countrySort==='most'?-difference:difference)||name;
+      }
+      return name;
+    });
+  }
   function renderMap() {
     cancelAnimationFrame(renderTicket);
     renderTicket = requestAnimationFrame(() => {
@@ -71,7 +84,7 @@
     const html = models.map(cat => {
       const state = checkboxState(cat.points), open = expandedCategories.has(cat.id);
       const matching = cat.points.filter(match);
-      const countryRows = open ? cat.countries.filter(c => c.points.some(match)).map(country => {
+      const countryRows = open ? orderedCountries(cat.countries).map(country => {
         const countryState = checkboxState(country.points), listed = expandedCountries.has(country.key), matches = country.points.filter(match), limit = listLimits.get(country.key) || 50;
         return `<div class="country" data-country="${esc(country.name)}"><div class="country-row">${checkbox(`country-${country.key}`,`Select ${country.name} in ${cat.name}`,countryState,`data-action="country" data-category="${cat.id}" data-key="${country.key}"`)}<label class="country-name" for="country-${country.key}">${esc(country.name)}<span class="country-total">${fmt(query?matches.length:country.points.length)}</span></label><label class="list-toggle">${checkbox(`list-${country.key}`,`Show list for ${country.name} in ${cat.name}`,{checked:listed},`data-action="list" data-key="${country.key}" aria-controls="names-${country.key}"`)}List</label></div>${listed?`<div class="point-list" id="names-${country.key}" aria-label="${esc(country.name)} names in ${cat.name}">${matches.slice(0,limit).map(p=>`<div class="point-row">${checkbox(`point-${p.id}`,`Show ${p.name}`,{checked:selected.has(p.id)},`data-action="point" data-id="${p.id}"`)}<button class="point-name" data-focus="${p.id}">${esc(p.name)}</button></div>`).join('')}${matches.length>limit?`<button class="more-button" data-more="${country.key}">Show ${Math.min(50,matches.length-limit)} more · ${fmt(matches.length-limit)} remaining</button>`:''}</div>`:''}</div>`;
       }).join('') : '';
@@ -102,6 +115,7 @@
     }
   });
   $('search').addEventListener('input', event => {clearTimeout(debounce);debounce=setTimeout(()=>{query=event.target.value.trim().toLocaleLowerCase();renderTree();renderMap();},140);});
+  $('country-sort').addEventListener('change', event => {countrySort=event.target.value;renderTree();});
   $('collapse').onclick = () => {expandedCategories.clear();expandedCountries.clear();renderTree();};
   $('show-all').onclick = () => {setSelection(data.points,true);renderTree();renderMap();};
   $('clear-all').onclick = () => {selected.clear();renderTree();renderMap();};
