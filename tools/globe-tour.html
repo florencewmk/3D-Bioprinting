@@ -12,13 +12,13 @@ header p,.eyebrow,footer{font-size:12px;font-weight:650;letter-spacing:.16em;tex
 h1{font-size:clamp(26px,4.2vw,66px);letter-spacing:-.04em;margin:.15em 0}
 .hero{display:grid;grid-template-columns:1fr 1.45fr;align-items:center;gap:24px;min-height:0}
 .summary{max-width:490px}.place{font-size:clamp(29px,4vw,65px);line-height:1.05;margin:15px 0 10px}
-.count{font-size:clamp(50px,7vw,105px);font-weight:720;letter-spacing:-.065em;color:#ff7e81;line-height:1}
+.count{font-size:clamp(50px,7vw,105px);font-weight:720;letter-spacing:-.065em;color:#ff829a;line-height:1}
 .caption{color:#bcc8d3;font-size:clamp(15px,1.6vw,22px);margin:.5em 0 1.4em}
 .steps{display:flex;gap:8px;flex-wrap:wrap}.steps button{min-width:42px;height:40px}
 button{border:1px solid #465265;border-radius:5px;background:#18212d;color:#f3f7fa;padding:8px 13px}
 button[aria-current=true]{background:#ad2937;border-color:#ff8187}
 .visual{position:relative;aspect-ratio:1;width:min(100%,65svh);justify-self:center}
-canvas{width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+canvas{filter:drop-shadow(0 0 12px #25caee38);width:100%;height:100%;display:block;cursor:grab;touch-action:none}
 canvas:active{cursor:grabbing}
 footer{display:flex;justify-content:flex-end;align-items:center;gap:12px;flex-wrap:wrap}
 .actions{display:flex;gap:8px;flex-wrap:wrap;letter-spacing:normal;text-transform:none;font-weight:400}
@@ -65,10 +65,19 @@ function vector(lat, lon) {
   const c = Math.cos(lat * rad);
   return [c * Math.cos(lon * rad), c * Math.sin(lon * rad), Math.sin(lat * rad)];
 }
+// Stylized flag bands, clipped to each country's land outline.
+const flagBands = new Map([
+  ['United States of America', [['#264882', .26], ['#fff3e8', .46], ['#d74c65', .64], ['#fff3e8', .82], ['#d74c65', 1]]],
+  ['India', [['#ff9a48', 1/3], ['#fff6e5', 2/3], ['#39ae79', 1]]],
+  ['South Korea', [['#f6f5ff', .45], ['#f15372', .72], ['#4d8df4', 1]]],
+  ['Germany', [['#161729', 1/3], ['#ee4963', 2/3], ['#ffce52', 1]]],
+]);
 const surfaces = world.flatMap(feature => {
   const polygons = feature.geometry.type === 'Polygon' ? [feature.geometry.coordinates] : feature.geometry.coordinates;
   return polygons.map(polygon => ({
     featured: redLand.has(feature.properties.name),
+    bands: flagBands.get(feature.properties.name),
+    goldStars: feature.properties.name === "People's Republic of China",
     rings: polygon.map(ring => ring.map(([lon, lat]) => vector(lat, lon)))
   }));
 });
@@ -81,14 +90,27 @@ function interpolate(a, b, t) {
   return a.map((value, i) => x * value + y * b[i]);
 }
 let previousView;
+function focusedRank(view) {
+  let closest = 0;
+  let best = -Infinity;
+  for (const [index, point] of centers.entries()) {
+    const alignment = point[0] * view[0] + point[1] * view[1] + point[2] * view[2];
+    if (alignment > best) {
+      closest = index;
+      best = alignment;
+    }
+  }
+  return closest;
+}
 function draw(view) {
+  showRank(focusedRank(view));
   if (previousView === view) return;
   previousView = view;
   const [vx, vy, vz] = view;
   const horizontal = Math.hypot(vx, vy);
   const cx = vx / horizontal, sx = vy / horizontal;
   const gradient = ctx.createRadialGradient(285, 220, 20, center, center, radius);
-  gradient.addColorStop(0, '#244965'); gradient.addColorStop(1, '#102438');
+  gradient.addColorStop(0, '#113658'); gradient.addColorStop(1, '#060d22');
   function project([x,y,z]) {
     return [(-sx*x+cx*y)*radius, (vz*(cx*x+sx*y)-horizontal*z)*radius, vx*x+vy*y+vz*z];
   }
@@ -99,6 +121,7 @@ function draw(view) {
   for (const shape of surfaces) {
     ctx.beginPath();
     let visible = false;
+    let top = Infinity, bottom = -Infinity;
     for (const ring of shape.rings) {
       let previous = project(ring[ring.length-1]);
       let first = true;
@@ -113,6 +136,10 @@ function draw(view) {
           first = false;
         }
         if (next[2] >= 0) {
+          if (shape.bands) {
+            top = Math.min(top, center + next[1]);
+            bottom = Math.max(bottom, center + next[1]);
+          }
           ctx[first?'moveTo':'lineTo'](center+next[0],center+next[1]);
           first = false; visible = true;
         }
@@ -121,14 +148,46 @@ function draw(view) {
       if (!first) ctx.closePath();
     }
     if (!visible) continue;
-    ctx.fillStyle = shape.featured ? '#d94e5c' : '#819494';
-    ctx.strokeStyle = shape.featured ? '#e89098' : '#a6b5b1';
+    ctx.fillStyle = shape.goldStars ? '#ec4659' : '#194b56';
+    if (shape.bands) {
+      const fill = ctx.createLinearGradient(0, top, 0, Math.max(top + 1, bottom));
+      let start = 0;
+      for (const [color, end] of shape.bands) {
+        fill.addColorStop(start, color);
+        fill.addColorStop(end, color);
+        start = end;
+      }
+      ctx.fillStyle = fill;
+    }
+    ctx.strokeStyle = shape.featured ? '#ff9ca3' : '#60d5df';
     ctx.lineWidth = 0.65; ctx.fill('evenodd'); ctx.stroke();
+    if (shape.goldStars) {
+      const [x, y, depth] = project(vector(41, 91));
+      if (depth > .15) {
+        ctx.save();
+        ctx.clip('evenodd');
+        ctx.fillStyle = '#ffdd59';
+        for (const [dx, dy, size] of [[0,0,19], [24,-18,7], [34,-5,7], [33,11,7], [21,23,7]]) {
+          const star = new Path2D();
+          for (let point = 0; point < 10; point++) {
+            const angle = point * Math.PI / 5 - Math.PI / 2;
+            const radius = point % 2 ? size * .4 : size;
+            const sx = center + x + dx + Math.cos(angle) * radius;
+            const sy = center + y + dy + Math.sin(angle) * radius;
+            if (point === 0) star.moveTo(sx, sy);
+            else star.lineTo(sx, sy);
+          }
+          star.closePath();
+          ctx.fill(star);
+        }
+        ctx.restore();
+      }
+    }
   }
   for (const [i, point] of centers.entries()) {
     const [x,y,depth] = project(point);
     if (depth < .07) continue;
-    const badgeX = center + x + (leaders[i].country === 'Germany' ? (x > radius * .75 ? -48 : 48) : 0);
+    const badgeX = center + x + (['Germany', 'South Korea'].includes(leaders[i].country) ? (x > radius * .75 ? -48 : 48) : 0);
     if (badgeX !== center + x) {
       ctx.beginPath();
       ctx.moveTo(center + x, center + y);
@@ -138,16 +197,16 @@ function draw(view) {
       ctx.stroke();
     }
     ctx.beginPath(); ctx.arc(badgeX,center+y,24,0,Math.PI*2);
-    ctx.fillStyle='#b82639'; ctx.fill(); ctx.strokeStyle='#fff2f2'; ctx.lineWidth=3; ctx.stroke();
+    ctx.fillStyle='#8f204c'; ctx.fill(); ctx.strokeStyle='#fff2f2'; ctx.lineWidth=3; ctx.stroke();
     ctx.font='bold 20px system-ui'; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillStyle='white';
     ctx.fillText('#'+(i+1),badgeX,center+y);
   }
   ctx.restore();
-  ctx.beginPath(); ctx.arc(center,center,radius,0,2*Math.PI); ctx.strokeStyle='#63859e';ctx.lineWidth=2;ctx.stroke();
+  ctx.beginPath(); ctx.arc(center,center,radius,0,2*Math.PI); ctx.strokeStyle='#69eeff';ctx.lineWidth=2;ctx.stroke();
 }
 const motion = matchMedia('(prefers-reduced-motion: reduce)');
 const segment = 3450;
-const firstSegment = 6500;
+const firstSegment = 9000;
 const cycleDuration = firstSegment + segment * (leaders.length - 1);
 const rankStart = index => index === 0 ? 0 : firstSegment + (index - 1) * segment;
 const rankAt = time => time < firstSegment ? 0 : 1 + Math.floor((time - firstSegment) / segment);
@@ -242,12 +301,12 @@ globe.addEventListener('wheel', event => {
 function tourView(time) {
   const index = rankAt(time);
   const fraction = (time - rankStart(index)) / (index === 0 ? firstSegment : segment);
-  const progress = index === 0 ? fraction * fraction * (3 - 2 * fraction) : fraction;
+  const opening = fraction ** 1.8;
+  const progress = index === 0 ? opening * opening * (3 - 2 * opening) : fraction;
   const next = (index + 1) % centers.length;
   return interpolate(centers[index], centers[next], progress);
 }
 function render(time) {
-  showRank(rankAt(time));
   draw(tourView(time));
 }
 function tick(now) {
