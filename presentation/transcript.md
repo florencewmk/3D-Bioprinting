@@ -66,11 +66,11 @@ What if we could print organs?
 
 So far, we’ve been talking about objects you can see and hold. What if we could print organs?
 
-## 06. 3D-Bioprinting
+## 06. 3D Bioprinting
 
 SOfE · Düsseldorf · 5 November 2026
 
-3D-Bioprinting
+3D Bioprinting
 
 where engineering revolutionize medicine
 

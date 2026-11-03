@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LUNG_ANIMATION = ROOT / 'materials/images/1786970f76a9a466241c8f1d73348d20887c56f67d4135e133495fb97bac3c88.webp'
 LUNG_POSTER = ROOT / 'materials/images/973f5492d7238e8f5907aca8d6e188cb20872926dfc460ed4d77ea6f84cfd15e.webp'
-COVER_TITLE = '3D-Bioprinting'
+COVER_TITLE = '3D Bioprinting'
 COVER_NOTES = ('Welcome to the world of 3D printing, a technology that is shaping our future.\n\n'
                'On the right is a 3D reconstruction of a branching anatomical model displayed in Yiwu in 2015.')
 
