@@ -1,6 +1,6 @@
 {
   "source": "presentation/index.html",
-  "source_sha256": "5df5e1e3daa447fe71770883a19345e7f768789ee31d65b5ee94afbf077b812f",
+  "source_sha256": "d8f4ec3d3f3d8244a5422bc224e888f6dbfd5a8a06bfb406f0aad89e46f8d4fb",
   "slides": 51,
   "asset_count": 163,
   "assets": [
@@ -154,17 +154,6 @@
       "sha256": "630b8fdbf1b638c8ae650faf2297393994ea4b6e3962f305a08e21b75ff0a764",
       "slides": [
         5
-      ],
-      "source": "presentation/index.html",
-      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
-    },
-    {
-      "path": "materials/diagrams/7e0f67a1a4811036feb21f44a4969593043df6fb87763b59460a6bf72bfce55d.svg",
-      "mime": "image/svg+xml",
-      "bytes": 17436,
-      "sha256": "7e0f67a1a4811036feb21f44a4969593043df6fb87763b59460a6bf72bfce55d",
-      "slides": [
-        1
       ],
       "source": "presentation/index.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -396,6 +385,17 @@
       "sha256": "f55f7266af1f524f93dbcc73f8f9b6e00d9ba00ac50909e8148592dcb8006692",
       "slides": [
         45
+      ],
+      "source": "presentation/index.html",
+      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/f9f69141804da66e729c949c84ce8114d4730dae5ffa148089acb1266debc9d7.svg",
+      "mime": "image/svg+xml",
+      "bytes": 17441,
+      "sha256": "f9f69141804da66e729c949c84ce8114d4730dae5ffa148089acb1266debc9d7",
+      "slides": [
+        1
       ],
       "source": "presentation/index.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
