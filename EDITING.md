@@ -52,7 +52,7 @@ The remaining scientific slide text can be edited directly in the HTML, using
 data looks very long: leave those `data:...;base64,...` strings intact.
 
 Restoring the introduction makes the order **Florence 1 → cover 2 → contents 3
-→ opening question 4**. Publication trends is now slide 8 and organs slide 9.
+→ opening question 4** in the source layout. In the published deck, organ shortages are on slide 7, publication trends on slide 8, the interactive globe on slide 9, and Contents on slide 52.
 The application slides remain under the Printing methods menu section.
 
 For chart edits, use `tools/update_publication_slide.py` and

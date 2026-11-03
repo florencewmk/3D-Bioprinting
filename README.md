@@ -8,7 +8,7 @@ Florence Mei Kuan Wong · SOfE Düsseldorf · 5 November 2026
 
 ## View the slides
 
-Open [the presentation](presentation/index.html) in a browser. You can also download the HTML file and open it offline; fonts, figures and two videos are included. No installation is required. Slide 2 contains the tram story. Slide 8 includes the interactive bioprinting map, with its data and Natural Earth country boundaries embedded in the same HTML file.
+Open [the presentation](presentation/index.html) in a browser. You can also download the HTML file and open it offline; fonts, figures and two videos are included. No installation is required. Slide 2 contains the tram story. Slide 9 includes the interactive bioprinting map, with its data and Natural Earth country boundaries embedded in the same HTML file.
 
 The deck contains **52 slides**:
 

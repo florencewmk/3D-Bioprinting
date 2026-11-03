@@ -1,4 +1,4 @@
-"""Place the printing examples and organ question before the title card."""
+"""Place the printing examples and organ question before the title card; place Contents in backup."""
 import json
 import re
 from pathlib import Path
@@ -37,7 +37,7 @@ def reorder(document):
     data[5]['notes'] = intro
     question_data = {'title': QUESTION, 'text': QUESTION, 'notes': transition}
 
-    order = [1, 2, 3, 6, None, 4, 5, *range(7, 52)]
+    order = [1, 2, 3, 6, None, 4, 9, 8, 7, *range(10, 52), 5]
     renumber = {old: new for new, old in enumerate(order, 1) if old is not None}
     updated_sections = []
     updated_data = []
@@ -52,14 +52,14 @@ def reorder(document):
         section = re.sub(r'<span>\d{2} / 51</span>', f'<span>{number:02d} / 52</span>', section)
         row['number'] = number
         if old == 5:
+            section = re.sub(r'Page (\d+)', lambda m: f'Page {renumber[int(m[1])]:02d}', section)
             row['text'] = re.sub(r'Page (\d+)', lambda m: f'Page {renumber[int(m[1])]:02d}', row['text'])
         updated_sections.append(section)
         updated_data.append(row)
     document = document[:matches[0].start()] + '\n'.join(updated_sections) + document[matches[-1].end():]
     document = DATA.sub(lambda m: m[1] + json.dumps(updated_data, ensure_ascii=False).replace('</', '<\\/') + m[3], document, count=1)
     document = document.replace('51 slides', '52 slides').replace('talk 1–23, references 24–28, technical backup 29–51',
-                                                                  'talk 1–24, references 25–29, technical backup 30–52')
-    document = document.replace("i<23?'TALK':i<28?", "i<24?'TALK':i<29?")
+                                                                  'talk 1–23, references 24–28, technical backup 29–52')
     return document, updated_data
 
 
