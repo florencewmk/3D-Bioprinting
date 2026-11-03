@@ -43,7 +43,10 @@ class SlidePresentation{
   const request={};
   this.coverRequest=request;
   try{
-   this.coverAnimation ??= fetch(image.dataset.turntableSrc).then(response=>response.blob());
+   this.coverAnimation ??= fetch(image.dataset.turntableSrc).then(response=>{
+    if(!response.ok)throw new Error('Cover animation unavailable');
+    return response.blob();
+   });
    const animation=await this.coverAnimation;
    if(this.coverRequest!==request)return;
    this.coverUrl=URL.createObjectURL(animation);
@@ -72,7 +75,26 @@ class SlidePresentation{
  toggleEdit(){this.editing=!this.editing;document.body.classList.toggle('editing',this.editing);document.getElementById('editToggle').classList.toggle('active',this.editing);document.querySelectorAll('.editable').forEach(e=>e.contentEditable=String(this.editing));document.querySelectorAll('[data-reveal-step]').forEach(e=>{const hidden=!this.editing&&!e.classList.contains('revealed');e.setAttribute('aria-hidden',String(hidden));e.inert=hidden;});this.message(this.editing?'Click text to edit · Ctrl/Cmd + S downloads your HTML':'Editing off');}
  restore(){try{const saved=JSON.parse(localStorage.getItem(storageKey)||'{}');document.querySelectorAll('[data-edit]').forEach(e=>{if(Object.hasOwn(saved,e.dataset.edit))e.innerHTML=saved[e.dataset.edit]});}catch{}}
  autosave(){try{localStorage.setItem(storageKey,JSON.stringify(Object.fromEntries([...document.querySelectorAll('[data-edit]')].map(e=>[e.dataset.edit,e.innerHTML]))));}catch{this.message('Browser storage is full. Use Ctrl/Cmd + S to save a copy.')}this.fitText();}
- save(){const clone=document.documentElement.cloneNode(true);clone.querySelectorAll('img[data-intro-src]').forEach(img=>{img.removeAttribute('src');img.removeAttribute('data-intro-loaded');});clone.querySelectorAll('iframe[data-srcdoc]').forEach(frame=>frame.removeAttribute('srcdoc'));if(this.coverPoster)clone.querySelector('.cover-turntable')?.setAttribute('src',this.coverPoster);clone.querySelector('body').classList.remove('editing');clone.querySelectorAll('[contenteditable]').forEach(e=>e.removeAttribute('contenteditable'));clone.querySelector('#editToggle').classList.remove('active');clone.querySelector('#status').textContent='';clone.querySelectorAll('dialog').forEach(d=>d.removeAttribute('open'));clone.querySelectorAll('[data-reveal-step]').forEach(e=>{e.classList.remove('revealed');e.setAttribute('aria-hidden','true');e.setAttribute('inert','');});const blob=new Blob(['<!doctype html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='Stereolithographic-Bioprinting.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);this.message('Downloaded the updated presentation');}
+ async save(){const clone=document.documentElement.cloneNode(true);clone.querySelectorAll('img[data-intro-src]').forEach(img=>{img.removeAttribute('src');img.removeAttribute('data-intro-loaded');});clone.querySelectorAll('iframe[data-srcdoc]').forEach(frame=>frame.removeAttribute('srcdoc'));const cover=clone.querySelector('.cover-turntable');
+ if(this.coverPoster)cover?.setAttribute('src',this.coverPoster);
+ if(cover&&!cover.dataset.turntableSrc.startsWith('data:')){
+  try{
+   this.message('Preparing the offline presentation…');
+   const response=await fetch(cover.dataset.turntableSrc);
+   if(!response.ok)throw new Error('Cover animation unavailable');
+   const animation=await response.blob();
+   cover.dataset.turntableSrc=await new Promise((resolve,reject)=>{
+    const reader=new FileReader();
+    reader.onload=()=>resolve(reader.result);
+    reader.onerror=reject;
+    reader.readAsDataURL(animation);
+   });
+  }catch{
+   this.message('Could not download the cover animation. Please try again.');
+   return;
+  }
+ }
+ clone.querySelector('body').classList.remove('editing');clone.querySelectorAll('[contenteditable]').forEach(e=>e.removeAttribute('contenteditable'));clone.querySelector('#editToggle').classList.remove('active');clone.querySelector('#status').textContent='';clone.querySelectorAll('dialog').forEach(d=>d.removeAttribute('open'));clone.querySelectorAll('[data-reveal-step]').forEach(e=>{e.classList.remove('revealed');e.setAttribute('aria-hidden','true');e.setAttribute('inert','');});const blob=new Blob(['<!doctype html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='3D-Bioprinting.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);this.message('Downloaded the updated presentation');}
  /* === KEYBOARD, TOUCH, WHEEL AND ACCESSIBLE PANELS === */
  setup(){addEventListener('resize',()=>this.scale());addEventListener('hashchange',()=>this.show(this.hash()));document.getElementById('prev').onclick=()=>this.navigate(-1);document.getElementById('next').onclick=()=>this.navigate(1);document.getElementById('chartReplay').onclick=()=>this.replayChart();document.getElementById('overviewButton').onclick=()=>this.open('overview');document.getElementById('notesButton').onclick=()=>this.open('notesDialog');document.getElementById('helpButton').onclick=()=>this.open('helpDialog');document.getElementById('fullButton').onclick=()=>this.fullscreen();document.getElementById('editToggle').onclick=()=>this.toggleEdit();document.getElementById('saveButton').onclick=()=>this.save();document.getElementById('resetButton').onclick=()=>{try{localStorage.removeItem(storageKey)}catch{}location.reload()};
  document.querySelectorAll('[data-goto]').forEach(b=>b.onclick=()=>{if(!this.editing)this.show(Number(b.dataset.goto)-1)});document.querySelectorAll('dialog .close').forEach(b=>b.onclick=()=>b.closest('dialog').close());

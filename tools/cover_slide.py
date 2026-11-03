@@ -12,10 +12,11 @@ COVER_NOTES = ('Welcome to the world of 3D printing, a technology that is shapin
                'On the right is a 3D reconstruction of a branching anatomical model displayed in Yiwu in 2015.')
 
 
-def render_cover():
+def render_cover(*, external_animation=False):
     c = settings()
     event = html.escape(f'{c["event"]["name"]} · {c["event"]["city"].upper()} · {c["event"]["date"].upper()}')
-    animation = 'data:image/webp;base64,' + base64.b64encode(LUNG_ANIMATION.read_bytes()).decode()
+    animation = ('../' + LUNG_ANIMATION.relative_to(ROOT).as_posix() if external_animation else
+                 'data:image/webp;base64,' + base64.b64encode(LUNG_ANIMATION.read_bytes()).decode())
     poster = 'data:image/webp;base64,' + base64.b64encode(LUNG_POSTER.read_bytes()).decode()
     return (
         '<figure class="cover-lung">'

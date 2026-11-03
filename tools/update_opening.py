@@ -30,7 +30,8 @@ data[1].update(title=COVER_TITLE, notes=COVER_NOTES)
 data[1]['text'] = f'{c["event"]["name"]} · {c["event"]["city"]} · {c["event"]["date"]}\n\n{COVER_TITLE}\n\n{c["cover_tagline"]}\n\n{c["presenter"]}'
 data[2]['text'] = 'Contents\n\n' + '\n\n'.join(f'{s["label"]} · Page {s["slide"]:02d}' for s in c['sections'])
 data[3]['text'] = '\n'.join(c['opening_question'])
-renderers = [render_introduction, render_cover, render_contents, render_question]
+external_cover = 'data-turntable-src="../materials/' in document
+renderers = [render_introduction, lambda: render_cover(external_animation=external_cover), render_contents, render_question]
 for i, section in enumerate(sections):
     number = i + 1
     if number <= 4:

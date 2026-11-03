@@ -54,6 +54,11 @@ def inventory():
         slide = next((int(s[1]) for s in sections if s.start() <= match.start() < s.end()), None)
         add(base64.b64decode(re.sub(r"\s", "", match[2]), validate=True), match[1], slide)
     for section in sections:
+        for asset in re.findall(r'data-turntable-src="\.\./(materials/images/[a-f0-9]{64}\.webp)"', section[0]):
+            blob = (ROOT / asset).read_bytes()
+            if hashlib.sha256(blob).hexdigest() != Path(asset).stem:
+                raise ValueError(f"Turntable hash mismatch: {asset}")
+            add(blob, "image/webp", int(section[1]))
         for svg in re.finditer(r"<svg\b.*?</svg>", section[0], re.S):
             add(svg[0].encode("utf-8"), "image/svg+xml", int(section[1]))
         for frame in re.finditer(r'<iframe class="offline-map-frame"[^>]*\bsrcdoc="([^"]+)"', section[0]):

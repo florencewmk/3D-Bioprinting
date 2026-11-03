@@ -1,4 +1,4 @@
-# Stereolithographic Bioprinting
+# 3D Bioprinting
 
 51 slides · 5 November 2026
 
