@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def render_organ_slide():
  data=json.loads((ROOT/'data/organ-transplants/annual_counts.json').read_text())
  return '''<div id="organChart">
-<div class="organ-heading"><h1 class="editable" data-edit="organ-title">The organ shortage persists</h1><p>2015–2026</p></div>
+<div class="organ-heading"><h1 class="editable" data-edit="organ-title">The organ shortage persists</h1><p>Annual counts from 2015 to 2026</p></div>
 <svg id="organPlot" viewBox="0 0 1330 615" role="img" aria-label="Annual organ transplant procedures and deceased donors, 2015 to 2025. 2026 is a forecast based on reported 2023–2025 data."></svg>
 <aside class="organ-waiting" id="organWaiting"><h2>Organ-list entries <span>2025</span></h2><strong>532,905</strong><p>waiting at year-end</p><strong class="organ-deaths">40,019</strong><p>deaths on waiting lists</p></aside>
 <div class="organ-legend"><span><i style="background:#e8c77b"></i>Organ transplants</span><span><i style="background:#e394ad"></i>Deceased donors</span></div>
