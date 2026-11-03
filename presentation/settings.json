@@ -26,8 +26,10 @@
     "provenance": "Unchanged still image supplied by the user on 3 November 2026; user identifies the linked YouTube video as its source."
   },
   "portrait": {
-    "path": "materials/images/5e80ebede67629c0d01ce604baa50b3d5a3a240d3ffbced5e30d467d00c5fd8b.jpg",
-    "provenance": "User supplied IMG_6938.JPG on 3 November 2026; unchanged original bytes, displayed in full at its natural 4:3 proportions."
+    "path": "materials/images/e43fedbf3ed4b281904b1bcf20cabf1fd97733df2c1a6c19c0e0c59437b2bd3a.png",
+    "width": 271,
+    "height": 382,
+    "provenance": "Exact cropped portrait supplied by the user on 3 November 2026, replacing the wide IMG_6938.JPG view. Unchanged PNG bytes; display uses its natural proportions."
   },
   "sections": [
     {

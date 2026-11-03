@@ -32,7 +32,7 @@ def navigation(number):
 
 def render_introduction():
     c = settings()
-    # Keep the full original photo and its intrinsic aspect ratio.
+    # Use the exact portrait crop selected by the user at its intrinsic aspect ratio.
     points = ''.join(f'<li class="editable" data-edit="profile-point-{i}" data-reveal-step="{i}" aria-hidden="true" inert>{html.escape(text)}</li>' for i, text in enumerate(c['introduction']['points'], 1))
     return (f'<div class="profile-glow" aria-hidden="true"></div>'
             f'<h1 class="profile-name editable" data-edit="profile-name">{html.escape(c["presenter"])}</h1>'

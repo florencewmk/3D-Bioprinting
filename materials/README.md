@@ -57,3 +57,11 @@ user-supplied still `images/7e594d8a3443bf14af0d2ef00cbc3b56943530c380f6e9e52c0d
 credited to the [YouTube source supplied by the user](https://www.youtube.com/watch?v=ONBHkzimRbg).
 Only a CSS zoom is applied; the video itself is not downloaded or embedded.
 Source paths and provenance are also recorded in `presentation/settings.json`.
+
+### Selected presenter portrait
+
+The current first slide uses the exact cropped portrait supplied by the user
+on 3 November 2026, stored unchanged at `images/e43fedbf3ed4b281904b1bcf20cabf1fd97733df2c1a6c19c0e0c59437b2bd3a.png`
+(271 × 382 pixels). Its natural aspect ratio is preserved in CSS.
+The earlier wide IMG_6938.JPG archive remains available but is no longer used
+on the presenter slide.

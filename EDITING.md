@@ -70,4 +70,4 @@ The presenter slide starts with only the name and full, undistorted photo.
 Click the slide, press Space/Right, or use Next to reveal each of the three
 points. After the third point, the next advance opens the cover. Left/Previous
 hides a point; Home returns to the start with all points hidden. Press E to
-show all points for editing. The photo uses its original 4:3 aspect ratio.
+show all points for editing. The photo uses the natural aspect ratio of the exact cropped portrait selected by the user.

@@ -35,7 +35,7 @@ data README before editing. Preserve other contributors' changes.
 - Do not commit credentials, browser/session exports, unrelated private personal files,
   or unused reference libraries. The user explicitly requested restoration of the
   presenter introduction on 3 November 2026; retain it as slide 1 before the cover,
-  with her name at the top, the full photo at natural proportions, and three
+  with her name at the top, the user-selected cropped portrait at natural proportions, and three
   points revealed one per click, without an “About me” title.
 
 ## Presentation maintenance

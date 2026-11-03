@@ -11,8 +11,8 @@
 .profile-glow{position:absolute;inset:0;background:radial-gradient(ellipse at 103% -8%,#bc805bb0 0,transparent 58%)}
 .profile-name{position:absolute;left:120px;top:115px;width:1680px;font-size:82px;font-weight:500;line-height:1.15;margin:0}
 .profile-points{position:absolute;left:120px;top:355px;width:750px;padding-left:44px;margin:0;font-size:44px;font-weight:400;line-height:1.45;display:grid;gap:34px}
-.profile-photo{position:absolute;left:990px;top:295px;width:810px;aspect-ratio:4/3;overflow:hidden;margin:0}
-.profile-photo img{display:block;width:100%;height:auto;max-width:none;max-height:none;aspect-ratio:4/3;object-fit:contain}
+.profile-photo{position:absolute;left:1200px;top:260px;width:490px;height:auto;overflow:hidden;margin:0}
+.profile-photo img{display:block;width:100%;height:auto;max-width:none;max-height:none;object-fit:contain}
 .profile-points [data-reveal-step]{visibility:hidden;opacity:0;transform:translateY(10px);transition:opacity .22s ease,transform .22s ease,visibility .22s}
 .profile-points [data-reveal-step].revealed,.editing .profile-points [data-reveal-step]{visibility:visible;opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.profile-points [data-reveal-step]{transition:none;transform:none}}

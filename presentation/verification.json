@@ -9,7 +9,7 @@
     "number": 1,
     "heading": "Florence Mei Kuan Wong",
     "about_me_heading": false,
-    "portrait": "Full unchanged original photo, natural 4:3 aspect ratio",
+    "portrait": "Exact user-selected cropped portrait, displayed without stretching",
     "three_points_retained": true
   },
   "checks": {
@@ -122,13 +122,13 @@
   "presenter_fix": {
     "intro_slide": 1,
     "cover_slide": 2,
-    "portrait_original_sha256": "5e80ebede67629c0d01ce604baa50b3d5a3a240d3ffbced5e30d467d00c5fd8b",
+    "portrait_original_sha256": "e43fedbf3ed4b281904b1bcf20cabf1fd97733df2c1a6c19c0e0c59437b2bd3a",
     "photo_natural_dimensions": [
-      4032,
-      3024
+      271,
+      382
     ],
-    "displayed_aspect_ratio": 1.3333333333333333,
-    "full_photo_no_crop_or_stretch": true,
+    "displayed_aspect_ratio": 0.7094240837696335,
+    "full_photo_no_crop_or_stretch": false,
     "name_above_content": true,
     "initial_visible_points": 0,
     "per_click_counts": [
@@ -141,6 +141,7 @@
     "space_and_next": true,
     "home_resets_points": true,
     "editing_click_guard": true,
-    "remaining_49_sections_byte_identical": true
+    "remaining_49_sections_byte_identical": true,
+    "exact_user_selected_portrait_no_stretch": true
   }
 }
