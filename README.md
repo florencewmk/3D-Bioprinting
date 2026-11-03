@@ -1,8 +1,8 @@
 # Stereolithographic Bioprinting
 
-**3D bioprinting using light**
+**where engineering revolutionize medicine**
 
-Florence Mei Kuan Wong · SOfE Berlin · 15 October 2026
+Florence Mei Kuan Wong · SOfE Düsseldorf · 5 November 2026
 
 ![Presentation cover](presentation/cover.jpg)
 
@@ -10,13 +10,13 @@ Florence Mei Kuan Wong · SOfE Berlin · 15 October 2026
 
 Open [the presentation](presentation/index.html) in a browser. You can also download the HTML file and open it offline; fonts, figures and two videos are included. No installation is required.
 
-The deck contains **50 slides**:
+The deck contains **51 slides**:
 
 | Slides | Content |
 | --- | --- |
-| 1–22 | Main talk |
-| 23–27 | References and image credits |
-| 28–50 | Technical backup |
+| 1–23 | Main talk |
+| 24–28 | References and image credits |
+| 29–51 | Technical backup |
 
 [Transcript and speaker notes](presentation/transcript.md)
 
@@ -38,8 +38,8 @@ Horizontal swipes and the mouse wheel also navigate. Link to a specific slide wi
 ## Data and sources
 
 - **[Worldwide bioprinting geography through 2025](data/geography-2025/):** Excel workbook and CSV files with top-20 country rankings, full author/affiliation tables, institutional coordinates, and a sourced company register with historical and unconfirmed status flags.
-- **[Publication trends · slide 7](data/publication-trends/):** Scopus (Elsevier) counts for 2000–2026, with a roughly five-second continuous left-to-right reveal. 2026 is partial as of 27 October 2026; [CSV and methods](data/publication-trends/scopus/).
-- **[Organ-transplant timeline · slide 8](data/organ-transplants/):** annual-report snapshots for 2015–2024 and separately flagged 2025 homepage highlights. The 2025 transplant figure is a lower bound; kidney waiting-list figures are from 2024.
+- **[Publication trends · slide 8](data/publication-trends/):** Scopus (Elsevier) counts for 2000–2026, with a roughly five-second continuous left-to-right reveal. 2026 is partial as of 27 October 2026; [CSV and methods](data/publication-trends/scopus/).
+- **[Organ-transplant timeline · slide 9](data/organ-transplants/):** annual-report snapshots for 2015–2024 and separately flagged 2025 homepage highlights. The 2025 transplant figure is a lower bound; kidney waiting-list figures are from 2024.
 
 The publication chart reveals automatically without Play/Replay buttons and retains year selection. The organ chart has playback controls. Their data directories include raw values, sources and coverage limitations.
 
@@ -53,7 +53,7 @@ references whose full texts are still missing.
 
 ## Maintain the presentation
 
-The self-contained deck is in `presentation/index.html`; theme, controller and conversion scripts are in `tools/`. The original PowerPoint is kept outside this repository. Rebuilding the web deck omits the personal introduction.
+The self-contained deck is in `presentation/index.html`; theme, controller and conversion scripts are in `tools/`. The original PowerPoint is kept outside this repository. Slide 2 retains the presenter introduction at the user’s request. [Editing guide](EDITING.md); [opening-slide settings](presentation/settings.json).
 
 After changing chart data, run the corresponding updater from the repository root:
 
@@ -62,7 +62,7 @@ python3 tools/update_publication_slide.py
 python3 tools/update_organ_slide.py
 ```
 
-Each updater preserves the other 49 slide sections. Check the data with `tools/check_publication_data.py` and `tools/check_organ_data.py`. Full conversion requires Python with `python-pptx`, Pillow and PyMuPDF, plus LibreOffice; see `tools/render_source.py` and `tools/build_deck.py` for their command-line arguments.
+Each updater preserves the other 50 slide sections. Check the data with `tools/check_publication_data.py` and `tools/check_organ_data.py`. Full conversion requires Python with `python-pptx`, Pillow and PyMuPDF, plus LibreOffice; see `tools/render_source.py` and `tools/build_deck.py` for their command-line arguments.
 
 ## Credits
 

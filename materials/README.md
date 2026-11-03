@@ -1,7 +1,7 @@
 # Slide materials
 
 This directory contains separately accessible copies of the media and SVG
-artwork used in the current 50-slide HTML presentation. The offline HTML keeps
+artwork used in the current 51-slide HTML presentation. The offline HTML keeps
 its embedded copies. These files were exported from the current web deck and
 can include compressed images, video posters, and rendered vector artwork;
 they are not a claim to contain original publisher files or editable source
@@ -47,3 +47,13 @@ speaker notes identify a 2015 exhibition model reported by The Independent;
 photographer and exact original image URL remain unresolved. Existing image
 credits and third-party rights continue to apply. `tools/cover_slide.py` uses
 this repository copy when rebuilding the cover.
+
+## Restored presenter and question background
+
+The user requested the presenter slide back on 3 November 2026. The original
+portrait is stored unchanged as `images/5e80ebede67629c0d01ce604baa50b3d5a3a240d3ffbced5e30d467d00c5fd8b.jpg`;
+CSS retains the source PowerPoint crop. The aerial background is the unchanged
+user-supplied still `images/7e594d8a3443bf14af0d2ef00cbc3b56943530c380f6e9e52c0da59b1195cbf3.png`,
+credited to the [YouTube source supplied by the user](https://www.youtube.com/watch?v=ONBHkzimRbg).
+Only a CSS zoom is applied; the video itself is not downloaded or embedded.
+Source paths and provenance are also recorded in `presentation/settings.json`.

@@ -1,0 +1,45 @@
+{
+  "event": {
+    "name": "SOfE",
+    "city": "Düsseldorf",
+    "date": "5 November 2026"
+  },
+  "presenter": "Florence Mei Kuan Wong",
+  "cover_tagline": "where engineering revolutionize medicine",
+  "introduction": {
+    "points": [
+      "🇲🇾 Born in Kuala Lumpur, Malaysia",
+      "⚙️ Master’s student in Mechanical Engineering at TU Berlin",
+      "🚀 Specializing in Fluid and Combustion Engineering"
+    ],
+    "notes": "Before I proceed, I would like to kindly introduce myself. I’m Florence, I was born in Kuala Lumpur, Malaysia. I’m a master’s student in Mechanical Engineering at TU Berlin, specializing in Fluid and Combustion Engineering. \n\nI know you might be wondering why did I choose a completely different field of topic for this competition. But if you follow me throughout, you will find the answer."
+  },
+  "opening_question": [
+    "What comes to your mind",
+    "when we mention additive manufacturing,",
+    "or 3D-printing?"
+  ],
+  "opening_background": {
+    "path": "materials/images/7e594d8a3443bf14af0d2ef00cbc3b56943530c380f6e9e52c0da59b1195cbf3.png",
+    "source_url": "https://www.youtube.com/watch?v=ONBHkzimRbg",
+    "provenance": "Unchanged still image supplied by the user on 3 November 2026; user identifies the linked YouTube video as its source."
+  },
+  "portrait": {
+    "path": "materials/images/5e80ebede67629c0d01ce604baa50b3d5a3a240d3ffbced5e30d467d00c5fd8b.jpg",
+    "provenance": "Original photograph embedded in source competition PPTX slide 2; restored at user request on 3 November 2026. Original image bytes retained."
+  },
+  "sections": [
+    {
+      "label": "Introduction",
+      "slide": 4
+    },
+    {
+      "label": "Printing methods",
+      "slide": 10
+    },
+    {
+      "label": "Conclusion",
+      "slide": 21
+    }
+  ]
+}

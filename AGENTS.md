@@ -19,7 +19,7 @@ data README before editing. Preserve other contributors' changes.
 - Keep missing full texts explicitly listed. Archive available PDFs unchanged,
   preserve their copyright/license notices, and retain supplements with their
   parent paper. Third-party papers are not relicensed under the repo's MIT
-  license. Do not bundle unrelated libraries or reintroduce personal material.
+  license. Do not bundle unrelated libraries or introduce unrelated personal material. The presenter introduction is explicitly authorized by the user.
 - Store the images, scientific diagrams, video clips, fonts, and other materials
   actually used by the slides in `materials/`. Embedded HTML assets must also
   have separately accessible repository copies; embedding alone is insufficient.
@@ -32,9 +32,10 @@ data README before editing. Preserve other contributors' changes.
   personal Downloads folder, an external project directory, a temporary folder,
   a browser session, or a remote URL. If an input cannot be archived, document
   the exact missing input and reason rather than claiming a complete rebuild.
-- Do not commit credentials, browser/session exports, private personal files,
-  or unused reference libraries. Preserve the removal of the personal
-  introduction; do not reintroduce it through an unreviewed source deck.
+- Do not commit credentials, browser/session exports, unrelated private personal files,
+  or unused reference libraries. The user explicitly requested restoration of the
+  presenter introduction on 3 November 2026; retain slide 2 with her name as its
+  heading, three original points and portrait, without an “About me” title.
 
 ## Presentation maintenance
 

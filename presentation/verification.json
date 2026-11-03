@@ -1,29 +1,62 @@
 {
-  "verified_on": "2026-10-17",
-  "slides": 50,
-  "removed_slide": "About me",
+  "verified_on": "2026-11-03",
+  "event": {
+    "city": "Düsseldorf",
+    "date": "5 November 2026"
+  },
+  "slides": 51,
+  "restored_slide": {
+    "number": 2,
+    "heading": "Florence Mei Kuan Wong",
+    "about_me_heading": false,
+    "portrait": "Original bytes; source crop retained",
+    "three_points_retained": true
+  },
   "checks": {
     "sequential_ids_and_notes": true,
-    "retained_slide_content_unchanged_except_numbering": true,
-    "overview_entries": 50,
+    "scientific_slide_bodies_unchanged_except_numbering_menu_footer": 47,
+    "overview_entries": 51,
     "contents_targets": [
-      3,
-      9,
-      15,
-      20
+      4,
+      10,
+      21
     ],
-    "publication_animation_slide": 7,
-    "organ_animation_slide": 8,
-    "chart_updaters_preserve_other_49_sections": true,
+    "menu_labels": [
+      "Introduction",
+      "Printing methods",
+      "Conclusion"
+    ],
+    "corrected_date_footers": 50,
+    "publication_animation_slide": 8,
+    "publication_animation_observed": "2004 to 2026; final 39/62/232/419",
+    "organ_animation_slide": 9,
+    "organ_animation_observed": "2015 to 2025; kidney callouts revealed",
+    "chart_updaters_preserve_other_50_sections": true,
     "data_contracts": true,
     "embedded_videos": 2,
     "javascript_syntax": true,
     "browser_errors": []
   },
+  "opening_question": {
+    "number": 4,
+    "background": "User-supplied aerial still",
+    "source_url": "https://www.youtube.com/watch?v=ONBHkzimRbg",
+    "centered": true,
+    "decorative_lattice_removed": true,
+    "css_zoom_out_seconds": 18,
+    "observed_scale_from": 1.14874,
+    "observed_scale_end": 1,
+    "reduced_motion_css_fallback": true
+  },
   "desktop": {
-    "width": 1280,
-    "height": 720,
-    "visual_review": "Contents"
+    "width": 1920,
+    "height": 907,
+    "visual_review": [
+      "cover",
+      "introduction",
+      "contents",
+      "question"
+    ]
   },
   "phone": {
     "viewport_width": 390,
@@ -31,7 +64,7 @@
     "stage_width": 390,
     "stage_height": 219.375,
     "horizontal_overflow": false,
-    "visual_review": "Contents"
+    "visual_review": "question"
   },
   "original_conversion": {
     "errors": [],
@@ -84,5 +117,6 @@
       }
     },
     "source_sha256": "c40db77325caf103a88d7b2fdfc6cfc97601140c86f5c9bd071ff266d2756407"
-  }
+  },
+  "preserved_parallel_update": "d76ccaf: continuous publication reveal, no Play/Replay buttons, unchanged counts"
 }

@@ -1,0 +1,67 @@
+# Where to edit the presentation
+
+The current presentation is **`presentation/index.html`**. This is the file
+served by GitHub Pages and the single HTML file you can open offline.
+
+## Change text directly in the browser
+
+1. Open the presentation and press **E**.
+2. Click text to change it.
+3. Press **Cmd+S** to download your edited HTML.
+4. To publish those edits, replace `presentation/index.html` in this repository
+   with the downloaded file, then commit and push it to GitHub.
+
+Browser edits save only in that browser until you download/publish them.
+The Help panel’s **Reset browser edits** button removes local overrides.
+Labels baked into scientific figures cannot be edited as text.
+
+## Change event details and opening slides
+
+Edit **`presentation/settings.json`**. It contains the city, competition date,
+cover tagline, presenter name, three introduction points, opening question,
+background source, and the three menu labels and destinations.
+
+Then run this in the repository folder:
+
+```sh
+python3 tools/update_opening.py
+python3 tools/archive_materials.py
+```
+
+This updates the first four slides, shared menu/date/footer, notes, and
+transcript while preserving the scientific slide artwork. Refresh the browser
+after saving. Keep JSON quotes and commas intact.
+
+## Edit HTML, layout, or animations
+
+| File | What to edit |
+| --- | --- |
+| `presentation/index.html` | Actual published HTML; search `SLIDE 04:` or `id="slide-4"` to reach a slide |
+| `tools/deck.css` | Fonts, sizes, positions, colors, presenter crop, and question zoom animation |
+| `tools/deck.js` | Keyboard navigation, overview, browser text editing, saving |
+| `tools/cover_slide.py` | Cover HTML structure and lung photo |
+| `tools/opening_slides.py` | Introduction, contents, centered question, shared menu/footer |
+| `presentation/transcript.md` | Readable slide text and speaker notes |
+
+After editing the maintained CSS, controller, or opening templates, run the two
+commands above to embed them in the published HTML. Direct HTML changes are
+immediate; rerunning the opening updater rebuilds slides 1–4 from settings.
+The remaining scientific slide text can be edited directly in the HTML, using
+`data-edit` labels or the per-slide comments to find it. Embedded image/font
+data looks very long: leave those `data:...;base64,...` strings intact.
+
+Restoring the introduction makes the order **cover 1 → Florence 2 → contents 3
+→ opening question 4**. Publication trends is now slide 8 and organs slide 9.
+The application slides remain under the Printing methods menu section.
+
+For chart edits, use `tools/update_publication_slide.py` and
+`tools/update_organ_slide.py`. They preserve the other 50 slide sections.
+
+To preview locally:
+
+```sh
+python3 -m http.server 3000
+```
+
+Open `http://127.0.0.1:3000/presentation/index.html`. GitHub changes go live only
+after a commit, push, and successful Pages deployment.

@@ -1,4 +1,4 @@
-"""Check the slide 7 data contract and source snapshot totals."""
+"""Check the slide 8 data contract and source snapshot totals."""
 from pathlib import Path
 import json,csv,hashlib
 ROOT=Path(__file__).resolve().parents[1];directory=ROOT/'data/publication-trends'
@@ -26,4 +26,4 @@ assert [r['year'] for r in embedded['rows']]==list(range(2000,2027))
 for actual,expected in zip(embedded['rows'],scopus):
  assert actual['counts']=={k:int(expected[k]) for k in keys}
 assert embedded['rows'][-1]['status']=='year_to_date'
-print('PASS: slide 7 matches all 108 Scopus counts; 2026 explicitly partial')
+print('PASS: slide 8 matches all 108 Scopus counts; 2026 explicitly partial')

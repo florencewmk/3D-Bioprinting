@@ -11,6 +11,7 @@ from io import BytesIO
 from publication_chart import render_publication_slide
 from organ_chart import render_organ_slide
 from cover_slide import render_cover
+from opening_slides import settings, footer as event_footer, navigation, render_introduction, render_contents, render_question
 from deck_structure import display_number, web_section, write_transcript
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('source',type=Path,help='Original competition PPTX')
@@ -45,17 +46,16 @@ def svg_scope(svg,n):
   new=f's{n}_{old}'
   svg=svg.replace(f'id="{old}"',f'id="{new}"').replace(f'#{old}"',f'#{new}"').replace(f'#{old})',f'#{new})')
  return svg
-TITLES=['Stereolithographic Bioprinting','About me','Contents','What comes to your mind?','From everyday objects to living tissue','From research to real-world use','The bioprinting landscape','Bioprinting publications · 2000–2026','The organ shortage persists','Bioprinting technologies','A structure forms one layer at a time','SLA · DLP · multiphoton lithography','Four light-based curing routes','UV / violet and NIR','Thermal activation','Precision is a beginning','Tissue engineering in practice','From bioinks to bioprinters','Soft tissue research in orbit','3D-printed bio-plaster on ISS','Layers to living tissue','Engineering tomorrow’s possibilities','Thank you · Questions','Scientific references · 1','Scientific references · 2','Data and online sources · 1','Data and online sources · 2','Image references','Technical backup']
+TITLES=['Stereolithographic Bioprinting','Florence Mei Kuan Wong','Contents','What comes to your mind?','From everyday objects to living tissue','From research to real-world use','The bioprinting landscape','Bioprinting publications · 2000–2026','The organ shortage persists','Bioprinting technologies','A structure forms one layer at a time','SLA · DLP · multiphoton lithography','Four light-based curing routes','UV / violet and NIR','Thermal activation','Precision is a beginning','Tissue engineering in practice','From bioinks to bioprinters','Soft tissue research in orbit','3D-printed bio-plaster on ISS','Layers to living tissue','Engineering tomorrow’s possibilities','Thank you · Questions','Scientific references · 1','Scientific references · 2','Data and online sources · 1','Data and online sources · 2','Image references','Technical backup']
 sections=[];data=[];manifest=[]
 for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
  n=i+1
- if n==2:continue
  src=texts(slide);title=TITLES[i] if i<len(TITLES) else (src[0] if src else f'Slide {n}')
  notes=slide.notes_slide.notes_text_frame.text if slide.has_notes_slide and slide.notes_slide.notes_text_frame is not None else ''
  data.append({'number':display_number(n),'title':title,'text':'\n\n'.join(src),'notes':notes})
  if n==3:data[-1]['text']=re.sub(r'Page (\d+)',lambda m:f'Page {display_number(int(m[1])):02d}',data[-1]['text'])
  # Posters are rebuilt directly in semantic HTML in the chosen design.
- special=n in [1,3,4,8,16,22,23,29] or 24<=n<=28
+ special=n in [1,2,3,4,8,16,22,23,29] or 24<=n<=28
  art='';native=[]
  if not special:
   dictionary=page.get_text('dict')
@@ -110,15 +110,19 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
  if n==8:art=render_publication_slide()
  if n==9:art=render_organ_slide()
  if n==1:
-  data[-1]['text']='SOfE · BERLIN · 2026\n\n'+data[-1]['text']
+  c=settings()
+  data[-1]['text']=f'{c["event"]["name"]} · {c["event"]["city"]} · {c["event"]["date"]}\n\nStereolithographic\n\nBioprinting\n\n{c["cover_tagline"]}\n\n{c["presenter"]}'
   art=render_cover()
+ if n==2:
+  c=settings()
+  title=c['presenter'];data[-1].update(title=title,text=title+'\n\n'+'\n\n'.join(c['introduction']['points']),notes=c['introduction']['notes'])
+  src=[data[-1]['text']];art=render_introduction()
  if n==3:
-  art='<div class="contents-heading"><p class="eyebrow">THE TALK</p><h1 class="editable" data-edit="contents-title">Contents</h1></div><div class="contents-list">'
-  for k,(label,start) in enumerate([('Introduction',4),('Printing methods',10),('Applications',16),('Conclusion and discussion',21)]):
-   art+=f'<button class="chapter" data-goto="{start}"><span class="chapter-no">0{k+1}</span><span>{label}</span><small>{start:02d} →</small></button>'
-  art+='</div>'
+  art=render_contents()
+  data[-1]['text']='Contents\n\n'+'\n\n'.join(f'{s["label"]} · Page {s["slide"]:02d}' for s in settings()['sections'])
  if n==4:
-  art='''<div class="lattice" aria-hidden="true"></div><div class="poster"><p class="eyebrow">A QUESTION TO BEGIN</p><h1 class="editable" data-edit="opening-question">What comes to<br>your mind?</h1><p class="poster-sub editable" data-edit="opening-detail">When we mention additive manufacturing,<br>or 3D-printing?</p></div>'''
+  art=render_question()
+  data[-1]['text']='\n'.join(settings()['opening_question'])+'\n\nBackground source: '+settings()['opening_background']['source_url']
  if n==16:
   art='''<div class="poster half"><p class="eyebrow">APPLICATIONS</p><h1 class="editable" data-edit="precision">Precision<br>is a <em class="gradient">beginning.</em></h1></div>'''
  if n in [22,23,29]:
@@ -155,11 +159,9 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
   videos.append(f'<video controls playsinline preload="metadata" aria-label="{H(sh.name)}" poster="{poster}" style="left:{x:.1f}px;top:{y:.1f}px;width:{w:.1f}px;height:{h:.1f}px" src="{video_src}"></video>')
   manifest.append({'slide':display_number(n),'media':sh.name,'bytes':len(blob)})
  if n==16:art+='<p class="media-credit">Source: Readily3D · Tomolite Bioprinter · accessed 14 October 2026</p>'
- section='Introduction' if n<10 else 'Printing methods' if n<16 else 'Applications' if n<21 else 'Conclusion' if n<24 else 'References' if n<29 else 'Technical backup'
- nav=''
- if n!=1:
-  nav='<nav class="section-nav" aria-label="Talk sections">'+''.join(f'<button data-goto="{start}" class="{"current" if label==section else ""}">{label}</button>' for label,start in [('Introduction',4),('Printing methods',10),('Applications',16),('Conclusion',21)])+f'<span>{"REFERENCES" if 24<=n<29 else "BACKUP" if n>=29 else ""}</span></nav>'
- footer=f'<footer><span>15 October 2026</span><span>Florence Mei Kuan Wong</span><span>{n:02d} / 51</span></footer>' if n!=1 else ''
+ if n<=4:src=[data[-1]['text']]
+ nav=navigation(n) if n>2 else ''
+ footer=event_footer(n) if n>1 else ''
  comment=notes.replace('--','—').replace('<','&lt;')
  sections.append(web_section(f'<section class="slide {"active visible" if n==1 else ""} {"poster-slide" if special else ""}" id="slide-{n}" aria-label="{n}. {H(title)}" aria-hidden="{str(n!=1).lower()}">{nav}{art}{"".join(videos)}{footer}<div class="sr-only">{H(chr(10).join(src))}</div><!-- Speaker notes: {comment} --></section>',n))
 (BUILD/'deck-data.json').write_text(json.dumps(data,ensure_ascii=False,indent=2))
@@ -169,5 +171,6 @@ write_transcript(OUT/'transcript.md',data)
 css=(Path(__file__).parent/'deck.css').read_text()+'\n'+(Path(__file__).parent/'publication-chart.css').read_text()+'\n'+(Path(__file__).parent/'organ-chart.css').read_text();js=(Path(__file__).parent/'deck.js').read_text()+'\n'+(Path(__file__).parent/'publication-chart.js').read_text()+'\n'+(Path(__file__).parent/'organ-chart.js').read_text()
 shell=(Path(__file__).parent/'shell.html').read_text()
 result=shell.replace('FONT_CSS',(Path(__file__).parent/'fonts.css').read_text()).replace('BASE_CSS',base).replace('DECK_CSS',css).replace('SLIDE_SECTIONS','\n'.join(sections)).replace('SOURCE_DATA',json.dumps(data,ensure_ascii=False).replace('</','<\\/')).replace('DECK_JS',js)
+result=result.replace('15 October 2026',settings()['event']['date'])
 (OUT/'index.html').write_text('\n'.join(line.rstrip() for line in result.splitlines()).rstrip()+'\n')
 print(json.dumps({'slides':len(data),'native_text_lines':sum(s.count('class="textline') for s in sections),'videos':manifest,'html_bytes':len(result.encode()),'source_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest()},indent=2))
