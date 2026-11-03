@@ -53,7 +53,7 @@ references whose full texts are still missing.
 
 ## Maintain the presentation
 
-The self-contained deck is in `presentation/index.html`; theme, controller and conversion scripts are in `tools/`. The original PowerPoint is kept outside this repository. Slide 2 retains the presenter introduction at the user’s request. [Editing guide](EDITING.md); [opening-slide settings](presentation/settings.json).
+The self-contained deck is in `presentation/index.html`; theme, controller and conversion scripts are in `tools/`. The original PowerPoint is kept outside this repository. The presenter introduction is slide 1, before the cover on slide 2. It starts with the name/photo and reveals the three points one per click. [Editing guide](EDITING.md); [opening-slide settings](presentation/settings.json).
 
 After changing chart data, run the corresponding updater from the repository root:
 

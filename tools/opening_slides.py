@@ -32,11 +32,11 @@ def navigation(number):
 
 def render_introduction():
     c = settings()
-    # Photo retains the source PowerPoint crop and position.
-    points = ''.join(f'<li class="editable" data-edit="profile-point-{i}">{html.escape(text)}</li>' for i, text in enumerate(c['introduction']['points'], 1))
+    # Keep the full original photo and its intrinsic aspect ratio.
+    points = ''.join(f'<li class="editable" data-edit="profile-point-{i}" data-reveal-step="{i}" aria-hidden="true" inert>{html.escape(text)}</li>' for i, text in enumerate(c['introduction']['points'], 1))
     return (f'<div class="profile-glow" aria-hidden="true"></div>'
             f'<h1 class="profile-name editable" data-edit="profile-name">{html.escape(c["presenter"])}</h1>'
-            f'<ul class="profile-points">{points}</ul>'
+            f'<ul class="profile-points" aria-live="polite">{points}</ul>'
             f'<figure class="profile-photo"><img src="{image_uri(c["portrait"]["path"])}" alt="Florence Mei Kuan Wong standing in a snowy alpine village"></figure>')
 
 

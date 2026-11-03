@@ -3,11 +3,12 @@ from opening_slides import settings
 
 
 def display_number(source_number):
-    return source_number
+    return 3 - source_number if source_number <= 2 else source_number
 
 
 def web_section(section, source_number):
-    return section
+    number = display_number(source_number)
+    return section.replace(f'id="slide-{source_number}"', f'id="slide-{number}"', 1).replace(f'aria-label="{source_number}. ', f'aria-label="{number}. ', 1)
 
 
 def write_transcript(path, data):

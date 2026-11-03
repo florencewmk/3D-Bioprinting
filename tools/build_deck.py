@@ -159,11 +159,13 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
   videos.append(f'<video controls playsinline preload="metadata" aria-label="{H(sh.name)}" poster="{poster}" style="left:{x:.1f}px;top:{y:.1f}px;width:{w:.1f}px;height:{h:.1f}px" src="{video_src}"></video>')
   manifest.append({'slide':display_number(n),'media':sh.name,'bytes':len(blob)})
  if n==16:art+='<p class="media-credit">Source: Readily3D · Tomolite Bioprinter · accessed 14 October 2026</p>'
- if n<=4:src=[data[-1]['text']]
+ if n<=4:src=[settings()['presenter'] if n==2 else data[-1]['text']]
  nav=navigation(n) if n>2 else ''
- footer=event_footer(n) if n>1 else ''
+ footer=event_footer(display_number(n)) if n!=1 else ''
  comment=notes.replace('--','—').replace('<','&lt;')
- sections.append(web_section(f'<section class="slide {"active visible" if n==1 else ""} {"poster-slide" if special else ""}" id="slide-{n}" aria-label="{n}. {H(title)}" aria-hidden="{str(n!=1).lower()}">{nav}{art}{"".join(videos)}{footer}<div class="sr-only">{H(chr(10).join(src))}</div><!-- Speaker notes: {comment} --></section>',n))
+ sections.append(web_section(f'<section class="slide {"active visible" if n==2 else ""} {"profile-slide" if n==2 else "cover-slide" if n==1 else "poster-slide" if special else ""}" id="slide-{n}" aria-label="{n}. {H(title)}" aria-hidden="{str(n!=2).lower()}">{nav}{art}{"".join(videos)}{footer}<div class="sr-only">{H(chr(10).join(src))}</div><!-- Speaker notes: {comment} --></section>',n))
+sections.sort(key=lambda s:int(re.search(r'id="slide-(\d+)"',s)[1]))
+data.sort(key=lambda row:row['number'])
 (BUILD/'deck-data.json').write_text(json.dumps(data,ensure_ascii=False,indent=2))
 (BUILD/'media-manifest.json').write_text(json.dumps(manifest,indent=2))
 # A readable transcript is a separate artifact, while presentation notes remain embedded.

@@ -50,7 +50,7 @@ The remaining scientific slide text can be edited directly in the HTML, using
 `data-edit` labels or the per-slide comments to find it. Embedded image/font
 data looks very long: leave those `data:...;base64,...` strings intact.
 
-Restoring the introduction makes the order **cover 1 → Florence 2 → contents 3
+Restoring the introduction makes the order **Florence 1 → cover 2 → contents 3
 → opening question 4**. Publication trends is now slide 8 and organs slide 9.
 The application slides remain under the Printing methods menu section.
 
@@ -65,3 +65,9 @@ python3 -m http.server 3000
 
 Open `http://127.0.0.1:3000/presentation/index.html`. GitHub changes go live only
 after a commit, push, and successful Pages deployment.
+
+The presenter slide starts with only the name and full, undistorted photo.
+Click the slide, press Space/Right, or use Next to reveal each of the three
+points. After the third point, the next advance opens the cover. Left/Previous
+hides a point; Home returns to the start with all points hidden. Press E to
+show all points for editing. The photo uses its original 4:3 aspect ratio.

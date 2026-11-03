@@ -12,7 +12,8 @@
       "⚙️ Master’s student in Mechanical Engineering at TU Berlin",
       "🚀 Specializing in Fluid and Combustion Engineering"
     ],
-    "notes": "Before I proceed, I would like to kindly introduce myself. I’m Florence, I was born in Kuala Lumpur, Malaysia. I’m a master’s student in Mechanical Engineering at TU Berlin, specializing in Fluid and Combustion Engineering. \n\nI know you might be wondering why did I choose a completely different field of topic for this competition. But if you follow me throughout, you will find the answer."
+    "notes": "Before I proceed, I would like to kindly introduce myself. I’m Florence, I was born in Kuala Lumpur, Malaysia. I’m a master’s student in Mechanical Engineering at TU Berlin, specializing in Fluid and Combustion Engineering. \n\nI know you might be wondering why did I choose a completely different field of topic for this competition. But if you follow me throughout, you will find the answer.",
+    "reveal": "One point per click; start with name and photo only."
   },
   "opening_question": [
     "What comes to your mind",
@@ -26,7 +27,7 @@
   },
   "portrait": {
     "path": "materials/images/5e80ebede67629c0d01ce604baa50b3d5a3a240d3ffbced5e30d467d00c5fd8b.jpg",
-    "provenance": "Original photograph embedded in source competition PPTX slide 2; restored at user request on 3 November 2026. Original image bytes retained."
+    "provenance": "User supplied IMG_6938.JPG on 3 November 2026; unchanged original bytes, displayed in full at its natural 4:3 proportions."
   },
   "sections": [
     {
@@ -41,5 +42,11 @@
       "label": "Conclusion",
       "slide": 21
     }
+  ],
+  "opening_order": [
+    "introduction",
+    "cover",
+    "contents",
+    "question"
   ]
 }

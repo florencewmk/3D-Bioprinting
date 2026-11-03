@@ -52,7 +52,7 @@ this repository copy when rebuilding the cover.
 
 The user requested the presenter slide back on 3 November 2026. The original
 portrait is stored unchanged as `images/5e80ebede67629c0d01ce604baa50b3d5a3a240d3ffbced5e30d467d00c5fd8b.jpg`;
-CSS retains the source PowerPoint crop. The aerial background is the unchanged
+The user-supplied IMG_6938.JPG matches these original bytes; the full 4:3 image is now shown without cropping or stretching. The aerial background is the unchanged
 user-supplied still `images/7e594d8a3443bf14af0d2ef00cbc3b56943530c380f6e9e52c0da59b1195cbf3.png`,
 credited to the [YouTube source supplied by the user](https://www.youtube.com/watch?v=ONBHkzimRbg).
 Only a CSS zoom is applied; the video itself is not downloaded or embedded.

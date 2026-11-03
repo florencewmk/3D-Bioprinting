@@ -2,7 +2,23 @@
 
 51 slides · 5 November 2026
 
-## 01. Stereolithographic Bioprinting
+## 01. Florence Mei Kuan Wong
+
+Florence Mei Kuan Wong
+
+🇲🇾 Born in Kuala Lumpur, Malaysia
+
+⚙️ Master’s student in Mechanical Engineering at TU Berlin
+
+🚀 Specializing in Fluid and Combustion Engineering
+
+### Speaker notes
+
+Before I proceed, I would like to kindly introduce myself. I’m Florence, I was born in Kuala Lumpur, Malaysia. I’m a master’s student in Mechanical Engineering at TU Berlin, specializing in Fluid and Combustion Engineering.
+
+I know you might be wondering why did I choose a completely different field of topic for this competition. But if you follow me throughout, you will find the answer.
+
+## 02. Stereolithographic Bioprinting
 
 SOfE · Düsseldorf · 5 November 2026
 
@@ -20,22 +36,6 @@ Welcome to the world of 3D printing, a technology that is shaping our future.
 
 On the right hand side here it is a 3D printed lung anatomical model displayed in an exhibition in China in 2015. It was reported by The Independent, a news media in the UK. Bioprinting is not something new, research has started since a decade ago.
 
-
-## 02. Florence Mei Kuan Wong
-
-Florence Mei Kuan Wong
-
-🇲🇾 Born in Kuala Lumpur, Malaysia
-
-⚙️ Master’s student in Mechanical Engineering at TU Berlin
-
-🚀 Specializing in Fluid and Combustion Engineering
-
-### Speaker notes
-
-Before I proceed, I would like to kindly introduce myself. I’m Florence, I was born in Kuala Lumpur, Malaysia. I’m a master’s student in Mechanical Engineering at TU Berlin, specializing in Fluid and Combustion Engineering.
-
-I know you might be wondering why did I choose a completely different field of topic for this competition. But if you follow me throughout, you will find the answer.
 
 ## 03. Contents
 
