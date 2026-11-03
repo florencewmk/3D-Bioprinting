@@ -147,7 +147,7 @@ function draw(view) {
 }
 const motion = matchMedia('(prefers-reduced-motion: reduce)');
 const segment = 3450;
-let elapsed = 0, last = null, frame = 0, shown = -1, autoRotate = true;
+let elapsed = 0, last = null, frame = 0, shown = -1;
 let resumeTimer;
 for (const [index, point] of leaders.entries()) {
   const button = document.createElement('button');
@@ -176,8 +176,11 @@ function coordinates([x, y, z]) {
 }
 function rotateToRank(index) {
   pauseAnimation();
-  autoRotate = false;
-  rotateToView(centers[index], () => showRank(index));
+  rotateToView(centers[index], () => {
+    elapsed = index * segment;
+    showRank(index);
+    if (!motion.matches) frame = requestAnimationFrame(tick);
+  });
 }
 function rotateToView(target, done) {
   const [latitude, longitude] = coordinates(previousView);
@@ -251,7 +254,7 @@ function tick(now) {
   frame = requestAnimationFrame(tick);
 }
 function resumeTour() {
-  if (!autoRotate || motion.matches || byId('tour').hidden || drag) return;
+  if (motion.matches || byId('tour').hidden || drag) return;
   pauseAnimation();
   rotateToView(tourView(elapsed), () => {
     frame = requestAnimationFrame(tick);
