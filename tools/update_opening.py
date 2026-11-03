@@ -24,7 +24,8 @@ assert 'profile-slide' in sections[0].split('>', 1)[0], 'Expected the presenter 
 for i, row in enumerate(data, 1):
     row['number'] = i
 
-data[0].update(title=c['presenter'], text=c['presenter'] + '\n\n' + '\n\n'.join(c['introduction']['points']), notes=c['introduction']['notes'])
+heading = c['introduction'].get('heading', c['presenter'])
+data[0].update(title=heading, text=heading + '\n\n' + '\n\n'.join(c['introduction']['points']), notes=c['introduction']['notes'])
 data[1]['text'] = f'{c["event"]["name"]} · {c["event"]["city"]} · {c["event"]["date"]}\n\nStereolithographic\n\nBioprinting\n\n{c["cover_tagline"]}\n\n{c["presenter"]}'
 data[2]['text'] = 'Contents\n\n' + '\n\n'.join(f'{s["label"]} · Page {s["slide"]:02d}' for s in c['sections'])
 data[3]['text'] = '\n'.join(c['opening_question']) + '\n\nBackground source: ' + c['opening_background']['source_url']
@@ -37,7 +38,7 @@ for i, section in enumerate(sections):
         if number > 2:
             opening = section.split('>', 1)[0] + '>'
         # Screen-reader content follows click reveals too; full transcript stays in sourceData.
-        transcript = c['presenter'] if number == 1 else data[i]['text']
+        transcript = heading if number == 1 else data[i]['text']
         section = opening + renderers[i]() + '<div class="sr-only">' + html.escape(transcript) + '</div></section>'
         if number > 2:
             at = section.index('>') + 1

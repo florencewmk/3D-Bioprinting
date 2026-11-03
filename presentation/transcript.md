@@ -2,9 +2,9 @@
 
 51 slides · 5 November 2026
 
-## 01. Florence Mei Kuan Wong
+## 01. Hi, I'm Florence :)
 
-Florence Mei Kuan Wong
+Hi, I'm Florence :)
 
 🇲🇾 Born in Kuala Lumpur, Malaysia
 

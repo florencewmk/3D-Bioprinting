@@ -19,7 +19,7 @@ def image_uri(path):
 def footer(number):
     c = settings()
     return (f'<footer><span>{html.escape(c["event"]["date"])}</span>'
-            f'<span>{html.escape(c["presenter"])}</span><span>{number:02d} / 51</span></footer>')
+            f'<span>{html.escape(c["presenter"] if number != 1 else "")}</span><span>{number:02d} / 51</span></footer>')
 
 
 def navigation(number):
@@ -35,7 +35,7 @@ def render_introduction():
     # Use the exact portrait crop selected by the user at its intrinsic aspect ratio.
     points = ''.join(f'<li class="editable" data-edit="profile-point-{i}" data-reveal-step="{i}" aria-hidden="true" inert>{html.escape(text)}</li>' for i, text in enumerate(c['introduction']['points'], 1))
     return (f'<div class="profile-glow" aria-hidden="true"></div>'
-            f'<h1 class="profile-name editable" data-edit="profile-name">{html.escape(c["presenter"])}</h1>'
+            f'<h1 class="profile-name editable" data-edit="profile-name">{html.escape(c["introduction"].get("heading", c["presenter"]))}</h1>'
             f'<ul class="profile-points" aria-live="polite">{points}</ul>'
             f'<figure class="profile-photo"><img src="{image_uri(c["portrait"]["path"])}" alt="{html.escape(c["portrait"].get("alt", c["presenter"]))}"></figure>')
 
