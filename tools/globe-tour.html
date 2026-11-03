@@ -147,6 +147,10 @@ function draw(view) {
 }
 const motion = matchMedia('(prefers-reduced-motion: reduce)');
 const segment = 3450;
+const firstSegment = 6500;
+const cycleDuration = firstSegment + segment * (leaders.length - 1);
+const rankStart = index => index === 0 ? 0 : firstSegment + (index - 1) * segment;
+const rankAt = time => time < firstSegment ? 0 : 1 + Math.floor((time - firstSegment) / segment);
 let elapsed = 0, last = null, frame = 0, shown = -1;
 let resumeTimer;
 for (const [index, point] of leaders.entries()) {
@@ -177,7 +181,7 @@ function coordinates([x, y, z]) {
 function rotateToRank(index) {
   pauseAnimation();
   rotateToView(centers[index], () => {
-    elapsed = index * segment;
+    elapsed = rankStart(index);
     showRank(index);
     if (!motion.matches) frame = requestAnimationFrame(tick);
   });
@@ -236,18 +240,19 @@ globe.addEventListener('wheel', event => {
   resumeTimer = setTimeout(resumeTour, 180);
 }, {passive: false});
 function tourView(time) {
-  const index = Math.floor(time / segment);
-  const progress = (time % segment) / segment;
+  const index = rankAt(time);
+  const fraction = (time - rankStart(index)) / (index === 0 ? firstSegment : segment);
+  const progress = index === 0 ? fraction * fraction * (3 - 2 * fraction) : fraction;
   const next = (index + 1) % centers.length;
   return interpolate(centers[index], centers[next], progress);
 }
 function render(time) {
-  showRank(Math.floor(time / segment));
+  showRank(rankAt(time));
   draw(tourView(time));
 }
 function tick(now) {
   if (last !== null) {
-    elapsed = (elapsed + Math.min(now - last, 70)) % (segment * leaders.length);
+    elapsed = (elapsed + Math.min(now - last, 70)) % cycleDuration;
   }
   last = now;
   render(elapsed);
