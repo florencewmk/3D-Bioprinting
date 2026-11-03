@@ -34,7 +34,7 @@ def inventory():
     sections = list(re.finditer(r'<section\b[^>]*\bid="slide-(\d+)"[^>]*>.*?</section>', document, re.S))
     records, blobs = {}, {}
 
-    def add(blob, mime, slide):
+    def add(blob, mime, slide, provenance=None):
         folder, extension = MIMES[mime]
         digest = hashlib.sha256(blob).hexdigest()
         path = f"materials/{folder}/{digest}.{extension}"
@@ -43,7 +43,9 @@ def inventory():
                              "sha256": digest, "slides": [],
                              "source": "presentation/index.html",
                              "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."}
-            if mime == "text/html":
+            if provenance is not None:
+                records[path]["provenance"] = provenance
+            elif mime == "text/html":
                 records[path]["provenance"] = ("Bundled bioprinting globe and map, built by "
                     "tools/offline_map_slide.py from map/ and archived Natural Earth boundaries.")
             blobs[path] = blob
@@ -63,6 +65,9 @@ def inventory():
             add(svg[0].encode("utf-8"), "image/svg+xml", int(section[1]))
         for frame in re.finditer(r'<iframe class="offline-map-frame"[^>]*\bsrcdoc="([^"]+)"', section[0]):
             add(html.unescape(frame[1]).encode("utf-8"), "text/html", int(section[1]))
+        for frame in re.finditer(r'<iframe class="tram-story-frame"[^>]*\bsrcdoc="([^"]+)"', section[0]):
+            add(html.unescape(frame[1]).encode("utf-8"), "text/html", int(section[1]),
+                "Original editable SVG tram story from materials/interactive/munich-tram-story.html, embedded by tools/update_tram_slide.py.")
     manifest = {"source": "presentation/index.html", "source_sha256": hashlib.sha256(source).hexdigest(),
                 "slides": len(sections), "asset_count": len(records),
                 "assets": sorted(records.values(), key=lambda r: r["path"])}

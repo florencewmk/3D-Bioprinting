@@ -1,7 +1,7 @@
 # Slide materials
 
 This directory contains separately accessible copies of the media and SVG
-artwork used in the current 51-slide HTML presentation. The offline HTML keeps
+artwork used in the current 52-slide HTML presentation. The offline HTML keeps
 its embedded copies. These files were exported from the current web deck and
 can include compressed images, video posters, and rendered vector artwork;
 they are not a claim to contain original publisher files or editable source

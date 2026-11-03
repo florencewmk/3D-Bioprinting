@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The woman on the tram</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#151d26;color:#f8efe0}
+*{box-sizing:border-box}body{margin:0;min-height:100dvh;display:grid;place-items:center;padding:16px}
+main{width:min(100%,calc((100dvh - 120px)*16/9),1440px)}
+svg{width:100%;height:auto;display:block;border-radius:12px;background:#233648}
+nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;flex-wrap:wrap}
+button{font:inherit;padding:.5em .85em;border:1px solid #697a88;border-radius:8px;background:#263849;color:inherit;cursor:pointer}
+button:disabled{opacity:.45;cursor:default}button:focus-visible{outline:2px solid #f7b0c4;outline-offset:3px}
+#status{font-size:.9rem;color:#d9e2e5}.scene{display:none}.scene.on{display:block;animation:appear .45s ease-out both}
+.street{animation:passing 16s linear infinite}.hanging{transform-origin:0 0;animation:sway 2.8s ease-in-out infinite alternate}
+#riders{transition:opacity .6s}svg[data-beat]:not([data-beat="0"]) #riders{opacity:.44}
+#florence,#courier{transition:transform .8s ease,opacity .55s}
+svg[data-beat="0"] #florence{animation:board .95s ease-out both}
+svg[data-beat="7"] #florence{transform:translate(-280px,0);opacity:0}
+svg[data-beat="7"] #courier{transform:translate(8px,0)}
+svg[data-beat="7"] #door-label{visibility:hidden}
+svg[data-beat="7"] .street{animation-play-state:paused}
+.route{stroke-dasharray:1;stroke-dashoffset:1;animation:trace 1.6s .22s ease-in-out forwards}
+.left-door,.right-door{animation:open .8s ease-out both}
+.right-door{--shift:115px}.left-door{--shift:-115px}
+@keyframes appear{from{opacity:0}to{opacity:1}}@keyframes passing{to{transform:translateX(-570px)}}
+@keyframes sway{from{rotate:-4deg}to{rotate:4deg}}@keyframes board{from{transform:translateX(-225px);opacity:0}to{transform:translateX(0);opacity:1}}
+@keyframes trace{to{stroke-dashoffset:0}}@keyframes open{to{transform:translateX(var(--shift))}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.route{stroke-dashoffset:0}.left-door,.right-door{transform:translateX(var(--shift))}}
+</style>
+</head>
+<body><main>
+<svg id="stage" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="art-title art-desc" data-beat="0">
+<title id="art-title">The woman on the tram</title>
+<desc id="art-desc">An illustrated story of a chance encounter with a stem cell courier on a Munich tram.</desc>
+<defs>
+ <linearGradient id="cabin" x2="0" y2="1"><stop stop-color="#416176"/><stop offset="1" stop-color="#22394d"/></linearGradient>
+ <linearGradient id="floor" x2="0" y2="1"><stop stop-color="#3c535d"/><stop offset="1" stop-color="#182836"/></linearGradient>
+ <linearGradient id="hoodie" x2=".9" y2="1"><stop stop-color="#f5abc0"/><stop offset=".55" stop-color="#dc7598"/><stop offset="1" stop-color="#b74e79"/></linearGradient>
+ <linearGradient id="denim" x2="1" y2="1"><stop stop-color="#8b8e95"/><stop offset="1" stop-color="#5d6570"/></linearGradient>
+ <linearGradient id="silver" x2="1" y2="1"><stop stop-color="#fbebdd"/><stop offset="1" stop-color="#9495a2"/></linearGradient>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#acd0d3"/><stop offset="1" stop-color="#ffdeb2"/></linearGradient>
+ <clipPath id="windows"><rect x="252" y="132" width="772" height="299" rx="24"/></clipPath>
+ <clipPath id="doorClip"><rect x="30" y="133" width="195" height="463" rx="13"/></clipPath>
+ <pattern id="checks" width="32" height="32" patternUnits="userSpaceOnUse"><rect width="32" height="32" fill="#f9e6d6"/><path d="M16 0h16v16H16ZM0 16h16v16H0Z" fill="#cf7066" opacity=".7"/></pattern>
+ <g id="town">
+  <path d="M0 196h570v114H0Z" fill="#a1a99b"/>
+  <path d="M0 173h75v69H0Zm85-26h110v95H85Zm119 30h87v65h-87Zm97-58h101v123H301Zm114 49h155v74H415Z" fill="#f1d1a6"/>
+  <path d="M0 173l34-34 43 34m5-26 56-40 60 40m4 30 45-38 47 38m4-58 57-40 50 40m9 49 73-48 84 48" fill="#a36566"/>
+  <path d="M315 123V49h19v74m25 0V37h19v86" fill="#a96f6a"/><path d="M311 49q14-42 27 0m17-12q14-42 27 0" fill="#527a72"/>
+  <path d="M18 193h20m70-24h19m32 0h19m42 27h20m88-52h21m23 0h15m58 46h22m36 0h21" stroke="#62868d" stroke-width="15"/>
+  <path d="M0 21q143 55 286 0t284 0" fill="none" stroke="#715d68" stroke-width="2"/>
+  <path d="m28 31 25 7-18 19zm85 17 25 2-13 21zm86-5 25-5-7 25zm111-30 24-4-7 23zm91-8 25 4-15 20zm83 8 25 5-18 18z" fill="#4c91be"/>
+  <path d="m72 42 25 5-15 20zm84 8 26-4-10 23zm87-16 25-7-7 25zm111-27 24-2-9 23zm88 3 25 4-15 20zm87 9 25 4-17 21z" fill="#fff3db"/>
+ </g>
+ <g id="rider">
+  <path d="M-53 220q4-62 53-68 49 5 56 65l14 136H-64Z" fill="currentColor"/>
+  <path d="M-31 316h65l3 130H6L0 363l-8 83h-31Z" fill="#343b4c"/>
+  <path d="M-36 103q0-40 37-42 42 4 39 45l-7 29q-9 28-35 25-30-4-34-33Z" fill="#bf9b8d"/>
+  <path d="M-39 106q-8-49 34-55 45-3 46 47-18-7-26-24-20 22-54 32Z" fill="#494455"/>
+ </g>
+<g id="hair-back" class="hair-tip motion">
+        <path d="M337 186 C328 147 351 116 390 111 C430 103 467 129 469 174 C471 213 486 251 469 297 C462 314 454 329 461 346 C431 341 417 313 409 280 L354 280 Q349 321 326 329 C344 294 319 275 321 239 Z" fill="url(#hair)" />
+        <path d="M341 160 C322 201 342 253 328 287 C323 302 324 315 331 324 C343 299 350 278 344 250 C337 215 339 187 350 164" fill="#9b6144" opacity=".62" />
+        <path d="M454 163 C450 204 479 258 458 309" fill="none" stroke="#b87b50" stroke-width="4" stroke-linecap="round" opacity=".43" />
+      </g>
+
+
+
+<g id="portrait-head" class="head motion">
+        <path d="M377 270 L375 313 Q397 328 418 309 L415 268" fill="url(#skin)" />
+        <path d="M377 278 Q396 294 415 278 L416 295 Q395 308 376 294" fill="#c58c7d" opacity=".38" />
+        <path d="M338 219 Q325 209 326 230 Q326 249 341 252 M451 220 Q465 210 464 231 Q462 249 450 251" fill="#dda58f" />
+        <path d="M344 174 C356 150 428 150 446 180 L452 225 C454 251 443 277 423 288 Q397 302 374 287 C350 276 338 254 338 226 Z" fill="url(#skin)" />
+        <path d="M344 186 Q346 240 359 263 Q376 288 397 290 Q370 293 353 269 Q336 247 338 219 Z" fill="#d99d88" opacity=".32" />
+        <ellipse cx="361" cy="250" rx="19" ry="12" fill="url(#blush)" />
+        <ellipse cx="432" cy="250" rx="18" ry="12" fill="url(#blush)" />
+        <path d="M356 215 Q366 207 378 213 M410 212 Q423 205 435 213" fill="none" stroke="#5c3b34" stroke-width="3.2" stroke-linecap="round" />
+        <g class="eye motion">
+          <path d="M354 228 Q366 216 380 227 Q367 236 354 228" fill="#f8ede4" />
+          <ellipse cx="369" cy="226" rx="5" ry="6.2" fill="#382b2d" />
+          <circle cx="370.5" cy="224" r="1.5" fill="#fff6eb" />
+          <path d="M354 228 Q366 216 380 227" fill="none" stroke="#3a2b2c" stroke-width="2.5" stroke-linecap="round" />
+        </g>
+        <g class="eye motion">
+          <path d="M409 226 Q422 215 435 226 Q422 236 409 226" fill="#f8ede4" />
+          <ellipse cx="422" cy="225.5" rx="5" ry="6.2" fill="#382b2d" />
+          <circle cx="423.5" cy="223.5" r="1.5" fill="#fff6eb" />
+          <path d="M409 226 Q422 215 435 226" fill="none" stroke="#3a2b2c" stroke-width="2.5" stroke-linecap="round" />
+        </g>
+        <path d="M396 228 Q393 239 391 245 Q395 249 401 246" fill="none" stroke="#bf8877" stroke-width="1.6" stroke-linecap="round" />
+        <g class="smile motion">
+          <path d="M380 260 Q397 268 418 258 Q402 282 385 268 Z" fill="#9f5a58" />
+          <path d="M383 261 Q400 267 415 260 L411 265 Q396 271 387 266 Z" fill="#fff3e6" />
+          <path d="M388 274 Q399 278 408 272" stroke="#d8988b" stroke-width="2" stroke-linecap="round" fill="none" />
+        </g>
+
+        <path d="M332 210 C325 176 337 137 369 127 C389 118 418 120 439 134 C461 149 469 185 455 224 C449 210 443 194 438 177 Q422 164 408 153 C404 178 389 192 373 196 Q386 175 387 153 C374 165 367 189 348 207 L341 248 Q328 230 332 210" fill="url(#hair-front)" />
+        <path d="M389 136 C372 143 363 167 353 190 M415 140 Q435 154 448 184" fill="none" stroke="#c28c5b" stroke-width="2.2" stroke-linecap="round" opacity=".65" />
+        <path d="M352 151 Q367 132 387 132 M401 130 Q423 128 439 149" fill="none" stroke="#d9a674" stroke-width="1.4" stroke-linecap="round" opacity=".45" />
+        <path d="M333 208 Q327 253 346 278" stroke="#965b40" stroke-width="5" stroke-linecap="round" fill="none" />
+        <path d="M454 209 Q460 255 446 280" stroke="#754531" stroke-width="5" stroke-linecap="round" fill="none" />
+      </g>
+
+
+
+<g id="leg-left" class="left-leg motion">
+        <path d="M337 513 Q367 505 397 527 L389 614 L380 696 Q357 704 338 694 L336 616 Z" fill="url(#denim)" />
+        <path d="M347 549 L348 613 L351 678" fill="none" stroke="#59616a" stroke-width="2" opacity=".35" />
+        <path d="M339 675 Q360 681 382 676 L380 697 Q359 705 338 696 Z" fill="#161d28" />
+        <path d="M340 694 L375 694 Q385 706 388 716 Q370 727 323 724 Q317 719 321 713 Z" fill="#f2eee6" />
+        <path d="M323 716 Q353 721 385 714 L389 722 Q365 734 320 727 Q316 721 323 716" fill="#d2d2cf" />
+        <path d="M342 699 L366 703 M337 705 L363 709 M332 711 L358 715" stroke="#acb1b3" stroke-width="2.6" stroke-linecap="round" />
+        <path d="M374 702 L379 712" stroke="#dedbd6" stroke-width="4" stroke-linecap="round" />
+      </g>
+
+<g id="leg-right" class="right-leg motion">
+        <path d="M395 524 Q420 509 447 520 L453 616 L453 699 Q434 708 410 700 L399 620 Z" fill="url(#denim)" />
+        <path d="M438 549 L442 613 L439 681" fill="none" stroke="#59616a" stroke-width="2" opacity=".27" />
+        <path d="M407 681 Q432 687 454 680 L454 702 Q432 711 410 703 Z" fill="#161d28" />
+        <path d="M412 700 Q434 707 450 698 L467 713 Q479 719 478 726 Q454 737 408 727 Q403 719 412 700" fill="#f2eee6" />
+        <path d="M408 720 Q440 731 476 720 L479 728 Q452 740 407 731 Q403 728 408 720" fill="#d2d2cf" />
+        <path d="M420 706 L442 710 M416 712 L448 717 M413 718 L450 724" stroke="#acb1b3" stroke-width="2.6" stroke-linecap="round" />
+      </g>
+
+
+
+<linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#25212a" /><stop offset=".52" stop-color="#50302b" /><stop offset="1" stop-color="#9b5d3c" />
+    </linearGradient>
+
+<linearGradient id="hair-front" x1="0" y1="0" x2="1" y2=".7">
+      <stop stop-color="#392728" /><stop offset=".65" stop-color="#754432" /><stop offset="1" stop-color="#b6784b" />
+    </linearGradient>
+
+<linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f4c6ac" /><stop offset="1" stop-color="#dfa58e" />
+    </linearGradient>
+
+<radialGradient id="blush">
+      <stop stop-color="#ce827d" stop-opacity=".37" /><stop offset="1" stop-color="#ce827d" stop-opacity="0" />
+    </radialGradient>
+
+</defs>
+<rect width="1280" height="720" fill="url(#cabin)"/>
+<path d="M0 580H1280V720H0Z" fill="url(#floor)"/>
+<path d="M0 578H1280M15 668H1265M209 580 103 720m900-140 122 140" stroke="#7d9ba2" stroke-opacity=".25" stroke-width="2"/>
+<path d="M0 114h1280M0 459h1280" stroke="#182e42" stroke-width="12"/>
+<rect x="241" y="121" width="794" height="321" rx="33" fill="#1c3141" stroke="#628295" stroke-width="3"/>
+<g clip-path="url(#windows)">
+ <rect x="252" y="132" width="772" height="299" fill="url(#sky)"/>
+ <g class="street"><use href="#town" x="252" y="142"/><use href="#town" x="822" y="142"/><use href="#town" x="1392" y="142"/></g>
+ <path d="M257 397 527 131h33L286 427h-29zm486 35 271-300h10v32L780 432z" fill="#fdf3d7" opacity=".15"/>
+</g>
+<path d="M615 127v309" stroke="#243b4c" stroke-width="13"/>
+<rect x="24" y="127" width="207" height="475" rx="19" fill="#142737" stroke="#658298" stroke-width="4"/>
+<g clip-path="url(#doorClip)">
+ <path d="M30 133h195v462H30Z" fill="#90afb6"/><path d="M30 467h195v129H30Z" fill="#d6b59a"/>
+ <path d="M44 462h167m-151-257h136" stroke="#e8dcca" stroke-width="5"/>
+ <g class="scene on" data-scenes="0 1 2 3 4 5 6"><use href="#doors"/></g>
+ <g class="scene" data-scenes="7">
+  <g class="left-door"><use href="#door-half"/></g>
+  <g class="right-door"><use href="#door-half" x="98"/></g>
+ </g>
+</g>
+<defs>
+ <g id="door-half"><rect x="30" y="133" width="97" height="463" fill="#3c6279" stroke="#243c4e" stroke-width="4"/><rect x="43" y="170" width="70" height="223" rx="10" fill="#9ebac2"/><path d="M48 351 111 265v-37l-63 87Z" fill="#d8e5dd" opacity=".55"/><path d="M39 445h78" stroke="#eac383" stroke-width="7"/></g>
+ <g id="doors"><use href="#door-half"/><use href="#door-half" x="98"/></g>
+</defs>
+<rect x="45" y="87" width="165" height="28" rx="5" fill="#172b38"/><text id="door-label" x="127" y="107" text-anchor="middle" fill="#f5cf90" font-size="13" letter-spacing="3">MÜNCHEN</text>
+<g id="riders" opacity=".87">
+ <use href="#rider" transform="translate(303 165) scale(.85)" color="#968276"/>
+ <use href="#rider" transform="translate(568 132) scale(1.02)" color="#7a8a84"/>
+ <use href="#rider" transform="translate(904 144) scale(.91)" color="#8b747d"/>
+ <use href="#rider" transform="translate(1069 145) scale(1.04)" color="#738993"/>
+ <use href="#rider" transform="translate(1198 195) scale(.86)" color="#a28c69"/>
+</g>
+<path d="M248 106H1241M249 103v495m766-493v473m226-473v496" fill="none" stroke="#d6a872" stroke-width="8"/>
+<path d="M248 104H1241" stroke="#ffdc9b" stroke-width="2"/>
+<g stroke="#e5c397" stroke-width="5" fill="none">
+ <g transform="translate(332 106)"><path class="hanging" d="M0 0v17l-12 10q-4 8 2 12h20q6-4 2-12L0 17"/></g>
+ <g transform="translate(572 106)"><path class="hanging" d="M0 0v17l-12 10q-4 8 2 12h20q6-4 2-12L0 17"/></g>
+ <g transform="translate(913 106)"><path class="hanging" d="M0 0v17l-12 10q-4 8 2 12h20q6-4 2-12L0 17"/></g>
+</g>
+<ellipse cx="459" cy="605" rx="111" ry="16" fill="#182833" opacity=".57"/>
+<ellipse cx="774" cy="605" rx="145" ry="17" fill="#182833" opacity=".57"/>
+<g id="florence">
+ <g transform="translate(169 79) scale(.72)">
+  <use href="#leg-left"/><use href="#leg-right"/>
+  <path d="M340 303q1-22 48-23 59-4 68 23l-6 32H339Z" fill="#a54771" stroke="#f4a5c0" stroke-width="4"/>
+  <use href="#hair-back"/>
+  <path d="M342 306q42 24 99-2 28 13 30 58l15 145q1 25-21 29l-21-12 3-93 12 122q-64 24-140-2l12-115-16 68q-21 9-36-9l19-123q8-53 44-66Z" fill="url(#hoodie)"/>
+  <path d="M334 309q32 30 59 18 26 9 55-18M393 329l2 230M344 441l-10 58 47 5m62-63 10 58-46 5" fill="none" stroke="#a54872" stroke-width="4"/>
+  <path d="M379 328l-4 72m32-72 8 67" stroke="#ffe2e9" stroke-width="3" stroke-linecap="round"/>
+  <path d="M315 496q4 17-7 26-11 8-18-5l-3-17m172 26q5 18 18 15 12-5 7-24" fill="url(#skin)"/>
+  <use href="#portrait-head"/>
+  <g transform="translate(234 513)">
+   <path d="M13 19Q13-19 35-17q21 0 26 36m-13 0q0-44 21-44 20 0 23 44" stroke="#9c694d" stroke-width="5" fill="none"/>
+   <path d="M12 27Q-3 0 6-9q18 0 26 35M70 22Q67-6 82-18q12 9 4 43" fill="#678a66"/>
+   <path d="M33 28 40-9q8-19 20-13 11 5 6 20L57 30" fill="#e6af67" stroke="#ad7749" stroke-width="3"/>
+   <path d="M46-7l11 5m-15 7 11 5" stroke="#f8d28c" stroke-width="3"/>
+   <path d="M0 17h100l-9 102H10Z" fill="#dcae78"/><path d="M79 17h21l-9 102H79Z" fill="#b98557"/>
+   <rect x="20" y="44" width="40" height="39" rx="5" fill="url(#checks)"/>
+  </g>
+ </g>
+</g>
+<g id="courier">
+ <g transform="translate(700 166)">
+  <path d="M66 110q56-16 67 29l9 92q-3 21-29 22l-49-13Z" fill="#6d665e" stroke="#353941" stroke-width="4"/>
+  <path d="M24 266h98l-6 164H78L67 319 55 430H17Z" fill="url(#denim)"/>
+  <path d="M21 421h33q-2 14-3 17H1q-6-7 20-17m61 0h32l16 13q4 7-5 7H78Z" fill="#eee5d7" stroke="#6d727c" stroke-width="3"/>
+  <path d="M25 127q21-15 43-10 36-5 56 19l10 40-25 12 12 86q-47 16-100 0l5-91-27-10Z" fill="#fff3e1"/>
+  <path d="M107 129q8 17 9 55M28 132q-12 15-9 36" stroke="#746d65" stroke-width="7" fill="none"/>
+  <path d="M52 100v24q12 18 33 1l2-30" fill="#d59c81"/>
+  <use href="#courier-face"/>
+  <path d="M3 174q-12 30-8 64 7 16 16 1l15-56m89 3 14 43 48-10q15-4 15 8-1 8-13 10l-58 17q-13 2-16-14l-15-45" fill="#e4ac92"/>
+ </g>
+ <g transform="translate(859 384)">
+  <path d="M20 64V13h39v51" fill="none" stroke="#9daebb" stroke-width="6"/><path d="M18 13h43" stroke="#283945" stroke-width="9" stroke-linecap="round"/>
+  <rect x="0" y="65" width="92" height="149" rx="17" fill="#3b5365" stroke="#99a7aa" stroke-width="3"/>
+  <path d="M21 85v102m22-102v102m22-102v102" stroke="#698797" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="17" cy="214" r="9" fill="#182b3b"/><circle cx="76" cy="214" r="9" fill="#182b3b"/>
+  <path d="M13 12h69l13 18v37H-3V30Z" fill="#d7a978" stroke="#f1c998" stroke-width="2"/>
+  <path d="M-3 31h98m-16-16 5 16v36M32 15V6q0-9 12-9t12 9v9" fill="none" stroke="#855e50" stroke-width="4"/>
+  <path d="M24 31v36m41-36v36" stroke="#826253" stroke-width="5"/>
+ </g>
+</g>
+<g class="scene on" data-scenes="0 1 2 3 4 5" fill="none" stroke-dasharray="9 7">
+ <circle cx="903" cy="423" r="58" stroke="#3b2632" stroke-width="7"/>
+ <circle cx="903" cy="423" r="58" stroke="#ff565b" stroke-width="4"/>
+</g>
+<defs>
+ <g id="courier-face">
+  <path d="M92 84q34-14 42 17t28 37q-28 18-42-9L99 99Z" fill="url(#silver)"/>
+  <path d="M22 53q2-37 45-36 42 2 43 45l-3 29q-6 31-37 34-31-1-44-30l-7-16Z" fill="#eac0a1"/>
+  <path d="M18 70Q7 30 35 14q34-18 65 8 21 17 9 51-7-8-10-28-23 9-44-12Q37 55 18 70Z" fill="url(#silver)"/>
+  <path d="M23 42q14-25 35-24m9 3q24 1 34 23" stroke="#fff0de" stroke-width="3" fill="none"/>
+  <g fill="#f5ded1" fill-opacity=".6" stroke="#463e49" stroke-width="3">
+   <rect x="20" y="62" width="30" height="20" rx="7"/><rect x="58" y="62" width="33" height="20" rx="7"/><path d="M50 69q4-4 8 0m33-1 13-4" fill="none"/>
+  </g>
+  <path d="M32 71h1m37 0h1" stroke="#4c3a3d" stroke-width="5" stroke-linecap="round"/>
+  <path d="m53 76-4 13 8 2m-12 9q13 9 27-1m-43-14 8 3m42 4 8-4" fill="none" stroke="#b4786c" stroke-width="2" stroke-linecap="round"/>
+ </g>
+ <path id="courier-bubble" d="M539 104h436q15 0 15 15v41q0 15-15 15H790l-25 21 3-21H539q-15 0-15-15v-41q0-15 15-15Z"/>
+ <path id="florence-bubble" d="M267 79h430q15 0 15 15v40q0 15-15 15H471l-16 23-6-23H267q-15 0-15-15V94q0-15 15-15Z"/>
+</defs>
+<g class="scene" data-scenes="1">
+ <use href="#courier-bubble" fill="#fff2df"/>
+ <text x="757" y="148" text-anchor="middle" fill="#233746" font-size="23">Where did you get your pink jacket?</text>
+</g>
+<g class="scene" data-scenes="2">
+ <use href="#florence-bubble" fill="#ffe2eb"/>
+ <text x="482" y="108" text-anchor="middle" fill="#432c41" font-size="21"><tspan x="482">Uniqlo!</tspan><tspan x="482" dy="26">Are you coming back from a holiday?</tspan></text>
+</g>
+<g class="scene" data-scenes="3">
+ <use href="#courier-bubble" fill="#fff2df"/>
+ <text x="757" y="148" text-anchor="middle" fill="#233746" font-size="24">No, I’m coming back from work!</text>
+</g>
+<g class="scene" data-scenes="4">
+ <use href="#florence-bubble" fill="#ffe2eb"/>
+ <text x="482" y="123" text-anchor="middle" fill="#432c41" font-size="23">Work? What do you do for a living?</text>
+</g>
+<g class="scene" data-scenes="5">
+ <use href="#courier-bubble" fill="#fff2df"/>
+ <text x="757" y="133" text-anchor="middle" fill="#233746" font-size="21">
+  <tspan x="757">I’m 80 years old, and I work</tspan><tspan x="757" dy="26">as a stem cell courier!</tspan>
+ </text>
+</g>
+<g class="scene" data-scenes="6">
+ <rect x="0" y="73" width="1280" height="647" fill="#172936" opacity=".96"/>
+ <rect x="252" y="132" width="772" height="299" rx="24" fill="#203a51" stroke="#f0c590" stroke-width="2"/>
+ <path d="M269 238l23-21 44-10 21-24 53 3 24-21 49 17 40-4-7 22-40 22-19 24-45 3-18 28-31 12-14 25-27-11-14-28-37-12Z
+ M782 203l43-16 30 12 20-23 37-13 27 20-24 37-40 5-19 23-31-1-10 23-30-4-12-31Z
+ M698 164l32-14 50 13-10 28-45 19-30-17Z
+ M846 277l41-18 45 13 38 27-23 15-22 56-36 25-27-25-5-36-20-22Z" fill="#597d84" stroke="#779c9e" stroke-width="2"/>
+ <path class="route" pathLength="1" d="M880 216C789 118 551 151 402 220" fill="none" stroke="#ffd69c" stroke-width="4"/>
+ <g fill="#ffd69c"><circle cx="880" cy="216" r="7"/><circle cx="402" cy="220" r="7"/></g>
+ <g fill="#fff3dc" font-size="23" font-weight="650"><text x="890" y="245">Poland</text><text x="296" y="255">USA</text></g>
+ <use href="#courier-face" transform="translate(757 476) scale(.78)"/>
+ <path d="M357 478h357q15 0 15 15v48q0 15-15 15H357q-15 0-15-15v-48q0-15 15-15Zm370 30 29 9-29 11Z" fill="#fff2df"/>
+ <text x="535" y="510" text-anchor="middle" fill="#233746" font-size="19">
+  <tspan x="535">I was carrying stem cells from Poland</tspan>
+  <tspan x="535" dy="24">to the USA for a critically ill patient.</tspan>
+ </text>
+</g>
+<g class="scene" data-scenes="7">
+ <rect x="241" y="120" width="1039" height="497" fill="#172d41" opacity=".91"/>
+ <g transform="translate(282 267) scale(.75) translate(-320 -100)">
+  <use href="#hair-back"/><use href="#portrait-head"/>
+ </g>
+ <g transform="translate(339 247)" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <path d="M-9 14c0-6-8-9-8-19a17 17 0 1 1 34 0c0 10-8 13-8 19v5H-9Z" fill="#ffd778" stroke="#ffedb0" stroke-width="2"/>
+  <path d="m-5 4 5 6 5-6m-5 6v9" fill="none" stroke="#a16a30" stroke-width="2"/>
+  <path d="M-8 24H8m-12 5h8M0-32v-5m-22 13-4-4m48 4 4-4m-52 23h-5m57 0h5" fill="none" stroke="#ffda81" stroke-width="3"/>
+ </g>
+ <path d="M437 202h587q24 0 24 24v186q0 24-24 24H437q-24 0-24-24v-64l-36-25 36-4v-93q0-24 24-24Z" fill="#ffe2eb"/>
+ <g fill="#432c41" font-size="29">
+  <text x="453" y="256">What if we could <tspan font-weight="700">manufacture</tspan></text>
+  <text x="453" y="297"><tspan font-weight="700">living human tissues</tspan>, and perhaps</text>
+  <text x="453" y="338">one day even <tspan font-weight="700">entire organs</tspan>,</text>
+  <text x="453" y="379">instead of waiting for a <tspan font-weight="700">suitable donor</tspan>? 🧐</text>
+ </g>
+</g>
+</svg>
+<nav aria-label="Story controls">
+ <div><button id="back">← Back</button> <button id="next">Next →</button></div>
+ <span id="status" role="status"></span>
+ <div><button id="replay">Restart</button> <button id="full">Full screen</button></div>
+</nav>
+</main>
+<script>
+const stage = document.querySelector('#stage');
+const scenes = [...stage.querySelectorAll('.scene')];
+const labels = ['Boarding', 'The pink jacket', 'The holiday question', 'Coming back from work', 'The job question', 'The courier', 'Poland to USA', 'The next stop'];
+const back = document.querySelector('#back');
+const next = document.querySelector('#next');
+let beat = 0;
+
+function show(index) {
+  beat = Math.min(labels.length - 1, Math.max(0, index));
+  stage.dataset.beat = beat;
+  for (const scene of scenes) {
+    scene.classList.toggle('on', scene.dataset.scenes.split(' ').includes(String(beat)));
+  }
+  back.disabled = beat === 0;
+  next.disabled = beat === labels.length - 1;
+  document.querySelector('#status').textContent = `${beat + 1} / ${labels.length}`;
+}
+back.onclick = () => show(beat - 1);
+next.onclick = () => show(beat + 1);
+document.querySelector('#replay').onclick = () => {
+  stage.removeAttribute('data-beat');
+  stage.getBoundingClientRect();
+  show(0);
+};
+document.querySelector('#full').onclick = () => {
+  if (document.fullscreenElement) document.exitFullscreen();
+  else document.documentElement.requestFullscreen?.();
+};
+document.addEventListener('keydown', event => {
+  if (event.altKey || event.ctrlKey || event.metaKey) return;
+  if (event.key === 'ArrowLeft') show(beat - 1);
+  else if (event.key === 'ArrowRight' || (event.code === 'Space' && event.target.tagName !== 'BUTTON')) show(beat + 1);
+  else return;
+  event.preventDefault();
+});
+show(0);
+</script>
+</body></html>
