@@ -11,13 +11,13 @@ class PublicationTimeline{
  document.getElementById('publicationLegend').innerHTML=this.techniques.map(t=>`<span><i style="background:${t.color}"></i>${t.key}</span>`).join('');
  document.getElementById('publicationCounts').innerHTML=this.techniques.map(t=>`<div class="pub-count-row"><span style="color:${t.color}">${t.key}</span><strong data-value="${t.key}">0</strong></div>`).join('');
  }
- draw(year){this.render(Math.max(this.first,Math.min(this.end,year))+2);}
+ draw(year){this.render(Math.max(this.first,Math.min(this.end,year)));}
  render(position){
  const selected=Math.max(this.first,Math.min(this.end,Math.floor(position))),row=this.rows.find(r=>r.year===selected);
  this.year=selected;this.position=position;
  const {left,top,height}=this.geometry;
  this.rows.forEach(r=>{
-  const t=Math.max(0,Math.min(1,(position-r.year+2)/2)),fade=t*t*(3-2*t);let stack=0;
+  const t=Math.max(0,Math.min(1,position-r.year+1)),fade=t*t*(3-2*t);let stack=0;
   this.techniques.forEach(tech=>{const value=r.counts[tech.key]||0,h=value/this.yMax*height;
    const rect=this.svg.querySelector(`[data-year="${r.year}"][data-technique="${tech.key}"]`);
    rect.setAttribute('y',top+height-stack-h);rect.setAttribute('height',h);rect.setAttribute('opacity',fade);
@@ -32,12 +32,19 @@ class PublicationTimeline{
  this.root.querySelectorAll('[data-value]').forEach(el=>el.textContent=row.counts[el.dataset.value].toLocaleString());
  document.getElementById('publicationTotal').textContent=Object.values(row.counts).reduce((a,b)=>a+b,0).toLocaleString();
  }
- play(){this.pause();this.running=true;const start=performance.now();this.render(this.first-2);
+ play(){this.targetYear=null;this.pause();this.running=true;const start=performance.now();this.render(this.first-1);
  const tick=now=>{if(!this.running||!this.active)return;
  const progress=Math.min(1,(now-start)/this.durationMs);
- this.render(this.first-2+progress*(this.last-this.first+4));
+ this.render(this.first-1+progress*(this.last-this.first+1));
  if(progress===1){this.pause();return;}this.frame=requestAnimationFrame(tick);
  };this.frame=requestAnimationFrame(tick);}
+ stepYear(direction){
+ const target=Math.max(this.first,Math.min(this.last,(this.targetYear??this.year)+direction));
+ this.pause();this.targetYear=target;const from=this.position,start=performance.now();
+ if(this.reduced){this.draw(target);this.targetYear=null;return;}
+ this.running=true;
+ const tick=now=>{if(!this.running||!this.active)return;const t=Math.min(1,(now-start)/300),ease=t*t*(3-2*t);this.render(from+(target-from)*ease);if(t===1){this.draw(target);this.targetYear=null;this.pause();return;}this.frame=requestAnimationFrame(tick);};this.frame=requestAnimationFrame(tick);
+ }
  pause(){this.running=false;if(this.frame!==null)cancelAnimationFrame(this.frame);this.frame=null;}
  activate(active){if(active===this.active)return;this.active=active;if(!active){this.pause();return}if(this.reduced)this.draw(this.last);else this.play(true)}
  bind(){this.slider.addEventListener('input',()=>{this.pause();this.draw(Number(this.slider.value))});this.svg.querySelectorAll('[data-select-year]').forEach(el=>el.addEventListener('click',()=>{this.pause();this.draw(Number(el.dataset.selectYear))}));this.root.addEventListener('wheel',e=>e.stopPropagation(),{passive:true});this.root.addEventListener('touchstart',e=>e.stopPropagation(),{passive:true});this.root.addEventListener('keydown',e=>{if(e.target===this.slider)e.stopPropagation()});addEventListener('beforeprint',()=>{this.pause();this.draw(this.last)});document.addEventListener('visibilitychange',()=>{if(document.hidden)this.pause()});}

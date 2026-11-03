@@ -41,7 +41,7 @@ Horizontal swipes and the mouse wheel also navigate. Link to a specific slide wi
 - **[Publication trends · slide 8](data/publication-trends/):** Scopus (Elsevier) counts for 2000–2026, with a roughly six-second continuous left-to-right reveal. 2026 is partial as of 27 October 2026; [CSV and methods](data/publication-trends/scopus/).
 - **[Organ-transplant timeline · slide 9](data/organ-transplants/):** annual-report snapshots for 2015–2024 and separately flagged 2025 homepage highlights. The 2025 transplant figure is a lower bound; kidney waiting-list figures are from 2024.
 
-The publication chart reveals automatically without Play/Replay buttons and retains year selection. The organ chart has playback controls. Their data directories include raw values, sources and coverage limitations.
+The publication chart reveals automatically without buttons inside the chart; the bottom toolbar provides Replay and arrows for year selection. On this chart, Left/Right select years, R replays, and Page Up/Down or Space navigate slides. The organ chart has playback controls. Their data directories include raw values, sources and coverage limitations.
 
 Slide images, SVG artwork, both videos, and fonts are also available separately
 in [materials/](materials/), with a slide-to-file inventory and SHA-256 hashes.
