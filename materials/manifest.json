@@ -1,6 +1,6 @@
 {
   "source": "presentation/index.html",
-  "source_sha256": "f0530fb2c447cdc01ef7733293a73fd3400a05e6278391187ac0817175c54af3",
+  "source_sha256": "8ecd13ee29d6fd99d16e020bad67ad9e0f116d4c5deab0f1558926c1859ccc4e",
   "slides": 51,
   "asset_count": 151,
   "assets": [
@@ -1631,10 +1631,10 @@
       "provenance": "Original editable SVG tram story from materials/interactive/munich-tram-story.html, embedded by tools/update_tram_slide.py."
     },
     {
-      "path": "materials/interactive/ff1fb6b5419f02c74d53d3c5e1372f006eba78bf2c57a5cf5694008727001c69.html",
+      "path": "materials/interactive/55087a9cbd90019eb3f644336e4865accab6474e690ea31e46c695c4cb00e94c.html",
       "mime": "text/html",
-      "bytes": 7300240,
-      "sha256": "ff1fb6b5419f02c74d53d3c5e1372f006eba78bf2c57a5cf5694008727001c69",
+      "bytes": 7300317,
+      "sha256": "55087a9cbd90019eb3f644336e4865accab6474e690ea31e46c695c4cb00e94c",
       "slides": [
         7
       ],
