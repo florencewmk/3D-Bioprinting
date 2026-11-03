@@ -38,10 +38,10 @@ Horizontal swipes and the mouse wheel also navigate. Link to a specific slide wi
 ## Data and sources
 
 - **[Worldwide bioprinting geography through 2025](data/geography-2025/):** Excel workbook and CSV files with top-20 country rankings, full author/affiliation tables, institutional coordinates, and a sourced company register with historical and unconfirmed status flags.
-- **[Publication trends · slide 7](data/publication-trends/):** Scopus (Elsevier) counts for 2000–2026, with a roughly five-second year-by-year animation. 2026 is partial as of 27 October 2026; [CSV and methods](data/publication-trends/scopus/).
+- **[Publication trends · slide 7](data/publication-trends/):** Scopus (Elsevier) counts for 2000–2026, with a roughly five-second continuous left-to-right reveal. 2026 is partial as of 27 October 2026; [CSV and methods](data/publication-trends/scopus/).
 - **[Organ-transplant timeline · slide 8](data/organ-transplants/):** annual-report snapshots for 2015–2024 and separately flagged 2025 homepage highlights. The 2025 transplant figure is a lower bound; kidney waiting-list figures are from 2024.
 
-Both charts have playback controls and year selection. Their data directories include raw values, sources and coverage limitations.
+The publication chart reveals automatically without Play/Replay buttons and retains year selection. The organ chart has playback controls. Their data directories include raw values, sources and coverage limitations.
 
 Slide images, SVG artwork, both videos, and fonts are also available separately
 in [materials/](materials/), with a slide-to-file inventory and SHA-256 hashes.

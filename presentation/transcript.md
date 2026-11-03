@@ -182,7 +182,7 @@ For example, Berlin research groups are not fully represented. Charité is also 
 Source: Scopus (Elsevier), English journal articles and reviews, retrieved 27 October 2026.
 Annual keyword matches for laser-assisted, inkjet, stereolithography and extrusion; categories overlap.
 2026 is partial / indexed as of retrieval and can include assigned publication years.
-The year-by-year animation runs from 2000 to 2026 in approximately five seconds.
+The bars fade in continuously from left to right across 2000–2026 in approximately five seconds, without Play/Replay buttons.
 
 ### Speaker notes
 

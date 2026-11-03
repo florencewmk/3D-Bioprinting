@@ -47,4 +47,4 @@ All annual counts come directly from raw Scopus exports. Missing year rows in a 
 
 From the repository root, run `python3 tools/build_scopus_publication_counts.py`. It uses the Python standard library, checks sums and document types, and rebuilds the CSV, exact query JSON and provenance manifest. `tools/plot_scopus_publication_counts.py` renders the chart and requires Matplotlib/NumPy. Source exports and scripts are repository-local.
 
-HTML slide 7 now uses this independent Scopus dataset for the complete 2000–2026 period. The original WoS files remain preserved as a historical snapshot. Playback takes approximately five seconds and marks 2026 as partial.
+HTML slide 7 now uses this independent Scopus dataset for the complete 2000–2026 period. The original WoS files remain preserved as a historical snapshot. The bars fade in continuously from left to right over approximately five seconds, without Play/Replay buttons. Year selection remains available and 2026 is marked partial.
