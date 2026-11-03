@@ -69,7 +69,7 @@ dialog{width:min(1100px,94vw);max-height:88vh;overflow:auto;background:#111218;c
 .closing-title{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;text-align:center;white-space:nowrap;font-size:120px;font-weight:400;line-height:1.12;letter-spacing:-3px}
 .closing-thanks .closing-title{transition:left .55s cubic-bezier(.22,.61,.36,1)}
 .closing-thanks:has(.closing-repo.revealed) .closing-title,.editing .closing-thanks .closing-title{left:33%}
-.closing-repo{position:absolute;left:70%;top:50%;transform:translate(-50%,-50%) translateX(32px);display:grid;justify-items:center;gap:25px;color:var(--cyan);font-size:30px;white-space:nowrap;opacity:0;visibility:hidden;transition:opacity .45s ease,transform .55s ease,visibility .45s}
+.closing-repo{position:absolute;left:64.5%;top:50%;transform:translate(-50%,-50%) translateX(32px);display:grid;justify-items:center;gap:25px;color:var(--cyan);font-size:30px;white-space:nowrap;opacity:0;visibility:hidden;transition:opacity .45s ease,transform .55s ease,visibility .45s}
 .closing-repo img{width:280px;height:280px;padding:27px;background:white;box-sizing:content-box;image-rendering:pixelated}
 .closing-repo.revealed,.editing .closing-repo{opacity:1;visibility:visible;transform:translate(-50%,-50%)}
 @media(prefers-reduced-motion:reduce){.closing-thanks .closing-title,.closing-repo{transition:none!important}}
