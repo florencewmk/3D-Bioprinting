@@ -4718,7 +4718,11 @@ window.organTimeline=new OrganTimeline();window.organTimeline.activate(document.
     } else if (slide.querySelector('.profile-photo')) {
       kind = 'presenter';
       add(plan, select(slide, '.profile-name'), 0, 850, 12);
-      add(plan, select(slide, '.profile-photo'), 180, 1000);
+      // The embedded character animates its own entrance.
+      const portrait = slide.querySelector('.profile-photo');
+      if (!portrait.querySelector('img[src^="data:image/svg+xml"]')) {
+        add(plan, [portrait], 180, 1000);
+      }
       // Presenter bullet visibility and click timing belong to its own controller.
     } else if (slide.querySelector('.contents-list')) {
       kind = 'agenda';
