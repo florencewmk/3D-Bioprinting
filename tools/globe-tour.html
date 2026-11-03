@@ -18,7 +18,8 @@ h1{font-size:clamp(26px,4.2vw,66px);letter-spacing:-.04em;margin:.15em 0}
 button{border:1px solid #465265;border-radius:5px;background:#18212d;color:#f3f7fa;padding:8px 13px}
 button[aria-current=true]{background:#ad2937;border-color:#ff8187}
 .visual{position:relative;aspect-ratio:1;width:min(100%,65svh);justify-self:center}
-canvas{width:100%;height:100%;display:block}
+canvas{width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+canvas:active{cursor:grabbing}
 footer{display:flex;justify-content:flex-end;align-items:center;gap:12px;flex-wrap:wrap}
 .actions{display:flex;gap:8px;flex-wrap:wrap;letter-spacing:normal;text-transform:none;font-weight:400}
 #mapView{position:fixed;inset:0;background:#090d14;display:grid;grid-template-rows:auto 1fr}
@@ -57,7 +58,8 @@ const byId = id => document.getElementById(id);
 const leaders = JSON.parse(byId('leaders').textContent);
 const world = JSON.parse(byId('world').textContent);
 const redLand = new Set(__RED_LAND__);
-const ctx = byId('earth').getContext('2d');
+const globe = byId('earth');
+const ctx = globe.getContext('2d');
 const center = 400, radius = 370, rad = Math.PI / 180;
 function vector(lat, lon) {
   const c = Math.cos(lat * rad);
@@ -150,27 +152,79 @@ for (const [index, point] of leaders.entries()) {
   const button = document.createElement('button');
   button.textContent = '#'+point.rank;
   button.setAttribute('aria-label', point.country);
-  button.onclick = () => {
-    elapsed = index * segment;
-    last = null;
-    render(elapsed);
-    if (finished && !motion.matches) {
-      finished = false;
-      frame = requestAnimationFrame(tick);
-    }
-  };
+  button.onclick = () => rotateToRank(index);
   byId('steps').append(button);
 }
-function render(time) {
-  const index = Math.min(leaders.length-1, Math.floor(time/segment));
-  if (index !== shown) {
-    shown = index;
-    const point = leaders[index];
-    byId('rank').textContent = 'Publication rank #' + point.rank;
-    byId('place').textContent = point.country;
-    byId('count').textContent = point.works.toLocaleString('en-US');
-    [...byId('steps').children].forEach((button,i)=>button.setAttribute('aria-current', String(i===index)));
+function showRank(index) {
+  if (index === shown) return;
+  shown = index;
+  const point = leaders[index];
+  byId('rank').textContent = 'Publication rank #' + point.rank;
+  byId('place').textContent = point.country;
+  byId('count').textContent = point.works.toLocaleString('en-US');
+  [...byId('steps').children].forEach((button, i) =>
+    button.setAttribute('aria-current', String(i === index)));
+}
+function stopTour() {
+  cancelAnimationFrame(frame);
+  finished = true;
+}
+function coordinates([x, y, z]) {
+  return [Math.atan2(z, Math.hypot(x, y)) / rad, Math.atan2(y, x) / rad];
+}
+function rotateToRank(index) {
+  stopTour();
+  const [latitude, longitude] = coordinates(previousView);
+  const [targetLatitude, targetLongitude] = leaders[index].position;
+  const longitudeDelta = ((targetLongitude - longitude + 540) % 360) - 180;
+  if (motion.matches || Math.hypot(targetLatitude - latitude, longitudeDelta) < 0.1) {
+    draw(centers[index]);
+    showRank(index);
+    return;
   }
+  const start = performance.now();
+  const duration = Math.min(1450, Math.max(650,
+    Math.hypot(targetLatitude - latitude, longitudeDelta) * 8));
+  function step(now) {
+    const progress = Math.min(1, (now - start) / duration);
+    const eased = progress * progress * (3 - 2 * progress);
+    draw(vector(latitude + (targetLatitude - latitude) * eased,
+      longitude + longitudeDelta * eased));
+    if (progress < 1) frame = requestAnimationFrame(step);
+    else showRank(index);
+  }
+  frame = requestAnimationFrame(step);
+}
+function rotateBy(deltaX, deltaY) {
+  const [latitude, longitude] = coordinates(previousView);
+  const scale = 150 / globe.getBoundingClientRect().width;
+  draw(vector(Math.max(-85, Math.min(85, latitude + deltaY * scale)),
+    longitude - deltaX * scale));
+}
+let drag;
+globe.addEventListener('pointerdown', event => {
+  if (event.button !== 0 || drag) return;
+  stopTour();
+  drag = {id: event.pointerId, x: event.clientX, y: event.clientY};
+  globe.setPointerCapture(event.pointerId);
+});
+globe.addEventListener('pointermove', event => {
+  if (drag?.id !== event.pointerId) return;
+  rotateBy(event.clientX - drag.x, event.clientY - drag.y);
+  drag.x = event.clientX;
+  drag.y = event.clientY;
+});
+globe.addEventListener('lostpointercapture', () => { drag = null; });
+globe.addEventListener('wheel', event => {
+  if (event.ctrlKey || event.metaKey || (!event.deltaX && !event.deltaY)) return;
+  event.preventDefault();
+  stopTour();
+  const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? 100 : 1;
+  rotateBy((event.deltaX || event.deltaY) * unit, event.deltaX ? event.deltaY * unit : 0);
+}, {passive: false});
+function render(time) {
+  const index = Math.min(leaders.length - 1, Math.floor(time / segment));
+  showRank(index);
   const progress = Math.max(0, Math.min(1,(time-index*segment-hold)/travel));
   const eased = progress * progress * (3-2*progress);
   const view = centers[index+1] && eased>0 ? interpolate(centers[index], centers[index+1], eased) : centers[index];
@@ -188,8 +242,7 @@ function tick(now) {
   frame = requestAnimationFrame(tick);
 }
 function showMap() {
-  cancelAnimationFrame(frame);
-  finished = true;
+  stopTour();
   byId('tour').hidden = true;
   byId('mapView').hidden = false;
   if (window.parent !== window) window.parent.postMessage('bioprinting-map-opened', '*');
