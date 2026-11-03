@@ -12,7 +12,7 @@ def web_section(section, source_number):
 
 
 def write_transcript(path, data):
-    text = '# 3D Bioprinting\n\n51 slides · ' + settings()['event']['date'] + '\n\n'
+    text = f'# 3D Bioprinting\n\n{len(data)} slides · ' + settings()['event']['date'] + '\n\n'
     for slide in data:
         text += f'## {slide["number"]:02d}. {slide["title"]}\n\n{slide["text"]}\n\n'
         if slide['notes']:

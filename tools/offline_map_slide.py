@@ -145,7 +145,7 @@ document.addEventListener('keydown', event => {
     return document
 
 
-def render_slide():
+def render_slide(number=NUMBER, total=51):
     embedded = html.escape(globe_document(), quote=True)
     keys = """<script>
 (() => {
@@ -176,34 +176,37 @@ def render_slide():
 })();
 </script>"""
     return (
-        f'<section class="slide" id="slide-{NUMBER}" aria-label="{NUMBER}. {TITLE}" aria-hidden="true">'
+        f'<section class="slide" id="slide-{number}" aria-label="{number}. {TITLE}" aria-hidden="true">'
         f'<iframe class="offline-map-frame" title="Bioprinting globe and interactive map" '
         f'style="position:absolute;inset:0 0 58px;width:100%;height:calc(100% - 58px);border:0" '
-        f'data-srcdoc="{embedded}"></iframe>{footer(NUMBER)}{keys}</section>'
+        f'data-srcdoc="{embedded}"></iframe>{footer(number).replace(" / 51</span>", f" / {total}</span>")}{keys}</section>'
     )
 
 
 def update_presentation():
     target = ROOT / 'presentation/index.html'
     original = target.read_text()
-    slide = re.compile(r'<section\b[^>]*\bid="slide-7"[^>]*>.*?</section>', re.S)
-    updated, count = slide.subn(lambda _: render_slide(), original, count=1)
-    if count != 1:
-        raise ValueError('Could not locate slide 7')
+    slides = re.findall(r'<section\b[^>]*\bid="slide-(\d+)"[^>]*>', original)
+    match = re.search(r'<section\b[^>]*\bid="slide-(\d+)"[^>]*>\s*<iframe class="offline-map-frame"', original)
+    if not match:
+        raise ValueError('Could not locate the offline map slide')
+    number = int(match[1])
+    slide = re.compile(rf'<section\b[^>]*\bid="slide-{number}"[^>]*>.*?</section>', re.S)
+    updated = slide.sub(lambda _: render_slide(number, len(slides)), original, count=1)
 
     def source_data(match):
         records = json.loads(match[2])
-        records[NUMBER - 1] = RECORD
+        records[number - 1] = dict(RECORD, number=number)
         return match[1] + json_script(records) + match[3]
 
     updated = re.sub(r'(<script id="sourceData" type="application/json">)(.*?)(</script>)',
                      source_data, updated, count=1, flags=re.S)
     transcript = ROOT / 'presentation/transcript.md'
-    replacement = f'## 07. {TITLE}\n\n{RECORD["text"]}\n\n### Speaker notes\n\n{RECORD["notes"]}\n\n'
-    notes, count = re.subn(r'^## 07\..*?(?=^## 08\.)', lambda _: replacement,
+    replacement = f'## {number:02d}. {TITLE}\n\n{RECORD["text"]}\n\n### Speaker notes\n\n{RECORD["notes"]}\n\n'
+    notes, count = re.subn(rf'^## {number:02d}\..*?(?=^## |\Z)', lambda _: replacement,
                            transcript.read_text(), count=1, flags=re.S | re.M)
     if count != 1:
-        raise ValueError('Could not locate slide 7 in the transcript')
+        raise ValueError('Could not locate the offline map in the transcript')
     target.write_text(updated)
     transcript.write_text(notes)
 
