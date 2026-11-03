@@ -35,6 +35,11 @@ The deck contains **51 slides**:
 
 Horizontal swipes and the mouse wheel also navigate. Link to a specific slide with a hash, such as `presentation/index.html#7`. Text inside figure images is not editable; browser edits do not update the transcript.
 
+Every slide has content-aware entrance animations and a gentle 620 ms transition.
+Comparisons reveal in reading order; technical figures stay aligned as they fade
+in. Slide advancement remains presenter controlled. Reduced-motion preferences
+are respected. [Animation maintenance and timing](tools/MOTION.md).
+
 ## Data and sources
 
 - **[Worldwide bioprinting geography through 2025](data/geography-2025/):** Excel workbook and CSV files with top-20 country rankings, full author/affiliation tables, institutional coordinates, and a sourced company register with historical and unconfirmed status flags.

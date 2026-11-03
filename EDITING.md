@@ -39,6 +39,7 @@ after saving. Keep JSON quotes and commas intact.
 | `presentation/index.html` | Actual published HTML; search `SLIDE 04:` or `id="slide-4"` to reach a slide |
 | `tools/deck.css` | Fonts, sizes, positions, colors, presenter crop, and question zoom animation |
 | `tools/deck.js` | Keyboard navigation, overview, browser text editing, saving |
+| `tools/slide-motion.js` | Content-aware entrances and 620 ms slide transitions; refresh with `python3 tools/update_motion.py` |
 | `tools/cover_slide.py` | Cover HTML structure and lung photo |
 | `tools/opening_slides.py` | Introduction, contents, centered question, shared menu/footer |
 | `presentation/transcript.md` | Readable slide text and speaker notes |
@@ -71,3 +72,16 @@ Click the slide, press Space/Right, or use Next to reveal each of the three
 points. After the third point, the next advance opens the cover. Left/Previous
 hides a point; Home returns to the start with all points hidden. Press E to
 show all points for editing. The photo uses the natural aspect ratio of the exact cropped portrait selected by the user.
+
+## Animation pacing
+
+Every slide has an entrance animation and a transition. New slides inherit the
+same content-aware motion when the deck reloads. Transitions take 620 ms;
+most entrances take 0.7–1.1 seconds, with short staggered delays for comparisons
+and ordered explanations. Advancement stays under presenter control.
+
+After editing `tools/slide-motion.js`, run `python3 tools/update_motion.py` and
+`python3 tools/archive_materials.py`. A full build embeds motion automatically;
+targeted updaters preserve it. See `tools/MOTION.md` for timing details.
+
+The presenter starts with name/photo only. Click, Space/Right, or Next reveals one point; the fourth advance opens the cover. Left/Previous hides a point; Home resets the introduction. E shows all points for editing. The selected cropped portrait keeps its natural proportions.

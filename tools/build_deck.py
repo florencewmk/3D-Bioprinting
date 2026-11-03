@@ -174,5 +174,7 @@ css=(Path(__file__).parent/'deck.css').read_text()+'\n'+(Path(__file__).parent/'
 shell=(Path(__file__).parent/'shell.html').read_text()
 result=shell.replace('FONT_CSS',(Path(__file__).parent/'fonts.css').read_text()).replace('BASE_CSS',base).replace('DECK_CSS',css).replace('SLIDE_SECTIONS','\n'.join(sections)).replace('SOURCE_DATA',json.dumps(data,ensure_ascii=False).replace('</','<\\/')).replace('DECK_JS',js)
 result=result.replace('15 October 2026',settings()['event']['date'])
+from update_motion import with_motion
+result=with_motion(result)
 (OUT/'index.html').write_text('\n'.join(line.rstrip() for line in result.splitlines()).rstrip()+'\n')
 print(json.dumps({'slides':len(data),'native_text_lines':sum(s.count('class="textline') for s in sections),'videos':manifest,'html_bytes':len(result.encode()),'source_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest()},indent=2))

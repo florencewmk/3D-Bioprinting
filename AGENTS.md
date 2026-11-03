@@ -40,6 +40,11 @@ data README before editing. Preserve other contributors' changes.
 
 ## Presentation maintenance
 
+- Animate every slide and provide a transition between slides, as requested on
+  3 November 2026. Choose motion for the content and use moderate pacing; retain
+  presenter-controlled advancement, existing click reveals and chart timelines.
+  See `tools/MOTION.md` and run `python3 tools/update_motion.py` after a full build.
+  Respect reduced-motion preferences and expose final content in print/edit mode.
 - `presentation/index.html` is the current self-contained, offline presentation;
   `presentation/transcript.md` contains its transcript and speaker notes.
 - Keep theme/controller/chart code and reproducible maintenance scripts in

@@ -1,7 +1,7 @@
 {
   "verified_on": "2026-11-03",
   "event": {
-    "city": "Düsseldorf",
+    "city": "D\u00fcsseldorf",
     "date": "5 November 2026"
   },
   "slides": 51,
@@ -143,5 +143,20 @@
     "editing_click_guard": true,
     "remaining_49_sections_byte_identical": true,
     "exact_user_selected_portrait_no_stretch": true
+  },
+  "slide_motion": {
+    "verified_on": "2026-11-03",
+    "animated_slides": 51,
+    "transition_ms": 620,
+    "all_51_slide_sections_byte_identical": true,
+    "portrait_dimensions": [
+      271,
+      382
+    ],
+    "presenter_four_clicks_to_cover": true,
+    "browser_console_errors": [],
+    "publication_counts_unchanged": 108,
+    "material_assets": 166,
+    "history_revision_excluded": true
   }
 }
