@@ -193,7 +193,7 @@ Organ transplants and deceased donors
 
 ### Speaker notes
 
-Source: EDQM–ONT Newsletter Transplant2026, international figures2025, linked from WHO–ONT GODT. PDFp37(printed35): kidney116775, liver45556, heart10748, lung8472, pancreas2148, smallbowel180; sum183879. Actual deceased donors49169. PDFpp66–74(printed64–72): sum reported organ-list entries=532905 waiting at31December2025 and40019 deaths during2025. These are calculated sums across six organ lists and94country columns, not deduplicated patient counts. Missing cells remain missing; a multi-organ candidate may appear in several lists. Country coverage and report versions vary. No2026forecast. https://www.transplant-observatory.org/wp-content/uploads/2026/10/NEWSLETTER-2026_alta.pdf
+Source: EDQM–ONT Newsletter Transplant2026, international figures2025, linked from WHO–ONT GODT. PDFp37(printed35): kidney116775, liver45556, heart10748, lung8472, pancreas2148, smallbowel180; sum183879. Actual deceased donors49169. PDFpp66–74(printed64–72): sum reported organ-list entries=532905 waiting at31December2025 and40019 deaths during2025. These are calculated sums across six organ lists and94country columns, not deduplicated patient counts. Missing cells remain missing; a multi-organ candidate may appear in several lists. Country coverage and report versions vary. 2026 forecast: linear regression on 2023–2025, 188,142 transplant procedures and 50,711 deceased donors. Waiting-list totals remain 2025. https://www.transplant-observatory.org/wp-content/uploads/2026/10/NEWSLETTER-2026_alta.pdf
 
 ## 10. Bioprinting technologies
 

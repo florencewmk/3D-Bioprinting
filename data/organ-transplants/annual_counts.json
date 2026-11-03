@@ -162,5 +162,17 @@
     "counting_unit": "reported organ-list entries, not deduplicated patients",
     "method": "Sum reported cells across six organs and country tables; preserve blanks as missing.",
     "country_columns_in_tables": 94
+  },
+  "forecast": {
+    "year": 2026,
+    "status": "forecast",
+    "method": "Ordinary least squares on 2023\u20132025 reported observations",
+    "training_years": [
+      2023,
+      2024,
+      2025
+    ],
+    "solid_organ_transplant_procedures": 188142,
+    "deceased_donors": 50711
   }
 }
