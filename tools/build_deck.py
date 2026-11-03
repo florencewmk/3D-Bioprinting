@@ -123,7 +123,7 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
   data[-1]['text']='Contents\n\n'+'\n\n'.join(f'{s["label"]} · Page {s["slide"]:02d}' for s in settings()['sections'])
  if n==4:
   art=render_question()
-  data[-1]['text']='\n'.join(settings()['opening_question'])+'\n\nBackground source: '+settings()['opening_background']['source_url']
+  data[-1]['text']='\n'.join(settings()['opening_question'])
  if n==16:
   art='''<div class="poster half"><p class="eyebrow">APPLICATIONS</p><h1 class="editable" data-edit="precision">Precision<br>is a <em class="gradient">beginning.</em></h1></div>'''
  if n in [22,23,29]:

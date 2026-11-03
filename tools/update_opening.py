@@ -28,7 +28,7 @@ heading = c['introduction'].get('heading', c['presenter'])
 data[0].update(title=heading, text=heading + '\n\n' + '\n\n'.join(c['introduction']['points']), notes=c['introduction']['notes'])
 data[1]['text'] = f'{c["event"]["name"]} · {c["event"]["city"]} · {c["event"]["date"]}\n\nStereolithographic\n\nBioprinting\n\n{c["cover_tagline"]}\n\n{c["presenter"]}'
 data[2]['text'] = 'Contents\n\n' + '\n\n'.join(f'{s["label"]} · Page {s["slide"]:02d}' for s in c['sections'])
-data[3]['text'] = '\n'.join(c['opening_question']) + '\n\nBackground source: ' + c['opening_background']['source_url']
+data[3]['text'] = '\n'.join(c['opening_question'])
 renderers = [render_introduction, render_cover, render_contents, render_question]
 for i, section in enumerate(sections):
     number = i + 1

@@ -56,9 +56,7 @@ I’ll begin with some examples of 3D printing, then explain how light-based pri
 
 What comes to your mind
 when we mention additive manufacturing,
-or 3D-printing?
-
-Background source: https://www.youtube.com/watch?v=ONBHkzimRbg
+or 3D printing?
 
 ### Speaker notes
 

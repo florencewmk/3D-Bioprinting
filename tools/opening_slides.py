@@ -52,7 +52,7 @@ def render_contents():
 def render_question():
     c = settings()
     lines = '<br>'.join(html.escape(line) for line in c['opening_question'])
+    lines = lines.replace('3D printing?', '<span class="gradient question-emphasis">3D printing?</span>')
     return (f'<div class="question-background" aria-hidden="true"><img src="{image_uri(c["opening_background"]["path"])}" alt=""></div>'
             '<div class="question-shade" aria-hidden="true"></div>'
-            f'<div class="question-center"><h1 class="editable" data-edit="opening-centered-question">{lines}</h1></div>'
-            f'<a class="question-credit" href="{html.escape(c["opening_background"]["source_url"])}" target="_blank" rel="noopener noreferrer">Background source · YouTube</a>')
+            f'<div class="question-center"><h1 class="editable" data-edit="opening-centered-question">{lines}</h1></div>')
