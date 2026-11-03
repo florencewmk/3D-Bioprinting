@@ -60,8 +60,7 @@ Source paths and provenance are also recorded in `presentation/settings.json`.
 
 ### Selected presenter portrait
 
-The current first slide uses the exact cropped portrait supplied by the user
-on 3 November 2026, stored unchanged at `images/e43fedbf3ed4b281904b1bcf20cabf1fd97733df2c1a6c19c0e0c59437b2bd3a.png`
-(271 × 382 pixels). Its natural aspect ratio is preserved in CSS.
-The earlier wide IMG_6938.JPG archive remains available but is no longer used
-on the presenter slide.
+The current first slide uses the exact `IMG_6938 2.jpg` supplied by the user
+on 3 November 2026, stored unchanged at `images/589de14a6908f111ea6d43562c7d131fe4f93007167e9e6068482dbe83508e0f.jpg`
+(1585 × 2530 pixels). The whole image fits within the existing
+portrait area at its natural proportions. Prior portrait files remain archived.

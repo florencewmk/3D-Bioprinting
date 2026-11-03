@@ -1,7 +1,7 @@
 {
   "verified_on": "2026-11-03",
   "event": {
-    "city": "D\u00fcsseldorf",
+    "city": "Düsseldorf",
     "date": "5 November 2026"
   },
   "slides": 51,
@@ -9,7 +9,7 @@
     "number": 1,
     "heading": "Florence Mei Kuan Wong",
     "about_me_heading": false,
-    "portrait": "Exact user-selected cropped portrait, displayed without stretching",
+    "portrait": "Exact IMG_6938 2.jpg selected by the user; full image displayed without stretching",
     "three_points_retained": true
   },
   "checks": {
@@ -122,12 +122,12 @@
   "presenter_fix": {
     "intro_slide": 1,
     "cover_slide": 2,
-    "portrait_original_sha256": "e43fedbf3ed4b281904b1bcf20cabf1fd97733df2c1a6c19c0e0c59437b2bd3a",
+    "portrait_original_sha256": "589de14a6908f111ea6d43562c7d131fe4f93007167e9e6068482dbe83508e0f",
     "photo_natural_dimensions": [
-      271,
-      382
+      1585,
+      2530
     ],
-    "displayed_aspect_ratio": 0.7094240837696335,
+    "displayed_aspect_ratio": 0.6264822134387352,
     "full_photo_no_crop_or_stretch": false,
     "name_above_content": true,
     "initial_visible_points": 0,
