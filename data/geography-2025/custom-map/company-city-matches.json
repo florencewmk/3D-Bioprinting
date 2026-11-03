@@ -1,0 +1,420 @@
+{
+  "CELLINK": {
+    "position": [
+      57.70716,
+      11.96679
+    ],
+    "geonames_id": "2711537",
+    "matched_name": "Gothenburg",
+    "country_code": "SE",
+    "admin1": "28",
+    "population": 608462
+  },
+  "Fluicell": {
+    "position": [
+      57.6554,
+      12.01378
+    ],
+    "geonames_id": "2691459",
+    "matched_name": "Mölndal",
+    "country_code": "SE",
+    "admin1": "28",
+    "population": 59430
+  },
+  "Nanoscribe": {
+    "position": [
+      49.09006,
+      8.39879
+    ],
+    "geonames_id": "2933101",
+    "matched_name": "Eggenstein-Leopoldshafen",
+    "country_code": "DE",
+    "admin1": "01",
+    "population": 15189
+  },
+  "UpNano": {
+    "position": [
+      48.20849,
+      16.37208
+    ],
+    "geonames_id": "2761369",
+    "matched_name": "Vienna",
+    "country_code": "AT",
+    "admin1": "09",
+    "population": 1691468
+  },
+  "GeSiM": {
+    "position": [
+      51.11112,
+      13.91199
+    ],
+    "geonames_id": "2851079",
+    "matched_name": "Radeberg",
+    "country_code": "DE",
+    "admin1": "13",
+    "population": 18683
+  },
+  "Axolotl Biosystems": {
+    "position": [
+      41.01384,
+      28.94966
+    ],
+    "geonames_id": "745044",
+    "matched_name": "Istanbul",
+    "country_code": "TR",
+    "admin1": "34",
+    "population": 15701602
+  },
+  "REGENHU": {
+    "position": [
+      46.72074,
+      6.95638
+    ],
+    "geonames_id": "2658124",
+    "matched_name": "Villaz-Saint-Pierre",
+    "country_code": "CH",
+    "admin1": "FR",
+    "population": 1093
+  },
+  "Readily3D": {
+    "position": [
+      46.54896,
+      6.66831
+    ],
+    "geonames_id": "2660884",
+    "matched_name": "Epalinges",
+    "country_code": "CH",
+    "admin1": "VD",
+    "population": 7706
+  },
+  "TissueLabs": {
+    "position": [
+      46.19278,
+      9.01703
+    ],
+    "geonames_id": "2661567",
+    "matched_name": "Bellinzona",
+    "country_code": "CH",
+    "admin1": "TI",
+    "population": 43220
+  },
+  "Poietis / Poietis Biosystems": {
+    "position": [
+      44.80565,
+      -0.6324
+    ],
+    "geonames_id": "2987805",
+    "matched_name": "Pessac",
+    "country_code": "FR",
+    "admin1": "75",
+    "population": 57944
+  },
+  "REGEMAT 3D": {
+    "position": [
+      37.18817,
+      -3.60667
+    ],
+    "geonames_id": "2517117",
+    "matched_name": "Granada",
+    "country_code": "ES",
+    "admin1": "51",
+    "population": 233532
+  },
+  "Brinter equipment business": {
+    "position": [
+      60.45148,
+      22.26869
+    ],
+    "geonames_id": "633679",
+    "matched_name": "Turku",
+    "country_code": "FI",
+    "admin1": "02",
+    "population": 206655
+  },
+  "Inventia Life Science": {
+    "position": [
+      -33.86785,
+      151.20732
+    ],
+    "geonames_id": "2147714",
+    "matched_name": "Sydney",
+    "country_code": "AU",
+    "admin1": "02",
+    "population": 5638830
+  },
+  "Cyfuse Biomedical": {
+    "position": [
+      35.6895,
+      139.69171
+    ],
+    "geonames_id": "1850147",
+    "matched_name": "Tokyo",
+    "country_code": "JP",
+    "admin1": "40",
+    "population": 9733276
+  },
+  "CLECELL": {
+    "position": [
+      37.43861,
+      127.13778
+    ],
+    "geonames_id": "1897000",
+    "matched_name": "Seongnam-si",
+    "country_code": "KR",
+    "admin1": "13",
+    "population": 914832
+  },
+  "ROKIT Healthcare": {
+    "position": [
+      37.566,
+      126.9784
+    ],
+    "geonames_id": "1835848",
+    "matched_name": "Seoul",
+    "country_code": "KR",
+    "admin1": "11",
+    "population": 10349312
+  },
+  "Avay Biosciences": {
+    "position": [
+      12.97194,
+      77.59369
+    ],
+    "geonames_id": "1277333",
+    "matched_name": "Bengaluru",
+    "country_code": "IN",
+    "admin1": "19",
+    "population": 8495492
+  },
+  "Next Big Innovation Labs": {
+    "position": [
+      12.97194,
+      77.59369
+    ],
+    "geonames_id": "1277333",
+    "matched_name": "Bengaluru",
+    "country_code": "IN",
+    "admin1": "19",
+    "population": 8495492
+  },
+  "3D Biotechnology Solutions (3DBS)": {
+    "position": [
+      -22.90556,
+      -47.06083
+    ],
+    "geonames_id": "3467865",
+    "matched_name": "Campinas",
+    "country_code": "BR",
+    "admin1": "27",
+    "population": 1031554
+  },
+  "3D Bioprinting Solutions": {
+    "position": [
+      55.75204,
+      37.61781
+    ],
+    "geonames_id": "524901",
+    "matched_name": "Moscow",
+    "country_code": "RU",
+    "admin1": "48",
+    "population": 10381222
+  },
+  "Advanced Solutions Life Sciences": {
+    "position": [
+      38.25424,
+      -85.75941
+    ],
+    "geonames_id": "4299276",
+    "matched_name": "Louisville",
+    "country_code": "US",
+    "admin1": "KY",
+    "population": 624444
+  },
+  "nScrypt": {
+    "position": [
+      28.53834,
+      -81.37924
+    ],
+    "geonames_id": "4167147",
+    "matched_name": "Orlando",
+    "country_code": "US",
+    "admin1": "FL",
+    "population": 334854
+  },
+  "Regenovo": {
+    "position": [
+      30.29365,
+      120.16142
+    ],
+    "geonames_id": "1808926",
+    "matched_name": "Hangzhou",
+    "country_code": "CN",
+    "admin1": "02",
+    "population": 11936010
+  },
+  "Aspect Biosystems": {
+    "position": [
+      49.24966,
+      -123.11934
+    ],
+    "geonames_id": "6173331",
+    "matched_name": "Vancouver",
+    "country_code": "CA",
+    "admin1": "02",
+    "population": 662248
+  },
+  "Cellbricks": {
+    "position": [
+      52.52437,
+      13.41053
+    ],
+    "geonames_id": "2950159",
+    "matched_name": "Berlin",
+    "country_code": "DE",
+    "admin1": "16",
+    "population": 3426354
+  },
+  "CollPlant": {
+    "position": [
+      31.89415,
+      34.8095
+    ],
+    "geonames_id": "293725",
+    "matched_name": "Reẖovot",
+    "country_code": "IL",
+    "admin1": "02",
+    "population": 149392
+  },
+  "BIO INX": {
+    "position": [
+      51.05,
+      3.71667
+    ],
+    "geonames_id": "2797656",
+    "matched_name": "Gent",
+    "country_code": "BE",
+    "admin1": "VLG",
+    "population": 265086
+  },
+  "Axolotl Biosciences": {
+    "position": [
+      48.4359,
+      -123.35155
+    ],
+    "geonames_id": "6174041",
+    "matched_name": "Victoria",
+    "country_code": "CA",
+    "admin1": "02",
+    "population": 289625
+  },
+  "Systemic Bio": {
+    "position": [
+      29.76328,
+      -95.36327
+    ],
+    "geonames_id": "4699066",
+    "matched_name": "Houston",
+    "country_code": "US",
+    "admin1": "TX",
+    "population": 2314157
+  },
+  "FluidForm Bio": {
+    "position": [
+      42.37649,
+      -71.23561
+    ],
+    "geonames_id": "4954380",
+    "matched_name": "Waltham",
+    "country_code": "US",
+    "admin1": "MA",
+    "population": 63378
+  },
+  "VivoSim / Organovo lineage": {
+    "position": [
+      32.71571,
+      -117.16472
+    ],
+    "geonames_id": "5391811",
+    "matched_name": "San Diego",
+    "country_code": "US",
+    "admin1": "CA",
+    "population": 1404452
+  },
+  "VoxCell BioInnovation": {
+    "position": [
+      48.4359,
+      -123.35155
+    ],
+    "geonames_id": "6174041",
+    "matched_name": "Victoria",
+    "country_code": "CA",
+    "admin1": "02",
+    "population": 289625
+  },
+  "Carcinotech": {
+    "position": [
+      55.95206,
+      -3.19648
+    ],
+    "geonames_id": "2650225",
+    "matched_name": "Edinburgh",
+    "country_code": "GB",
+    "admin1": "SCT",
+    "population": 514990
+  },
+  "mimiX Biotherapeutics": {
+    "position": [
+      47.13713,
+      7.24608
+    ],
+    "geonames_id": "2661513",
+    "matched_name": "Biel/Bienne",
+    "country_code": "CH",
+    "admin1": "BE",
+    "population": 55120
+  },
+  "PhosPrint": {
+    "position": [
+      37.98376,
+      23.72784
+    ],
+    "geonames_id": "264371",
+    "matched_name": "Athens",
+    "country_code": "GR",
+    "admin1": "ESYE31",
+    "population": 664046
+  },
+  "Precise Bio": {
+    "position": [
+      36.09986,
+      -80.24422
+    ],
+    "geonames_id": "4499612",
+    "matched_name": "Winston-Salem",
+    "country_code": "US",
+    "admin1": "NC",
+    "population": 241218
+  },
+  "CTIBIOTECH": {
+    "position": [
+      45.74906,
+      4.84789
+    ],
+    "geonames_id": "2996944",
+    "matched_name": "Lyon",
+    "country_code": "FR",
+    "admin1": "84",
+    "population": 520774
+  },
+  "Prellis Biologics": {
+    "position": [
+      37.87159,
+      -122.27275
+    ],
+    "geonames_id": "5327684",
+    "matched_name": "Berkeley",
+    "country_code": "US",
+    "admin1": "CA",
+    "population": 120972
+  }
+}

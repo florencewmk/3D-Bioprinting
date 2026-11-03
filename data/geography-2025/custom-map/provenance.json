@@ -1,0 +1,66 @@
+{
+  "built": "2026-11-03",
+  "source_map_id": "1xMICGif7YhqVEFiDnPdq-cAFGzoo6v0",
+  "export_file": "data/geography-2025/custom-map/google-export-2026-11-03.kml",
+  "export_sha256": "6671bef410ff99b09beef37ff3a3214f464d506e9cc5cc81b324efc08052fcfd",
+  "company_geometry": "City-level GeoNames matches; names and countries unchanged. The My Maps export contains addresses without coordinates for these points.",
+  "country_geometry": "Natural Earth country label anchors; publication values unchanged",
+  "geometry_sources": [
+    "https://download.geonames.org/export/dump/cities500.zip",
+    "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_50m_admin_0_countries.geojson"
+  ],
+  "geometry_source_sha256": {
+    "geonames-cities500.zip": "74157e02b1a45d3bdc9ff76149bcef1e1521db5f59054ad5b6df85e3f97d4b69",
+    "ne_50m_admin_0_countries.geojson": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb"
+  },
+  "institution_geometry": "Unchanged archived OpenAlex institution coordinates",
+  "categories": [
+    {
+      "id": "companies",
+      "name": "Companies",
+      "color": "#a55391",
+      "defaultVisible": true,
+      "note": "38 company lineages; city-level locations.",
+      "count": 38,
+      "countryCount": 21
+    },
+    {
+      "id": "affiliations",
+      "name": "Affiliations",
+      "color": "#427ba0",
+      "defaultVisible": true,
+      "note": "Top 100 institutions by publications in 2021–2025.",
+      "count": 100,
+      "countryCount": 26
+    },
+    {
+      "id": "other",
+      "name": "Other affiliations",
+      "color": "#83919c",
+      "defaultVisible": false,
+      "note": "All 5,242 remaining geolocated institutions, combined in one category.",
+      "count": 5242,
+      "countryCount": 113
+    },
+    {
+      "id": "authors",
+      "name": "Authors",
+      "color": "#b87e38",
+      "defaultVisible": false,
+      "note": "100 authors at 172 last-observed institutional locations.",
+      "count": 172,
+      "countryCount": 27
+    },
+    {
+      "id": "countries",
+      "name": "Top 20 countries",
+      "color": "#4f8871",
+      "defaultVisible": false,
+      "note": "Country totals for publications in 2000–2025.",
+      "count": 20,
+      "countryCount": 20
+    }
+  ],
+  "total_points": 5572,
+  "data_sha256": "dc072757f46deb9570181ea3f7bb3efc917e46dcf56768e2a2bed2b84b912681"
+}

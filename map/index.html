@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bioprinting World Map</title>
+  <meta name="description" content="Explore bioprinting companies, research affiliations and authors worldwide through 2025. Independent selection and country lists.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2309090b'/%3E%3Ccircle cx='20' cy='20' r='12' fill='none' stroke='white' stroke-width='2'/%3E%3Cpath d='M8 20h24M20 8c-9 8-9 16 0 24M20 8c9 8 9 16 0 24' fill='none' stroke='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/leaflet.css"><link rel="stylesheet" href="vendor/MarkerCluster.css"><link rel="stylesheet" href="style.css">
+  <script defer src="vendor/leaflet.js"></script><script defer src="vendor/leaflet.markercluster.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <button id="menu" class="header-button" aria-label="Hide filters" aria-expanded="true" aria-controls="sidebar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    <div class="brand"><span class="brand-title">Bioprinting <strong>World Map</strong></span><span class="brand-subtitle">RESEARCH & COMPANIES · THROUGH 2025</span></div>
+    <div id="header-count" class="header-count">Loading map…</div>
+    <button id="about-open" class="header-button about-button" aria-label="About the data">ⓘ</button>
+  </header>
+  <main id="app" class="app">
+    <aside id="sidebar" aria-label="Map filters">
+      <section class="intro"><div class="intro-title"><h1>Explore the world</h1><button id="collapse" class="text-button" title="Close every list without changing selection">Collapse lists</button></div>
+      <p>Choose what appears on the map.</p>
+      <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Search a name or country" aria-label="Search map records" autocomplete="off"></label>
+      <div class="selection-actions"><button id="show-all" class="text-button">Select all</button><span>·</span><button id="clear-all" class="text-button">Clear all</button><span class="selection-status" id="selection-status" role="status" aria-live="polite"></span></div>
+      <div class="control-key"><span><span class="key-box">✓</span> Select points</span><span><span class="key-arrow">›</span> Open countries</span><span><span class="key-box">✓</span> List names</span></div>
+      </section>
+      <div id="tree" aria-label="Categories and countries"><p class="loading">Loading the research dataset…</p></div>
+      <footer class="sidebar-footer">Research window 2000–2025<br>Data collected 27 October 2026 · <button id="data-notes" class="text-button">Data notes</button></footer>
+    </aside>
+    <section class="map-section" aria-label="Interactive world map"><div id="map"></div>
+      <div class="map-tools"><button id="fit" title="Fit all selected points"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg>Fit selection</button></div>
+      <div id="map-notice" class="map-notice" hidden></div>
+      <div id="empty-map" class="empty-map" hidden><strong>No points selected</strong><span>Choose a category or country in the filters.</span></div>
+    </section>
+  </main>
+  <dialog id="about"><button id="about-close" class="dialog-close" aria-label="Close data notes">×</button><div class="eyebrow">ABOUT THIS MAP</div><h2>Bioprinting, worldwide.</h2><p>Explore the same 5,572 points as the original map, with independent controls for selection and browsing.</p>
+    <dl><dt>Affiliations · 100</dt><dd>The first 100 institutions by publication output in 2021–2025.</dd><dt>Other affiliations · 5,242</dt><dd>The remaining geolocated institutions. The old parts 1, 2 and 3 were only technical splits for Google My Maps. They are combined here.</dd><dt>Authors · 172 locations</dt><dd>The top 100 authors at their last-observed institutional affiliations through 2025. These locate institutions, not people’s homes or current employment.</dd><dt>Companies · 38</dt><dd>A curated company shortlist, with city-level locations. Evidence dates and qualifications remain in each marker; this is not a global company census.</dd><dt>Top 20 countries</dt><dd>Cumulative publication counts in 2000–2025. International papers can count in more than one country.</dd></dl>
+    <p>Research comes from an OpenAlex keyword-defined corpus. Institution metadata and sources were retrieved on 27 October 2026; the research cutoff is 2025. One institution lacks coordinates and is not mapped.</p>
+    <p><a href="https://github.com/florencewmk/3D-Bioprinting/tree/main/data/geography-2025" target="_blank" rel="noopener">Dataset & methods ↗</a> <a href="https://www.google.com/maps/d/u/0/viewer?mid=1xMICGif7YhqVEFiDnPdq-cAFGzoo6v0" target="_blank" rel="noopener">Original Google map ↗</a></p>
+    <p class="fineprint">City coordinates: <a href="https://www.geonames.org/" target="_blank" rel="noopener">GeoNames (CC BY 4.0)</a>. Country summary anchors: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth (public domain)</a>. These are approximate places, not office addresses. Map interface: Leaflet and Leaflet.markercluster. Base map © OpenStreetMap contributors. Map tiles need an internet connection.</p>
+  </dialog>
+</body>
+</html>

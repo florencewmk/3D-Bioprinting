@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-03",
+  "initial": [
+    {
+      "check": "initial collapsed menus and black header",
+      "countries": 0,
+      "header": "rgb(8, 9, 11)",
+      "lists": 0,
+      "visible": "138 / 5,572 points"
+    },
+    {
+      "check": "expand does not change selection",
+      "countries": 21,
+      "lists": 0,
+      "visible": "138 / 5,572 points"
+    },
+    {
+      "check": "Germany list is separate",
+      "nanoscribe": true,
+      "lists": 1,
+      "visible": "138 / 5,572 points"
+    }
+  ],
+  "final": {
+    "defaultPoints": "138 / 5,572 points",
+    "defaultCountryRows": 0,
+    "otherCountryRows": 113,
+    "pointsAfterExpansion": "138 / 5,572 points",
+    "selectOtherWithoutOpening": {
+      "points": "5,380 / 5,572 points",
+      "open": "false"
+    },
+    "partialCategory": "true",
+    "mainSelectAllRestored": "138 / 5,572 points",
+    "nameLists": 1
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "documentWidth": 390,
+    "noHorizontalOverflow": true,
+    "filtersInitiallyClosed": true,
+    "listsRemainClosedWhenCategoryExpanded": true
+  },
+  "markerPopup": {
+    "name": "Nanoscribe",
+    "staysOpen": true,
+    "product": "Quantum X bio",
+    "sourceLinksRetained": true
+  },
+  "allRecordsSelection": "5,572 / 5,572 points"
+}
