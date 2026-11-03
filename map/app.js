@@ -61,7 +61,7 @@
   map.on('zoomend', () => {if(performance.now()-lastWheel>240) wheelTarget=undefined;});
   L.control.zoom({position:'bottomright'}).addTo(map);
   L.control.scale({position:'bottomleft', imperial:false}).addTo(map);
-  const tileLayer = L.maplibreGL({style:'basemap-english.json',interactive:false,updateInterval:16,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>'}).addTo(map);
+  const tileLayer = L.maplibreGL({style:'basemap-english.json?v=20261103-readability',interactive:false,updateInterval:16,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>'}).addTo(map);
   const background = tileLayer.getMaplibreMap();
   background.on('load', () => {$('map').dataset.labelLanguage='en';});
   background.on('error', () => {if(!background.isStyleLoaded()){$('map-notice').textContent='The background map could not load. Points and filters still work.';$('map-notice').hidden=false;}});
