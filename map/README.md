@@ -38,3 +38,7 @@ The original Google map is retained and its sharing settings are unchanged. The 
 The background uses CARTO Positron vector tiles, rendered through MapLibre GL JS 5.6.1 and the MapLibre Leaflet adapter 0.1.3. The existing Leaflet markers, filters and layout are retained. `basemap-english.json` prefers `name:en` / `name_en` for place labels, with a single proper-name fallback where the geographic source has no English variant. Official company, author and institution names remain unchanged. This replaces the former raster background whose local-language names were baked into images. No Google API key or Google Cloud project is used.
 
 MapLibre is BSD 3-Clause (`vendor/maplibre-LICENSE`); the adapter license is in `vendor/leaflet-maplibre-LICENSE`. Style source: https://basemaps.cartocdn.com/gl/positron-gl-style/style.json; English label rules are saved locally rather than depending on a changing remote style. CARTO attribution is visible on the map.
+
+## Readability and interactions
+
+Country labels use black text. The sidebar uses 17px category headings, 15px country names and 14px record names. Trackpad input uses fractional, cursor-anchored Leaflet animations with a short 160ms easing period; the background updates every 16ms. Filters add and remove only changed markers, preserving unaffected popups. Newly opened lists have a short reveal transition. Reduced-motion preferences disable the added animations. No extra runtime packages are required.

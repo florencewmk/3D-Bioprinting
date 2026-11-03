@@ -32,10 +32,36 @@
     }
     return {...cat, points, countries: [...countryMap].sort((a,b) => englishOrder.compare(a[0],b[0])).map(([name, points], index) => ({name, points: points.sort((a,b) => englishOrder.compare(a.name,b.name)), key: `${cat.id}-${index}`}))};
   });
-  const map = L.map('map', {zoomControl:false, minZoom:2, maxZoom:19, zoomSnap:.25, worldCopyJump:true}).setView([22,7],2);
+  const reducedMotion = matchMedia('(prefers-reduced-motion:reduce)');
+  const map = L.map('map', {zoomControl:false, minZoom:2, maxZoom:19, zoomSnap:0, scrollWheelZoom:false, worldCopyJump:true, zoomAnimation:!reducedMotion.matches}).setView([22,7],2);
+  // Fractional, cursor-anchored zoom using Leaflet's existing animation engine.
+  // Retarget the animation at most once per frame instead of snapping wheel steps.
+  let wheelFrame = 0, wheelTarget, wheelPosition, lastWheel = 0;
+  const resetWheel = () => {cancelAnimationFrame(wheelFrame);wheelFrame=0;wheelTarget=undefined;};
+  $('map').addEventListener('wheel', event => {
+    if (event.target.closest('.leaflet-control, .leaflet-popup')) return;
+    event.preventDefault();
+    const now = performance.now();
+    if (now-lastWheel>240 || wheelTarget===undefined) wheelTarget=map.getZoom();
+    lastWheel=now;
+    const pixels=event.deltaY*(event.deltaMode===1?16:event.deltaMode===2?map.getSize().y:1);
+    wheelTarget=Math.max(map.getMinZoom(),Math.min(map.getMaxZoom(),wheelTarget-Math.max(-240,Math.min(240,pixels))/240));
+    wheelPosition=map.mouseEventToContainerPoint(event);
+    if(wheelFrame) return;
+    wheelFrame=requestAnimationFrame(() => {
+      wheelFrame=0;
+      const anchor=map.containerPointToLatLng(wheelPosition);
+      const offset=wheelPosition.subtract(map.getSize().divideBy(2));
+      const center=map.unproject(map.project(anchor,wheelTarget).subtract(offset),wheelTarget);
+      if(reducedMotion.matches) map.setView(center,wheelTarget,{animate:false});
+      else map.flyTo(center,wheelTarget,{duration:.16,easeLinearity:.3});
+    });
+  },{passive:false});
+  $('map').addEventListener('pointerdown', resetWheel);
+  map.on('zoomend', () => {if(performance.now()-lastWheel>240) wheelTarget=undefined;});
   L.control.zoom({position:'bottomright'}).addTo(map);
   L.control.scale({position:'bottomleft', imperial:false}).addTo(map);
-  const tileLayer = L.maplibreGL({style:'basemap-english.json',interactive:false,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>'}).addTo(map);
+  const tileLayer = L.maplibreGL({style:'basemap-english.json',interactive:false,updateInterval:16,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener">CARTO</a>'}).addTo(map);
   const background = tileLayer.getMaplibreMap();
   background.on('load', () => {$('map').dataset.labelLanguage='en';});
   background.on('error', () => {if(!background.isStyleLoaded()){$('map-notice').textContent='The background map could not load. Points and filters still work.';$('map-notice').hidden=false;}});
@@ -65,11 +91,17 @@
       return name;
     });
   }
+  let visibleIds = new Set();
   function renderMap() {
     cancelAnimationFrame(renderTicket);
     renderTicket = requestAnimationFrame(() => {
       const visible = data.points.filter(p => selected.has(p.id) && match(p));
-      cluster.clearLayers(); cluster.addLayers(visible.map(p => markers.get(p.id)));
+      const nextIds = new Set(visible.map(p => p.id));
+      const removed = [...visibleIds].filter(id => !nextIds.has(id)).map(id => markers.get(id));
+      const added = visible.filter(p => !visibleIds.has(p.id)).map(p => markers.get(p.id));
+      if (removed.length) cluster.removeLayers(removed);
+      if (added.length) cluster.addLayers(added);
+      visibleIds=nextIds;
       $('selection-status').textContent = `${fmt(visible.length)} shown`;
       $('header-count').textContent = `${fmt(visible.length)} / ${fmt(data.points.length)} points`;
       $('header-count').dataset.visiblePoints = visible.length;
@@ -81,6 +113,7 @@
   function checkboxState(points) { const count = points.filter(p => selected.has(p.id)).length; return {checked:count === points.length, mixed:count > 0 && count < points.length, count}; }
   function checkbox(id, label, state, attrs='') { return `<input type="checkbox" id="${id}" aria-label="${esc(label)}" ${state.checked?'checked':''} data-mixed="${state.mixed?'true':'false'}" ${attrs}>`; }
   function renderTree(focusId) {
+    const previousPanels=new Set([...$('tree').querySelectorAll('.category-body,.point-list')].map(el=>el.id));
     const html = models.map(cat => {
       const state = checkboxState(cat.points), open = expandedCategories.has(cat.id);
       const matching = cat.points.filter(match);
@@ -91,6 +124,7 @@
       return `<section class="category" style="--category-color:${cat.color}" data-category="${cat.id}"><div class="category-head">${checkbox(`category-${cat.id}`,`Select all ${cat.name}`,state,`data-action="category" data-category="${cat.id}"`)}<label class="category-label" for="category-${cat.id}"><span class="category-name"><span class="color-dot"></span>${esc(cat.name)}</span><span class="category-count">${query?`${fmt(matching.length)} matches · `:''}${fmt(state.count)} of ${fmt(cat.count)} selected</span></label><button class="disclosure" id="expand-${cat.id}" data-expand="${cat.id}" aria-expanded="${open}" aria-label="${open?'Collapse':'Expand'} ${cat.name}" aria-controls="countries-${cat.id}">${arrow}</button></div>${open?`<div class="category-body" id="countries-${cat.id}"><p class="category-note">${esc(cat.note)}<br>${cat.countryCount} countries / regions. Check “List” to see names.</p>${countryRows||'<p class="no-matches">No matching names or countries.</p>'}</div>`:''}</section>`;
     }).join('');
     $('tree').innerHTML = html;
+    $('tree').querySelectorAll('.category-body,.point-list').forEach(el=>{if(!previousPanels.has(el.id))el.classList.add('newly-open');});
     $('tree').querySelectorAll('[data-mixed="true"]').forEach(el => {el.indeterminate = true;});
     if (focusId) document.getElementById(focusId)?.focus({preventScroll:true});
   }

@@ -11,6 +11,8 @@ def main():
     style = json.loads(SOURCE.read_text())
     count = 0
     for layer in style['layers']:
+        if layer['id'] in ('place_country_1', 'place_country_2'):
+            layer.setdefault('paint', {})['text-color'] = '#000000'
         layout = layer.get('layout', {})
         field = layout.get('text-field')
         if field is not None and 'name' in json.dumps(field):
