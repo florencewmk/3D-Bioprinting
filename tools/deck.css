@@ -38,3 +38,25 @@ dialog{width:min(1100px,94vw);max-height:88vh;overflow:auto;background:#111218;c
 @media print{.profile-points [data-reveal-step]{visibility:visible!important;opacity:1!important;transform:none!important}@page{size:16in 9in;margin:0}.deck-controls,#progress,.edit-hotzone,.edit-toggle,.status,dialog{display:none!important}.slide{transition:none!important;animation:none!important}.hero,.poster,.contents-heading{animation:none!important}.editable{outline:none!important}}
 
 #chartReplay[hidden]{display:none}
+
+/* Examples build: a shared image stack, followed by the organ question. */
+.examples-layout{position:absolute;inset:140px 110px 150px;display:grid;grid-template-columns:1fr 1.45fr;align-items:center;gap:44px}
+.examples-copy{grid-area:1/1;visibility:hidden;opacity:0;transition:opacity .24s ease}
+.examples-layout:not(:has(.revealed)) [data-example="0"],
+.examples-copy.revealed:not(:has(~ .revealed)){visibility:visible;opacity:1}
+.examples-copy p:first-child{color:#c6acef;font-size:30px;margin:0 0 26px}
+.examples-copy h2{font-size:104px;font-weight:500;line-height:1.06;margin:0}
+.examples-copy p:last-child{color:#b7b4bf;font-size:36px;line-height:1.35;margin:26px 0 0}
+.examples-stack{grid-area:1/2;position:relative;height:700px;isolation:isolate}
+.examples-card{position:absolute;inset:8% 12% 13% 4%;margin:0;background:#000;border:2px solid #52505c;border-radius:24px;overflow:hidden;box-shadow:0 22px 64px #000b;opacity:0;visibility:hidden;transform:translateY(22%);transition:transform .48s ease,opacity .4s ease,visibility .4s}
+.examples-card img,.examples-card svg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.examples-card[data-card="0"]{opacity:1;visibility:visible;transform:none}
+.examples-layout:has([data-example="1"].revealed) [data-card="0"]{transform:translate(-4%,-8%) rotate(-7deg) scale(.93)}
+.examples-layout:has([data-example="1"].revealed) [data-card="1"]{opacity:1;visibility:visible;transform:translate(6%,6%) rotate(3deg)}
+.examples-layout:has([data-example="2"].revealed) [data-card="1"]{transform:translate(3%,-3%) rotate(-2deg)}
+.examples-layout:has([data-example="2"].revealed) [data-card="2"]{opacity:1;visibility:visible;transform:translate(12%,14%) rotate(4deg)}
+.examples-layout:has([data-example="3"].revealed) .examples-stack{visibility:hidden;opacity:0;pointer-events:none}
+.examples-copy[data-example="3"]{grid-area:1/1/2/3;text-align:center;color:#f08bb0}
+.examples-copy[data-example="3"] p:first-child{color:inherit}
+@media print{.examples-copy,.examples-stack{transition:none}}
+@media(prefers-reduced-motion:reduce){.examples-copy,.examples-card{transition:none}}

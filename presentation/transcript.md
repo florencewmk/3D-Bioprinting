@@ -70,51 +70,30 @@ I’ll begin with some examples of 3D printing, then explain how light-based pri
 
 ## 06. From everyday objects to living tissue
 
-Toothbrush holder
-
-3D-printed vase
-
-Siemens Energy Gas Turbine Swirler
-
-3D-printed concrete house, Eindhoven
-
-3D-printed steel bridge, Amsterdam
-
-First 3D-printed heart using human cells by Tel Aviv University, 2019.
-
-3D-printed ears by 3D Bio Therapeutics
-
 Everyday life
+My Christmas vase
+I printed this at home for my Christmas decoration.
 
 Engineering
+SpaceX Raptor 3
+Additive manufacturing helps integrate components into a more compact engine.
 
 Built environment
+A printed house
+3D-printed concrete house, Eindhoven. The Dutch have printed bridges, too.
 
-Medical
-
-Space X Raptor 3
-Includes additively manufactured components
+Bioprinting
+What if we could print organs?
 
 ### Speaker notes
 
-For me, it starts with everyday objects around me. You might print a holder that fits your electric toothbrush perfectly, or a vase in a shape and colour you like. I printed this btw. Unfortunately the size is not really suitable for my cactus so I end up putting a christmas tree in it. These are just small examples, they show something important: we can adapt the design to our needs.
+When people think of 3D printing, they often picture a hobby printer making something for the home. I printed this vase to hold my Christmas decoration.
 
-Now move into engineering.
+Engineers use the same idea at a very different scale. Take SpaceX’s Raptor 3. Additive manufacturing helps integrate components into a more compact engine.
 
-Rocket engines can include additively manufactured components. Here as an example, SpaceX Raptor 3 is a full-flow staged-combustion rocket engine integrated 3D metal printing to eliminate external sensors, main chamber spark igniters and internalized its pumbling, making it more lightweight than other generations.
+The Dutch have even printed houses and bridges. This concrete house is in Eindhoven, and there’s a printed steel bridge in Amsterdam.
 
-In gas turbines, Siemens Energy uses additive manufacturing for components such as combustion swirlers. A quick introduction for gas turbine: it comprises of 3 main parts, the compressor, combustion chamber and turbine section. In the combustion chamber it is where the fuel and air mixes.
-A swirler helps control the flow and mixing of air and fuel. Its geometry matters, and additive manufacturing gives engineers more freedom to create this complex designs.
-
-Then we move to a much larger scale: a concrete house in Eindhoven, or a steel bridge in Amsterdam.
-
-So far, we have been printing objects around us. What about structures INSIDE us?
-
-Do you know researchers are also doing research on 3D bioprinting, whether it’s cells, tissues or organs?
-
-There are actually some successful cases! And this can make a huge change in humanity and solve donor shortage problem!
-
-That is what drew me to today’s topic: 3D bioprinting.
+So far, we’ve been talking about objects you can see and hold. What if we could print organs?
 
 
 ## 07. Bioprinting around the world

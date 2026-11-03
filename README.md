@@ -24,9 +24,9 @@ The deck contains **51 slides**:
 
 | Key | Action |
 | --- | --- |
-| Arrow keys / Space / Page Up / Page Down | Navigate |
-| ↑ / ↓ on slide 2 | Previous / next conversation cue |
-| ← / → on slide 2 | Previous / next slide |
+| ← / → | Previous / next slide |
+| ↑ / ↓ | Previous / next reveal or chart year |
+| Space / Page Up / Page Down | Navigate |
 | O | Slide overview |
 | N | Speaker notes |
 | F | Fullscreen |
@@ -48,7 +48,7 @@ are respected. [Animation maintenance and timing](tools/MOTION.md).
 - **[Publication trends · slide 8](data/publication-trends/):** Scopus (Elsevier) counts for 2000–2026, with a roughly six-second continuous left-to-right reveal. 2026 is partial as of 27 October 2026; [CSV and methods](data/publication-trends/scopus/).
 - **[Organ-transplant timeline](data/organ-transplants/):** reported2015–2025 activity;2025 six-organ total183,879 and49,169 deceased donors. Right callouts sum reported2025 organ-list entries:532,905 waiting;40,019 deaths. Source: archived EDQM–ONT Newsletter Transplant2026. No2026forecast.
 
-The publication chart reveals automatically without buttons inside the chart; the bottom toolbar provides Replay and arrows for year selection. On this chart, Left/Right select years, R replays, and Page Up/Down or Space navigate slides. The organ chart has playback controls. Their data directories include raw values, sources and coverage limitations.
+The publication chart reveals automatically without buttons inside the chart; the bottom toolbar provides Replay and arrows for year selection. On the chart, Up/Down select years and R replays. The organ chart has playback controls. Their data directories include raw values, sources and coverage limitations.
 
 Slide images, SVG artwork, both videos, and fonts are also available separately
 in [materials/](materials/), with a slide-to-file inventory and SHA-256 hashes.

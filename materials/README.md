@@ -59,3 +59,12 @@ Source paths and provenance are also recorded in `presentation/settings.json`.
 
 Slide 1 uses the user-selected `florence-hello.svg`, with a looping wave, archived as
 `materials/diagrams/7e0f67a1a4811036feb21f44a4969593043df6fb87763b59460a6bf72bfce55d.svg`. The SVG is embedded for offline playback.
+
+## Everyday objects to living tissue
+
+Slide 6 uses the supplied SoFe Christmas vase and Eindhoven house images and a resized
+copy of the supplied SpaceX Raptor comparison. The house image is reused from the SoFe
+presentation. Original house image creator and Raptor image credits are unresolved.
+- 3D-printed vase holding a Christmas decoration: [f57b43b39b836d36d617921a54afb0db5dfed1fed51b609d890ba2bcf20d940b.png](images/f57b43b39b836d36d617921a54afb0db5dfed1fed51b609d890ba2bcf20d940b.png)
+- SpaceX Raptor 1, 2 and 3 engines side by side: [560031c0eb10f61fe391070f5078c20337ee5e64132bc1978bed4265289d1b7b.jpg](images/560031c0eb10f61fe391070f5078c20337ee5e64132bc1978bed4265289d1b7b.jpg)
+- Curved 3D-printed concrete house in Eindhoven: [34248b5bbbbac2b04f18392475b11deda1c6c1846db2deb6d3bfbcc263a81293.png](images/34248b5bbbbac2b04f18392475b11deda1c6c1846db2deb6d3bfbcc263a81293.png)

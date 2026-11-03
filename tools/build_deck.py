@@ -13,6 +13,7 @@ from organ_chart import render_organ_slide
 from cover_slide import COVER_NOTES, COVER_TITLE, render_cover
 from opening_slides import settings, footer as event_footer, navigation, render_introduction, render_contents, render_question
 from offline_map_slide import render_slide as render_offline_map, RECORD as OFFLINE_MAP_RECORD
+from examples_slide import RECORD as EXAMPLES_RECORD, render_examples
 from deck_structure import display_number, web_section, write_transcript
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('source',type=Path,help='Original competition PPTX')
@@ -168,6 +169,9 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
  sections.append(web_section(f'<section class="slide {"active visible" if n==2 else ""} {"profile-slide" if n==2 else "cover-slide" if n==1 else "poster-slide" if special else ""}" id="slide-{n}" aria-label="{n}. {H(title)}" aria-hidden="{str(n!=2).lower()}">{nav}{art}{"".join(videos)}{footer}<div class="sr-only">{H(chr(10).join(src))}</div><!-- Speaker notes: {comment} --></section>',n))
 sections.sort(key=lambda s:int(re.search(r'id="slide-(\d+)"',s)[1]))
 data.sort(key=lambda row:row['number'])
+examples_index = next(i for i, row in enumerate(data) if "Raptor" in row["text"])
+sections[examples_index] = render_examples(sections[examples_index])
+data[examples_index].update(EXAMPLES_RECORD)
 sections[6] = render_offline_map()
 data[6] = OFFLINE_MAP_RECORD
 (BUILD/'deck-data.json').write_text(json.dumps(data,ensure_ascii=False,indent=2))
