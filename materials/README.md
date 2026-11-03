@@ -62,9 +62,10 @@ Slide 1 uses the user-selected `florence-hello.svg`, with a looping wave, archiv
 
 ## Everyday objects to living tissue
 
-Slide 6 uses the supplied SoFe Christmas vase and Eindhoven house images and a resized
-copy of the supplied SpaceX Raptor comparison. The house image is reused from the SoFe
-presentation. Original house image creator and Raptor image credits are unresolved.
-- 3D-printed vase holding a Christmas decoration: [f57b43b39b836d36d617921a54afb0db5dfed1fed51b609d890ba2bcf20d940b.png](images/f57b43b39b836d36d617921a54afb0db5dfed1fed51b609d890ba2bcf20d940b.png)
-- SpaceX Raptor 1, 2 and 3 engines side by side: [560031c0eb10f61fe391070f5078c20337ee5e64132bc1978bed4265289d1b7b.jpg](images/560031c0eb10f61fe391070f5078c20337ee5e64132bc1978bed4265289d1b7b.jpg)
-- Curved 3D-printed concrete house in Eindhoven: [34248b5bbbbac2b04f18392475b11deda1c6c1846db2deb6d3bfbcc263a81293.png](images/34248b5bbbbac2b04f18392475b11deda1c6c1846db2deb6d3bfbcc263a81293.png)
+Slide 6 uses an ImageGen cutout from the supplied IMG_6556.JPG and an ImageGen
+illustration based on the supplied SoFe house image. The Raptor comparison
+is user-supplied and its original credit is unresolved.
+
+- [3D-printed vase holding a Christmas decoration](images/7b1ce1f737590ff915b1e8ed64000c73d767ea1c363cd6a54d6117dd88d58bfb.png)
+- [SpaceX Raptor 1, 2 and 3 engines side by side](images/560031c0eb10f61fe391070f5078c20337ee5e64132bc1978bed4265289d1b7b.jpg)
+- [Illustration of the curved 3D-printed concrete house in Eindhoven](images/45ce8684cee3a64960e394d3b57d499b1e356e1bfe8dc75db5ef9b88f6b6d4ed.png)

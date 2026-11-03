@@ -46,6 +46,7 @@ dialog{width:min(1100px,94vw);max-height:88vh;overflow:auto;background:#111218;c
 .examples-copy.revealed:not(:has(~ .revealed)){visibility:visible;opacity:1}
 .examples-copy p:first-child{color:#c6acef;font-size:30px;margin:0 0 26px}
 .examples-copy h2{font-size:104px;font-weight:500;line-height:1.06;margin:0}
+.examples-copy[data-example="1"] h2{font-size:76px;white-space:nowrap}
 .examples-copy p:last-child{color:#b7b4bf;font-size:36px;line-height:1.35;margin:26px 0 0}
 .examples-stack{grid-area:1/2;position:relative;height:700px;isolation:isolate}
 .examples-card{position:absolute;inset:8% 12% 13% 4%;margin:0;background:#000;border:2px solid #52505c;border-radius:24px;overflow:hidden;box-shadow:0 22px 64px #000b;opacity:0;visibility:hidden;transform:translateY(22%);transition:transform .48s ease,opacity .4s ease,visibility .4s}

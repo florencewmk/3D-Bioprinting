@@ -6,12 +6,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 STEPS = (
-    ("Everyday life", "My Christmas vase", "I printed this at home for my Christmas decoration."),
+    ("Everyday life", "My Christmas vase", ""),
     ("Engineering", "SpaceX Raptor 3", "Additive manufacturing helps integrate components into a more compact engine."),
-    ("Built environment", "A printed house", "3D-printed concrete house, Eindhoven. The Dutch have printed bridges, too."),
+    ("Built environment", "A printed house", "Eindhoven concrete house (illustration). The Dutch have printed bridges, too."),
     ("Bioprinting", "What if we could print organs?", ""),
 )
-NOTES = """When people think of 3D printing, they often picture a hobby printer making something for the home. I printed this vase to hold my Christmas decoration.
+NOTES = """When people think of 3D printing, they often picture a hobby printer making something for the home.
 
 Engineers use the same idea at a very different scale. Take SpaceX’s Raptor 3. Additive manufacturing helps integrate components into a more compact engine.
 
@@ -21,30 +21,23 @@ So far, we’ve been talking about objects you can see and hold. What if we coul
 RECORD = {"title": "From everyday objects to living tissue",
           "text": "\n\n".join("\n".join(filter(None, step)) for step in STEPS),
           "notes": NOTES}
-# Archived copies of the supplied SoFe vase and house crops and Raptor comparison.
+# Archived ImageGen cutouts and supplied Raptor comparison.
 ASSETS = (
-    ("materials/images/f57b43b39b836d36d617921a54afb0db5dfed1fed51b609d890ba2bcf20d940b.png", "3D-printed vase holding a Christmas decoration", (234, 362, 291)),
-    ("materials/images/560031c0eb10f61fe391070f5078c20337ee5e64132bc1978bed4265289d1b7b.jpg", "SpaceX Raptor 1, 2 and 3 engines side by side", None),
-    ("materials/images/34248b5bbbbac2b04f18392475b11deda1c6c1846db2deb6d3bfbcc263a81293.png", "Curved 3D-printed concrete house in Eindhoven", (454, 394, 260)),
+    ("materials/images/7b1ce1f737590ff915b1e8ed64000c73d767ea1c363cd6a54d6117dd88d58bfb.png", "3D-printed vase holding a Christmas decoration", "png"),
+    ("materials/images/560031c0eb10f61fe391070f5078c20337ee5e64132bc1978bed4265289d1b7b.jpg", "SpaceX Raptor 1, 2 and 3 engines side by side", "jpeg"),
+    ("materials/images/45ce8684cee3a64960e394d3b57d499b1e356e1bfe8dc75db5ef9b88f6b6d4ed.png", "Illustration of the curved 3D-printed concrete house in Eindhoven", "png"),
 )
 
 def render_examples(section):
     """Keep the source section's number and deck navigation and footer."""
     start = section.split(">", 1)[0].replace('class="slide', 'class="slide examples-slide', 1)
+    start = start.replace('examples-slide examples-slide', 'examples-slide', 1)
     nav = re.search(r"<nav\b.*?</nav>", section, re.S)
     footer = re.search(r'<footer(?:\s[^>]*)?>.*?</footer>', section, re.S)
     cards = []
-    for i, (path, alt, crop) in enumerate(ASSETS):
+    for i, (path, alt, format) in enumerate(ASSETS):
         blob = base64.b64encode((ROOT / path).read_bytes()).decode()
-        mime = "png" if crop else "jpeg"
-        src = f"data:image/{mime};base64,{blob}"
-        if crop:
-            w, h, cut = crop
-            image = (f'<svg viewBox="0 0 {w} {cut}" role="img" aria-label="{alt}">'
-                     f'<defs><clipPath id="examples-crop-{i}"><rect width="{w}" height="{cut}"/></clipPath></defs>'
-                     f'<image width="{w}" height="{h}" clip-path="url(#examples-crop-{i})" href="{src}"/></svg>')
-        else:
-            image = f'<img alt="{alt}" src="{src}">'
+        image = f'<img alt="{alt}" src="data:image/{format};base64,{blob}">'
         cards.append(f'<figure class="examples-card" data-card="{i}">{image}</figure>')
     copy = []
     for i, (category, title, detail) in enumerate(STEPS):

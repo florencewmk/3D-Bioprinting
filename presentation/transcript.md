@@ -72,7 +72,6 @@ I’ll begin with some examples of 3D printing, then explain how light-based pri
 
 Everyday life
 My Christmas vase
-I printed this at home for my Christmas decoration.
 
 Engineering
 SpaceX Raptor 3
@@ -80,14 +79,14 @@ Additive manufacturing helps integrate components into a more compact engine.
 
 Built environment
 A printed house
-3D-printed concrete house, Eindhoven. The Dutch have printed bridges, too.
+Eindhoven concrete house (illustration). The Dutch have printed bridges, too.
 
 Bioprinting
 What if we could print organs?
 
 ### Speaker notes
 
-When people think of 3D printing, they often picture a hobby printer making something for the home. I printed this vase to hold my Christmas decoration.
+When people think of 3D printing, they often picture a hobby printer making something for the home.
 
 Engineers use the same idea at a very different scale. Take SpaceX’s Raptor 3. Additive manufacturing helps integrate components into a more compact engine.
 
