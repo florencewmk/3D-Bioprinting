@@ -1,12 +1,14 @@
 /* === PUBLICATION COUNTS: DATA, ANIMATION AND ACCESSIBLE YEAR SELECTION === */
+const publicationPalette=[['#72bbd6', '#4e88ad'], ['#83c9a5', '#548e78'], ['#af98d6', '#8069a5'], ['#e995bc', '#b46b96']];
 class PublicationTimeline{
- constructor(){this.root=document.getElementById('publicationChart');if(!this.root)return;this.data=JSON.parse(document.getElementById('publicationData').textContent);this.rows=this.data.rows;this.techniques=this.data.techniques;this.first=this.rows[0].year;this.last=this.data.last_verified_year;this.end=this.data.display_end_year;this.year=this.first;this.active=false;this.running=false;this.frame=null;this.durationMs=6000;this.reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;this.svg=document.getElementById('publicationPlot');this.slider=document.getElementById('publicationSlider');this.slider.min=this.first;this.slider.max=this.end;this.build();this.bind();this.draw(this.reduced?this.last:this.first);}
- build(){const left=80,top=30,width=1280,height=500;this.geometry={left,top,width,height};const totals=this.rows.filter(r=>Object.values(r.counts).every(Number.isFinite)).map(r=>Object.values(r.counts).reduce((a,b)=>a+b,0));this.yMax=Math.max(100,Math.ceil(Math.max(...totals)/100)*100);this.step=width/this.rows.length;let html='';
+ constructor(){this.root=document.getElementById('publicationChart');if(!this.root)return;this.data=JSON.parse(document.getElementById('publicationData').textContent);this.rows=this.data.rows;this.techniques=this.data.techniques.map((technique,index)=>({...technique,color:publicationPalette[index][0]}));this.first=this.rows[0].year;this.last=this.data.last_verified_year;this.end=this.data.display_end_year;this.year=this.first;this.active=false;this.running=false;this.frame=null;this.durationMs=6000;this.reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;this.svg=document.getElementById('publicationPlot');this.slider=document.getElementById('publicationSlider');this.slider.min=this.first;this.slider.max=this.end;this.build();this.bind();this.draw(this.reduced?this.last:this.first);}
+ build(){const left=80,top=30,width=1280,height=500;this.geometry={left,top,width,height};const totals=this.rows.filter(r=>Object.values(r.counts).every(Number.isFinite)).map(r=>Object.values(r.counts).reduce((a,b)=>a+b,0));this.yMax=Math.max(100,Math.ceil(Math.max(...totals)/100)*100);this.step=width/this.rows.length;let html='<defs>'+publicationPalette.map(([light,dark],index)=>
+  `<linearGradient id="pub-fill-${index}" x2="0%" y2="100%"><stop stop-color="${light}"/><stop offset="1" stop-color="${dark}"/></linearGradient>`).join('')+'</defs>';
  const partialX=left+(this.rows.length-1)*width/this.rows.length;html+=`<rect x="${partialX}" y="${top}" width="${width/this.rows.length}" height="${height}" fill="#b49ad80d" stroke="#b49ad866" stroke-dasharray="6 6"/>`;
  for(let v=0;v<=this.yMax;v+=100){const y=top+height-v/this.yMax*height;html+=`<line class="pub-grid" x1="${left}" x2="${left+width}" y1="${y}" y2="${y}"/><text class="pub-axis" x="${left-20}" y="${y+7}" text-anchor="end">${v}</text>`;}
 
  const missingStart=this.rows.findIndex(r=>Object.values(r.counts).some(v=>v===null));if(missingStart>=0){const x=left+missingStart*this.step;html+=`<rect x="${x}" y="${top}" width="${left+width-x}" height="${height}" fill="#ffffff05" stroke="#9ba7b244" stroke-dasharray="7 7"/><text class="pub-nodata" x="${x+(left+width-x)/2}" y="${top+100}" text-anchor="middle"><tspan x="${x+(left+width-x)/2}">Not</tspan><tspan x="${x+(left+width-x)/2}" dy="27">verified</tspan></text>`;}
- this.rows.forEach((r,i)=>{const x=left+i*this.step+this.step*.17,w=this.step*.66;this.techniques.forEach(t=>{html+=`<rect class="pub-bar" data-year="${r.year}" data-technique="${t.key}" x="${x}" y="${top+height}" width="${w}" height="0" fill="${t.color}"/>`});html+=`<rect class="pub-hit" data-select-year="${r.year}" x="${left+i*this.step}" y="${top}" width="${this.step}" height="${height}"><title>${r.year}: ${Object.values(r.counts).some(v=>v===null)?'Not verified':this.techniques.map(t=>`${t.key} ${r.counts[t.key]}`).join(', ')}</title></rect><text class="pub-axis pub-xlabel" data-year-label="${r.year}" x="${left+(i+.5)*this.step}" y="${top+height+36}" text-anchor="middle" transform="rotate(-48 ${left+(i+.5)*this.step} ${top+height+36})">${r.year}${r.status==='year_to_date'?'*':''}</text>`;});
+ this.rows.forEach((r,i)=>{const x=left+i*this.step+this.step*.17,w=this.step*.66;this.techniques.forEach((t,index)=>{html+=`<rect class="pub-bar" data-year="${r.year}" data-technique="${t.key}" x="${x}" y="${top+height}" width="${w}" height="0" fill="url(#pub-fill-${index})"/><path data-side="${r.year}-${index}" fill="${t.color}" opacity=".51" pointer-events="none"/>`});html+=`<path data-cap="${r.year}" pointer-events="none"/><rect class="pub-hit" data-select-year="${r.year}" x="${left+i*this.step}" y="${top}" width="${this.step}" height="${height}"><title>${r.year}: ${Object.values(r.counts).some(v=>v===null)?'Not verified':this.techniques.map(t=>`${t.key} ${r.counts[t.key]}`).join(', ')}</title></rect><text class="pub-axis pub-xlabel" data-year-label="${r.year}" x="${left+(i+.5)*this.step}" y="${top+height+36}" text-anchor="middle" transform="rotate(-48 ${left+(i+.5)*this.step} ${top+height+36})">${r.year}${r.status==='year_to_date'?'*':''}</text>`;});
  html+='<line id="publicationCursor" stroke="#b49ad8" stroke-dasharray="4 7" opacity=".55"/>';this.svg.innerHTML=html;
  document.getElementById('publicationLegend').innerHTML=this.techniques.map(t=>`<span><i style="background:${t.color}"></i>${t.key}</span>`).join('');
  document.getElementById('publicationCounts').innerHTML=this.techniques.map(t=>`<div class="pub-count-row"><span style="color:${t.color}">${t.key}</span><strong data-value="${t.key}">0</strong></div>`).join('');
@@ -17,12 +19,23 @@ class PublicationTimeline{
  this.year=selected;this.position=position;
  const {left,top,height}=this.geometry;
  this.rows.forEach(r=>{
-  const t=Math.max(0,Math.min(1,position-r.year+1)),growth=t*t*(3-2*t);let stack=0;
-  this.techniques.forEach(tech=>{const value=r.counts[tech.key]||0,h=value/this.yMax*height*growth;
+  const t=Math.max(0,Math.min(1,position-r.year+1)),growth=t*t*(3-2*t);let stack=0,capColor=null;
+  this.techniques.forEach((tech,index)=>{const value=r.counts[tech.key]||0,h=value/this.yMax*height*growth;
    const rect=this.svg.querySelector(`[data-year="${r.year}"][data-technique="${tech.key}"]`);
    rect.setAttribute('y',top+height-stack-h);rect.setAttribute('height',h);
+   const right=Number(rect.getAttribute('x'))+Number(rect.getAttribute('width'));
+   const y=top+height-stack-h;
+   const depth=10*growth, rise=6*growth;
+   this.svg.querySelector(`[data-side="${r.year}-${index}"]`)
+     .setAttribute('d',h ? `M${right} ${y}l${depth} -${rise}v${h}l-${depth} ${rise}Z` : '');
+   if(h)capColor=tech.color;
    stack+=h;
   });
+  const cap=this.svg.querySelector(`[data-cap="${r.year}"]`);
+  const x=left+(r.year-this.first+.17)*this.step;
+  const width=this.step*.66,depth=10*growth,rise=6*growth;
+  cap.setAttribute('d',stack ? `M${x} ${top+height-stack}h${width}l${depth} -${rise}h-${width}Z` : '');
+  if(capColor)cap.setAttribute('fill',capColor);
   this.svg.querySelector(`[data-year-label="${r.year}"]`).setAttribute('class',`pub-axis pub-xlabel${r.year===selected?' pub-current-year':''}`);
  });
  const x=left+(Math.max(0,Math.min(this.rows.length-1,position-this.first))+.5)*this.step,cursor=document.getElementById('publicationCursor');
