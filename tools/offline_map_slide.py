@@ -124,7 +124,7 @@ def render_slide():
         f'<section class="slide" id="slide-{NUMBER}" aria-label="{NUMBER}. {TITLE}" aria-hidden="true">'
         f'<iframe class="offline-map-frame" title="Interactive Bioprinting World Map" '
         f'style="position:absolute;inset:0 0 58px;width:100%;height:calc(100% - 58px);border:0" '
-        f'srcdoc="{embedded}"></iframe>{footer(NUMBER)}</section>'
+        f'data-srcdoc="{embedded}"></iframe>{footer(NUMBER)}</section>'
     )
 
 

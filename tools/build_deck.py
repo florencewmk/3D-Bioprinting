@@ -157,7 +157,7 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
    rid=blips[0].get(R+'embed')
    if rid:
     part=slide.part.related_part(rid);poster=uri(part.blob,part.content_type)
-  videos.append(f'<video controls playsinline preload="metadata" aria-label="{H(sh.name)}" poster="{poster}" style="left:{x:.1f}px;top:{y:.1f}px;width:{w:.1f}px;height:{h:.1f}px" src="{video_src}"></video>')
+  videos.append(f'<video controls playsinline preload="none" aria-label="{H(sh.name)}" poster="{poster}" style="left:{x:.1f}px;top:{y:.1f}px;width:{w:.1f}px;height:{h:.1f}px" src="{video_src}"></video>')
   manifest.append({'slide':display_number(n),'media':sh.name,'bytes':len(blob)})
  if n==16:art+='<p class="media-credit">Source: Readily3D · Tomolite Bioprinter · accessed 14 October 2026</p>'
  if n<=4:src=[settings()['presenter'] if n==2 else data[-1]['text']]
