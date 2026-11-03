@@ -162,7 +162,7 @@ Interactive world map of bioprinting research and companies. The globe tours the
 
 ### Speaker notes
 
-Start with the numbered country markers. The United States ranks first with 2,555 publications, China second with 2,106, and Germany fifth with 637. International papers may count for several countries. Press Down Arrow to open the interactive map. Use the filters to show companies, institutions or authors. Click outside the map to resume slide keyboard controls. Sources: OpenAlex and the archived geography dataset. World boundaries: Natural Earth.
+Start with the numbered country markers. The United States ranks first with 2,555 publications, China second with 2,106, and Germany fifth with 637. International papers may count for several countries. Press Down Arrow to open the interactive map. Use the filters to show companies, institutions or authors. Use Back to globe, Escape or Next slide to leave the map. Sources: OpenAlex and the archived geography dataset. World boundaries: Natural Earth.
 
 ## 08. Bioprinting publications · 2000–2026
 

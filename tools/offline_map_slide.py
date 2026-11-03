@@ -18,8 +18,7 @@ RECORD = {
     'notes': 'Start with the numbered country markers. The United States ranks first '
              'with 2,555 publications, China second with 2,106, and Germany fifth with 637. '
              'International papers may count for several countries. Press Down Arrow to open the interactive map. Use the filters to show '
-             'companies, institutions or authors. Click outside the map to resume slide '
-             'keyboard controls. Sources: OpenAlex and the archived geography dataset. '
+             'companies, institutions or authors. Use Back to globe, Escape or Next slide to leave the map. Sources: OpenAlex and the archived geography dataset. '
              'World boundaries: Natural Earth.',
 }
 
@@ -127,11 +126,19 @@ def globe_document():
         for point in points if point['category'] == 'countries'
     ), key=lambda point: point['rank'])[:5]
     document = Path(__file__).with_name('globe-tour.html').read_text()
+    map_keys = """<script>
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && !document.querySelector('dialog[open], .leaflet-popup')) {
+    event.preventDefault();
+    window.parent.postMessage('bioprinting-close-map', '*');
+  }
+}, true);
+</script>"""
     values = {
         '__RED_LAND__': ['United States of America', "People's Republic of China", 'Germany'],
         '__WORLD__': world_geometry(),
         '__LEADERS__': leaders,
-        '__ATLAS__': map_document(),
+        '__ATLAS__': map_document().replace('</body>', map_keys + '</body>', 1),
     }
     for placeholder, value in values.items():
         document = replace_once(document, placeholder, json_script(value))
@@ -146,18 +153,25 @@ def render_slide():
   const frame = slide.querySelector('iframe');
   let mapOpened = false;
   window.addEventListener('message', event => {
-    if (event.source === frame.contentWindow && event.data === 'bioprinting-map-opened') {
-      mapOpened = true;
+    if (event.source !== frame.contentWindow) return;
+    if (event.data === 'bioprinting-map-opened') mapOpened = true;
+    if (event.data === 'bioprinting-map-closed') mapOpened = false;
+    if (event.data === 'bioprinting-next-slide' && slide.classList.contains('active')) {
+      const next = document.getElementById('next');
+      next.focus();
+      next.click();
     }
   });
   document.addEventListener('keydown', event => {
-    if (mapOpened || event.key !== 'ArrowDown' || event.altKey || event.ctrlKey ||
-        event.metaKey || event.shiftKey || !slide.classList.contains('active') ||
-        document.body.classList.contains('editing') || document.querySelector('dialog[open]') ||
-        !frame.hasAttribute('srcdoc')) return;
+    if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey ||
+        !slide.classList.contains('active') || document.body.classList.contains('editing') ||
+        document.querySelector('dialog[open]') || !frame.hasAttribute('srcdoc')) return;
+    const open = event.key === 'ArrowDown' && !mapOpened;
+    const close = event.key === 'Escape' && mapOpened;
+    if (!open && !close) return;
     event.preventDefault();
     event.stopImmediatePropagation();
-    frame.contentWindow.postMessage('bioprinting-open-map', '*');
+    frame.contentWindow.postMessage(open ? 'bioprinting-open-map' : 'bioprinting-close-map', '*');
   }, true);
 })();
 </script>"""

@@ -23,6 +23,7 @@ footer{display:flex;justify-content:flex-end;align-items:center;gap:12px;flex-wr
 .actions{display:flex;gap:8px;flex-wrap:wrap;letter-spacing:normal;text-transform:none;font-weight:400}
 #mapView{position:fixed;inset:0;background:#090d14;display:grid;grid-template-rows:auto 1fr}
 #mapView[hidden],main[hidden]{display:none}
+.mapbar [hidden]{display:none}
 .mapbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;flex-wrap:wrap}
 .legend{font-size:13px;color:#d5dce3}.pub{color:#ff868a}.company{color:#83caff}
 iframe{width:100%;height:100%;border:0}
@@ -45,7 +46,7 @@ iframe{width:100%;height:100%;border:0}
 <footer><div class="actions"><button id="openMap">↓ Explore map</button></div></footer>
 </main>
 <div id="mapView" hidden>
-<div class="mapbar"><div class="legend"><span class="pub">● Publication ranks 1–5</span> &nbsp; <span class="company">● Company ranks 1–5, including ties</span></div></div>
+<div class="mapbar"><div class="legend"><span class="pub">● Publication ranks 1–5</span> &nbsp; <span class="company">● Company ranks 1–5, including ties</span></div><div class="actions"><button id="backToGlobe">← Back to globe</button><button id="nextSlide" hidden>Next slide →</button></div></div>
 <iframe id="atlas" title="Interactive bioprinting map"></iframe>
 </div>
 <script type="application/json" id="world">__WORLD__</script>
@@ -194,17 +195,37 @@ function showMap() {
   if (window.parent !== window) window.parent.postMessage('bioprinting-map-opened', '*');
   const iframe = byId('atlas');
   if (!iframe.hasAttribute('srcdoc')) iframe.srcdoc = JSON.parse(byId('atlasDocument').textContent);
+  byId('backToGlobe').focus();
+}
+function closeMap() {
+  byId('mapView').hidden = true;
+  byId('tour').hidden = false;
+  if (window.parent !== window) window.parent.postMessage('bioprinting-map-closed', '*');
+  byId('openMap').focus();
+}
+byId('backToGlobe').onclick = closeMap;
+if (window.parent !== window) {
+  byId('nextSlide').hidden = false;
+  byId('nextSlide').onclick = () => window.parent.postMessage('bioprinting-next-slide', '*');
 }
 byId('openMap').onclick = showMap;
 window.addEventListener('message', event => {
-  if (window.parent !== window && event.source === window.parent &&
-      event.data === 'bioprinting-open-map' && !byId('tour').hidden) showMap();
+  if (event.source === byId('atlas').contentWindow &&
+      event.data === 'bioprinting-close-map' && !byId('mapView').hidden) closeMap();
+  if (window.parent !== window && event.source === window.parent) {
+    if (event.data === 'bioprinting-open-map' && !byId('tour').hidden) showMap();
+    if (event.data === 'bioprinting-close-map' && !byId('mapView').hidden) closeMap();
+  }
 });
 document.addEventListener('keydown', event => {
-  if (event.key !== 'ArrowDown' || event.altKey || event.ctrlKey ||
-      event.metaKey || event.shiftKey || byId('tour').hidden) return;
-  event.preventDefault();
-  showMap();
+  if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+  if (event.key === 'ArrowDown' && !byId('tour').hidden) {
+    event.preventDefault();
+    showMap();
+  } else if (event.key === 'Escape' && !byId('mapView').hidden) {
+    event.preventDefault();
+    closeMap();
+  }
 });
 document.addEventListener('visibilitychange', () => {
   last = null;
