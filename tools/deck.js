@@ -64,8 +64,8 @@ class SlidePresentation{
  }
  replayChart(){if(this.coverTurntable()){this.playCover();return;}const chart=this.activeTimeline();if(this.chartActive())chart?.[this.chartActive()==='organ'?'replay':'play']();}
  tramStory(slide){return slide.querySelector('.tram-story-frame')?.contentWindow?.tramStory;}
- navigate(direction){if(this.tramStory(this.slides[this.current])?.step(direction))return;this.show(this.current+direction);}
- advance(direction){if(this.editing)return;if(this.profileStep(direction))return;this.navigate(direction);}
+ navigate(direction){this.show(this.current+direction);}
+ advance(direction){if(this.editing)return;if(this.profileStep(direction))return;if(this.tramStory(this.slides[this.current])?.step(direction))return;this.navigate(direction);}
  resetProfile(slide){slide.querySelectorAll('[data-reveal-step]').forEach(e=>{e.classList.remove('revealed');e.setAttribute('aria-hidden',String(!this.editing));e.inert=!this.editing;});}
  profileStep(direction){const slide=this.slides[this.current];if(!slide.matches('.profile-slide,.examples-slide'))return false;const items=[...slide.querySelectorAll('[data-reveal-step]')],count=items.filter(e=>e.classList.contains('revealed')).length;if(direction>0&&count<items.length){const e=items[count];e.classList.add('revealed');e.setAttribute('aria-hidden','false');e.inert=false;return true;}if(direction<0&&count>0){const e=items[count-1];e.classList.remove('revealed');e.setAttribute('aria-hidden','true');e.inert=true;return true;}return false;}
  updateNotes(){const d=slidesData[this.current];document.getElementById('notesTitle').textContent=`${d.number}. ${d.title}`;document.getElementById('notes').textContent=d.notes||'No speaker notes in the original slide.';document.getElementById('transcript').textContent=d.text;}
