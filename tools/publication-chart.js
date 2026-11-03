@@ -17,11 +17,11 @@ class PublicationTimeline{
  this.year=selected;this.position=position;
  const {left,top,height}=this.geometry;
  this.rows.forEach(r=>{
-  const t=Math.max(0,Math.min(1,position-r.year+1)),fade=t*t*(3-2*t);let stack=0;
-  this.techniques.forEach(tech=>{const value=r.counts[tech.key]||0,h=value/this.yMax*height;
+  const t=Math.max(0,Math.min(1,position-r.year+1)),growth=t*t*(3-2*t);let stack=0;
+  this.techniques.forEach(tech=>{const value=r.counts[tech.key]||0,h=value/this.yMax*height*growth;
    const rect=this.svg.querySelector(`[data-year="${r.year}"][data-technique="${tech.key}"]`);
-   rect.setAttribute('y',top+height-stack-h);rect.setAttribute('height',h);rect.setAttribute('opacity',fade);
-   rect.setAttribute('transform',`translate(${(1-fade)*10} 0)`);stack+=h;
+   rect.setAttribute('y',top+height-stack-h);rect.setAttribute('height',h);
+   stack+=h;
   });
   this.svg.querySelector(`[data-year-label="${r.year}"]`).setAttribute('class',`pub-axis pub-xlabel${r.year===selected?' pub-current-year':''}`);
  });
