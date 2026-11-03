@@ -32,12 +32,13 @@ def navigation(number):
 
 def render_introduction():
     c = settings()
-    # Use the exact portrait crop selected by the user at its intrinsic aspect ratio.
+    portrait = image_uri(c["portrait"]["path"])
+    source_attribute = 'data-intro-src' if portrait.startswith('data:image/svg+xml') else 'src'
     points = ''.join(f'<li class="editable" data-edit="profile-point-{i}" data-reveal-step="{i}" aria-hidden="true" inert>{html.escape(text)}</li>' for i, text in enumerate(c['introduction']['points'], 1))
     return (f'<div class="profile-glow" aria-hidden="true"></div>'
             f'<h1 class="profile-name editable" data-edit="profile-name">{html.escape(c["introduction"].get("heading", c["presenter"]))}</h1>'
             f'<ul class="profile-points" aria-live="polite">{points}</ul>'
-            f'<figure class="profile-photo"><img src="{image_uri(c["portrait"]["path"])}" alt="{html.escape(c["portrait"].get("alt", c["presenter"]))}"></figure>')
+            f'<figure class="profile-photo"><img {source_attribute}="{portrait}" alt="{html.escape(c["portrait"].get("alt", c["presenter"]))}"></figure>')
 
 
 def render_contents():

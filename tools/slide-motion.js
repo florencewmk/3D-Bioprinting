@@ -49,7 +49,7 @@
       add(plan, select(slide, '.profile-name'), 0, 850, 12);
       // The embedded character animates its own entrance.
       const portrait = slide.querySelector('.profile-photo');
-      if (!portrait.querySelector('img[src^="data:image/svg+xml"]')) {
+      if (!portrait.querySelector('img[data-intro-src],img[src^="data:image/svg+xml"]')) {
         add(plan, [portrait], 180, 1000);
       }
       // Presenter bullet visibility and click timing belong to its own controller.
