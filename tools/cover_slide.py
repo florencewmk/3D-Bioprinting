@@ -1,25 +1,29 @@
-"""Render the cover using the archived, user-supplied lung photograph."""
+"""Render the cover using the reconstructed lung turntable."""
 import base64
 import html
 from opening_slides import settings
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-LUNG = ROOT / 'materials/images/9d7286d75b51d262d1a1e6fa60fa9596a1a3df095bcac5aca852fd1692f96222.png'
+LUNG_ANIMATION = ROOT / 'materials/images/1786970f76a9a466241c8f1d73348d20887c56f67d4135e133495fb97bac3c88.webp'
+LUNG_POSTER = ROOT / 'materials/images/973f5492d7238e8f5907aca8d6e188cb20872926dfc460ed4d77ea6f84cfd15e.webp'
+COVER_TITLE = '3D-Bioprinting'
+COVER_NOTES = ('Welcome to the world of 3D printing, a technology that is shaping our future.\n\n'
+               'On the right is a 3D reconstruction of a branching anatomical model displayed in Yiwu in 2015.')
 
 
 def render_cover():
     c = settings()
     event = html.escape(f'{c["event"]["name"]} · {c["event"]["city"].upper()} · {c["event"]["date"].upper()}')
-    image = 'data:image/png;base64,' + base64.b64encode(LUNG.read_bytes()).decode()
+    animation = 'data:image/webp;base64,' + base64.b64encode(LUNG_ANIMATION.read_bytes()).decode()
+    poster = 'data:image/webp;base64,' + base64.b64encode(LUNG_POSTER.read_bytes()).decode()
     return (
         '<figure class="cover-lung">'
-        f'<img src="{image}" width="1064" height="859" '
-        'alt="Blue and cream branching 3D-printed lung anatomical model in a transparent display case">'
+        f'<img class="cover-turntable" src="{poster}" data-turntable-src="{animation}" '
+        'width="1200" height="967" alt="Rotating blue and cream branching lung model">'
         '</figure><div class="hero">'
         f'<p class="eyebrow editable" data-edit="cover-event-nov5">{event}</p>'
-        '<h1><span class="editable cover-descriptor" data-edit="cover-title">Stereolithographic</span>'
-        '<em class="editable gradient cover-focus" data-edit="cover-subtitle">Bioprinting</em></h1>'
+        f'<h1><em class="editable gradient cover-focus" data-edit="cover-title-3d">{COVER_TITLE}</em></h1>'
         f'<p class="hero-sub editable" data-edit="cover-tagline-medicine">{html.escape(c["cover_tagline"])}</p>'
         f'</div><p class="signature editable" data-edit="cover-author">{html.escape(c["presenter"])}</p>'
     )

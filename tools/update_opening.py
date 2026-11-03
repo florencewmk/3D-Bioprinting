@@ -3,7 +3,7 @@ import html
 import json
 import re
 from pathlib import Path
-from cover_slide import render_cover
+from cover_slide import COVER_NOTES, COVER_TITLE, render_cover
 from opening_slides import settings, footer, navigation, render_introduction, render_contents, render_question
 from deck_structure import write_transcript
 
@@ -26,7 +26,8 @@ for i, row in enumerate(data, 1):
 
 heading = c['introduction'].get('heading', c['presenter'])
 data[0].update(title=heading, text=heading + '\n\n' + '\n\n'.join(c['introduction']['points']), notes=c['introduction']['notes'])
-data[1]['text'] = f'{c["event"]["name"]} · {c["event"]["city"]} · {c["event"]["date"]}\n\nStereolithographic\n\nBioprinting\n\n{c["cover_tagline"]}\n\n{c["presenter"]}'
+data[1].update(title=COVER_TITLE, notes=COVER_NOTES)
+data[1]['text'] = f'{c["event"]["name"]} · {c["event"]["city"]} · {c["event"]["date"]}\n\n{COVER_TITLE}\n\n{c["cover_tagline"]}\n\n{c["presenter"]}'
 data[2]['text'] = 'Contents\n\n' + '\n\n'.join(f'{s["label"]} · Page {s["slide"]:02d}' for s in c['sections'])
 data[3]['text'] = '\n'.join(c['opening_question'])
 renderers = [render_introduction, render_cover, render_contents, render_question]

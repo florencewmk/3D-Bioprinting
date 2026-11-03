@@ -10,7 +10,7 @@ from PIL import Image
 from io import BytesIO
 from publication_chart import render_publication_slide
 from organ_chart import render_organ_slide
-from cover_slide import render_cover
+from cover_slide import COVER_NOTES, COVER_TITLE, render_cover
 from opening_slides import settings, footer as event_footer, navigation, render_introduction, render_contents, render_question
 from offline_map_slide import render_slide as render_offline_map, RECORD as OFFLINE_MAP_RECORD
 from deck_structure import display_number, web_section, write_transcript
@@ -47,7 +47,7 @@ def svg_scope(svg,n):
   new=f's{n}_{old}'
   svg=svg.replace(f'id="{old}"',f'id="{new}"').replace(f'#{old}"',f'#{new}"').replace(f'#{old})',f'#{new})')
  return svg
-TITLES=['Stereolithographic Bioprinting','Florence Mei Kuan Wong','Contents','What comes to your mind?','From everyday objects to living tissue','From research to real-world use','The bioprinting landscape','Bioprinting publications · 2000–2026','The organ shortage persists','Bioprinting technologies','A structure forms one layer at a time','SLA · DLP · multiphoton lithography','Four light-based curing routes','UV / violet and NIR','Thermal activation','Precision is a beginning','Tissue engineering in practice','From bioinks to bioprinters','Soft tissue research in orbit','3D-printed bio-plaster on ISS','Layers to living tissue','Engineering tomorrow’s possibilities','Thank you · Questions','Scientific references · 1','Scientific references · 2','Data and online sources · 1','Data and online sources · 2','Image references','Technical backup']
+TITLES=[COVER_TITLE,'Florence Mei Kuan Wong','Contents','What comes to your mind?','From everyday objects to living tissue','From research to real-world use','The bioprinting landscape','Bioprinting publications · 2000–2026','The organ shortage persists','Bioprinting technologies','A structure forms one layer at a time','SLA · DLP · multiphoton lithography','Four light-based curing routes','UV / violet and NIR','Thermal activation','Precision is a beginning','Tissue engineering in practice','From bioinks to bioprinters','Soft tissue research in orbit','3D-printed bio-plaster on ISS','Layers to living tissue','Engineering tomorrow’s possibilities','Thank you · Questions','Scientific references · 1','Scientific references · 2','Data and online sources · 1','Data and online sources · 2','Image references','Technical backup']
 sections=[];data=[];manifest=[]
 for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
  n=i+1
@@ -112,7 +112,8 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
  if n==9:art=render_organ_slide()
  if n==1:
   c=settings()
-  data[-1]['text']=f'{c["event"]["name"]} · {c["event"]["city"]} · {c["event"]["date"]}\n\nStereolithographic\n\nBioprinting\n\n{c["cover_tagline"]}\n\n{c["presenter"]}'
+  data[-1]['text']=f'{c["event"]["name"]} · {c["event"]["city"]} · {c["event"]["date"]}\n\n{COVER_TITLE}\n\n{c["cover_tagline"]}\n\n{c["presenter"]}'
+  data[-1]['notes'] = COVER_NOTES
   art=render_cover()
  if n==2:
   c=settings()

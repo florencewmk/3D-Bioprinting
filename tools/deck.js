@@ -15,7 +15,12 @@ class SlidePresentation{
  scale(){const s=Math.min(innerWidth/1920,innerHeight/1080);this.stage.style.transform=`translate(${(innerWidth-1920*s)/2}px,${(innerHeight-1080*s)/2}px) scale(${s})`;this.scaleFactor=s}
  fitText(){document.querySelectorAll('.textline').forEach(e=>{e.style.transform='none';const desired=Number(e.dataset.width),actual=e.scrollWidth;if(actual>desired&&desired>0)e.style.transform=`scaleX(${desired/actual})`;});}
  /* === NAVIGATION AND MEDIA LIFECYCLE === */
- show(index){const next=Math.max(0,Math.min(index,this.slides.length-1));const entering=next!==this.current||!this.started;if(next!==this.current)this.slides[this.current].querySelectorAll('video').forEach(v=>v.pause());this.current=next;if(entering){this.resetProfile(this.slides[next]);this.started=true;}this.slides.forEach((s,i)=>{s.classList.toggle('active',i===next);s.classList.toggle('visible',i===next);s.setAttribute('aria-hidden',String(i!==next));s.inert=i!==next;});this.loadMap(this.slides[next]);this.startIntroCharacter();history.replaceState(null,'',`#${next+1}`);document.getElementById('counter').textContent=`${next+1} / ${this.slides.length}`;document.getElementById('progress').style.width=`${(next+1)/this.slides.length*100}%`;document.title=`${next+1} · ${slidesData[next].title} — Bioprinting`;document.querySelectorAll('.thumb').forEach((b,i)=>b.classList.toggle('selected',i===next));this.updateNotes();const chart=this.chartActive();document.getElementById('chartReplay').hidden=!chart;window.publicationTimeline?.activate(this.slides[next].contains(document.getElementById('publicationChart')));window.organTimeline?.activate(this.slides[next].contains(document.getElementById('organChart')));}
+ show(index){const next=Math.max(0,Math.min(index,this.slides.length-1));const entering=next!==this.current||!this.started;if(next!==this.current){
+  this.stopCover();
+  this.slides[this.current].querySelectorAll('video').forEach(v=>v.pause());
+ }this.current=next;if(entering){this.resetProfile(this.slides[next]);this.started=true;}this.slides.forEach((s,i)=>{s.classList.toggle('active',i===next);s.classList.toggle('visible',i===next);s.setAttribute('aria-hidden',String(i!==next));s.inert=i!==next;});this.loadMap(this.slides[next]);this.startIntroCharacter();history.replaceState(null,'',`#${next+1}`);document.getElementById('counter').textContent=`${next+1} / ${this.slides.length}`;document.getElementById('progress').style.width=`${(next+1)/this.slides.length*100}%`;document.title=`${next+1} · ${slidesData[next].title} — Bioprinting`;document.querySelectorAll('.thumb').forEach((b,i)=>b.classList.toggle('selected',i===next));this.updateNotes();const chart=this.chartActive();const turntable=this.coverTurntable();
+ document.getElementById('chartReplay').hidden=!(chart||turntable);
+ if(entering&&turntable&&!matchMedia('(prefers-reduced-motion: reduce)').matches)this.playCover();window.publicationTimeline?.activate(this.slides[next].contains(document.getElementById('publicationChart')));window.organTimeline?.activate(this.slides[next].contains(document.getElementById('organChart')));}
  startIntroCharacter(){
   if(!this.introReady)return;
   const character=this.slides[this.current].querySelector('img[data-intro-src]:not([src])');
@@ -29,7 +34,32 @@ class SlidePresentation{
  }
  chartActive(){const slide=this.slides[this.current];return slide.contains(document.getElementById('organChart'))?'organ':slide.contains(document.getElementById('publicationChart'))?'publication':null;}
  activeTimeline(){return this.chartActive()==='organ'?window.organTimeline:window.publicationTimeline;}
- replayChart(){const chart=this.activeTimeline();if(this.chartActive())chart?.[this.chartActive()==='organ'?'replay':'play']();}
+ coverTurntable(){return this.slides[this.current].querySelector('.cover-turntable');}
+ async playCover(){
+  const image=this.coverTurntable();
+  if(!image)return;
+  this.stopCover();
+  this.coverPoster ??= image.getAttribute('src');
+  const request={};
+  this.coverRequest=request;
+  try{
+   this.coverAnimation ??= fetch(image.dataset.turntableSrc).then(response=>response.blob());
+   const animation=await this.coverAnimation;
+   if(this.coverRequest!==request)return;
+   this.coverUrl=URL.createObjectURL(animation);
+   image.src=this.coverUrl;
+  }catch{
+   this.coverAnimation=null;
+  }
+ }
+ stopCover(){
+  this.coverRequest=null;
+  if(!this.coverUrl)return;
+  this.coverTurntable().src=this.coverPoster;
+  URL.revokeObjectURL(this.coverUrl);
+  this.coverUrl=null;
+ }
+ replayChart(){if(this.coverTurntable()){this.playCover();return;}const chart=this.activeTimeline();if(this.chartActive())chart?.[this.chartActive()==='organ'?'replay':'play']();}
  navigate(direction){this.show(this.current+direction);}
  advance(direction){if(this.editing)return;if(this.profileStep(direction))return;this.show(this.current+direction);}
  resetProfile(slide){slide.querySelectorAll('[data-reveal-step]').forEach(e=>{e.classList.remove('revealed');e.setAttribute('aria-hidden',String(!this.editing));e.inert=!this.editing;});}
@@ -42,7 +72,7 @@ class SlidePresentation{
  toggleEdit(){this.editing=!this.editing;document.body.classList.toggle('editing',this.editing);document.getElementById('editToggle').classList.toggle('active',this.editing);document.querySelectorAll('.editable').forEach(e=>e.contentEditable=String(this.editing));document.querySelectorAll('[data-reveal-step]').forEach(e=>{const hidden=!this.editing&&!e.classList.contains('revealed');e.setAttribute('aria-hidden',String(hidden));e.inert=hidden;});this.message(this.editing?'Click text to edit · Ctrl/Cmd + S downloads your HTML':'Editing off');}
  restore(){try{const saved=JSON.parse(localStorage.getItem(storageKey)||'{}');document.querySelectorAll('[data-edit]').forEach(e=>{if(Object.hasOwn(saved,e.dataset.edit))e.innerHTML=saved[e.dataset.edit]});}catch{}}
  autosave(){try{localStorage.setItem(storageKey,JSON.stringify(Object.fromEntries([...document.querySelectorAll('[data-edit]')].map(e=>[e.dataset.edit,e.innerHTML]))));}catch{this.message('Browser storage is full. Use Ctrl/Cmd + S to save a copy.')}this.fitText();}
- save(){const clone=document.documentElement.cloneNode(true);clone.querySelectorAll('img[data-intro-src]').forEach(img=>{img.removeAttribute('src');img.removeAttribute('data-intro-loaded');});clone.querySelectorAll('iframe[data-srcdoc]').forEach(frame=>frame.removeAttribute('srcdoc'));clone.querySelector('body').classList.remove('editing');clone.querySelectorAll('[contenteditable]').forEach(e=>e.removeAttribute('contenteditable'));clone.querySelector('#editToggle').classList.remove('active');clone.querySelector('#status').textContent='';clone.querySelectorAll('dialog').forEach(d=>d.removeAttribute('open'));clone.querySelectorAll('[data-reveal-step]').forEach(e=>{e.classList.remove('revealed');e.setAttribute('aria-hidden','true');e.setAttribute('inert','');});const blob=new Blob(['<!doctype html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='Stereolithographic-Bioprinting.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);this.message('Downloaded the updated presentation');}
+ save(){const clone=document.documentElement.cloneNode(true);clone.querySelectorAll('img[data-intro-src]').forEach(img=>{img.removeAttribute('src');img.removeAttribute('data-intro-loaded');});clone.querySelectorAll('iframe[data-srcdoc]').forEach(frame=>frame.removeAttribute('srcdoc'));if(this.coverPoster)clone.querySelector('.cover-turntable')?.setAttribute('src',this.coverPoster);clone.querySelector('body').classList.remove('editing');clone.querySelectorAll('[contenteditable]').forEach(e=>e.removeAttribute('contenteditable'));clone.querySelector('#editToggle').classList.remove('active');clone.querySelector('#status').textContent='';clone.querySelectorAll('dialog').forEach(d=>d.removeAttribute('open'));clone.querySelectorAll('[data-reveal-step]').forEach(e=>{e.classList.remove('revealed');e.setAttribute('aria-hidden','true');e.setAttribute('inert','');});const blob=new Blob(['<!doctype html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='Stereolithographic-Bioprinting.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);this.message('Downloaded the updated presentation');}
  /* === KEYBOARD, TOUCH, WHEEL AND ACCESSIBLE PANELS === */
  setup(){addEventListener('resize',()=>this.scale());addEventListener('hashchange',()=>this.show(this.hash()));document.getElementById('prev').onclick=()=>this.navigate(-1);document.getElementById('next').onclick=()=>this.navigate(1);document.getElementById('chartReplay').onclick=()=>this.replayChart();document.getElementById('overviewButton').onclick=()=>this.open('overview');document.getElementById('notesButton').onclick=()=>this.open('notesDialog');document.getElementById('helpButton').onclick=()=>this.open('helpDialog');document.getElementById('fullButton').onclick=()=>this.fullscreen();document.getElementById('editToggle').onclick=()=>this.toggleEdit();document.getElementById('saveButton').onclick=()=>this.save();document.getElementById('resetButton').onclick=()=>{try{localStorage.removeItem(storageKey)}catch{}location.reload()};
  document.querySelectorAll('[data-goto]').forEach(b=>b.onclick=()=>{if(!this.editing)this.show(Number(b.dataset.goto)-1)});document.querySelectorAll('dialog .close').forEach(b=>b.onclick=()=>b.closest('dialog').close());

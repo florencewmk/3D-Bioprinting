@@ -18,13 +18,11 @@ Before I proceed, I would like to kindly introduce myself. I’m Florence, I was
 
 I know you might be wondering why did I choose a completely different field of topic for this competition. But if you follow me throughout, you will find the answer.
 
-## 02. Stereolithographic Bioprinting
+## 02. 3D-Bioprinting
 
 SOfE · Düsseldorf · 5 November 2026
 
-Stereolithographic
-
-Bioprinting
+3D-Bioprinting
 
 where engineering revolutionize medicine
 
@@ -34,8 +32,7 @@ Florence Mei Kuan Wong
 
 Welcome to the world of 3D printing, a technology that is shaping our future.
 
-On the right hand side here it is a 3D printed lung anatomical model displayed in an exhibition in China in 2015. It was reported by The Independent, a news media in the UK. Bioprinting is not something new, research has started since a decade ago.
-
+On the right is a 3D reconstruction of a branching anatomical model displayed in Yiwu in 2015.
 
 ## 03. Contents
 
