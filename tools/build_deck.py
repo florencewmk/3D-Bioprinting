@@ -162,7 +162,7 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
   manifest.append({'slide':display_number(n),'media':sh.name,'bytes':len(blob)})
  if n==16:art+='<p class="media-credit">Source: Readily3D · Tomolite Bioprinter · accessed 14 October 2026</p>'
  if n<=4:src=[settings()['presenter'] if n==2 else data[-1]['text']]
- nav=navigation(n) if n>2 else ''
+ nav=navigation(n) if n>2 and n!=4 else ''
  footer=event_footer(display_number(n)) if n!=1 else ''
  comment=notes.replace('--','—').replace('<','&lt;')
  sections.append(web_section(f'<section class="slide {"active visible" if n==2 else ""} {"profile-slide" if n==2 else "cover-slide" if n==1 else "poster-slide" if special else ""}" id="slide-{n}" aria-label="{n}. {H(title)}" aria-hidden="{str(n!=2).lower()}">{nav}{art}{"".join(videos)}{footer}<div class="sr-only">{H(chr(10).join(src))}</div><!-- Speaker notes: {comment} --></section>',n))

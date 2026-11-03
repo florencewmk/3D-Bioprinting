@@ -42,7 +42,7 @@ for i, section in enumerate(sections):
         # Screen-reader content follows click reveals too; full transcript stays in sourceData.
         transcript = heading if number == 1 else data[i]['text']
         section = opening + renderers[i]() + '<div class="sr-only">' + html.escape(transcript) + '</div></section>'
-        if number > 2:
+        if number == 3:
             at = section.index('>') + 1
             section = section[:at] + navigation(number) + section[at:]
         if number != 2:
