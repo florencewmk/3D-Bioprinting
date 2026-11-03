@@ -1,0 +1,309 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-labelledby="hello-title hello-desc">
+  <title id="hello-title">Florence says hello</title>
+  <desc id="hello-desc">An original illustrated character based on Florence's supplied portrait, wearing a charcoal coat, blue-grey scarf, dark trousers and light trainers. She takes two small steps in from the right, smiles and waves. After stepping in, she keeps waving. The background is transparent.</desc>
+  <defs>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#25212a"/><stop offset=".52" stop-color="#50302b"/><stop offset="1" stop-color="#9b5d3c"/>
+    </linearGradient>
+    <linearGradient id="hair-front" x1="0" y1="0" x2="1" y2=".7">
+      <stop stop-color="#392728"/><stop offset=".65" stop-color="#754432"/><stop offset="1" stop-color="#b6784b"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f4c6ac"/><stop offset="1" stop-color="#dfa58e"/>
+    </linearGradient>
+    <linearGradient id="coat" x1="0" y1="0" x2="1" y2=".5">
+      <stop stop-color="#3e4141"/><stop offset=".52" stop-color="#2c3032"/><stop offset="1" stop-color="#20252b"/>
+    </linearGradient>
+    <linearGradient id="scarf" x1="0" y1="0" x2="1" y2=".3">
+      <stop stop-color="#a8bfc1"/><stop offset=".5" stop-color="#829ba3"/><stop offset="1" stop-color="#526978"/>
+    </linearGradient>
+    <linearGradient id="denim" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#303843"/><stop offset="1" stop-color="#1e2430"/>
+    </linearGradient>
+    <radialGradient id="blush">
+      <stop stop-color="#ce827d" stop-opacity=".37"/><stop offset="1" stop-color="#ce827d" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    /* One shared timeline. Nested groups keep each joint in its own coordinate system. */
+    .motion { animation-duration:7s; animation-iteration-count:1; animation-fill-mode:both; animation-timing-function:linear }
+    .entry { animation-name:entry }
+    .body-bob { animation-name:bob }
+    .left-leg { transform-origin:368px 533px; animation-name:left-leg }
+    .right-leg { transform-origin:423px 533px; animation-name:right-leg }
+    .resting-arm { animation-name:resting-arm }
+    .wave-upper { animation-name:wave-upper }
+    .wave-lower { animation-name:wave-lower }
+    .wave-hand { animation-name:wave-hand }
+    .head { transform-origin:397px 287px; animation-name:head }
+    .hair-tip { transform-origin:350px 188px; animation-name:hair-tip }
+    .scarf-tip { transform-origin:376px 343px; animation-name:scarf-tip }
+    .eye { transform-box:fill-box; transform-origin:center; animation-name:blink }
+    .smile { transform-box:fill-box; transform-origin:center top; animation-name:smile }
+    .shadow { transform-origin:400px 724px; animation-name:shadow }
+    .left-leg,.right-leg,.body-bob,.wave-upper,.wave-lower,.wave-hand,.resting-arm,.hair-tip,.scarf-tip,.head { animation-timing-function:cubic-bezier(.35,.08,.45,.95) }
+    @keyframes entry {
+      0% { transform:translate(365px,0) }
+      5% { transform:translate(360px,0); animation-timing-function:cubic-bezier(.3,0,.45,1) }
+      16% { transform:translate(157px,0); animation-timing-function:cubic-bezier(.3,0,.4,1) }
+      28% { transform:translate(0,0) }
+      100% { transform:translate(0,0) }
+    }
+    @keyframes bob {
+      0%,5%,16%,28%,100% { transform:translateY(0) }
+      10.5%,22% { transform:translateY(-7px) }
+      33% { transform:translateY(2px) }
+      39% { transform:translateY(0) }
+      55% { transform:translateY(-1.5px) }
+      72% { transform:translateY(0) }
+    }
+    @keyframes left-leg {
+      0%,5%,28%,100% { transform:rotate(0deg) }
+      10.5% { transform:rotate(8deg) }
+      16% { transform:rotate(-7deg) }
+      22% { transform:rotate(7deg) }
+    }
+    @keyframes right-leg {
+      0%,5%,28%,100% { transform:rotate(0deg) }
+      10.5% { transform:rotate(-7deg) }
+      16% { transform:rotate(8deg) }
+      22% { transform:rotate(-6deg) }
+    }
+    @keyframes resting-arm {
+      0%,5%,28%,100% { transform:rotate(0deg) }
+      10.5% { transform:rotate(-5deg) }
+      16% { transform:rotate(4deg) }
+      22% { transform:rotate(-4deg) }
+      42% { transform:rotate(3deg) }
+      65% { transform:rotate(0deg) }
+    }
+    @keyframes wave-upper {
+      0%,24% { transform:rotate(0deg) }
+      28% { transform:rotate(4deg) }
+      39% { transform:rotate(-96deg) }
+      44% { transform:rotate(-91deg) }
+      74% { transform:rotate(-91deg) }
+      86%,100% { transform:rotate(-88deg) }
+    }
+    @keyframes wave-lower {
+      0%,24% { transform:rotate(0deg) }
+      39%,44% { transform:rotate(-76deg) }
+      50% { transform:rotate(-69deg) }
+      56% { transform:rotate(-84deg) }
+      62% { transform:rotate(-69deg) }
+      68% { transform:rotate(-82deg) }
+      74% { transform:rotate(-72deg) }
+      86%,100% { transform:rotate(-71deg) }
+    }
+    @keyframes wave-hand {
+      0%,38% { transform:rotate(0deg) }
+      44%,56%,68% { transform:rotate(-9deg) }
+      50%,62%,74% { transform:rotate(13deg) }
+      86%,100% { transform:rotate(0deg) }
+    }
+    @keyframes head {
+      0%,26% { transform:rotate(0deg) }
+      40% { transform:rotate(-4deg) }
+      55% { transform:rotate(-2deg) }
+      70%,100% { transform:rotate(-3deg) }
+    }
+    @keyframes hair-tip {
+      0%,5% { transform:rotate(0deg) }
+      12% { transform:rotate(4deg) }
+      18% { transform:rotate(-2deg) }
+      25% { transform:rotate(3deg) }
+      34% { transform:rotate(-3deg) }
+      44% { transform:rotate(2deg) }
+      57% { transform:rotate(-1deg) }
+      72%,100% { transform:rotate(0deg) }
+    }
+    @keyframes scarf-tip {
+      0%,5% { transform:rotate(0deg) }
+      12% { transform:rotate(3deg) }
+      18% { transform:rotate(-2deg) }
+      25% { transform:rotate(3deg) }
+      35% { transform:rotate(-2deg) }
+      48% { transform:rotate(1deg) }
+      65%,100% { transform:rotate(0deg) }
+    }
+    @keyframes blink {
+      0%,32%,35%,57%,60%,100% { transform:scaleY(1) }
+      33.5%,58.5% { transform:scaleY(.08) }
+    }
+    @keyframes smile {
+      0%,24% { transform:scaleY(.68) }
+      42%,100% { transform:scaleY(1) }
+    }
+    @keyframes shadow {
+      0%,5%,16%,28%,100% { transform:scaleX(1); opacity:.12 }
+      10.5%,22% { transform:scaleX(.87); opacity:.08 }
+    }
+    .wave-lower {
+      animation:wave-lower 7s cubic-bezier(.35,.08,.45,.95) both,
+                continuous-forearm 1.15s ease-in-out 7s infinite;
+    }
+    .wave-hand {
+      animation:wave-hand 7s cubic-bezier(.35,.08,.45,.95) both,
+                continuous-hand 1.15s ease-in-out 7s infinite;
+    }
+    @keyframes continuous-forearm {
+      0%,100% { transform:rotate(-71deg) }
+      50% { transform:rotate(-84deg) }
+    }
+    @keyframes continuous-hand {
+      0%,100% { transform:rotate(0deg) }
+      50% { transform:rotate(-13deg) }
+    }
+    /* Turn the relaxed left hand through an edge-on pose as the arm rises. */
+    .left-hand-rest { animation-name:left-hand-rest }
+    .left-hand-palm { animation-name:left-hand-palm }
+    @keyframes left-hand-rest {
+      0%,28% { opacity:1; transform:scaleX(1) }
+      34% { opacity:1; transform:scaleX(.48) }
+      35%,100% { opacity:0; transform:scaleX(.48) }
+    }
+    @keyframes left-hand-palm {
+      0%,34% { opacity:0; transform:scaleX(.38) }
+      35% { opacity:1; transform:scaleX(.38) }
+      41%,100% { opacity:1; transform:scaleX(1) }
+    }
+    /* A static, complete greeting for people who request reduced motion. */
+    @media (prefers-reduced-motion:reduce) {
+      .motion { animation:none !important }
+      .left-hand-rest { display:none }
+      .wave-upper { transform:rotate(-88deg) }
+      .wave-lower { transform:rotate(-71deg) }
+      .head { transform:rotate(-3deg) }
+    }
+  </style>
+
+  <g id="character-entry" class="entry motion">
+    <ellipse id="ground-shadow" class="shadow motion" cx="400" cy="724" rx="124" ry="12" fill="#252b34" opacity=".12"/>
+    <g class="body-bob motion">
+      <!-- Each shoe belongs to its leg so the walking joints stay connected. -->
+      <g id="leg-left" class="left-leg motion">
+        <path d="M337 513 Q367 505 397 527 L389 614 L380 696 Q357 704 338 694 L336 616 Z" fill="url(#denim)"/>
+        <path d="M347 549 L348 613 L351 678" fill="none" stroke="#59616a" stroke-width="2" opacity=".35"/>
+        <path d="M339 675 Q360 681 382 676 L380 697 Q359 705 338 696 Z" fill="#161d28"/>
+        <path d="M340 694 L375 694 Q385 706 388 716 Q370 727 323 724 Q317 719 321 713 Z" fill="#f2eee6"/>
+        <path d="M323 716 Q353 721 385 714 L389 722 Q365 734 320 727 Q316 721 323 716" fill="#d2d2cf"/>
+        <path d="M342 699 L366 703 M337 705 L363 709 M332 711 L358 715" stroke="#acb1b3" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M374 702 L379 712" stroke="#dedbd6" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g id="leg-right" class="right-leg motion">
+        <path d="M395 524 Q420 509 447 520 L453 616 L453 699 Q434 708 410 700 L399 620 Z" fill="url(#denim)"/>
+        <path d="M438 549 L442 613 L439 681" fill="none" stroke="#59616a" stroke-width="2" opacity=".27"/>
+        <path d="M407 681 Q432 687 454 680 L454 702 Q432 711 410 703 Z" fill="#161d28"/>
+        <path d="M412 700 Q434 707 450 698 L467 713 Q479 719 478 726 Q454 737 408 727 Q403 719 412 700" fill="#f2eee6"/>
+        <path d="M408 720 Q440 731 476 720 L479 728 Q452 740 407 731 Q403 728 408 720" fill="#d2d2cf"/>
+        <path d="M420 706 L442 710 M416 712 L448 717 M413 718 L450 724" stroke="#acb1b3" stroke-width="2.6" stroke-linecap="round"/>
+      </g>
+
+      <!-- Back hair sits behind the jacket. -->
+      <g id="hair-back" class="hair-tip motion">
+        <path d="M337 186 C328 147 351 116 390 111 C430 103 467 129 469 174 C471 213 486 251 469 297 C462 314 454 329 461 346 C431 341 417 313 409 280 L354 280 Q349 321 326 329 C344 294 319 275 321 239 Z" fill="url(#hair)"/>
+        <path d="M341 160 C322 201 342 253 328 287 C323 302 324 315 331 324 C343 299 350 278 344 250 C337 215 339 187 350 164" fill="#9b6144" opacity=".62"/>
+        <path d="M454 163 C450 204 479 258 458 309" fill="none" stroke="#b87b50" stroke-width="4" stroke-linecap="round" opacity=".43"/>
+      </g>
+
+      <!-- Resting arm at the viewer's left. -->
+      <g transform="translate(337 331)">
+        <g class="resting-arm motion">
+          <path d="M-8 -12 Q-29 -10 -33 19 L-43 88 Q-47 108 -34 119 L-8 122 Q8 115 7 101 L14 21 Q16 -4 -8 -12" fill="url(#coat)"/>
+          <path d="M-33 88 Q-24 96 -7 95" fill="none" stroke="#596063" stroke-width="2" opacity=".5"/>
+          <path d="M-35 112 L-8 115 L-9 130 Q-25 135 -37 126 Z" fill="#1b2229"/>
+          <path d="M-33 128 Q-39 146 -32 159 Q-28 168 -22 165 L-17 148 Q-15 159 -10 157 Q-4 155 -8 142 L-12 129 Z" fill="url(#skin)"/>
+          <path d="M-31 144 L-28 159 M-25 143 L-23 162" stroke="#c18d7e" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+        </g>
+      </g>
+
+      <!-- Jacket, softly shaded panels and restrained stitching. -->
+      <path d="M347 308 Q366 296 393 302 Q422 299 445 312 Q462 326 458 366 L469 527 Q463 553 420 557 L349 551 Q322 546 323 523 L331 365 Q325 329 347 308" fill="url(#coat)"/>
+      <path d="M388 331 L390 550" stroke="#596065" stroke-width="2"/>
+      <path d="M394 335 L397 550" stroke="#191f27" stroke-width="2"/>
+      <path d="M332 388 Q359 395 387 390 M401 391 Q430 397 458 388 M328 449 Q357 459 388 453 M401 454 Q432 462 463 451 M326 510 Q355 518 388 515 M402 516 Q436 522 468 511" fill="none" stroke="#6e7475" stroke-width="1.6" opacity=".22"/>
+      <path d="M340 436 L360 470 M435 436 L420 470" stroke="#161e27" stroke-width="5" stroke-linecap="round"/>
+      <path d="M338 436 L357 470 M438 436 L423 470" stroke="#777c7d" stroke-width="1.2" opacity=".5"/>
+      <g fill="#727a7e"><circle cx="397" cy="415" r="2.6"/><circle cx="398" cy="476" r="2.6"/><circle cx="399" cy="537" r="2.6"/></g>
+      <path d="M329 539 Q357 549 388 546" fill="none" stroke="#4f5559" stroke-width="2"/>
+
+      <!-- Character’s left arm, at the viewer’s right. -->
+      <g transform="translate(446 331)">
+        <g id="waving-upper-arm" class="wave-upper motion">
+          <path d="M-11 -14 C1 -23 17 -14 24 3 L45 61 Q51 80 36 91 Q20 97 11 79 L-13 22 Q-22 1 -11 -14" fill="url(#coat)"/>
+          <path d="M-8 -9 Q4 -14 12 -2 L33 57" fill="none" stroke="#69706f" stroke-width="2.2" opacity=".36"/>
+          <g transform="translate(30 77)">
+            <g id="waving-forearm" class="wave-lower motion">
+              <path d="M-16 -6 C-7 -19 11 -18 17 -3 L17 60 Q16 73 -1 74 Q-18 73 -18 60 Z" fill="url(#coat)"/>
+              <path d="M-15 35 Q-1 41 15 35" fill="none" stroke="#61696b" stroke-width="1.5" opacity=".4"/>
+              <path d="M-18 58 Q-2 65 18 58 L18 71 Q0 79 -17 70 Z" fill="#19222b"/>
+              <g transform="translate(0 70)">
+                <g id="waving-hand" class="wave-hand motion">
+                  <g class="left-hand-rest motion">
+                    <path d="M-8 -2 Q-10 5 -11 10 Q-16 16 -14 22 Q-12 25 -8 20 L-5 15 Q-6 25 -3 31 Q0 37 4 34 Q8 36 10 30 Q14 24 12 16 L8 -2 Z" fill="url(#skin)"/>
+                    <path d="M0 21 Q-1 28 4 34 M6 21 Q6 28 8 32" stroke="#c18d7e" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+                  </g>
+                  <g class="left-hand-palm motion">
+                    <g transform="scale(.78)">
+                      <path d="M-10 -1 Q-14 8 -16 17 L-23 34 C-25 40 -19 43 -16 37 L-10 25 L-15 46 C-16 52 -9 54 -7 48 L-2 29 L-4 51 C-5 58 3 59 4 52 L7 29 L8 47 C9 54 17 53 16 46 L15 24 L22 29 C28 33 32 27 27 22 L20 15 Q15 9 10 -1 Z" fill="url(#skin)"/>
+                      <path d="M15 24 Q9 16 1 17 M-10 25 L-9 20 M-2 29 L-1 23 M7 29 L7 23" stroke="#bd8878" stroke-width="1.3" stroke-linecap="round" fill="none"/>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+
+      <!-- Portrait-inspired face, with a mild tilt and two blinks. -->
+      <g id="portrait-head" class="head motion">
+        <path d="M377 270 L375 313 Q397 328 418 309 L415 268" fill="url(#skin)"/>
+        <path d="M377 278 Q396 294 415 278 L416 295 Q395 308 376 294" fill="#c58c7d" opacity=".38"/>
+        <path d="M338 219 Q325 209 326 230 Q326 249 341 252 M451 220 Q465 210 464 231 Q462 249 450 251" fill="#dda58f"/>
+        <path d="M344 174 C356 150 428 150 446 180 L452 225 C454 251 443 277 423 288 Q397 302 374 287 C350 276 338 254 338 226 Z" fill="url(#skin)"/>
+        <path d="M344 186 Q346 240 359 263 Q376 288 397 290 Q370 293 353 269 Q336 247 338 219 Z" fill="#d99d88" opacity=".32"/>
+        <ellipse cx="361" cy="250" rx="19" ry="12" fill="url(#blush)"/>
+        <ellipse cx="432" cy="250" rx="18" ry="12" fill="url(#blush)"/>
+        <path d="M356 215 Q366 207 378 213 M410 212 Q423 205 435 213" fill="none" stroke="#5c3b34" stroke-width="3.2" stroke-linecap="round"/>
+        <g class="eye motion">
+          <path d="M354 228 Q366 216 380 227 Q367 236 354 228" fill="#f8ede4"/>
+          <ellipse cx="369" cy="226" rx="5" ry="6.2" fill="#382b2d"/>
+          <circle cx="370.5" cy="224" r="1.5" fill="#fff6eb"/>
+          <path d="M354 228 Q366 216 380 227" fill="none" stroke="#3a2b2c" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <g class="eye motion">
+          <path d="M409 226 Q422 215 435 226 Q422 236 409 226" fill="#f8ede4"/>
+          <ellipse cx="422" cy="225.5" rx="5" ry="6.2" fill="#382b2d"/>
+          <circle cx="423.5" cy="223.5" r="1.5" fill="#fff6eb"/>
+          <path d="M409 226 Q422 215 435 226" fill="none" stroke="#3a2b2c" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <path d="M396 228 Q393 239 391 245 Q395 249 401 246" fill="none" stroke="#bf8877" stroke-width="1.6" stroke-linecap="round"/>
+        <g class="smile motion">
+          <path d="M380 260 Q397 268 418 258 Q402 282 385 268 Z" fill="#9f5a58"/>
+          <path d="M383 261 Q400 267 415 260 L411 265 Q396 271 387 266 Z" fill="#fff3e6"/>
+          <path d="M388 274 Q399 278 408 272" stroke="#d8988b" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </g>
+        <!-- Middle-parted fringe: dark roots and warm brown ends from the portrait. -->
+        <path d="M332 210 C325 176 337 137 369 127 C389 118 418 120 439 134 C461 149 469 185 455 224 C449 210 443 194 438 177 Q422 164 408 153 C404 178 389 192 373 196 Q386 175 387 153 C374 165 367 189 348 207 L341 248 Q328 230 332 210" fill="url(#hair-front)"/>
+        <path d="M389 136 C372 143 363 167 353 190 M415 140 Q435 154 448 184" fill="none" stroke="#c28c5b" stroke-width="2.2" stroke-linecap="round" opacity=".65"/>
+        <path d="M352 151 Q367 132 387 132 M401 130 Q423 128 439 149" fill="none" stroke="#d9a674" stroke-width="1.4" stroke-linecap="round" opacity=".45"/>
+        <path d="M333 208 Q327 253 346 278" stroke="#965b40" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M454 209 Q460 255 446 280" stroke="#754531" stroke-width="5" stroke-linecap="round" fill="none"/>
+      </g>
+
+      <!-- Oversized scarf stays over the coat and neck. -->
+      <g id="scarf-tail" class="scarf-tip motion">
+        <path d="M349 329 Q365 322 387 340 L389 490 Q368 503 345 491 L345 391 Z" fill="url(#scarf)"/>
+        <path d="M356 354 L356 484 M364 357 L365 488 M376 363 L377 488" stroke="#d1dedd" stroke-width="1.6" opacity=".24" fill="none"/>
+        <path d="M348 490 L348 509 M355 494 L354 514 M363 496 L364 513 M372 496 L374 515 M381 492 L383 507" stroke="#a3b6bb" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <path d="M404 337 Q420 331 432 343 L444 469 Q433 479 410 472 L403 391 Z" fill="#69828f"/>
+      <path d="M416 356 L425 466 M425 359 L435 464" stroke="#9bb1b7" stroke-width="1.7" opacity=".45"/>
+      <path d="M414 472 L415 490 M422 474 L424 493 M431 474 L434 491 M438 471 L442 486" stroke="#9bb1b7" stroke-width="4" stroke-linecap="round"/>
+      <path d="M351 297 Q368 312 396 310 Q423 311 439 292 Q453 304 448 325 C441 352 378 363 349 338 Q334 326 339 309 Q342 301 351 297" fill="url(#scarf)"/>
+      <path d="M343 319 Q381 346 436 318" fill="none" stroke="#c3d2d1" stroke-width="4" stroke-linecap="round" opacity=".65"/>
+      <path d="M353 336 Q396 353 441 328" fill="none" stroke="#425b6b" stroke-width="5" stroke-linecap="round" opacity=".48"/>
+    </g>
+  </g>
+</svg>
