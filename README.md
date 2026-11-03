@@ -44,7 +44,7 @@ are respected. [Animation maintenance and timing](tools/MOTION.md).
 
 - **[Worldwide bioprinting geography through 2025](data/geography-2025/):** Excel workbook and CSV files with top-20 country rankings, full author/affiliation tables, institutional coordinates, and a sourced company register with historical and unconfirmed status flags.
 - **[Publication trends · slide 8](data/publication-trends/):** Scopus (Elsevier) counts for 2000–2026, with a roughly six-second continuous left-to-right reveal. 2026 is partial as of 27 October 2026; [CSV and methods](data/publication-trends/scopus/).
-- **[Organ-transplant timeline · slide 9](data/organ-transplants/):** annual-report snapshots for 2015–2024 and separately flagged 2025 homepage highlights. The 2025 transplant figure is a lower bound; kidney waiting-list figures are from 2024.
+- **[Organ-transplant timeline](data/organ-transplants/):** reported2015–2025 activity;2025 six-organ total183,879 and49,169 deceased donors. Right callouts sum reported2025 organ-list entries:532,905 waiting;40,019 deaths. Source: archived EDQM–ONT Newsletter Transplant2026. No2026forecast.
 
 The publication chart reveals automatically without buttons inside the chart; the bottom toolbar provides Replay and arrows for year selection. On this chart, Left/Right select years, R replays, and Page Up/Down or Space navigate slides. The organ chart has playback controls. Their data directories include raw values, sources and coverage limitations.
 

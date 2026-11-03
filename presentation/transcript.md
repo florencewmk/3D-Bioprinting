@@ -186,14 +186,14 @@ The complete series uses Scopus. Extrusion has the largest number of keyword mat
 ## 09. The organ shortage persists
 
 The organ shortage persists
-All six solid-organ categories · 2015–2025
-Organ transplant procedures and actual deceased donors across kidney, liver, heart, lung, pancreas and small bowel
-2025: >183,800 procedures; 49,169 deceased donors (homepage highlights; full report not verified)
-Kidney waiting lists, 2024: 377,902 waiting at year-end; 19,936 deaths.
+2015–2025
+Organ transplants and deceased donors
+2025:183,879 transplant procedures and49,169 deceased donors.
+2025 reported organ-list entries:532,905 waiting at year-end;40,019 deaths on waiting lists.
 
 ### Speaker notes
 
-Reported international activity, 2015–2024 annual report snapshots plus 2025 GODT homepage highlights. The 2025 transplant exact count is not verified: the homepage reports MORE THAN 183,800, shown as an open lower-bound marker and dashed connection. 49,169 actual deceased donors are listed for 2025. Homepage fields are internally inconsistent and a complete annual report has not been verified. Kidney waiting figures remain 2024 only (377,902 waiting, 19,936 deaths). Country/indicator coverage varies; transplants count organ procedures, not unique patients. Sources and definitions: data/organ-transplants/README.md and annual_counts.json. https://data.transplant-observatory.org/ ; https://www.transplant-observatory.org/wp-content/uploads/2025/12/2024-data-global-report.pdf (PDF p65).
+Source: EDQM–ONT Newsletter Transplant2026, international figures2025, linked from WHO–ONT GODT. PDFp37(printed35): kidney116775, liver45556, heart10748, lung8472, pancreas2148, smallbowel180; sum183879. Actual deceased donors49169. PDFpp66–74(printed64–72): sum reported organ-list entries=532905 waiting at31December2025 and40019 deaths during2025. These are calculated sums across six organ lists and94country columns, not deduplicated patient counts. Missing cells remain missing; a multi-organ candidate may appear in several lists. Country coverage and report versions vary. No2026forecast. https://www.transplant-observatory.org/wp-content/uploads/2026/10/NEWSLETTER-2026_alta.pdf
 
 ## 10. Bioprinting technologies
 

@@ -1,0 +1,40 @@
+{
+  "year": 2025,
+  "source": "https://www.transplant-observatory.org/wp-content/uploads/2026/10/NEWSLETTER-2026_alta.pdf",
+  "pdf_pages": [
+    66,
+    74
+  ],
+  "source_sha256": "a89524da21d8b655842bde0ca86fcf76efc360f152214e95bb59a7c3112010b1",
+  "counting_unit": "sum of reported organ-list entries; not deduplicated patients",
+  "summary": {
+    "Kidney": {
+      "waiting_year_end": 446153,
+      "deaths_during_year": 30825
+    },
+    "Liver": {
+      "waiting_year_end": 58198,
+      "deaths_during_year": 6427
+    },
+    "Heart": {
+      "waiting_year_end": 16147,
+      "deaths_during_year": 1585
+    },
+    "Lung": {
+      "waiting_year_end": 6487,
+      "deaths_during_year": 812
+    },
+    "Pancreas": {
+      "waiting_year_end": 5613,
+      "deaths_during_year": 340
+    },
+    "Small bowel": {
+      "waiting_year_end": 307,
+      "deaths_during_year": 30
+    },
+    "Total": {
+      "waiting_year_end": 532905,
+      "deaths_during_year": 40019
+    }
+  }
+}

@@ -64,8 +64,9 @@ data README before editing. Preserve other contributors' changes.
 - Preserve verified snapshots and distinguish missing values from zero.
   Publication counts for 2024–2026 remain unverified until supported by exports;
   record an actual retrieval date and year-to-date status for 2026.
-- Preserve the 2025 transplant lower bound as a lower bound, and retain the
-  2024 kidney-only scope of waiting-list callouts. Do not merge incompatible
+- Use the archived Newsletter Transplant2026 for2025 figures:183879 transplant procedures
+  and49169 deceased donors. Waiting-list callouts sum reported2025 organ-list entries
+  across six categories; do not describe these as deduplicated patients. Do not merge incompatible
   populations, databases, or reporting periods without documenting the method.
 - After relevant data edits, run `python3 tools/check_publication_data.py` and
   `python3 tools/check_organ_data.py`, then the corresponding chart updater.

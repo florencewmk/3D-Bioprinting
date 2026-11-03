@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "as_of": "2026-10-17",
-  "last_verified_report_year": 2024,
+  "as_of": "2026-11-03",
+  "last_verified_report_year": 2025,
   "rows": [
     {
       "year": 2015,
@@ -86,13 +86,21 @@
     {
       "year": 2025,
       "deceased_donors": 49169,
-      "solid_organ_transplant_procedures": null,
-      "transplants_lower_bound_exclusive": 183800,
-      "transplants_relation": "greater_than",
-      "living_donor_transplant_procedures": 54600,
+      "solid_organ_transplant_procedures": 183879,
+      "transplants_by_organ": {
+        "Kidney": 116775,
+        "Liver": 45556,
+        "Heart": 10748,
+        "Lung": 8472,
+        "Pancreas": 2148,
+        "Small bowel": 180
+      },
+      "transplants_relation": "exact",
       "reporting_countries": 96,
-      "source": "https://data.transplant-observatory.org/",
-      "status": "homepage_highlights_full_report_not_verified"
+      "source": "https://www.transplant-observatory.org/wp-content/uploads/2026/10/NEWSLETTER-2026_alta.pdf",
+      "pdf_page": 37,
+      "printed_page": 35,
+      "status": "annual_report_snapshot"
     }
   ],
   "kidney_waiting_list": {
@@ -104,11 +112,55 @@
     "coverage": "Reporting countries; not complete worldwide totals"
   },
   "limitations": [
-    "Donors are actual deceased donors, excluding living and registered potential donors.",
+    "Donors are actual deceased donors; exclude living and registered potential donors.",
     "Transplants are organ procedures, not unique recipients.",
-    "Annual report snapshots have different country coverage and may later be revised.",
-    "2025 homepage says more than 183800; exact total is unknown. Plot uses an open lower-bound marker and a dashed connection.",
-    "2025 homepage contains inconsistent fields; full annual report not verified.",
-    "Waiting-list figures are kidney-only 2024, not 2025; people not registered are excluded."
-  ]
+    "Annual report country coverage and source versions vary.",
+    "2025 total183879 is calculated from six organ totals on Newsletter2026 PDFp37; liver45556 supersedes the homepage45554.",
+    "Waiting/death totals are sums of reported organ-list entries, not unique patients. Multi-organ candidates can appear in multiple lists.",
+    "2025 tables cover94country columns and contain blanks. Blank is not zero; no missing-country imputation.",
+    "Kidney-only2024 values are retained as a historical snapshot, not used for the current slide."
+  ],
+  "waiting_list_totals": {
+    "year": 2025,
+    "waiting_year_end": 532905,
+    "deaths_during_year": 40019,
+    "by_organ": {
+      "Kidney": {
+        "waiting_year_end": 446153,
+        "deaths_during_year": 30825
+      },
+      "Liver": {
+        "waiting_year_end": 58198,
+        "deaths_during_year": 6427
+      },
+      "Heart": {
+        "waiting_year_end": 16147,
+        "deaths_during_year": 1585
+      },
+      "Lung": {
+        "waiting_year_end": 6487,
+        "deaths_during_year": 812
+      },
+      "Pancreas": {
+        "waiting_year_end": 5613,
+        "deaths_during_year": 340
+      },
+      "Small bowel": {
+        "waiting_year_end": 307,
+        "deaths_during_year": 30
+      }
+    },
+    "source": "https://www.transplant-observatory.org/wp-content/uploads/2026/10/NEWSLETTER-2026_alta.pdf",
+    "pdf_pages": [
+      66,
+      74
+    ],
+    "printed_pages": [
+      64,
+      72
+    ],
+    "counting_unit": "reported organ-list entries, not deduplicated patients",
+    "method": "Sum reported cells across six organs and country tables; preserve blanks as missing.",
+    "country_columns_in_tables": 94
+  }
 }

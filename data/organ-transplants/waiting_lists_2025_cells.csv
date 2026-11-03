@@ -1,0 +1,1129 @@
+pdf_page,country_column,organ,metric,value,source_row_top,raw_digits
+66,1,Kidney,waiting_year_end,579,171.827,579
+66,2,Kidney,waiting_year_end,1214,171.827,1214
+66,3,Kidney,waiting_year_end,921,171.827,921
+66,4,Kidney,waiting_year_end,265,171.827,265
+66,5,Kidney,waiting_year_end,92,171.827,92
+66,6,Kidney,waiting_year_end,313,171.827,313
+66,7,Kidney,waiting_year_end,339,171.827,339
+66,8,Kidney,waiting_year_end,50,171.827,50
+66,9,Kidney,waiting_year_end,250,171.827,250
+66,1,Kidney,deaths_during_year,13,182.227,13
+66,2,Kidney,deaths_during_year,38,182.227,38
+66,3,Kidney,deaths_during_year,62,182.227,62
+66,4,Kidney,deaths_during_year,24,182.227,24
+66,5,Kidney,deaths_during_year,0,182.227,0
+66,6,Kidney,deaths_during_year,23,182.227,23
+66,7,Kidney,deaths_during_year,12,182.227,12
+66,8,Kidney,deaths_during_year,4,182.227,4
+66,9,Kidney,deaths_during_year,6,182.227,6
+66,1,Liver,waiting_year_end,39,255.027,39
+66,2,Liver,waiting_year_end,145,255.027,145
+66,3,Liver,waiting_year_end,22,255.027,22
+66,4,Liver,waiting_year_end,323,255.027,323
+66,5,Liver,waiting_year_end,,255.027,
+66,6,Liver,waiting_year_end,90,255.027,90
+66,7,Liver,waiting_year_end,26,255.027,26
+66,8,Liver,waiting_year_end,9,255.027,9
+66,9,Liver,waiting_year_end,24,255.027,24
+66,1,Liver,deaths_during_year,24,265.427,24
+66,2,Liver,deaths_during_year,19,265.427,19
+66,3,Liver,deaths_during_year,15,265.427,15
+66,4,Liver,deaths_during_year,45,265.427,45
+66,5,Liver,deaths_during_year,,265.427,
+66,6,Liver,deaths_during_year,10,265.427,10
+66,7,Liver,deaths_during_year,2,265.427,2
+66,8,Liver,deaths_during_year,1,265.427,1
+66,9,Liver,deaths_during_year,0,265.427,0
+66,1,Heart,waiting_year_end,65,327.827,65
+66,2,Heart,waiting_year_end,57,327.827,57
+66,3,Heart,waiting_year_end,20,327.827,20
+66,4,Heart,waiting_year_end,7,327.827,7
+66,5,Heart,waiting_year_end,,327.827,
+66,6,Heart,waiting_year_end,42,327.827,42
+66,7,Heart,waiting_year_end,17,327.827,17
+66,8,Heart,waiting_year_end,,327.827,
+66,9,Heart,waiting_year_end,15,327.827,15
+66,1,Heart,deaths_during_year,3,338.227,3
+66,2,Heart,deaths_during_year,10,338.227,10
+66,3,Heart,deaths_during_year,8,338.227,8
+66,4,Heart,deaths_during_year,0,338.227,0
+66,5,Heart,deaths_during_year,,338.227,
+66,6,Heart,deaths_during_year,14,338.227,14
+66,7,Heart,deaths_during_year,3,338.227,3
+66,8,Heart,deaths_during_year,,338.227,
+66,9,Heart,deaths_during_year,1,338.227,1
+66,1,Lung,waiting_year_end,32,400.627,32
+66,2,Lung,waiting_year_end,50,400.627,50
+66,3,Lung,waiting_year_end,13,400.627,13
+66,4,Lung,waiting_year_end,7,400.627,7
+66,5,Lung,waiting_year_end,,400.627,
+66,6,Lung,waiting_year_end,35,400.627,35
+66,7,Lung,waiting_year_end,16,400.627,16
+66,8,Lung,waiting_year_end,1,400.627,1
+66,9,Lung,waiting_year_end,16,400.627,16
+66,1,Lung,deaths_during_year,1,411.027,1
+66,2,Lung,deaths_during_year,5,411.027,5
+66,3,Lung,deaths_during_year,1,411.027,1
+66,4,Lung,deaths_during_year,0,411.027,0
+66,5,Lung,deaths_during_year,,411.027,
+66,6,Lung,deaths_during_year,5,411.027,5
+66,7,Lung,deaths_during_year,0,411.027,0
+66,8,Lung,deaths_during_year,0,411.027,0
+66,9,Lung,deaths_during_year,1,411.027,1
+66,1,Pancreas,waiting_year_end,10,473.427,10
+66,2,Pancreas,waiting_year_end,40,473.427,40
+66,3,Pancreas,waiting_year_end,,473.427,
+66,4,Pancreas,waiting_year_end,13,473.427,13
+66,5,Pancreas,waiting_year_end,,473.427,
+66,6,Pancreas,waiting_year_end,22,473.427,22
+66,7,Pancreas,waiting_year_end,4,473.427,4
+66,8,Pancreas,waiting_year_end,2,473.427,2
+66,9,Pancreas,waiting_year_end,10,473.427,10
+66,1,Pancreas,deaths_during_year,0,483.827,0
+66,2,Pancreas,deaths_during_year,0,483.827,0
+66,3,Pancreas,deaths_during_year,,483.827,
+66,4,Pancreas,deaths_during_year,2,483.827,2
+66,5,Pancreas,deaths_during_year,,483.827,
+66,6,Pancreas,deaths_during_year,1,483.827,1
+66,7,Pancreas,deaths_during_year,0,483.827,0
+66,8,Pancreas,deaths_during_year,1,483.827,1
+66,9,Pancreas,deaths_during_year,0,483.827,0
+66,1,Small bowel,waiting_year_end,,546.227,
+66,2,Small bowel,waiting_year_end,5,546.227,5
+66,3,Small bowel,waiting_year_end,,546.227,
+66,4,Small bowel,waiting_year_end,,546.227,
+66,5,Small bowel,waiting_year_end,,546.227,
+66,6,Small bowel,waiting_year_end,0,546.227,0
+66,7,Small bowel,waiting_year_end,,546.227,
+66,8,Small bowel,waiting_year_end,,546.227,
+66,9,Small bowel,waiting_year_end,1,546.227,1
+66,1,Small bowel,deaths_during_year,,556.627,
+66,2,Small bowel,deaths_during_year,0,556.627,0
+66,3,Small bowel,deaths_during_year,,556.627,
+66,4,Small bowel,deaths_during_year,,556.627,
+66,5,Small bowel,deaths_during_year,,556.627,
+66,6,Small bowel,deaths_during_year,0,556.627,0
+66,7,Small bowel,deaths_during_year,,556.627,
+66,8,Small bowel,deaths_during_year,,556.627,
+66,9,Small bowel,deaths_during_year,0,556.627,0
+67,1,Kidney,waiting_year_end,11161,172.733,11161
+67,2,Kidney,waiting_year_end,6237,172.733,6237
+67,3,Kidney,waiting_year_end,1161,172.733,1161
+67,4,Kidney,waiting_year_end,753,172.733,753
+67,5,Kidney,waiting_year_end,437,172.733,437
+67,6,Kidney,waiting_year_end,6307,172.733,6307
+67,7,Kidney,waiting_year_end,39,172.733,39
+67,8,Kidney,waiting_year_end,117,172.733,117
+67,9,Kidney,waiting_year_end,93,172.733,93
+67,1,Kidney,deaths_during_year,695,183.133,695
+67,2,Kidney,deaths_during_year,313,183.133,313
+67,3,Kidney,deaths_during_year,12,183.133,12
+67,4,Kidney,deaths_during_year,37,183.133,37
+67,5,Kidney,deaths_during_year,12,183.133,12
+67,6,Kidney,deaths_during_year,118,183.133,118
+67,7,Kidney,deaths_during_year,1,183.133,1
+67,8,Kidney,deaths_during_year,5,183.133,5
+67,9,Kidney,deaths_during_year,4,183.133,4
+67,1,Liver,waiting_year_end,426,255.933,426
+67,2,Liver,waiting_year_end,938,255.933,938
+67,3,Liver,waiting_year_end,59,255.933,59
+67,4,Liver,waiting_year_end,128,255.933,128
+67,5,Liver,waiting_year_end,37,255.933,37
+67,6,Liver,waiting_year_end,1006,255.933,1006
+67,7,Liver,waiting_year_end,13,255.933,13
+67,8,Liver,waiting_year_end,44,255.933,44
+67,9,Liver,waiting_year_end,10,255.933,10
+67,1,Liver,deaths_during_year,205,266.333,205
+67,2,Liver,deaths_during_year,224,266.333,224
+67,3,Liver,deaths_during_year,6,266.333,6
+67,4,Liver,deaths_during_year,11,266.333,11
+67,5,Liver,deaths_during_year,5,266.333,5
+67,6,Liver,deaths_during_year,69,266.333,69
+67,7,Liver,deaths_during_year,6,266.333,6
+67,8,Liver,deaths_during_year,10,266.333,10
+67,9,Liver,deaths_during_year,4,266.333,4
+67,1,Heart,waiting_year_end,257,328.733,257
+67,2,Heart,waiting_year_end,730,328.733,730
+67,3,Heart,waiting_year_end,17,328.733,17
+67,4,Heart,waiting_year_end,29,328.733,29
+67,5,Heart,waiting_year_end,6,328.733,6
+67,6,Heart,waiting_year_end,768,328.733,768
+67,7,Heart,waiting_year_end,8,328.733,8
+67,8,Heart,waiting_year_end,39,328.733,39
+67,9,Heart,waiting_year_end,2,328.733,2
+67,1,Heart,deaths_during_year,75,339.133,75
+67,2,Heart,deaths_during_year,66,339.133,66
+67,3,Heart,deaths_during_year,1,339.133,1
+67,4,Heart,deaths_during_year,7,339.133,7
+67,5,Heart,deaths_during_year,0,339.133,0
+67,6,Heart,deaths_during_year,41,339.133,41
+67,7,Heart,deaths_during_year,2,339.133,2
+67,8,Heart,deaths_during_year,7,339.133,7
+67,9,Heart,deaths_during_year,0,339.133,0
+67,1,Lung,waiting_year_end,90,401.533,90
+67,2,Lung,waiting_year_end,323,401.533,323
+67,3,Lung,waiting_year_end,19,401.533,19
+67,4,Lung,waiting_year_end,15,401.533,15
+67,5,Lung,waiting_year_end,25,401.533,25
+67,6,Lung,waiting_year_end,257,401.533,257
+67,7,Lung,waiting_year_end,2,401.533,2
+67,8,Lung,waiting_year_end,4,401.533,4
+67,9,Lung,waiting_year_end,7,401.533,7
+67,1,Lung,deaths_during_year,14,411.933,14
+67,2,Lung,deaths_during_year,39,411.933,39
+67,3,Lung,deaths_during_year,3,411.933,3
+67,4,Lung,deaths_during_year,2,411.933,2
+67,5,Lung,deaths_during_year,8,411.933,8
+67,6,Lung,deaths_during_year,47,411.933,47
+67,7,Lung,deaths_during_year,0,411.933,0
+67,8,Lung,deaths_during_year,2,411.933,2
+67,9,Lung,deaths_during_year,0,411.933,0
+67,1,Pancreas,waiting_year_end,74,474.332,74
+67,2,Pancreas,waiting_year_end,291,474.332,291
+67,3,Pancreas,waiting_year_end,3,474.332,3
+67,4,Pancreas,waiting_year_end,9,474.332,9
+67,5,Pancreas,waiting_year_end,21,474.332,21
+67,6,Pancreas,waiting_year_end,202,474.332,202
+67,7,Pancreas,waiting_year_end,,474.332,
+67,8,Pancreas,waiting_year_end,,474.332,
+67,9,Pancreas,waiting_year_end,1,474.332,1
+67,1,Pancreas,deaths_during_year,1,484.732,1
+67,2,Pancreas,deaths_during_year,18,484.732,18
+67,3,Pancreas,deaths_during_year,0,484.732,0
+67,4,Pancreas,deaths_during_year,2,484.732,2
+67,5,Pancreas,deaths_during_year,0,484.732,0
+67,6,Pancreas,deaths_during_year,0,484.732,0
+67,7,Pancreas,deaths_during_year,,484.732,
+67,8,Pancreas,deaths_during_year,,484.732,
+67,9,Pancreas,deaths_during_year,0,484.732,0
+67,1,Small bowel,waiting_year_end,1,547.132,1
+67,2,Small bowel,waiting_year_end,4,547.132,4
+67,3,Small bowel,waiting_year_end,,547.132,
+67,4,Small bowel,waiting_year_end,,547.132,
+67,5,Small bowel,waiting_year_end,,547.132,
+67,6,Small bowel,waiting_year_end,6,547.132,6
+67,7,Small bowel,waiting_year_end,,547.132,
+67,8,Small bowel,waiting_year_end,,547.132,
+67,9,Small bowel,waiting_year_end,,547.132,
+67,1,Small bowel,deaths_during_year,0,557.532,0
+67,2,Small bowel,deaths_during_year,1,557.532,1
+67,3,Small bowel,deaths_during_year,,557.532,
+67,4,Small bowel,deaths_during_year,,557.532,
+67,5,Small bowel,deaths_during_year,,557.532,
+67,6,Small bowel,deaths_during_year,0,557.532,0
+67,7,Small bowel,deaths_during_year,,557.532,
+67,8,Small bowel,deaths_during_year,,557.532,
+67,9,Small bowel,deaths_during_year,,557.532,
+68,1,Kidney,waiting_year_end,96,172.278,96
+68,2,Kidney,waiting_year_end,1229,172.278,1229
+68,3,Kidney,waiting_year_end,1024,172.278,1024
+68,4,Kidney,waiting_year_end,1781,172.278,1781
+68,5,Kidney,waiting_year_end,3770,172.278,3770
+68,6,Kidney,waiting_year_end,271,172.278,271
+68,7,Kidney,waiting_year_end,60,172.278,60
+68,8,Kidney,waiting_year_end,4226,172.278,4226
+68,9,Kidney,waiting_year_end,389,172.278,389
+68,1,Kidney,deaths_during_year,4,182.729,4
+68,2,Kidney,deaths_during_year,101,182.729,101
+68,3,Kidney,deaths_during_year,95,182.729,95
+68,4,Kidney,deaths_during_year,21,182.729,21
+68,5,Kidney,deaths_during_year,115,182.729,115
+68,6,Kidney,deaths_during_year,15,182.729,15
+68,7,Kidney,deaths_during_year,4,182.729,4
+68,8,Kidney,deaths_during_year,,182.729,
+68,9,Kidney,deaths_during_year,23,182.729,23
+68,1,Liver,waiting_year_end,,255.829,
+68,2,Liver,waiting_year_end,72,255.829,72
+68,3,Liver,waiting_year_end,231,255.829,231
+68,4,Liver,waiting_year_end,111,255.829,111
+68,5,Liver,waiting_year_end,632,255.829,632
+68,6,Liver,waiting_year_end,25,255.829,25
+68,7,Liver,waiting_year_end,9,255.829,9
+68,8,Liver,waiting_year_end,309,255.829,309
+68,9,Liver,waiting_year_end,55,255.829,55
+68,1,Liver,deaths_during_year,,266.279,
+68,2,Liver,deaths_during_year,20,266.279,20
+68,3,Liver,deaths_during_year,22,266.279,22
+68,4,Liver,deaths_during_year,13,266.279,13
+68,5,Liver,deaths_during_year,36,266.279,36
+68,6,Liver,deaths_during_year,15,266.279,15
+68,7,Liver,deaths_during_year,4,266.279,4
+68,8,Liver,deaths_during_year,29,266.279,29
+68,9,Liver,deaths_during_year,2,266.279,2
+68,1,Heart,waiting_year_end,,328.929,
+68,2,Heart,waiting_year_end,122,328.929,122
+68,3,Heart,waiting_year_end,365,328.929,365
+68,4,Heart,waiting_year_end,48,328.929,48
+68,5,Heart,waiting_year_end,70,328.929,70
+68,6,Heart,waiting_year_end,33,328.929,33
+68,7,Heart,waiting_year_end,49,328.929,49
+68,8,Heart,waiting_year_end,145,328.929,145
+68,9,Heart,waiting_year_end,23,328.929,23
+68,1,Heart,deaths_during_year,,339.379,
+68,2,Heart,deaths_during_year,8,339.379,8
+68,3,Heart,deaths_during_year,56,339.379,56
+68,4,Heart,deaths_during_year,15,339.379,15
+68,5,Heart,deaths_during_year,3,339.379,3
+68,6,Heart,deaths_during_year,5,339.379,5
+68,7,Heart,deaths_during_year,4,339.379,4
+68,8,Heart,deaths_during_year,9,339.379,9
+68,9,Heart,deaths_during_year,1,339.379,1
+68,1,Lung,waiting_year_end,,402.028,
+68,2,Lung,waiting_year_end,173,402.028,173
+68,3,Lung,waiting_year_end,188,402.028,188
+68,4,Lung,waiting_year_end,51,402.028,51
+68,5,Lung,waiting_year_end,3,402.028,3
+68,6,Lung,waiting_year_end,,402.028,
+68,7,Lung,waiting_year_end,5,402.028,5
+68,8,Lung,waiting_year_end,172,402.028,172
+68,9,Lung,waiting_year_end,16,402.028,16
+68,1,Lung,deaths_during_year,,412.478,
+68,2,Lung,deaths_during_year,10,412.478,10
+68,3,Lung,deaths_during_year,38,412.478,38
+68,4,Lung,deaths_during_year,7,412.478,7
+68,5,Lung,deaths_during_year,2,412.478,2
+68,6,Lung,deaths_during_year,,412.478,
+68,7,Lung,deaths_during_year,,412.478,
+68,8,Lung,deaths_during_year,7,412.478,7
+68,9,Lung,deaths_during_year,4,412.478,4
+68,1,Pancreas,waiting_year_end,,475.129,
+68,2,Pancreas,waiting_year_end,34,475.129,34
+68,3,Pancreas,waiting_year_end,29,475.129,29
+68,4,Pancreas,waiting_year_end,29,475.129,29
+68,5,Pancreas,waiting_year_end,,475.129,
+68,6,Pancreas,waiting_year_end,,475.129,
+68,7,Pancreas,waiting_year_end,2,475.129,2
+68,8,Pancreas,waiting_year_end,93,475.129,93
+68,9,Pancreas,waiting_year_end,17,475.129,17
+68,1,Pancreas,deaths_during_year,,485.579,
+68,2,Pancreas,deaths_during_year,4,485.579,4
+68,3,Pancreas,deaths_during_year,4,485.579,4
+68,4,Pancreas,deaths_during_year,2,485.579,2
+68,5,Pancreas,deaths_during_year,,485.579,
+68,6,Pancreas,deaths_during_year,,485.579,
+68,7,Pancreas,deaths_during_year,,485.579,
+68,8,Pancreas,deaths_during_year,0,485.579,0
+68,9,Pancreas,deaths_during_year,0,485.579,0
+68,1,Small bowel,waiting_year_end,,548.228,
+68,2,Small bowel,waiting_year_end,1,548.228,1
+68,3,Small bowel,waiting_year_end,1,548.228,1
+68,4,Small bowel,waiting_year_end,,548.228,
+68,5,Small bowel,waiting_year_end,,548.228,
+68,6,Small bowel,waiting_year_end,,548.228,
+68,7,Small bowel,waiting_year_end,,548.228,
+68,8,Small bowel,waiting_year_end,3,548.228,3
+68,9,Small bowel,waiting_year_end,4,548.228,4
+68,1,Small bowel,deaths_during_year,,558.678,
+68,2,Small bowel,deaths_during_year,,558.678,
+68,3,Small bowel,deaths_during_year,0,558.678,0
+68,4,Small bowel,deaths_during_year,,558.678,
+68,5,Small bowel,deaths_during_year,,558.678,
+68,6,Small bowel,deaths_during_year,,558.678,
+68,7,Small bowel,deaths_during_year,,558.678,
+68,8,Small bowel,deaths_during_year,0,558.678,0
+68,9,Small bowel,deaths_during_year,0,558.678,0
+69,1,Kidney,waiting_year_end,8,179.624,8
+69,2,Kidney,waiting_year_end,,179.624,
+69,3,Kidney,waiting_year_end,1533,179.624,1533
+69,4,Kidney,waiting_year_end,690,179.624,690
+69,5,Kidney,waiting_year_end,,179.624,
+69,6,Kidney,waiting_year_end,251,179.624,251
+69,7,Kidney,waiting_year_end,165,179.624,165
+69,8,Kidney,waiting_year_end,40,179.624,40
+69,9,Kidney,waiting_year_end,1992,179.624,1992
+69,10,Kidney,waiting_year_end,104030,179.624,104030
+69,11,Kidney,waiting_year_end,,179.624,
+69,12,Kidney,waiting_year_end,,179.624,
+69,13,Kidney,waiting_year_end,,179.624,
+69,1,Kidney,deaths_during_year,0,189.874,0
+69,2,Kidney,deaths_during_year,,189.874,
+69,3,Kidney,deaths_during_year,3,189.874,3
+69,4,Kidney,deaths_during_year,160,189.874,160
+69,5,Kidney,deaths_during_year,,189.874,
+69,6,Kidney,deaths_during_year,12,189.874,12
+69,7,Kidney,deaths_during_year,3,189.874,3
+69,8,Kidney,deaths_during_year,0,189.874,0
+69,9,Kidney,deaths_during_year,74,189.874,74
+69,10,Kidney,deaths_during_year,1246,189.874,1246
+69,11,Kidney,deaths_during_year,,189.874,
+69,12,Kidney,deaths_during_year,,189.874,
+69,13,Kidney,deaths_during_year,,189.874,
+69,1,Liver,waiting_year_end,,261.624,
+69,2,Liver,waiting_year_end,,261.624,
+69,3,Liver,waiting_year_end,122,261.624,122
+69,4,Liver,waiting_year_end,,261.624,
+69,5,Liver,waiting_year_end,,261.624,
+69,6,Liver,waiting_year_end,148,261.624,148
+69,7,Liver,waiting_year_end,28,261.624,28
+69,8,Liver,waiting_year_end,,261.624,
+69,9,Liver,waiting_year_end,458,261.624,458
+69,10,Liver,waiting_year_end,7167,261.624,7167
+69,11,Liver,waiting_year_end,,261.624,
+69,12,Liver,waiting_year_end,,261.624,
+69,13,Liver,waiting_year_end,,261.624,
+69,1,Liver,deaths_during_year,,271.874,
+69,2,Liver,deaths_during_year,,271.874,
+69,3,Liver,deaths_during_year,13,271.874,13
+69,4,Liver,deaths_during_year,,271.874,
+69,5,Liver,deaths_during_year,,271.874,
+69,6,Liver,deaths_during_year,9,271.874,9
+69,7,Liver,deaths_during_year,3,271.874,3
+69,8,Liver,deaths_during_year,,271.874,
+69,9,Liver,deaths_during_year,86,271.874,86
+69,10,Liver,deaths_during_year,1842,271.874,1842
+69,11,Liver,deaths_during_year,,271.874,
+69,12,Liver,deaths_during_year,,271.874,
+69,13,Liver,deaths_during_year,,271.874,
+69,1,Heart,waiting_year_end,,333.374,
+69,2,Heart,waiting_year_end,,333.374,
+69,3,Heart,waiting_year_end,119,333.374,119
+69,4,Heart,waiting_year_end,,333.374,
+69,5,Heart,waiting_year_end,,333.374,
+69,6,Heart,waiting_year_end,103,333.374,103
+69,7,Heart,waiting_year_end,21,333.374,21
+69,8,Heart,waiting_year_end,,333.374,
+69,9,Heart,waiting_year_end,158,333.374,158
+69,10,Heart,waiting_year_end,1720,333.374,1720
+69,11,Heart,waiting_year_end,,333.374,
+69,12,Heart,waiting_year_end,,333.374,
+69,13,Heart,waiting_year_end,,333.374,
+69,1,Heart,deaths_during_year,,343.624,
+69,2,Heart,deaths_during_year,,343.624,
+69,3,Heart,deaths_during_year,4,343.624,4
+69,4,Heart,deaths_during_year,,343.624,
+69,5,Heart,deaths_during_year,,343.624,
+69,6,Heart,deaths_during_year,13,343.624,13
+69,7,Heart,deaths_during_year,3,343.624,3
+69,8,Heart,deaths_during_year,,343.624,
+69,9,Heart,deaths_during_year,15,343.624,15
+69,10,Heart,deaths_during_year,256,343.624,256
+69,11,Heart,deaths_during_year,,343.624,
+69,12,Heart,deaths_during_year,,343.624,
+69,13,Heart,deaths_during_year,,343.624,
+69,1,Lung,waiting_year_end,,405.124,
+69,2,Lung,waiting_year_end,,405.124,
+69,3,Lung,waiting_year_end,92,405.124,92
+69,4,Lung,waiting_year_end,,405.124,
+69,5,Lung,waiting_year_end,,405.124,
+69,6,Lung,waiting_year_end,22,405.124,22
+69,7,Lung,waiting_year_end,,405.124,
+69,8,Lung,waiting_year_end,,405.124,
+69,9,Lung,waiting_year_end,207,405.124,207
+69,10,Lung,waiting_year_end,235,405.124,235
+69,11,Lung,waiting_year_end,,405.124,
+69,12,Lung,waiting_year_end,,405.124,
+69,13,Lung,waiting_year_end,,405.124,
+69,1,Lung,deaths_during_year,,415.374,
+69,2,Lung,deaths_during_year,,415.374,
+69,3,Lung,deaths_during_year,11,415.374,11
+69,4,Lung,deaths_during_year,,415.374,
+69,5,Lung,deaths_during_year,,415.374,
+69,6,Lung,deaths_during_year,2,415.374,2
+69,7,Lung,deaths_during_year,,415.374,
+69,8,Lung,deaths_during_year,,415.374,
+69,9,Lung,deaths_during_year,31,415.374,31
+69,10,Lung,deaths_during_year,71,415.374,71
+69,11,Lung,deaths_during_year,,415.374,
+69,12,Lung,deaths_during_year,,415.374,
+69,13,Lung,deaths_during_year,,415.374,
+69,1,Pancreas,waiting_year_end,,476.874,
+69,2,Pancreas,waiting_year_end,,476.874,
+69,3,Pancreas,waiting_year_end,64,476.874,64
+69,4,Pancreas,waiting_year_end,,476.874,
+69,5,Pancreas,waiting_year_end,,476.874,
+69,6,Pancreas,waiting_year_end,10,476.874,10
+69,7,Pancreas,waiting_year_end,,476.874,
+69,8,Pancreas,waiting_year_end,,476.874,
+69,9,Pancreas,waiting_year_end,58,476.874,58
+69,10,Pancreas,waiting_year_end,,476.874,
+69,11,Pancreas,waiting_year_end,,476.874,
+69,12,Pancreas,waiting_year_end,,476.874,
+69,13,Pancreas,waiting_year_end,,476.874,
+69,1,Pancreas,deaths_during_year,,487.124,
+69,2,Pancreas,deaths_during_year,,487.124,
+69,3,Pancreas,deaths_during_year,1,487.124,1
+69,4,Pancreas,deaths_during_year,,487.124,
+69,5,Pancreas,deaths_during_year,,487.124,
+69,6,Pancreas,deaths_during_year,6,487.124,6
+69,7,Pancreas,deaths_during_year,,487.124,
+69,8,Pancreas,deaths_during_year,,487.124,
+69,9,Pancreas,deaths_during_year,6,487.124,6
+69,10,Pancreas,deaths_during_year,,487.124,
+69,11,Pancreas,deaths_during_year,,487.124,
+69,12,Pancreas,deaths_during_year,,487.124,
+69,13,Pancreas,deaths_during_year,,487.124,
+69,1,Small bowel,waiting_year_end,,548.624,
+69,2,Small bowel,waiting_year_end,,548.624,
+69,3,Small bowel,waiting_year_end,5,548.624,5
+69,4,Small bowel,waiting_year_end,,548.624,
+69,5,Small bowel,waiting_year_end,,548.624,
+69,6,Small bowel,waiting_year_end,,548.624,
+69,7,Small bowel,waiting_year_end,,548.624,
+69,8,Small bowel,waiting_year_end,,548.624,
+69,9,Small bowel,waiting_year_end,0,548.624,0
+69,10,Small bowel,waiting_year_end,,548.624,
+69,11,Small bowel,waiting_year_end,,548.624,
+69,12,Small bowel,waiting_year_end,,548.624,
+69,13,Small bowel,waiting_year_end,,548.624,
+69,1,Small bowel,deaths_during_year,,558.874,
+69,2,Small bowel,deaths_during_year,,558.874,
+69,3,Small bowel,deaths_during_year,1,558.874,1
+69,4,Small bowel,deaths_during_year,,558.874,
+69,5,Small bowel,deaths_during_year,,558.874,
+69,6,Small bowel,deaths_during_year,,558.874,
+69,7,Small bowel,deaths_during_year,,558.874,
+69,8,Small bowel,deaths_during_year,,558.874,
+69,9,Small bowel,deaths_during_year,0,558.874,0
+69,10,Small bowel,deaths_during_year,,558.874,
+69,11,Small bowel,deaths_during_year,,558.874,
+69,12,Small bowel,deaths_during_year,,558.874,
+69,13,Small bowel,deaths_during_year,,558.874,
+70,1,Kidney,waiting_year_end,,172.663,
+70,2,Kidney,waiting_year_end,61985,172.663,61985
+70,3,Kidney,waiting_year_end,5200,172.663,5200
+70,4,Kidney,waiting_year_end,1454,172.663,1454
+70,5,Kidney,waiting_year_end,3,172.663,3
+70,6,Kidney,waiting_year_end,15043,172.663,15043
+70,7,Kidney,waiting_year_end,4052,172.663,4052
+70,8,Kidney,waiting_year_end,,172.663,
+70,9,Kidney,waiting_year_end,227,172.663,227
+70,10,Kidney,waiting_year_end,123,172.663,123
+70,11,Kidney,waiting_year_end,,172.663,
+70,12,Kidney,waiting_year_end,626,172.663,626
+70,1,Kidney,deaths_during_year,,183.114,
+70,2,Kidney,deaths_during_year,,183.114,
+70,3,Kidney,deaths_during_year,4,183.114,4
+70,4,Kidney,deaths_during_year,56,183.114,56
+70,5,Kidney,deaths_during_year,,183.114,
+70,6,Kidney,deaths_during_year,216,183.114,216
+70,7,Kidney,deaths_during_year,262,183.114,262
+70,8,Kidney,deaths_during_year,,183.114,
+70,9,Kidney,deaths_during_year,5,183.114,5
+70,10,Kidney,deaths_during_year,1,183.114,1
+70,11,Kidney,deaths_during_year,,183.114,
+70,12,Kidney,deaths_during_year,22,183.114,22
+70,1,Liver,waiting_year_end,,256.264,
+70,2,Liver,waiting_year_end,19283,256.264,19283
+70,3,Liver,waiting_year_end,4134,256.264,4134
+70,4,Liver,waiting_year_end,133,256.264,133
+70,5,Liver,waiting_year_end,,256.264,
+70,6,Liver,waiting_year_end,519,256.264,519
+70,7,Liver,waiting_year_end,251,256.264,251
+70,8,Liver,waiting_year_end,,256.264,
+70,9,Liver,waiting_year_end,,256.264,
+70,10,Liver,waiting_year_end,12,256.264,12
+70,11,Liver,waiting_year_end,,256.264,
+70,12,Liver,waiting_year_end,453,256.264,453
+70,1,Liver,deaths_during_year,,266.714,
+70,2,Liver,deaths_during_year,,266.714,
+70,3,Liver,deaths_during_year,1,266.714,1
+70,4,Liver,deaths_during_year,16,266.714,16
+70,5,Liver,deaths_during_year,,266.714,
+70,6,Liver,deaths_during_year,117,266.714,117
+70,7,Liver,deaths_during_year,46,266.714,46
+70,8,Liver,deaths_during_year,,266.714,
+70,9,Liver,deaths_during_year,,266.714,
+70,10,Liver,deaths_during_year,3,266.714,3
+70,11,Liver,deaths_during_year,,266.714,
+70,12,Liver,deaths_during_year,60,266.714,60
+70,1,Heart,waiting_year_end,,329.414,
+70,2,Heart,waiting_year_end,1744,329.414,1744
+70,3,Heart,waiting_year_end,478,329.414,478
+70,4,Heart,waiting_year_end,100,329.414,100
+70,5,Heart,waiting_year_end,,329.414,
+70,6,Heart,waiting_year_end,766,329.414,766
+70,7,Heart,waiting_year_end,175,329.414,175
+70,8,Heart,waiting_year_end,,329.414,
+70,9,Heart,waiting_year_end,,329.414,
+70,10,Heart,waiting_year_end,26,329.414,26
+70,11,Heart,waiting_year_end,,329.414,
+70,12,Heart,waiting_year_end,,329.414,
+70,1,Heart,deaths_during_year,,339.864,
+70,2,Heart,deaths_during_year,,339.864,
+70,3,Heart,deaths_during_year,5,339.864,5
+70,4,Heart,deaths_during_year,5,339.864,5
+70,5,Heart,deaths_during_year,,339.864,
+70,6,Heart,deaths_during_year,30,339.864,30
+70,7,Heart,deaths_during_year,25,339.864,25
+70,8,Heart,deaths_during_year,,339.864,
+70,9,Heart,deaths_during_year,,339.864,
+70,10,Heart,deaths_during_year,3,339.864,3
+70,11,Heart,deaths_during_year,,339.864,
+70,12,Heart,deaths_during_year,,339.864,
+70,1,Lung,waiting_year_end,,402.565,
+70,2,Lung,waiting_year_end,979,402.565,979
+70,3,Lung,waiting_year_end,136,402.565,136
+70,4,Lung,waiting_year_end,214,402.565,214
+70,5,Lung,waiting_year_end,,402.565,
+70,6,Lung,waiting_year_end,393,402.565,393
+70,7,Lung,waiting_year_end,23,402.565,23
+70,8,Lung,waiting_year_end,,402.565,
+70,9,Lung,waiting_year_end,,402.565,
+70,10,Lung,waiting_year_end,3,402.565,3
+70,11,Lung,waiting_year_end,,402.565,
+70,12,Lung,waiting_year_end,,402.565,
+70,1,Lung,deaths_during_year,,413.015,
+70,2,Lung,deaths_during_year,,413.015,
+70,3,Lung,deaths_during_year,0,413.015,0
+70,4,Lung,deaths_during_year,15,413.015,15
+70,5,Lung,deaths_during_year,,413.015,
+70,6,Lung,deaths_during_year,85,413.015,85
+70,7,Lung,deaths_during_year,9,413.015,9
+70,8,Lung,deaths_during_year,,413.015,
+70,9,Lung,deaths_during_year,,413.015,
+70,10,Lung,deaths_during_year,0,413.015,0
+70,11,Lung,deaths_during_year,,413.015,
+70,12,Lung,deaths_during_year,,413.015,
+70,1,Pancreas,waiting_year_end,,475.714,
+70,2,Pancreas,waiting_year_end,309,475.714,309
+70,3,Pancreas,waiting_year_end,,475.714,
+70,4,Pancreas,waiting_year_end,8,475.714,8
+70,5,Pancreas,waiting_year_end,,475.714,
+70,6,Pancreas,waiting_year_end,84,475.714,84
+70,7,Pancreas,waiting_year_end,,475.714,
+70,8,Pancreas,waiting_year_end,,475.714,
+70,9,Pancreas,waiting_year_end,,475.714,
+70,10,Pancreas,waiting_year_end,,475.714,
+70,11,Pancreas,waiting_year_end,,475.714,
+70,12,Pancreas,waiting_year_end,,475.714,
+70,1,Pancreas,deaths_during_year,,486.164,
+70,2,Pancreas,deaths_during_year,,486.164,
+70,3,Pancreas,deaths_during_year,,486.164,
+70,4,Pancreas,deaths_during_year,0,486.164,0
+70,5,Pancreas,deaths_during_year,,486.164,
+70,6,Pancreas,deaths_during_year,6,486.164,6
+70,7,Pancreas,deaths_during_year,,486.164,
+70,8,Pancreas,deaths_during_year,,486.164,
+70,9,Pancreas,deaths_during_year,,486.164,
+70,10,Pancreas,deaths_during_year,,486.164,
+70,11,Pancreas,deaths_during_year,,486.164,
+70,12,Pancreas,deaths_during_year,,486.164,
+70,1,Small bowel,waiting_year_end,,548.864,
+70,2,Small bowel,waiting_year_end,102,548.864,102
+70,3,Small bowel,waiting_year_end,,548.864,
+70,4,Small bowel,waiting_year_end,1,548.864,1
+70,5,Small bowel,waiting_year_end,,548.864,
+70,6,Small bowel,waiting_year_end,9,548.864,9
+70,7,Small bowel,waiting_year_end,,548.864,
+70,8,Small bowel,waiting_year_end,,548.864,
+70,9,Small bowel,waiting_year_end,,548.864,
+70,10,Small bowel,waiting_year_end,,548.864,
+70,11,Small bowel,waiting_year_end,,548.864,
+70,12,Small bowel,waiting_year_end,,548.864,
+70,1,Small bowel,deaths_during_year,,559.314,
+70,2,Small bowel,deaths_during_year,,559.314,
+70,3,Small bowel,deaths_during_year,,559.314,
+70,4,Small bowel,deaths_during_year,0,559.314,0
+70,5,Small bowel,deaths_during_year,,559.314,
+70,6,Small bowel,deaths_during_year,4,559.314,4
+70,7,Small bowel,deaths_during_year,,559.314,
+70,8,Small bowel,deaths_during_year,,559.314,
+70,9,Small bowel,deaths_during_year,,559.314,
+70,10,Small bowel,deaths_during_year,,559.314,
+70,11,Small bowel,deaths_during_year,,559.314,
+70,12,Small bowel,deaths_during_year,,559.314,
+71,1,Kidney,waiting_year_end,,179.24,
+71,2,Kidney,waiting_year_end,170,179.24,170
+71,3,Kidney,waiting_year_end,395,179.24,395
+71,4,Kidney,waiting_year_end,,179.24,
+71,5,Kidney,waiting_year_end,,179.24,
+71,6,Kidney,waiting_year_end,286,179.24,286
+71,7,Kidney,waiting_year_end,197,179.24,197
+71,8,Kidney,waiting_year_end,36758,179.24,36758
+71,9,Kidney,waiting_year_end,25,179.24,25
+71,10,Kidney,waiting_year_end,167,179.24,167
+71,11,Kidney,waiting_year_end,416,179.24,416
+71,12,Kidney,waiting_year_end,2276,179.24,2276
+71,1,Kidney,deaths_during_year,,189.49,
+71,2,Kidney,deaths_during_year,109,189.49,109
+71,3,Kidney,deaths_during_year,16,189.49,16
+71,4,Kidney,deaths_during_year,,189.49,
+71,5,Kidney,deaths_during_year,,189.49,
+71,6,Kidney,deaths_during_year,13,189.49,13
+71,7,Kidney,deaths_during_year,9,189.49,9
+71,8,Kidney,deaths_during_year,17392,189.49,17392
+71,9,Kidney,deaths_during_year,3,189.49,3
+71,10,Kidney,deaths_during_year,,189.49,
+71,11,Kidney,deaths_during_year,17,189.49,17
+71,12,Kidney,deaths_during_year,237,189.49,237
+71,1,Liver,waiting_year_end,,261.24,
+71,2,Liver,waiting_year_end,,261.24,
+71,3,Liver,waiting_year_end,38,261.24,38
+71,4,Liver,waiting_year_end,20,261.24,20
+71,5,Liver,waiting_year_end,,261.24,
+71,6,Liver,waiting_year_end,7,261.24,7
+71,7,Liver,waiting_year_end,9,261.24,9
+71,8,Liver,waiting_year_end,6422,261.24,6422
+71,9,Liver,waiting_year_end,66,261.24,66
+71,10,Liver,waiting_year_end,12,261.24,12
+71,11,Liver,waiting_year_end,78,261.24,78
+71,12,Liver,waiting_year_end,38,261.24,38
+71,1,Liver,deaths_during_year,,271.49,
+71,2,Liver,deaths_during_year,,271.49,
+71,3,Liver,deaths_during_year,,271.49,
+71,4,Liver,deaths_during_year,1,271.49,1
+71,5,Liver,deaths_during_year,,271.49,
+71,6,Liver,deaths_during_year,2,271.49,2
+71,7,Liver,deaths_during_year,0,271.49,0
+71,8,Liver,deaths_during_year,1061,271.49,1061
+71,9,Liver,deaths_during_year,6,271.49,6
+71,10,Liver,deaths_during_year,,271.49,
+71,11,Liver,deaths_during_year,5,271.49,5
+71,12,Liver,deaths_during_year,3,271.49,3
+71,1,Heart,waiting_year_end,,332.99,
+71,2,Heart,waiting_year_end,,332.99,
+71,3,Heart,waiting_year_end,,332.99,
+71,4,Heart,waiting_year_end,,332.99,
+71,5,Heart,waiting_year_end,,332.99,
+71,6,Heart,waiting_year_end,,332.99,
+71,7,Heart,waiting_year_end,4,332.99,4
+71,8,Heart,waiting_year_end,1277,332.99,1277
+71,9,Heart,waiting_year_end,,332.99,
+71,10,Heart,waiting_year_end,35,332.99,35
+71,11,Heart,waiting_year_end,27,332.99,27
+71,12,Heart,waiting_year_end,149,332.99,149
+71,1,Heart,deaths_during_year,,343.24,
+71,2,Heart,deaths_during_year,,343.24,
+71,3,Heart,deaths_during_year,0,343.24,0
+71,4,Heart,deaths_during_year,,343.24,
+71,5,Heart,deaths_during_year,,343.24,
+71,6,Heart,deaths_during_year,,343.24,
+71,7,Heart,deaths_during_year,0,343.24,0
+71,8,Heart,deaths_during_year,176,343.24,176
+71,9,Heart,deaths_during_year,,343.24,
+71,10,Heart,deaths_during_year,,343.24,
+71,11,Heart,deaths_during_year,4,343.24,4
+71,12,Heart,deaths_during_year,24,343.24,24
+71,1,Lung,waiting_year_end,,404.74,
+71,2,Lung,waiting_year_end,,404.74,
+71,3,Lung,waiting_year_end,,404.74,
+71,4,Lung,waiting_year_end,,404.74,
+71,5,Lung,waiting_year_end,,404.74,
+71,6,Lung,waiting_year_end,4,404.74,4
+71,7,Lung,waiting_year_end,,404.74,
+71,8,Lung,waiting_year_end,477,404.74,477
+71,9,Lung,waiting_year_end,,404.74,
+71,10,Lung,waiting_year_end,,404.74,
+71,11,Lung,waiting_year_end,,404.74,
+71,12,Lung,waiting_year_end,37,404.74,37
+71,1,Lung,deaths_during_year,,414.99,
+71,2,Lung,deaths_during_year,,414.99,
+71,3,Lung,deaths_during_year,0,414.99,0
+71,4,Lung,deaths_during_year,,414.99,
+71,5,Lung,deaths_during_year,,414.99,
+71,6,Lung,deaths_during_year,0,414.99,0
+71,7,Lung,deaths_during_year,,414.99,
+71,8,Lung,deaths_during_year,97,414.99,97
+71,9,Lung,deaths_during_year,,414.99,
+71,10,Lung,deaths_during_year,,414.99,
+71,11,Lung,deaths_during_year,,414.99,
+71,12,Lung,deaths_during_year,4,414.99,4
+71,1,Pancreas,waiting_year_end,,476.49,
+71,2,Pancreas,waiting_year_end,,476.49,
+71,3,Pancreas,waiting_year_end,5,476.49,5
+71,4,Pancreas,waiting_year_end,,476.49,
+71,5,Pancreas,waiting_year_end,,476.49,
+71,6,Pancreas,waiting_year_end,,476.49,
+71,7,Pancreas,waiting_year_end,,476.49,
+71,8,Pancreas,waiting_year_end,1568,476.49,1568
+71,9,Pancreas,waiting_year_end,,476.49,
+71,10,Pancreas,waiting_year_end,,476.49,
+71,11,Pancreas,waiting_year_end,,476.49,
+71,12,Pancreas,waiting_year_end,,476.49,
+71,1,Pancreas,deaths_during_year,,486.74,
+71,2,Pancreas,deaths_during_year,,486.74,
+71,3,Pancreas,deaths_during_year,0,486.74,0
+71,4,Pancreas,deaths_during_year,,486.74,
+71,5,Pancreas,deaths_during_year,,486.74,
+71,6,Pancreas,deaths_during_year,,486.74,
+71,7,Pancreas,deaths_during_year,,486.74,
+71,8,Pancreas,deaths_during_year,78,486.74,78
+71,9,Pancreas,deaths_during_year,,486.74,
+71,10,Pancreas,deaths_during_year,,486.74,
+71,11,Pancreas,deaths_during_year,,486.74,
+71,12,Pancreas,deaths_during_year,,486.74,
+71,1,Small bowel,waiting_year_end,,548.24,
+71,2,Small bowel,waiting_year_end,,548.24,
+71,3,Small bowel,waiting_year_end,,548.24,
+71,4,Small bowel,waiting_year_end,,548.24,
+71,5,Small bowel,waiting_year_end,,548.24,
+71,6,Small bowel,waiting_year_end,,548.24,
+71,7,Small bowel,waiting_year_end,,548.24,
+71,8,Small bowel,waiting_year_end,24,548.24,24
+71,9,Small bowel,waiting_year_end,,548.24,
+71,10,Small bowel,waiting_year_end,,548.24,
+71,11,Small bowel,waiting_year_end,,548.24,
+71,12,Small bowel,waiting_year_end,,548.24,
+71,1,Small bowel,deaths_during_year,,558.49,
+71,2,Small bowel,deaths_during_year,,558.49,
+71,3,Small bowel,deaths_during_year,,558.49,
+71,4,Small bowel,deaths_during_year,,558.49,
+71,5,Small bowel,deaths_during_year,,558.49,
+71,6,Small bowel,deaths_during_year,,558.49,
+71,7,Small bowel,deaths_during_year,,558.49,
+71,8,Small bowel,deaths_during_year,0,558.49,0
+71,9,Small bowel,deaths_during_year,,558.49,
+71,10,Small bowel,deaths_during_year,,558.49,
+71,11,Small bowel,deaths_during_year,,558.49,
+71,12,Small bowel,deaths_during_year,,558.49,
+72,1,Kidney,waiting_year_end,1112,179.093,1112
+72,2,Kidney,waiting_year_end,,179.093,
+72,3,Kidney,waiting_year_end,421,179.093,421
+72,4,Kidney,waiting_year_end,,179.093,
+72,5,Kidney,waiting_year_end,6493,179.093,6493
+72,6,Kidney,waiting_year_end,34,179.093,34
+72,7,Kidney,waiting_year_end,1425,179.093,1425
+72,8,Kidney,waiting_year_end,25725,179.093,25725
+72,9,Kidney,waiting_year_end,1109,179.093,1109
+72,10,Kidney,waiting_year_end,534,179.093,534
+72,11,Kidney,waiting_year_end,7122,179.093,7122
+72,12,Kidney,waiting_year_end,51638,179.093,51638
+72,13,Kidney,waiting_year_end,,179.093,
+72,1,Kidney,deaths_during_year,,189.343,
+72,2,Kidney,deaths_during_year,,189.343,
+72,3,Kidney,deaths_during_year,27,189.343,27
+72,4,Kidney,deaths_during_year,,189.343,
+72,5,Kidney,deaths_during_year,156,189.343,156
+72,6,Kidney,deaths_during_year,27,189.343,27
+72,7,Kidney,deaths_during_year,,189.343,
+72,8,Kidney,deaths_during_year,2071,189.343,2071
+72,9,Kidney,deaths_during_year,,189.343,
+72,10,Kidney,deaths_during_year,8,189.343,8
+72,11,Kidney,deaths_during_year,344,189.343,344
+72,12,Kidney,deaths_during_year,3318,189.343,3318
+72,13,Kidney,deaths_during_year,,189.343,
+72,1,Liver,waiting_year_end,,261.093,
+72,2,Liver,waiting_year_end,,261.093,
+72,3,Liver,waiting_year_end,129,261.093,129
+72,4,Liver,waiting_year_end,,261.093,
+72,5,Liver,waiting_year_end,411,261.093,411
+72,6,Liver,waiting_year_end,,261.093,
+72,7,Liver,waiting_year_end,19,261.093,19
+72,8,Liver,waiting_year_end,2674,261.093,2674
+72,9,Liver,waiting_year_end,414,261.093,414
+72,10,Liver,waiting_year_end,72,261.093,72
+72,11,Liver,waiting_year_end,654,261.093,654
+72,12,Liver,waiting_year_end,6607,261.093,6607
+72,13,Liver,waiting_year_end,,261.093,
+72,1,Liver,deaths_during_year,,271.343,
+72,2,Liver,deaths_during_year,,271.343,
+72,3,Liver,deaths_during_year,32,271.343,32
+72,4,Liver,deaths_during_year,,271.343,
+72,5,Liver,deaths_during_year,38,271.343,38
+72,6,Liver,deaths_during_year,,271.343,
+72,7,Liver,deaths_during_year,8,271.343,8
+72,8,Liver,deaths_during_year,487,271.343,487
+72,9,Liver,deaths_during_year,,271.343,
+72,10,Liver,deaths_during_year,13,271.343,13
+72,11,Liver,deaths_during_year,41,271.343,41
+72,12,Liver,deaths_during_year,812,271.343,812
+72,13,Liver,deaths_during_year,,271.343,
+72,1,Heart,waiting_year_end,,332.843,
+72,2,Heart,waiting_year_end,,332.843,
+72,3,Heart,waiting_year_end,23,332.843,23
+72,4,Heart,waiting_year_end,,332.843,
+72,5,Heart,waiting_year_end,37,332.843,37
+72,6,Heart,waiting_year_end,,332.843,
+72,7,Heart,waiting_year_end,,332.843,
+72,8,Heart,waiting_year_end,1552,332.843,1552
+72,9,Heart,waiting_year_end,444,332.843,444
+72,10,Heart,waiting_year_end,11,332.843,11
+72,11,Heart,waiting_year_end,297,332.843,297
+72,12,Heart,waiting_year_end,3205,332.843,3205
+72,13,Heart,waiting_year_end,,332.843,
+72,1,Heart,deaths_during_year,,343.093,
+72,2,Heart,deaths_during_year,,343.093,
+72,3,Heart,deaths_during_year,4,343.093,4
+72,4,Heart,deaths_during_year,,343.093,
+72,5,Heart,deaths_during_year,6,343.093,6
+72,6,Heart,deaths_during_year,,343.093,
+72,7,Heart,deaths_during_year,,343.093,
+72,8,Heart,deaths_during_year,251,343.093,251
+72,9,Heart,deaths_during_year,,343.093,
+72,10,Heart,deaths_during_year,0,343.093,0
+72,11,Heart,deaths_during_year,21,343.093,21
+72,12,Heart,deaths_during_year,207,343.093,207
+72,13,Heart,deaths_during_year,,343.093,
+72,1,Lung,waiting_year_end,,404.593,
+72,2,Lung,waiting_year_end,,404.593,
+72,3,Lung,waiting_year_end,18,404.593,18
+72,4,Lung,waiting_year_end,,404.593,
+72,5,Lung,waiting_year_end,5,404.593,5
+72,6,Lung,waiting_year_end,,404.593,
+72,7,Lung,waiting_year_end,,404.593,
+72,8,Lung,waiting_year_end,211,404.593,211
+72,9,Lung,waiting_year_end,5,404.593,5
+72,10,Lung,waiting_year_end,8,404.593,8
+72,11,Lung,waiting_year_end,189,404.593,189
+72,12,Lung,waiting_year_end,1016,404.593,1016
+72,13,Lung,waiting_year_end,,404.593,
+72,1,Lung,deaths_during_year,,414.843,
+72,2,Lung,deaths_during_year,,414.843,
+72,3,Lung,deaths_during_year,5,414.843,5
+72,4,Lung,deaths_during_year,,414.843,
+72,5,Lung,deaths_during_year,0,414.843,0
+72,6,Lung,deaths_during_year,,414.843,
+72,7,Lung,deaths_during_year,,414.843,
+72,8,Lung,deaths_during_year,69,414.843,69
+72,9,Lung,deaths_during_year,,414.843,
+72,10,Lung,deaths_during_year,1,414.843,1
+72,11,Lung,deaths_during_year,28,414.843,28
+72,12,Lung,deaths_during_year,81,414.843,81
+72,13,Lung,deaths_during_year,,414.843,
+72,1,Pancreas,waiting_year_end,,476.343,
+72,2,Pancreas,waiting_year_end,,476.343,
+72,3,Pancreas,waiting_year_end,8,476.343,8
+72,4,Pancreas,waiting_year_end,,476.343,
+72,5,Pancreas,waiting_year_end,1,476.343,1
+72,6,Pancreas,waiting_year_end,,476.343,
+72,7,Pancreas,waiting_year_end,,476.343,
+72,8,Pancreas,waiting_year_end,235,476.343,235
+72,9,Pancreas,waiting_year_end,1,476.343,1
+72,10,Pancreas,waiting_year_end,17,476.343,17
+72,11,Pancreas,waiting_year_end,324,476.343,324
+72,12,Pancreas,waiting_year_end,1418,476.343,1418
+72,13,Pancreas,waiting_year_end,,476.343,
+72,1,Pancreas,deaths_during_year,,486.593,
+72,2,Pancreas,deaths_during_year,,486.593,
+72,3,Pancreas,deaths_during_year,2,486.593,2
+72,4,Pancreas,deaths_during_year,,486.593,
+72,5,Pancreas,deaths_during_year,0,486.593,0
+72,6,Pancreas,deaths_during_year,,486.593,
+72,7,Pancreas,deaths_during_year,,486.593,
+72,8,Pancreas,deaths_during_year,23,486.593,23
+72,9,Pancreas,deaths_during_year,,486.593,
+72,10,Pancreas,deaths_during_year,0,486.593,0
+72,11,Pancreas,deaths_during_year,29,486.593,29
+72,12,Pancreas,deaths_during_year,119,486.593,119
+72,13,Pancreas,deaths_during_year,,486.593,
+72,1,Small bowel,waiting_year_end,,548.093,
+72,2,Small bowel,waiting_year_end,,548.093,
+72,3,Small bowel,waiting_year_end,,548.093,
+72,4,Small bowel,waiting_year_end,,548.093,
+72,5,Small bowel,waiting_year_end,,548.093,
+72,6,Small bowel,waiting_year_end,,548.093,
+72,7,Small bowel,waiting_year_end,,548.093,
+72,8,Small bowel,waiting_year_end,4,548.093,4
+72,9,Small bowel,waiting_year_end,,548.093,
+72,10,Small bowel,waiting_year_end,,548.093,
+72,11,Small bowel,waiting_year_end,13,548.093,13
+72,12,Small bowel,waiting_year_end,103,548.093,103
+72,13,Small bowel,waiting_year_end,,548.093,
+72,1,Small bowel,deaths_during_year,,558.343,
+72,2,Small bowel,deaths_during_year,,558.343,
+72,3,Small bowel,deaths_during_year,,558.343,
+72,4,Small bowel,deaths_during_year,,558.343,
+72,5,Small bowel,deaths_during_year,,558.343,
+72,6,Small bowel,deaths_during_year,,558.343,
+72,7,Small bowel,deaths_during_year,,558.343,
+72,8,Small bowel,deaths_during_year,6,558.343,6
+72,9,Small bowel,deaths_during_year,,558.343,
+72,10,Small bowel,deaths_during_year,,558.343,
+72,11,Small bowel,deaths_during_year,1,558.343,1
+72,12,Small bowel,deaths_during_year,15,558.343,15
+72,13,Small bowel,deaths_during_year,,558.343,
+73,1,Kidney,waiting_year_end,5468,179.584,5468
+73,2,Kidney,waiting_year_end,8,179.584,8
+73,3,Kidney,waiting_year_end,38871,179.584,38871
+73,4,Kidney,waiting_year_end,1412,179.584,1412
+73,5,Kidney,waiting_year_end,3898,179.584,3898
+73,6,Kidney,waiting_year_end,323,179.584,323
+73,7,Kidney,waiting_year_end,155,179.584,155
+73,8,Kidney,waiting_year_end,480,179.584,480
+73,9,Kidney,waiting_year_end,599,179.584,599
+73,1,Kidney,deaths_during_year,333,189.834,333
+73,2,Kidney,deaths_during_year,0,189.834,0
+73,3,Kidney,deaths_during_year,2155,189.834,2155
+73,4,Kidney,deaths_during_year,26,189.834,26
+73,5,Kidney,deaths_during_year,77,189.834,77
+73,6,Kidney,deaths_during_year,221,189.834,221
+73,7,Kidney,deaths_during_year,60,189.834,60
+73,8,Kidney,deaths_during_year,22,189.834,22
+73,9,Kidney,deaths_during_year,2,189.834,2
+73,1,Liver,waiting_year_end,1031,261.584,1031
+73,2,Liver,waiting_year_end,,261.584,
+73,3,Liver,waiting_year_end,1457,261.584,1457
+73,4,Liver,waiting_year_end,,261.584,
+73,5,Liver,waiting_year_end,189,261.584,189
+73,6,Liver,waiting_year_end,49,261.584,49
+73,7,Liver,waiting_year_end,9,261.584,9
+73,8,Liver,waiting_year_end,,261.584,
+73,9,Liver,waiting_year_end,8,261.584,8
+73,1,Liver,deaths_during_year,119,271.834,119
+73,2,Liver,deaths_during_year,,271.834,
+73,3,Liver,deaths_during_year,683,271.834,683
+73,4,Liver,deaths_during_year,33,271.834,33
+73,5,Liver,deaths_during_year,13,271.834,13
+73,6,Liver,deaths_during_year,10,271.834,10
+73,7,Liver,deaths_during_year,1,271.834,1
+73,8,Liver,deaths_during_year,,271.834,
+73,9,Liver,deaths_during_year,1,271.834,1
+73,1,Heart,waiting_year_end,176,333.334,176
+73,2,Heart,waiting_year_end,,333.334,
+73,3,Heart,waiting_year_end,387,333.334,387
+73,4,Heart,waiting_year_end,22,333.334,22
+73,5,Heart,waiting_year_end,27,333.334,27
+73,6,Heart,waiting_year_end,3,333.334,3
+73,7,Heart,waiting_year_end,2,333.334,2
+73,8,Heart,waiting_year_end,,333.334,
+73,9,Heart,waiting_year_end,6,333.334,6
+73,1,Heart,deaths_during_year,23,343.585,23
+73,2,Heart,deaths_during_year,,343.585,
+73,3,Heart,deaths_during_year,146,343.585,146
+73,4,Heart,deaths_during_year,1,343.585,1
+73,5,Heart,deaths_during_year,2,343.585,2
+73,6,Heart,deaths_during_year,0,343.585,0
+73,7,Heart,deaths_during_year,2,343.585,2
+73,8,Heart,deaths_during_year,,343.585,
+73,9,Heart,deaths_during_year,3,343.585,3
+73,1,Lung,waiting_year_end,325,405.084,325
+73,2,Lung,waiting_year_end,,405.084,
+73,3,Lung,waiting_year_end,236,405.084,236
+73,4,Lung,waiting_year_end,62,405.084,62
+73,5,Lung,waiting_year_end,38,405.084,38
+73,6,Lung,waiting_year_end,2,405.084,2
+73,7,Lung,waiting_year_end,,405.084,
+73,8,Lung,waiting_year_end,,405.084,
+73,9,Lung,waiting_year_end,1,405.084,1
+73,1,Lung,deaths_during_year,49,415.334,49
+73,2,Lung,deaths_during_year,,415.334,
+73,3,Lung,deaths_during_year,40,415.334,40
+73,4,Lung,deaths_during_year,7,415.334,7
+73,5,Lung,deaths_during_year,5,415.334,5
+73,6,Lung,deaths_during_year,3,415.334,3
+73,7,Lung,deaths_during_year,,415.334,
+73,8,Lung,deaths_during_year,,415.334,
+73,9,Lung,deaths_during_year,0,415.334,0
+73,1,Pancreas,waiting_year_end,217,476.834,217
+73,2,Pancreas,waiting_year_end,,476.834,
+73,3,Pancreas,waiting_year_end,316,476.834,316
+73,4,Pancreas,waiting_year_end,22,476.834,22
+73,5,Pancreas,waiting_year_end,38,476.834,38
+73,6,Pancreas,waiting_year_end,,476.834,
+73,7,Pancreas,waiting_year_end,,476.834,
+73,8,Pancreas,waiting_year_end,,476.834,
+73,9,Pancreas,waiting_year_end,,476.834,
+73,1,Pancreas,deaths_during_year,13,487.085,13
+73,2,Pancreas,deaths_during_year,,487.085,
+73,3,Pancreas,deaths_during_year,20,487.085,20
+73,4,Pancreas,deaths_during_year,1,487.085,1
+73,5,Pancreas,deaths_during_year,1,487.085,1
+73,6,Pancreas,deaths_during_year,,487.085,
+73,7,Pancreas,deaths_during_year,,487.085,
+73,8,Pancreas,deaths_during_year,,487.085,
+73,9,Pancreas,deaths_during_year,,487.085,
+73,1,Small bowel,waiting_year_end,10,548.584,10
+73,2,Small bowel,waiting_year_end,,548.584,
+73,3,Small bowel,waiting_year_end,6,548.584,6
+73,4,Small bowel,waiting_year_end,,548.584,
+73,5,Small bowel,waiting_year_end,4,548.584,4
+73,6,Small bowel,waiting_year_end,,548.584,
+73,7,Small bowel,waiting_year_end,,548.584,
+73,8,Small bowel,waiting_year_end,,548.584,
+73,9,Small bowel,waiting_year_end,,548.584,
+73,1,Small bowel,deaths_during_year,1,558.835,1
+73,2,Small bowel,deaths_during_year,,558.835,
+73,3,Small bowel,deaths_during_year,1,558.835,1
+73,4,Small bowel,deaths_during_year,,558.835,
+73,5,Small bowel,deaths_during_year,0,558.835,0
+73,6,Small bowel,deaths_during_year,,558.835,
+73,7,Small bowel,deaths_during_year,,558.835,
+73,8,Small bowel,deaths_during_year,,558.835,
+73,9,Small bowel,deaths_during_year,,558.835,
+74,1,Kidney,waiting_year_end,,171.772,
+74,2,Kidney,waiting_year_end,,171.772,
+74,3,Kidney,waiting_year_end,,171.772,
+74,4,Kidney,waiting_year_end,16444,171.772,16444
+74,5,Kidney,waiting_year_end,250,171.772,250
+74,6,Kidney,waiting_year_end,141,171.772,141
+74,7,Kidney,waiting_year_end,583,171.772,583
+74,8,Kidney,waiting_year_end,622,171.772,622
+74,1,Kidney,deaths_during_year,,182.174,
+74,2,Kidney,deaths_during_year,0,182.174,0
+74,3,Kidney,deaths_during_year,,182.174,
+74,4,Kidney,deaths_during_year,331,182.174,331
+74,5,Kidney,deaths_during_year,8,182.174,8
+74,6,Kidney,deaths_during_year,0,182.174,0
+74,7,Kidney,deaths_during_year,,182.174,
+74,8,Kidney,deaths_during_year,22,182.174,22
+74,1,Liver,waiting_year_end,,254.972,
+74,2,Liver,waiting_year_end,,254.972,
+74,3,Liver,waiting_year_end,,254.972,
+74,4,Liver,waiting_year_end,200,254.972,200
+74,5,Liver,waiting_year_end,14,254.972,14
+74,6,Liver,waiting_year_end,,254.972,
+74,7,Liver,waiting_year_end,45,254.972,45
+74,8,Liver,waiting_year_end,35,254.972,35
+74,1,Liver,deaths_during_year,,265.374,
+74,2,Liver,deaths_during_year,,265.374,
+74,3,Liver,deaths_during_year,,265.374,
+74,4,Liver,deaths_during_year,58,265.374,58
+74,5,Liver,deaths_during_year,3,265.374,3
+74,6,Liver,deaths_during_year,,265.374,
+74,7,Liver,deaths_during_year,,265.374,
+74,8,Liver,deaths_during_year,4,265.374,4
+74,1,Heart,waiting_year_end,,327.772,
+74,2,Heart,waiting_year_end,,327.772,
+74,3,Heart,waiting_year_end,,327.772,
+74,4,Heart,waiting_year_end,22,327.772,22
+74,5,Heart,waiting_year_end,,327.772,
+74,6,Heart,waiting_year_end,7,327.772,7
+74,7,Heart,waiting_year_end,4,327.772,4
+74,8,Heart,waiting_year_end,86,327.772,86
+74,1,Heart,deaths_during_year,,338.174,
+74,2,Heart,deaths_during_year,,338.174,
+74,3,Heart,deaths_during_year,,338.174,
+74,4,Heart,deaths_during_year,4,338.174,4
+74,5,Heart,deaths_during_year,,338.174,
+74,6,Heart,deaths_during_year,5,338.174,5
+74,7,Heart,deaths_during_year,,338.174,
+74,8,Heart,deaths_during_year,8,338.174,8
+74,1,Lung,waiting_year_end,,400.572,
+74,2,Lung,waiting_year_end,,400.572,
+74,3,Lung,waiting_year_end,,400.572,
+74,4,Lung,waiting_year_end,2,400.572,2
+74,5,Lung,waiting_year_end,,400.572,
+74,6,Lung,waiting_year_end,,400.572,
+74,7,Lung,waiting_year_end,5,400.572,5
+74,8,Lung,waiting_year_end,22,400.572,22
+74,1,Lung,deaths_during_year,,410.974,
+74,2,Lung,deaths_during_year,,410.974,
+74,3,Lung,deaths_during_year,,410.974,
+74,4,Lung,deaths_during_year,0,410.974,0
+74,5,Lung,deaths_during_year,,410.974,
+74,6,Lung,deaths_during_year,,410.974,
+74,7,Lung,deaths_during_year,,410.974,
+74,8,Lung,deaths_during_year,3,410.974,3
+74,1,Pancreas,waiting_year_end,,473.372,
+74,2,Pancreas,waiting_year_end,,473.372,
+74,3,Pancreas,waiting_year_end,,473.372,
+74,4,Pancreas,waiting_year_end,2,473.372,2
+74,5,Pancreas,waiting_year_end,,473.372,
+74,6,Pancreas,waiting_year_end,,473.372,
+74,7,Pancreas,waiting_year_end,2,473.372,2
+74,8,Pancreas,waiting_year_end,,473.372,
+74,1,Pancreas,deaths_during_year,,483.774,
+74,2,Pancreas,deaths_during_year,,483.774,
+74,3,Pancreas,deaths_during_year,,483.774,
+74,4,Pancreas,deaths_during_year,0,483.774,0
+74,5,Pancreas,deaths_during_year,,483.774,
+74,6,Pancreas,deaths_during_year,,483.774,
+74,7,Pancreas,deaths_during_year,,483.774,
+74,8,Pancreas,deaths_during_year,,483.774,
+74,1,Small bowel,waiting_year_end,,546.179,
+74,2,Small bowel,waiting_year_end,,546.179,
+74,3,Small bowel,waiting_year_end,,546.179,
+74,4,Small bowel,waiting_year_end,,546.179,
+74,5,Small bowel,waiting_year_end,,546.179,
+74,6,Small bowel,waiting_year_end,,546.179,
+74,7,Small bowel,waiting_year_end,,546.179,
+74,8,Small bowel,waiting_year_end,,546.179,
+74,1,Small bowel,deaths_during_year,,556.581,
+74,2,Small bowel,deaths_during_year,,556.581,
+74,3,Small bowel,deaths_during_year,,556.581,
+74,4,Small bowel,deaths_during_year,,556.581,
+74,5,Small bowel,deaths_during_year,,556.581,
+74,6,Small bowel,deaths_during_year,,556.581,
+74,7,Small bowel,deaths_during_year,,556.581,
+74,8,Small bowel,deaths_during_year,,556.581,
