@@ -12,7 +12,7 @@ def settings():
 
 
 def image_uri(path):
-    mime = 'image/png' if path.endswith('.png') else 'image/jpeg'
+    mime = {'.png': 'image/png', '.svg': 'image/svg+xml'}.get(Path(path).suffix.lower(), 'image/jpeg')
     return f'data:{mime};base64,' + base64.b64encode((ROOT / path).read_bytes()).decode()
 
 
@@ -37,7 +37,7 @@ def render_introduction():
     return (f'<div class="profile-glow" aria-hidden="true"></div>'
             f'<h1 class="profile-name editable" data-edit="profile-name">{html.escape(c["presenter"])}</h1>'
             f'<ul class="profile-points" aria-live="polite">{points}</ul>'
-            f'<figure class="profile-photo"><img src="{image_uri(c["portrait"]["path"])}" alt="Florence Mei Kuan Wong standing in a snowy alpine village"></figure>')
+            f'<figure class="profile-photo"><img src="{image_uri(c["portrait"]["path"])}" alt="{html.escape(c["portrait"].get("alt", c["presenter"]))}"></figure>')
 
 
 def render_contents():

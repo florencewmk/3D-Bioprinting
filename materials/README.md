@@ -58,9 +58,7 @@ credited to the [YouTube source supplied by the user](https://www.youtube.com/wa
 Only a CSS zoom is applied; the video itself is not downloaded or embedded.
 Source paths and provenance are also recorded in `presentation/settings.json`.
 
-### Selected presenter portrait
+### Selected presenter illustration
 
-The current first slide uses the exact `IMG_6938 2.jpg` supplied by the user
-on 3 November 2026, stored unchanged at `images/589de14a6908f111ea6d43562c7d131fe4f93007167e9e6068482dbe83508e0f.jpg`
-(1585 × 2530 pixels). The whole image fits within the existing
-portrait area at its natural proportions. Prior portrait files remain archived.
+Slide 1 uses the user-selected `florence-hello.svg`, archived unchanged as
+`materials/diagrams/9ffbb249c214310bad7869403ad0a1beeab9a440f525dccbbbfc881485b10e14.svg`. The SVG is embedded for offline playback.

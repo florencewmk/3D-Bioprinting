@@ -26,10 +26,11 @@
     "provenance": "Unchanged still image supplied by the user on 3 November 2026; user identifies the linked YouTube video as its source."
   },
   "portrait": {
-    "path": "materials/images/589de14a6908f111ea6d43562c7d131fe4f93007167e9e6068482dbe83508e0f.jpg",
-    "width": 1585,
-    "height": 2530,
-    "provenance": "IMG_6938 2.jpg supplied and selected by the user on 3 November 2026; unchanged original JPEG bytes, displayed fully at its natural proportions."
+    "path": "materials/diagrams/9ffbb249c214310bad7869403ad0a1beeab9a440f525dccbbbfc881485b10e14.svg",
+    "width": 800,
+    "height": 800,
+    "alt": "Illustration of Florence smiling and waving",
+    "provenance": "Exact florence-hello.svg selected by the user on 3 November 2026."
   },
   "sections": [
     {
