@@ -60,5 +60,5 @@ Source paths and provenance are also recorded in `presentation/settings.json`.
 
 ### Selected presenter illustration
 
-Slide 1 uses the user-selected `florence-hello.svg`, archived unchanged as
-`materials/diagrams/9ffbb249c214310bad7869403ad0a1beeab9a440f525dccbbbfc881485b10e14.svg`. The SVG is embedded for offline playback.
+Slide 1 uses the user-selected `florence-hello.svg`, with a looping wave, archived as
+`materials/diagrams/7e0f67a1a4811036feb21f44a4969593043df6fb87763b59460a6bf72bfce55d.svg`. The SVG is embedded for offline playback.
