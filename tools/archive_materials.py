@@ -6,6 +6,7 @@ against both the presentation and archived files without writing anything.
 import argparse
 import base64
 import hashlib
+import html
 import json
 import re
 from pathlib import Path
@@ -15,12 +16,14 @@ DECK = ROOT / "presentation/index.html"
 OUT = ROOT / "materials"
 MIMES = {
     "image/webp": ("images", "webp"),
+    "image/gif": ("images", "gif"),
     "image/png": ("images", "png"),
     "image/jpeg": ("images", "jpg"),
     "video/mp4": ("videos", "mp4"),
     "font/ttf": ("fonts", "ttf"),
     "font/woff2": ("fonts", "woff2"),
     "image/svg+xml": ("diagrams", "svg"),
+    "text/html": ("interactive", "html"),
 }
 DATA = re.compile(r"data:([^;,\s\"']+);base64,([A-Za-z0-9+/=\s]+)")
 
@@ -40,6 +43,9 @@ def inventory():
                              "sha256": digest, "slides": [],
                              "source": "presentation/index.html",
                              "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."}
+            if mime == "text/html":
+                records[path]["provenance"] = ("Bundled Bioprinting World Map, built by "
+                    "tools/offline_map_slide.py from map/ and archived Natural Earth boundaries.")
             blobs[path] = blob
         if slide is not None and slide not in records[path]["slides"]:
             records[path]["slides"].append(slide)
@@ -50,6 +56,8 @@ def inventory():
     for section in sections:
         for svg in re.finditer(r"<svg\b.*?</svg>", section[0], re.S):
             add(svg[0].encode("utf-8"), "image/svg+xml", int(section[1]))
+        for frame in re.finditer(r'<iframe class="offline-map-frame"[^>]*\bsrcdoc="([^"]+)"', section[0]):
+            add(html.unescape(frame[1]).encode("utf-8"), "text/html", int(section[1]))
     manifest = {"source": "presentation/index.html", "source_sha256": hashlib.sha256(source).hexdigest(),
                 "slides": len(sections), "asset_count": len(records),
                 "assets": sorted(records.values(), key=lambda r: r["path"])}

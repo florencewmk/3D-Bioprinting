@@ -156,24 +156,13 @@ And third, where can those structures create value?
 Keep in mind. Unlike in engineering, living tissue needs more than just geometry.
 
 
-## 07. The bioprinting landscape
+## 07. Bioprinting around the world
 
-Geographic localization of the current companies, affiliations and authors
-
-Status & Trend
-
-Source: Santoni et al. (2022), Bio-Design and Manufacturing, 5, 14–42. doi:10.1007/s42242-021-00165-0
-
-This paper does not include Charité in Berlin (and possibly other companies, affiliations, and authors).
-Missing data leads to inaccurate results!
+Interactive world map of bioprinting research and companies. The initial view shows the top 20 countries by publication count, 2000–2025.
 
 ### Speaker notes
 
-5 years ago in Italy, there was a group that created an interactive Google Map to show the companies, institutions and authors in the world up until 2022. This chart gives one view of the international bioprinting landscape, showing companies, research affiliations, and authors represented in the source dataset.
-
-But it is a snapshot, rather than a complete global census.
-For example, Berlin research groups are not fully represented. Charité is also very actively doing research in bioprinting.
-
+Start with the numbered country markers. The United States ranks first with 2,555 publications, China second with 2,106, and Germany fifth with 637. International papers may count for several countries. Use the filters to show companies, institutions or authors. Click outside the map to resume slide keyboard controls. Sources: OpenAlex and the archived geography dataset. World boundaries: Natural Earth.
 
 ## 08. Bioprinting publications · 2000–2026
 

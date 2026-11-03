@@ -1,8 +1,8 @@
 {
   "source": "presentation/index.html",
-  "source_sha256": "ca57a646c49b618f7a6d00de6e8c949d3377140c0482c6cf501c62b0d12fa70c",
+  "source_sha256": "742c58fbf8ece2e7223fd4cca739d19fb3a76e600f46926ea798d6cbdaa0bef5",
   "slides": 51,
-  "asset_count": 166,
+  "asset_count": 163,
   "assets": [
     {
       "path": "materials/diagrams/03f6a1b0c606ed36d914a8cf434e5ed195172c0cef7113c96f721673ddb88793.svg",
@@ -187,17 +187,6 @@
       "sha256": "8590deab810f2fd60d908e24f1a80ccf8a17061060ace082226edb760f609060",
       "slides": [
         40
-      ],
-      "source": "presentation/index.html",
-      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
-    },
-    {
-      "path": "materials/diagrams/8a6a25c26c1b1ed7a47e3d5f63af50a79891cb26b2b0c98f300ef31bc328994c.svg",
-      "mime": "image/svg+xml",
-      "bytes": 224317,
-      "sha256": "8a6a25c26c1b1ed7a47e3d5f63af50a79891cb26b2b0c98f300ef31bc328994c",
-      "slides": [
-        7
       ],
       "source": "presentation/index.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -790,17 +779,6 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
-      "path": "materials/images/2c326d2efd2fe65aa2c715d99b9835eede3fa0dd9487ca8e978b6183a59c39f7.webp",
-      "mime": "image/webp",
-      "bytes": 1094,
-      "sha256": "2c326d2efd2fe65aa2c715d99b9835eede3fa0dd9487ca8e978b6183a59c39f7",
-      "slides": [
-        7
-      ],
-      "source": "presentation/index.html",
-      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
-    },
-    {
       "path": "materials/images/33d4f7ab6bf200239617352e1e70068cbcc08a42135c5dbbe19ea3adcafe28f6.webp",
       "mime": "image/webp",
       "bytes": 25384,
@@ -840,6 +818,17 @@
       "sha256": "39fe9172dbe29cadf719cf991c62ccc60390b80ad67f0009ff00014788646dac",
       "slides": [
         45
+      ],
+      "source": "presentation/index.html",
+      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/images/3b7b8a4b411ddf8db9bacc2f3aabf406f8e4c0c087829b336ca331c40adfdff1.gif",
+      "mime": "image/gif",
+      "bytes": 26,
+      "sha256": "3b7b8a4b411ddf8db9bacc2f3aabf406f8e4c0c087829b336ca331c40adfdff1",
+      "slides": [
+        7
       ],
       "source": "presentation/index.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -983,17 +972,6 @@
       "sha256": "5fd5cd58652b4b509b8b6b16fd4238b5bdf8671fbf776e8b3b91630cc388213a",
       "slides": [
         48
-      ],
-      "source": "presentation/index.html",
-      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
-    },
-    {
-      "path": "materials/images/5ff33c7536bfe346290b987e7a2ed82b79b16a5096c58c1f58dfd6457394277f.webp",
-      "mime": "image/webp",
-      "bytes": 510,
-      "sha256": "5ff33c7536bfe346290b987e7a2ed82b79b16a5096c58c1f58dfd6457394277f",
-      "slides": [
-        7
       ],
       "source": "presentation/index.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1553,17 +1531,6 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
-      "path": "materials/images/c6597eae0f1afc9c1d91582f8f51b5c026896cf1ecba3f7ba13d1cb652e1b6b3.webp",
-      "mime": "image/webp",
-      "bytes": 62952,
-      "sha256": "c6597eae0f1afc9c1d91582f8f51b5c026896cf1ecba3f7ba13d1cb652e1b6b3",
-      "slides": [
-        7
-      ],
-      "source": "presentation/index.html",
-      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
-    },
-    {
       "path": "materials/images/c82151fe40fac55891935cb3cd22c90eaaf9cf31722cc1589c6b8b25d26db158.webp",
       "mime": "image/webp",
       "bytes": 246,
@@ -1763,17 +1730,6 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
-      "path": "materials/images/f9220bb17bf15181426b034095c5742e1a98862a7bfec2de30f646cf02d32feb.webp",
-      "mime": "image/webp",
-      "bytes": 73140,
-      "sha256": "f9220bb17bf15181426b034095c5742e1a98862a7bfec2de30f646cf02d32feb",
-      "slides": [
-        7
-      ],
-      "source": "presentation/index.html",
-      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
-    },
-    {
       "path": "materials/images/f9df29f3b16bed619d2aaf937e566a214a2c228bd29cd7ebc6dffe497e66d91f.webp",
       "mime": "image/webp",
       "bytes": 111352,
@@ -1805,6 +1761,17 @@
       ],
       "source": "presentation/index.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/interactive/d2f6e397b176f4c8dd492b7dc415f2014e0aeb7a4a8c282934ed821a28fcbd9a.html",
+      "mime": "text/html",
+      "bytes": 5410223,
+      "sha256": "d2f6e397b176f4c8dd492b7dc415f2014e0aeb7a4a8c282934ed821a28fcbd9a",
+      "slides": [
+        7
+      ],
+      "source": "presentation/index.html",
+      "provenance": "Bundled Bioprinting World Map, built by tools/offline_map_slide.py from map/ and archived Natural Earth boundaries."
     },
     {
       "path": "materials/videos/6cdb0634ac501d851999dcf7ff8fd9748b5625f90dff5be517c1a61e55a2b0ee.mp4",

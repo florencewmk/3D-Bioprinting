@@ -12,6 +12,7 @@ from publication_chart import render_publication_slide
 from organ_chart import render_organ_slide
 from cover_slide import render_cover
 from opening_slides import settings, footer as event_footer, navigation, render_introduction, render_contents, render_question
+from offline_map_slide import render_slide as render_offline_map, RECORD as OFFLINE_MAP_RECORD
 from deck_structure import display_number, web_section, write_transcript
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('source',type=Path,help='Original competition PPTX')
@@ -166,6 +167,8 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
  sections.append(web_section(f'<section class="slide {"active visible" if n==2 else ""} {"profile-slide" if n==2 else "cover-slide" if n==1 else "poster-slide" if special else ""}" id="slide-{n}" aria-label="{n}. {H(title)}" aria-hidden="{str(n!=2).lower()}">{nav}{art}{"".join(videos)}{footer}<div class="sr-only">{H(chr(10).join(src))}</div><!-- Speaker notes: {comment} --></section>',n))
 sections.sort(key=lambda s:int(re.search(r'id="slide-(\d+)"',s)[1]))
 data.sort(key=lambda row:row['number'])
+sections[6] = render_offline_map()
+data[6] = OFFLINE_MAP_RECORD
 (BUILD/'deck-data.json').write_text(json.dumps(data,ensure_ascii=False,indent=2))
 (BUILD/'media-manifest.json').write_text(json.dumps(manifest,indent=2))
 # A readable transcript is a separate artifact, while presentation notes remain embedded.

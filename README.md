@@ -8,7 +8,7 @@ Florence Mei Kuan Wong · SOfE Düsseldorf · 5 November 2026
 
 ## View the slides
 
-Open [the presentation](presentation/index.html) in a browser. You can also download the HTML file and open it offline; fonts, figures and two videos are included. No installation is required.
+Open [the presentation](presentation/index.html) in a browser. You can also download the HTML file and open it offline; fonts, figures and two videos are included. No installation is required. Slide 7 includes the interactive bioprinting map, with its data and Natural Earth country boundaries embedded in the same HTML file.
 
 The deck contains **51 slides**:
 
