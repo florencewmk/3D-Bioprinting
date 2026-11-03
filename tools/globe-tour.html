@@ -146,8 +146,9 @@ function draw(view) {
   ctx.beginPath(); ctx.arc(center,center,radius,0,2*Math.PI); ctx.strokeStyle='#63859e';ctx.lineWidth=2;ctx.stroke();
 }
 const motion = matchMedia('(prefers-reduced-motion: reduce)');
-const hold = 1950, travel = 1500, segment = hold + travel;
-let elapsed = 0, last = null, frame = 0, shown = -1, finished = false;
+const segment = 3450;
+let elapsed = 0, last = null, frame = 0, shown = -1, autoRotate = true;
+let resumeTimer;
 for (const [index, point] of leaders.entries()) {
   const button = document.createElement('button');
   button.textContent = '#'+point.rank;
@@ -165,21 +166,26 @@ function showRank(index) {
   [...byId('steps').children].forEach((button, i) =>
     button.setAttribute('aria-current', String(i === index)));
 }
-function stopTour() {
+function pauseAnimation() {
   cancelAnimationFrame(frame);
-  finished = true;
+  clearTimeout(resumeTimer);
+  last = null;
 }
 function coordinates([x, y, z]) {
   return [Math.atan2(z, Math.hypot(x, y)) / rad, Math.atan2(y, x) / rad];
 }
 function rotateToRank(index) {
-  stopTour();
+  pauseAnimation();
+  autoRotate = false;
+  rotateToView(centers[index], () => showRank(index));
+}
+function rotateToView(target, done) {
   const [latitude, longitude] = coordinates(previousView);
-  const [targetLatitude, targetLongitude] = leaders[index].position;
+  const [targetLatitude, targetLongitude] = coordinates(target);
   const longitudeDelta = ((targetLongitude - longitude + 540) % 360) - 180;
   if (motion.matches || Math.hypot(targetLatitude - latitude, longitudeDelta) < 0.1) {
-    draw(centers[index]);
-    showRank(index);
+    draw(target);
+    done();
     return;
   }
   const start = performance.now();
@@ -191,7 +197,7 @@ function rotateToRank(index) {
     draw(vector(latitude + (targetLatitude - latitude) * eased,
       longitude + longitudeDelta * eased));
     if (progress < 1) frame = requestAnimationFrame(step);
-    else showRank(index);
+    else done();
   }
   frame = requestAnimationFrame(step);
 }
@@ -204,7 +210,7 @@ function rotateBy(deltaX, deltaY) {
 let drag;
 globe.addEventListener('pointerdown', event => {
   if (event.button !== 0 || drag) return;
-  stopTour();
+  pauseAnimation();
   drag = {id: event.pointerId, x: event.clientX, y: event.clientY};
   globe.setPointerCapture(event.pointerId);
 });
@@ -214,35 +220,45 @@ globe.addEventListener('pointermove', event => {
   drag.x = event.clientX;
   drag.y = event.clientY;
 });
-globe.addEventListener('lostpointercapture', () => { drag = null; });
+globe.addEventListener('lostpointercapture', () => {
+  drag = null;
+  resumeTour();
+});
 globe.addEventListener('wheel', event => {
-  if (event.ctrlKey || event.metaKey || (!event.deltaX && !event.deltaY)) return;
+  if (event.ctrlKey || event.metaKey || drag || (!event.deltaX && !event.deltaY)) return;
   event.preventDefault();
-  stopTour();
+  pauseAnimation();
   const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? 100 : 1;
   rotateBy((event.deltaX || event.deltaY) * unit, event.deltaX ? event.deltaY * unit : 0);
+  resumeTimer = setTimeout(resumeTour, 180);
 }, {passive: false});
+function tourView(time) {
+  const index = Math.floor(time / segment);
+  const progress = (time % segment) / segment;
+  const next = (index + 1) % centers.length;
+  return interpolate(centers[index], centers[next], progress);
+}
 function render(time) {
-  const index = Math.min(leaders.length - 1, Math.floor(time / segment));
-  showRank(index);
-  const progress = Math.max(0, Math.min(1,(time-index*segment-hold)/travel));
-  const eased = progress * progress * (3-2*progress);
-  const view = centers[index+1] && eased>0 ? interpolate(centers[index], centers[index+1], eased) : centers[index];
-  draw(view);
+  showRank(Math.floor(time / segment));
+  draw(tourView(time));
 }
 function tick(now) {
-  if (last !== null) elapsed += Math.min(now-last,70);
-  last = now;
-  if (elapsed >= (leaders.length-1)*segment+hold) {
-    render((leaders.length-1)*segment);
-    finished = true;
-    return;
+  if (last !== null) {
+    elapsed = (elapsed + Math.min(now - last, 70)) % (segment * leaders.length);
   }
+  last = now;
   render(elapsed);
   frame = requestAnimationFrame(tick);
 }
+function resumeTour() {
+  if (!autoRotate || motion.matches || byId('tour').hidden || drag) return;
+  pauseAnimation();
+  rotateToView(tourView(elapsed), () => {
+    frame = requestAnimationFrame(tick);
+  });
+}
 function showMap() {
-  stopTour();
+  pauseAnimation();
   byId('tour').hidden = true;
   byId('mapView').hidden = false;
   if (window.parent !== window) window.parent.postMessage('bioprinting-map-opened', '*');
@@ -255,6 +271,7 @@ function closeMap() {
   byId('tour').hidden = false;
   if (window.parent !== window) window.parent.postMessage('bioprinting-map-closed', '*');
   byId('openMap').focus();
+  resumeTour();
 }
 byId('backToGlobe').onclick = closeMap;
 if (window.parent !== window) {
@@ -282,10 +299,6 @@ document.addEventListener('keydown', event => {
 });
 document.addEventListener('visibilitychange', () => {
   last = null;
-  if (!finished && !motion.matches && !document.hidden) {
-    cancelAnimationFrame(frame);
-    frame = requestAnimationFrame(tick);
-  }
 });
 render(0);
 if (!motion.matches) frame = requestAnimationFrame(tick);
