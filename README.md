@@ -25,6 +25,8 @@ The deck contains **51 slides**:
 | Key | Action |
 | --- | --- |
 | Arrow keys / Space / Page Up / Page Down | Navigate |
+| ↑ / ↓ on slide 2 | Previous / next conversation cue |
+| ← / → on slide 2 | Previous / next slide |
 | O | Slide overview |
 | N | Speaker notes |
 | F | Fullscreen |
