@@ -1,6 +1,6 @@
 {
   "source": "presentation/index.html",
-  "source_sha256": "95b2d0631b47ac782e57fe9968e490d5aec3fc2842f09bfbd664b523f98ca346",
+  "source_sha256": "0bab33adb64d88c8f1fcb85aa91eec5294cc9fe49fb187ae1274ca1a69e513aa",
   "slides": 52,
   "asset_count": 151,
   "assets": [
@@ -1621,17 +1621,6 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
-      "path": "materials/interactive/2d1fa6af9c4217cf3c741e7873bc5fb70417c625fff55bab326a84ce2282e822.html",
-      "mime": "text/html",
-      "bytes": 7300331,
-      "sha256": "2d1fa6af9c4217cf3c741e7873bc5fb70417c625fff55bab326a84ce2282e822",
-      "slides": [
-        9
-      ],
-      "source": "presentation/index.html",
-      "provenance": "Bundled bioprinting globe and map, built by tools/offline_map_slide.py from map/ and archived Natural Earth boundaries."
-    },
-    {
       "path": "materials/interactive/4516d9289273e2c71a5792a7bc1f4ad7b8639adcbc2a0c1f08f9ac960ca98754.html",
       "mime": "text/html",
       "bytes": 24218,
@@ -1641,6 +1630,17 @@
       ],
       "source": "presentation/index.html",
       "provenance": "Original editable SVG tram story from materials/interactive/munich-tram-story.html, embedded by tools/update_tram_slide.py."
+    },
+    {
+      "path": "materials/interactive/4613fea780348179f1d52609be357a27d3fd53f00ebe420c15b3ae856ecc7656.html",
+      "mime": "text/html",
+      "bytes": 7300333,
+      "sha256": "4613fea780348179f1d52609be357a27d3fd53f00ebe420c15b3ae856ecc7656",
+      "slides": [
+        9
+      ],
+      "source": "presentation/index.html",
+      "provenance": "Bundled bioprinting globe and map, built by tools/offline_map_slide.py from map/ and archived Natural Earth boundaries."
     },
     {
       "path": "materials/videos/6cdb0634ac501d851999dcf7ff8fd9748b5625f90dff5be517c1a61e55a2b0ee.mp4",

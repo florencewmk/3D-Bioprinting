@@ -13,7 +13,7 @@ def render_publication_slide():
  return '''<div class="publication-chart" id="publicationChart">
 <div class="pub-heading"><h1 class="editable" data-edit="pub-title">Bioprinting publications</h1></div>
 <svg id="publicationPlot" viewBox="0 0 1450 620" role="img" aria-label="Annual publication category matches, 2000–2026. 2026 is partial, indexed as of 27 October 2026."></svg>
-<aside class="pub-year-panel" aria-label="Selected year counts"><p class="pub-small">SELECTED YEAR</p><output id="publicationYear">2000</output><p class="pub-year-status" id="publicationStatus">Historical snapshot</p><div id="publicationCounts"></div><div class="pub-total"><span>Category matches</span><strong id="publicationTotal">0</strong></div></aside>
+<aside class="pub-year-panel" aria-label="Selected year counts"><p class="pub-small">YEAR</p><output id="publicationYear">2000</output><p class="pub-year-status" id="publicationStatus">Historical snapshot</p><div id="publicationCounts"></div><div class="pub-total"><span>Category matches</span><strong id="publicationTotal">0</strong></div></aside>
 <div class="pub-legend" id="publicationLegend"></div>
 <div class="pub-timeline" aria-label="Publication year selection"><label class="sr-only" for="publicationSlider">Select year from 2000 to 2026</label><input id="publicationSlider" type="range" min="2000" max="2026" value="2000" step="1"><output id="publicationSliderYear">2000</output></div>
 <p class="pub-source">Source: Scopus (Elsevier), retrieved 27 October 2026 · *2026 partial</p>
