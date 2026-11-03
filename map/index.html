@@ -5,8 +5,8 @@
   <title>Bioprinting World Map</title>
   <meta name="description" content="Explore bioprinting companies, research affiliations and authors worldwide through 2025. Independent selection and country lists.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2309090b'/%3E%3Ccircle cx='20' cy='20' r='12' fill='none' stroke='white' stroke-width='2'/%3E%3Cpath d='M8 20h24M20 8c-9 8-9 16 0 24M20 8c9 8 9 16 0 24' fill='none' stroke='white'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="vendor/leaflet.css"><link rel="stylesheet" href="vendor/MarkerCluster.css"><link rel="stylesheet" href="vendor/maplibre-gl.css"><link rel="stylesheet" href="style.css?v=20261103-readability">
-  <script defer src="vendor/leaflet.js"></script><script defer src="vendor/leaflet.markercluster.js"></script><script defer src="vendor/maplibre-gl.js"></script><script defer src="vendor/leaflet-maplibre-gl.js"></script><script defer src="app.js?v=20261103-readability"></script>
+  <link rel="stylesheet" href="vendor/leaflet.css"><link rel="stylesheet" href="vendor/MarkerCluster.css"><link rel="stylesheet" href="vendor/maplibre-gl.css"><link rel="stylesheet" href="style.css?v=20261103-ranks-zoom">
+  <script defer src="vendor/leaflet.js"></script><script defer src="vendor/leaflet.markercluster.js"></script><script defer src="vendor/maplibre-gl.js"></script><script defer src="vendor/leaflet-maplibre-gl.js"></script><script defer src="app.js?v=20261103-ranks-zoom"></script>
 </head>
 <body>
   <header class="header">
@@ -20,7 +20,7 @@
       <section class="intro"><div class="intro-title"><h1>Explore the world</h1><button id="collapse" class="text-button" title="Close every list without changing selection">Collapse lists</button></div>
       <p>Choose what appears on the map.</p>
       <label class="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Search a name or country" aria-label="Search map records" autocomplete="off"></label>
-      <label class="country-sort" for="country-sort"><span>Sort countries</span><select id="country-sort" aria-label="Sort countries"><option value="az">Name · A–Z</option><option value="za">Name · Z–A</option><option value="most">Most entries first</option><option value="fewest">Fewest entries first</option></select></label>
+      <label class="country-sort" for="country-sort"><span>Sort countries</span><select id="country-sort" aria-label="Sort countries"><option value="az">Name · A–Z</option><option value="za">Name · Z–A</option><option value="most" selected>Most entries / publications</option><option value="fewest">Fewest entries / publications</option></select></label>
       <div class="selection-actions"><button id="show-all" class="text-button">Select all</button><span>·</span><button id="clear-all" class="text-button">Clear all</button><span class="selection-status" id="selection-status" role="status" aria-live="polite"></span></div>
       <div class="control-key"><span><span class="key-box">✓</span> Select points</span><span><span class="key-arrow">›</span> Open countries</span><span><span class="key-box">✓</span> List names</span></div>
       </section>

@@ -41,4 +41,6 @@ MapLibre is BSD 3-Clause (`vendor/maplibre-LICENSE`); the adapter license is in 
 
 ## Readability and interactions
 
-Country labels use black text. The sidebar uses 17px category headings, 15px country names and 14px record names. Trackpad input uses fractional, cursor-anchored Leaflet animations with a short 160ms easing period; the background updates every 16ms. Filters add and remove only changed markers, preserving unaffected popups. Newly opened lists have a short reveal transition. Reduced-motion preferences disable the added animations. No extra runtime packages are required.
+Country labels use black text. The sidebar uses 17px category headings, 15px country names and 14px record names. Trackpad input uses one continuous, cursor-anchored animation per gesture. It uses the pinned Leaflet 1.9.4 move lifecycle to keep the vector map and markers in sync, and settles once before clustering is refreshed. Recheck this integration when upgrading Leaflet. Filters add and remove only changed markers, preserving unaffected popups. Newly opened lists have a short reveal transition. Reduced-motion preferences disable the added animations. No extra runtime packages are required.
+
+The Top 20 country rows show their 2000–2025 publication rank and total. Entry sorting uses publication totals for this category and record counts elsewhere. Green numbered badges sit in a separate map layer so a rank cannot turn into a cluster count; a line connects any displaced badge to its country anchor.

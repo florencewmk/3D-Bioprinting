@@ -6,3 +6,7 @@
 .newly-open{animation:reveal-list .16s ease-out}
 @keyframes reveal-list{from{opacity:.4;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.newly-open{animation:none}.disclosure svg{transition:none}}
+
+.rank-pin{display:grid;place-items:center;background:#285b48;color:#fff;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 5px #142a3450;font-size:12px;font-weight:700;white-space:nowrap}
+.sidebar-rank{display:inline-block;min-width:32px;font-weight:700;color:#285b48}
+.publication-total{display:block;margin:3px 0 0 32px;font-size:12px;color:#626c77}
