@@ -479,10 +479,11 @@ To end my presentation, I’d like to leave you with this thought: ‘Engineerin
 As engineers, we advance technology to improve people’s lives. Expertise in our own field is essential, but we should also stay curious about what lies beyond it.
 
 
-## 23. Thank you · Questions
+## 23. Thank You!
 
-Thank you!
-Questions?
+Thank You!
+
+Press Down to reveal the QR code and [GitHub repository](https://github.com/florencewmk/3D-Bioprinting).
 
 ## 24. Scientific references · 1
 

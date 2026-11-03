@@ -1,8 +1,8 @@
 {
   "source": "presentation/index.html",
-  "source_sha256": "0bab33adb64d88c8f1fcb85aa91eec5294cc9fe49fb187ae1274ca1a69e513aa",
+  "source_sha256": "3b3620fffa6e179cb50a50fe8d63daccda5596b8a3355fc6b323ccc65808f2da",
   "slides": 52,
-  "asset_count": 151,
+  "asset_count": 153,
   "assets": [
     {
       "path": "materials/diagrams/03f6a1b0c606ed36d914a8cf434e5ed195172c0cef7113c96f721673ddb88793.svg",
@@ -713,6 +713,18 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
+      "path": "materials/images/362c9b67234420a2dd07f161f1a773f69e086882e384aabf085dd112238feb60.jpg",
+      "mime": "image/jpeg",
+      "bytes": 707839,
+      "sha256": "362c9b67234420a2dd07f161f1a773f69e086882e384aabf085dd112238feb60",
+      "slides": [
+        22,
+        23
+      ],
+      "source": "presentation/index.html",
+      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
       "path": "materials/images/365e8efb2fa73459630077041ef1ec9139aac792267d1cf266a44fc5ac35e332.webp",
       "mime": "image/webp",
       "bytes": 1258,
@@ -1373,6 +1385,17 @@
       "sha256": "b2ae5cd8121fadece269090033d8e76cfa857181cb6314a55e335cb9407ab7c6",
       "slides": [
         18
+      ],
+      "source": "presentation/index.html",
+      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/images/b3f39582053ff0e6147af05158f72f369e86160dca308a6d7f013777c7bdf8ee.png",
+      "mime": "image/png",
+      "bytes": 2422,
+      "sha256": "b3f39582053ff0e6147af05158f72f369e86160dca308a6d7f013777c7bdf8ee",
+      "slides": [
+        23
       ],
       "source": "presentation/index.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."

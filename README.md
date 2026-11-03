@@ -35,6 +35,8 @@ The deck contains **52 slides**:
 | E | Edit slide text; changes save in your browser |
 | Ctrl/Cmd + S | Download an HTML copy with your edits |
 
+On slide 23, press Down to reveal the GitHub link and QR code. Press Up to return to the centered thank-you message.
+
 Horizontal swipes and the mouse wheel also navigate. Link to a specific slide with a hash, such as `presentation/index.html#7`. Text inside figure images is not editable; browser edits do not update the transcript.
 
 Every slide has content-aware entrance animations and a gentle 620 ms transition.

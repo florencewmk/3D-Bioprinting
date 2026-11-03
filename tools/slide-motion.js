@@ -79,6 +79,9 @@
     } else if (slide.querySelector('.references')) {
       kind = 'references';
       add(plan, select(slide, '.references'), 0, 750);
+    } else if (slide.querySelector('.closing-scene')) {
+      kind = 'closing';
+      add(plan, select(slide, '.closing-scene'), 0, 800);
     } else if (slide.querySelector('.poster')) {
       kind = 'statement';
       add(plan, select(slide, '.poster'), 100, 1100, 16);
