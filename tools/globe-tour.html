@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Slide 7 · Bioprinting around the world</title>
+<style>
+:root{color-scheme:dark;font:16px system-ui,sans-serif;color:#eef4f8;background:#090d14}
+*{box-sizing:border-box}body{margin:0}button{font:inherit;cursor:pointer}
+main{min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:clamp(18px,4vw,68px);gap:16px}
+header p,.eyebrow,footer{font-size:12px;font-weight:650;letter-spacing:.16em;text-transform:uppercase;color:#aab7c4}
+h1{font-size:clamp(26px,4.2vw,66px);letter-spacing:-.04em;margin:.15em 0}
+.hero{display:grid;grid-template-columns:1fr 1.45fr;align-items:center;gap:24px;min-height:0}
+.summary{max-width:490px}.place{font-size:clamp(29px,4vw,65px);line-height:1.05;margin:15px 0 10px}
+.count{font-size:clamp(50px,7vw,105px);font-weight:720;letter-spacing:-.065em;color:#ff7e81;line-height:1}
+.caption{color:#bcc8d3;font-size:clamp(15px,1.6vw,22px);margin:.5em 0 1.4em}
+.steps{display:flex;gap:8px;flex-wrap:wrap}.steps button{min-width:42px;height:40px}
+button{border:1px solid #465265;border-radius:5px;background:#18212d;color:#f3f7fa;padding:8px 13px}
+button[aria-current=true]{background:#ad2937;border-color:#ff8187}
+.visual{position:relative;aspect-ratio:1;width:min(100%,65svh);justify-self:center}
+canvas{width:100%;height:100%;display:block}
+footer{display:flex;justify-content:flex-end;align-items:center;gap:12px;flex-wrap:wrap}
+.actions{display:flex;gap:8px;flex-wrap:wrap;letter-spacing:normal;text-transform:none;font-weight:400}
+#mapView{position:fixed;inset:0;background:#090d14;display:grid;grid-template-rows:auto 1fr}
+#mapView[hidden],main[hidden]{display:none}
+.mapbar{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 14px;flex-wrap:wrap}
+.legend{font-size:13px;color:#d5dce3}.pub{color:#ff868a}.company{color:#83caff}
+iframe{width:100%;height:100%;border:0}
+@media(max-width:700px){.hero{grid-template-columns:1fr;gap:6px}.visual{width:min(80vw,42svh);grid-row:1}.place{margin-top:8px}.caption{margin-bottom:10px}header p{margin:0}}
+</style>
+</head>
+<body>
+<main id="tour">
+<header><p>Slide 07 · Publication geography</p><h1>Bioprinting around the world</h1></header>
+<div class="hero">
+<div class="summary" aria-live="polite">
+<div class="eyebrow" id="rank"></div>
+<h2 class="place" id="place"></h2>
+<div class="count" id="count"></div>
+<p class="caption">Publications · 2000–2025</p>
+<nav class="steps" id="steps" aria-label="Choose a publication rank"></nav>
+</div>
+<div class="visual"><canvas id="earth" width="800" height="800" role="img" aria-label="Rotating globe showing the five leading publication countries"></canvas></div>
+</div>
+<footer><div class="actions"><button id="openMap">↓ Explore map</button></div></footer>
+</main>
+<div id="mapView" hidden>
+<div class="mapbar"><div class="legend"><span class="pub">● Publication ranks 1–5</span> &nbsp; <span class="company">● Company ranks 1–5, including ties</span></div></div>
+<iframe id="atlas" title="Interactive bioprinting map"></iframe>
+</div>
+<script type="application/json" id="world">__WORLD__</script>
+<script type="application/json" id="leaders">__LEADERS__</script>
+<script type="application/json" id="atlasDocument">__ATLAS__</script>
+<script>
+const byId = id => document.getElementById(id);
+const leaders = JSON.parse(byId('leaders').textContent);
+const world = JSON.parse(byId('world').textContent);
+const redLand = new Set(__RED_LAND__);
+const ctx = byId('earth').getContext('2d');
+const center = 400, radius = 370, rad = Math.PI / 180;
+function vector(lat, lon) {
+  const c = Math.cos(lat * rad);
+  return [c * Math.cos(lon * rad), c * Math.sin(lon * rad), Math.sin(lat * rad)];
+}
+const surfaces = world.flatMap(feature => {
+  const polygons = feature.geometry.type === 'Polygon' ? [feature.geometry.coordinates] : feature.geometry.coordinates;
+  return polygons.map(polygon => ({
+    featured: redLand.has(feature.properties.name),
+    rings: polygon.map(ring => ring.map(([lon, lat]) => vector(lat, lon)))
+  }));
+});
+const centers = leaders.map(point => vector(...point.position));
+function interpolate(a, b, t) {
+  const angle = Math.acos(Math.max(-1, Math.min(1, a.reduce((sum, value, i) => sum + value * b[i], 0))));
+  if (angle < 0.00001) return a;
+  const x = Math.sin((1 - t) * angle) / Math.sin(angle);
+  const y = Math.sin(t * angle) / Math.sin(angle);
+  return a.map((value, i) => x * value + y * b[i]);
+}
+let previousView;
+function draw(view) {
+  if (previousView === view) return;
+  previousView = view;
+  const [vx, vy, vz] = view;
+  const horizontal = Math.hypot(vx, vy);
+  const cx = vx / horizontal, sx = vy / horizontal;
+  const gradient = ctx.createRadialGradient(285, 220, 20, center, center, radius);
+  gradient.addColorStop(0, '#244965'); gradient.addColorStop(1, '#102438');
+  function project([x,y,z]) {
+    return [(-sx*x+cx*y)*radius, (vz*(cx*x+sx*y)-horizontal*z)*radius, vx*x+vy*y+vz*z];
+  }
+  ctx.clearRect(0,0,800,800);
+  ctx.save();
+  ctx.beginPath(); ctx.arc(center,center,radius,0,2*Math.PI); ctx.clip();
+  ctx.fillStyle = gradient; ctx.fillRect(0,0,800,800);
+  for (const shape of surfaces) {
+    ctx.beginPath();
+    let visible = false;
+    for (const ring of shape.rings) {
+      let previous = project(ring[ring.length-1]);
+      let first = true;
+      for (const coordinate of ring) {
+        const next = project(coordinate);
+        if ((previous[2] >= 0) !== (next[2] >= 0)) {
+          const t = previous[2] / (previous[2] - next[2]);
+          const x = previous[0] + t*(next[0]-previous[0]);
+          const y = previous[1] + t*(next[1]-previous[1]);
+          const length = Math.hypot(x,y);
+          ctx[first?'moveTo':'lineTo'](center+radius*x/length,center+radius*y/length);
+          first = false;
+        }
+        if (next[2] >= 0) {
+          ctx[first?'moveTo':'lineTo'](center+next[0],center+next[1]);
+          first = false; visible = true;
+        }
+        previous = next;
+      }
+      if (!first) ctx.closePath();
+    }
+    if (!visible) continue;
+    ctx.fillStyle = shape.featured ? '#d94e5c' : '#819494';
+    ctx.strokeStyle = shape.featured ? '#e89098' : '#a6b5b1';
+    ctx.lineWidth = 0.65; ctx.fill('evenodd'); ctx.stroke();
+  }
+  for (const [i, point] of centers.entries()) {
+    const [x,y,depth] = project(point);
+    if (depth < .07) continue;
+    const badgeX = center + x + (leaders[i].country === 'Germany' ? (x > radius * .75 ? -48 : 48) : 0);
+    if (badgeX !== center + x) {
+      ctx.beginPath();
+      ctx.moveTo(center + x, center + y);
+      ctx.lineTo(badgeX, center + y);
+      ctx.strokeStyle = '#fff2f2';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+    ctx.beginPath(); ctx.arc(badgeX,center+y,24,0,Math.PI*2);
+    ctx.fillStyle='#b82639'; ctx.fill(); ctx.strokeStyle='#fff2f2'; ctx.lineWidth=3; ctx.stroke();
+    ctx.font='bold 20px system-ui'; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.fillStyle='white';
+    ctx.fillText('#'+(i+1),badgeX,center+y);
+  }
+  ctx.restore();
+  ctx.beginPath(); ctx.arc(center,center,radius,0,2*Math.PI); ctx.strokeStyle='#63859e';ctx.lineWidth=2;ctx.stroke();
+}
+const motion = matchMedia('(prefers-reduced-motion: reduce)');
+const hold = 1950, travel = 1500, segment = hold + travel;
+let elapsed = 0, last = null, frame = 0, shown = -1, finished = false;
+for (const [index, point] of leaders.entries()) {
+  const button = document.createElement('button');
+  button.textContent = '#'+point.rank;
+  button.setAttribute('aria-label', point.country);
+  button.onclick = () => {
+    elapsed = index * segment;
+    last = null;
+    render(elapsed);
+    if (finished && !motion.matches) {
+      finished = false;
+      frame = requestAnimationFrame(tick);
+    }
+  };
+  byId('steps').append(button);
+}
+function render(time) {
+  const index = Math.min(leaders.length-1, Math.floor(time/segment));
+  if (index !== shown) {
+    shown = index;
+    const point = leaders[index];
+    byId('rank').textContent = 'Publication rank #' + point.rank;
+    byId('place').textContent = point.country;
+    byId('count').textContent = point.works.toLocaleString('en-US');
+    [...byId('steps').children].forEach((button,i)=>button.setAttribute('aria-current', String(i===index)));
+  }
+  const progress = Math.max(0, Math.min(1,(time-index*segment-hold)/travel));
+  const eased = progress * progress * (3-2*progress);
+  const view = centers[index+1] && eased>0 ? interpolate(centers[index], centers[index+1], eased) : centers[index];
+  draw(view);
+}
+function tick(now) {
+  if (last !== null) elapsed += Math.min(now-last,70);
+  last = now;
+  if (elapsed >= (leaders.length-1)*segment+hold) {
+    render((leaders.length-1)*segment);
+    finished = true;
+    return;
+  }
+  render(elapsed);
+  frame = requestAnimationFrame(tick);
+}
+function showMap() {
+  cancelAnimationFrame(frame);
+  finished = true;
+  byId('tour').hidden = true;
+  byId('mapView').hidden = false;
+  if (window.parent !== window) window.parent.postMessage('bioprinting-map-opened', '*');
+  const iframe = byId('atlas');
+  if (!iframe.hasAttribute('srcdoc')) iframe.srcdoc = JSON.parse(byId('atlasDocument').textContent);
+}
+byId('openMap').onclick = showMap;
+window.addEventListener('message', event => {
+  if (window.parent !== window && event.source === window.parent &&
+      event.data === 'bioprinting-open-map' && !byId('tour').hidden) showMap();
+});
+document.addEventListener('keydown', event => {
+  if (event.key !== 'ArrowDown' || event.altKey || event.ctrlKey ||
+      event.metaKey || event.shiftKey || byId('tour').hidden) return;
+  event.preventDefault();
+  showMap();
+});
+document.addEventListener('visibilitychange', () => {
+  last = null;
+  if (!finished && !motion.matches && !document.hidden) {
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(tick);
+  }
+});
+render(0);
+if (!motion.matches) frame = requestAnimationFrame(tick);
+</script>
+</body>
+</html>

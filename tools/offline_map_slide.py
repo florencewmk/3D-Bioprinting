@@ -14,10 +14,10 @@ RECORD = {
     'number': NUMBER,
     'title': TITLE,
     'text': 'Interactive world map of bioprinting research and companies. '
-            'The initial view shows the top 20 countries by publication count, 2000–2025.',
+            'The globe tours the five leading publication countries, 2000–2025. Press Down Arrow to open the map.',
     'notes': 'Start with the numbered country markers. The United States ranks first '
              'with 2,555 publications, China second with 2,106, and Germany fifth with 637. '
-             'International papers may count for several countries. Use the filters to show '
+             'International papers may count for several countries. Press Down Arrow to open the interactive map. Use the filters to show '
              'companies, institutions or authors. Click outside the map to resume slide '
              'keyboard controls. Sources: OpenAlex and the archived geography dataset. '
              'World boundaries: Natural Earth.',
@@ -118,13 +118,54 @@ def map_document():
     return page.replace('</body>', f'<!-- {licenses} -->{scripts}</body>', 1)
 
 
+def globe_document():
+    points = json.loads((MAP / 'data.json').read_text())['points']
+    leaders = sorted((
+        {'rank': int(point['name'].split('.')[0]),
+         'works': int(re.search(r'Works 2000–2025: (\d+)', point['description'])[1]),
+         'country': point['country'], 'position': point['position']}
+        for point in points if point['category'] == 'countries'
+    ), key=lambda point: point['rank'])[:5]
+    document = Path(__file__).with_name('globe-tour.html').read_text()
+    values = {
+        '__RED_LAND__': ['United States of America', "People's Republic of China", 'Germany'],
+        '__WORLD__': world_geometry(),
+        '__LEADERS__': leaders,
+        '__ATLAS__': map_document(),
+    }
+    for placeholder, value in values.items():
+        document = replace_once(document, placeholder, json_script(value))
+    return document
+
+
 def render_slide():
-    embedded = html.escape(map_document(), quote=True)
+    embedded = html.escape(globe_document(), quote=True)
+    keys = """<script>
+(() => {
+  const slide = document.currentScript.closest('.slide');
+  const frame = slide.querySelector('iframe');
+  let mapOpened = false;
+  window.addEventListener('message', event => {
+    if (event.source === frame.contentWindow && event.data === 'bioprinting-map-opened') {
+      mapOpened = true;
+    }
+  });
+  document.addEventListener('keydown', event => {
+    if (mapOpened || event.key !== 'ArrowDown' || event.altKey || event.ctrlKey ||
+        event.metaKey || event.shiftKey || !slide.classList.contains('active') ||
+        document.body.classList.contains('editing') || document.querySelector('dialog[open]') ||
+        !frame.hasAttribute('srcdoc')) return;
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    frame.contentWindow.postMessage('bioprinting-open-map', '*');
+  }, true);
+})();
+</script>"""
     return (
         f'<section class="slide" id="slide-{NUMBER}" aria-label="{NUMBER}. {TITLE}" aria-hidden="true">'
-        f'<iframe class="offline-map-frame" title="Interactive Bioprinting World Map" '
+        f'<iframe class="offline-map-frame" title="Bioprinting globe and interactive map" '
         f'style="position:absolute;inset:0 0 58px;width:100%;height:calc(100% - 58px);border:0" '
-        f'data-srcdoc="{embedded}"></iframe>{footer(NUMBER)}</section>'
+        f'data-srcdoc="{embedded}"></iframe>{footer(NUMBER)}{keys}</section>'
     )
 
 

@@ -158,11 +158,11 @@ Keep in mind. Unlike in engineering, living tissue needs more than just geometry
 
 ## 07. Bioprinting around the world
 
-Interactive world map of bioprinting research and companies. The initial view shows the top 20 countries by publication count, 2000–2025.
+Interactive world map of bioprinting research and companies. The globe tours the five leading publication countries, 2000–2025. Press Down Arrow to open the map.
 
 ### Speaker notes
 
-Start with the numbered country markers. The United States ranks first with 2,555 publications, China second with 2,106, and Germany fifth with 637. International papers may count for several countries. Use the filters to show companies, institutions or authors. Click outside the map to resume slide keyboard controls. Sources: OpenAlex and the archived geography dataset. World boundaries: Natural Earth.
+Start with the numbered country markers. The United States ranks first with 2,555 publications, China second with 2,106, and Germany fifth with 637. International papers may count for several countries. Press Down Arrow to open the interactive map. Use the filters to show companies, institutions or authors. Click outside the map to resume slide keyboard controls. Sources: OpenAlex and the archived geography dataset. World boundaries: Natural Earth.
 
 ## 08. Bioprinting publications · 2000–2026
 

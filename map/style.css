@@ -10,3 +10,10 @@
 .rank-pin{display:grid;place-items:center;background:#285b48;color:#fff;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 5px #142a3450;font-size:12px;font-weight:700;white-space:nowrap}
 .sidebar-rank{display:inline-block;min-width:32px;font-weight:700;color:#285b48}
 .publication-total{display:block;margin:3px 0 0 32px;font-size:12px;color:#626c77}
+
+.rank-featured { background:#b82639; font-size:15px; }
+.rank-featured-label { color:#a6192e; }
+.company-featured-label { color:#155b9e; }
+.map-pin.company-featured { width:23px!important;height:23px!important;margin-left:-11.5px!important;margin-top:-11.5px!important;background:#176ab0; }
+.company-featured-cluster { background:#176ab0; }
+.company-featured-tooltip { color:#103f67; border-color:#176ab0; font-weight:650; }

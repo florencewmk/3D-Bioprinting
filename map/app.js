@@ -23,6 +23,17 @@
     rank:Number(p.name.match(/^(\d+)\./)[1]),
     works:Number(p.description.match(/Works 2000–2025: (\d+)/)[1])
   }]));
+  const companyCounts = new Map();
+  for (const point of data.points) {
+    if (point.category === 'companies') {
+      companyCounts.set(point.country, (companyCounts.get(point.country) || 0) + 1);
+    }
+  }
+  const counts = [...companyCounts.values()].sort((a, b) => b - a);
+  const companyRanks = new Map([...companyCounts].map(([country, count]) =>
+    [country, counts.indexOf(count) + 1]));
+  const isLeadingCompany = point =>
+    point.category === 'companies' && companyRanks.get(point.country) <= 5;
   const byId = new Map(data.points.map(p => [p.id, p]));
   const selected = new Set(data.points.filter(p => categories.find(c => c.id === p.category).defaultVisible).map(p => p.id));
   const expandedCategories = new Set(), expandedCountries = new Set(), listLimits = new Map();
@@ -83,7 +94,7 @@
   const background = tileLayer.getMaplibreMap();
   background.on('load', () => {$('map').dataset.labelLanguage='en';});
   background.on('error', () => {if(!background.isStyleLoaded()){$('map-notice').textContent='The background map could not load. Points and filters still work.';$('map-notice').hidden=false;}});
-  const cluster = L.markerClusterGroup({maxClusterRadius:44, showCoverageOnHover:false, spiderfyOnMaxZoom:true, removeOutsideVisibleBounds:true, animate:false, iconCreateFunction:c => L.divIcon({html:`<span class="cluster-bubble">${fmt(c.getChildCount())}</span>`, className:'cluster-icon',iconSize:[38,38]})}).addTo(map);
+  const cluster = L.markerClusterGroup({maxClusterRadius:44, showCoverageOnHover:false, spiderfyOnMaxZoom:true, removeOutsideVisibleBounds:true, animate:false, iconCreateFunction:c => L.divIcon({html:`<span class="cluster-bubble ${c.getAllChildMarkers().some(m=>m.options.leadingCompany)?'company-featured-cluster':''}">${fmt(c.getChildCount())}</span>`, className:'cluster-icon',iconSize:[38,38]})}).addTo(map);
   // Ranking badges have a separate layer: a rank is never a cluster count.
   map.createPane('rankPane').style.zIndex=650;
   const ranks=L.layerGroup().addTo(map), rankLines=new Map(), markers = new Map();
@@ -92,12 +103,14 @@
     const points=rankedPoints.filter(p=>ranks.hasLayer(markers.get(p.id)));
     for(const point of points){
       const origin=map.latLngToContainerPoint(point.position);
+      const badgeOrigin = point.country === 'Germany' && map.getZoom() <= 4
+        ? origin.add([34, 0]) : origin;
       let placed=origin;
       if(origin.x>=0&&origin.y>=0&&origin.x<=size.x&&origin.y<=size.y){
         for(let attempt=0;attempt<180;attempt++){
           const radius=attempt?Math.sqrt(attempt)*12:0, angle=attempt*2.399963;
-          const candidate=L.point(Math.max(20,Math.min(size.x-20,origin.x+Math.cos(angle)*radius)),Math.max(20,Math.min(size.y-20,origin.y+Math.sin(angle)*radius)));
-          if(occupied.every(p=>p.distanceTo(candidate)>=39)){placed=candidate;break;}
+          const candidate=L.point(Math.max(24,Math.min(size.x-24,badgeOrigin.x+Math.cos(angle)*radius)),Math.max(24,Math.min(size.y-24,badgeOrigin.y+Math.sin(angle)*radius)));
+          if(occupied.every(p=>p.distanceTo(candidate)>=48)){placed=candidate;break;}
         }
         occupied.push(placed);
       }
@@ -115,11 +128,23 @@
   for (const point of data.points) {
     const color = models.find(c => c.id === point.category).color;
     const stat=point.category==='countries'?countryStats.get(point.country):null;
-    const icon = stat ? L.divIcon({className:'rank-pin',html:`<span>#${stat.rank}</span>`,iconSize:[32,32],iconAnchor:[16,16]}) : L.divIcon({className:'map-pin',html:'',iconSize:[13,13]});
-    const marker = L.marker(point.position, {icon, title:point.name, alt:point.name, keyboard:true,...(stat?{pane:'rankPane'}:{})}).bindPopup(() => popup(point), {maxWidth:350});
+    const leadingPublication = stat && stat.rank <= 5;
+    const leadingCompany = isLeadingCompany(point);
+    const size = leadingPublication ? 43 : stat ? 32 : leadingCompany ? 23 : 13;
+    const className = stat ? 'rank-pin' + (leadingPublication ? ' rank-featured' : '')
+      : 'map-pin' + (leadingCompany ? ' company-featured' : '');
+    const icon = L.divIcon({className, html:stat ? `<span>#${stat.rank}</span>` : '',
+      iconSize:[size,size], iconAnchor:[size/2,size/2]});
+    const marker = L.marker(point.position, {leadingCompany,icon, title:point.name, alt:point.name, keyboard:true,...(stat?{pane:'rankPane'}:{})}).bindPopup(() => popup(point), {maxWidth:350});
     marker.on('add', () => marker.getElement()?.style.setProperty('--pin-color', color));
+    if (leadingCompany) {
+      const rank = companyRanks.get(point.country);
+      const count = companyCounts.get(point.country);
+      marker.bindTooltip(`${esc(point.name)} · country #${rank} (${count} listed)`,
+        {className:'company-featured-tooltip', direction:'top', offset:[0,-10]});
+    }
     markers.set(point.id, marker);
-    if(stat) rankLines.set(point.id,L.polyline([],{color:'#285b48',weight:1.5,opacity:.82,interactive:false}));
+    if(stat) rankLines.set(point.id,L.polyline([],{color:leadingPublication?'#b82639':'#285b48',weight:1.5,opacity:.82,interactive:false}));
   }
   const match = point => !query || point.search.includes(query);
   function orderedCountries(countries, category) {
@@ -168,7 +193,11 @@
         const countryState = checkboxState(country.points), listed = expandedCountries.has(country.key), matches = country.points.filter(match), limit = listLimits.get(country.key) || 50;
         const stat=cat.id==='countries'?countryStats.get(country.name):null;
         const entries=query?matches.length:country.points.length;
-        const countryLabel=stat?`<span class="sidebar-rank">#${stat.rank}</span> ${esc(country.name)}<span class="publication-total">${fmt(stat.works)} publications</span>`:`${esc(country.name)}<span class="country-total">${fmt(entries)} ${entries===1?'entry':'entries'}</span>`;
+        const companyRank = cat.id==='companies' ? companyRanks.get(country.name) : undefined;
+        const leadingCompanyRow = companyRank <= 5;
+        const companyLabel = leadingCompanyRow
+          ? `<span class="sidebar-rank company-featured-label">#${companyRank}</span> ` : '';
+        const countryLabel=stat?`<span class="sidebar-rank ${stat.rank<=5?'rank-featured-label':''}">#${stat.rank}</span> ${esc(country.name)}<span class="publication-total">${fmt(stat.works)} publications</span>`:`${companyLabel}${esc(country.name)}<span class="country-total">${fmt(entries)} ${entries===1?'entry':'entries'}</span>`;
         return `<div class="country" data-country="${esc(country.name)}"><div class="country-row">${checkbox(`country-${country.key}`,`Select ${country.name} in ${cat.name}`,countryState,`data-action="country" data-category="${cat.id}" data-key="${country.key}"`)}<label class="country-name" for="country-${country.key}">${countryLabel}</label><label class="list-toggle">${checkbox(`list-${country.key}`,`Show list for ${country.name} in ${cat.name}`,{checked:listed},`data-action="list" data-key="${country.key}" aria-controls="names-${country.key}"`)}List</label></div>${listed?`<div class="point-list" id="names-${country.key}" aria-label="${esc(country.name)} names in ${cat.name}">${matches.slice(0,limit).map(p=>`<div class="point-row">${checkbox(`point-${p.id}`,`Show ${p.name}`,{checked:selected.has(p.id)},`data-action="point" data-id="${p.id}"`)}<button class="point-name" data-focus="${p.id}">${esc(p.name)}</button></div>`).join('')}${matches.length>limit?`<button class="more-button" data-more="${country.key}">Show ${Math.min(50,matches.length-limit)} more · ${fmt(matches.length-limit)} remaining</button>`:''}</div>`:''}</div>`;
       }).join('') : '';
       return `<section class="category" style="--category-color:${cat.color}" data-category="${cat.id}"><div class="category-head">${checkbox(`category-${cat.id}`,`Select all ${cat.name}`,state,`data-action="category" data-category="${cat.id}"`)}<label class="category-label" for="category-${cat.id}"><span class="category-name"><span class="color-dot"></span>${esc(cat.name)}</span><span class="category-count">${query?`${fmt(matching.length)} matches · `:''}${fmt(state.count)} of ${fmt(cat.count)} selected</span></label><button class="disclosure" id="expand-${cat.id}" data-expand="${cat.id}" aria-expanded="${open}" aria-label="${open?'Collapse':'Expand'} ${cat.name}" aria-controls="countries-${cat.id}">${arrow}</button></div>${open?`<div class="category-body" id="countries-${cat.id}"><p class="category-note">${esc(cat.note)}<br>${cat.countryCount} countries / regions. Check “List” to see names.</p>${countryRows||'<p class="no-matches">No matching names or countries.</p>'}</div>`:''}</section>`;

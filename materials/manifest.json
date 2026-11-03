@@ -1,6 +1,6 @@
 {
   "source": "presentation/index.html",
-  "source_sha256": "af60de6456fd0ff96044ded434efb8251377fbba498a0d101662ec4c9f686454",
+  "source_sha256": "baac8684b90e5d61edb37ad0c72ceff93cd8f532c3a01b827801931758bee278",
   "slides": 51,
   "asset_count": 163,
   "assets": [
@@ -1763,15 +1763,15 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
-      "path": "materials/interactive/d2f6e397b176f4c8dd492b7dc415f2014e0aeb7a4a8c282934ed821a28fcbd9a.html",
+      "path": "materials/interactive/d668a07a104bc0204f62c9c601caebca78c6d342d10644dfa616df6bc2824af3.html",
       "mime": "text/html",
-      "bytes": 5410223,
-      "sha256": "d2f6e397b176f4c8dd492b7dc415f2014e0aeb7a4a8c282934ed821a28fcbd9a",
+      "bytes": 7294137,
+      "sha256": "d668a07a104bc0204f62c9c601caebca78c6d342d10644dfa616df6bc2824af3",
       "slides": [
         7
       ],
       "source": "presentation/index.html",
-      "provenance": "Bundled Bioprinting World Map, built by tools/offline_map_slide.py from map/ and archived Natural Earth boundaries."
+      "provenance": "Bundled bioprinting globe and map, built by tools/offline_map_slide.py from map/ and archived Natural Earth boundaries."
     },
     {
       "path": "materials/videos/6cdb0634ac501d851999dcf7ff8fd9748b5625f90dff5be517c1a61e55a2b0ee.mp4",

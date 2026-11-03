@@ -44,7 +44,7 @@ def inventory():
                              "source": "presentation/index.html",
                              "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."}
             if mime == "text/html":
-                records[path]["provenance"] = ("Bundled Bioprinting World Map, built by "
+                records[path]["provenance"] = ("Bundled bioprinting globe and map, built by "
                     "tools/offline_map_slide.py from map/ and archived Natural Earth boundaries.")
             blobs[path] = blob
         if slide is not None and slide not in records[path]["slides"]:
