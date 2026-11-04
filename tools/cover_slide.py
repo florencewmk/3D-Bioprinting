@@ -5,7 +5,7 @@ from opening_slides import settings
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-LUNG_ANIMATION = ROOT / 'materials/images/1786970f76a9a466241c8f1d73348d20887c56f67d4135e133495fb97bac3c88.webp'
+LUNG_ANIMATION = ROOT / 'materials/images/18b5d63dc0558f8d2aed770e167cba1fe7265d4187370ca7d59d1132c2b6e5d7.avif'
 LUNG_POSTER = ROOT / 'materials/images/973f5492d7238e8f5907aca8d6e188cb20872926dfc460ed4d77ea6f84cfd15e.webp'
 COVER_TITLE = '3D Bioprinting'
 COVER_NOTES = ('Welcome to the world of 3D printing, a technology that is shaping our future.\n\n'
@@ -16,7 +16,7 @@ def render_cover(*, external_animation=False):
     c = settings()
     event = html.escape(f'{c["event"]["name"]} · {c["event"]["city"].upper()} · {c["event"]["date"].upper()}')
     animation = ('../' + LUNG_ANIMATION.relative_to(ROOT).as_posix() if external_animation else
-                 'data:image/webp;base64,' + base64.b64encode(LUNG_ANIMATION.read_bytes()).decode())
+                 f'data:image/{LUNG_ANIMATION.suffix[1:]};base64,' + base64.b64encode(LUNG_ANIMATION.read_bytes()).decode())
     poster = 'data:image/webp;base64,' + base64.b64encode(LUNG_POSTER.read_bytes()).decode()
     return (
         '<figure class="cover-lung">'

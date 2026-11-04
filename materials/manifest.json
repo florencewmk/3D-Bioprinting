@@ -1,6 +1,6 @@
 {
   "source": "presentation/offline.html",
-  "source_sha256": "74896ebc117dcd50bdf0361cbcf1ee0dd1615b307e3ba110786fc73fb5b9950a",
+  "source_sha256": "f2ecbef8a57f93255efca2d55e20e49d85ae7823dc7cd6213f81d95ae671285c",
   "slides": 59,
   "asset_count": 174,
   "assets": [
@@ -712,15 +712,15 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
-      "path": "materials/images/1786970f76a9a466241c8f1d73348d20887c56f67d4135e133495fb97bac3c88.webp",
-      "mime": "image/webp",
-      "bytes": 29472426,
-      "sha256": "1786970f76a9a466241c8f1d73348d20887c56f67d4135e133495fb97bac3c88",
+      "path": "materials/images/18b5d63dc0558f8d2aed770e167cba1fe7265d4187370ca7d59d1132c2b6e5d7.avif",
+      "mime": "image/avif",
+      "bytes": 6240741,
+      "sha256": "18b5d63dc0558f8d2aed770e167cba1fe7265d4187370ca7d59d1132c2b6e5d7",
       "slides": [
         5
       ],
       "source": "presentation/offline.html",
-      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+      "provenance": "Web-optimized copy of materials/images/1786970f76a9a466241c8f1d73348d20887c56f67d4135e133495fb97bac3c88.webp (higher-quality original retained). Composited on #050506 and re-encoded as a 960 px animated AVIF (AV1 CRF 36) for faster web loading. Original credits are in the deck and transcript."
     },
     {
       "path": "materials/images/19a6e0fcf8730129a1b8fb4446305fd71c410e68ea30f04cbdda6be527cb3091.webp",
@@ -956,17 +956,6 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
-      "path": "materials/images/45ce8684cee3a64960e394d3b57d499b1e356e1bfe8dc75db5ef9b88f6b6d4ed.png",
-      "mime": "image/png",
-      "bytes": 2478036,
-      "sha256": "45ce8684cee3a64960e394d3b57d499b1e356e1bfe8dc75db5ef9b88f6b6d4ed",
-      "slides": [
-        3
-      ],
-      "source": "presentation/offline.html",
-      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
-    },
-    {
       "path": "materials/images/4673f4eb1337647cbd7fe14b7172468ce47dda643d95be7997b100fbc1697743.webp",
       "mime": "image/webp",
       "bytes": 2698,
@@ -1053,6 +1042,18 @@
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/images/5da7998786c7f719b9cc5b54d357b4edfac8841cd621a724ca6685044ef116d4.webp",
+      "mime": "image/webp",
+      "bytes": 292704,
+      "sha256": "5da7998786c7f719b9cc5b54d357b4edfac8841cd621a724ca6685044ef116d4",
+      "slides": [
+        2,
+        26
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Web-optimized copy of materials/images/888dfc578edba15cffbee51962d479e468315db11c5c9f853429f8899660b64a.png (higher-quality original retained). Re-encoded as WebP (quality 85) for faster web loading. Original credits are in the deck and transcript."
     },
     {
       "path": "materials/images/5fd5cd58652b4b509b8b6b16fd4238b5bdf8671fbf776e8b3b91630cc388213a.webp",
@@ -1220,17 +1221,6 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
-      "path": "materials/images/7b1ce1f737590ff915b1e8ed64000c73d767ea1c363cd6a54d6117dd88d58bfb.png",
-      "mime": "image/png",
-      "bytes": 1816561,
-      "sha256": "7b1ce1f737590ff915b1e8ed64000c73d767ea1c363cd6a54d6117dd88d58bfb",
-      "slides": [
-        3
-      ],
-      "source": "presentation/offline.html",
-      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
-    },
-    {
       "path": "materials/images/8079907b6738593fa5df2b43cddb2d8a404483950198589b96b5486f9ed3efd3.webp",
       "mime": "image/webp",
       "bytes": 162508,
@@ -1292,18 +1282,6 @@
       "sha256": "8854c9f6b679927facfc1d8f9a7222e462092bea8cea393401e3bd355a0cca65",
       "slides": [
         32
-      ],
-      "source": "presentation/offline.html",
-      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
-    },
-    {
-      "path": "materials/images/888dfc578edba15cffbee51962d479e468315db11c5c9f853429f8899660b64a.png",
-      "mime": "image/png",
-      "bytes": 3415749,
-      "sha256": "888dfc578edba15cffbee51962d479e468315db11c5c9f853429f8899660b64a",
-      "slides": [
-        2,
-        26
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1488,6 +1466,17 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
+      "path": "materials/images/a478f4606b5bf98cb9cdd1c686d8a099e066048d78a7278f253b1391c96e790d.webp",
+      "mime": "image/webp",
+      "bytes": 206790,
+      "sha256": "a478f4606b5bf98cb9cdd1c686d8a099e066048d78a7278f253b1391c96e790d",
+      "slides": [
+        3
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Web-optimized copy of materials/images/7b1ce1f737590ff915b1e8ed64000c73d767ea1c363cd6a54d6117dd88d58bfb.png (higher-quality original retained). Re-encoded as WebP (quality 85) for faster web loading. Original credits are in the deck and transcript."
+    },
+    {
       "path": "materials/images/a5100132bc030a4b3e154335f0cec10a143df9ef1cb3c40e8b26017ee0a2042a.webp",
       "mime": "image/webp",
       "bytes": 38202,
@@ -1508,6 +1497,17 @@
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/images/aa1cb5cbf616ff9b71c6226345d9bf0a8d3cd117b06198c15d60b691eac28a23.webp",
+      "mime": "image/webp",
+      "bytes": 273264,
+      "sha256": "aa1cb5cbf616ff9b71c6226345d9bf0a8d3cd117b06198c15d60b691eac28a23",
+      "slides": [
+        3
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Web-optimized copy of materials/images/45ce8684cee3a64960e394d3b57d499b1e356e1bfe8dc75db5ef9b88f6b6d4ed.png (higher-quality original retained). Re-encoded as WebP (quality 85) for faster web loading. Original credits are in the deck and transcript."
     },
     {
       "path": "materials/images/ac76b06ea10c56b2cb578ce6fc21aa39f8c8e8825b8562e414386a21e242d12f.webp",

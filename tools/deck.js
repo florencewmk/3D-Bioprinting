@@ -9,7 +9,24 @@ class SlidePresentation{
    this.introReady=true;
    this.startIntroCharacter();
   }));
- });}
+ });addEventListener('load',()=>setTimeout(()=>this.warmMedia(),1500),{once:true});}
+ /* === ONLINE DECK: QUIETLY DOWNLOAD LATER SLIDES' MEDIA IN SLIDE ORDER SO EVERY SLIDE IS READY WHEN REACHED === */
+ async warmMedia(){
+  if(this.warming||!document.documentElement.dataset.offlineSource)return;
+  this.warming=true;
+  const order=[...this.slides.slice(this.current),...this.slides.slice(0,this.current)],seen=new Set();
+  for(const slide of order){
+   const cover=slide.querySelector('.cover-turntable[data-turntable-src]');
+   if(cover&&!matchMedia('(prefers-reduced-motion: reduce)').matches)await this.loadCoverAnimation(cover).catch(()=>{});
+   const urls=[...slide.querySelectorAll('[data-media-src],[data-media-href],[data-media-poster],iframe[data-srcdoc-url]')]
+    .flatMap(element=>['data-media-poster','data-media-src','data-media-href','data-srcdoc-url'].map(name=>element.getAttribute(name)))
+    .filter(url=>url&&!url.startsWith('data:')&&!seen.has(url));
+   for(const url of urls){
+    seen.add(url);
+    try{await (await fetch(url,{priority:'low'})).arrayBuffer();}catch{}
+   }
+  }
+ }
  hash(){return Math.max(0,(parseInt(location.hash.replace('#',''),10)||1)-1)}
  /* === STAGE FITTING: NEVER REFLOW SLIDES === */
  scale(){const s=Math.min(innerWidth/1920,innerHeight/1080);this.stage.style.transform=`translate(${(innerWidth-1920*s)/2}px,${(innerHeight-1080*s)/2}px) scale(${s})`;this.scaleFactor=s}
@@ -26,7 +43,7 @@ class SlidePresentation{
    const cover=upcoming.querySelector('.cover-turntable');
    if(cover&&!matchMedia('(prefers-reduced-motion: reduce)').matches)this.loadCoverAnimation(cover).catch(()=>{});
   }
- }history.replaceState(null,'',`#${next+1}`);this.updateCounter();document.getElementById('progress').style.width=`${(next+1)/this.slides.length*100}%`;document.title=`${next+1} · ${slidesData[next].title} — Bioprinting`;document.querySelectorAll('.thumb').forEach((b,i)=>b.classList.toggle('selected',i===next));this.updateNotes();const chart=this.chartActive();const turntable=this.coverTurntable();
+ }this.stage.parentElement.classList.toggle('profile-glow-on',this.slides[next].classList.contains('profile-slide'));history.replaceState(null,'',`#${next+1}`);this.updateCounter();document.getElementById('progress').style.width=`${(next+1)/this.slides.length*100}%`;document.title=`${next+1} · ${slidesData[next].title} — Bioprinting`;document.querySelectorAll('.thumb').forEach((b,i)=>b.classList.toggle('selected',i===next));this.updateNotes();const chart=this.chartActive();const turntable=this.coverTurntable();
  document.getElementById('chartReplay').hidden=!(chart||turntable||this.lightReplay());
  if(entering&&turntable&&!matchMedia('(prefers-reduced-motion: reduce)').matches)this.playCover();window.publicationTimeline?.activate(this.slides[next].contains(document.getElementById('publicationChart')));window.organTimeline?.activate(this.slides[next].contains(document.getElementById('organChart')));}
  startIntroCharacter(){

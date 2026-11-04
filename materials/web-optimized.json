@@ -1,0 +1,18 @@
+{
+  "18b5d63dc0558f8d2aed770e167cba1fe7265d4187370ca7d59d1132c2b6e5d7": {
+    "derived_from": "materials/images/1786970f76a9a466241c8f1d73348d20887c56f67d4135e133495fb97bac3c88.webp",
+    "method": "Composited on #050506 and re-encoded as a 960 px animated AVIF (AV1 CRF 36) for faster web loading."
+  },
+  "5da7998786c7f719b9cc5b54d357b4edfac8841cd621a724ca6685044ef116d4": {
+    "derived_from": "materials/images/888dfc578edba15cffbee51962d479e468315db11c5c9f853429f8899660b64a.png",
+    "method": "Re-encoded as WebP (quality 85) for faster web loading."
+  },
+  "a478f4606b5bf98cb9cdd1c686d8a099e066048d78a7278f253b1391c96e790d": {
+    "derived_from": "materials/images/7b1ce1f737590ff915b1e8ed64000c73d767ea1c363cd6a54d6117dd88d58bfb.png",
+    "method": "Re-encoded as WebP (quality 85) for faster web loading."
+  },
+  "aa1cb5cbf616ff9b71c6226345d9bf0a8d3cd117b06198c15d60b691eac28a23": {
+    "derived_from": "materials/images/45ce8684cee3a64960e394d3b57d499b1e356e1bfe8dc75db5ef9b88f6b6d4ed.png",
+    "method": "Re-encoded as WebP (quality 85) for faster web loading."
+  }
+}

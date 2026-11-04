@@ -16,6 +16,7 @@ DECK = ROOT / "presentation/offline.html"
 OUT = ROOT / "materials"
 MIMES = {
     "image/webp": ("images", "webp"),
+    "image/avif": ("images", "avif"),
     "image/gif": ("images", "gif"),
     "image/png": ("images", "png"),
     "image/jpeg": ("images", "jpg"),
@@ -30,6 +31,7 @@ LIGHT_PROVENANCE = {
     "video/mp4": "Original Blender render of a top-down SLA cutaway printing the Baby Groot mesh by Byambaa (Thingiverse 2014307, CC BY-NC-ND 4.0, credited on the slide); burned-in caption and credit removed with FFmpeg delogo on 4 November 2026. Rendered by tools/light_slides.py.",
     "image/svg+xml": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py.",
 }
+WEB_OPTIMIZED = json.loads((ROOT / "materials/web-optimized.json").read_text()) if (ROOT / "materials/web-optimized.json").exists() else {}
 PROGRESS_PROVENANCE = {
     hashlib.sha256(path.read_bytes()).hexdigest(): text
     for name, text in __import__("progress_slide").PROVENANCE.items()
@@ -58,6 +60,10 @@ def inventory():
                              "sha256": digest, "slides": [],
                              "source": "presentation/offline.html",
                              "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."}
+            if digest in WEB_OPTIMIZED:
+                derived = WEB_OPTIMIZED[digest]
+                provenance = (f"Web-optimized copy of {derived['derived_from']} (higher-quality original retained). "
+                              f"{derived['method']} Original credits are in the deck and transcript.")
             if provenance is not None:
                 records[path]["provenance"] = provenance
             elif mime == "text/html":
@@ -74,11 +80,11 @@ def inventory():
         add(blob, match[1], slide, PROGRESS_PROVENANCE.get(hashlib.sha256(blob).hexdigest())
             or (LIGHT_PROVENANCE.get(match[1]) if slide in light else None))
     for section in sections:
-        for asset in re.findall(r'data-turntable-src="\.\./(materials/images/[a-f0-9]{64}\.webp)"', section[0]):
+        for asset in re.findall(r'data-turntable-src="\.\./(materials/images/[a-f0-9]{64}\.(?:webp|avif))"', section[0]):
             blob = (ROOT / asset).read_bytes()
             if hashlib.sha256(blob).hexdigest() != Path(asset).stem:
                 raise ValueError(f"Turntable hash mismatch: {asset}")
-            add(blob, "image/webp", int(section[1]))
+            add(blob, "image/avif" if asset.endswith(".avif") else "image/webp", int(section[1]))
         for svg in re.finditer(r"<svg\b.*?</svg>", section[0], re.S):
             add(svg[0].encode("utf-8"), "image/svg+xml", int(section[1]),
                 LIGHT_PROVENANCE["image/svg+xml"] if int(section[1]) in light else None)
