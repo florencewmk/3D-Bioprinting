@@ -24,6 +24,11 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
 .light-slide .s-hull[data-cur]:not([data-cur="0"]) .hook{top:5.2cqw;transform:none}
 .light-slide .s-hull[data-cur]:not([data-cur="0"]) .hook h2{font-size:2.4cqw;color:var(--fg)}
 .light-slide .s-hull[data-cur]:not([data-cur="0"]) .hook p{font-size:1.7cqw}
+.light-slide .warp{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.light-slide .warp-lines{position:absolute;inset:0;width:100%;height:100%}
+.light-slide .warp-lines line{stroke-linecap:round;opacity:0;transform-box:view-box;transform-origin:800px 450px}
+.light-slide .warp-year{position:absolute;left:0;right:0;top:56%;text-align:center;font-size:11cqw;font-weight:600;letter-spacing:.03em;font-variant-numeric:tabular-nums;line-height:1;opacity:0;background:linear-gradient(90deg,var(--rose),var(--lav) 50%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;will-change:transform,opacity,filter}
+.light-slide .s-hull .hull.on{transition-delay:1.35s,1.35s}
 .light-slide .hull{position:absolute;left:10.5cqw;bottom:6.6cqw;width:23.5cqw;margin:0;transform:translateX(-140%);opacity:0;transition:transform .9s cubic-bezier(.2,.75,.2,1),opacity .6s}
 .light-slide .hull.on{transform:none;opacity:1}
 .light-slide .hull img{display:block;width:100%;height:auto}
@@ -121,31 +126,32 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
 <!--LS 10 3 How it started-->
 <div class="ls-stage s-hull" data-ls="10">
   <div class="hook">
-    <h2>There are many ways to bioprint.</h2>
+    <h2>Printing with light</h2>
   </div>
+  <div class="warp" aria-hidden="true"><svg class="warp-lines" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"></svg><div class="warp-year"></div></div>
   <figure class="hull" data-s="1">
-    <figcaption><b>Chuck Hull</b><span>United States · 1980s</span></figcaption>
+    <figcaption><b>Chuck Hull</b><span>United States · 87 years old</span></figcaption>
     <img src="{{HULL_PNG}}" alt="Illustration of Chuck Hull presenting">
   </figure>
   <div class="movie r" data-s="2"><video id="ls-hullVideo" src="{{HULL_MP4}}" muted playsinline preload="auto"></video></div>
   <p class="def r" data-s="3"><b class="sla">SLA</b>Stereolithography: light hardens a liquid resin into a solid part, one layer at a time.<span class="yr">Patent filed 1984 · granted 1986 · Hull coined the word</span></p>
   <p class="refs">Source: C. W. Hull, U.S. Patent 4,575,330 (1986) · Groot model: Byambaa, Thingiverse, CC BY-NC-ND 4.0</p>
 </div>
-<!--LS 11 7 From patient to print-->
+<!--LS 11 6 From patient to print-->
 <div class="ls-stage s-journey" data-ls="11">
   <div class="ls-eyebrow">Imagine it for bioprinting</div>
   <h2>From patient to print</h2>
   <svg class="journey" viewBox="0 0 1200 300" aria-label="Process: biopsy, grow cells, bioink, print, mature, back to patient">
     <g id="ls-segs"></g>
     <!-- 1 biopsy -->
-    <g transform="translate(100 110)"><g class="stn" data-s="1">
+    <g transform="translate(100 110)"><g class="stn" data-s="0">
       <rect x="-48" y="-48" width="96" height="96" rx="3" fill="none" stroke="var(--line)" stroke-width="2" stroke-dasharray="3 5"/>
       <path d="M-22 -14 q10 -12 26 -4 q14 6 8 22 q-6 16 -22 12 q-20 -4 -12 -30z" fill="var(--rose)" fill-opacity=".85"/>
       <text class="lbl t" y="90" text-anchor="middle">Biopsy</text>
       <text class="lbl sub d" y="112" text-anchor="middle">a small tissue sample</text>
     </g></g>
     <!-- 2 grow -->
-    <g transform="translate(300 110)"><g class="stn" data-s="2">
+    <g transform="translate(300 110)"><g class="stn" data-s="1">
       <ellipse rx="56" ry="22" cy="14" fill="none" stroke="var(--line)" stroke-width="2"/>
       <ellipse rx="56" ry="22" cy="4" fill="rgba(100,223,255,.06)" stroke="var(--line)" stroke-width="2"/>
       <g class="grow" fill="none" stroke="var(--mint)" stroke-width="2">
@@ -162,7 +168,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
       <text class="lbl sub d" y="112" text-anchor="middle">in the lab</text>
     </g></g>
     <!-- 3 bioink -->
-    <g transform="translate(500 110)"><g class="stn" data-s="3">
+    <g transform="translate(500 110)"><g class="stn" data-s="2">
       <path d="M-26 -50 v80 a26 22 0 0 0 52 0 v-80" fill="none" stroke="var(--line)" stroke-width="2"/>
       <path d="M-24 -6 v36 a24 20 0 0 0 48 0 v-36z" fill="var(--lav)" fill-opacity=".3"/>
       <g fill="none" stroke="var(--mint)" stroke-width="1.8"><circle cx="-8" cy="10" r="5"/><circle cx="10" cy="24" r="5"/><circle cx="6" cy="2" r="5"/><circle cx="-12" cy="32" r="5"/></g>
@@ -170,7 +176,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
       <text class="lbl sub d" y="112" text-anchor="middle">cells + gel</text>
     </g></g>
     <!-- 4 print -->
-    <g transform="translate(700 110)"><g class="stn" data-s="4">
+    <g transform="translate(700 110)"><g class="stn" data-s="3">
       <path d="M-50 4 v26 h100 v-26" fill="none" stroke="var(--line)" stroke-width="2"/>
       <rect x="-48" y="12" width="96" height="17" fill="var(--lav)" fill-opacity=".18"/>
       <rect x="-30" y="-36" width="60" height="6" fill="var(--fg)" fill-opacity=".8"/>
@@ -181,7 +187,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
       <text class="lbl sub d" y="112" text-anchor="middle">layer by layer</text>
     </g></g>
     <!-- 5 mature -->
-    <g transform="translate(900 110)"><g class="stn" data-s="5">
+    <g transform="translate(900 110)"><g class="stn" data-s="4">
       <rect x="-34" y="-46" width="68" height="92" rx="12" fill="none" stroke="var(--line)" stroke-width="2"/>
       <rect x="-32" y="-14" width="64" height="58" rx="10" fill="var(--cyan)" fill-opacity=".1"/>
       <path d="M-12 30 q-6 -18 12 -22 q18 4 12 22z" fill="var(--rose)" fill-opacity=".7"/>
@@ -190,7 +196,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
       <text class="lbl sub d" y="112" text-anchor="middle">bioreactor · 37 °C</text>
     </g></g>
     <!-- 6 patient -->
-    <g transform="translate(1100 110)"><g class="stn" data-s="6">
+    <g transform="translate(1100 110)"><g class="stn" data-s="5">
       <circle cy="-36" r="15" fill="none" stroke="var(--fg)" stroke-width="2"/>
       <path d="M-30 50 v-34 q0 -26 30 -26 q30 0 30 26 v34" fill="none" stroke="var(--fg)" stroke-width="2"/>
       <path class="glow-organ" d="M-8 12 q-8 -10 0 -14 q8 -2 8 6 q0 -8 8 -6 q8 4 0 14 l-8 10z" fill="var(--rose)"/>
@@ -198,35 +204,35 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
       <text class="lbl sub d" y="112" text-anchor="middle">their own cells</text>
     </g></g>
   </svg>
-  <p class="punch r" data-s="7">Made from the <span style="color:#E394AD">patient’s own cells</span>, so the body is less likely to reject it.</p>
+  <p class="punch r" data-s="6">Made from the <span style="color:#E394AD">patient’s own cells</span>, so the body is less likely to reject it.</p>
   <p class="refs">Source: Santoni et al., Bio-Design and Manufacturing, 5, 14–42 (2022)</p>
 </div>
-<!--LS 12 3 Two ways to build-->
+<!--LS 12 2 Two ways to build-->
 <div class="ls-stage s-modes" data-ls="12">
   <div class="ls-eyebrow">Two ways to build</div>
   <h2>Light from below, or from above</h2>
   <div class="modes">
-    <div class="mode r" data-s="1">
+    <div class="mode r" data-s="0">
       <div class="fig"><svg id="ls-bu" viewBox="60 20 300 370" aria-label="Bottom-up printer animation"></svg></div>
       <h3>Bottom-up</h3>
       <p>Light shines up through a clear window in the tank floor. Each new layer sticks to that window, so the platform lifts and peels it off before the next layer.</p>
-      <div class="trade r" data-s="3"><span class="plus">+ Needs only a shallow pool of bioink</span><span class="minus">– Peeling pulls on soft gels</span></div>
+      <div class="trade r" data-s="2"><span class="plus">+ Needs only a shallow pool of bioink</span><span class="minus">– Peeling pulls on soft gels</span></div>
     </div>
-    <div class="mode r" data-s="2">
+    <div class="mode r" data-s="1">
       <div class="fig"><svg id="ls-td" viewBox="60 20 300 370" aria-label="Top-down printer animation"></svg></div>
       <h3>Top-down</h3>
       <p>The classic set-up: the laser sits above and cures the surface. The platform sinks deeper and a blade spreads fresh liquid.</p>
-      <div class="trade r" data-s="3"><span class="plus">+ No peeling, gentle on soft hydrogels</span><span class="minus">– The tank must be full: more bioink</span></div>
+      <div class="trade r" data-s="2"><span class="plus">+ No peeling, gentle on soft hydrogels</span><span class="minus">– The tank must be full: more bioink</span></div>
     </div>
   </div>
   <p class="refs">Source: Li et al., iScience, 26, 106039 (2023)</p>
 </div>
-<!--LS 13 3 Which light?-->
+<!--LS 13 2 Which light?-->
 <div class="ls-stage s-light" data-ls="13">
   <div class="ls-eyebrow">Which light?</div>
   <h2>UV, near-infrared, or both</h2>
   <div class="lights">
-    <div class="light r" data-s="1">
+    <div class="light r" data-s="0">
       <div class="fig"><svg viewBox="0 0 300 300" aria-label="UV light stops near the surface">
         <defs>
           <linearGradient id="ls-fadeUV" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset=".25" stop-color="#fff"/><stop offset=".4" stop-color="#000"/></linearGradient>
@@ -246,7 +252,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
       <h3>UV / violet</h3><div class="nm">≈ 365–405 nm</div>
       <ul><li class="p">Fast, well-known photoinitiators</li><li class="p">Fine detail</li><li class="m">Shallow: under 1 mm in tissue</li><li class="m">DNA and proteins absorb it, so it can harm cells</li></ul>
     </div>
-    <div class="light r" data-s="2">
+    <div class="light r" data-s="1">
       <div class="fig"><svg viewBox="0 0 300 300" aria-label="Near-infrared light reaches deeper">
         <g class="tissue"></g>
         <g mask="url(#ls-mNIR)" stroke="var(--rose)" stroke-width="3">
@@ -257,7 +263,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
       <h3>Near-infrared (NIR)</h3><div class="nm">≈ 700–1700 nm</div>
       <ul><li class="p">Deeper: millimetres, over 1 cm in some studies</li><li class="p">Gentler on cells</li><li class="m">Needs special NIR-sensitive initiators</li><li class="m">Water absorbs it and heats up</li></ul>
     </div>
-    <div class="light r" data-s="3">
+    <div class="light r" data-s="2">
       <div class="fig"><svg viewBox="0 0 300 300" aria-label="UV and infrared heat meet and cure where they overlap">
         <defs>
           <linearGradient id="ls-fadeIR" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#fff"/><stop offset=".72" stop-color="#000"/></linearGradient>
@@ -281,63 +287,63 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
   </div>
   <p class="refs">Source: Chen et al., Advanced Science, 7, 1903783 (2020) · Bártolo &amp; Mitchell, Rapid Prototyping Journal, 9, 150–156 (2003)</p>
 </div>
-<!--LS 14 3 Bioink and curing-->
+<!--LS 14 2 Bioink and curing-->
 <div class="ls-stage s-ink" data-ls="14">
   <div class="ls-eyebrow">Two words to know</div>
   <h2>Bioink &amp; curing</h2>
   <svg class="lens" id="ls-lens" viewBox="0 0 500 500" aria-label="Zoom into bioink: cells, polymer chains and photoinitiator"></svg>
   <div class="state" id="ls-inkState">STATE: <b>LIQUID</b></div>
   <div class="ink-text">
-    <div class="r" data-s="1">
+    <div class="r" data-s="0">
       <h3>Bioink</h3>
       <p>The “ink” of a bioprinter: living cells floating in a water-rich gel precursor (for example GelMA), plus a photoinitiator that reacts to light.</p>
       <div class="legend"><span><i style="border:2px solid var(--mint)"></i>cells</span><span><i style="background:var(--lav)"></i>polymer chains</span><span><i style="background:var(--cyan)"></i>photoinitiator</span></div>
     </div>
-    <div class="r" data-s="2">
+    <div class="r" data-s="1">
       <h3>Curing</h3>
       <p>Light hits the photoinitiator. It splits into radicals, very reactive molecules that link the chains together.</p>
       <div class="chain"><span>light</span><em>→</em><span>photoinitiator</span><em>→</em><span>radicals</span><em>→</em><span>crosslinks</span></div>
     </div>
-    <div class="r" data-s="3">
+    <div class="r" data-s="2">
       <p style="font-size:1.6cqw;color:var(--fg)">The liquid turns into a gel, and the cells are held in place inside it.</p>
     </div>
   </div>
   <p class="refs">Source: Li et al., iScience, 26, 106039 (2023)</p>
 </div>
-<!--LS 15 4 What is still in the way-->
+<!--LS 15 3 What is still in the way-->
 <div class="ls-stage s-obs" data-ls="15">
   <h2>What’s still in the way?</h2>
   <div class="obs">
+    <div class="ob r" data-s="0">
+      <svg viewBox="0 0 64 64" fill="none" stroke="var(--fg)" stroke-width="2" stroke-linecap="round"><g stroke="var(--faint)"><path d="M6 14h52M6 26h52M6 38h52M6 50h52M14 6v52M26 6v52M38 6v52M50 6v52"/></g><g class="scan"><circle cx="24" cy="24" r="12" stroke="var(--cyan)"/><line x1="33" y1="33" x2="44" y2="44" stroke="var(--cyan)" stroke-width="3"/></g></svg>
+      <h3>Fine detail or big size</h3>
+      <p>Multiphoton printing reaches sub-micrometre detail, but only a few mm³ per hour. Faster methods are coarser.</p>
+    </div>
     <div class="ob r" data-s="1">
       <svg viewBox="0 0 64 64" fill="none" stroke="var(--fg)" stroke-width="2" stroke-linecap="round"><line x1="32" y1="10" x2="32" y2="56"/><line x1="20" y1="56" x2="44" y2="56"/><g class="tilt"><line x1="10" y1="18" x2="54" y2="18"/><path d="M10 18 l-6 14 h12z M54 18 l-6 14 h12z" stroke="var(--lav)"/></g></svg>
       <h3>Laws lag behind</h3>
       <p>Regulators still struggle to classify printed tissue, and it does not fit today’s clinical-trial rules.</p>
     </div>
     <div class="ob r" data-s="2">
-      <svg viewBox="0 0 64 64" fill="none" stroke="var(--fg)" stroke-width="2" stroke-linecap="round"><g stroke="var(--faint)"><path d="M6 14h52M6 26h52M6 38h52M6 50h52M14 6v52M26 6v52M38 6v52M50 6v52"/></g><g class="scan"><circle cx="24" cy="24" r="12" stroke="var(--cyan)"/><line x1="33" y1="33" x2="44" y2="44" stroke="var(--cyan)" stroke-width="3"/></g></svg>
-      <h3>Fine detail or big size</h3>
-      <p>Multiphoton printing reaches sub-micrometre detail, but only a few mm³ per hour. Faster methods are coarser.</p>
-    </div>
-    <div class="ob r" data-s="3">
       <svg viewBox="0 0 64 64" fill="none" stroke="var(--fg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6 L60 56 H4 Z"/><line class="blink" x1="32" y1="24" x2="32" y2="40" stroke="var(--rose)" stroke-width="3"/><circle class="blink" cx="32" cy="48" r="1.8" fill="var(--rose)" stroke="none"/></svg>
       <h3>Room for misuse</h3>
       <p>Without joint regulation, a new black market in printed organs could appear.</p>
     </div>
-    <div class="ob r" data-s="4">
+    <div class="ob r" data-s="3">
       <svg viewBox="0 0 64 64" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="24" stroke="var(--faint)"/><path class="ecg" pathLength="100" d="M4 34 h14 l5 -12 l6 22 l6 -26 l5 16 h20" stroke="var(--rose)"/></svg>
       <h3>Keeping cells alive</h3>
       <p>The biggest hurdle: without blood vessels, tissue cannot grow beyond 100–200 µm.</p>
     </div>
   </div>
-  <p class="refs">Source: Vermeulen et al., J. Med. Ethics, 43, 618–624 (2017) · Van Ombergen et al., Adv. Healthcare Mater., 12, 2300443 (2023) · Bishop et al., Genes &amp; Diseases, 4, 185–195 (2017)</p>
+  <p class="refs">Source: Van Ombergen et al., Adv. Healthcare Mater., 12, 2300443 (2023) · Vermeulen et al., J. Med. Ethics, 43, 618–624 (2017) · Bishop et al., Genes &amp; Diseases, 4, 185–195 (2017)</p>
 </div>
-<!--LS 16 4 Why cells struggle-->
+<!--LS 16 3 Why cells struggle-->
 <div class="ls-stage s-womb" data-ls="16">
   <div class="ls-eyebrow">Why is it so hard?</div>
   <h2>Think of a baby in the womb</h2>
   <div class="womb-grid">
-    <div class="col-w r" data-s="1"><h3>In the womb</h3><svg id="ls-womb" viewBox="0 0 360 340" aria-label="Fetus in the womb, fed through the placenta"></svg></div>
-    <div class="r" data-s="2">
+    <div class="col-w r" data-s="0"><h3>In the womb</h3><svg id="ls-womb" viewBox="0 0 360 340" aria-label="Fetus in the womb, fed through the placenta"></svg></div>
+    <div class="r" data-s="1">
       <table class="needs">
         <tr><th>What cells need</th><th class="c2">Womb</th><th class="c3 col-t">Printed tissue</th></tr>
         <tr><td>Warmth, about 37 °C<small>a fetus runs 0.3–0.5 °C warmer than its mother</small></td><td class="c2 ok">✓</td><td class="c3 col-t ok">✓ incubator</td></tr>
@@ -349,7 +355,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
     </div>
     <div class="col-t"><h3>In a printed tissue</h3><svg id="ls-tissue" viewBox="0 0 360 340" aria-label="Printed tissue: oxygen only reaches the outer cells"></svg></div>
   </div>
-  <p class="takeaway r" data-s="4">Without blood vessels, oxygen only seeps about 0.1–0.2 mm into the tissue, one or two sheets of paper thick. The cells in the middle suffocate.</p>
+  <p class="takeaway r" data-s="3">Without blood vessels, oxygen only seeps about 0.1–0.2 mm into the tissue, one or two sheets of paper thick. The cells in the middle suffocate.</p>
   <p class="refs">Source: Bishop et al., Genes &amp; Diseases, 4, 185–195 (2017) · Asakura, J. Nippon Med. Sch., 71, 360–370 (2004)</p>
 </div>
 <!--LS-SCRIPT-->
@@ -445,11 +451,11 @@ function lens(svg){
   const pis=[];for(let i=0;i<22;i++){const x=40+rnd()*420,y=40+rnd()*420;const grp=mk('g',{},g);const dot=mk('circle',{r:4.5,fill:'var(--cyan)'},grp);
     const spark=mk('path',{d:'M-9 0H9M0 -9V9M-6 -6L6 6M-6 6L6 -6',stroke:'#fff','stroke-width':1.6,opacity:0},grp);pis.push({x,y,ph:rnd()*6,grp,dot,spark})}
   mk('circle',{cx:250,cy:250,r:230,fill:'none',stroke:'rgba(241,245,245,.5)','stroke-width':2},svg);
-  const state=document.getElementById('ls-inkState');let stepAt={2:null,3:null},last=-1,prevT=0;
+  const state=document.getElementById('ls-inkState');let stepAt={1:null,2:null},last=-1,prevT=0;
   return (t,step)=>{
-    if(t<prevT){stepAt={2:null,3:null};last=-1}prevT=t;
-    if(step!==last){if(step>=2&&stepAt[2]===null)stepAt[2]=t;if(step<2)stepAt[2]=null;if(step>=3&&stepAt[3]===null)stepAt[3]=t;if(step<3)stepAt[3]=null;last=step}
-    const s2=stepAt[2]===null?-1:t-stepAt[2], s3=stepAt[3]===null?-1:t-stepAt[3];
+    if(t<prevT){stepAt={1:null,2:null};last=-1}prevT=t;
+    if(step!==last){if(step>=1&&stepAt[1]===null)stepAt[1]=t;if(step<1)stepAt[1]=null;if(step>=2&&stepAt[2]===null)stepAt[2]=t;if(step<2)stepAt[2]=null;last=step}
+    const s2=stepAt[1]===null?-1:t-stepAt[1], s3=stepAt[2]===null?-1:t-stepAt[2];
     const gel=s3<0?0:Math.min(1,s3/2.5), amp=7*(1-gel);
     wash.setAttribute('opacity',s2<0?0:Math.max(0,.22*Math.cos(Math.min(s2,1.6)/1.6*Math.PI/2)));
     chains.forEach(c=>{c.cur=c.pts.map(p=>[p.x+Math.sin(t*1.7+p.ph)*amp,p.y+Math.cos(t*1.3+p.ph*1.3)*amp]);c.el.setAttribute('points',c.cur.map(p=>p.join(',')).join(' '))});
@@ -493,7 +499,7 @@ function tissue(svg){
   mk('text',{x:x0+gap*1.4+8,y:305,class:'lbl','font-size':13,fill:'var(--cyan)'},svg).textContent='O₂ reaches ≈ 100–200 µm';
   mk('text',{x:180,y:168,class:'lbl','font-size':14,'text-anchor':'middle',fill:'var(--rose)'},svg).textContent='';
   let start=null,prevT=0;
-  return (t,step)=>{if(t<prevT)start=null;prevT=t;if(step>=3){if(start===null)start=t}else start=null;const k=start===null?0:Math.min(1,(t-start)/3.5);
+  return (t,step)=>{if(t<prevT)start=null;prevT=t;if(step>=2){if(start===null)start=t}else start=null;const k=start===null?0:Math.min(1,(t-start)/3.5);
     cells.forEach(c=>{const dying=c.d>=2?k:0;c.e.setAttribute('stroke',dying>.5?'#5C636B':'var(--mint)');c.e.setAttribute('stroke-dasharray',dying>.5?'3 4':'none');c.e.setAttribute('fill-opacity',1-dying*.9)});
     ox.forEach(o=>{const u=((t*.35+o.ph)%1),depth=u*gap*1.5,pos=x0+o.a*S;let x,y;
       if(o.side===0){x=pos;y=y0-10+depth}else if(o.side===1){x=pos;y=y0+S+10-depth}else if(o.side===2){x=x0-10+depth;y=y0+o.a*S}else{x=x0+S+10-depth;y=y0+o.a*S}
@@ -502,21 +508,46 @@ function tissue(svg){
 
 /* ---------- journey connectors ---------- */
 const segs=document.getElementById('ls-segs');
-for(let i=0;i<5;i++)mk('line',{x1:100+i*200+66,y1:110,x2:100+(i+1)*200-66,y2:110,class:'seg','data-s':i+2},segs);
+for(let i=0;i<5;i++)mk('line',{x1:100+i*200+66,y1:110,x2:100+(i+1)*200-66,y2:110,class:'seg','data-s':i+1},segs);
 
 const anims={12:[bottomUp(document.getElementById('ls-bu')),topDown(document.getElementById('ls-td'))],14:[lens(document.getElementById('ls-lens'))],16:[womb(document.getElementById('ls-womb')),tissue(document.getElementById('ls-tissue'))]};
 
 
+
+/* ---------- slide 10: time travel back to 1984 ---------- */
+const warp=(()=>{const box=document.querySelector('.light-slide .s-hull .warp');if(!box)return{run(){},reset(){},still(){}};
+  const svg=box.querySelector('.warp-lines'),year=box.querySelector('.warp-year');let seed=11;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+  const cols=['var(--lav)','var(--cyan)','var(--rose)','var(--fg)'];
+  const lines=[];for(let i=0;i<46;i++){const a=rnd()*Math.PI*2,r0=120+rnd()*260,len=90+rnd()*220;
+    lines.push(mk('line',{x1:800+Math.cos(a)*r0,y1:450+Math.sin(a)*r0,x2:800+Math.cos(a)*(r0+len),y2:450+Math.sin(a)*(r0+len),stroke:cols[i%4],'stroke-width':1.2+rnd()*2.2},svg))}
+  const FROM=new Date().getFullYear(),TO=1984;let raf=0,anims=[];
+  const set=(n,o,sc,bl)=>{year.textContent=n;year.style.opacity=o;year.style.transform=`translateY(-50%) scale(${sc})`;year.style.filter=bl?`blur(${bl}px)`:'none'};
+  function reset(){cancelAnimationFrame(raf);anims.forEach(a=>a.cancel());anims=[];year.textContent='';year.style.opacity=0}
+  function still(){reset();set(TO,.07,2.1,0)}
+  function run(){reset();if(reduce){still();return}
+    lines.forEach((l,i)=>anims.push(l.animate([{transform:'scale(2.6)',opacity:0},{opacity:.85,offset:.3},{transform:'scale(.04)',opacity:0}],{duration:900+((i*37)%5)*120,delay:(i*53)%700,easing:'cubic-bezier(.55,0,.85,.35)',fill:'both'})));
+    const t0=performance.now();
+    const tick=now=>{const t=(now-t0)/1000;
+      if(t<.2)set(FROM,t/.2,.86+.14*t/.2,6);
+      else if(t<1.5){const u=ease((t-.2)/1.3);set(Math.round(FROM-(FROM-TO)*u),1,1,4*(1-u))}
+      else if(t<1.8)set(TO,1,1+.05*Math.sin((t-1.5)/.3*Math.PI),0);
+      else if(t<3){const u=ease((t-1.8)/1.2);set(TO,1-.93*u,1+1.1*u,0)}
+      else{set(TO,.07,2.1,0);return}
+      raf=requestAnimationFrame(tick)};
+    raf=requestAnimationFrame(tick)}
+  return{run,reset,still}})();
+let hullPrev=0;
 const stages=[...document.querySelectorAll('.light-slide .ls-stage')];
 const video=document.getElementById('ls-hullVideo');
 const stepOf=stage=>stage.closest('.slide').querySelectorAll('.ls-step.revealed').length;
 function sync(stage){
   const step=stepOf(stage);stage.dataset.cur=step;
   stage.querySelectorAll('[data-s]').forEach(e=>e.classList.toggle('on',step>=+e.dataset.s));
-  stage.classList.toggle('t3',step>=3);
+  stage.classList.toggle('t3',step>=(stage.classList.contains('s-womb')?2:3));
   stage.querySelectorAll('.ob').forEach(e=>e.classList.toggle('cur',+e.dataset.s===step));
   if(stage.classList.contains('s-hull')){
     const active=stage.closest('.slide').classList.contains('active');
+    if(step===0)warp.reset();else if(hullPrev===0)active?warp.run():warp.still();hullPrev=step;
     if(active&&step>=2){if(video.paused&&video.currentTime<.05)setTimeout(()=>{if(stepOf(stage)>=2&&stage.closest('.slide').classList.contains('active'))video.play().catch(()=>{})},500)}
     else{video.pause();try{video.currentTime=0}catch{}}
   }
@@ -526,7 +557,7 @@ stages.forEach(stage=>{observer.observe(stage.closest('.slide'),{attributes:true
 const t0=performance.now();
 Object.values(anims).forEach(list=>list.forEach(f=>f(0,0)));
 const clocks=new Map();let shown=null;
-window.lightSlides={replay(slide){const stage=slide.querySelector('.ls-stage');clocks.set(stage,performance.now());if(stage.classList.contains('s-hull')){try{video.currentTime=0}catch{}if(stepOf(stage)>=2)video.play().catch(()=>{})}}};
+window.lightSlides={replay(slide){const stage=slide.querySelector('.ls-stage');clocks.set(stage,performance.now());if(stage.classList.contains('s-hull')){if(stepOf(stage)>=1)warp.run();try{video.currentTime=0}catch{}if(stepOf(stage)>=2)video.play().catch(()=>{})}}};
 function loop(now){const stage=document.querySelector('.light-slide.active .ls-stage');if(stage!==shown){shown=stage;if(stage)clocks.set(stage,now)}if(stage){const a=anims[stage.dataset.ls];if(a){const t=reduce?4.2:(now-(clocks.get(stage)??t0))/1000;a.forEach(f=>f(t,+stage.dataset.cur||0))}}requestAnimationFrame(loop)}
 requestAnimationFrame(loop);
 })();

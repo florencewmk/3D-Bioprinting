@@ -112,14 +112,14 @@ Start with the numbered country markers. The United States ranks first with 2,55
 
 ## 10. How it started
 
-There are many ways to bioprint.
-Chuck HullUnited States · 1980s
+Printing with light
+Chuck HullUnited States · 87 years old
 SLAStereolithography: light hardens a liquid resin into a solid part, one layer at a time.Patent filed 1984 · granted 1986 · Hull coined the word
 Source: C. W. Hull, U.S. Patent 4,575,330 (1986) · Groot model: Byambaa, Thingiverse, CC BY-NC-ND 4.0
 
 ### Speaker notes
 
-There are many ways to do bioprinting, but I’d like to highlight one: printing with light. So how did 3D printing start? Back in the 1980s, this man, Chuck Hull, invented stereolithography. He filed the patent in 1984 and came up with the name. We call it SLA. [video] SLA hardens a liquid resin into a solid part, layer by layer, using a UV laser or another light source. (~40 s)
+There are many ways to bioprint, but today I’ll focus on one: printing with light. So how did it start? Let’s travel back to 1984. This man, Chuck Hull, now 87, invented stereolithography. He filed the patent in 1984 and came up with the name. We call it SLA. [video] SLA hardens a liquid resin into a solid part, layer by layer, using a UV laser or another light source. (~40 s)
 
 ## 11. Bioink and curing
 
@@ -221,19 +221,19 @@ Which light do we use? UV cures fast, but it only gets less than a millimetre in
 ## 15. What is still in the way
 
 What’s still in the way?
-Laws lag behind
-Regulators still struggle to classify printed tissue, and it does not fit today’s clinical-trial rules.
 Fine detail or big size
 Multiphoton printing reaches sub-micrometre detail, but only a few mm³ per hour. Faster methods are coarser.
+Laws lag behind
+Regulators still struggle to classify printed tissue, and it does not fit today’s clinical-trial rules.
 Room for misuse
 Without joint regulation, a new black market in printed organs could appear.
 Keeping cells alive
 The biggest hurdle: without blood vessels, tissue cannot grow beyond 100–200 µm.
-Source: Vermeulen et al., J. Med. Ethics, 43, 618–624 (2017) · Van Ombergen et al., Adv. Healthcare Mater., 12, 2300443 (2023) · Bishop et al., Genes & Diseases, 4, 185–195 (2017)
+Source: Van Ombergen et al., Adv. Healthcare Mater., 12, 2300443 (2023) · Vermeulen et al., J. Med. Ethics, 43, 618–624 (2017) · Bishop et al., Genes & Diseases, 4, 185–195 (2017)
 
 ### Speaker notes
 
-So why don’t we print organs yet? First, laws: regulators still don’t know how to classify printed tissue, and it doesn’t fit today’s clinical-trial rules. Second, detail versus size: the finest light printing is very slow, only a few cubic millimetres per hour. Third, misuse: without regulation, a black market in printed organs could appear. And the biggest one: keeping the cells alive. (~40 s)
+So why don’t we print organs yet? First, detail versus size: the finest light printing is very slow, only a few cubic millimetres per hour. Second, laws: regulators still don’t know how to classify printed tissue, and it doesn’t fit today’s clinical-trial rules. Third, misuse: without regulation, a black market in printed organs could appear. And the biggest one: keeping the cells alive. (~40 s)
 
 ## 16. Why cells struggle
 

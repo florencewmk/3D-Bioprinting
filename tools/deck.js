@@ -159,23 +159,29 @@ class SlidePresentation{
  document.querySelectorAll('[data-goto]').forEach(b=>b.onclick=()=>{if(!this.editing)this.show(Number(b.dataset.goto)-1)});document.querySelectorAll('dialog .close').forEach(b=>b.onclick=()=>b.closest('dialog').close());
  document.getElementById('grid').replaceChildren();slidesData.forEach((d,i)=>{const b=document.createElement('button');b.className='thumb';const label=document.createElement('small');label.textContent=`${String(i+1).padStart(2,'0')} / ${i<24?'TALK':i<29?'REFERENCES':'BACKUP'}`;const title=document.createElement('span');title.textContent=d.title;b.append(label,title);b.onclick=()=>{this.show(i);document.getElementById('overview').close()};document.getElementById('grid').append(b)});
  document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='s'){e.preventDefault();this.save();return}if(e.target.isContentEditable||(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)&&e.target.id!=='organYearSlider')||e.ctrlKey||e.metaKey||e.altKey||document.querySelector('dialog[open]'))return;if(e.target.closest('button,a,video')&&[' ','Enter'].includes(e.key))return;const k=e.key.toLowerCase();
- if(e.target.closest('.reference-scroll')&&['arrowup','arrowdown','pageup','pagedown',' '].includes(k))return;
- if(k==='arrowleft'||k==='arrowright'){
+ const scroller=e.target.closest('.reference-scroll');
+ if(scroller&&['pageup','pagedown',' '].includes(k))return;
+ if(scroller&&(k==='arrowdown'?scroller.scrollTop+scroller.clientHeight<scroller.scrollHeight-2:k==='arrowup'&&scroller.scrollTop>2))return; // let a focused reference list scroll first
+ if(k==='arrowup'||k==='arrowdown'){ // Up/Down change slides
   e.preventDefault();
-  this.show(this.current+(k==='arrowright'?1:-1));
+  this.show(this.current+(k==='arrowdown'?1:-1));
   return;
  }
- if(k==='arrowup'||k==='arrowdown'){
+ if(k==='arrowleft'||k==='arrowright'){ // Left/Right step through points
   e.preventDefault();
   if(this.editing)return;
-  this.step(k==='arrowdown'?1:-1);
+  this.step(k==='arrowright'?1:-1);
   return;
  }
  if(k==='r'&&(this.chartActive()||this.lightReplay())){e.preventDefault();this.replayChart();return;}
  if(k===' '||k==='pagedown'){e.preventDefault();this.advance(1);}
  else if(k==='pageup'){e.preventDefault();this.advance(-1);}
  else if(k==='home'){e.preventDefault();this.show(0);this.resetProfile(this.slides[0]);}else if(k==='end'){e.preventDefault();this.show(this.slides.length-1)}else if(k==='o')this.open('overview');else if(k==='n')this.open('notesDialog');else if(k==='f')this.fullscreen();else if(k==='e')this.toggleEdit();else if(k==='?')this.open('helpDialog');});
- let start=null;const view=document.querySelector('.deck-viewport');view.addEventListener('click',e=>{if(e.button!==0||this.editing||document.querySelector('dialog[open]')||e.target.closest('button,a,video,input,textarea,select,[contenteditable="true"]'))return;if(this.slides[this.current].matches('.closing-thanks'))this.profileStep(1);else if(this.slides[this.current].matches('.profile-slide,.tram-story-slide,.examples-slide,.light-slide,.progress-slide'))this.advance(1);});view.addEventListener('touchstart',e=>{if(!this.editing&&!e.target.closest('video,button,a'))start={x:e.touches[0].clientX,y:e.touches[0].clientY}},{passive:true});view.addEventListener('touchend',e=>{if(!start||document.querySelector('dialog[open]'))return;const dx=e.changedTouches[0].clientX-start.x,dy=e.changedTouches[0].clientY-start.y;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))this.advance(dx<0?1:-1);start=null},{passive:true});let lastWheel=0;addEventListener('wheel',e=>{if(this.editing||document.querySelector('dialog[open]')||e.target.closest('video,.reference-scroll'))return;e.preventDefault();if(Date.now()-lastWheel>700&&Math.abs(e.deltaY)>20){lastWheel=Date.now();this.advance(e.deltaY>0?1:-1)}},{passive:false});
+ let start=null;const view=document.querySelector('.deck-viewport');
+ /* Click advances, but selecting text (drag, double/triple click) or clicking away a selection does not, so text can be copied */
+ const selected=()=>{const sel=getSelection();return !!(sel&&!sel.isCollapsed&&sel.toString().trim())};let down=null,clickTimer=0;
+ view.addEventListener('mousedown',e=>{down={x:e.clientX,y:e.clientY,hadSelection:selected()}});
+ view.addEventListener('click',e=>{if(e.button!==0||this.editing||document.querySelector('dialog[open]')||e.target.closest('button,a,video,input,textarea,select,[contenteditable="true"]'))return;clearTimeout(clickTimer);const moved=down&&Math.hypot(e.clientX-down.x,e.clientY-down.y)>4;if(moved||down?.hadSelection||e.detail>1||selected())return;const slide=this.current;clickTimer=setTimeout(()=>{if(selected()||slide!==this.current)return;if(this.slides[this.current].matches('.closing-thanks'))this.profileStep(1);else if(this.slides[this.current].matches('.profile-slide,.tram-story-slide,.examples-slide,.light-slide,.progress-slide'))this.advance(1);},230);});view.addEventListener('touchstart',e=>{if(!this.editing&&!e.target.closest('video,button,a'))start={x:e.touches[0].clientX,y:e.touches[0].clientY}},{passive:true});view.addEventListener('touchend',e=>{if(!start||document.querySelector('dialog[open]'))return;const dx=e.changedTouches[0].clientX-start.x,dy=e.changedTouches[0].clientY-start.y;if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy))this.advance(dx<0?1:-1);start=null},{passive:true});let lastWheel=0;addEventListener('wheel',e=>{if(this.editing||document.querySelector('dialog[open]')||e.target.closest('video,.reference-scroll'))return;e.preventDefault();if(Date.now()-lastWheel>700&&Math.abs(e.deltaY)>20){lastWheel=Date.now();this.advance(e.deltaY>0?1:-1)}},{passive:false});
  document.querySelectorAll('.editable').forEach(e=>{e.addEventListener('input',()=>this.autosave());e.addEventListener('paste',event=>{if(!this.editing)return;event.preventDefault();document.execCommand('insertText',false,event.clipboardData.getData('text/plain'));});});
  /* === HOVER HOTZONE: 400 MS GRACE PERIOD KEEPS THE BUTTON CLICKABLE === */
  const hot=document.querySelector('.edit-hotzone'),toggle=document.getElementById('editToggle');let hideEdit;[hot,toggle].forEach(el=>{el.addEventListener('mouseenter',()=>{clearTimeout(hideEdit);toggle.classList.add('show')});el.addEventListener('mouseleave',()=>{hideEdit=setTimeout(()=>{if(!this.editing)toggle.classList.remove('show')},400)})});hot.onclick=()=>this.toggleEdit();let hideControls;const reveal=()=>{document.body.classList.add('controls-visible');clearTimeout(hideControls);hideControls=setTimeout(()=>document.body.classList.remove('controls-visible'),2400)};addEventListener('pointermove',reveal);addEventListener('touchstart',reveal,{passive:true});reveal();

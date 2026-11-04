@@ -1,9 +1,20 @@
 {
   "source": "presentation/offline.html",
-  "source_sha256": "cea68a07889e64497f669da96a9029b98ca5f31dcd99b616cbb2bbcac34c47f7",
+  "source_sha256": "732698d2dc8b3ee3d1c6f4f5bdee3fcafcd10c56bc001b0d3c02310046c364df",
   "slides": 60,
-  "asset_count": 174,
+  "asset_count": 175,
   "assets": [
+    {
+      "path": "materials/diagrams/008c09b793c6c0bb3b34019eb11ba4b75fcf08529ec84e0b4d77b5ad4c59fabb.svg",
+      "mime": "image/svg+xml",
+      "bytes": 4661,
+      "sha256": "008c09b793c6c0bb3b34019eb11ba4b75fcf08529ec84e0b4d77b5ad4c59fabb",
+      "slides": [
+        12
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
+    },
     {
       "path": "materials/diagrams/0218baeb64d53627d5109649744957620c0fee4935725b8e4e683ff3e40a33e7.svg",
       "mime": "image/svg+xml",
@@ -168,17 +179,6 @@
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
-    },
-    {
-      "path": "materials/diagrams/4a6c929e1ddab40401e6b7d7835af01e06331aedb1eec2073ef2d87f6a1054c1.svg",
-      "mime": "image/svg+xml",
-      "bytes": 4661,
-      "sha256": "4a6c929e1ddab40401e6b7d7835af01e06331aedb1eec2073ef2d87f6a1054c1",
-      "slides": [
-        12
-      ],
-      "source": "presentation/offline.html",
-      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/4d3c9a8e8c56ed764ae41e5120f06105ad5b77cab40b571111cad9bf83728ab1.svg",
@@ -476,6 +476,17 @@
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/ea934d5e2c8f31756e463004d66256f0e2bf08cd2b15b9576cd32026a16db8a3.svg",
+      "mime": "image/svg+xml",
+      "bytes": 90,
+      "sha256": "ea934d5e2c8f31756e463004d66256f0e2bf08cd2b15b9576cd32026a16db8a3",
+      "slides": [
+        10
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/ee6c22b00b417511cf54ae788dcc77f1846a6423dfbf5f6be22263e2fd83f0ef.svg",
