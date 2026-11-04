@@ -35,6 +35,11 @@ PROGRESS_PROVENANCE = {
     for name, text in __import__("progress_slide").PROVENANCE.items()
     for path in [ROOT / "tools/progress-slide" / name]
 }
+PROGRESS_PROVENANCE.update({
+    hashlib.sha256(path.read_bytes()).hexdigest(): text
+    for name, text in __import__("conclusion_slide").PROVENANCE.items()
+    for path in [ROOT / "tools/conclusion-slide" / name]
+})
 DATA = re.compile(r"data:([^;,\s\"']+);base64,([A-Za-z0-9+/=\s]+)")
 
 
