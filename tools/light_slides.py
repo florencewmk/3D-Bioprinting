@@ -56,26 +56,26 @@ def visible_text(body):
     return "\n".join(out)
 
 
-def nav(conclusion):
+def nav(conclusion, printing=FIRST):
     return ('<nav class="section-nav" aria-label="Talk sections"><button data-goto="3" class="">Introduction</button>'
-            f'<button data-goto="10" class="current">Printing methods</button><button data-goto="{conclusion}" class="">'
+            f'<button data-goto="{printing}" class="current">Printing methods</button><button data-goto="{conclusion}" class="">'
             'Conclusion</button><span></span></nav>')
 
 
-def render(total, conclusion, date, presenter):
+def render(total, conclusion, date, presenter, first=FIRST, printing=FIRST):
     style, script, chunks = parse_template()
     png, mp4 = b64(HULL_PNG, "image/png"), b64(HULL_MP4, "video/mp4")
     sections, records = [], []
     for i, (n, steps, title, body) in enumerate(chunks):
-        number = FIRST + i
-        assert n == number
+        number = first + i
+        assert n == FIRST + i  # template ids stay 10–16; slide numbers follow `first`
         body = body.replace("{{HULL_PNG}}", png).replace("{{HULL_MP4}}", mp4)
         markers = "".join(f'<i class="ls-step" data-reveal-step="{k}" aria-hidden="true" inert></i>' for k in range(1, steps + 1))
         text = visible_text(body)
-        notes = NOTES[str(number)]
+        notes = NOTES[str(n)]
         sections.append(
             f'<section class="slide light-slide" id="slide-{number}" aria-label="{number}. {html.escape(title, quote=True)}" aria-hidden="true">'
-            + nav(conclusion) + (style if i == 0 else "") + body + markers
+            + nav(conclusion, printing) + (style if i == 0 else "") + body + markers
             + f'<div class="sr-only">{html.escape(text)}</div><!-- Speaker notes: {html.escape(notes)} -->'
             + f'<footer><span>{date}</span><span>{presenter}</span><span>{number:02d} / {total}</span></footer>'
             + (script if i == len(chunks) - 1 else "") + '</section>')
