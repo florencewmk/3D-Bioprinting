@@ -50,7 +50,15 @@ Engineers use the same idea at a very different scale. Take SpaceX’s Raptor 3.
 
 The Dutch have even printed houses and bridges. This concrete house is in Eindhoven, and there’s a printed steel bridge in Amsterdam.
 
-## 04. 3D Bioprinting
+## 04. The tram encounter
+
+Munich tram encounter · Poland to USA
+
+### Speaker notes
+
+Advance through eight cues. Introduce the crowded Saturday tram during Oktoberfest, let the jacket and holiday exchange play out, then pause on the courier’s age and the trip from Poland to the USA. End with the question about manufacturing living tissues and organs.
+
+## 05. 3D Bioprinting
 
 SOfE · Düsseldorf · 5 November 2026
 
@@ -65,14 +73,6 @@ Florence Mei Kuan Wong
 Welcome to the world of 3D printing, a technology that is shaping our future.
 
 On the right is a 3D reconstruction of a branching anatomical model displayed in Yiwu in 2015.
-
-## 05. The tram encounter
-
-Munich tram encounter · Poland to USA
-
-### Speaker notes
-
-Advance through eight cues. Introduce the crowded Saturday tram during Oktoberfest, let the jacket and holiday exchange play out, then pause on the courier’s age and the trip from Poland to the USA. End with the question about manufacturing living tissues and organs.
 
 ## 06. The organ shortage persists
 

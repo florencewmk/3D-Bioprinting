@@ -1,6 +1,6 @@
 {
   "source": "presentation/offline.html",
-  "source_sha256": "71aa6561e66c8fa65931426b69c2acccb1c70d138c364bb8029b8bcb7dd124c8",
+  "source_sha256": "df8b2311eed45e7466aa0ec6ea22d337ab92e5ae39f27883c3a6d469972fecc1",
   "slides": 60,
   "asset_count": 175,
   "assets": [
@@ -728,7 +728,7 @@
       "bytes": 29472426,
       "sha256": "1786970f76a9a466241c8f1d73348d20887c56f67d4135e133495fb97bac3c88",
       "slides": [
-        4
+        5
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1370,7 +1370,7 @@
       "bytes": 709086,
       "sha256": "973f5492d7238e8f5907aca8d6e188cb20872926dfc460ed4d77ea6f84cfd15e",
       "slides": [
-        4
+        5
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1880,7 +1880,7 @@
       "bytes": 24218,
       "sha256": "4516d9289273e2c71a5792a7bc1f4ad7b8639adcbc2a0c1f08f9ac960ca98754",
       "slides": [
-        5
+        4
       ],
       "source": "presentation/offline.html",
       "provenance": "Original editable SVG tram story from materials/interactive/munich-tram-story.html, embedded by tools/update_tram_slide.py."
