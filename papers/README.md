@@ -94,6 +94,22 @@ The newly archived PDF retains its original Creative Commons
 Attribution-NonCommercial notice. Its byte count, SHA-256 and source URL are
 recorded in the catalog. Links alone do not represent archived full texts.
 
+## User-submitted source bank · 4 November 2026
+
+Seven submitted links were checked. Three were already in the source bank
+(Wyss, TAU, Microtia) and three were already cited on the data slides (Harvard
+SEAS co-SWIFT as [15], NASA as [18], DLR as [19]); the TAU heart article is the
+same story as image reference [20]. None of these were duplicated. The CELLINK
+blog post is new. Wyss, Microtia and CELLINK are now cited as web sources
+[48]–[50] on the second data-sources slide.
+
+| Source | Use and qualification | Status |
+| --- | --- | --- |
+| [CELLINK: bioprinted ear transplanted](https://www.cellink.com/blog/bioprinted-ear-successfully-transplanted-into-patient/) | 3DBio AuriNovo ear from the patient’s own cartilage cells, microtia trial (2022). Undated company blog; first-in-human trial, not routine care. | New · [50] |
+| [Harvard SEAS: 3D-printed blood vessels](https://seas.harvard.edu/news/3d-printed-blood-vessels-bring-artificial-organs-closer-reality) · 12 Aug 2024 | co-SWIFT vessels in cardiac tissue, in vitro. | Already [15] |
+| [NASA: 3D Bioprinting](https://www.nasa.gov/missions/station/iss-research/3d-bioprinting/) · 20 Dec 2023 | BioFabrication Facility; first meniscus bioprinted in orbit. | Already [18] |
+| [DLR: 3D-printed bio-plaster](https://www.dlr.de/en/latest/news/2022/01/20220131_3d-printed-bio-plaster) · 31 Jan 2022 | Bioprint FirstAid on ISS, tested with cell substitutes. | Already [19] |
+
 ## IEEE bibliography
 
 The source folders `Presentation/Stereo-thermal-lithography` and
@@ -167,6 +183,14 @@ its existing data, web and image sources.
 [42] Y. Sang, Z. Zhao, M. Zhao, P. Hao, Y. Leng, and H. Liu, “From UV to near-infrared, WS₂ nanosheet: A novel photocatalyst for full solar light spectrum photodegradation,” *Adv. Mater.*, vol. 27, no. 2, pp. 363–369, 2015. doi: [10.1002/adma.201403264](https://doi.org/10.1002/adma.201403264).
 
 [43] W. K. Swainson, “Method, medium and apparatus for producing three-dimensional figure product,” U.S. Patent 4 041 476, Aug. 9, 1977. [Patent record](https://patents.google.com/patent/US4041476A/en). [Full text](supporting/Swainson-1977-US4041476.pdf)
+
+### Web sources
+
+[48] Wyss Institute for Biologically Inspired Engineering, Harvard Univ., “3D bioprinting of living tissues.” Accessed: Nov. 4, 2026. [Online]. Available: <https://wyss.harvard.edu/technology/3d-bioprinting/>
+
+[49] Microtia – Congenital Ear Institute, “3D bioprinting: Growing a child’s own ear in the lab.” Accessed: Nov. 4, 2026. [Online]. Available: <https://www.microtia.net/3d-bioprinting/>
+
+[50] CELLINK, “Bioprinted ear successfully transplanted into patient,” CELLINK Blog. Accessed: Nov. 4, 2026. [Online]. Available: <https://www.cellink.com/blog/bioprinted-ear-successfully-transplanted-into-patient/>
 
 ### YouTube videos
 

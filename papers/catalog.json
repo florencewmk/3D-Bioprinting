@@ -1,7 +1,7 @@
 {
   "archived_on": "2026-10-17",
   "scope": "Public reference catalog with archived full texts, publisher links for the Coelho book and Sang article, and user-submitted web and video sources.",
-  "reference_numbering": "Main literature retains [1]–[10]. Existing data and image references retain [11]–[24]. Supporting literature uses [25]–[43] and the supplied YouTube references use [44]–[47].",
+  "reference_numbering": "Main literature retains [1]–[10]. Existing data and image references retain [11]–[24]. Supporting literature uses [25]–[43], the supplied YouTube references use [44]–[47], and user-submitted web sources use [48]–[50].",
   "documents": [
     {
       "title": "3-D bioprinting technologies in tissue engineering and regenerative medicine: Current and future trends",
@@ -462,7 +462,7 @@
       "number": 1,
       "citation": "S. Soleymani Eil Bakhtiari et al., “3-Dimensional printing of hydrogel-based nanocomposites: A comprehensive review on the technology description, properties, and applications,” *Adv. Eng. Mater.*, vol. 23, no. 10, Art. no. 2100477, Oct. 2021. doi: 10.1002/adem.202100477.",
       "doi": "10.1002/adem.202100477",
-      "reference_slide": 25,
+      "reference_slide": 26,
       "status": "full_text_missing",
       "paths": []
     },
@@ -470,7 +470,7 @@
       "number": 2,
       "citation": "X. He et al., “Cyanine/iodonium salt as a broad-absorbing photoinitiating system for radical photopolymerization under near-UV, visible and NIR light,” *Polym. Chem.*, vol. 14, no. 13, pp. 1543–1553, 2023. doi: 10.1039/D2PY01466A.",
       "doi": "10.1039/D2PY01466A",
-      "reference_slide": 25,
+      "reference_slide": 26,
       "status": "full_text_missing",
       "paths": []
     },
@@ -478,7 +478,7 @@
       "number": 3,
       "citation": "P. J. Bártolo and G. Mitchell, “Stereo-thermal-lithography: A new principle for rapid prototyping,” *Rapid Prototyping J.*, vol. 9, no. 3, pp. 150–156, 2003. doi: 10.1108/13552540310477454.",
       "doi": "10.1108/13552540310477454",
-      "reference_slide": 25,
+      "reference_slide": 26,
       "status": "archived",
       "paths": [
         "papers/cited/Bartolo-Mitchell-2003-Stereo-thermal-lithography.pdf"
@@ -488,7 +488,7 @@
       "number": 4,
       "citation": "P. J. Bártolo, Ed., *Stereolithography: Materials, Processes and Applications*. Boston, MA, USA: Springer, 2011. doi: 10.1007/978-0-387-92904-0.",
       "doi": "10.1007/978-0-387-92904-0",
-      "reference_slide": 25,
+      "reference_slide": 26,
       "status": "archived",
       "paths": [
         "papers/cited/Bartolo-2011-Stereolithography-Materials-Processes-Applications.pdf"
@@ -498,7 +498,7 @@
       "number": 5,
       "citation": "S. O’Halloran, A. Pandit, A. Heise, and A. Kellett, “Two-photon polymerization: Fundamentals, materials, and chemical modification strategies,” *Adv. Sci.*, vol. 10, no. 7, Art. no. 2204072, Mar. 2023. doi: 10.1002/advs.202204072.",
       "doi": "10.1002/advs.202204072",
-      "reference_slide": 25,
+      "reference_slide": 26,
       "status": "full_text_missing",
       "paths": []
     },
@@ -506,7 +506,7 @@
       "number": 6,
       "citation": "G. Chen et al., “Advanced near-infrared light for monitoring and modulating the spatiotemporal dynamics of cell functions in living systems,” *Adv. Sci.*, vol. 7, Art. no. 1903783, 2020. doi: 10.1002/advs.201903783.",
       "doi": "10.1002/advs.201903783",
-      "reference_slide": 26,
+      "reference_slide": 27,
       "status": "archived",
       "paths": [
         "papers/cited/Chen-2020-Advanced-NIR-Light-Cell-Functions.pdf"
@@ -516,7 +516,7 @@
       "number": 7,
       "citation": "S. Santoni, S. G. Gugliandolo, M. Sponchioni, D. Moscatelli, and B. M. Colosimo, “3D bioprinting: Current status and trends—a guide to the literature and industrial practice,” *Bio-Des. Manuf.*, vol. 5, pp. 14–42, 2022. doi: 10.1007/s42242-021-00165-0.",
       "doi": "10.1007/s42242-021-00165-0",
-      "reference_slide": 26,
+      "reference_slide": 27,
       "status": "archived",
       "paths": [
         "papers/cited/Santoni-2022-3D-Bioprinting-Current-Status-Trends.pdf"
@@ -526,7 +526,7 @@
       "number": 8,
       "citation": "A. Van Ombergen et al., “3D bioprinting in microgravity: Opportunities, challenges, and possible applications in space,” *Adv. Healthcare Mater.*, vol. 12, no. 23, Art. no. 2300443, Sep. 2023. doi: 10.1002/adhm.202300443.",
       "doi": "10.1002/adhm.202300443",
-      "reference_slide": 26,
+      "reference_slide": 27,
       "status": "archived",
       "paths": [
         "papers/cited/Van-Ombergen-2023-3D-Bioprinting-in-Microgravity.pdf"
@@ -536,7 +536,7 @@
       "number": 9,
       "citation": "A. Barbora, O. Bohar, A. A. Sivan, E. Magory, A. Nause, and R. Minnes, “Higher pulse frequency of near-infrared laser irradiation increases penetration depth for novel biomedical applications,” *PLoS One*, vol. 16, no. 1, Art. no. e0245350, Jan. 2021. doi: 10.1371/journal.pone.0245350.",
       "doi": "10.1371/journal.pone.0245350",
-      "reference_slide": 26,
+      "reference_slide": 27,
       "status": "full_text_missing",
       "paths": []
     },
@@ -544,7 +544,7 @@
       "number": 10,
       "citation": "B. Grigoryan et al., “Multivascular networks and functional intravascular topologies within biocompatible hydrogels,” *Science*, vol. 364, no. 6439, pp. 458–464, May 2019. doi: 10.1126/science.aav9750.",
       "doi": "10.1126/science.aav9750",
-      "reference_slide": 26,
+      "reference_slide": 27,
       "status": "full_text_missing",
       "paths": []
     }
@@ -569,7 +569,7 @@
   "source_links": [
     {
       "added_on": "2026-11-03",
-      "checked_on": "2026-11-03",
+      "checked_on": "2026-11-04",
       "submitted_by": "user",
       "id": "wyss-living-tissues",
       "title": "3D Bioprinting of Living Tissues",
@@ -589,11 +589,14 @@
         "Does not establish a clinically transplantable whole organ."
       ],
       "access_status": "page_read",
-      "archived_paths": []
+      "archived_paths": [],
+      "submission_occurrences": 2,
+      "bibliography_number": 48,
+      "ieee_citation": "Wyss Institute for Biologically Inspired Engineering, Harvard Univ., “3D bioprinting of living tissues.” Accessed: Nov. 4, 2026. [Online]. Available: https://wyss.harvard.edu/technology/3d-bioprinting/"
     },
     {
       "added_on": "2026-11-03",
-      "checked_on": "2026-11-03",
+      "checked_on": "2026-11-04",
       "submitted_by": "user",
       "id": "tau-printed-heart-2019",
       "title": "TAU scientists print first ever 3D heart using patient’s own cells",
@@ -612,11 +615,16 @@
         "Research construct; does not establish a transplant-ready human heart."
       ],
       "access_status": "page_read",
-      "archived_paths": []
+      "archived_paths": [],
+      "submission_occurrences": 2,
+      "reference_numbers": [
+        20
+      ],
+      "duplicate_note": "Same article already cited as [20] via https://english.tau.ac.il/node/2442; no new bibliography entry."
     },
     {
       "added_on": "2026-11-03",
-      "checked_on": "2026-11-03",
+      "checked_on": "2026-11-04",
       "submitted_by": "user",
       "id": "microtia-bioprinting",
       "title": "3D Bioprinting: Growing a Child’s Own Ear in the Lab",
@@ -636,7 +644,9 @@
       ],
       "access_status": "page_read",
       "archived_paths": [],
-      "submission_occurrences": 2
+      "submission_occurrences": 3,
+      "bibliography_number": 49,
+      "ieee_citation": "Microtia – Congenital Ear Institute, “3D bioprinting: Growing a child’s own ear in the lab.” Accessed: Nov. 4, 2026. [Online]. Available: https://www.microtia.net/3d-bioprinting/"
     },
     {
       "added_on": "2026-11-03",
@@ -796,6 +806,116 @@
       "bibliography_number": 47,
       "ieee_citation": "EPFL, “Printing tiny, high-precision objects in a matter of seconds,” YouTube, Feb. 12, 2020. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=ONBHkzimRbg",
       "summary": "Volumetric printing demonstration. The video link was already recorded in presentation settings as a still-image source."
+    },
+    {
+      "added_on": "2026-11-04",
+      "checked_on": "2026-11-04",
+      "submitted_by": "user",
+      "id": "cellink-3dbio-ear-2022",
+      "title": "Bioprinted Ear Successfully Transplanted into Patient",
+      "url": "https://www.cellink.com/blog/bioprinted-ear-successfully-transplanted-into-patient/",
+      "publisher": "CELLINK (BICO)",
+      "source_type": "company_blog",
+      "published_on": null,
+      "topics": [
+        "microtia",
+        "AuriNovo",
+        "3DBio Therapeutics",
+        "clinical trial",
+        "autologous chondrocytes"
+      ],
+      "summary": "Reports the 2022 implantation of a 3DBio Therapeutics ear bioprinted from the patient’s own cartilage cells, within a microtia clinical trial led by Dr. Arturo Bonilla.",
+      "limitations": [
+        "Company blog without author or publication date (page last modified 9 Jan 2023).",
+        "First-in-human trial; not an approved routine treatment.",
+        "Extrusion-based, not SLA."
+      ],
+      "access_status": "page_read",
+      "archived_paths": [],
+      "bibliography_number": 50,
+      "ieee_citation": "CELLINK, “Bioprinted ear successfully transplanted into patient,” CELLINK Blog. Accessed: Nov. 4, 2026. [Online]. Available: https://www.cellink.com/blog/bioprinted-ear-successfully-transplanted-into-patient/"
+    },
+    {
+      "added_on": "2026-11-04",
+      "checked_on": "2026-11-04",
+      "submitted_by": "user",
+      "id": "seas-co-swift-2024",
+      "title": "3D-printed blood vessels bring artificial organs closer to reality",
+      "url": "https://seas.harvard.edu/news/3d-printed-blood-vessels-bring-artificial-organs-closer-reality",
+      "publisher": "Harvard SEAS / Wyss Institute (L. Brownell)",
+      "source_type": "institutional_research_news",
+      "published_on": "2024-08-12",
+      "topics": [
+        "co-SWIFT",
+        "vascularization",
+        "cardiac tissue"
+      ],
+      "summary": "co-SWIFT core–shell nozzle prints branching vessels with a cell-laden shell and hollow core inside human cardiac tissue.",
+      "limitations": [
+        "In-vitro tissue; not an implantable organ.",
+        "Extrusion/embedded printing, not SLA."
+      ],
+      "access_status": "page_read",
+      "archived_paths": [],
+      "reference_numbers": [
+        15
+      ],
+      "duplicate_note": "Same article already cited as [15] (dated URL variant); no new bibliography entry."
+    },
+    {
+      "added_on": "2026-11-04",
+      "checked_on": "2026-11-04",
+      "submitted_by": "user",
+      "id": "nasa-bff-2023",
+      "title": "3D Bioprinting",
+      "url": "https://www.nasa.gov/missions/station/iss-research/3d-bioprinting/",
+      "publisher": "NASA",
+      "source_type": "agency_overview",
+      "published_on": "2023-12-20",
+      "topics": [
+        "ISS",
+        "BioFabrication Facility",
+        "Redwire",
+        "meniscus",
+        "microgravity"
+      ],
+      "summary": "Redwire’s BioFabrication Facility on the ISS; BFF-Meniscus investigations produced the first human knee meniscus bioprinted in orbit (announced Sept. 2023).",
+      "limitations": [
+        "Research construct; not implanted in a patient."
+      ],
+      "access_status": "page_read",
+      "archived_paths": [],
+      "reference_numbers": [
+        18
+      ],
+      "duplicate_note": "Already cited as [18]; no new bibliography entry."
+    },
+    {
+      "added_on": "2026-11-04",
+      "checked_on": "2026-11-04",
+      "submitted_by": "user",
+      "id": "dlr-bio-plaster-2022",
+      "title": "3D-printed bio-plaster",
+      "url": "https://www.dlr.de/en/latest/news/2022/01/20220131_3d-printed-bio-plaster",
+      "publisher": "German Aerospace Center (DLR)",
+      "source_type": "agency_press_release",
+      "published_on": "2022-01-31",
+      "topics": [
+        "Bioprint FirstAid",
+        "ISS",
+        "wound care",
+        "Matthias Maurer"
+      ],
+      "summary": "ESA astronaut Matthias Maurer tested a handheld bioprinter on the ISS (Cosmic Kiss); the first test used fluorescent microparticles instead of human cells.",
+      "limitations": [
+        "Technology test with cell substitutes, not living cells."
+      ],
+      "access_status": "page_read",
+      "archived_paths": [],
+      "reference_numbers": [
+        19
+      ],
+      "duplicate_note": "Already cited as [19]; no new bibliography entry."
     }
   ],
   "bibliography_only": [

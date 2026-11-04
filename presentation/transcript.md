@@ -1,6 +1,6 @@
 # 3D Bioprinting
 
-59 slides · 5 November 2026
+60 slides · 5 November 2026
 
 ## 01. Hi, I'm Florence :)
 
@@ -254,7 +254,36 @@ Source: Bishop et al., Genes & Diseases, 4, 185–195 (2017) · Asakura, J. Nipp
 
 Why is that so hard? Think of a baby in the womb. It is kept warm, at a stable pH, in a protected space, and the placenta delivers oxygen and nutrients and takes waste away. A printed tissue in an incubator gets the warmth, pH and sterility, but it has no placenta: no blood vessels. Oxygen can only seep about 0.1 to 0.2 millimetres into tissue, one or two sheets of paper thick, because the outer cells use it up on the way. So the cells in the middle suffocate. (~45 s)
 
-## 17. Precision is a beginning
+## 17. Where are we today?
+
+Where are we today?
+In the lab
+Printed blood vessels and a mini heart
+Harvard’s Wyss Institute prints branching vessels inside living heart tissue (2024). Tel Aviv printed a heart the size of a rabbit’s from a patient’s own cells (2019). It cannot pump yet.
+In a patient
+A printed ear
+In 2022, a woman born with microtia received an ear printed from her own cartilage cells. It was the first clinical trial of its kind.
+In orbit
+Printing in space
+NASA’s BioFabrication Facility printed a human knee meniscus on the ISS (2023). Germany tested a handheld bio-plaster printer there (2022).
+In medicine
+Ready for hospitals?
+Not yet. Maybe in the next 10 years, starting with simple tissues like skin and cartilage. Whole organs will take longer.
+Source: Harvard SEAS / Wyss Institute (2024) · Tel Aviv University (2019) · CELLINK / 3DBio (2022) · NASA (2023) · DLR (2022)
+
+### Speaker notes
+
+So where are we today?
+
+In the lab, researchers at Harvard’s Wyss Institute can now print branching blood vessels inside living heart tissue. In Tel Aviv, a team printed a small heart, the size of a rabbit’s, from a patient’s own cells. It cannot pump yet.
+
+The first printed tissue has already reached a patient. In 2022, a young woman born with microtia received an ear printed from her own cartilage cells, in a clinical trial.
+
+And bioprinting has even gone to space. NASA printed a knee meniscus on the ISS, and Germany tested a handheld printer for wound plasters there.
+
+So, is it ready for hospitals? Not yet. Maybe in the next ten years, starting with simple tissues like skin and cartilage. Whole organs will take longer.
+
+## 18. Precision is a beginning
 
 Precision
 is a beginning.
@@ -270,7 +299,7 @@ This video from the company Readily3D example shows a light-based printing. The 
 
 Different approaches offer different combinations of speed, scale, and detail. At the end of the day, the type of approach used is fitted to the type of biological task we have.
 
-## 18. Tissue engineering in practice
+## 19. Tissue engineering in practice
 
 Source: Rice University (2019), Organ bioprinting gets a breath of fresh air. kenkennedy.rice.edu (accessed 14 October 2026).
 Source: Grigoryan, B. et al. (2019), Multivascular networks and functional intravascular topologies within biocompatible hydrogels. Science, 364(6439), 458–464. doi:10.1126/science.aav9750.
@@ -284,7 +313,7 @@ Source: The Guardian (2022), Woman’s ear rebuilt with 3D-printed living tissue
 As mentioned before, 3D bioprinting is mostly still in research phase. Top universities in the world are constantly doing research in this field. In fact, there’s a company called 3DBio Therapeutics in New York actually 3D printed ears for a patient in 2022.
 
 
-## 19. From bioinks to bioprinters
+## 20. From bioinks to bioprinters
 
 Source: CELLINK, Tissue-specific Bioinks. cellink.com/bioinks/tissue-specific-bioinks (accessed 14 October 2026).
 
@@ -301,7 +330,7 @@ As technology advances, humanity is looking beyond Earth—not only exploring sp
 
 This includes exploring how bioprinting works in microgravity.
 
-## 20. Soft tissue research in orbit
+## 21. Soft tissue research in orbit
 
 Soft tissue research in orbit by NASA
 
@@ -334,7 +363,7 @@ It illustrates two motivations: studying tissue fabrication in microgravity, and
 At the same time, space introduces challenges in handling liquids and maintaining suitable cultivation conditions.”
 
 
-## 21. 3D-printed bio-plaster on ISS
+## 22. 3D-printed bio-plaster on ISS
 
 3D-printed bio-plaster on ISS
 
@@ -367,7 +396,7 @@ So this was a technology demonstration, not the printing of living replacement s
 It shows how progress can happen through focused, practical applications while researchers continue working toward more complex tissues.
 
 
-## 22. Layers to living tissue
+## 23. Layers to living tissue
 
 Conclusion
 
@@ -406,7 +435,7 @@ Bioprinting uses living cells and biomaterials to construct tissue, which often 
 Organ shortages are a major motivation for bioprinting, with the long-term aim of producing tissues and organs for transplantation.
 Clinical success requires more than printing: researchers must establish tissue function, safety, immune compatibility, regulation, and fair access.
 
-## 23. Engineering tomorrow’s possibilities
+## 24. Engineering tomorrow’s possibilities
 
 Engineering tomorrow’s possibilities.
 
@@ -418,7 +447,7 @@ To end my presentation, I’d like to leave you with this thought: ‘Engineerin
 As engineers, we advance technology to improve people’s lives. Expertise in our own field is essential, but we should also stay curious about what lies beyond it.
 
 
-## 24. Thank You!
+## 25. Thank You!
 
 Thank You!
 https://github.com/florencewmk/3D-Bioprinting
@@ -427,7 +456,7 @@ https://github.com/florencewmk/3D-Bioprinting
 
 Press Down to reveal the GitHub link and QR code.
 
-## 25. Scientific references · 1
+## 26. Scientific references · 1
 
 Scientific references
 
@@ -437,7 +466,7 @@ Scientific references
 [4] P. J. Bártolo, Ed., Stereolithography: Materials, Processes and Applications. Boston, MA, USA: Springer, 2011. doi: 10.1007/978-0-387-92904-0.
 [5] S. O’Halloran, A. Pandit, A. Heise, and A. Kellett, “Two-photon polymerization: Fundamentals, materials, and chemical modification strategies,” Adv. Sci., vol. 10, no. 7, Art. no. 2204072, Mar. 2023. doi: 10.1002/advs.202204072.
 
-## 26. Scientific references · 2
+## 27. Scientific references · 2
 
 Scientific references
 
@@ -469,7 +498,7 @@ Supporting literature
 [42] Y. Sang, Z. Zhao, M. Zhao, P. Hao, Y. Leng, and H. Liu, “From UV to near-infrared, WS₂ nanosheet: A novel photocatalyst for full solar light spectrum photodegradation,” Adv. Mater., vol. 27, no. 2, pp. 363–369, 2015. doi: 10.1002/adma.201403264.
 [43] W. K. Swainson, “Method, medium and apparatus for producing three-dimensional figure product,” U.S. Patent 4 041 476, Aug. 9, 1977.
 
-## 27. Data and online sources · 1
+## 28. Data and online sources · 1
 
 Data and online sources
 
@@ -479,7 +508,7 @@ Data and online sources
 [14] Rice University. (2019). Organ bioprinting gets a breath of fresh air. https://news.rice.edu/news/2019/organ-bioprinting-gets-breath-fresh-air (accessed 14 October 2026).
 [15] Harvard SEAS / Wyss Institute. (2024). 3D-printed blood vessels bring artificial organs closer to reality. https://seas.harvard.edu/news/2024/08/3d-printed-blood-vessels-bring-artificial-organs-closer-reality (accessed 14 October 2026).
 
-## 28. Data and online sources · 2
+## 29. Data and online sources · 2
 
 Data and online sources
 
@@ -488,6 +517,12 @@ Data and online sources
 [18] NASA. 3D Bioprinting. https://www.nasa.gov/missions/station/iss-research/3d-bioprinting/ (accessed 14 October 2026).
 [19] German Aerospace Center (DLR). (2022). 3D-printed bio-plaster. https://www.dlr.de/en/latest/news/2022/01/20220131_3d-printed-bio-plaster (accessed 14 October 2026).
 
+Web sources
+
+[48] Wyss Institute for Biologically Inspired Engineering, Harvard Univ., “3D bioprinting of living tissues.” Accessed: Nov. 4, 2026. [Online]. Available: https://wyss.harvard.edu/technology/3d-bioprinting/
+[49] Microtia – Congenital Ear Institute, “3D bioprinting: Growing a child’s own ear in the lab.” Accessed: Nov. 4, 2026. [Online]. Available: https://www.microtia.net/3d-bioprinting/
+[50] CELLINK, “Bioprinted ear successfully transplanted into patient,” CELLINK Blog. Accessed: Nov. 4, 2026. [Online]. Available: https://www.cellink.com/blog/bioprinted-ear-successfully-transplanted-into-patient/
+
 YouTube videos
 
 [44] iluli by Mike Lamb, “Bioprinting: An Organ Transplant Revolution?,” YouTube, Apr. 1, 2023. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=_cJC3lcmrjE
@@ -495,7 +530,7 @@ YouTube videos
 [46] Protolabs, “How Does Stereolithography 3D Printing Work?,” YouTube. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=0kHDXPQDSYY
 [47] EPFL, “Printing tiny, high-precision objects in a matter of seconds,” YouTube, Feb. 12, 2020. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=ONBHkzimRbg
 
-## 29. Image references
+## 30. Image references
 
 Images
 
@@ -505,11 +540,11 @@ Images
 [23] MX3D. MX3D Bridge, Amsterdam. https://mx3d.com/case/mx3d-bridge/
 [24] Cornell Chronicle. (2022). Cornellian-founded company implants 3D-bioprinted ear. https://news.cornell.edu/stories/2022/06/cornellian-founded-company-implants-3d-bioprinted-ear
 
-## 30. Technical backup
+## 31. Technical backup
 
 Back up
 
-## 31. Bioprinting technologies
+## 32. Bioprinting technologies
 
 Bioprinting Technologies
 
@@ -533,7 +568,7 @@ This is the family I’ll focus on: using light as a manufacturing tool to contr
 
 Two-photon polymerization belongs to this broader light-based family, although its mechanism differs from conventional SLA.
 
-## 32. A structure forms one layer at a time
+## 33. A structure forms one layer at a time
 
 A structure forms one layer at a time
 
@@ -561,7 +596,7 @@ In bioprinting, we can use a water-rich material called a hydrogel, sometimes co
 
 
 
-## 33. SLA · DLP · multiphoton lithography
+## 34. SLA · DLP · multiphoton lithography
 
 Source: Van Ombergen et al., Advanced Healthcare Materials, 12, 2300443 (2023), Fig. 6.
 
@@ -588,7 +623,7 @@ So the distinction is: trace a pattern, project a pattern, or write within a sma
 The choice affects printing speed, feature size, and the structures we can manufacture.
 
 
-## 34. Four light-based curing routes
+## 35. Four light-based curing routes
 
 Conventional SLA
 
@@ -679,7 +714,7 @@ Highly Localized Polymerization (Sub-Micron Resolution): Two-photon absorption o
 Compatibility with Near-Infrared Wavelengths: NIR has deep penetration and low absorption in tissues
 
 
-## 35. UV / violet and NIR
+## 36. UV / violet and NIR
 
 UV / VIOLET
 
@@ -688,7 +723,7 @@ NIR
 Wavelength: typically around 700 - 1700 nm
 Deeper penetration, can be between 0.63 mm – 1 cm
 
-## 36. Thermal activation
+## 37. Thermal activation
 
 Thermal activation
 
@@ -714,7 +749,7 @@ Together → combined activation promotes curing
 For bioprinting, controlling heat is essential: the conditions that improve curing must also preserve the biological material.
 
 
-## 37. Ultraviolet photopolymerization
+## 38. Ultraviolet photopolymerization
 
 Ultraviolet photopolymerization
 
@@ -762,7 +797,7 @@ Eliminates Deep Penetration Requirements for Layering: Since each layer is cure
 
 
 
-## 38. Near-infrared photopolymerization
+## 39. Near-infrared photopolymerization
 
 Near-infrared photopolymerization
 
@@ -790,7 +825,7 @@ That introduces practical questions: are the components well dispersed? Do they 
 
 
 
-## 39. Choice of Laser
+## 40. Choice of Laser
 
 Choice of Laser
 
@@ -818,7 +853,7 @@ Although its energy is lower, advances in photoinitiator chemistry have made 405
 Diode-Pumped Solid-State Laser
 Source: Group 2 Laser Presentation, 24 November 2025, slide 8. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A.
 
-## 40. Beam Quality & Spot Size
+## 41. Beam Quality & Spot Size
 
 Beam Quality & Spot Size
 
@@ -845,7 +880,7 @@ A better beam quality allows a smaller laser spot size, sharper curing, and high
 In contrast, multimode lasers with higher M² values produce larger spots and less precision.”
 Source: Group 2 Laser Presentation, 24 November 2025, slide 9. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A.
 
-## 41. Conventional SLA Mechanism
+## 42. Conventional SLA Mechanism
 
 Conventional SLA Mechanism
 
@@ -875,7 +910,7 @@ For Type II, the initiator first absorbs light and then interacts with a co-init
 Because this system has an extra reaction step, it tends to be slower and less efficient than Type I.”
 Source: Group 2 Laser Presentation, 24 November 2025, slide 11. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A.
 
-## 42. Mechanism: Photoinduced electron transfer (PET)
+## 43. Mechanism: Photoinduced electron transfer (PET)
 
 Mechanism: Photoinduced electron transfer (PET)
 
@@ -890,7 +925,7 @@ Bleaching: The process destroys the cyanine (prevents interference)
 Aryl radical breaks down the double bonds of monomer which initiates the polymerisation reaction
 Source: Group 2 Laser Presentation, 24 November 2025, slide 19. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A.
 
-## 43. Upconversion Nanoparticle System
+## 44. Upconversion Nanoparticle System
 
 Upconversion Nanoparticle System
 
@@ -911,7 +946,7 @@ Tm3+: Requires 3 energy packet (3-step process) & common emissions: Blue and Nea
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 21. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. Optical penetration is not equivalent to curing depth. NIR is not inherently eye-safe. Resolution and depth depend on wavelength, optics, chemistry and exposure; no universal live-cell safety claim is implied.
 
-## 44. The Upconversion Mechanism
+## 45. The Upconversion Mechanism
 
 The Upconversion Mechanism
 
@@ -926,7 +961,7 @@ This is the technical term for upconversion. The emitted light is of a shorter w
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 22. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. Optical penetration is not equivalent to curing depth. NIR is not inherently eye-safe. Resolution and depth depend on wavelength, optics, chemistry and exposure; no universal live-cell safety claim is implied.
 
-## 45. Laser spot size and focusing
+## 46. Laser spot size and focusing
 
 Laser spot size and focusing
 
@@ -954,7 +989,7 @@ Underfilling: Diameter of light smaller than the diameter of aperture
 Higher M2 values: increase effective spot size and beam divergence
 Source: Group 2 Laser Presentation, 24 November 2025, slide 24. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. Optical penetration is not equivalent to curing depth. NIR is not inherently eye-safe. Resolution and depth depend on wavelength, optics, chemistry and exposure; no universal live-cell safety claim is implied.
 
-## 46. Dual-beam activation
+## 47. Dual-beam activation
 
 Dual-beam activation
 
@@ -980,7 +1015,7 @@ Zone
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 32. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. STLG diagrams/results concern the demonstrated resin and apparatus; they do not establish living-cell compatibility. Speed, cost, penetration and conversion advantages are formulation- and setup-dependent.
 
-## 47. Dual-beam activation
+## 48. Dual-beam activation
 
 Dual-beam activation
 
@@ -1001,7 +1036,7 @@ D: Uses both heat and UV radiation to solidify a liquid resin that contains a ce
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 36. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. STLG diagrams/results concern the demonstrated resin and apparatus; they do not establish living-cell compatibility. Speed, cost, penetration and conversion advantages are formulation- and setup-dependent.
 
-## 48. Working principle of STLG
+## 49. Working principle of STLG
 
 Working principle of STLG
 
@@ -1027,7 +1062,7 @@ The entire work cell can rotate and allows automated switching between different
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 37. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. STLG diagrams/results concern the demonstrated resin and apparatus; they do not establish living-cell compatibility. Speed, cost, penetration and conversion advantages are formulation- and setup-dependent.
 
-## 49. Irradiation process in STLG technique
+## 50. Irradiation process in STLG technique
 
 Irradiation process in STLG technique
 
@@ -1040,7 +1075,7 @@ Working principle of STLG
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 38. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. STLG diagrams/results concern the demonstrated resin and apparatus; they do not establish living-cell compatibility. Speed, cost, penetration and conversion advantages are formulation- and setup-dependent.
 
-## 50. Experimental Results
+## 51. Experimental Results
 
 Experimental Results
 
@@ -1057,7 +1092,7 @@ Additionally, deeper light penetrations were achieved using STLG as the initiato
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 39. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. STLG diagrams/results concern the demonstrated resin and apparatus; they do not establish living-cell compatibility. Speed, cost, penetration and conversion advantages are formulation- and setup-dependent.
 
-## 51. Beyond STLG: Photothermal Conversion Mechanism
+## 52. Beyond STLG: Photothermal Conversion Mechanism
 
 Beyond STLG: Photothermal Conversion Mechanism
 
@@ -1082,7 +1117,7 @@ Therefore, ImPSB is an enhanced and developed from STLG by using NIR-II light in
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 42. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. Photothermal ImPSB is distinct from combined UV/IR dual-beam STLG.
 
-## 52. TPA Induced TPP
+## 53. TPA Induced TPP
 
 TPA Induced TPP
 
@@ -1096,7 +1131,7 @@ Excited photoinitiator generates free radicals, triggering localized polymerizat
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 45. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A.
 
-## 53. Type of Laser – Femtosecond Laser
+## 54. Type of Laser – Femtosecond Laser
 
 Type of Laser – Femtosecond Laser
 
@@ -1110,7 +1145,7 @@ Compatibility with Near-Infrared Wavelengths: NIR has deep penetration and low a
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 46. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. Optical penetration is not equivalent to curing depth. NIR is not inherently eye-safe. Resolution and depth depend on wavelength, optics, chemistry and exposure; no universal live-cell safety claim is implied.
 
-## 54. Set Up and Working Process
+## 55. Set Up and Working Process
 
 Set Up and Working Process
 
@@ -1123,7 +1158,7 @@ DiLL (downward)
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 47. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A.
 
-## 55. Choice of Photoinitiator
+## 56. Choice of Photoinitiator
 
 Choice of Photoinitiator
 
@@ -1139,7 +1174,7 @@ Activation via chromophore excitation: The chemical functionality is triggered b
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 49. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A.
 
-## 56. Example
+## 57. Example
 
 Example
 
@@ -1148,7 +1183,7 @@ Example
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 50. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A.
 
-## 57. Conclusion
+## 58. Conclusion
 
 Conclusion
 
@@ -1182,7 +1217,7 @@ Higher Process Efficiency
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 52. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. STLG diagrams/results concern the demonstrated resin and apparatus; they do not establish living-cell compatibility. Speed, cost, penetration and conversion advantages are formulation- and setup-dependent. Optical penetration is not equivalent to curing depth. NIR is not inherently eye-safe. Resolution and depth depend on wavelength, optics, chemistry and exposure; no universal live-cell safety claim is implied.
 
-## 58. Conclusion
+## 59. Conclusion
 
 Conclusion
 
@@ -1208,7 +1243,7 @@ Time consuming
 
 Source: Group 2 Laser Presentation, 24 November 2025, slide 53. Group members: Florence Wong, Guo Bin Djap, Lim Jun Heng, Rangga Fokta. Technical backup for SOFE Q&A. Optical penetration is not equivalent to curing depth. NIR is not inherently eye-safe. Resolution and depth depend on wavelength, optics, chemistry and exposure; no universal live-cell safety claim is implied.
 
-## 59. Contents
+## 60. Contents
 
 Contents
 
@@ -1216,7 +1251,7 @@ Introduction · Page 03
 
 Printing methods · Page 10
 
-Conclusion · Page 22
+Conclusion · Page 23
 
 ### Speaker notes
 

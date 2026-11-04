@@ -30,6 +30,11 @@ LIGHT_PROVENANCE = {
     "video/mp4": "Original Blender render of a top-down SLA cutaway printing the Baby Groot mesh by Byambaa (Thingiverse 2014307, CC BY-NC-ND 4.0, credited on the slide); burned-in caption and credit removed with FFmpeg delogo on 4 November 2026. Rendered by tools/light_slides.py.",
     "image/svg+xml": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py.",
 }
+PROGRESS_PROVENANCE = {
+    hashlib.sha256(path.read_bytes()).hexdigest(): text
+    for name, text in __import__("progress_slide").PROVENANCE.items()
+    for path in [ROOT / "tools/progress-slide" / name]
+}
 DATA = re.compile(r"data:([^;,\s\"']+);base64,([A-Za-z0-9+/=\s]+)")
 
 
@@ -60,8 +65,9 @@ def inventory():
     light = {int(s[1]) for s in sections if 'light-slide' in s[0].split(">", 1)[0]}
     for match in DATA.finditer(document):
         slide = next((int(s[1]) for s in sections if s.start() <= match.start() < s.end()), None)
-        add(base64.b64decode(re.sub(r"\s", "", match[2]), validate=True), match[1], slide,
-            LIGHT_PROVENANCE.get(match[1]) if slide in light else None)
+        blob = base64.b64decode(re.sub(r"\s", "", match[2]), validate=True)
+        add(blob, match[1], slide, PROGRESS_PROVENANCE.get(hashlib.sha256(blob).hexdigest())
+            or (LIGHT_PROVENANCE.get(match[1]) if slide in light else None))
     for section in sections:
         for asset in re.findall(r'data-turntable-src="\.\./(materials/images/[a-f0-9]{64}\.webp)"', section[0]):
             blob = (ROOT / asset).read_bytes()

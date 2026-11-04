@@ -31,7 +31,7 @@ def reference_groups(title, original_text, catalog):
             ]),
         ]
 
-    source_text = original_text.partition('\n\nYouTube videos\n')[0]
+    source_text = re.split(r'\n\n(?:Web sources|YouTube videos)\n', original_text)[0]
     existing = [
         (int(number), citation.strip())
         for number, citation in re.findall(
@@ -48,7 +48,15 @@ def reference_groups(title, original_text, catalog):
         for s in catalog['source_links']
         if s.get('source_type') == 'online_video' and 'bibliography_number' in s
     ]
-    return [(None, existing), ('YouTube videos', videos)]
+    web = sorted(
+        (s['bibliography_number'], s['ieee_citation'])
+        for s in catalog['source_links']
+        if s.get('source_type') != 'online_video' and 'bibliography_number' in s
+    )
+    groups = [(None, existing)]
+    if web:
+        groups.append(('Web sources', web))
+    return groups + [('YouTube videos', videos)]
 
 
 def citation_html(citation):
