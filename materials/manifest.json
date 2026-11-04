@@ -1,6 +1,6 @@
 {
   "source": "presentation/offline.html",
-  "source_sha256": "d89a06202e74f24a06b89e9ffba017ae0225d1bb89a711d81a066b22c6784e84",
+  "source_sha256": "c08b87afa76a443decbb6391947e98a5e062984d7572104e56c63e74da659524",
   "slides": 59,
   "asset_count": 174,
   "assets": [
@@ -1864,10 +1864,10 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
-      "path": "materials/interactive/4516d9289273e2c71a5792a7bc1f4ad7b8639adcbc2a0c1f08f9ac960ca98754.html",
+      "path": "materials/interactive/18e268011f6f99f8030629f7988ec438a4b09a90c290adb925418f5a67a3a6bb.html",
       "mime": "text/html",
-      "bytes": 24218,
-      "sha256": "4516d9289273e2c71a5792a7bc1f4ad7b8639adcbc2a0c1f08f9ac960ca98754",
+      "bytes": 24214,
+      "sha256": "18e268011f6f99f8030629f7988ec438a4b09a90c290adb925418f5a67a3a6bb",
       "slides": [
         4
       ],
