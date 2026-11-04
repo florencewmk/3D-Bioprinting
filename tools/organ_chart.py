@@ -10,7 +10,7 @@ def render_organ_slide():
 <aside class="organ-waiting" id="organWaiting"><h2>Organ-list entries <span>2025</span></h2><strong>532,905</strong><p>waiting at year-end</p><strong class="organ-deaths">40,019</strong><p>deaths on waiting lists</p></aside>
 <div class="organ-legend"><span><i style="background:#64dfff"></i>Organ transplants</span><span><i style="background:#e394ad"></i>Deceased donors</span></div>
 <div class="organ-controls"><label class="sr-only" for="organYearSlider">Select organ chart year</label><input id="organYearSlider" type="range" min="2015" max="2026" value="2015" step="1"><output id="organYearLabel" for="organYearSlider" aria-live="off">2015</output></div>
-<p class="organ-status" id="organStatus" aria-live="polite">Annual report snapshot</p>
+<p class="sr-only" id="organStatus" aria-live="polite">Annual report snapshot</p>
 <p class="organ-source">Sources: WHO–ONT GODT annual reports (2015–2024); EDQM–ONT Newsletter Transplant 2026 (2025 data). 2026 forecast: linear fit to 2023–2025.</p>
 <script id="organData" type="application/json">'''+json.dumps(data,ensure_ascii=False).replace('</','<\\/')+'''</script></div>'''
 
