@@ -138,14 +138,6 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
  if title in SOURCE_NUMBERS:
   art,reference_text=render_references(title,src[0],reference_catalog)
   src=[reference_text];data[-1]['text']=reference_text
- elif 24<=n<=28:
-  body=src[0];parts=re.split(r'(?=\[\d+\])',body);refs=[s.strip() for s in parts if re.match(r'\[\d+\]',s)]
-  heading=body.split('\n')[0]
-  art=f'<div class="references"><p class="eyebrow">SOURCES · {n-23:02d} / 05</p><h1>{H(heading)}</h1><div class="reference-list">'
-  for k,ref in enumerate(refs):
-   safe=H(ref);safe=re.sub(r'(https?://[^\s&lt;]+)',r'<a href="\1" target="_blank" rel="noopener noreferrer">\1</a>',safe)
-   art+=f'<p class="editable" data-edit="ref-{n}-{k}">{safe}</p>'
-  art+='</div></div>'
  # Embedded MP4s retain native browser playback. Each is embedded once in the HTML.
  videos=[]
  for sh in slide.shapes:

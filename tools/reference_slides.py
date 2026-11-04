@@ -8,7 +8,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE_NUMBERS = {
     'Scientific references · 1': 24,
     'Scientific references · 2': 25,
+    'Data and online sources · 1': 26,
     'Data and online sources · 2': 27,
+    'Image references': 28,
 }
 
 
@@ -29,13 +31,18 @@ def reference_groups(title, original_text, catalog):
             ]),
         ]
 
-    # Preserve existing online-source credits on repeated runs and in full builds.
+    source_text = original_text.partition('\n\nYouTube videos\n')[0]
     existing = [
         (int(number), citation.strip())
         for number, citation in re.findall(
-            r'^\[(1[6-9])\]\s*(.*)$', original_text, re.M
+            r'\[(\d+)\]\s*(.*?)(?=\[\d+\]|\Z)', source_text, re.S
         )
     ]
+    if title != 'Data and online sources · 2':
+        return [(None, existing)]
+
+    # On a refresh, the transcript already includes the separately catalogued videos.
+    existing = [(number, citation) for number, citation in existing if 16 <= number <= 19]
     videos = [
         (s['bibliography_number'], s['ieee_citation'])
         for s in catalog['source_links']
@@ -70,7 +77,7 @@ def citation_html(citation):
 def render_references(title, original_text, catalog):
     """Return slide HTML and a matching plain-text transcript."""
     source_number = SOURCE_NUMBERS[title]
-    heading = title.split(' · ')[0]
+    heading = original_text.splitlines()[0]
     groups = reference_groups(title, original_text, catalog)
     scrolls = len(groups) > 1
     wrapper = ('class="reference-list reference-scroll" tabindex="0" '
@@ -98,7 +105,7 @@ def render_references(title, original_text, catalog):
 
 
 def update():
-    """Refresh the three reference slides without rebuilding the source deck."""
+    """Refresh the reference slides without rebuilding the source deck."""
     catalog = json.loads((ROOT / 'papers/catalog.json').read_text())
     deck_path = ROOT / 'presentation/index.html'
     transcript_path = ROOT / 'presentation/transcript.md'
