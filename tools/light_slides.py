@@ -25,7 +25,8 @@ HULL_MP4 = "materials/videos/02b7fdceac6d5959439932ab69a7fc3f00ca722f5345d877c86
 SECTION = re.compile(r'<section\b[^>]*\bid="slide-(\d+)"[^>]*>.*?</section>', re.S)
 DATA = re.compile(r'(<script id="sourceData" type="application/json">)(.*?)(</script>)', re.S)
 FIRST = 10
-REPLAY = {10, 12, 14, 16}  # template slides with timed animations get the toolbar Replay button
+REPLAY = {10, 12, 14, 16}
+ORDER = [10, 14, 11, 12, 13, 15, 16]  # template ids in slide order (bioink & curing follows Hull)  # template slides with timed animations get the toolbar Replay button
 MOVED = ["Bioprinting technologies", "A structure forms one layer at a time", "SLA · DLP · multiphoton lithography",
          "Four light-based curing routes", "UV / violet and NIR", "Thermal activation"]
 NOTES = json.loads((ROOT / "tools/light-slides-notes.json").read_text())
@@ -67,9 +68,11 @@ def render(total, conclusion, date, presenter, first=FIRST, printing=FIRST):
     style, script, chunks = parse_template()
     png, mp4 = b64(HULL_PNG, "image/png"), b64(HULL_MP4, "video/mp4")
     sections, records = [], []
+    by_id = {c[0]: c for c in chunks}
+    assert sorted(by_id) == sorted(ORDER)
+    chunks = [by_id[n] for n in ORDER]
     for i, (n, steps, title, body) in enumerate(chunks):
-        number = first + i
-        assert n == FIRST + i  # template ids stay 10–16; slide numbers follow `first`
+        number = first + i  # template ids stay fixed; slide numbers follow ORDER and `first`
         body = body.replace("{{HULL_PNG}}", png).replace("{{HULL_MP4}}", mp4)
         markers = "".join(f'<i class="ls-step" data-reveal-step="{k}" aria-hidden="true" inert></i>' for k in range(1, steps + 1))
         text = visible_text(body)

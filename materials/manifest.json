@@ -1,6 +1,6 @@
 {
   "source": "presentation/offline.html",
-  "source_sha256": "304d36cbac49619303691f835b6117a0258e06383c2c5a0583de40752ea75064",
+  "source_sha256": "b96d3e7e5609927d696d1c2e298c278789d9c0e20451ee10369e758cb84b431a",
   "slides": 59,
   "asset_count": 168,
   "assets": [
@@ -32,7 +32,7 @@
       "bytes": 1406,
       "sha256": "0703a5c8f66380f845f3da5f688b0bfd0c96ee352a931701c47c03333d5250e8",
       "slides": [
-        13
+        14
       ],
       "source": "presentation/offline.html",
       "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
@@ -142,7 +142,7 @@
       "bytes": 1766,
       "sha256": "3d50821670e9d688dff3337710d4757cb9790aa2ded98ec73ac4b66d08cfbcc5",
       "slides": [
-        13
+        14
       ],
       "source": "presentation/offline.html",
       "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
@@ -175,7 +175,7 @@
       "bytes": 4661,
       "sha256": "4a6c929e1ddab40401e6b7d7835af01e06331aedb1eec2073ef2d87f6a1054c1",
       "slides": [
-        11
+        12
       ],
       "source": "presentation/offline.html",
       "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
@@ -230,7 +230,7 @@
       "bytes": 86,
       "sha256": "60508b45fb2ab435acd8f845b9983625df2360692a29f3d7717ae3265994b9f8",
       "slides": [
-        12
+        13
       ],
       "source": "presentation/offline.html",
       "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
@@ -384,7 +384,7 @@
       "bytes": 131,
       "sha256": "bc25bdb983dc54ebfe00d82d6030cb743f1fbc44c5f860b9a1f6b602dfc66c3b",
       "slides": [
-        14
+        11
       ],
       "source": "presentation/offline.html",
       "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
@@ -461,7 +461,7 @@
       "bytes": 87,
       "sha256": "e39b7ad9f34b54bbc73a77e144b19a0031d20e38bbddf005c4f57668032a7c28",
       "slides": [
-        12
+        13
       ],
       "source": "presentation/offline.html",
       "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
@@ -483,7 +483,7 @@
       "bytes": 551,
       "sha256": "ee6c22b00b417511cf54ae788dcc77f1846a6423dfbf5f6be22263e2fd83f0ef",
       "slides": [
-        13
+        14
       ],
       "source": "presentation/offline.html",
       "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."

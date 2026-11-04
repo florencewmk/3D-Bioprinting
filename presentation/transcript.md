@@ -112,7 +112,6 @@ Start with the numbered country markers. The United States ranks first with 2,55
 
 ## 10. How it started
 
-Printing methods
 There are many ways to bioprint.
 Chuck HullUnited States · 1980s
 SLAStereolithography: light hardens a liquid resin into a solid part, one layer at a time.Patent filed 1984 · granted 1986 · Hull coined the word
@@ -122,7 +121,30 @@ Source: C. W. Hull, U.S. Patent 4,575,330 (1986) · Groot model: Byambaa, Thingi
 
 There are many ways to do bioprinting, but I’d like to highlight one: printing with light. So how did 3D printing start? Back in the 1980s, this man, Chuck Hull, invented stereolithography. He filed the patent in 1984 and came up with the name. We call it SLA. [video] SLA hardens a liquid resin into a solid part, layer by layer, using a UV laser or another light source. (~40 s)
 
-## 11. From patient to print
+## 11. Bioink and curing
+
+Two words to know
+Bioink & curing
+STATE: LIQUID
+Bioink
+The “ink” of a bioprinter: living cells floating in a water-rich gel precursor (for example GelMA), plus a photoinitiator that reacts to light.
+cells
+polymer chains
+photoinitiator
+Curing
+Light hits the photoinitiator. It splits into radicals, very reactive molecules that link the chains together.
+light
+→photoinitiator
+→radicals
+→crosslinks
+The liquid turns into a gel, and the cells are held in place inside it.
+Source: Li et al., iScience, 26, 106039 (2023)
+
+### Speaker notes
+
+Before we look at the process, two words I’ll keep using. A bioink is the ink of a bioprinter: living cells in a water-rich gel, plus a photoinitiator. Curing is what light does to it: the photoinitiator splits into radicals, these link the polymer chains together, and the liquid becomes a gel that holds the cells in place. (~35 s)
+
+## 12. From patient to print
 
 Imagine it for bioprinting
 From patient to print
@@ -146,7 +168,7 @@ Source: Santoni et al., Bio-Design and Manufacturing, 5, 14–42 (2022)
 
 Now imagine this for bioprinting. We take a small biopsy, a tissue sample, from the patient. In the lab we grow more cells from it, mix them into a bioink and print the tissue with light. Then it matures in a bioreactor before it goes back to the patient. Because it’s made from the patient’s own cells, the body is much less likely to reject it. (~40 s)
 
-## 12. Two ways to build
+## 13. Two ways to build
 
 Two ways to build
 Light from below, or from above
@@ -164,7 +186,7 @@ Source: Li et al., iScience, 26, 106039 (2023)
 
 The printing itself can be built in two ways. Bottom-up is easy to picture: the light comes from below, through a clear window in the tank. After each layer the platform lifts and the layer peels off the floor. Top-down is the traditional way: the laser is above the vat and cures the top surface, while the platform moves down into the liquid. Bottom-up needs less bioink; top-down avoids peeling, which is gentler for soft gels. (~50 s)
 
-## 13. Which light?
+## 14. Which light?
 
 Which light?
 UV, near-infrared, or both
@@ -196,32 +218,8 @@ Source: Chen et al., Advanced Science, 7, 1903783 (2020) · Bártolo & Mitchell,
 
 Which light do we use? UV cures fast, but it only gets less than a millimetre into tissue, and DNA and proteins absorb it, so it can damage cells. Near-infrared goes much deeper and is gentler, but needs special chemistry, and water heats up. Or we combine both: stereo-thermal lithography. UV starts the reaction, infrared heat speeds it up, and curing happens only where both meet. (~50 s)
 
-## 14. Bioink and curing
-
-Two words to know
-Bioink & curing
-STATE: LIQUID
-Bioink
-The “ink” of a bioprinter: living cells floating in a water-rich gel precursor (for example GelMA), plus a photoinitiator that reacts to light.
-cells
-polymer chains
-photoinitiator
-Curing
-Light hits the photoinitiator. It splits into radicals, very reactive molecules that link the chains together.
-light
-→photoinitiator
-→radicals
-→crosslinks
-The liquid turns into a gel, and the cells are held in place inside it.
-Source: Li et al., iScience, 26, 106039 (2023)
-
-### Speaker notes
-
-Two words I keep using. A bioink is the ink of a bioprinter: living cells in a water-rich gel, plus a photoinitiator. Curing is what light does to it: the photoinitiator splits into radicals, these link the polymer chains together, and the liquid becomes a gel that holds the cells in place. (~35 s)
-
 ## 15. What is still in the way
 
-Not there yet
 What’s still in the way?
 Laws lag behind
 Regulators still struggle to classify printed tissue, and it does not fit today’s clinical-trial rules.
