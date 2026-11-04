@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 STEPS = (
-    ("Everyday life", "My Christmas vase", ""),
+    ("Everyday life", "Hobby printing", ""),
     ("Engineering", "SpaceX Raptor 3", "Additive manufacturing helps integrate components into a more compact engine."),
     ("Built environment", "A printed house", "Eindhoven concrete house (illustration). The Dutch have printed bridges, too."),
     ("Bioprinting", "What if we could print organs?", ""),

@@ -32,7 +32,7 @@ Before we begin, what comes to your mind when you hear 3D printing? Perhaps a sm
 ## 03. From everyday objects to living tissue
 
 Everyday life
-My Christmas vase
+Hobby printing
 
 Engineering
 SpaceX Raptor 3
