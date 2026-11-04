@@ -275,9 +275,9 @@ Interactive world map of bioprinting research and companies. The globe tours the
 
 Start with the numbered country markers. The United States ranks first with 2,555 publications, China second with 2,106, and Germany fifth with 637. International papers may count for several countries. Press Down Arrow to open the interactive map. Use the filters to show companies, institutions or authors. Use Back to globe, Escape or Next slide to leave the map. Sources: OpenAlex and the archived geography dataset. World boundaries: Natural Earth.
 
-## 17. So, can we print an organ?
+## 17. Take-home summary
 
-So, can we print an organ?
+Take-home summary
 Transplant demand outpaces donors
 532,905 waiting · 40,019 deaths on waiting lists (2025)
 Living cells in a gel, layer by layer
@@ -286,12 +286,11 @@ Lab successes, first steps in patients
 Printed vessels in the lab · a bioprinted ear implanted (2022)
 Tissues in ~10 years, organs in 20–30
 AI may speed up development
-Not yet. But closer.
 Source: EDQM–ONT Newsletter Transplant (2026) · Wyss Institute (2024) · 3DBio (2022) · Skylar-Scott, Stanford, via 3DPrint.com (2025) · Background: Readily3D, Tomolite
 
 ### Speaker notes
 
-So, can we print an organ?
+To take home:
 
 Why do we need it? Because transplant demand outpaces donors. More than half a million people are waiting, and forty thousand died on waiting lists last year.
 
@@ -300,8 +299,6 @@ How does it work? We print living cells in a gel, layer by layer. With light: ex
 Where are we today? There are real successes in the lab, like printed blood vessels, and the first steps in patients, like the printed ear in 2022.
 
 What comes next? Experts expect simple tissues in about ten years, and whole organs in twenty to thirty. AI may help speed up the development.
-
-So, can we print an organ? Not yet. But we are getting closer.
 
 ## 18. Engineering tomorrow’s possibilities
 

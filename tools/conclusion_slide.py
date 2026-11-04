@@ -1,8 +1,8 @@
-"""Render the conclusion slide "So, can we print an organ?" (light ring).
+"""Render the conclusion slide "Take-home summary" (light ring).
 
 A ring closes in four arcs, one per takeaway (Why, How, Today, Next); the first
-point shows with the title, Left/Right steps the rest, and the last step closes
-the ring with "Not yet. But closer." The Readily3D volumetric printing loop
+point shows with the title, Left/Right steps the rest, and the fourth point
+closes the ring. The Readily3D volumetric printing loop
 plays dimmed and slowed in the background (tools/conclusion-slide/).
 
 First run replaces "Precision is a beginning" with this slide and deletes the
@@ -26,8 +26,8 @@ SECTION = re.compile(r'<section\b[^>]*\bid="slide-(\d+)"[^>]*>.*?</section>', re
 DATA = re.compile(r'(<script id="sourceData" type="application/json">)(.*?)(</script>)', re.S)
 REPLACES = "Precision is a beginning"
 REMOVES = "Layers to living tissue"
-TITLE = "So, can we print an organ?"
-TITLE_HTML = 'So, can we print an <em class="gradient">organ</em>?'
+TITLE = "Take-home summary"
+TITLE_HTML = 'Take-home <em class="gradient">summary</em>'
 VIDEO_OPACITY = 0.45  # user choice "Medium"
 
 # label in ring, ring word, headline, detail, colour
@@ -49,7 +49,7 @@ PROVENANCE = {
                          "also on the former slide 'Precision is a beginning'); audio removed and re-encoded "
                          "(H.264, CRF 28) on 4 November 2026 as the conclusion background. Credited on the slide.",
 }
-NOTES = """So, can we print an organ?
+NOTES = """To take home:
 
 Why do we need it? Because transplant demand outpaces donors. More than half a million people are waiting, and forty thousand died on waiting lists last year.
 
@@ -57,9 +57,7 @@ How does it work? We print living cells in a gel, layer by layer. With light: ex
 
 Where are we today? There are real successes in the lab, like printed blood vessels, and the first steps in patients, like the printed ear in 2022.
 
-What comes next? Experts expect simple tissues in about ten years, and whole organs in twenty to thirty. AI may help speed up the development.
-
-So, can we print an organ? Not yet. But we are getting closer."""
+What comes next? Experts expect simple tissues in about ten years, and whole organs in twenty to thirty. AI may help speed up the development."""
 
 R = 112
 
@@ -94,7 +92,7 @@ const xy=d=>{const a=(d-90)*Math.PI/180;return[150+R*Math.cos(a),150+R*Math.sin(
 const paint=()=>{const[x,y]=xy(deg);spot.setAttribute('cx',x);spot.setAttribute('cy',y);arcs.forEach((a,i)=>{const k=Math.max(0,Math.min(1,(deg-i*90-4)/82));a.setAttribute('stroke-dashoffset',1-k);a.style.opacity=k>0.005?1:0})};
 const go=to=>{cancelAnimationFrame(raf);const from=deg,t0=performance.now(),still=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const f=t=>{const k=still?1:Math.min(1,(t-t0)/1100);deg=from+(to-from)*(1-Math.pow(1-k,3));paint();if(k<1)raf=requestAnimationFrame(f)};raf=requestAnimationFrame(f)};
-const sync=()=>{const n=s.querySelectorAll('.rs-step.revealed').length,fin=n===P.length;s.dataset.rs=n;
+const sync=()=>{const n=s.querySelectorAll('.rs-step.revealed').length,fin=false;s.dataset.rs=n;
 pts.forEach((p,i)=>{p.classList.toggle('on',fin||i<=n);p.classList.toggle('past',!fin&&i<n)});
 c1.textContent=fin?'':P[n][0];c1.setAttribute('fill',fin?'#F1F5F5':P[n][4]);c2.textContent=fin?FINAL:P[n][1];go(fin?360:(n+1)*90)};
 const slow=()=>{if(v)v.playbackRate=.6};v?.addEventListener('loadedmetadata',slow);v?.addEventListener('play',slow);
@@ -118,8 +116,8 @@ def render(number, total, conclusion, date, presenter):
         f'<div class="rs-pt"><b style="color:{p[4]}">{html.escape(p[2])}</b><span>{html.escape(p[3])}</span></div>'
         for p in POINTS)
     markers = "".join(f'<i class="rs-step" data-reveal-step="{k}" aria-hidden="true" inert></i>'
-                      for k in range(1, len(POINTS) + 1))
-    text = "\n".join([TITLE] + [f"{p[2]}\n{p[3]}" for p in POINTS] + [FINAL, SOURCE])
+                      for k in range(1, len(POINTS)))
+    text = "\n".join([TITLE] + [f"{p[2]}\n{p[3]}" for p in POINTS] + [SOURCE])
     nav = ('<nav class="section-nav" aria-label="Talk sections"><button data-goto="3" class="">Introduction</button>'
            f'<button data-goto="8" class="">Printing methods</button><button data-goto="{conclusion}" class="current">'
            'Conclusion</button><span></span></nav>')
