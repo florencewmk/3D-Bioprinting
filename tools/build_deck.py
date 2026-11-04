@@ -15,6 +15,7 @@ from opening_slides import settings, footer as event_footer, navigation, render_
 from offline_map_slide import render_slide as render_offline_map, RECORD as OFFLINE_MAP_RECORD
 from examples_slide import RECORD as EXAMPLES_RECORD, render_examples
 from deck_structure import display_number, web_section, write_transcript
+from reference_slides import SOURCE_NUMBERS, render_references
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('source',type=Path,help='Original competition PPTX')
 parser.add_argument('pdf',type=Path,help='PDF exported with Arial substitution')
@@ -29,6 +30,7 @@ OUT.mkdir(parents=True,exist_ok=True)
 prs=Presentation(SOURCE);pdf=fitz.open(PDF)
 base=(Path(__file__).parent/'viewport-base.css').read_text()
 H=lambda x:html.escape(str(x),quote=True)
+reference_catalog=json.loads((Path(__file__).resolve().parents[1]/'papers/catalog.json').read_text())
 R='{http://schemas.openxmlformats.org/officeDocument/2006/relationships}'
 def walk(shapes):
  for s in shapes:
@@ -133,7 +135,10 @@ for i,(slide,page) in enumerate(zip(prs.slides,pdf)):
   eyebrow={22:'LAYERS TO LIVING TISSUE',23:'STEREOLITHOGRAPHIC BIOPRINTING',29:'TECHNICAL BACKUP'}[n]
   art=f'<div class="lattice" aria-hidden="true"></div><div class="poster"><p class="eyebrow">{eyebrow}</p><h1 class="editable" data-edit="poster-{n}">{copy}</h1></div>'
   if n==29:art+='<p class="backup-original editable" data-edit="backup-label">Back up</p>'
- if 24<=n<=28:
+ if title in SOURCE_NUMBERS:
+  art,reference_text=render_references(title,src[0],reference_catalog)
+  src=[reference_text];data[-1]['text']=reference_text
+ elif 24<=n<=28:
   body=src[0];parts=re.split(r'(?=\[\d+\])',body);refs=[s.strip() for s in parts if re.match(r'\[\d+\]',s)]
   heading=body.split('\n')[0]
   art=f'<div class="references"><p class="eyebrow">SOURCES · {n-23:02d} / 05</p><h1>{H(heading)}</h1><div class="reference-list">'

@@ -1,7 +1,7 @@
 {
   "archived_on": "2026-10-17",
-  "scope": "Available project-local full texts relevant to the SOFE topic; no new online acquisition performed",
-  "reference_numbering": "presentation/transcript.md, scientific references 1-10 on slides 23-24; this is not a figure-provenance audit",
+  "scope": "Public reference catalog with archived full texts, publisher links for the Coelho book and Sang article, and user-submitted web and video sources.",
+  "reference_numbering": "Main literature retains [1]–[10]. Existing data and image references retain [11]–[24]. Supporting literature uses [25]–[43] and the supplied YouTube references use [44]–[47].",
   "documents": [
     {
       "title": "3-D bioprinting technologies in tissue engineering and regenerative medicine: Current and future trends",
@@ -16,7 +16,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 25,
+      "ieee_citation": "E. S. Bishop et al., “3-D bioprinting technologies in tissue engineering and regenerative medicine: Current and future trends,” *Genes Dis.*, vol. 4, no. 4, pp. 185–195, 2017. doi: 10.1016/j.gendis.2017.10.002.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/3-D bioprinting technologies in tissue engineering and regenerative medicine- Current and future trends.pdf"
+      ]
     },
     {
       "title": "3D printing by stereolithography using thermal initiators",
@@ -31,7 +36,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 26,
+      "ieee_citation": "D. Kam, O. Rulf, A. Reisinger, R. Lieberman, and S. Magdassi, “3D printing by stereolithography using thermal initiators,” *Nat. Commun.*, vol. 15, Art. no. 2285, 2024. doi: 10.1038/s41467-024-46532-0.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/3D printing by stereolithography using thermal initiators.pdf"
+      ]
     },
     {
       "title": "3D printing of new biobased unsaturated polyesters by microstereo-thermal-lithography",
@@ -46,7 +56,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 27,
+      "ieee_citation": "F. A. M. M. Gonçalves et al., “3D printing of new biobased unsaturated polyesters by microstereo-thermal-lithography,” *Biofabrication*, vol. 6, no. 3, Art. no. 035024, 2014. doi: 10.1088/1758-5082/6/3/035024.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/3D printing of new biobased unsaturated polyesters by microstereo-thermal-lithography.pdf"
+      ]
     },
     {
       "title": "3D printing preview for stereo-lithography based on photopolymerization kinetic models",
@@ -61,7 +76,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 28,
+      "ieee_citation": "Y. Gao, L. Xu, Y. Zhao, Z. You, and Q. Guan, “3D printing preview for stereo-lithography based on photopolymerization kinetic models,” *Bioact. Mater.*, vol. 5, no. 4, pp. 798–807, 2020. doi: 10.1016/j.bioactmat.2020.05.006.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/3D printing preview for stereo-lithography based on photopolymerization kinetic models.pdf"
+      ]
     },
     {
       "title": "Advanced Near‐Infrared Light for Monitoring and Modulating the Spatiotemporal Dynamics of Cell Functions in Living Systems",
@@ -78,7 +98,12 @@
       ],
       "relationship": "Exact match to numbered main reference",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 6,
+      "ieee_citation": "G. Chen et al., “Advanced near-infrared light for monitoring and modulating the spatiotemporal dynamics of cell functions in living systems,” *Adv. Sci.*, vol. 7, Art. no. 1903783, 2020. doi: 10.1002/advs.201903783.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Advanced Near-Infrared Light for Monitoringand Modulating the Spatiotemporal Dynamics of CellFunctions in Living Systems.pdf"
+      ]
     },
     {
       "title": "Imaging‐Guided Microscale Photothermal Stereolithography Bioprinting",
@@ -93,7 +118,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 29,
+      "ieee_citation": "J. Sun et al., “Imaging-guided microscale photothermal stereolithography bioprinting,” *Adv. Sci.*, vol. 12, no. 18, Art. no. 2500640, May 2025. doi: 10.1002/advs.202500640.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Imaging‐Guided Microscale Photothermal Stereolithography Bioprinting.pdf"
+      ]
     },
     {
       "title": "Photocrosslinkable Materials for the Fabrication of Tissue-Engineered Constructs by Stereolithography",
@@ -108,7 +138,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "book_chapter",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 30,
+      "ieee_citation": "R. F. Pereira and P. J. Bártolo, “Photocrosslinkable materials for the fabrication of tissue-engineered constructs by stereolithography,” in *Tissue Engineering*, P. Fernandes and P. Bártolo, Eds. Dordrecht, The Netherlands: Springer, 2014, pp. 149–178. doi: 10.1007/978-94-007-7073-7_8.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Photocrosslinkable Materials for the Fabrication of Tissue-Engineered Constructs by Stereolithography.pdf"
+      ]
     },
     {
       "title": "Polyethylene Glycol and Polyethylene Glycol/Hydroxyapatite Constructs Produced through Stereo-Thermal Lithography",
@@ -123,7 +158,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 31,
+      "ieee_citation": "T. Patrício, R. Pereira, L. Oliveira, and P. Bártolo, “Polyethylene glycol and polyethylene glycol/hydroxyapatite constructs produced through stereo-thermal-lithography,” *Adv. Mater. Res.*, vol. 749, pp. 87–92, 2013. doi: 10.4028/www.scientific.net/AMR.749.87.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Polyethylene Glycol and Polyethylene Glycol:hydroxyapatite Constructs Produced through Stereo-thermal-lithography.pdf"
+      ]
     },
     {
       "title": "Printing biological solutions through laser-induced forward transfer",
@@ -138,7 +178,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 32,
+      "ieee_citation": "M. Duocastella, J. M. Fernández-Pradas, J. Domínguez, P. Serra, and J. L. Morenza, “Printing biological solutions through laser-induced forward transfer,” *Appl. Phys. A*, vol. 93, pp. 941–945, 2008. doi: 10.1007/s00339-008-4741-6.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Printing biological solutions through laser-induced forward transfer.pdf"
+      ]
     },
     {
       "title": "Recent advances in the development of stereolithography-based additive manufacturing processes: A review of applications and challenges",
@@ -153,7 +198,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 33,
+      "ieee_citation": "A. Afridi, A. Al Rashid, and M. Koç, “Recent advances in the development of stereolithography-based additive manufacturing processes: A review of applications and challenges,” *Bioprinting*, vol. 43, Art. no. e00360, 2024. doi: 10.1016/j.bprint.2024.e00360.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Recent advances in the development of stereolithography-based additive manufacturing processes- A review of applications and challenges.pdf"
+      ]
     },
     {
       "title": "Stereo-thermallithography- a new principle for rapid prototyping",
@@ -170,7 +220,12 @@
       ],
       "relationship": "Exact match to numbered main reference",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 3,
+      "ieee_citation": "P. J. Bártolo and G. Mitchell, “Stereo-thermal-lithography: A new principle for rapid prototyping,” *Rapid Prototyping J.*, vol. 9, no. 3, pp. 150–156, 2003. doi: 10.1108/13552540310477454.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Stereo-thermallithography- a new principle for rapid prototyping.pdf"
+      ]
     },
     {
       "title": "Stereolithographic 3D Bioprinting for Biomedical Applications",
@@ -185,7 +240,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "book_chapter",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 34,
+      "ieee_citation": "R. Raman and R. Bashir, “Stereolithographic 3D bioprinting for biomedical applications,” in *Essentials of 3D Biofabrication and Translation*, A. Atala and J. J. Yoo, Eds. Academic Press, 2015, pp. 89–121. doi: 10.1016/B978-0-12-800972-7.00006-2.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Stereolithographic 3D Bioprinting for Biomedical Applications.pdf"
+      ]
     },
     {
       "title": "Stereolithography 3D printing upon near-infrared photopolymerization",
@@ -200,7 +260,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 35,
+      "ieee_citation": "X. He et al., “Stereolithography 3D printing upon near-infrared photopolymerization,” *Chem. Eng. J.*, vol. 507, Art. no. 160857, 2025. doi: 10.1016/j.cej.2025.160857.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Stereolithography 3D printing upon near-infrared photopolymerization.pdf"
+      ]
     },
     {
       "title": "Stereolithography apparatus and digital light processing-based 3D bioprinting for tissue fabrication",
@@ -215,7 +280,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 36,
+      "ieee_citation": "W. Li, M. Wang, H. Ma, F. A. Chapa-Villarreal, A. O. Lobo, and Y. S. Zhang, “Stereolithography apparatus and digital light processing-based 3D bioprinting for tissue fabrication,” *iScience*, vol. 26, no. 2, Art. no. 106039, 2023. doi: 10.1016/j.isci.2023.106039.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Stereolithography apparatus and digital light processing-based 3D bioprinting for tissue fabrication.pdf"
+      ]
     },
     {
       "title": "Stereolithography in tissue engineering",
@@ -230,7 +300,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 37,
+      "ieee_citation": "S. A. Skoog, P. L. Goering, and R. J. Narayan, “Stereolithography in tissue engineering,” *J. Mater. Sci. Mater. Med.*, vol. 25, pp. 845–856, 2014. doi: 10.1007/s10856-013-5107-y.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Stereolithography in tissue engineering.pdf"
+      ]
     },
     {
       "title": "Stereolithography: Materials, Processes and Applications",
@@ -247,7 +322,12 @@
       ],
       "relationship": "Exact match to numbered main reference",
       "document_type": "book",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 4,
+      "ieee_citation": "P. J. Bártolo, Ed., *Stereolithography: Materials, Processes and Applications*. Boston, MA, USA: Springer, 2011. doi: 10.1007/978-0-387-92904-0.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Stereolithography.pdf"
+      ]
     },
     {
       "title": "The potential of unsaturated polyesters in biomedicine and tissue engineering: Synthesis, structure-properties relationships and additive manufacturing",
@@ -262,7 +342,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 38,
+      "ieee_citation": "F. A. M. M. Gonçalves, A. C. Fonseca, M. Domingos, A. Gloria, A. C. Serra, and J. F. J. Coelho, “The potential of unsaturated polyesters in biomedicine and tissue engineering: Synthesis, structure-properties relationships and additive manufacturing,” *Prog. Polym. Sci.*, vol. 68, pp. 1–34, 2017. doi: 10.1016/j.progpolymsci.2016.12.008.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/The potential of unsaturated polyesters in biomedicine and tissue engineering- Synthesis, structure-properties relationships and additive manufacturing.pdf"
+      ]
     },
     {
       "title": "mSLAb – An open-source masked stereolithography (mSLA) bioprinter",
@@ -277,7 +362,12 @@
       "reference_numbers": [],
       "relationship": "Supporting topic literature from existing local project; exact slide use has not been audited",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 39,
+      "ieee_citation": "B. K. Kaufmann et al., “mSLAb—An open-source masked stereolithography (mSLA) bioprinter,” *HardwareX*, vol. 19, Art. no. e00543, 2024. doi: 10.1016/j.ohx.2024.e00543.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/mSLAb – An open-source masked stereolithography (mSLA) bioprinter.pdf"
+      ]
     },
     {
       "title": "3D bioprinting: current status and trends—a guide to the literature and industrial practice",
@@ -294,31 +384,101 @@
       ],
       "relationship": "Exact match to numbered main reference",
       "document_type": "journal_article",
-      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license"
+      "rights": "Third-party rights and license notices preserved in unchanged PDF; not covered by repository MIT license",
+      "bibliography_number": 7,
+      "ieee_citation": "S. Santoni, S. G. Gugliandolo, M. Sponchioni, D. Moscatelli, and B. M. Colosimo, “3D bioprinting: Current status and trends—a guide to the literature and industrial practice,” *Bio-Des. Manuf.*, vol. 5, pp. 14–42, 2022. doi: 10.1007/s42242-021-00165-0.",
+      "project_source_paths": [
+        "SoFe Competition/Papers/3D bioprinting- current status and trends - a guide to the literature and industrial practice.pdf"
+      ]
+    },
+    {
+      "title": "Development of 3D bioprinting: From printing methods to biomedical applications",
+      "doi": "10.1016/j.ajps.2019.11.003",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7610207/fullTextXML",
+      "path": "papers/cited/Gu-2020-Development-of-3D-bioprinting.xml",
+      "original_filename": "PMC7610207 fullTextXML",
+      "archived_on": "2026-11-03",
+      "bytes": 305534,
+      "pages": null,
+      "sha256": "5d550caf4a950fff65204d6177362e5259a1564eb6554c5261ef316c9c63b18a",
+      "reference_numbers": [],
+      "relationship": "Supporting bioprinting history review",
+      "document_type": "journal_article_full_text_jats_xml",
+      "rights": "Unchanged Europe PMC full-text JATS with CC BY-NC-ND 4.0 license notice preserved; not covered by repository MIT license",
+      "publisher_url": "https://www.sciencedirect.com/science/article/pii/S1818087619311869",
+      "pii": "S1818087619311869",
+      "bibliography_number": 40,
+      "ieee_citation": "Z. Gu, J. Fu, H. Lin, and Y. He, “Development of 3D bioprinting: From printing methods to biomedical applications,” *Asian J. Pharm. Sci.*, vol. 15, no. 5, pp. 529–557, 2020. doi: 10.1016/j.ajps.2019.11.003."
+    },
+    {
+      "title": "3D Bioprinting in Microgravity: Opportunities, Challenges, and Possible Applications in Space",
+      "doi": "10.1002/adhm.202300443",
+      "source_url": "https://zenodo.org/records/8129352/files/Adv%20Healthcare%20Materials%20-%202023%20-%20Van%20Ombergen%20-%203D%20Bioprinting%20in%20Microgravity%20Opportunities%20Challenges%20and%20Possible.pdf",
+      "publisher_url": "https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/adhm.202300443",
+      "repository_record_url": "https://zenodo.org/records/8129352",
+      "path": "papers/cited/Van-Ombergen-2023-3D-Bioprinting-in-Microgravity.pdf",
+      "original_filename": "Adv Healthcare Materials - 2023 - Van Ombergen - 3D Bioprinting in Microgravity Opportunities Challenges and Possible.pdf",
+      "retrieved_on": "2026-11-03",
+      "archived_on": "2026-11-03",
+      "bytes": 4557858,
+      "pages": 19,
+      "sha256": "c2f4f21f8111f0dabbea05b2f1a5baf6bfa2cde0bbfb686ee54c5394809ab263",
+      "reference_numbers": [
+        8
+      ],
+      "relationship": "Exact match to main reference 8; full text archived from author-lab Zenodo record after publisher endpoint returned HTTP 403",
+      "document_type": "journal_perspective",
+      "rights": "Unchanged open-access publisher PDF; Creative Commons Attribution-NonCommercial notice preserved; not covered by repository MIT license",
+      "bibliography_number": 8,
+      "ieee_citation": "A. Van Ombergen et al., “3D bioprinting in microgravity: Opportunities, challenges, and possible applications in space,” *Adv. Healthcare Mater.*, vol. 12, no. 23, Art. no. 2300443, Sep. 2023. doi: 10.1002/adhm.202300443.",
+      "project_source_paths": [
+        "SoFe Competition/Papers/3D Bioprinting in Microgravity.pdf"
+      ]
+    },
+    {
+      "title": "Method, Medium and Apparatus for Producing Three-Dimensional Figure Product",
+      "doi": null,
+      "source_url": "https://patents.google.com/patent/US4041476A/en",
+      "path": "papers/supporting/Swainson-1977-US4041476.pdf",
+      "original_filename": "Swainson - METHOD, MEDIUM AND APPARATUS FOR PRODUCING THREE-DIMENSIONAL FIGURE PRODUCT.pdf",
+      "archived_on": "2026-11-04",
+      "bytes": 2011400,
+      "pages": 18,
+      "sha256": "295a5130d94d7af3c86124f80a22305fbb882ab028ca97c90855317620a5d542",
+      "reference_numbers": [],
+      "relationship": "Supporting literature from the user-specified research folder",
+      "document_type": "patent",
+      "rights": "Unchanged source PDF with original notices preserved. Repository MIT license does not apply.",
+      "patent_number": "US4041476",
+      "bibliography_number": 43,
+      "ieee_citation": "W. K. Swainson, “Method, medium and apparatus for producing three-dimensional figure product,” U.S. Patent 4 041 476, Aug. 9, 1977.",
+      "project_source_paths": [
+        "Presentation/Stereo-thermal-lithography/Swainson - METHOD, MEDIUM AND APPARATUS FOR PRODUCING THREE-DIMENSIONAL FIGURE PRODUCT.pdf"
+      ]
     }
   ],
   "presentation_references": [
     {
       "number": 1,
-      "citation": "Soleymani Eil Bakhtiari, S. S., et al. (2021). 3-Dimensional printing of hydrogel-based nanocomposites: A comprehensive review on the technology description, properties, and applications. Advanced Engineering Materials, 23, 2100477. https://doi.org/10.1002/adem.202100477",
+      "citation": "S. Soleymani Eil Bakhtiari et al., “3-Dimensional printing of hydrogel-based nanocomposites: A comprehensive review on the technology description, properties, and applications,” *Adv. Eng. Mater.*, vol. 23, no. 10, Art. no. 2100477, Oct. 2021. doi: 10.1002/adem.202100477.",
       "doi": "10.1002/adem.202100477",
-      "reference_slide": 23,
+      "reference_slide": 24,
       "status": "full_text_missing",
       "paths": []
     },
     {
       "number": 2,
-      "citation": "He, X., et al. (2023). Cyanine/iodonium salt as a broad-absorbing photoinitiating system for radical photopolymerization under near-UV, visible and NIR light. Polymer Chemistry, 14, 1543–1553. https://doi.org/10.1039/D2PY01466A",
+      "citation": "X. He et al., “Cyanine/iodonium salt as a broad-absorbing photoinitiating system for radical photopolymerization under near-UV, visible and NIR light,” *Polym. Chem.*, vol. 14, no. 13, pp. 1543–1553, 2023. doi: 10.1039/D2PY01466A.",
       "doi": "10.1039/D2PY01466A",
-      "reference_slide": 23,
+      "reference_slide": 24,
       "status": "full_text_missing",
       "paths": []
     },
     {
       "number": 3,
-      "citation": "Bártolo, P. J., & Mitchell, G. (2003). Stereo-thermal-lithography: A new principle for rapid prototyping. Rapid Prototyping Journal, 9(3), 150–156. https://doi.org/10.1108/13552540310477454",
+      "citation": "P. J. Bártolo and G. Mitchell, “Stereo-thermal-lithography: A new principle for rapid prototyping,” *Rapid Prototyping J.*, vol. 9, no. 3, pp. 150–156, 2003. doi: 10.1108/13552540310477454.",
       "doi": "10.1108/13552540310477454",
-      "reference_slide": 23,
+      "reference_slide": 24,
       "status": "archived",
       "paths": [
         "papers/cited/Bartolo-Mitchell-2003-Stereo-thermal-lithography.pdf"
@@ -326,9 +486,9 @@
     },
     {
       "number": 4,
-      "citation": "Bártolo, P. J. (Ed.). (2011). Stereolithography: Materials, Processes and Applications. Springer.",
+      "citation": "P. J. Bártolo, Ed., *Stereolithography: Materials, Processes and Applications*. Boston, MA, USA: Springer, 2011. doi: 10.1007/978-0-387-92904-0.",
       "doi": "10.1007/978-0-387-92904-0",
-      "reference_slide": 23,
+      "reference_slide": 24,
       "status": "archived",
       "paths": [
         "papers/cited/Bartolo-2011-Stereolithography-Materials-Processes-Applications.pdf"
@@ -336,17 +496,17 @@
     },
     {
       "number": 5,
-      "citation": "O’Halloran, S., Pandit, A., Heise, A., & Kellett, A. (2023). Two-photon polymerization: Fundamentals, materials, and chemical modification strategies. Advanced Science, 10, 2204072. https://doi.org/10.1002/advs.202204072",
+      "citation": "S. O’Halloran, A. Pandit, A. Heise, and A. Kellett, “Two-photon polymerization: Fundamentals, materials, and chemical modification strategies,” *Adv. Sci.*, vol. 10, no. 7, Art. no. 2204072, Mar. 2023. doi: 10.1002/advs.202204072.",
       "doi": "10.1002/advs.202204072",
-      "reference_slide": 23,
+      "reference_slide": 24,
       "status": "full_text_missing",
       "paths": []
     },
     {
       "number": 6,
-      "citation": "Chen, G., et al. (2020). Advanced near-infrared light for monitoring and modulating the spatiotemporal dynamics of cell functions in living systems. Advanced Science, 7, 1903783. https://doi.org/10.1002/advs.201903783",
+      "citation": "G. Chen et al., “Advanced near-infrared light for monitoring and modulating the spatiotemporal dynamics of cell functions in living systems,” *Adv. Sci.*, vol. 7, Art. no. 1903783, 2020. doi: 10.1002/advs.201903783.",
       "doi": "10.1002/advs.201903783",
-      "reference_slide": 24,
+      "reference_slide": 25,
       "status": "archived",
       "paths": [
         "papers/cited/Chen-2020-Advanced-NIR-Light-Cell-Functions.pdf"
@@ -354,9 +514,9 @@
     },
     {
       "number": 7,
-      "citation": "Santoni, S., et al. (2022). 3D bioprinting: Current status and trends—a guide to the literature and industrial practice. Bio-Design and Manufacturing, 5, 14–42. https://doi.org/10.1007/s42242-021-00165-0",
+      "citation": "S. Santoni, S. G. Gugliandolo, M. Sponchioni, D. Moscatelli, and B. M. Colosimo, “3D bioprinting: Current status and trends—a guide to the literature and industrial practice,” *Bio-Des. Manuf.*, vol. 5, pp. 14–42, 2022. doi: 10.1007/s42242-021-00165-0.",
       "doi": "10.1007/s42242-021-00165-0",
-      "reference_slide": 24,
+      "reference_slide": 25,
       "status": "archived",
       "paths": [
         "papers/cited/Santoni-2022-3D-Bioprinting-Current-Status-Trends.pdf"
@@ -364,25 +524,27 @@
     },
     {
       "number": 8,
-      "citation": "Van Ombergen, A., et al. (2023). 3D bioprinting in microgravity: Opportunities, challenges, and possible applications in space. Advanced Healthcare Materials, 12, 2300443. https://doi.org/10.1002/adhm.202300443",
+      "citation": "A. Van Ombergen et al., “3D bioprinting in microgravity: Opportunities, challenges, and possible applications in space,” *Adv. Healthcare Mater.*, vol. 12, no. 23, Art. no. 2300443, Sep. 2023. doi: 10.1002/adhm.202300443.",
       "doi": "10.1002/adhm.202300443",
-      "reference_slide": 24,
-      "status": "full_text_missing",
-      "paths": []
+      "reference_slide": 25,
+      "status": "archived",
+      "paths": [
+        "papers/cited/Van-Ombergen-2023-3D-Bioprinting-in-Microgravity.pdf"
+      ]
     },
     {
       "number": 9,
-      "citation": "Higher pulse frequency of near-infrared laser irradiation increases penetration depth for novel biomedical applications. (2021). PLOS ONE. https://doi.org/10.1371/journal.pone.0245350",
+      "citation": "A. Barbora, O. Bohar, A. A. Sivan, E. Magory, A. Nause, and R. Minnes, “Higher pulse frequency of near-infrared laser irradiation increases penetration depth for novel biomedical applications,” *PLoS One*, vol. 16, no. 1, Art. no. e0245350, Jan. 2021. doi: 10.1371/journal.pone.0245350.",
       "doi": "10.1371/journal.pone.0245350",
-      "reference_slide": 24,
+      "reference_slide": 25,
       "status": "full_text_missing",
       "paths": []
     },
     {
       "number": 10,
-      "citation": "Grigoryan, B., et al. (2019). Multivascular networks and functional intravascular topologies within biocompatible hydrogels. Science, 364(6439), 458–464. https://doi.org/10.1126/science.aav9750",
+      "citation": "B. Grigoryan et al., “Multivascular networks and functional intravascular topologies within biocompatible hydrogels,” *Science*, vol. 364, no. 6439, pp. 458–464, May 2019. doi: 10.1126/science.aav9750.",
       "doi": "10.1126/science.aav9750",
-      "reference_slide": 24,
+      "reference_slide": 25,
       "status": "full_text_missing",
       "paths": []
     }
@@ -401,6 +563,261 @@
       "sha256": "27ba398153bb48b43e4e5a2f252f302b0a7a5e537ae2cbb9b1e1d0806fc2a13a",
       "relationship": "Source of original broad Scopus query; four-technique classifier is newly documented separately",
       "rights": "Unchanged publisher supplement; third-party notices retained; not covered by repository MIT license"
+    }
+  ],
+  "last_updated_on": "2026-11-04",
+  "source_links": [
+    {
+      "added_on": "2026-11-03",
+      "checked_on": "2026-11-03",
+      "submitted_by": "user",
+      "id": "wyss-living-tissues",
+      "title": "3D Bioprinting of Living Tissues",
+      "url": "https://wyss.harvard.edu/technology/3d-bioprinting/",
+      "publisher": "Wyss Institute at Harvard University",
+      "source_type": "institutional_technology_overview",
+      "published_on": null,
+      "topics": [
+        "vascularization",
+        "SWIFT",
+        "co-SWIFT",
+        "tissue engineering"
+      ],
+      "summary": "Overview of vascularized engineered tissues, including SWIFT and co-SWIFT channel printing.",
+      "limitations": [
+        "Broader bioprinting research; do not label SWIFT/co-SWIFT as SLA.",
+        "Does not establish a clinically transplantable whole organ."
+      ],
+      "access_status": "page_read",
+      "archived_paths": []
+    },
+    {
+      "added_on": "2026-11-03",
+      "checked_on": "2026-11-03",
+      "submitted_by": "user",
+      "id": "tau-printed-heart-2019",
+      "title": "TAU scientists print first ever 3D heart using patient’s own cells",
+      "url": "https://english.tau.ac.il/news/printed_heart",
+      "publisher": "Tel Aviv University",
+      "source_type": "institutional_research_news",
+      "published_on": "2019-04-16",
+      "topics": [
+        "cardiac tissue",
+        "patient-specific bioink",
+        "2019 milestone"
+      ],
+      "summary": "Reports a small vascularized heart construct made using patient-derived cells and biological materials.",
+      "limitations": [
+        "Coordinated pumping had not been achieved at the reported stage.",
+        "Research construct; does not establish a transplant-ready human heart."
+      ],
+      "access_status": "page_read",
+      "archived_paths": []
+    },
+    {
+      "added_on": "2026-11-03",
+      "checked_on": "2026-11-03",
+      "submitted_by": "user",
+      "id": "microtia-bioprinting",
+      "title": "3D Bioprinting: Growing a Child’s Own Ear in the Lab",
+      "url": "https://www.microtia.net/3d-bioprinting/",
+      "publisher": "Dr. Arturo Bonilla / Microtia – Congenital Ear Institute",
+      "source_type": "clinical_investigator_information_page",
+      "published_on": null,
+      "topics": [
+        "microtia",
+        "autologous cartilage",
+        "clinical translation"
+      ],
+      "summary": "Participating investigator describes patient-cell-derived ear cartilage and an early human trial.",
+      "limitations": [
+        "The page says the trial has concluded, but also retains an Active Clinical Trial badge; verify current status against a trial registry before reuse.",
+        "Trial authorization or device designation does not establish routine treatment approval or long-term efficacy."
+      ],
+      "access_status": "page_read",
+      "archived_paths": [],
+      "submission_occurrences": 2
+    },
+    {
+      "added_on": "2026-11-03",
+      "checked_on": "2026-11-03",
+      "submitted_by": "user",
+      "id": "van-ombergen-microgravity-2023",
+      "title": "3D Bioprinting in Microgravity: Opportunities, Challenges, and Possible Applications in Space",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/epdf/10.1002/adhm.202300443",
+      "publisher": "Wiley / Advanced Healthcare Materials",
+      "source_type": "journal_perspective",
+      "publication_year": 2023,
+      "doi": "10.1002/adhm.202300443",
+      "topics": [
+        "microgravity",
+        "space tissue engineering",
+        "SLA",
+        "DLP",
+        "multiphoton lithography"
+      ],
+      "summary": "Perspective on opportunities and technical constraints of bioprinting in space, including light-based approaches.",
+      "limitations": [
+        "Perspective article; does not demonstrate completed orbital SLA printing of living tissues.",
+        "Published in 2023; later developments require separate evidence."
+      ],
+      "access_status": "publisher_403_full_text_archived_from_zenodo",
+      "verification_urls": [
+        "https://zenodo.org/records/8129352",
+        "https://pubmed.ncbi.nlm.nih.gov/37353904/"
+      ],
+      "archived_paths": [
+        "papers/cited/Van-Ombergen-2023-3D-Bioprinting-in-Microgravity.pdf"
+      ],
+      "reference_numbers": [
+        8
+      ]
+    },
+    {
+      "added_on": "2026-11-03",
+      "checked_on": "2026-11-03",
+      "submitted_by": "user",
+      "id": "bih-biological-bandages-2026",
+      "title": "3D printing in microgravity paves way for biological bandages for astronauts",
+      "url": "https://www.bihealth.org/en/notices/3d-druck-in-schwerelosigkeit-biologisches-pflaster-fuer-astronauten",
+      "publisher": "Berlin Institute of Health at Charité",
+      "source_type": "institutional_press_release",
+      "published_on": "2026-01-22",
+      "topics": [
+        "DLP",
+        "skin cells",
+        "wound dressings",
+        "parabolic flights",
+        "Cellbricks"
+      ],
+      "summary": "Reports light-cured skin-cell dressings tested during two parabolic-flight experiments with Cellbricks.",
+      "related_doi": "10.1002/advs.202520715",
+      "limitations": [
+        "Parabolic-flight microgravity evidence, rather than an ISS experiment.",
+        "Does not establish clinical deployment of wound dressings for astronauts."
+      ],
+      "access_status": "page_read",
+      "archived_paths": []
+    },
+    {
+      "added_on": "2026-11-03",
+      "checked_on": "2026-11-03",
+      "submitted_by": "user",
+      "id": "gu-bioprinting-development-2020",
+      "title": "Development of 3D bioprinting: From printing methods to biomedical applications",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1818087619311869",
+      "publisher": "Elsevier / Asian Journal of Pharmaceutical Sciences",
+      "source_type": "journal_review",
+      "publication_year": 2020,
+      "doi": "10.1016/j.ajps.2019.11.003",
+      "pii": "S1818087619311869",
+      "topics": [
+        "bioprinting history",
+        "printing methods",
+        "biomedical applications"
+      ],
+      "summary": "Review of bioprinting methods and applications; matches the existing Gu et al. full-text archive.",
+      "limitations": [
+        "Publisher page returned HTTP 403; identity checked against the existing full-text JATS article.",
+        "Archived XML includes text, references and figure captions; linked figure images and publisher PDF are not archived."
+      ],
+      "access_status": "publisher_403_existing_jats_full_text",
+      "verification_urls": [
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7610207/fullTextXML"
+      ],
+      "archived_paths": [
+        "papers/cited/Gu-2020-Development-of-3D-bioprinting.xml"
+      ]
+    },
+    {
+      "id": "youtube-_cJC3lcmrjE",
+      "url": "https://www.youtube.com/watch?v=_cJC3lcmrjE",
+      "video_id": "_cJC3lcmrjE",
+      "title": "Bioprinting: An Organ Transplant Revolution?",
+      "creator": "iluli by Mike Lamb",
+      "source_type": "online_video",
+      "published_on": "2023-04-01",
+      "duration": "5:34",
+      "added_on": "2026-11-04",
+      "checked_on": "2026-11-04",
+      "submitted_by": "user",
+      "archived_paths": [],
+      "bibliography_number": 44,
+      "ieee_citation": "iluli by Mike Lamb, “Bioprinting: An Organ Transplant Revolution?,” YouTube, Apr. 1, 2023. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=_cJC3lcmrjE",
+      "summary": "General bioprinting explainer."
+    },
+    {
+      "id": "youtube-btRQ8QuXtO4",
+      "url": "https://www.youtube.com/watch?v=btRQ8QuXtO4",
+      "video_id": "btRQ8QuXtO4",
+      "title": "Printing our future: how 3D bioprinting will revolutionize medicine",
+      "creator": "K. Vos",
+      "source_type": "online_video",
+      "published_on": null,
+      "duration": "14:04",
+      "added_on": "2026-11-04",
+      "checked_on": "2026-11-04",
+      "submitted_by": "user",
+      "archived_paths": [],
+      "bibliography_number": 45,
+      "ieee_citation": "K. Vos, “Printing our future: how 3D bioprinting will revolutionize medicine,” TEDxVictoria, YouTube. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=btRQ8QuXtO4",
+      "summary": "TEDxVictoria talk. Title and speaker also recorded in the project transcript."
+    },
+    {
+      "id": "youtube-0kHDXPQDSYY",
+      "url": "https://www.youtube.com/watch?v=0kHDXPQDSYY",
+      "video_id": "0kHDXPQDSYY",
+      "title": "How Does Stereolithography 3D Printing Work?",
+      "creator": "Protolabs",
+      "source_type": "online_video",
+      "published_on": null,
+      "duration": "0:58",
+      "added_on": "2026-11-04",
+      "checked_on": "2026-11-04",
+      "submitted_by": "user",
+      "archived_paths": [],
+      "bibliography_number": 46,
+      "ieee_citation": "Protolabs, “How Does Stereolithography 3D Printing Work?,” YouTube. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=0kHDXPQDSYY",
+      "summary": "SLA process demonstration. Title and channel recorded in the project transcript."
+    },
+    {
+      "id": "youtube-ONBHkzimRbg",
+      "url": "https://www.youtube.com/watch?v=ONBHkzimRbg",
+      "video_id": "ONBHkzimRbg",
+      "title": "Printing tiny, high-precision objects in a matter of seconds",
+      "creator": "EPFL",
+      "source_type": "online_video",
+      "published_on": "2020-02-12",
+      "duration": null,
+      "added_on": "2026-11-04",
+      "checked_on": "2026-11-04",
+      "submitted_by": "user",
+      "archived_paths": [],
+      "bibliography_number": 47,
+      "ieee_citation": "EPFL, “Printing tiny, high-precision objects in a matter of seconds,” YouTube, Feb. 12, 2020. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=ONBHkzimRbg",
+      "summary": "Volumetric printing demonstration. The video link was already recorded in presentation settings as a still-image source."
+    }
+  ],
+  "bibliography_only": [
+    {
+      "title": "Drug Delivery Systems: Advanced Technologies Potentially Applicable in Personalised Treatment",
+      "doi": "10.1007/978-94-007-6010-3",
+      "source_url": "https://doi.org/10.1007/978-94-007-6010-3",
+      "document_type": "edited_book",
+      "bibliography_number": 41,
+      "ieee_citation": "J. F. J. Coelho, Ed., *Drug Delivery Systems: Advanced Technologies Potentially Applicable in Personalised Treatment*. Dordrecht, The Netherlands: Springer, 2013. doi: 10.1007/978-94-007-6010-3.",
+      "access_status": "publisher_link",
+      "note": "Full text is available in the local project library."
+    },
+    {
+      "title": "From UV to Near-Infrared, WS₂ Nanosheet: A Novel Photocatalyst for Full Solar Light Spectrum Photodegradation",
+      "doi": "10.1002/adma.201403264",
+      "source_url": "https://doi.org/10.1002/adma.201403264",
+      "document_type": "journal_article",
+      "bibliography_number": 42,
+      "ieee_citation": "Y. Sang, Z. Zhao, M. Zhao, P. Hao, Y. Leng, and H. Liu, “From UV to near-infrared, WS₂ nanosheet: A novel photocatalyst for full solar light spectrum photodegradation,” *Adv. Mater.*, vol. 27, no. 2, pp. 363–369, 2015. doi: 10.1002/adma.201403264.",
+      "access_status": "publisher_link",
+      "note": "Full text is available in the local project library."
     }
   ]
 }
