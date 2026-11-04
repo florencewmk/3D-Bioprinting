@@ -25,6 +25,7 @@ HULL_MP4 = "materials/videos/02b7fdceac6d5959439932ab69a7fc3f00ca722f5345d877c86
 SECTION = re.compile(r'<section\b[^>]*\bid="slide-(\d+)"[^>]*>.*?</section>', re.S)
 DATA = re.compile(r'(<script id="sourceData" type="application/json">)(.*?)(</script>)', re.S)
 FIRST = 10
+REPLAY = {10, 12, 14, 16}  # template slides with timed animations get the toolbar Replay button
 MOVED = ["Bioprinting technologies", "A structure forms one layer at a time", "SLA · DLP · multiphoton lithography",
          "Four light-based curing routes", "UV / violet and NIR", "Thermal activation"]
 NOTES = json.loads((ROOT / "tools/light-slides-notes.json").read_text())
@@ -74,7 +75,7 @@ def render(total, conclusion, date, presenter, first=FIRST, printing=FIRST):
         text = visible_text(body)
         notes = NOTES[str(n)]
         sections.append(
-            f'<section class="slide light-slide" id="slide-{number}" aria-label="{number}. {html.escape(title, quote=True)}" aria-hidden="true">'
+            f'<section class="slide light-slide"{" data-replay" if n in REPLAY else ""} id="slide-{number}" aria-label="{number}. {html.escape(title, quote=True)}" aria-hidden="true">'
             + nav(conclusion, printing) + (style if i == 0 else "") + body + markers
             + f'<div class="sr-only">{html.escape(text)}</div><!-- Speaker notes: {html.escape(notes)} -->'
             + f'<footer><span>{date}</span><span>{presenter}</span><span>{number:02d} / {total}</span></footer>'

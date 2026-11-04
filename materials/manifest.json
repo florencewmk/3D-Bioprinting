@@ -1,6 +1,6 @@
 {
   "source": "presentation/offline.html",
-  "source_sha256": "7e3f3180300740593cfc56299136dc8e178c59de95475683764971f735be9529",
+  "source_sha256": "304d36cbac49619303691f835b6117a0258e06383c2c5a0583de40752ea75064",
   "slides": 59,
   "asset_count": 168,
   "assets": [
@@ -60,17 +60,6 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
-      "path": "materials/diagrams/10e62501e9a8e6932d45029afd6c79765b1fd5025460debe1cd0f8e759fd5ecd.svg",
-      "mime": "image/svg+xml",
-      "bytes": 245,
-      "sha256": "10e62501e9a8e6932d45029afd6c79765b1fd5025460debe1cd0f8e759fd5ecd",
-      "slides": [
-        15
-      ],
-      "source": "presentation/offline.html",
-      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
-    },
-    {
       "path": "materials/diagrams/12392a6d36059aadf5ff7a766c726ac1ca692dd3100b971ca16d2cca0591197a.svg",
       "mime": "image/svg+xml",
       "bytes": 36326,
@@ -80,6 +69,17 @@
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/249b5fd42caa90e0e5b7f2d56a46bba06101d67bc1ef1f6e5f0121d950954038.svg",
+      "mime": "image/svg+xml",
+      "bytes": 262,
+      "sha256": "249b5fd42caa90e0e5b7f2d56a46bba06101d67bc1ef1f6e5f0121d950954038",
+      "slides": [
+        15
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/2ae993052f893da6734edb10ad120bb3d51f7ec209c5bbd2fee3cbd0f7b9c785.svg",

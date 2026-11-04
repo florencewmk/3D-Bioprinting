@@ -113,8 +113,7 @@ Start with the numbered country markers. The United States ranks first with 2,55
 ## 10. How it started
 
 Printing methods
-There are many ways to bioprint
-.
+There are many ways to bioprint.
 Chuck HullUnited States · 1980s
 SLAStereolithography: light hardens a liquid resin into a solid part, one layer at a time.Patent filed 1984 · granted 1986 · Hull coined the word
 Source: C. W. Hull, U.S. Patent 4,575,330 (1986) · Groot model: Byambaa, Thingiverse, CC BY-NC-ND 4.0
@@ -152,7 +151,7 @@ Now imagine this for bioprinting. We take a small biopsy, a tissue sample, from 
 Two ways to build
 Light from below, or from above
 Bottom-up
-Light shines up through a clear window in the tank floor. After each layer, the platform lifts and the layer peels off the floor.
+Light shines up through a clear window in the tank floor. Each new layer sticks to that window, so the platform lifts and peels it off before the next layer.
 + Needs only a shallow pool of bioink
 – Peeling pulls on soft gels
 Top-down
@@ -250,12 +249,12 @@ Oxygen✓ placenta✗ edges only
 Nutrients in, waste out✓ cord✗ edges only
 Clean, protected space✓ amniotic sac✓ sterile lab
 In a printed tissue
-No blood vessels means no “placenta”: oxygen only reaches about 100–200 µm, and the core starves.
+Without blood vessels, oxygen only seeps about 0.1–0.2 mm into the tissue, one or two sheets of paper thick. The cells in the middle suffocate.
 Source: Bishop et al., Genes & Diseases, 4, 185–195 (2017) · Asakura, J. Nippon Med. Sch., 71, 360–370 (2004)
 
 ### Speaker notes
 
-Why is that so hard? Think of a baby in the womb. It is kept warm, at a stable pH, in a protected space, and the placenta delivers oxygen and nutrients and takes waste away. A printed tissue in an incubator gets the warmth, pH and sterility, but it has no placenta: no blood vessels. Oxygen only reaches about a tenth to a fifth of a millimetre, so the cells in the middle starve. (~45 s)
+Why is that so hard? Think of a baby in the womb. It is kept warm, at a stable pH, in a protected space, and the placenta delivers oxygen and nutrients and takes waste away. A printed tissue in an incubator gets the warmth, pH and sterility, but it has no placenta: no blood vessels. Oxygen can only seep about 0.1 to 0.2 millimetres into tissue, one or two sheets of paper thick, because the outer cells use it up on the way. So the cells in the middle suffocate. (~45 s)
 
 ## 17. Precision is a beginning
 

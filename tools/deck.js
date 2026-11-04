@@ -26,8 +26,8 @@ class SlidePresentation{
    const cover=upcoming.querySelector('.cover-turntable');
    if(cover&&!matchMedia('(prefers-reduced-motion: reduce)').matches)this.loadCoverAnimation(cover).catch(()=>{});
   }
- }history.replaceState(null,'',`#${next+1}`);document.getElementById('counter').textContent=`${next+1} / ${this.slides.length}`;document.getElementById('progress').style.width=`${(next+1)/this.slides.length*100}%`;document.title=`${next+1} · ${slidesData[next].title} — Bioprinting`;document.querySelectorAll('.thumb').forEach((b,i)=>b.classList.toggle('selected',i===next));this.updateNotes();const chart=this.chartActive();const turntable=this.coverTurntable();
- document.getElementById('chartReplay').hidden=!(chart||turntable);
+ }history.replaceState(null,'',`#${next+1}`);this.updateCounter();document.getElementById('progress').style.width=`${(next+1)/this.slides.length*100}%`;document.title=`${next+1} · ${slidesData[next].title} — Bioprinting`;document.querySelectorAll('.thumb').forEach((b,i)=>b.classList.toggle('selected',i===next));this.updateNotes();const chart=this.chartActive();const turntable=this.coverTurntable();
+ document.getElementById('chartReplay').hidden=!(chart||turntable||this.lightReplay());
  if(entering&&turntable&&!matchMedia('(prefers-reduced-motion: reduce)').matches)this.playCover();window.publicationTimeline?.activate(this.slides[next].contains(document.getElementById('publicationChart')));window.organTimeline?.activate(this.slides[next].contains(document.getElementById('organChart')));}
  startIntroCharacter(){
   if(!this.introReady)return;
@@ -99,12 +99,15 @@ class SlidePresentation{
   URL.revokeObjectURL(this.coverUrl);
   this.coverUrl=null;
  }
- replayChart(){if(this.coverTurntable()){this.playCover();return;}const chart=this.activeTimeline();if(this.chartActive())chart?.[this.chartActive()==='organ'?'replay':'play']();}
+ lightReplay(){return this.slides[this.current].matches('.light-slide[data-replay]');}
+ updateCounter(){const s=this.slides[this.current],items=s.matches('.profile-slide,.examples-slide,.closing-thanks,.light-slide')?[...s.querySelectorAll('[data-reveal-step]')]:[],done=items.filter(e=>e.classList.contains('revealed')).length;document.getElementById('counter').textContent=`${this.current+1} / ${this.slides.length}`;const points=document.getElementById('pointCounter');points.textContent=items.length?`${done} / ${items.length}`:'– / –';points.classList.toggle('none',!items.length);points.title=items.length?'Current point / total points':'No points on this slide';const free=!items.length&&(this.chartActive()||s.classList.contains('tram-story-slide'));document.getElementById('stepUp').disabled=!free&&(!items.length||done===0);document.getElementById('stepDown').disabled=!free&&(!items.length||done===items.length);}
+ step(direction){const slide=this.slides[this.current];if(slide.classList.contains('tram-story-slide'))this.tramStory(slide)?.step(direction);else if(this.chartActive())this.activeTimeline()?.stepYear(direction);else this.profileStep(direction);}
+ replayChart(){if(this.lightReplay()){window.lightSlides?.replay(this.slides[this.current]);return;}if(this.coverTurntable()){this.playCover();return;}const chart=this.activeTimeline();if(this.chartActive())chart?.[this.chartActive()==='organ'?'replay':'play']();}
  tramStory(slide){return slide.querySelector('.tram-story-frame')?.contentWindow?.tramStory;}
  navigate(direction){this.show(this.current+direction);}
  advance(direction){if(this.editing)return;if(this.profileStep(direction))return;if(this.tramStory(this.slides[this.current])?.step(direction))return;this.navigate(direction);}
  resetProfile(slide){slide.querySelectorAll('[data-reveal-step]').forEach(e=>{e.classList.remove('revealed');e.setAttribute('aria-hidden',String(!this.editing));e.inert=!this.editing;});}
- profileStep(direction){const slide=this.slides[this.current];if(!slide.matches('.profile-slide,.examples-slide,.closing-thanks,.light-slide'))return false;const items=[...slide.querySelectorAll('[data-reveal-step]')],count=items.filter(e=>e.classList.contains('revealed')).length;if(direction>0&&count<items.length){const e=items[count];e.classList.add('revealed');e.setAttribute('aria-hidden','false');e.inert=false;return true;}if(direction<0&&count>0){const e=items[count-1];e.classList.remove('revealed');e.setAttribute('aria-hidden','true');e.inert=true;return true;}return false;}
+ profileStep(direction){const slide=this.slides[this.current];if(!slide.matches('.profile-slide,.examples-slide,.closing-thanks,.light-slide'))return false;const items=[...slide.querySelectorAll('[data-reveal-step]')],count=items.filter(e=>e.classList.contains('revealed')).length;if(direction>0&&count<items.length){const e=items[count];e.classList.add('revealed');e.setAttribute('aria-hidden','false');e.inert=false;this.updateCounter();return true;}if(direction<0&&count>0){const e=items[count-1];e.classList.remove('revealed');e.setAttribute('aria-hidden','true');e.inert=true;this.updateCounter();return true;}return false;}
  updateNotes(){const d=slidesData[this.current];document.getElementById('notesTitle').textContent=`${d.number}. ${d.title}`;document.getElementById('notes').textContent=d.notes||'No speaker notes in the original slide.';document.getElementById('transcript').textContent=d.text;}
  open(id){document.getElementById(id).showModal()}
  message(text){const el=document.getElementById('status');el.textContent=text;clearTimeout(this.messageTimer);this.messageTimer=setTimeout(()=>el.textContent='',4000)}
@@ -152,7 +155,7 @@ class SlidePresentation{
  }
  clone.querySelector('body').classList.remove('editing');clone.querySelectorAll('[contenteditable]').forEach(e=>e.removeAttribute('contenteditable'));clone.querySelector('#editToggle').classList.remove('active');clone.querySelector('#status').textContent='';clone.querySelectorAll('dialog').forEach(d=>d.removeAttribute('open'));clone.querySelectorAll('[data-reveal-step]').forEach(e=>{e.classList.remove('revealed');e.setAttribute('aria-hidden','true');e.setAttribute('inert','');});const blob=new Blob(['<!doctype html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='3D-Bioprinting.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);this.message('Downloaded the updated presentation');}
  /* === KEYBOARD, TOUCH, WHEEL AND ACCESSIBLE PANELS === */
- setup(){addEventListener('beforeprint',()=>this.slides.forEach(slide=>this.loadSlideMedia(slide)));addEventListener('resize',()=>this.scale());addEventListener('hashchange',()=>this.show(this.hash()));document.getElementById('prev').onclick=()=>this.navigate(-1);document.getElementById('next').onclick=()=>this.navigate(1);document.getElementById('chartReplay').onclick=()=>this.replayChart();document.getElementById('overviewButton').onclick=()=>this.open('overview');document.getElementById('notesButton').onclick=()=>this.open('notesDialog');document.getElementById('helpButton').onclick=()=>this.open('helpDialog');document.getElementById('fullButton').onclick=()=>this.fullscreen();document.getElementById('editToggle').onclick=()=>this.toggleEdit();document.getElementById('saveButton').onclick=()=>this.save();document.getElementById('resetButton').onclick=()=>{try{localStorage.removeItem(storageKey)}catch{}location.reload()};
+ setup(){addEventListener('beforeprint',()=>this.slides.forEach(slide=>this.loadSlideMedia(slide)));addEventListener('resize',()=>this.scale());addEventListener('hashchange',()=>this.show(this.hash()));document.getElementById('prev').onclick=()=>this.navigate(-1);document.getElementById('next').onclick=()=>this.navigate(1);document.getElementById('stepUp').onclick=()=>{if(!this.editing)this.step(-1)};document.getElementById('stepDown').onclick=()=>{if(!this.editing)this.step(1)};document.getElementById('chartReplay').onclick=()=>this.replayChart();document.getElementById('overviewButton').onclick=()=>this.open('overview');document.getElementById('notesButton').onclick=()=>this.open('notesDialog');document.getElementById('helpButton').onclick=()=>this.open('helpDialog');document.getElementById('fullButton').onclick=()=>this.fullscreen();document.getElementById('editToggle').onclick=()=>this.toggleEdit();document.getElementById('saveButton').onclick=()=>this.save();document.getElementById('resetButton').onclick=()=>{try{localStorage.removeItem(storageKey)}catch{}location.reload()};
  document.querySelectorAll('[data-goto]').forEach(b=>b.onclick=()=>{if(!this.editing)this.show(Number(b.dataset.goto)-1)});document.querySelectorAll('dialog .close').forEach(b=>b.onclick=()=>b.closest('dialog').close());
  document.getElementById('grid').replaceChildren();slidesData.forEach((d,i)=>{const b=document.createElement('button');b.className='thumb';const label=document.createElement('small');label.textContent=`${String(i+1).padStart(2,'0')} / ${i<24?'TALK':i<29?'REFERENCES':'BACKUP'}`;const title=document.createElement('span');title.textContent=d.title;b.append(label,title);b.onclick=()=>{this.show(i);document.getElementById('overview').close()};document.getElementById('grid').append(b)});
  document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='s'){e.preventDefault();this.save();return}if(e.target.isContentEditable||(/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)&&e.target.id!=='organYearSlider')||e.ctrlKey||e.metaKey||e.altKey||document.querySelector('dialog[open]'))return;if(e.target.closest('button,a,video')&&[' ','Enter'].includes(e.key))return;const k=e.key.toLowerCase();
@@ -165,14 +168,10 @@ class SlidePresentation{
  if(k==='arrowup'||k==='arrowdown'){
   e.preventDefault();
   if(this.editing)return;
-  const direction=k==='arrowdown'?1:-1;
-  const slide=this.slides[this.current];
-  if(slide.classList.contains('tram-story-slide'))this.tramStory(slide)?.step(direction);
-  else if(this.chartActive())this.activeTimeline()?.stepYear(direction);
-  else this.profileStep(direction);
+  this.step(k==='arrowdown'?1:-1);
   return;
  }
- if(k==='r'&&this.chartActive()){e.preventDefault();this.replayChart();return;}
+ if(k==='r'&&(this.chartActive()||this.lightReplay())){e.preventDefault();this.replayChart();return;}
  if(k===' '||k==='pagedown'){e.preventDefault();this.advance(1);}
  else if(k==='pageup'){e.preventDefault();this.advance(-1);}
  else if(k==='home'){e.preventDefault();this.show(0);this.resetProfile(this.slides[0]);}else if(k==='end'){e.preventDefault();this.show(this.slides.length-1)}else if(k==='o')this.open('overview');else if(k==='n')this.open('notesDialog');else if(k==='f')this.fullscreen();else if(k==='e')this.toggleEdit();else if(k==='?')this.open('helpDialog');});
