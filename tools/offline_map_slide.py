@@ -128,7 +128,12 @@ def globe_document():
     document = Path(__file__).with_name('globe-tour.html').read_text()
     map_keys = """<script>
 document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && !document.querySelector('dialog[open], .leaflet-popup')) {
+  if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+  if (['ArrowDown', 'ArrowUp', 'PageDown', 'PageUp'].includes(event.key)) {
+    event.preventDefault();
+    event.stopPropagation();
+    window.parent.postMessage(['ArrowUp', 'PageUp'].includes(event.key) ? 'bioprinting-prev-slide' : 'bioprinting-next-slide', '*');
+  } else if (event.key === 'Escape' && !document.querySelector('dialog[open], .leaflet-popup')) {
     event.preventDefault();
     window.parent.postMessage('bioprinting-close-map', '*');
   }
@@ -156,22 +161,22 @@ def render_slide(number=NUMBER, total=51):
     if (event.source !== frame.contentWindow) return;
     if (event.data === 'bioprinting-map-opened') mapOpened = true;
     if (event.data === 'bioprinting-map-closed') mapOpened = false;
-    if (event.data === 'bioprinting-next-slide' && slide.classList.contains('active')) {
-      const next = document.getElementById('next');
-      next.focus();
-      next.click();
+    if ((event.data === 'bioprinting-next-slide' || event.data === 'bioprinting-prev-slide') && slide.classList.contains('active')) {
+      if (mapOpened) frame.contentWindow.postMessage('bioprinting-close-map', '*');
+      const button = document.getElementById(event.data === 'bioprinting-next-slide' ? 'next' : 'prev');
+      button.focus();
+      button.click();
     }
   });
   document.addEventListener('keydown', event => {
     if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey ||
         !slide.classList.contains('active') || document.body.classList.contains('editing') ||
         document.querySelector('dialog[open]') || !frame.hasAttribute('srcdoc')) return;
-    const open = event.key === 'ArrowDown' && !mapOpened;
-    const close = event.key === 'Escape' && mapOpened;
-    if (!open && !close) return;
+    // Up/Down are left to the deck (change slides); Escape closes an open map
+    if (event.key !== 'Escape' || !mapOpened) return;
     event.preventDefault();
     event.stopImmediatePropagation();
-    frame.contentWindow.postMessage(open ? 'bioprinting-open-map' : 'bioprinting-close-map', '*');
+    frame.contentWindow.postMessage('bioprinting-close-map', '*');
   }, true);
 })();
 </script>"""

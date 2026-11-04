@@ -124,10 +124,10 @@ def restructure(document, data, settings):
 def rerender(document, data, settings):
     matches = list(SECTION.finditer(document))
     total = len(matches)
-    first = next(i for i, m in enumerate(matches) if 'light-slide' in m[0].split('>', 1)[0])
-    assert first == FIRST - 1
+    first = next(i for i, m in enumerate(matches) if 'light-slide' in m[0].split('>', 1)[0])  # light slides may sit anywhere
     conclusion = next(s["slide"] for s in settings["sections"] if s["label"] == "Conclusion")
-    new_sections, new_records = render(total, conclusion, settings["event"]["date"], settings["presenter"])
+    printing = next(s["slide"] for s in settings["sections"] if s["label"] == "Printing methods")
+    new_sections, new_records = render(total, conclusion, settings["event"]["date"], settings["presenter"], first + 1, printing)
     start, end = matches[first].start(), matches[first + 6].end()
     document = document[:start] + "\n".join(new_sections) + document[end:]
     data[first:first + 7] = new_records
@@ -156,7 +156,7 @@ def main():
     document = DATA.sub(lambda m: m[1] + json.dumps(data, ensure_ascii=False).replace('</', '<\\/') + m[3], document, count=1)
     DECK.write_text(document)
     write_transcript(ROOT / "presentation/transcript.md", data)
-    print(f"Rendered printing-with-light slides {FIRST}–{FIRST + 6}; deck has {len(data)} slides.")
+    print(f"Rendered the seven printing-with-light slides; deck has {len(data)} slides.")
 
 
 if __name__ == "__main__":

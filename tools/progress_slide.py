@@ -1,7 +1,7 @@
 """Render slide 17 "Where are we today?" (current progress of bioprinting).
 
 A slide-4-style card stack in four reveals: Lab (Wyss vessels, Tel Aviv heart),
-Patient (3DBio ear), Orbit (NASA meniscus, DLR bio-plaster), Medical ("Not yet").
+Patient (3DBio ear), Space (NASA meniscus, DLR bio-plaster), Medical ("Not yet").
 Images and the generated orbit background live in tools/progress-slide/.
 
 First run inserts the slide at POSITION and renumbers every later slide
@@ -31,7 +31,7 @@ STEPS = [
     ("In a patient", "A printed ear",
      "In 2022, a woman born with microtia received an ear printed from her own cartilage cells. "
      "It was the first clinical trial of its kind."),
-    ("In orbit", "Printing in space",
+    ("In space", "Printing on the space station",
      "NASA’s BioFabrication Facility printed a human knee meniscus on the ISS (2023). "
      "Germany tested a handheld bio-plaster printer there (2022)."),
     ("In medicine", "Ready for hospitals?",
@@ -48,7 +48,7 @@ CARDS = [
 ]
 VISIBLE = [[0, 1], [0, 1, 2], [0, 1, 2, 3, 4], [0, 1, 2, 3, 4]]
 FRONT = [[0, 1], [2], [4, 3], []]  # later in the list = on top
-TRACK = ["Lab", "Patient", "Orbit", "Medical"]
+TRACK = ["Lab", "Patient", "Space", "Medical"]
 SOURCE = ("Source: Harvard SEAS / Wyss Institute (2024) · Tel Aviv University (2019) · "
           "CELLINK / 3DBio (2022) · NASA (2023) · DLR (2022)")
 PROVENANCE = {

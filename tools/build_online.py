@@ -9,7 +9,7 @@ from archive_materials import DECK, MIMES, ROOT
 
 ONLINE = DECK.with_name("index.html")
 SLIDE = re.compile(r'<section\b[^>]*\bid="slide-\d+"[^>]*>.*?</section>', re.S)
-MEDIA = re.compile(r'(?<![\w-])(src|href|poster)="data:([^;,"]+);base64,([A-Za-z0-9+/=\s]+)"')
+MEDIA = re.compile(r'(?<![\w:-])(?:xlink:)?(src|href|poster)="data:([^;,"]+);base64,([A-Za-z0-9+/=\s]+)"')  # SVG xlink:href becomes plain data-media-href
 MAP = re.compile(r'(<iframe class="offline-map-frame"[^>]*?)\bdata-srcdoc="([^"]+)"')
 
 

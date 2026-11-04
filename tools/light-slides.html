@@ -123,7 +123,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
 .light-slide .takeaway{position:absolute;left:6cqw;right:6cqw;bottom:8.6cqw;text-align:center;font-size:1.3cqw;color:#D3D9DD}
 .light-slide .takeaway small{display:block;font-size:1cqw;color:var(--muted);margin-top:.4cqw}
 </style>
-<!--LS 10 3 How it started-->
+<!--LS 10 2 How it started-->
 <div class="ls-stage s-hull" data-ls="10">
   <div class="hook">
     <h2>Printing with light</h2>
@@ -134,7 +134,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
     <img src="{{HULL_PNG}}" alt="Illustration of Chuck Hull presenting">
   </figure>
   <div class="movie r" data-s="2"><video id="ls-hullVideo" src="{{HULL_MP4}}" muted playsinline preload="auto"></video></div>
-  <p class="def r" data-s="3"><b class="sla">SLA</b>Stereolithography: light hardens a liquid resin into a solid part, one layer at a time.<span class="yr">Patent filed 1984 · granted 1986 · Hull coined the word</span></p>
+  <p class="def r" data-s="2"><b class="sla">SLA</b>Stereolithography: light hardens a liquid resin into a solid part, one layer at a time.<span class="yr">Patent filed 1984 · granted 1986 · Hull coined the word</span></p>
   <p class="refs">Source: C. W. Hull, U.S. Patent 4,575,330 (1986) · Groot model: Byambaa, Thingiverse, CC BY-NC-ND 4.0</p>
 </div>
 <!--LS 11 6 From patient to print-->
@@ -207,7 +207,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
   <p class="punch r" data-s="6">Made from the <span style="color:#E394AD">patient’s own cells</span>, so the body is less likely to reject it.</p>
   <p class="refs">Source: Santoni et al., Bio-Design and Manufacturing, 5, 14–42 (2022)</p>
 </div>
-<!--LS 12 2 Two ways to build-->
+<!--LS 12 1 Two ways to build-->
 <div class="ls-stage s-modes" data-ls="12">
   <div class="ls-eyebrow">Two ways to build</div>
   <h2>Light from below, or from above</h2>
@@ -216,13 +216,13 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
       <div class="fig"><svg id="ls-bu" viewBox="60 20 300 370" aria-label="Bottom-up printer animation"></svg></div>
       <h3>Bottom-up</h3>
       <p>Light shines up through a clear window in the tank floor. Each new layer sticks to that window, so the platform lifts and peels it off before the next layer.</p>
-      <div class="trade r" data-s="2"><span class="plus">+ Needs only a shallow pool of bioink</span><span class="minus">– Peeling pulls on soft gels</span></div>
+      <div class="trade"><span class="plus">+ Needs only a shallow pool of bioink</span><span class="minus">– Peeling pulls on the freshly printed bioink</span></div>
     </div>
     <div class="mode r" data-s="1">
       <div class="fig"><svg id="ls-td" viewBox="60 20 300 370" aria-label="Top-down printer animation"></svg></div>
       <h3>Top-down</h3>
       <p>The classic set-up: the laser sits above and cures the surface. The platform sinks deeper and a blade spreads fresh liquid.</p>
-      <div class="trade r" data-s="2"><span class="plus">+ No peeling, gentle on soft hydrogels</span><span class="minus">– The tank must be full: more bioink</span></div>
+      <div class="trade"><span class="plus">+ No peeling, gentle on the soft bioink</span><span class="minus">– The tank must be full: more bioink</span></div>
     </div>
   </div>
   <p class="refs">Source: Li et al., iScience, 26, 106039 (2023)</p>
@@ -346,10 +346,10 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
     <div class="r" data-s="1">
       <table class="needs">
         <tr><th>What cells need</th><th class="c2">Womb</th><th class="c3 col-t">Printed tissue</th></tr>
-        <tr><td>Warmth, about 37 °C<small>a fetus runs 0.3–0.5 °C warmer than its mother</small></td><td class="c2 ok">✓</td><td class="c3 col-t ok">✓ incubator</td></tr>
-        <tr><td>Stable pH, about 7.4<small>like blood: 7.35–7.45</small></td><td class="c2 ok">✓</td><td class="c3 col-t ok">✓ medium</td></tr>
         <tr><td>Oxygen</td><td class="c2 ok">✓ placenta</td><td class="c3 col-t no">✗ edges only</td></tr>
         <tr><td>Nutrients in, waste out</td><td class="c2 ok">✓ cord</td><td class="c3 col-t no">✗ edges only</td></tr>
+        <tr><td>Warmth, about 37 °C<small>a fetus runs 0.3–0.5 °C warmer than its mother</small></td><td class="c2 ok">✓</td><td class="c3 col-t ok">✓ incubator</td></tr>
+        <tr><td>Stable pH, about 7.4<small>like blood: 7.35–7.45</small></td><td class="c2 ok">✓</td><td class="c3 col-t ok">✓ medium</td></tr>
         <tr><td>Clean, protected space</td><td class="c2 ok">✓ amniotic sac</td><td class="c3 col-t ok">✓ sterile lab</td></tr>
       </table>
     </div>
