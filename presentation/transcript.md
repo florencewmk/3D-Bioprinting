@@ -18,15 +18,7 @@ Before I proceed, I would like to kindly introduce myself. I’m Florence, I was
 
 I know you might be wondering why did I choose a completely different field of topic for this competition. But if you follow me throughout, you will find the answer.
 
-## 02. The tram encounter
-
-Munich tram encounter · Poland to USA
-
-### Speaker notes
-
-Advance through eight cues. Introduce the crowded Saturday tram during Oktoberfest, let the jacket and holiday exchange play out, then pause on the courier’s age and the trip from Poland to the USA. End with the question about manufacturing living tissues and organs.
-
-## 03. What comes to your mind?
+## 02. What comes to your mind?
 
 What comes to your mind
 when we mention additive manufacturing,
@@ -37,7 +29,7 @@ or 3D printing?
 Before we begin, what comes to your mind when you hear 3D printing? Perhaps a small desktop printer, a plastic model? You can think for it for a second.
 
 
-## 04. From everyday objects to living tissue
+## 03. From everyday objects to living tissue
 
 Everyday life
 My Christmas vase
@@ -58,7 +50,7 @@ Engineers use the same idea at a very different scale. Take SpaceX’s Raptor 3.
 
 The Dutch have even printed houses and bridges. This concrete house is in Eindhoven, and there’s a printed steel bridge in Amsterdam.
 
-## 05. 3D Bioprinting
+## 04. 3D Bioprinting
 
 SOfE · Düsseldorf · 5 November 2026
 
@@ -73,6 +65,14 @@ Florence Mei Kuan Wong
 Welcome to the world of 3D printing, a technology that is shaping our future.
 
 On the right is a 3D reconstruction of a branching anatomical model displayed in Yiwu in 2015.
+
+## 05. The tram encounter
+
+Munich tram encounter · Poland to USA
+
+### Speaker notes
+
+Advance through eight cues. Introduce the crowded Saturday tram during Oktoberfest, let the jacket and holiday exchange play out, then pause on the courier’s age and the trip from Poland to the USA. End with the question about manufacturing living tissues and organs.
 
 ## 06. The organ shortage persists
 
@@ -1247,7 +1247,7 @@ Source: Group 2 Laser Presentation, 24 November 2025, slide 53. Group members: F
 
 Contents
 
-Introduction · Page 03
+Introduction · Page 02
 
 Printing methods · Page 08
 
