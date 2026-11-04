@@ -8,7 +8,7 @@ from opening_slides import settings, footer, navigation, render_introduction, re
 from deck_structure import write_transcript
 
 ROOT = Path(__file__).resolve().parents[1]
-path = ROOT / 'presentation/index.html'
+path = ROOT / 'presentation/offline.html'
 document = path.read_text()
 pattern = r'(?:<!-- SLIDE[^>]*-->\s*)?<section\b[^>]*\bid="slide-(\d+)".*?</section>'
 matches = list(re.finditer(pattern, document, re.S))

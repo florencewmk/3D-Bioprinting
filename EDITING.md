@@ -1,15 +1,16 @@
 # Where to edit the presentation
 
-The current presentation is **`presentation/index.html`**. This is the file
-served by GitHub Pages and the single HTML file you can open offline.
+Edit **`presentation/offline.html`**. GitHub Pages serves the lighter
+**`presentation/index.html`**, generated from that file. Use **Download HTML**
+in the Help panel to get a single portable file for offline use or printing.
 
 ## Change text directly in the browser
 
 1. Open the presentation and press **E**.
 2. Click text to change it.
 3. Press **Cmd+S** to download your edited HTML.
-4. To publish those edits, replace `presentation/index.html` in this repository
-   with the downloaded file, then commit and push it to GitHub.
+4. To publish those edits, apply the text edits to `presentation/offline.html`, regenerate
+   the web deck with the commands below, then commit and push the changes.
 
 Browser edits save only in that browser until you download/publish them.
 The Help panel’s **Reset browser edits** button removes local overrides.
@@ -26,6 +27,7 @@ Then run this in the repository folder:
 ```sh
 python3 tools/update_opening.py
 python3 tools/archive_materials.py
+python3 tools/build_online.py
 ```
 
 This updates the first four slides, shared menu/date/footer, notes, and
@@ -36,7 +38,8 @@ after saving. Keep JSON quotes and commas intact.
 
 | File | What to edit |
 | --- | --- |
-| `presentation/index.html` | Actual published HTML; search `SLIDE 04:` or `id="slide-4"` to reach a slide |
+| `presentation/offline.html` | Editable deck; search `id="slide-4"` to reach a slide |
+| `presentation/index.html` | Generated web deck; refresh with `python3 tools/build_online.py` |
 | `tools/deck.css` | Fonts, sizes, positions, colors, presenter crop, and question zoom animation |
 | `tools/deck.js` | Keyboard navigation, overview, browser text editing, saving |
 | `tools/slide-motion.js` | Content-aware entrances and 620 ms slide transitions; refresh with `python3 tools/update_motion.py` |
@@ -44,9 +47,9 @@ after saving. Keep JSON quotes and commas intact.
 | `tools/opening_slides.py` | Introduction, contents, centered question, shared menu/footer |
 | `presentation/transcript.md` | Readable slide text and speaker notes |
 
-After editing the maintained CSS, controller, or opening templates, run the two
-commands above to embed them in the published HTML. Direct HTML changes are
-immediate; rerunning the opening updater rebuilds slides 1–4 from settings.
+After editing the maintained CSS, controller, or opening templates, run the
+commands above to embed them in the published HTML. For direct HTML changes, run just the archiver and online builder. Rerunning
+the opening updater rebuilds slides 1–4 from settings.
 The remaining scientific slide text can be edited directly in the HTML, using
 `data-edit` labels or the per-slide comments to find it. Embedded image/font
 data looks very long: leave those `data:...;base64,...` strings intact.

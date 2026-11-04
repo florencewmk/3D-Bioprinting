@@ -8,7 +8,7 @@ from deck_structure import write_transcript
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'materials/interactive/munich-tram-story.html'
-DECK = ROOT / 'presentation/index.html'
+DECK = ROOT / 'presentation/offline.html'
 FRAME_CSS = '''
 <style>
 :root{background:transparent}body{padding:0;min-height:100vh}main{width:100%}

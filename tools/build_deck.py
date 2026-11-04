@@ -184,5 +184,5 @@ from reorder_opening import reorder
 result, data = reorder(result)
 write_transcript(OUT / "transcript.md", data)
 result=with_motion(result)
-(OUT/'index.html').write_text('\n'.join(line.rstrip() for line in result.splitlines()).rstrip()+'\n')
+(OUT/'offline.html').write_text('\n'.join(line.rstrip() for line in result.splitlines()).rstrip()+'\n')
 print(json.dumps({'slides':len(data),'native_text_lines':sum(s.count('class="textline') for s in sections),'videos':manifest,'html_bytes':len(result.encode()),'source_sha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest()},indent=2))

@@ -5,7 +5,7 @@ from pathlib import Path
 import re,json
 from publication_chart import render_publication_slide
 ROOT=Path(__file__).resolve().parents[1];TOOLS=Path(__file__).parent
-path=ROOT/'presentation/index.html';old=path.read_text()
+path=ROOT/'presentation/offline.html';old=path.read_text()
 pattern=r'<section\b[^>]*\bid="slide-(\d+)".*?</section>'
 
 match=re.search(r'<section\b[^>]*\bid="slide-8".*?</section>',old,re.S)

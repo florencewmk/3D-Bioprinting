@@ -17,7 +17,7 @@ for r in data['rows']:
 print('PASS: 96 source values, 4 totals, continuous years, and 12 explicitly unknown extension values')
 # Current slide uses the independent complete Scopus series; retain WoS checks above.
 import re
-slide=(ROOT/'presentation/index.html').read_text()
+slide=(ROOT/'presentation/offline.html').read_text()
 embedded=json.loads(re.search(r'<script id="publicationData" type="application/json">(.*?)</script>',slide,re.S)[1])
 scopus=list(csv.DictReader((directory/'scopus/annual_counts_2000_2026.csv').open()))
 assert embedded['source']['database']=='Scopus (Elsevier)'

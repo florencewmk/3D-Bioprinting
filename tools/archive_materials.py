@@ -12,7 +12,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DECK = ROOT / "presentation/index.html"
+DECK = ROOT / "presentation/offline.html"
 OUT = ROOT / "materials"
 MIMES = {
     "image/webp": ("images", "webp"),
@@ -41,7 +41,7 @@ def inventory():
         if path not in records:
             records[path] = {"path": path, "mime": mime, "bytes": len(blob),
                              "sha256": digest, "slides": [],
-                             "source": "presentation/index.html",
+                             "source": "presentation/offline.html",
                              "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."}
             if provenance is not None:
                 records[path]["provenance"] = provenance
@@ -68,7 +68,7 @@ def inventory():
         for frame in re.finditer(r'<iframe class="tram-story-frame"[^>]*\bsrcdoc="([^"]+)"', section[0]):
             add(html.unescape(frame[1]).encode("utf-8"), "text/html", int(section[1]),
                 "Original editable SVG tram story from materials/interactive/munich-tram-story.html, embedded by tools/update_tram_slide.py.")
-    manifest = {"source": "presentation/index.html", "source_sha256": hashlib.sha256(source).hexdigest(),
+    manifest = {"source": "presentation/offline.html", "source_sha256": hashlib.sha256(source).hexdigest(),
                 "slides": len(sections), "asset_count": len(records),
                 "assets": sorted(records.values(), key=lambda r: r["path"])}
     return manifest, blobs

@@ -45,14 +45,16 @@ data README before editing. Preserve other contributors' changes.
   presenter-controlled advancement, existing click reveals and chart timelines.
   See `tools/MOTION.md` and run `python3 tools/update_motion.py` after a full build.
   Respect reduced-motion preferences and expose final content in print/edit mode.
-- `presentation/index.html` is the current self-contained, offline presentation;
-  `presentation/transcript.md` contains its transcript and speaker notes.
+- `presentation/offline.html` is the source for the portable deck;
+  `presentation/index.html` is the generated web deck.
+  `presentation/transcript.md` contains the transcript and speaker notes.
 - Keep theme/controller/chart code and reproducible maintenance scripts in
   `tools/`. Retain embedded media for single-file offline playback.
 - After changing the presentation, run
   `python3 tools/archive_materials.py` to refresh `materials/manifest.json` and
-  the separately accessible material files. Review obsolete files before
-  deleting them; the archiver does not delete existing files.
+  the separately accessible material files. Then run `python3 tools/build_online.py`
+  to regenerate the web deck from the source and archived media. Review obsolete
+  files before deleting them; the archiver does not delete existing files.
 - Update transcript, source credits, README, and inventories when their content
   changes. Prefer targeted updates that preserve unrelated slides.
 - Full PowerPoint conversion currently requires an external source PPTX and
@@ -70,7 +72,8 @@ data README before editing. Preserve other contributors' changes.
   populations, databases, or reporting periods without documenting the method.
 - After relevant data edits, run `python3 tools/check_publication_data.py` and
   `python3 tools/check_organ_data.py`, then the corresponding chart updater.
-- After material changes, run `python3 tools/archive_materials.py --check`.
+- After presentation changes, run `python3 tools/archive_materials.py --check`
+  and `python3 tools/build_online.py --check`.
   Check presentation changes in a browser, including affected layouts,
   animation, media, and offline behavior. Report checks actually performed.
 - After archiving or changing paper files, run `python3 tools/check_papers.py`.

@@ -184,7 +184,7 @@ def render_slide(number=NUMBER, total=51):
 
 
 def update_presentation():
-    target = ROOT / 'presentation/index.html'
+    target = ROOT / 'presentation/offline.html'
     original = target.read_text()
     slides = re.findall(r'<section\b[^>]*\bid="slide-(\d+)"[^>]*>', original)
     match = re.search(r'<section\b[^>]*\bid="slide-(\d+)"[^>]*>\s*<iframe class="offline-map-frame"', original)

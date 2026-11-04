@@ -65,7 +65,7 @@ def reorder(document):
 
 if __name__ == '__main__':
     root = Path(__file__).resolve().parents[1] / 'presentation'
-    deck = root / 'index.html'
+    deck = root / 'offline.html'
     document, records = reorder(deck.read_text())
     deck.write_text(document)
     write_transcript(root / 'transcript.md', records)

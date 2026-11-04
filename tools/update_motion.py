@@ -22,7 +22,7 @@ def with_motion(document):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--input', type=Path, default=ROOT / 'presentation/index.html')
+    parser.add_argument('--input', type=Path, default=ROOT / 'presentation/offline.html')
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()
     output = args.output or args.input

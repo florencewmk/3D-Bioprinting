@@ -8,7 +8,7 @@ Florence Mei Kuan Wong · SOfE Düsseldorf · 5 November 2026
 
 ## View the slides
 
-Open [the presentation](presentation/index.html) in a browser. You can also download the HTML file and open it offline; fonts, figures and two videos are included. No installation is required. Slide 2 contains the tram story. Slide 9 includes the interactive bioprinting map, with its data and Natural Earth country boundaries embedded in the same HTML file.
+Open [the presentation](presentation/index.html) in a browser. The web deck loads large media as you approach the relevant slides. Use **Help → Download HTML** or **Ctrl/Cmd+S** to save a portable copy with the fonts, videos, lung animation and interactive map included. No installation is required.
 
 The deck contains **52 slides**:
 
@@ -62,7 +62,7 @@ references whose full texts are still missing.
 
 ## Maintain the presentation
 
-The self-contained deck is in `presentation/index.html`; theme, controller and conversion scripts are in `tools/`. The original PowerPoint is kept outside this repository. The presenter introduction is slide 1, before the cover on slide 2. It starts with the name/photo and reveals the three points one per click. [Editing guide](EDITING.md); [opening-slide settings](presentation/settings.json).
+Edit `presentation/offline.html` and regenerate the web deck at `presentation/index.html`. Theme, controller and conversion scripts are in `tools/`. The original PowerPoint is kept outside this repository. The presenter introduction is slide 1, before the cover on slide 2. It starts with the name/photo and reveals the three points one per click. [Editing guide](EDITING.md); [opening-slide settings](presentation/settings.json).
 
 After changing chart data, run the corresponding updater from the repository root:
 

@@ -107,7 +107,7 @@ def render_references(title, original_text, catalog):
 def update():
     """Refresh the reference slides without rebuilding the source deck."""
     catalog = json.loads((ROOT / 'papers/catalog.json').read_text())
-    deck_path = ROOT / 'presentation/index.html'
+    deck_path = ROOT / 'presentation/offline.html'
     transcript_path = ROOT / 'presentation/transcript.md'
     document = deck_path.read_text()
     transcript = transcript_path.read_text()
