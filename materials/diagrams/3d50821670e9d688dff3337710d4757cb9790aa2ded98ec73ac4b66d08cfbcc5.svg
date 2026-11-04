@@ -1,0 +1,17 @@
+<svg viewBox="0 0 300 300" aria-label="UV and infrared heat meet and cure where they overlap">
+        <defs>
+          <linearGradient id="ls-fadeIR" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#fff"/><stop offset=".72" stop-color="#000"/></linearGradient>
+          <mask id="ls-mIR"><rect width="300" height="300" fill="url(#ls-fadeIR)"/></mask>
+          <linearGradient id="ls-fadeUV2" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#fff"/><stop offset=".6" stop-color="#000"/></linearGradient>
+          <mask id="ls-mUV2"><rect width="300" height="300" fill="url(#ls-fadeUV2)"/></mask>
+        </defs>
+        <g class="tissue"></g>
+        <g mask="url(#ls-mUV2)" stroke="var(--lav)" stroke-width="3"><line class="photons" x1="140" y1="54" x2="140" y2="290"/><line class="photons" x1="156" y1="54" x2="156" y2="290"/></g>
+        <g mask="url(#ls-mIR)" stroke="var(--rose)" stroke-width="2.4" fill="none">
+          <path class="photons-h" d="M0 132 q8 -7 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0"/>
+          <path class="photons-h" d="M0 148 q8 -7 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0"/>
+        </g>
+        <rect class="voxel" x="132" y="126" width="32" height="28" rx="3" fill="var(--fg)"/>
+        <text class="lbl" x="150" y="300" font-size="14" text-anchor="middle">cures only where both meet</text>
+        <text class="lbl sub" x="268" y="144" font-size="13">IR heat</text><text class="lbl sub" x="188" y="47" font-size="13">UV</text>
+      </svg>

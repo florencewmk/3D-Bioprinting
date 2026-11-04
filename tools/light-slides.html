@@ -1,0 +1,528 @@
+<!-- Template for public slides 10–16 (printing with light). Rendered by tools/light_slides.py. -->
+<style id="light-slides-style">
+.light-slide{--bg:#050506;--fg:#F1F5F5;--muted:#99A3AE;--faint:rgba(241,245,245,.16);--line:rgba(241,245,245,.32);--lav:#B49AD8;--cyan:#64DFFF;--rose:#E394AD;--mint:#70C2BC;--display:'Jost',sans-serif}
+.light-slide .ls-stage{position:absolute;inset:0;padding:5.6cqw 6cqw 4.6cqw;container-type:size;color:var(--fg);font-family:var(--display)}
+.light-slide .ls-stage{container-type:inline-size}
+.light-slide .ls-step{display:none}
+.light-slide .movie video{position:static;border-radius:0;z-index:auto}
+body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!important;transform:none!important}
+@media print{.light-slide [data-s],.light-slide .col-t{opacity:1!important;transform:none!important}}
+@media (prefers-reduced-motion:reduce){.light-slide *,.light-slide *::before,.light-slide *::after{animation-duration:0s!important;transition-duration:0s!important}}
+.light-slide .ls-eyebrow{font-size:1cqw;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+.light-slide h2{font-weight:500;font-size:3.3cqw;line-height:1.08;margin:.6cqw 0 0;text-wrap:balance;letter-spacing:-.01em}
+.light-slide .grad{background:linear-gradient(90deg,var(--rose),var(--lav) 50%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.light-slide .refs{text-align:left;position:absolute;left:70px;right:70px;bottom:60px;margin:0;padding:0;font-size:.82cqw;line-height:1.45;color:#7D8690}
+.light-slide .r{opacity:0;transform:translateY(1cqw);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.light-slide .r.on{opacity:1;transform:none}
+.light-slide svg{display:block;width:100%;height:auto;overflow:visible}
+.light-slide .lbl{font-family:var(--display);fill:var(--fg)}
+.light-slide .sub{fill:var(--muted)}
+.light-slide .hook{position:absolute;left:6cqw;right:6cqw;top:50%;transform:translateY(-50%);transition:all .8s cubic-bezier(.2,.7,.2,1)}
+.light-slide .hook h2{font-size:4.6cqw;font-weight:400}
+.light-slide .hook p{font-size:2.2cqw;margin:1.4cqw 0 0;font-weight:400}
+.light-slide .s-hull[data-cur]:not([data-cur="0"]) .hook{top:7.4cqw;transform:none}
+.light-slide .s-hull[data-cur]:not([data-cur="0"]) .hook h2{font-size:2.4cqw;color:var(--fg)}
+.light-slide .s-hull[data-cur]:not([data-cur="0"]) .hook p{font-size:1.7cqw}
+.light-slide .hull{position:absolute;left:2.5cqw;bottom:6.4cqw;width:20cqw;margin:0;transform:translateX(-140%);opacity:0;transition:transform .9s cubic-bezier(.2,.75,.2,1),opacity .6s}
+.light-slide .hull.on{transform:none;opacity:1}
+.light-slide .hull img{display:block;width:100%;height:auto}
+.light-slide .hull figcaption{position:absolute;top:-6.2cqw;left:32%;transform:translateX(-50%);text-align:center;white-space:nowrap}
+.light-slide .hull figcaption b{display:block;font-size:2.3cqw;font-weight:500}
+.light-slide .hull figcaption span{font-size:1.15cqw;color:var(--muted)}
+.light-slide .movie{position:absolute;right:13cqw;bottom:6cqw;width:34cqw}
+.light-slide .movie video{display:block;width:100%;aspect-ratio:1;object-fit:contain;background:transparent;mix-blend-mode:lighten;-webkit-mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 12%,#000 82%,transparent);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent,#000 14%,#000 86%,transparent),linear-gradient(to bottom,transparent,#000 12%,#000 82%,transparent);mask-composite:intersect}
+.light-slide .def{position:absolute;left:27cqw;right:50cqw;top:22cqw;font-size:1.55cqw;line-height:1.45;color:var(--fg)}
+.light-slide .def b{display:block;font-size:3.2cqw;font-weight:600;letter-spacing:.04em;margin-bottom:.4cqw}
+.light-slide .def .yr{display:block;margin-top:1.2cqw;font-size:1.1cqw;color:var(--muted)}
+.light-slide .journey{position:absolute;left:4cqw;width:calc(100% - 8cqw);top:16.6cqw}
+.light-slide .seg{stroke:var(--line);stroke-width:2;stroke-dasharray:4 7;fill:none;opacity:0;transition:opacity .6s}
+.light-slide .seg.on{opacity:1;animation:ls-march 1.2s linear infinite}
+@keyframes ls-march{to{stroke-dashoffset:-22}}
+.light-slide .stn{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s cubic-bezier(.2,.7,.2,1)}
+.light-slide .stn.on{opacity:1;transform:none}
+.light-slide .stn .t{font-size:19px;font-weight:500}
+.light-slide .stn .d{font-size:14px}
+.light-slide .punch{position:absolute;left:6cqw;right:6cqw;bottom:8.5cqw;text-align:center;font-size:1.9cqw}
+.light-slide .punch small{display:block;font-size:1.05cqw;color:var(--muted);margin-top:.5cqw}
+.light-slide .grow circle{animation:ls-pop 6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes ls-pop{0%,8%{opacity:0;transform:scale(.2)}18%,85%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
+.light-slide .bub{animation:ls-rise 3s linear infinite}
+@keyframes ls-rise{0%{transform:translateY(0);opacity:0}15%{opacity:.9}100%{transform:translateY(-58px);opacity:0}}
+.light-slide .glow-organ{animation:ls-beat 1.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes ls-beat{0%,60%,100%{transform:scale(1)}20%{transform:scale(1.14)}35%{transform:scale(.98)}}
+.light-slide .modes{position:absolute;left:5cqw;right:5cqw;top:12.8cqw;display:grid;grid-template-columns:1fr 1fr;gap:4cqw}
+.light-slide .mode h3{font-size:2.1cqw;font-weight:500;margin:0 0 .2cqw}
+.light-slide .mode p{font-size:1.2cqw;color:var(--muted);margin:0;line-height:1.4}
+.light-slide .mode .fig{height:25cqw;display:flex;align-items:center;justify-content:center}
+.light-slide .mode .fig svg{width:auto;height:100%}
+.light-slide .trade{display:grid;grid-template-columns:1fr;gap:.35cqw;margin-top:1cqw;font-size:1.15cqw;line-height:1.35}
+.light-slide .trade span{display:block}
+.light-slide .plus{color:var(--mint)}
+.light-slide .minus{color:var(--rose)}
+.light-slide .lights{position:absolute;left:5cqw;right:5cqw;top:12.6cqw;display:grid;grid-template-columns:repeat(3,1fr);gap:3cqw}
+.light-slide .light h3{font-size:1.9cqw;font-weight:500;margin:.6cqw 0 0}
+.light-slide .light .nm{font-size:1.05cqw;color:var(--muted);margin:.15cqw 0 .6cqw}
+.light-slide .light ul{list-style:none;margin:0;padding:0;font-size:1.12cqw;line-height:1.38;display:grid;gap:.3cqw}
+.light-slide .light li{padding-left:1.2cqw;position:relative}
+.light-slide .light li::before{position:absolute;left:0}
+.light-slide .light li.p::before{content:'+';color:var(--mint)}
+.light-slide .light li.m::before{content:'–';color:var(--rose)}
+.light-slide .light .fig{height:18cqw}
+.light-slide .light .fig svg{height:100%;width:auto;margin:0 auto}
+.light-slide .photons{stroke-dasharray:5 11;animation:ls-fall .9s linear infinite}
+@keyframes ls-fall{to{stroke-dashoffset:-16}}
+.light-slide .photons-h{stroke-dasharray:5 11;animation:ls-fall .9s linear infinite}
+.light-slide .hit{animation:ls-hit 1.4s ease-in-out infinite}
+@keyframes ls-hit{0%,100%{opacity:.15}50%{opacity:1}}
+.light-slide .voxel{animation:ls-vox 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes ls-vox{0%,100%{opacity:.55;transform:scale(.9)}50%{opacity:1;transform:scale(1.05)}}
+.light-slide .lens{position:absolute;left:6cqw;top:11.9cqw;width:30cqw}
+.light-slide .ink-text{position:absolute;left:43cqw;right:6cqw;top:13.2cqw;display:grid;gap:2.2cqw}
+.light-slide .ink-text h3{font-size:2.3cqw;font-weight:500;margin:0}
+.light-slide .ink-text p{font-size:1.35cqw;line-height:1.45;margin:.5cqw 0 0;color:#D3D9DD;max-width:44cqw}
+.light-slide .legend{display:flex;flex-wrap:wrap;gap:1.6cqw;margin-top:.9cqw;font-size:1.1cqw;color:var(--muted)}
+.light-slide .legend i{display:inline-block;width:1cqw;height:1cqw;border-radius:50%;margin-right:.5cqw;vertical-align:-.1cqw}
+.light-slide .chain{display:flex;align-items:center;gap:.8cqw;flex-wrap:wrap;font-size:1.15cqw;margin-top:.9cqw}
+.light-slide .chain span{border:1px solid var(--faint);padding:.35cqw .8cqw;border-radius:2cqw}
+.light-slide .chain em{font-style:normal;color:var(--muted)}
+.light-slide .state{position:absolute;left:6cqw;width:30cqw;top:43.6cqw;text-align:center;font-size:1.1cqw;letter-spacing:.3em;color:var(--muted)}
+.light-slide .state b{color:var(--cyan);font-weight:500}
+.light-slide .obs{position:absolute;left:6cqw;right:6cqw;top:16.4cqw;display:grid;grid-template-columns:repeat(4,1fr);gap:2cqw}
+.light-slide .ob{border-top:1px solid var(--faint);padding-top:1.4cqw;text-align:center}
+.light-slide .ob svg{display:block;width:8.5cqw;height:8.5cqw;margin:1cqw auto 2cqw}
+.light-slide .ob h3{font-size:1.95cqw;font-weight:500;margin:0 0 .6cqw;line-height:1.2}
+.light-slide .ob p{font-size:1.35cqw;line-height:1.45;color:#C9D0D5;margin:0}
+.light-slide .ob.key{border-top-color:var(--rose)}
+.light-slide .tilt{animation:ls-tilt 3.2s ease-in-out infinite;transform-origin:32px 18px}
+@keyframes ls-tilt{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(9deg)}}
+.light-slide .scan{animation:ls-scanx 3s ease-in-out infinite}
+@keyframes ls-scanx{0%,100%{transform:translate(0,0)}50%{transform:translate(14px,10px)}}
+.light-slide .blink{animation:ls-hit 1.6s ease-in-out infinite}
+.light-slide .ecg{stroke-dasharray:120;animation:ls-ecg 2s linear infinite}
+@keyframes ls-ecg{from{stroke-dashoffset:120}to{stroke-dashoffset:-120}}
+.light-slide .womb-grid{position:absolute;left:4cqw;right:4cqw;top:12.6cqw;display:grid;grid-template-columns:27cqw 1fr 27cqw;gap:2cqw;align-items:start}
+.light-slide .womb-grid h3{font-size:1.6cqw;font-weight:500;text-align:center;margin:0 0 .4cqw}
+.light-slide .needs{border-collapse:collapse;width:100%;font-size:1.18cqw;margin-top:2.2cqw}
+.light-slide .needs th{font-weight:500;color:var(--muted);font-size:1cqw;letter-spacing:.14em;text-transform:uppercase;text-align:left;padding:0 0 .7cqw}
+.light-slide .needs td{padding:.75cqw .4cqw .75cqw 0;border-top:1px solid var(--faint);vertical-align:top;line-height:1.3}
+.light-slide .needs td small{display:block;color:var(--muted);font-size:.92cqw}
+.light-slide .needs .c2,.light-slide .needs .c3{width:20%;text-align:center}
+.light-slide .ok{color:var(--mint)}
+.light-slide .no{color:var(--rose)}
+.light-slide .col-w{transition:opacity .6s}
+.light-slide .col-t{opacity:0;transition:opacity .6s}
+.light-slide .s-womb.t3 .col-t{opacity:1}
+.light-slide .takeaway{position:absolute;left:6cqw;right:6cqw;bottom:7.5cqw;text-align:center;font-size:1.7cqw}
+.light-slide .takeaway small{display:block;font-size:1cqw;color:var(--muted);margin-top:.4cqw}
+</style>
+<!--LS 10 3 How it started-->
+<div class="ls-stage s-hull" data-ls="10">
+  <div class="ls-eyebrow">Printing methods</div>
+  <div class="hook">
+    <h2>There are many ways to <span class="grad">bioprint</span>.</h2>
+  </div>
+  <figure class="hull" data-s="1">
+    <figcaption><b>Chuck Hull</b><span>United States · 1980s</span></figcaption>
+    <img src="{{HULL_PNG}}" alt="Illustration of Chuck Hull presenting">
+  </figure>
+  <div class="movie r" data-s="2"><video id="ls-hullVideo" src="{{HULL_MP4}}" muted playsinline preload="auto"></video></div>
+  <p class="def r" data-s="3"><b class="grad">SLA</b>Stereolithography: light hardens a liquid resin into a solid part, one layer at a time.<span class="yr">Patent filed 1984 · granted 1986 · Hull coined the word</span></p>
+  <p class="refs">Source: C. W. Hull, U.S. Patent 4,575,330 (1986) · Groot model: Byambaa, Thingiverse, CC BY-NC-ND 4.0</p>
+</div>
+<!--LS 11 7 From patient to print-->
+<div class="ls-stage s-journey" data-ls="11">
+  <div class="ls-eyebrow">Imagine it for bioprinting</div>
+  <h2>From patient to print</h2>
+  <svg class="journey" viewBox="0 0 1200 300" aria-label="Process: biopsy, grow cells, bioink, print, mature, back to patient">
+    <g id="ls-segs"></g>
+    <!-- 1 biopsy -->
+    <g transform="translate(100 110)"><g class="stn" data-s="1">
+      <rect x="-48" y="-48" width="96" height="96" rx="3" fill="none" stroke="var(--line)" stroke-width="2" stroke-dasharray="3 5"/>
+      <path d="M-22 -14 q10 -12 26 -4 q14 6 8 22 q-6 16 -22 12 q-20 -4 -12 -30z" fill="var(--rose)" fill-opacity=".85"/>
+      <text class="lbl t" y="90" text-anchor="middle">Biopsy</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">a small tissue sample</text>
+    </g></g>
+    <!-- 2 grow -->
+    <g transform="translate(300 110)"><g class="stn" data-s="2">
+      <ellipse rx="56" ry="22" cy="14" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <ellipse rx="56" ry="22" cy="4" fill="rgba(100,223,255,.06)" stroke="var(--line)" stroke-width="2"/>
+      <g class="grow" fill="none" stroke="var(--mint)" stroke-width="2">
+        <circle cx="-6" cy="3" r="6" style="animation-delay:0s"/>
+        <circle cx="10" cy="-2" r="6" style="animation-delay:.5s"/>
+        <circle cx="-22" cy="-1" r="6" style="animation-delay:1s"/>
+        <circle cx="24" cy="6" r="6" style="animation-delay:1.5s"/>
+        <circle cx="4" cy="12" r="6" style="animation-delay:2s"/>
+        <circle cx="-34" cy="8" r="6" style="animation-delay:2.5s"/>
+        <circle cx="38" cy="-1" r="6" style="animation-delay:3s"/>
+        <circle cx="-14" cy="14" r="6" style="animation-delay:3.5s"/>
+      </g>
+      <text class="lbl t" y="90" text-anchor="middle">Grow more cells</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">in the lab</text>
+    </g></g>
+    <!-- 3 bioink -->
+    <g transform="translate(500 110)"><g class="stn" data-s="3">
+      <path d="M-26 -50 v80 a26 22 0 0 0 52 0 v-80" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <path d="M-24 -6 v36 a24 20 0 0 0 48 0 v-36z" fill="var(--lav)" fill-opacity=".3"/>
+      <g fill="none" stroke="var(--mint)" stroke-width="1.8"><circle cx="-8" cy="10" r="5"/><circle cx="10" cy="24" r="5"/><circle cx="6" cy="2" r="5"/><circle cx="-12" cy="32" r="5"/></g>
+      <text class="lbl t" y="90" text-anchor="middle">Mix into bioink</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">cells + gel</text>
+    </g></g>
+    <!-- 4 print -->
+    <g transform="translate(700 110)"><g class="stn" data-s="4">
+      <path d="M-50 4 v26 h100 v-26" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <rect x="-48" y="12" width="96" height="17" fill="var(--lav)" fill-opacity=".18"/>
+      <rect x="-30" y="-36" width="60" height="6" fill="var(--fg)" fill-opacity=".8"/>
+      <path d="M-20 -30 h40 l-6 40 h-28z" fill="var(--lav)" fill-opacity=".75"/>
+      <polygon points="-6,56 6,56 20,30 -20,30" fill="var(--lav)" fill-opacity=".35"><animate attributeName="fill-opacity" values=".1;.5;.1" dur="1.4s" repeatCount="indefinite"/></polygon>
+      <rect x="-12" y="56" width="24" height="10" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <text class="lbl t" y="90" text-anchor="middle">Print with light</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">layer by layer</text>
+    </g></g>
+    <!-- 5 mature -->
+    <g transform="translate(900 110)"><g class="stn" data-s="5">
+      <rect x="-34" y="-46" width="68" height="92" rx="12" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <rect x="-32" y="-14" width="64" height="58" rx="10" fill="var(--cyan)" fill-opacity=".1"/>
+      <path d="M-12 30 q-6 -18 12 -22 q18 4 12 22z" fill="var(--rose)" fill-opacity=".7"/>
+      <g fill="none" stroke="var(--cyan)" stroke-width="1.5"><circle class="bub" cx="-18" cy="36" r="3"/><circle class="bub" cx="20" cy="38" r="2.5" style="animation-delay:1s"/><circle class="bub" cx="4" cy="38" r="2" style="animation-delay:2s"/></g>
+      <text class="lbl t" y="90" text-anchor="middle">Let it mature</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">bioreactor · 37 °C</text>
+    </g></g>
+    <!-- 6 patient -->
+    <g transform="translate(1100 110)"><g class="stn" data-s="6">
+      <circle cy="-36" r="15" fill="none" stroke="var(--fg)" stroke-width="2"/>
+      <path d="M-30 50 v-34 q0 -26 30 -26 q30 0 30 26 v34" fill="none" stroke="var(--fg)" stroke-width="2"/>
+      <path class="glow-organ" d="M-8 12 q-8 -10 0 -14 q8 -2 8 6 q0 -8 8 -6 q8 4 0 14 l-8 10z" fill="var(--rose)"/>
+      <text class="lbl t" y="90" text-anchor="middle">Back to the patient</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">their own cells</text>
+    </g></g>
+  </svg>
+  <p class="punch r" data-s="7">Made from the <span style="color:#E394AD">patient’s own cells</span>, so the body is less likely to reject it.</p>
+  <p class="refs">Source: Santoni et al., Bio-Design and Manufacturing, 5, 14–42 (2022)</p>
+</div>
+<!--LS 12 3 Two ways to build-->
+<div class="ls-stage s-modes" data-ls="12">
+  <div class="ls-eyebrow">Two ways to build</div>
+  <h2>Light from below, or from above</h2>
+  <div class="modes">
+    <div class="mode r" data-s="1">
+      <div class="fig"><svg id="ls-bu" viewBox="60 20 300 370" aria-label="Bottom-up printer animation"></svg></div>
+      <h3>Bottom-up</h3>
+      <p>Light shines up through a clear window in the tank floor. After each layer, the platform lifts and the layer peels off the floor.</p>
+      <div class="trade r" data-s="3"><span class="plus">+ Needs only a shallow pool of bioink</span><span class="minus">– Peeling pulls on soft gels</span></div>
+    </div>
+    <div class="mode r" data-s="2">
+      <div class="fig"><svg id="ls-td" viewBox="60 20 300 370" aria-label="Top-down printer animation"></svg></div>
+      <h3>Top-down</h3>
+      <p>The classic set-up: the laser sits above and cures the surface. The platform sinks deeper and a blade spreads fresh liquid.</p>
+      <div class="trade r" data-s="3"><span class="plus">+ No peeling, gentle on soft hydrogels</span><span class="minus">– The tank must be full: more bioink</span></div>
+    </div>
+  </div>
+  <p class="refs">Source: Li et al., iScience, 26, 106039 (2023)</p>
+</div>
+<!--LS 13 3 Which light?-->
+<div class="ls-stage s-light" data-ls="13">
+  <div class="ls-eyebrow">Which light?</div>
+  <h2>UV, near-infrared, or both</h2>
+  <div class="lights">
+    <div class="light r" data-s="1">
+      <div class="fig"><svg viewBox="0 0 300 300" aria-label="UV light stops near the surface">
+        <defs>
+          <linearGradient id="ls-fadeUV" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset=".25" stop-color="#fff"/><stop offset=".4" stop-color="#000"/></linearGradient>
+          <mask id="ls-mUV"><rect width="300" height="300" fill="url(#ls-fadeUV)"/></mask>
+          <linearGradient id="ls-fadeNIR" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset=".6" stop-color="#fff"/><stop offset=".88" stop-color="#000"/></linearGradient>
+          <mask id="ls-mNIR"><rect width="300" height="300" fill="url(#ls-fadeNIR)"/></mask>
+        </defs>
+        <g class="tissue"></g>
+        <g mask="url(#ls-mUV)" stroke="var(--lav)" stroke-width="3">
+          <line class="photons" x1="132" y1="54" x2="132" y2="290"/><line class="photons" x1="150" y1="54" x2="150" y2="290"/><line class="photons" x1="168" y1="54" x2="168" y2="290"/>
+        </g>
+        <g fill="none" stroke="var(--rose)" stroke-width="2.4" class="hit">
+          <path d="M124 92 l10 10 m0 -10 l-10 10"/><path d="M164 100 l10 10 m0 -10 l-10 10"/>
+        </g>
+        <line x1="180" y1="112" x2="266" y2="112" stroke="var(--muted)" stroke-dasharray="2 3"/><text class="lbl sub" x="270" y="116" font-size="13">stops</text>
+      </svg></div>
+      <h3>UV / violet</h3><div class="nm">≈ 365–405 nm</div>
+      <ul><li class="p">Fast, well-known photoinitiators</li><li class="p">Fine detail</li><li class="m">Shallow: under 1 mm in tissue</li><li class="m">DNA and proteins absorb it, so it can harm cells</li></ul>
+    </div>
+    <div class="light r" data-s="2">
+      <div class="fig"><svg viewBox="0 0 300 300" aria-label="Near-infrared light reaches deeper">
+        <g class="tissue"></g>
+        <g mask="url(#ls-mNIR)" stroke="var(--rose)" stroke-width="3">
+          <line class="photons" x1="132" y1="54" x2="132" y2="290"/><line class="photons" x1="150" y1="54" x2="150" y2="290"/><line class="photons" x1="168" y1="54" x2="168" y2="290"/>
+        </g>
+        <line x1="180" y1="238" x2="266" y2="238" stroke="var(--muted)" stroke-dasharray="2 3"/><text class="lbl sub" x="270" y="242" font-size="13">deeper</text>
+      </svg></div>
+      <h3>Near-infrared (NIR)</h3><div class="nm">≈ 700–1700 nm</div>
+      <ul><li class="p">Deeper: millimetres, over 1 cm in some studies</li><li class="p">Gentler on cells</li><li class="m">Needs special NIR-sensitive initiators</li><li class="m">Water absorbs it and heats up</li></ul>
+    </div>
+    <div class="light r" data-s="3">
+      <div class="fig"><svg viewBox="0 0 300 300" aria-label="UV and infrared heat meet and cure where they overlap">
+        <defs>
+          <linearGradient id="ls-fadeIR" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#fff"/><stop offset=".72" stop-color="#000"/></linearGradient>
+          <mask id="ls-mIR"><rect width="300" height="300" fill="url(#ls-fadeIR)"/></mask>
+          <linearGradient id="ls-fadeUV2" x1="0" y1="0" x2="0" y2="300" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#fff"/><stop offset=".6" stop-color="#000"/></linearGradient>
+          <mask id="ls-mUV2"><rect width="300" height="300" fill="url(#ls-fadeUV2)"/></mask>
+        </defs>
+        <g class="tissue"></g>
+        <g mask="url(#ls-mUV2)" stroke="var(--lav)" stroke-width="3"><line class="photons" x1="140" y1="54" x2="140" y2="290"/><line class="photons" x1="156" y1="54" x2="156" y2="290"/></g>
+        <g mask="url(#ls-mIR)" stroke="var(--rose)" stroke-width="2.4" fill="none">
+          <path class="photons-h" d="M0 132 q8 -7 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0"/>
+          <path class="photons-h" d="M0 148 q8 -7 16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0 t16 0"/>
+        </g>
+        <rect class="voxel" x="132" y="126" width="32" height="28" rx="3" fill="var(--fg)"/>
+        <text class="lbl" x="150" y="300" font-size="14" text-anchor="middle">cures only where both meet</text>
+        <text class="lbl sub" x="268" y="144" font-size="13">IR heat</text><text class="lbl sub" x="188" y="47" font-size="13">UV</text>
+      </svg></div>
+      <h3>Stereo-thermal lithography</h3><div class="nm">UV light + infrared heat</div>
+      <ul><li class="p">Photoinitiator and thermal initiator work together</li><li class="p">Curing is strongest only where both overlap</li><li class="m">Heat must stay at a level cells survive</li></ul>
+    </div>
+  </div>
+  <p class="refs">Source: Chen et al., Advanced Science, 7, 1903783 (2020) · Bártolo &amp; Mitchell, Rapid Prototyping Journal, 9, 150–156 (2003)</p>
+</div>
+<!--LS 14 3 Bioink and curing-->
+<div class="ls-stage s-ink" data-ls="14">
+  <div class="ls-eyebrow">Two words to know</div>
+  <h2>Bioink &amp; curing</h2>
+  <svg class="lens" id="ls-lens" viewBox="0 0 500 500" aria-label="Zoom into bioink: cells, polymer chains and photoinitiator"></svg>
+  <div class="state" id="ls-inkState">STATE: <b>LIQUID</b></div>
+  <div class="ink-text">
+    <div class="r" data-s="1">
+      <h3>Bioink</h3>
+      <p>The “ink” of a bioprinter: living cells floating in a water-rich gel precursor (for example GelMA), plus a photoinitiator that reacts to light.</p>
+      <div class="legend"><span><i style="border:2px solid var(--mint)"></i>cells</span><span><i style="background:var(--lav)"></i>polymer chains</span><span><i style="background:var(--cyan)"></i>photoinitiator</span></div>
+    </div>
+    <div class="r" data-s="2">
+      <h3>Curing</h3>
+      <p>Light hits the photoinitiator. It splits into radicals, very reactive molecules that link the chains together.</p>
+      <div class="chain"><span>light</span><em>→</em><span>photoinitiator</span><em>→</em><span>radicals</span><em>→</em><span>crosslinks</span></div>
+    </div>
+    <div class="r" data-s="3">
+      <p style="font-size:1.6cqw;color:var(--fg)">The liquid turns into a gel, and the cells are held in place inside it.</p>
+    </div>
+  </div>
+  <p class="refs">Source: Li et al., iScience, 26, 106039 (2023)</p>
+</div>
+<!--LS 15 4 What is still in the way-->
+<div class="ls-stage s-obs" data-ls="15">
+  <div class="ls-eyebrow">Not there yet</div>
+  <h2>What’s still in the way?</h2>
+  <div class="obs">
+    <div class="ob r" data-s="1">
+      <svg viewBox="0 0 64 64" fill="none" stroke="var(--fg)" stroke-width="2" stroke-linecap="round"><line x1="32" y1="10" x2="32" y2="56"/><line x1="20" y1="56" x2="44" y2="56"/><g class="tilt"><line x1="10" y1="18" x2="54" y2="18"/><path d="M10 18 l-6 14 h12z M54 18 l-6 14 h12z" stroke="var(--lav)"/></g></svg>
+      <h3>Laws lag behind</h3>
+      <p>Regulators still struggle to classify printed tissue, and it does not fit today’s clinical-trial rules.</p>
+    </div>
+    <div class="ob r" data-s="2">
+      <svg viewBox="0 0 64 64" fill="none" stroke="var(--fg)" stroke-width="2" stroke-linecap="round"><g stroke="var(--faint)"><path d="M6 14h52M6 26h52M6 38h52M6 50h52M14 6v52M26 6v52M38 6v52M50 6v52"/></g><g class="scan"><circle cx="24" cy="24" r="12" stroke="var(--cyan)"/><line x1="33" y1="33" x2="44" y2="44" stroke="var(--cyan)" stroke-width="3"/></g></svg>
+      <h3>Fine detail or big size</h3>
+      <p>Multiphoton printing reaches sub-micrometre detail, but only a few mm³ per hour. Faster methods are coarser.</p>
+    </div>
+    <div class="ob r" data-s="3">
+      <svg viewBox="0 0 64 64" fill="none" stroke="var(--fg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6 L60 56 H4 Z"/><line class="blink" x1="32" y1="24" x2="32" y2="40" stroke="var(--rose)" stroke-width="3"/><circle class="blink" cx="32" cy="48" r="1.8" fill="var(--rose)" stroke="none"/></svg>
+      <h3>Room for misuse</h3>
+      <p>Without joint regulation, a new black market in printed organs could appear.</p>
+    </div>
+    <div class="ob key r" data-s="4">
+      <svg viewBox="0 0 64 64" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="24" stroke="var(--faint)"/><path class="ecg" d="M4 34 h14 l5 -12 l6 22 l6 -26 l5 16 h20" stroke="var(--rose)"/></svg>
+      <h3>Keeping cells alive</h3>
+      <p>The biggest hurdle: without blood vessels, tissue cannot grow beyond 100–200 µm.</p>
+    </div>
+  </div>
+  <p class="refs">Source: Vermeulen et al., J. Med. Ethics, 43, 618–624 (2017) · Van Ombergen et al., Adv. Healthcare Mater., 12, 2300443 (2023) · Bishop et al., Genes &amp; Diseases, 4, 185–195 (2017)</p>
+</div>
+<!--LS 16 4 Why cells struggle-->
+<div class="ls-stage s-womb" data-ls="16">
+  <div class="ls-eyebrow">Why is it so hard?</div>
+  <h2>Think of a baby in the womb</h2>
+  <div class="womb-grid">
+    <div class="col-w r" data-s="1"><h3>In the womb</h3><svg id="ls-womb" viewBox="0 0 360 340" aria-label="Fetus in the womb, fed through the placenta"></svg></div>
+    <div class="r" data-s="2">
+      <table class="needs">
+        <tr><th>What cells need</th><th class="c2">Womb</th><th class="c3 col-t">Printed tissue</th></tr>
+        <tr><td>Warmth, about 37 °C<small>a fetus runs 0.3–0.5 °C warmer than its mother</small></td><td class="c2 ok">✓</td><td class="c3 col-t ok">✓ incubator</td></tr>
+        <tr><td>Stable pH, about 7.4<small>like blood: 7.35–7.45</small></td><td class="c2 ok">✓</td><td class="c3 col-t ok">✓ medium</td></tr>
+        <tr><td>Oxygen</td><td class="c2 ok">✓ placenta</td><td class="c3 col-t no">✗ edges only</td></tr>
+        <tr><td>Nutrients in, waste out</td><td class="c2 ok">✓ cord</td><td class="c3 col-t no">✗ edges only</td></tr>
+        <tr><td>Clean, protected space</td><td class="c2 ok">✓ amniotic sac</td><td class="c3 col-t ok">✓ sterile lab</td></tr>
+      </table>
+    </div>
+    <div class="col-t"><h3>In a printed tissue</h3><svg id="ls-tissue" viewBox="0 0 360 340" aria-label="Printed tissue: oxygen only reaches the outer cells"></svg></div>
+  </div>
+  <p class="takeaway r" data-s="4">No blood vessels means no “placenta”: oxygen only reaches about 100–200 µm, and the core starves.</p>
+  <p class="refs">Source: Bishop et al., Genes &amp; Diseases, 4, 185–195 (2017) · Asakura, J. Nippon Med. Sch., 71, 360–370 (2004)</p>
+</div>
+<!--LS-SCRIPT-->
+<script>
+(()=>{
+
+const NS='http://www.w3.org/2000/svg';
+const mk=(tag,attrs={},parent)=>{const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e};
+const ease=x=>x<0?0:x>1?1:x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- tissue blocks (slide 13) ---------- */
+const cellPts=[[70,96],[104,150],[78,210],[118,252],[150,92],[172,170],[196,232],[214,118],[236,190],[246,250],[138,206],[98,96],[228,86],[60,150],[180,108],[150,262]];
+document.querySelectorAll('.light-slide .s-light .tissue').forEach(g=>{
+  mk('rect',{x:40,y:70,width:220,height:210,rx:6,fill:'rgba(100,223,255,.05)',stroke:'rgba(241,245,245,.28)','stroke-width':1.5},g);
+  cellPts.forEach(([x,y])=>{mk('circle',{cx:x,cy:y,r:9,fill:'none',stroke:'var(--mint)','stroke-width':1.6,'stroke-opacity':.75},g);mk('circle',{cx:x,cy:y,r:2.6,fill:'var(--mint)','fill-opacity':.6},g)});
+  mk('rect',{x:120,y:32,width:60,height:22,rx:4,fill:'none',stroke:'rgba(241,245,245,.5)','stroke-width':1.5},g);
+});
+
+/* ---------- bottom-up printer ---------- */
+function bottomUp(svg){
+  const N=7,lh=9,floor=300,T=1.5,W=[64,96,116,124,116,96,66],hold=1.8,cycle=N*T+hold;
+  mk('rect',{x:334,y:40,width:8,height:262,fill:'rgba(241,245,245,.18)'},svg);
+  mk('path',{d:'M90 250 V300 M310 250 V300',stroke:'var(--line)','stroke-width':2.4,fill:'none'},svg);
+  const liquid=mk('rect',{x:92,y:266,width:216,height:33,fill:'var(--lav)','fill-opacity':.16},svg);
+  mk('line',{x1:90,y1:300,x2:310,y2:300,stroke:'var(--cyan)','stroke-width':2.4,'stroke-dasharray':'8 5'},svg);
+  mk('text',{x:316,y:322,class:'lbl sub','font-size':13,'text-anchor':'end'},svg).textContent='clear window';
+  mk('rect',{x:172,y:350,width:56,height:22,rx:4,fill:'none',stroke:'rgba(241,245,245,.55)','stroke-width':1.6},svg);
+  mk('text',{x:200,y:390,class:'lbl sub','font-size':13,'text-anchor':'middle'},svg).textContent='light source';
+  const beam=mk('polygon',{fill:'var(--lav)','fill-opacity':0},svg);
+  const part=mk('g',{},svg);const layers=W.map(w=>mk('rect',{x:200-w/2,width:w,height:lh-1,rx:1.5,fill:'var(--lav)','fill-opacity':.6},part));
+  const arm=mk('polyline',{fill:'none',stroke:'rgba(241,245,245,.55)','stroke-width':3},svg);
+  const plate=mk('rect',{x:120,width:160,height:10,rx:2,fill:'var(--fg)','fill-opacity':.85},svg);
+  const arrow=mk('path',{d:'M0 10 L0 -8 M-6 -2 L0 -8 L6 -2',stroke:'var(--cyan)','stroke-width':2,fill:'none',opacity:0},svg);
+  const pos=k=>floor-(k+1)*lh-10;
+  return t=>{
+    let tc=t%cycle,py,shown,newest=-1,glow=0,beamOn=0,arrowOp=0,fade=1;
+    if(tc<N*T){const k=Math.floor(tc/T),p=(tc-k*T)/T;shown=k;
+      if(p<.45){py=pos(k);newest=k;glow=p/.45;beamOn=.25+.35*Math.sin(p/.45*Math.PI)}
+      else if(p<.7){py=pos(k)-ease((p-.45)/.25)*(lh+16);arrowOp=1}
+      else{py=pos(k)-(lh+16)+ease((p-.7)/.3)*16}}
+    else{const h=(tc-N*T)/hold;shown=N-1;py=pos(N-1)-(lh+16)-ease(Math.min(1,h*2))*30;fade=h>.75?1-(h-.75)/.25:1}
+    plate.setAttribute('y',py);arm.setAttribute('points',`200,${py} 200,${py-60} 338,${py-60}`);
+    layers.forEach((r,j)=>{r.setAttribute('y',py+10+j*lh);const vis=j<shown||(j===shown&&newest!==j)?1:(j===newest?glow:0);
+      r.setAttribute('fill-opacity',(j===newest?.25+.7*glow:.6)*vis*fade);r.setAttribute('fill',j===newest?'#E6DAFF':'var(--lav)')});
+    const w=newest>=0?W[newest]:0;beam.setAttribute('points',`192,350 208,350 ${200+w/2},301 ${200-w/2},301`);beam.setAttribute('fill-opacity',beamOn);
+    arrow.setAttribute('transform',`translate(300 ${py-28})`);arrow.setAttribute('opacity',arrowOp);
+  };
+}
+/* ---------- top-down printer ---------- */
+function topDown(svg){
+  const N=7,lh=9,surf=170,T=1.7,W=[70,104,122,124,112,92,62],hold=1.6,cycle=N*T+hold;
+  mk('rect',{x:344,y:96,width:8,height:246,fill:'rgba(241,245,245,.18)'},svg);
+  mk('rect',{x:178,y:30,width:44,height:26,rx:4,fill:'none',stroke:'rgba(241,245,245,.55)','stroke-width':1.6},svg);
+  mk('text',{x:230,y:48,class:'lbl sub','font-size':13},svg).textContent='laser';
+  const beam=mk('line',{x1:200,y1:56,stroke:'var(--lav)','stroke-width':2.4},svg);
+  const part=mk('g',{},svg);const layers=W.map(w=>mk('rect',{x:200-w/2,width:w,height:lh-1,rx:1.5,fill:'var(--lav)','fill-opacity':.6},part));
+  const cure=mk('rect',{height:lh-1,fill:'#E6DAFF'},svg);
+  const plate=mk('rect',{x:126,width:148,height:8,rx:2,fill:'var(--fg)','fill-opacity':.85},svg);
+  const arm=mk('polyline',{fill:'none',stroke:'rgba(241,245,245,.55)','stroke-width':3},svg);
+  mk('rect',{x:92,y:surf,width:216,height:169,fill:'var(--lav)','fill-opacity':.14},svg);
+  mk('line',{x1:92,y1:surf,x2:308,y2:surf,stroke:'var(--lav)','stroke-opacity':.6,'stroke-width':1.4},svg);
+  mk('path',{d:'M90 140 V340 H310 V140',stroke:'var(--line)','stroke-width':2.4,fill:'none'},svg);
+  const blade=mk('rect',{y:surf-7,width:22,height:6,rx:1.5,fill:'var(--cyan)',opacity:0},svg);
+  const spot=mk('circle',{cy:surf,r:4,fill:'#fff',opacity:0},svg);
+  mk('text',{x:200,y:368,class:'lbl sub','font-size':13,'text-anchor':'middle'},svg).textContent='vat of liquid';
+  return t=>{
+    let tc=t%cycle,k,Y,scan=-1,f=0,bladeX=null,fade=1;
+    if(tc<N*T){k=Math.floor(tc/T);const p=(tc-k*T)/T;Y=surf+(k+1)*lh;
+      if(p<.5){scan=k;f=p/.5}else if(p<.7){Y+=ease((p-.5)/.2)*lh}else{Y+=lh;bladeX=310-ease((p-.7)/.3)*230}}
+    else{k=N;Y=surf+N*lh;const h=(tc-N*T)/hold;fade=h>.7?1-(h-.7)/.3:1}
+    plate.setAttribute('y',Y);arm.setAttribute('points',`272,${Y} 272,112 348,112`);
+    layers.forEach((r,j)=>{r.setAttribute('y',Y-(j+1)*lh);const vis=j<k||(j===k&&scan<0&&tc<N*T)?1:0;r.setAttribute('fill-opacity',.6*vis*fade)});
+    if(scan>=0){const w=W[scan],x0=200-w/2;cure.setAttribute('x',x0);cure.setAttribute('y',surf);cure.setAttribute('width',w*f);cure.setAttribute('opacity',1);
+      const bx=x0+w*f;beam.setAttribute('x2',bx);beam.setAttribute('y2',surf);beam.setAttribute('opacity',1);spot.setAttribute('cx',bx);spot.setAttribute('opacity',.9)}
+    else{cure.setAttribute('opacity',0);beam.setAttribute('opacity',0);spot.setAttribute('opacity',0)}
+    if(bladeX!==null){blade.setAttribute('x',bladeX-11);blade.setAttribute('opacity',1)}else blade.setAttribute('opacity',0);
+  };
+}
+/* ---------- bioink lens ---------- */
+function lens(svg){
+  let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+  const defs=mk('defs',{},svg);const cp=mk('clipPath',{id:'ls-lensClip'},defs);mk('circle',{cx:250,cy:250,r:230},cp);
+  const g=mk('g',{'clip-path':'url(#ls-lensClip)'},svg);
+  mk('circle',{cx:250,cy:250,r:230,fill:'rgba(180,154,216,.06)'},g);
+  const wash=mk('rect',{x:0,y:0,width:500,height:500,fill:'var(--lav)',opacity:0},g);
+  const chains=[];for(let c=0;c<15;c++){const x0=40+rnd()*420,y0=40+rnd()*420,a=rnd()*Math.PI*2,pts=[];let x=x0,y=y0,ang=a;
+    for(let i=0;i<9;i++){pts.push({x,y,ph:rnd()*6.28});ang+=(rnd()-.5)*1.2;x+=Math.cos(ang)*24;y+=Math.sin(ang)*24}
+    chains.push({pts,el:mk('polyline',{fill:'none',stroke:'var(--lav)','stroke-width':3,'stroke-linecap':'round','stroke-linejoin':'round','stroke-opacity':.85},g)})}
+  const links=[];chains.forEach((A,i)=>chains.forEach((B,j)=>{if(j<=i)return;A.pts.forEach((p,a)=>B.pts.forEach((q,b)=>{const d=Math.hypot(p.x-q.x,p.y-q.y);if(d<30&&links.length<46&&rnd()<.5)links.push({i,a,j,b})}))}));
+  links.forEach(l=>l.el=mk('line',{stroke:'var(--cyan)','stroke-width':2.4,'stroke-linecap':'round',opacity:0},g));
+  const cells=[[150,170],[330,140],[260,300],[130,340],[370,330],[240,110]].map(([x,y])=>{const grp=mk('g',{},g);mk('circle',{r:30,fill:'rgba(112,194,188,.08)',stroke:'var(--mint)','stroke-width':2.4},grp);mk('circle',{r:10,fill:'var(--mint)','fill-opacity':.55},grp);return{x,y,ph:rnd()*6,grp}});
+  const pis=[];for(let i=0;i<22;i++){const x=40+rnd()*420,y=40+rnd()*420;const grp=mk('g',{},g);const dot=mk('circle',{r:4.5,fill:'var(--cyan)'},grp);
+    const spark=mk('path',{d:'M-9 0H9M0 -9V9M-6 -6L6 6M-6 6L6 -6',stroke:'#fff','stroke-width':1.6,opacity:0},grp);pis.push({x,y,ph:rnd()*6,grp,dot,spark})}
+  mk('circle',{cx:250,cy:250,r:230,fill:'none',stroke:'rgba(241,245,245,.5)','stroke-width':2},svg);
+  const state=document.getElementById('ls-inkState');let stepAt={2:null,3:null},last=-1;
+  return (t,step)=>{
+    if(step!==last){if(step>=2&&stepAt[2]===null)stepAt[2]=t;if(step<2)stepAt[2]=null;if(step>=3&&stepAt[3]===null)stepAt[3]=t;if(step<3)stepAt[3]=null;last=step}
+    const s2=stepAt[2]===null?-1:t-stepAt[2], s3=stepAt[3]===null?-1:t-stepAt[3];
+    const gel=s3<0?0:Math.min(1,s3/2.5), amp=7*(1-gel);
+    wash.setAttribute('opacity',s2<0?0:Math.max(0,.22*Math.cos(Math.min(s2,1.6)/1.6*Math.PI/2)));
+    chains.forEach(c=>{c.cur=c.pts.map(p=>[p.x+Math.sin(t*1.7+p.ph)*amp,p.y+Math.cos(t*1.3+p.ph*1.3)*amp]);c.el.setAttribute('points',c.cur.map(p=>p.join(',')).join(' '))});
+    links.forEach((l,n)=>{const on=s3<0?0:Math.max(0,Math.min(1,(s3*18-n)/3));const p=chains[l.i].cur[l.a],q=chains[l.j].cur[l.b];
+      l.el.setAttribute('x1',p[0]);l.el.setAttribute('y1',p[1]);l.el.setAttribute('x2',q[0]);l.el.setAttribute('y2',q[1]);l.el.setAttribute('opacity',on)});
+    cells.forEach(c=>c.grp.setAttribute('transform',`translate(${c.x+Math.sin(t*.9+c.ph)*amp*.8} ${c.y+Math.cos(t*.8+c.ph)*amp*.8})`));
+    pis.forEach((p,n)=>{const burst=s2<0?0:Math.max(0,Math.min(1,(s2*8-n*.25)));p.grp.setAttribute('transform',`translate(${p.x+Math.sin(t*2.2+p.ph)*amp*1.3} ${p.y+Math.cos(t*2+p.ph)*amp*1.3}) rotate(${t*90%360})`);
+      p.dot.setAttribute('opacity',1-burst);p.spark.setAttribute('opacity',burst*(s3<0?(.55+.45*Math.sin(t*9+n)):Math.max(0,1-s3/1.5)))});
+    state.innerHTML='STATE: <b>'+(gel>=.6?'GEL':'LIQUID')+'</b>';
+  };
+}
+/* ---------- womb ---------- */
+function womb(svg){
+  mk('path',{d:'M180 24 C290 24 336 110 330 190 C324 270 260 322 180 322 C100 322 36 270 30 190 C24 110 70 24 180 24Z',fill:'rgba(227,148,173,.05)',stroke:'var(--rose)','stroke-width':2.4},svg);
+  mk('ellipse',{cx:178,cy:182,rx:128,ry:122,fill:'rgba(100,223,255,.06)',stroke:'rgba(100,223,255,.35)','stroke-width':1.4},svg);
+  mk('path',{d:'M262 50 C300 70 318 100 322 140 C306 128 290 100 262 50Z',fill:'var(--rose)','fill-opacity':.75},svg);
+  mk('text',{x:300,y:42,class:'lbl sub','font-size':13,'text-anchor':'middle'},svg).textContent='placenta';
+  const cord='M296 108 C270 140 290 170 252 182 C220 192 226 214 196 210';
+  mk('path',{d:cord,fill:'none',stroke:'var(--rose)','stroke-width':6,'stroke-opacity':.45,'stroke-linecap':'round'},svg);
+  const cp=mk('path',{d:cord,fill:'none'},svg);
+  const baby=mk('g',{},svg);
+  mk('circle',{cx:150,cy:132,r:42,fill:'rgba(241,245,245,.06)',stroke:'var(--fg)','stroke-width':2.4},baby);
+  mk('path',{d:'M176 166 C214 176 232 214 218 250 C204 282 160 290 132 270 C110 254 112 222 130 204 C142 192 150 182 158 172',fill:'rgba(241,245,245,.06)',stroke:'var(--fg)','stroke-width':2.4,'stroke-linecap':'round'},baby);
+  mk('path',{d:'M138 228 C150 240 172 238 180 226',fill:'none',stroke:'var(--fg)','stroke-width':2.4,'stroke-linecap':'round'},baby);
+  mk('path',{d:'M206 262 C190 270 168 270 156 262',fill:'none',stroke:'var(--fg)','stroke-width':2.4,'stroke-linecap':'round'},baby);
+  const L=cp.getTotalLength?cp.getTotalLength():200;const parts=[];
+  for(let i=0;i<9;i++)parts.push({e:mk('circle',{r:4,fill:i%3===2?'#8A929B':(i%3?'var(--lav)':'var(--cyan)')},svg),off:i/9,back:i%3===2});
+  mk('text',{x:180,y:342,class:'lbl sub','font-size':13,'text-anchor':'middle'},svg).textContent='O₂ + nutrients in · waste out';
+  return t=>{const s=1+Math.sin(t*2)*.012;baby.setAttribute('transform',`translate(170 200) scale(${s}) translate(-170 -200)`);
+    parts.forEach(p=>{let u=(t*.22+p.off)%1;if(p.back)u=1-u;const pt=cp.getPointAtLength(u*L);p.e.setAttribute('cx',pt.x);p.e.setAttribute('cy',pt.y);p.e.setAttribute('opacity',Math.sin(u*Math.PI))})};
+}
+/* ---------- printed tissue ---------- */
+function tissue(svg){
+  const x0=60,y0=40,S=240,n=7,gap=S/n;
+  mk('rect',{x:x0,y:y0,width:S,height:S,rx:8,fill:'rgba(180,154,216,.08)',stroke:'rgba(241,245,245,.4)','stroke-width':1.6},svg);
+  const cells=[];for(let i=0;i<n;i++)for(let j=0;j<n;j++){const cx=x0+gap*(i+.5),cy=y0+gap*(j+.5);const d=Math.min(i,j,n-1-i,n-1-j);
+    cells.push({d,e:mk('circle',{cx,cy,r:11,fill:'rgba(112,194,188,.12)',stroke:'var(--mint)','stroke-width':1.8},svg)})}
+  const ox=[];let seed=3;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+  for(let i=0;i<28;i++){const side=i%4;ox.push({side,a:rnd(),ph:rnd(),e:mk('circle',{r:3,fill:'var(--cyan)'},svg)})}
+  mk('path',{d:`M${x0} 300 h${gap*1.4} M${x0} 294 v12 M${x0+gap*1.4} 294 v12`,stroke:'var(--cyan)','stroke-width':1.6},svg);
+  mk('text',{x:x0+gap*1.4+8,y:305,class:'lbl','font-size':13,fill:'var(--cyan)'},svg).textContent='O₂ reaches ≈ 100–200 µm';
+  mk('text',{x:180,y:168,class:'lbl','font-size':14,'text-anchor':'middle',fill:'var(--rose)'},svg).textContent='';
+  let start=null;
+  return (t,step)=>{if(step>=3){if(start===null)start=t}else start=null;const k=start===null?0:Math.min(1,(t-start)/3.5);
+    cells.forEach(c=>{const dying=c.d>=2?k:0;c.e.setAttribute('stroke',dying>.5?'#5C636B':'var(--mint)');c.e.setAttribute('stroke-dasharray',dying>.5?'3 4':'none');c.e.setAttribute('fill-opacity',1-dying*.9)});
+    ox.forEach(o=>{const u=((t*.35+o.ph)%1),depth=u*gap*1.5,pos=x0+o.a*S;let x,y;
+      if(o.side===0){x=pos;y=y0-10+depth}else if(o.side===1){x=pos;y=y0+S+10-depth}else if(o.side===2){x=x0-10+depth;y=y0+o.a*S}else{x=x0+S+10-depth;y=y0+o.a*S}
+      o.e.setAttribute('cx',x);o.e.setAttribute('cy',y);o.e.setAttribute('opacity',Math.sin(u*Math.PI)*.9)})};
+}
+
+/* ---------- journey connectors ---------- */
+const segs=document.getElementById('ls-segs');
+for(let i=0;i<5;i++)mk('line',{x1:100+i*200+66,y1:110,x2:100+(i+1)*200-66,y2:110,class:'seg','data-s':i+2},segs);
+
+const anims={12:[bottomUp(document.getElementById('ls-bu')),topDown(document.getElementById('ls-td'))],14:[lens(document.getElementById('ls-lens'))],16:[womb(document.getElementById('ls-womb')),tissue(document.getElementById('ls-tissue'))]};
+
+
+const stages=[...document.querySelectorAll('.light-slide .ls-stage')];
+const video=document.getElementById('ls-hullVideo');
+const stepOf=stage=>stage.closest('.slide').querySelectorAll('.ls-step.revealed').length;
+function sync(stage){
+  const step=stepOf(stage);stage.dataset.cur=step;
+  stage.querySelectorAll('[data-s]').forEach(e=>e.classList.toggle('on',step>=+e.dataset.s));
+  stage.classList.toggle('t3',step>=3);
+  if(stage.classList.contains('s-hull')){
+    const active=stage.closest('.slide').classList.contains('active');
+    if(active&&step>=2){if(video.paused&&video.currentTime<.05)setTimeout(()=>{if(stepOf(stage)>=2&&stage.closest('.slide').classList.contains('active'))video.play().catch(()=>{})},500)}
+    else{video.pause();try{video.currentTime=0}catch{}}
+  }
+}
+const observer=new MutationObserver(records=>{const seen=new Set();records.forEach(r=>{const st=r.target.closest('.slide')?.querySelector('.ls-stage');if(st)seen.add(st)});seen.forEach(sync)});
+stages.forEach(stage=>{observer.observe(stage.closest('.slide'),{attributes:true,attributeFilter:['class'],subtree:true});sync(stage)});
+const t0=performance.now();
+Object.values(anims).forEach(list=>list.forEach(f=>f(0,0)));
+function loop(now){const stage=document.querySelector('.light-slide.active .ls-stage');if(stage){const a=anims[stage.dataset.ls];if(a){const t=reduce?4.2:(now-t0)/1000;a.forEach(f=>f(t,+stage.dataset.cur||0))}}requestAnimationFrame(loop)}
+requestAnimationFrame(loop);
+})();
+</script>

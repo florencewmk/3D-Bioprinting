@@ -1,19 +1,41 @@
 {
   "source": "presentation/offline.html",
-  "source_sha256": "2c0929a04d1c9fed30230f60b55273aaa36b72b4cd32f55eceaf3b0b0afb1b3b",
-  "slides": 52,
-  "asset_count": 153,
+  "source_sha256": "7e3f3180300740593cfc56299136dc8e178c59de95475683764971f735be9529",
+  "slides": 59,
+  "asset_count": 168,
   "assets": [
+    {
+      "path": "materials/diagrams/0218baeb64d53627d5109649744957620c0fee4935725b8e4e683ff3e40a33e7.svg",
+      "mime": "image/svg+xml",
+      "bytes": 113,
+      "sha256": "0218baeb64d53627d5109649744957620c0fee4935725b8e4e683ff3e40a33e7",
+      "slides": [
+        16
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
+    },
     {
       "path": "materials/diagrams/03f6a1b0c606ed36d914a8cf434e5ed195172c0cef7113c96f721673ddb88793.svg",
       "mime": "image/svg+xml",
       "bytes": 28376,
       "sha256": "03f6a1b0c606ed36d914a8cf434e5ed195172c0cef7113c96f721673ddb88793",
       "slides": [
-        35
+        42
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/0703a5c8f66380f845f3da5f688b0bfd0c96ee352a931701c47c03333d5250e8.svg",
+      "mime": "image/svg+xml",
+      "bytes": 1406,
+      "sha256": "0703a5c8f66380f845f3da5f688b0bfd0c96ee352a931701c47c03333d5250e8",
+      "slides": [
+        13
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/0cf3a031a8da5174264422241f2d897d0f5b9747b54d27571e7bab94423abfd2.svg",
@@ -21,7 +43,7 @@
       "bytes": 232917,
       "sha256": "0cf3a031a8da5174264422241f2d897d0f5b9747b54d27571e7bab94423abfd2",
       "slides": [
-        50
+        57
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -32,10 +54,21 @@
       "bytes": 5056,
       "sha256": "0e34f61d2441b7640319b68817f621b23a73c548b5c7d8ada34e839fe951cd87",
       "slides": [
-        15
+        36
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/10e62501e9a8e6932d45029afd6c79765b1fd5025460debe1cd0f8e759fd5ecd.svg",
+      "mime": "image/svg+xml",
+      "bytes": 245,
+      "sha256": "10e62501e9a8e6932d45029afd6c79765b1fd5025460debe1cd0f8e759fd5ecd",
+      "slides": [
+        15
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/12392a6d36059aadf5ff7a766c726ac1ca692dd3100b971ca16d2cca0591197a.svg",
@@ -43,10 +76,21 @@
       "bytes": 36326,
       "sha256": "12392a6d36059aadf5ff7a766c726ac1ca692dd3100b971ca16d2cca0591197a",
       "slides": [
-        37
+        44
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/2ae993052f893da6734edb10ad120bb3d51f7ec209c5bbd2fee3cbd0f7b9c785.svg",
+      "mime": "image/svg+xml",
+      "bytes": 357,
+      "sha256": "2ae993052f893da6734edb10ad120bb3d51f7ec209c5bbd2fee3cbd0f7b9c785",
+      "slides": [
+        15
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/2b3eb94ada1c2ae895d7b3394037b7cef659e89a6862071f4db723d41d6b3ffc.svg",
@@ -65,7 +109,7 @@
       "bytes": 243087,
       "sha256": "2e1b9d6c2ec0f348d89cafd49775dbd2224b08d84a7502f42e88923407b39cc4",
       "slides": [
-        12
+        33
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -76,7 +120,7 @@
       "bytes": 310571,
       "sha256": "3315efe801c5c18a3294b6f5bb0e83efdb1a2e2b1740bccdec196599876a666b",
       "slides": [
-        31
+        38
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -87,10 +131,32 @@
       "bytes": 15578,
       "sha256": "345f32283b93162f80feb3047aa069752d8d82b02d7bdebd39249d5b4d13b64e",
       "slides": [
-        36
+        43
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/3d50821670e9d688dff3337710d4757cb9790aa2ded98ec73ac4b66d08cfbcc5.svg",
+      "mime": "image/svg+xml",
+      "bytes": 1766,
+      "sha256": "3d50821670e9d688dff3337710d4757cb9790aa2ded98ec73ac4b66d08cfbcc5",
+      "slides": [
+        13
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
+    },
+    {
+      "path": "materials/diagrams/40afb2b3442a7b54ebd565ae06e5b06177cf47d301632926fdbd6c3be85add73.svg",
+      "mime": "image/svg+xml",
+      "bytes": 103,
+      "sha256": "40afb2b3442a7b54ebd565ae06e5b06177cf47d301632926fdbd6c3be85add73",
+      "slides": [
+        16
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/44cff1d474a11ad2041201c47d87afbd8945b7f96ed0925e2f2801bbbd6ea269.svg",
@@ -98,10 +164,21 @@
       "bytes": 279189,
       "sha256": "44cff1d474a11ad2041201c47d87afbd8945b7f96ed0925e2f2801bbbd6ea269",
       "slides": [
-        30
+        37
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/4a6c929e1ddab40401e6b7d7835af01e06331aedb1eec2073ef2d87f6a1054c1.svg",
+      "mime": "image/svg+xml",
+      "bytes": 4661,
+      "sha256": "4a6c929e1ddab40401e6b7d7835af01e06331aedb1eec2073ef2d87f6a1054c1",
+      "slides": [
+        11
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/4d3c9a8e8c56ed764ae41e5120f06105ad5b77cab40b571111cad9bf83728ab1.svg",
@@ -109,7 +186,7 @@
       "bytes": 26204,
       "sha256": "4d3c9a8e8c56ed764ae41e5120f06105ad5b77cab40b571111cad9bf83728ab1",
       "slides": [
-        44
+        51
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -120,7 +197,7 @@
       "bytes": 11788,
       "sha256": "4f5787fdc848a81208e115baf9af9aa422ee55df44234424c38049a227f613ae",
       "slides": [
-        13
+        34
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -131,7 +208,7 @@
       "bytes": 618,
       "sha256": "500414dcf7c24accdb5eda049f790be924de03c2232923739507b87650bcec83",
       "slides": [
-        34
+        41
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -142,10 +219,21 @@
       "bytes": 395226,
       "sha256": "5f5c8041a1226d578a159a22079e90aee14ef37c7db2eff87cd05abd9a2ec7c0",
       "slides": [
-        11
+        32
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/60508b45fb2ab435acd8f845b9983625df2360692a29f3d7717ae3265994b9f8.svg",
+      "mime": "image/svg+xml",
+      "bytes": 86,
+      "sha256": "60508b45fb2ab435acd8f845b9983625df2360692a29f3d7717ae3265994b9f8",
+      "slides": [
+        12
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/6b5572245fbb6dc1b6a2f3fc8a5aa983813373c77fb62efcee62f020c153fb83.svg",
@@ -164,7 +252,7 @@
       "bytes": 18597,
       "sha256": "80c32a5a9f76fdd8978a80e0e57b3741b3817bc8e9c4667bb86da96d1f297172",
       "slides": [
-        39
+        46
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -175,7 +263,7 @@
       "bytes": 19323,
       "sha256": "8590deab810f2fd60d908e24f1a80ccf8a17061060ace082226edb760f609060",
       "slides": [
-        40
+        47
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -186,7 +274,7 @@
       "bytes": 205531,
       "sha256": "958bcf5512ec6b983e04d396f37c25fd918dae2117ca287fd1a706a4b8f26490",
       "slides": [
-        10
+        31
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -197,7 +285,7 @@
       "bytes": 187234,
       "sha256": "96da1d225c2bc6f3ef2370e7367e2fd0538fd9e148c714cb0bd59284edcf24e8",
       "slides": [
-        47
+        54
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -208,7 +296,7 @@
       "bytes": 2812,
       "sha256": "98714d6591b724a7b0672bcde23b02b291fca6b0b0098abf6e3bfc10a9c2092d",
       "slides": [
-        32
+        39
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -219,7 +307,7 @@
       "bytes": 560247,
       "sha256": "99f062348918802a1bc9b4eb25952e8286560feaad79dbabf5f186ca84a05e61",
       "slides": [
-        17
+        18
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -230,7 +318,7 @@
       "bytes": 16339,
       "sha256": "9ce91834480ba260861d8d49b235c1dd367a114c147004110c5885db15f83627",
       "slides": [
-        38
+        45
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -241,10 +329,21 @@
       "bytes": 436084,
       "sha256": "a0a5bcd676179b7230c259dd238fa9776dfb35f35ad7864bef57f5bd99e4a400",
       "slides": [
-        14
+        35
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/a140b76becfd60010cf7de77c2f84ac6e6420f4da7fa70af1dbceea75cc44363.svg",
+      "mime": "image/svg+xml",
+      "bytes": 326,
+      "sha256": "a140b76becfd60010cf7de77c2f84ac6e6420f4da7fa70af1dbceea75cc44363",
+      "slides": [
+        15
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/a212e29a0e1515769f09d16ec5587130686d2ab7c0b13bf90343f304f1e09bda.svg",
@@ -263,7 +362,7 @@
       "bytes": 77493,
       "sha256": "a818bd91c22f70a3763c15d521d960c3187157f196bc79148f939dfff0b54684",
       "slides": [
-        48
+        55
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -274,10 +373,21 @@
       "bytes": 128410,
       "sha256": "a9479bd7aa96df3628bcf19908fc04bdbebc963ffbbc8bb8e96b2adbeca652bc",
       "slides": [
-        46
+        53
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/bc25bdb983dc54ebfe00d82d6030cb743f1fbc44c5f860b9a1f6b602dfc66c3b.svg",
+      "mime": "image/svg+xml",
+      "bytes": 131,
+      "sha256": "bc25bdb983dc54ebfe00d82d6030cb743f1fbc44c5f860b9a1f6b602dfc66c3b",
+      "slides": [
+        14
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/c1674240ae1deda23a06a5cebe2596f60be75518be01df215231c88e474abf6c.svg",
@@ -285,7 +395,7 @@
       "bytes": 95906,
       "sha256": "c1674240ae1deda23a06a5cebe2596f60be75518be01df215231c88e474abf6c",
       "slides": [
-        42
+        49
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -296,7 +406,7 @@
       "bytes": 151985,
       "sha256": "c323f493503d353b9a1ff8f26367a00c17e3bbcc452ea3a7ddc2e16731291077",
       "slides": [
-        51
+        58
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -307,7 +417,7 @@
       "bytes": 114942,
       "sha256": "caeef0575dc8086ea88a17f45e27daf65a517d89dfd6a9e43b27126406cbcda6",
       "slides": [
-        41
+        48
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -318,10 +428,21 @@
       "bytes": 338659,
       "sha256": "ce7d38ff2a7b4186a253e09e5bc06776162e445dd64e67a8ddb90f6b67f6d3d9",
       "slides": [
-        18
+        19
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/da904fd4d29c8e3e09f795dd7fcada836ff8be31cb2cd898810e12aab28a1e41.svg",
+      "mime": "image/svg+xml",
+      "bytes": 308,
+      "sha256": "da904fd4d29c8e3e09f795dd7fcada836ff8be31cb2cd898810e12aab28a1e41",
+      "slides": [
+        15
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/def2ccb11f6e814080c72e411292e7c597b5a0fb103545fbbc8922d5f3252de6.svg",
@@ -329,10 +450,21 @@
       "bytes": 84763,
       "sha256": "def2ccb11f6e814080c72e411292e7c597b5a0fb103545fbbc8922d5f3252de6",
       "slides": [
-        43
+        50
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/e39b7ad9f34b54bbc73a77e144b19a0031d20e38bbddf005c4f57668032a7c28.svg",
+      "mime": "image/svg+xml",
+      "bytes": 87,
+      "sha256": "e39b7ad9f34b54bbc73a77e144b19a0031d20e38bbddf005c4f57668032a7c28",
+      "slides": [
+        12
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/e893d8be19cb5d459ec7f562d510765d401f4eecf1f6c102da16aa01dd85af57.svg",
@@ -340,10 +472,21 @@
       "bytes": 257321,
       "sha256": "e893d8be19cb5d459ec7f562d510765d401f4eecf1f6c102da16aa01dd85af57",
       "slides": [
-        49
+        56
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/diagrams/ee6c22b00b417511cf54ae788dcc77f1846a6423dfbf5f6be22263e2fd83f0ef.svg",
+      "mime": "image/svg+xml",
+      "bytes": 551,
+      "sha256": "ee6c22b00b417511cf54ae788dcc77f1846a6423dfbf5f6be22263e2fd83f0ef",
+      "slides": [
+        13
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/f21f59793d9547069443c5ed650d38c4d3e7770b86970bb68cd52ae3c5e67d5e.svg",
@@ -351,7 +494,7 @@
       "bytes": 626990,
       "sha256": "f21f59793d9547069443c5ed650d38c4d3e7770b86970bb68cd52ae3c5e67d5e",
       "slides": [
-        19
+        20
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -362,7 +505,7 @@
       "bytes": 2436,
       "sha256": "f2890d31b342f162a5f14436e7e6bcdd14a5e2bd86bb9053c98f73c72a00e178",
       "slides": [
-        33
+        40
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -373,7 +516,7 @@
       "bytes": 16985,
       "sha256": "f55f7266af1f524f93dbcc73f8f9b6e00d9ba00ac50909e8148592dcb8006692",
       "slides": [
-        45
+        52
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -384,7 +527,7 @@
       "bytes": 396432,
       "sha256": "fd745a0330d3d666cfa8fc98e550bb7e13fcccbe6d27842e03fa1a6d6c7b2c37",
       "slides": [
-        20
+        21
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -395,7 +538,7 @@
       "bytes": 28122,
       "sha256": "ffa81f7858221ca8e22f06533f3773ff769fcf06a9cce6e842ffd265fb6c6941",
       "slides": [
-        21
+        22
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -442,7 +585,7 @@
       "bytes": 42596,
       "sha256": "00fbf2066fbf057c91033aaec50a30d58214d1dfe4ad5db26df4b6dbb99c3b4a",
       "slides": [
-        31
+        38
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -453,7 +596,7 @@
       "bytes": 64326,
       "sha256": "0215ef725e6f41ae8cabd38b927cf4013b1c62a30197b87bee669dfff8c310b5",
       "slides": [
-        20
+        21
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -464,7 +607,7 @@
       "bytes": 41086,
       "sha256": "0231c073fdd52d05d6793a5ee61af43ad8ad0e5a214b05015f89b2b2475ed9a0",
       "slides": [
-        41
+        48
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -475,7 +618,7 @@
       "bytes": 55172,
       "sha256": "041853c70cb9c9ea937d83b2d669a6140f4c04b06b06b16399dfcb33796ee484",
       "slides": [
-        10
+        31
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -486,7 +629,7 @@
       "bytes": 212556,
       "sha256": "053e2304e84078837c34ef2f6b58c3d062fbf5453dba0065d6f765962d357b2e",
       "slides": [
-        11
+        32
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -497,7 +640,7 @@
       "bytes": 1442,
       "sha256": "07d996b28dbf7a04a9aceae19b097e3897cd5f9c366b4ebb38393d94291ea8ba",
       "slides": [
-        18
+        19
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -508,7 +651,7 @@
       "bytes": 82,
       "sha256": "08b1a0401bc88e4411db6c8ef5b3b3fee019f89bd491d3f924a8fd80c027fc4a",
       "slides": [
-        39
+        46
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -519,7 +662,7 @@
       "bytes": 119274,
       "sha256": "09d51f86087f71e78197d445dca600a7917422e78e859b8ec97c189f914a7e90",
       "slides": [
-        15
+        36
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -530,7 +673,7 @@
       "bytes": 3876,
       "sha256": "0d797a91b890a0711dd77ca0fa867bf47725f10b888d3e3600a44c843c0aacd5",
       "slides": [
-        14
+        35
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -541,7 +684,7 @@
       "bytes": 1960,
       "sha256": "0f87eabc29c2f5a04613be2d89e141fe56c03520f7b49d0537dd74b1c5e6b9de",
       "slides": [
-        42
+        49
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -552,7 +695,7 @@
       "bytes": 890,
       "sha256": "1172696b6d43d64a903569c6fdb16ed52354660ae30bd1c96e7fb11af572cd79",
       "slides": [
-        39
+        46
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -563,7 +706,7 @@
       "bytes": 59844,
       "sha256": "15d3e7ce340d5f1080a960a25f086e608d2f652db71975da44be7a706530364e",
       "slides": [
-        16
+        17
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -585,7 +728,7 @@
       "bytes": 1162,
       "sha256": "19a6e0fcf8730129a1b8fb4446305fd71c410e68ea30f04cbdda6be527cb3091",
       "slides": [
-        17
+        18
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -596,7 +739,7 @@
       "bytes": 162684,
       "sha256": "1c55ea9c20cd040c7a859f5c732c41cf70c2666e9f7bd8ba661975ca28c00484",
       "slides": [
-        49
+        56
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -607,7 +750,7 @@
       "bytes": 8058,
       "sha256": "213908813840deffaa3d2fc2cdeb7080d2f51bcab290eec8596043e75131085b",
       "slides": [
-        14
+        35
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -618,7 +761,7 @@
       "bytes": 25930,
       "sha256": "2274fd50123e9ff08ff45daafcad9ca71960dc1bc78c763c9166e45709fd12c2",
       "slides": [
-        49
+        56
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -629,7 +772,7 @@
       "bytes": 4562,
       "sha256": "228456e4ee025c6ef7a2d412e75f713ff152b154ebd999579035841d7a79f422",
       "slides": [
-        45
+        52
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -640,8 +783,8 @@
       "bytes": 134,
       "sha256": "22c4ed9098adbd4288ae873ca32bc57d490dd4abab63d1609a3d24d7dbf1997a",
       "slides": [
-        50,
-        51
+        57,
+        58
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -652,7 +795,7 @@
       "bytes": 1242,
       "sha256": "256ed66eb181b49e3cf3f9fb2b0409d88e3dd5c8dd02440cc2ac3bc68903e7b7",
       "slides": [
-        39
+        46
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -663,7 +806,7 @@
       "bytes": 30130,
       "sha256": "271f575fef43d3d9f4ac138e3b0e81f74c598729f00f7064d6aa3f45cfff6957",
       "slides": [
-        12
+        33
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -674,7 +817,7 @@
       "bytes": 80,
       "sha256": "29723c6fa91ca369e8d4f1331a2aedc6675b9b3af9eade0c6a1c727006c6c87f",
       "slides": [
-        15
+        36
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -685,7 +828,7 @@
       "bytes": 80942,
       "sha256": "2aeb86f2ceb8fe58c83b0bd674382133426b5d568c7f0d947a568cdc242ee8e9",
       "slides": [
-        46
+        53
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -696,7 +839,7 @@
       "bytes": 25384,
       "sha256": "33d4f7ab6bf200239617352e1e70068cbcc08a42135c5dbbe19ea3adcafe28f6",
       "slides": [
-        42
+        49
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -707,7 +850,7 @@
       "bytes": 2126,
       "sha256": "35775a1a95f85e14810ec90bfd4990f42178d2e3f98aaa807f29c064f7e150eb",
       "slides": [
-        46
+        53
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -718,8 +861,8 @@
       "bytes": 707839,
       "sha256": "362c9b67234420a2dd07f161f1a773f69e086882e384aabf085dd112238feb60",
       "slides": [
-        22,
-        23
+        23,
+        24
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -730,7 +873,7 @@
       "bytes": 1258,
       "sha256": "365e8efb2fa73459630077041ef1ec9139aac792267d1cf266a44fc5ac35e332",
       "slides": [
-        39
+        46
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -741,7 +884,7 @@
       "bytes": 458,
       "sha256": "39fe9172dbe29cadf719cf991c62ccc60390b80ad67f0009ff00014788646dac",
       "slides": [
-        45
+        52
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -763,7 +906,7 @@
       "bytes": 29496,
       "sha256": "3c5f1e3cd1485f9e96378b2ed404f4e4d019a6e890f4d0c209b43cb04a99e768",
       "slides": [
-        14
+        35
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -774,7 +917,7 @@
       "bytes": 14644,
       "sha256": "4302f3404b93e855303c030baed0cfbc852ff21c5da14cb46216de1af37368ec",
       "slides": [
-        44
+        51
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -785,7 +928,7 @@
       "bytes": 216982,
       "sha256": "43b6d96650d226bc2161b6ebb63ff0df80265d08fa70bfa9c1afb746af35c313",
       "slides": [
-        19
+        20
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -796,7 +939,7 @@
       "bytes": 93608,
       "sha256": "44727c6238c4d72563891cb4dcf200b66e622f4114aa6d1fe30df80510b5090d",
       "slides": [
-        17
+        18
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -818,7 +961,7 @@
       "bytes": 2698,
       "sha256": "4673f4eb1337647cbd7fe14b7172468ce47dda643d95be7997b100fbc1697743",
       "slides": [
-        50
+        57
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -829,7 +972,7 @@
       "bytes": 6042,
       "sha256": "46d3b2a59b8df3f5493e20b693ed1515a9cbf37ef6c183a87e1469da0264b47a",
       "slides": [
-        45
+        52
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -840,7 +983,7 @@
       "bytes": 1514,
       "sha256": "474573e9d33bef8291041d001773f518fcae8cdb7203abebbb516dae51a12a36",
       "slides": [
-        17
+        18
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -851,7 +994,7 @@
       "bytes": 2618,
       "sha256": "4bcdbe250b714c02075bb9b6e796e5698ab556f0346789a533b4967d861c8358",
       "slides": [
-        47
+        54
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -862,7 +1005,7 @@
       "bytes": 5996,
       "sha256": "50e108bb9164b18133bcf475e1590ff23b54965f34e66ae681bbb5475498c4b0",
       "slides": [
-        35
+        42
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -884,7 +1027,7 @@
       "bytes": 172242,
       "sha256": "566c513e08541c125d9138ad0fe7ca3c924956f8a4ecf5f10ba5b09af4061105",
       "slides": [
-        30
+        37
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -895,7 +1038,7 @@
       "bytes": 10408,
       "sha256": "569d357307a2071b3d10d5d2e2075d650719cb52209eb748228f2c14c61d3786",
       "slides": [
-        36
+        43
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -906,7 +1049,7 @@
       "bytes": 57430,
       "sha256": "5fd5cd58652b4b509b8b6b16fd4238b5bdf8671fbf776e8b3b91630cc388213a",
       "slides": [
-        48
+        55
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -917,7 +1060,7 @@
       "bytes": 122310,
       "sha256": "61159dd4d018f0ced87f216951420180b525460b091963612cc85e7af65a8c2f",
       "slides": [
-        12
+        33
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -928,7 +1071,7 @@
       "bytes": 1756,
       "sha256": "61ce075c8744ba5283e7efb46489bf7d97ff67f0f2f4d6193cb313a4c6deb33f",
       "slides": [
-        18
+        19
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -939,7 +1082,7 @@
       "bytes": 5532,
       "sha256": "65882e5fa8491be8d8f4d5fd7bb165cda6629a92848dd8d93b648e20ee911df1",
       "slides": [
-        17
+        18
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -950,7 +1093,7 @@
       "bytes": 189438,
       "sha256": "68827ce65d7c08a7db56d77e0eacc4ad9f867a9fdbe9486d6b3839f64cb35ae8",
       "slides": [
-        31
+        38
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -961,7 +1104,7 @@
       "bytes": 167404,
       "sha256": "68f43aedb405ac2091cded8ea2e1039827def5188e457770321641b63e7a2359",
       "slides": [
-        20
+        21
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -972,7 +1115,7 @@
       "bytes": 36258,
       "sha256": "69f37099335b8a61c3e696664218375d3a3b4bef66b2c67533aeeb013d1edc6f",
       "slides": [
-        30
+        37
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -983,7 +1126,7 @@
       "bytes": 37298,
       "sha256": "69f5577e0e15e8522c7c5e79b465dc435ceccba0ae6e45e8317aac16ee7a1d52",
       "slides": [
-        20
+        21
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -994,7 +1137,7 @@
       "bytes": 54082,
       "sha256": "6c6d3544eed6b53440d0eaf45aa524a9160d38194fde80f1484b6cc762554e41",
       "slides": [
-        50
+        57
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1005,7 +1148,7 @@
       "bytes": 40596,
       "sha256": "6edef6f705f7267f38d36ccdb7f2f2598710277b9e0a46b1168590a902823c0c",
       "slides": [
-        42
+        49
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1016,7 +1159,7 @@
       "bytes": 516,
       "sha256": "7204fdb724084c9277f312bc1014d9f0aaebaea90d95bab3fd8b778f07fe954e",
       "slides": [
-        39
+        46
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1027,7 +1170,7 @@
       "bytes": 2858,
       "sha256": "7377c79a3b311c2c640244fcb08f91884943c3a1ea02305c1fb3a0c17efc15bd",
       "slides": [
-        14
+        35
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1038,7 +1181,7 @@
       "bytes": 332,
       "sha256": "740cabb0946bfe25a275d78f46a3185154c3aea3f268a9cdbaf3e9407a740dba",
       "slides": [
-        35
+        42
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1049,7 +1192,7 @@
       "bytes": 2450,
       "sha256": "74f15540b4b0d46c954c95357f1acd57547d271d0d85c245bd1268bc11c38d09",
       "slides": [
-        39
+        46
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1060,7 +1203,7 @@
       "bytes": 520,
       "sha256": "7a064cfe7a0b50d0b045c59b9417ecac30957a6e59ede4de56b0768cf5b043d2",
       "slides": [
-        10
+        31
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1082,7 +1225,7 @@
       "bytes": 162508,
       "sha256": "8079907b6738593fa5df2b43cddb2d8a404483950198589b96b5486f9ed3efd3",
       "slides": [
-        17
+        18
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1093,7 +1236,7 @@
       "bytes": 25218,
       "sha256": "816e7e6af8f8b0ff6231d2a2839dc5c1c76f4e5ae4b022ebe567a1aba82f743a",
       "slides": [
-        37
+        44
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1104,7 +1247,7 @@
       "bytes": 42014,
       "sha256": "86c4a24b2af198e3583dd0c5287fcb996888ec95d6ca64c1595c31eb9abf367b",
       "slides": [
-        41
+        48
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1115,7 +1258,7 @@
       "bytes": 229398,
       "sha256": "873ca8353b5fc04aeb05313c160ce575985f6099ccce753b3e521442922ad6f4",
       "slides": [
-        14
+        35
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1126,7 +1269,7 @@
       "bytes": 34582,
       "sha256": "87b422f961ec0320cadd8957d00cd5ff9ffdea4a7de8aca06d014511aeba81a0",
       "slides": [
-        14
+        35
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1137,7 +1280,7 @@
       "bytes": 2760,
       "sha256": "8854c9f6b679927facfc1d8f9a7222e462092bea8cea393401e3bd355a0cca65",
       "slides": [
-        11
+        32
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1160,7 +1303,7 @@
       "bytes": 8114,
       "sha256": "889dd01d25509c53d2446588f88295da858c69c5d1f287a2f863f642d6d3d63d",
       "slides": [
-        14
+        35
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1171,8 +1314,8 @@
       "bytes": 56134,
       "sha256": "8a10a2920a8996a7f1e77665834c1e11bd7610b94dc28516be767cde22b37209",
       "slides": [
-        50,
-        51
+        57,
+        58
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1183,7 +1326,7 @@
       "bytes": 134,
       "sha256": "8fe194a2d0ee06865cd4b981605f35c53314f016d96c10939ee483f298df509f",
       "slides": [
-        17
+        18
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1194,7 +1337,7 @@
       "bytes": 13140,
       "sha256": "930b2151fbe1f3fb84b55c987cc3b95a90e11b3b0dd6b0473eab1a8ece573310",
       "slides": [
-        35
+        42
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1216,7 +1359,7 @@
       "bytes": 430,
       "sha256": "9767fdc4cfe165c809ba036938cc7bc130dcf5ab825db33ed21a478010926510",
       "slides": [
-        45
+        52
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1227,7 +1370,7 @@
       "bytes": 236,
       "sha256": "9897c64188c4df081f32d67e248f089170ef693cf450e67dd541b1173b72f260",
       "slides": [
-        15
+        36
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1238,7 +1381,7 @@
       "bytes": 50952,
       "sha256": "9a90c9c861a065f752b9580a4f4998e985f4409f152c6600b5cd6da6fa2ac307",
       "slides": [
-        18
+        19
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1249,8 +1392,8 @@
       "bytes": 1708,
       "sha256": "9b499caab97fae97f3d6b51ff17cad1dfe60d256055c63182f02adda5e274f26",
       "slides": [
-        50,
-        51
+        57,
+        58
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1261,7 +1404,7 @@
       "bytes": 802,
       "sha256": "9ef56aa442172fc5263126c534e080b7a954414b48d1b60a189bc2dd90918e3b",
       "slides": [
-        44
+        51
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1272,7 +1415,7 @@
       "bytes": 66580,
       "sha256": "a0a58764763d5c07b5f807ef5f69bcb2ff5af4d16a09f318bae29f6037c9f65f",
       "slides": [
-        10
+        31
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1283,7 +1426,7 @@
       "bytes": 11166,
       "sha256": "a176951b5a4eb9aafa67373512a063cfba0a2832ec37b2b9d53952c99d32636c",
       "slides": [
-        46
+        53
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1294,8 +1437,8 @@
       "bytes": 40436,
       "sha256": "a1a0b2533f042d35e9866c8ac2e62fc498453eed163582e6815c1e49c9b89b42",
       "slides": [
-        50,
-        51
+        57,
+        58
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1306,7 +1449,7 @@
       "bytes": 82,
       "sha256": "a311fafb89281027f3687336a38a340682035e02ccede64ee96b8eea1fbe6f11",
       "slides": [
-        39
+        46
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1317,7 +1460,7 @@
       "bytes": 1172,
       "sha256": "a340967489d9344be0e7d6e960024af560c69585b7c396322d5dc91331cf6303",
       "slides": [
-        37
+        44
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1328,7 +1471,7 @@
       "bytes": 38202,
       "sha256": "a5100132bc030a4b3e154335f0cec10a143df9ef1cb3c40e8b26017ee0a2042a",
       "slides": [
-        47
+        54
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1339,7 +1482,7 @@
       "bytes": 7668,
       "sha256": "a72facc82786f952ee67c9ac4f5337110618e64211093c389914aa4d5e861627",
       "slides": [
-        11
+        32
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1350,8 +1493,8 @@
       "bytes": 2862,
       "sha256": "ac76b06ea10c56b2cb578ce6fc21aa39f8c8e8825b8562e414386a21e242d12f",
       "slides": [
-        50,
-        51
+        57,
+        58
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1362,7 +1505,7 @@
       "bytes": 830,
       "sha256": "ae10ee3be6884207fe7161f4b0d327a59425ec69f9d4d4cfad3ae939f2b51440",
       "slides": [
-        46
+        53
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1373,7 +1516,7 @@
       "bytes": 10914,
       "sha256": "afa230d2c08b24106fbd4bc5f866ecfef7bb87a1286c287aad9ac2d9eb9dbb37",
       "slides": [
-        40
+        47
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1384,7 +1527,7 @@
       "bytes": 129398,
       "sha256": "b2ae5cd8121fadece269090033d8e76cfa857181cb6314a55e335cb9407ab7c6",
       "slides": [
-        18
+        19
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1395,7 +1538,7 @@
       "bytes": 2422,
       "sha256": "b3f39582053ff0e6147af05158f72f369e86160dca308a6d7f013777c7bdf8ee",
       "slides": [
-        23
+        24
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1406,7 +1549,7 @@
       "bytes": 2690,
       "sha256": "b4b06b8cfcae4a1f1944403e740bc48846311835478b35306e6566c106861912",
       "slides": [
-        49
+        56
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1417,7 +1560,7 @@
       "bytes": 7718,
       "sha256": "b6a5f842728352e28cda65b917d28b4201af7c940a89341274a43e34365ace97",
       "slides": [
-        14
+        35
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1428,7 +1571,7 @@
       "bytes": 628,
       "sha256": "b97fdbdfb63630b5b39274fa758e90c2ee3b4542adb93b593d2b4467608c0a73",
       "slides": [
-        40
+        47
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1439,7 +1582,7 @@
       "bytes": 66568,
       "sha256": "ba40e88ea58c262bbf2ea7c28047c6f3086693b236aacaeeea910a7b9c605e51",
       "slides": [
-        18
+        19
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1450,7 +1593,7 @@
       "bytes": 80,
       "sha256": "ba73c2f41e6abd23d6bb9c0d495caccf854b9b972650ba252ae97006eddcf1d2",
       "slides": [
-        15
+        36
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1461,7 +1604,7 @@
       "bytes": 246,
       "sha256": "c82151fe40fac55891935cb3cd22c90eaaf9cf31722cc1589c6b8b25d26db158",
       "slides": [
-        15
+        36
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1472,7 +1615,7 @@
       "bytes": 215726,
       "sha256": "d45a0e2185ce3e8e284f0ded0a9e5c2801d2f804caa42264a486006da9933078",
       "slides": [
-        19
+        20
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1483,7 +1626,7 @@
       "bytes": 2408,
       "sha256": "d99172496e14d48280b0c69a3fe764be5169ecd5ecab172d6c8c480685ef8cd6",
       "slides": [
-        18
+        19
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1494,7 +1637,7 @@
       "bytes": 242,
       "sha256": "dac746537eaeeaf2b21c481173c0d870d2b96a56ebc39c77dd3be6f0f2b005f1",
       "slides": [
-        39
+        46
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1505,7 +1648,7 @@
       "bytes": 4976,
       "sha256": "dd0e6cd35ffa904cbf52e344801f623f858bd5b3f48894e51aeb433a57a4c963",
       "slides": [
-        47
+        54
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1516,7 +1659,7 @@
       "bytes": 2134,
       "sha256": "e096d28129b9af58d43ef1c6ede9e483cd6cb40c7b5d1131c93d51e76e08999b",
       "slides": [
-        17
+        18
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1527,7 +1670,7 @@
       "bytes": 580,
       "sha256": "e321b77186adbf82e9d89a7c76d5cdd1d6250b0d4f4c15b1937511e3f7ab69f6",
       "slides": [
-        35
+        42
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1538,7 +1681,7 @@
       "bytes": 3546,
       "sha256": "e60cf70349866558de6ddbdae503d50414b1c7cf9df667ab08b541000d4aee42",
       "slides": [
-        19
+        20
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1549,7 +1692,7 @@
       "bytes": 870,
       "sha256": "e6dc3581b46a0b0a2d5152e6a583afc33351db2611fbf55a7d6285a2903477a3",
       "slides": [
-        10
+        31
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1560,8 +1703,8 @@
       "bytes": 470,
       "sha256": "e7aaddc69f8f249c7234e4e29b38b67d0216c7c7ae177bc803f14ec3554b2e54",
       "slides": [
-        50,
-        51
+        57,
+        58
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1572,7 +1715,7 @@
       "bytes": 92218,
       "sha256": "e9cd8ec9b2ac4fb74dd57e4ae43001d6cdfa8857bf89e33e1696f511f6eaa8c7",
       "slides": [
-        47
+        54
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1583,7 +1726,7 @@
       "bytes": 418,
       "sha256": "ec715be408f2cf9fb0220b7c2c0fcb36e8625bc0e8659709da7703ca3face624",
       "slides": [
-        36
+        43
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1594,7 +1737,7 @@
       "bytes": 42374,
       "sha256": "ed3092a9cfa666a82fff42745c820a23dce3942eb1e83ecca6929aa7bb227786",
       "slides": [
-        43
+        50
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1605,7 +1748,7 @@
       "bytes": 151838,
       "sha256": "f3739234f85e64bfd12863e4070f8a9ba475ffbdd531ae13d25f86b08961bea8",
       "slides": [
-        17
+        18
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1616,7 +1759,7 @@
       "bytes": 14912,
       "sha256": "f4be27097af7c10b6a2496255d6ecf55d830d9ac5f2a571d12b3be21d398922a",
       "slides": [
-        43
+        50
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1627,10 +1770,21 @@
       "bytes": 3682,
       "sha256": "f6e7664ed41fcb331f4959f8a41c9e2ea8a463b96be6da53129936190e0f4b87",
       "slides": [
-        19
+        20
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
+    },
+    {
+      "path": "materials/images/fb6bdf9f863889360d812cb9e338dba8ed28228d5a436b96f57f3c1a27db28b9.png",
+      "mime": "image/png",
+      "bytes": 331230,
+      "sha256": "fb6bdf9f863889360d812cb9e338dba8ed28228d5a436b96f57f3c1a27db28b9",
+      "slides": [
+        10
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Illustrated likeness of Chuck Hull generated for this talk from the National Inventors Hall of Fame portrait (invent.org/inductees/charles-hull); illustration, not a photograph. Used on the printing-with-light slides rendered by tools/light_slides.py."
     },
     {
       "path": "materials/images/feec474f484201251a226c3b5d3a107328dbbf08180346145002727e9842c93b.webp",
@@ -1638,7 +1792,7 @@
       "bytes": 70950,
       "sha256": "feec474f484201251a226c3b5d3a107328dbbf08180346145002727e9842c93b",
       "slides": [
-        11
+        32
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1666,12 +1820,23 @@
       "provenance": "Bundled bioprinting globe and map, built by tools/offline_map_slide.py from map/ and archived Natural Earth boundaries."
     },
     {
+      "path": "materials/videos/02b7fdceac6d5959439932ab69a7fc3f00ca722f5345d877c86e04797df750f9.mp4",
+      "mime": "video/mp4",
+      "bytes": 491418,
+      "sha256": "02b7fdceac6d5959439932ab69a7fc3f00ca722f5345d877c86e04797df750f9",
+      "slides": [
+        10
+      ],
+      "source": "presentation/offline.html",
+      "provenance": "Original Blender render of a top-down SLA cutaway printing the Baby Groot mesh by Byambaa (Thingiverse 2014307, CC BY-NC-ND 4.0, credited on the slide); burned-in caption and credit removed with FFmpeg delogo on 4 November 2026. Rendered by tools/light_slides.py."
+    },
+    {
       "path": "materials/videos/6cdb0634ac501d851999dcf7ff8fd9748b5625f90dff5be517c1a61e55a2b0ee.mp4",
       "mime": "video/mp4",
       "bytes": 3755792,
       "sha256": "6cdb0634ac501d851999dcf7ff8fd9748b5625f90dff5be517c1a61e55a2b0ee",
       "slides": [
-        15
+        36
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -1682,7 +1847,7 @@
       "bytes": 6633494,
       "sha256": "aa7b24fa286e97b34f74e5d0d0e09adfab6d23c4d30fb798159611dec5f93fc9",
       "slides": [
-        16
+        17
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."

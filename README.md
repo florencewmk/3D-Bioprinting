@@ -10,13 +10,13 @@ Florence Mei Kuan Wong · SOfE Düsseldorf · 5 November 2026
 
 Open [the presentation](presentation/index.html) in a browser. The web deck loads large media as you approach the relevant slides. Use **Help → Download HTML** or **Ctrl/Cmd+S** to save a portable copy with the fonts, videos, lung animation and interactive map included. No installation is required.
 
-The deck contains **52 slides**:
+The deck contains **59 slides**:
 
 | Slides | Content |
 | --- | --- |
 | 1–24 | Main talk |
 | 25–29 | References and image credits |
-| 30–52 | Technical backup |
+| 30–59 | Technical backup (31–36: earlier technology overview slides) |
 
 [Transcript and speaker notes](presentation/transcript.md)
 
@@ -35,7 +35,7 @@ The deck contains **52 slides**:
 | E | Edit slide text; changes save in your browser |
 | Ctrl/Cmd + S | Download an HTML copy with your edits |
 
-On slide 23, press Down to reveal the GitHub link and QR code. Press Up to return to the centered thank-you message.
+Slides 10–16 (printing with light) reveal their points one by one with Down/Up or a click; edit them in `tools/light-slides.html` and run `python3 tools/light_slides.py`. On slide 24, press Down to reveal the GitHub link and QR code. Press Up to return to the centered thank-you message.
 
 Horizontal swipes and the mouse wheel also navigate. Link to a specific slide with a hash, such as `presentation/index.html#7`. Text inside figure images is not editable; browser edits do not update the transcript.
 

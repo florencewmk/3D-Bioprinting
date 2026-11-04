@@ -44,7 +44,7 @@
     },
     {
       "label": "Conclusion",
-      "slide": 21
+      "slide": 22
     }
   ],
   "opening_order": [
@@ -52,5 +52,6 @@
     "cover",
     "contents",
     "question"
-  ]
+  ],
+  "slide_count": 59
 }

@@ -55,7 +55,7 @@ The remaining scientific slide text can be edited directly in the HTML, using
 data looks very long: leave those `data:...;base64,...` strings intact.
 
 Restoring the introduction makes the order **Florence 1 → cover 2 → contents 3
-→ opening question 4** in the source layout. In the published deck, organ shortages are on slide 7, publication trends on slide 8, the interactive globe on slide 9, and Contents on slide 52.
+→ opening question 4** in the source layout. In the published deck, organ shortages are on slide 7, publication trends on slide 8, the interactive globe on slide 9, the animated printing-with-light slides on 10–16, and Contents on slide 59. The former technology slides 10–15 are now backup slides 31–36.
 The application slides remain under the Printing methods menu section.
 
 For chart edits, use `tools/update_publication_slide.py` and
@@ -88,3 +88,20 @@ After editing `tools/slide-motion.js`, run `python3 tools/update_motion.py` and
 targeted updaters preserve it. See `tools/MOTION.md` for timing details.
 
 The presenter starts with name/photo only. Click, Space/Right, or Next reveals one point; the fourth advance opens the cover. Left/Previous hides a point; Home resets the introduction. E shows all points for editing. The selected cropped portrait keeps its natural proportions.
+
+## Printing-with-light slides (10–16)
+
+The seven animated slides (Chuck Hull and SLA, patient to print, bottom-up vs
+top-down, light sources, bioink and curing, obstacles, womb analogy) come from
+`tools/light-slides.html` (markup, scoped CSS and animation script) and
+`tools/light-slides-notes.json` (speaker notes). After editing either file run:
+
+```sh
+cd tools && python3 light_slides.py && cd ..
+python3 tools/archive_materials.py
+python3 tools/build_online.py
+```
+
+Each slide reveals one point per Down/click through hidden `.ls-step` markers
+handled by the deck controller. Up hides the last point. Sources sit in one
+“Source:” line above the footer; slides cite papers only.

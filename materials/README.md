@@ -69,3 +69,14 @@ is user-supplied and its original credit is unresolved.
 - [3D-printed vase holding a Christmas decoration](images/7b1ce1f737590ff915b1e8ed64000c73d767ea1c363cd6a54d6117dd88d58bfb.png)
 - [SpaceX Raptor 1, 2 and 3 engines side by side](images/560031c0eb10f61fe391070f5078c20337ee5e64132bc1978bed4265289d1b7b.jpg)
 - [Illustration of the curved 3D-printed concrete house in Eindhoven](images/45ce8684cee3a64960e394d3b57d499b1e356e1bfe8dc75db5ef9b88f6b6d4ed.png)
+
+## Printing-with-light slides (10–16)
+
+Added 4 November 2026 by `tools/light_slides.py`. Original animated SVG schematics
+(template `tools/light-slides.html`); the illustrated Chuck Hull likeness
+(generated from the National Inventors Hall of Fame portrait, an illustration
+rather than a photograph); and an original Blender SLA cutaway video printing the
+Baby Groot mesh by Byambaa (Thingiverse 2014307, CC BY-NC-ND 4.0, credited on
+slide 10). The video's burned-in caption and credit were removed with FFmpeg
+`delogo`; the credit moved to the slide's source line. Provenance is recorded per
+asset in `manifest.json`.

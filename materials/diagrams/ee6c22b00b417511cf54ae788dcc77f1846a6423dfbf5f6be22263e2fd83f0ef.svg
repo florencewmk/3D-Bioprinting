@@ -1,0 +1,7 @@
+<svg viewBox="0 0 300 300" aria-label="Near-infrared light reaches deeper">
+        <g class="tissue"></g>
+        <g mask="url(#ls-mNIR)" stroke="var(--rose)" stroke-width="3">
+          <line class="photons" x1="132" y1="54" x2="132" y2="290"/><line class="photons" x1="150" y1="54" x2="150" y2="290"/><line class="photons" x1="168" y1="54" x2="168" y2="290"/>
+        </g>
+        <line x1="180" y1="238" x2="266" y2="238" stroke="var(--muted)" stroke-dasharray="2 3"/><text class="lbl sub" x="270" y="242" font-size="13">deeper</text>
+      </svg>

@@ -25,6 +25,11 @@ MIMES = {
     "image/svg+xml": ("diagrams", "svg"),
     "text/html": ("interactive", "html"),
 }
+LIGHT_PROVENANCE = {
+    "image/png": "Illustrated likeness of Chuck Hull generated for this talk from the National Inventors Hall of Fame portrait (invent.org/inductees/charles-hull); illustration, not a photograph. Used on the printing-with-light slides rendered by tools/light_slides.py.",
+    "video/mp4": "Original Blender render of a top-down SLA cutaway printing the Baby Groot mesh by Byambaa (Thingiverse 2014307, CC BY-NC-ND 4.0, credited on the slide); burned-in caption and credit removed with FFmpeg delogo on 4 November 2026. Rendered by tools/light_slides.py.",
+    "image/svg+xml": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py.",
+}
 DATA = re.compile(r"data:([^;,\s\"']+);base64,([A-Za-z0-9+/=\s]+)")
 
 
@@ -52,9 +57,11 @@ def inventory():
         if slide is not None and slide not in records[path]["slides"]:
             records[path]["slides"].append(slide)
 
+    light = {int(s[1]) for s in sections if 'light-slide' in s[0].split(">", 1)[0]}
     for match in DATA.finditer(document):
         slide = next((int(s[1]) for s in sections if s.start() <= match.start() < s.end()), None)
-        add(base64.b64decode(re.sub(r"\s", "", match[2]), validate=True), match[1], slide)
+        add(base64.b64decode(re.sub(r"\s", "", match[2]), validate=True), match[1], slide,
+            LIGHT_PROVENANCE.get(match[1]) if slide in light else None)
     for section in sections:
         for asset in re.findall(r'data-turntable-src="\.\./(materials/images/[a-f0-9]{64}\.webp)"', section[0]):
             blob = (ROOT / asset).read_bytes()
@@ -62,7 +69,8 @@ def inventory():
                 raise ValueError(f"Turntable hash mismatch: {asset}")
             add(blob, "image/webp", int(section[1]))
         for svg in re.finditer(r"<svg\b.*?</svg>", section[0], re.S):
-            add(svg[0].encode("utf-8"), "image/svg+xml", int(section[1]))
+            add(svg[0].encode("utf-8"), "image/svg+xml", int(section[1]),
+                LIGHT_PROVENANCE["image/svg+xml"] if int(section[1]) in light else None)
         for frame in re.finditer(r'<iframe class="offline-map-frame"[^>]*\bsrcdoc="([^"]+)"', section[0]):
             add(html.unescape(frame[1]).encode("utf-8"), "text/html", int(section[1]))
         for frame in re.finditer(r'<iframe class="tram-story-frame"[^>]*\bsrcdoc="([^"]+)"', section[0]):

@@ -1,0 +1,63 @@
+<svg class="journey" viewBox="0 0 1200 300" aria-label="Process: biopsy, grow cells, bioink, print, mature, back to patient">
+    <g id="ls-segs"></g>
+    <!-- 1 biopsy -->
+    <g transform="translate(100 110)"><g class="stn" data-s="1">
+      <rect x="-48" y="-48" width="96" height="96" rx="3" fill="none" stroke="var(--line)" stroke-width="2" stroke-dasharray="3 5"/>
+      <path d="M-22 -14 q10 -12 26 -4 q14 6 8 22 q-6 16 -22 12 q-20 -4 -12 -30z" fill="var(--rose)" fill-opacity=".85"/>
+      <text class="lbl t" y="90" text-anchor="middle">Biopsy</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">a small tissue sample</text>
+    </g></g>
+    <!-- 2 grow -->
+    <g transform="translate(300 110)"><g class="stn" data-s="2">
+      <ellipse rx="56" ry="22" cy="14" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <ellipse rx="56" ry="22" cy="4" fill="rgba(100,223,255,.06)" stroke="var(--line)" stroke-width="2"/>
+      <g class="grow" fill="none" stroke="var(--mint)" stroke-width="2">
+        <circle cx="-6" cy="3" r="6" style="animation-delay:0s"/>
+        <circle cx="10" cy="-2" r="6" style="animation-delay:.5s"/>
+        <circle cx="-22" cy="-1" r="6" style="animation-delay:1s"/>
+        <circle cx="24" cy="6" r="6" style="animation-delay:1.5s"/>
+        <circle cx="4" cy="12" r="6" style="animation-delay:2s"/>
+        <circle cx="-34" cy="8" r="6" style="animation-delay:2.5s"/>
+        <circle cx="38" cy="-1" r="6" style="animation-delay:3s"/>
+        <circle cx="-14" cy="14" r="6" style="animation-delay:3.5s"/>
+      </g>
+      <text class="lbl t" y="90" text-anchor="middle">Grow more cells</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">in the lab</text>
+    </g></g>
+    <!-- 3 bioink -->
+    <g transform="translate(500 110)"><g class="stn" data-s="3">
+      <path d="M-26 -50 v80 a26 22 0 0 0 52 0 v-80" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <path d="M-24 -6 v36 a24 20 0 0 0 48 0 v-36z" fill="var(--lav)" fill-opacity=".3"/>
+      <g fill="none" stroke="var(--mint)" stroke-width="1.8"><circle cx="-8" cy="10" r="5"/><circle cx="10" cy="24" r="5"/><circle cx="6" cy="2" r="5"/><circle cx="-12" cy="32" r="5"/></g>
+      <text class="lbl t" y="90" text-anchor="middle">Mix into bioink</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">cells + gel</text>
+    </g></g>
+    <!-- 4 print -->
+    <g transform="translate(700 110)"><g class="stn" data-s="4">
+      <path d="M-50 4 v26 h100 v-26" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <rect x="-48" y="12" width="96" height="17" fill="var(--lav)" fill-opacity=".18"/>
+      <rect x="-30" y="-36" width="60" height="6" fill="var(--fg)" fill-opacity=".8"/>
+      <path d="M-20 -30 h40 l-6 40 h-28z" fill="var(--lav)" fill-opacity=".75"/>
+      <polygon points="-6,56 6,56 20,30 -20,30" fill="var(--lav)" fill-opacity=".35"><animate attributeName="fill-opacity" values=".1;.5;.1" dur="1.4s" repeatCount="indefinite"/></polygon>
+      <rect x="-12" y="56" width="24" height="10" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <text class="lbl t" y="90" text-anchor="middle">Print with light</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">layer by layer</text>
+    </g></g>
+    <!-- 5 mature -->
+    <g transform="translate(900 110)"><g class="stn" data-s="5">
+      <rect x="-34" y="-46" width="68" height="92" rx="12" fill="none" stroke="var(--line)" stroke-width="2"/>
+      <rect x="-32" y="-14" width="64" height="58" rx="10" fill="var(--cyan)" fill-opacity=".1"/>
+      <path d="M-12 30 q-6 -18 12 -22 q18 4 12 22z" fill="var(--rose)" fill-opacity=".7"/>
+      <g fill="none" stroke="var(--cyan)" stroke-width="1.5"><circle class="bub" cx="-18" cy="36" r="3"/><circle class="bub" cx="20" cy="38" r="2.5" style="animation-delay:1s"/><circle class="bub" cx="4" cy="38" r="2" style="animation-delay:2s"/></g>
+      <text class="lbl t" y="90" text-anchor="middle">Let it mature</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">bioreactor · 37 °C</text>
+    </g></g>
+    <!-- 6 patient -->
+    <g transform="translate(1100 110)"><g class="stn" data-s="6">
+      <circle cy="-36" r="15" fill="none" stroke="var(--fg)" stroke-width="2"/>
+      <path d="M-30 50 v-34 q0 -26 30 -26 q30 0 30 26 v34" fill="none" stroke="var(--fg)" stroke-width="2"/>
+      <path class="glow-organ" d="M-8 12 q-8 -10 0 -14 q8 -2 8 6 q0 -8 8 -6 q8 4 0 14 l-8 10z" fill="var(--rose)"/>
+      <text class="lbl t" y="90" text-anchor="middle">Back to the patient</text>
+      <text class="lbl sub d" y="112" text-anchor="middle">their own cells</text>
+    </g></g>
+  </svg>
