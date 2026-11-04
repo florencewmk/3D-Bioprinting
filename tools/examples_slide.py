@@ -29,10 +29,9 @@ ASSETS = (
 )
 
 def render_examples(section):
-    """Keep the source section's number and deck navigation and footer."""
+    """Keep the source section's number and footer."""
     start = section.split(">", 1)[0].replace('class="slide', 'class="slide examples-slide', 1)
     start = start.replace('examples-slide examples-slide', 'examples-slide', 1)
-    nav = re.search(r"<nav\b.*?</nav>", section, re.S)
     footer = re.search(r'<footer(?:\s[^>]*)?>.*?</footer>', section, re.S)
     cards = []
     for i, (path, alt, format) in enumerate(ASSETS):
@@ -44,6 +43,6 @@ def render_examples(section):
         reveal = f' data-reveal-step="{i}" aria-hidden="true" inert' if i else ""
         copy.append(f'<div class="examples-copy" data-example="{i}"{reveal}>'
                     f'<p>{category}</p><h2>{title}</h2><p>{detail}</p></div>')
-    return (start + ">" + (nav[0] if nav else "") + '<div class="examples-layout">'
+    return (start + ">" + '<div class="examples-layout">'
             + "".join(copy) + '<div class="examples-stack">' + "".join(cards) + "</div></div>"
             + (footer[0] if footer else "") + f'<!-- Speaker notes: {html.escape(NOTES)} --></section>')
