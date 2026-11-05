@@ -90,7 +90,7 @@ def render_references(title, original_text, catalog):
     scrolls = len(groups) > 1
     wrapper = ('class="reference-list reference-scroll" tabindex="0" '
                'role="region" aria-label="Scrollable references"') if scrolls else 'class="reference-list"'
-    hint = ' · Scroll for more' if scrolls else ''
+    hint = ''
     markup = [
         '<div class="references">',
         f'<p class="eyebrow">SOURCES · {source_number-23:02d} / 05{hint}</p>',

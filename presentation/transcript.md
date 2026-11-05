@@ -75,7 +75,7 @@ SOfE · Düsseldorf · 5 November 2026
 
 3D Bioprinting
 
-where engineering revolutionize medicine
+where engineering revolutionizes medicine
 
 Florence Mei Kuan Wong
 
