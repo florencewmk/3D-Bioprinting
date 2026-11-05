@@ -100,6 +100,11 @@ class SlidePresentation{
   this.coverPoster ??= image.getAttribute('src');
   const request={};
   this.coverRequest=request;
+  if(location.protocol==='file:'&&!image.dataset.turntableSrc.startsWith('data:')){
+   this.coverUrl='direct';
+   image.src=`${image.dataset.turntableSrc}?play=${Date.now()}`;
+   return;
+  }
   try{
    const animation=await this.loadCoverAnimation(image);
    if(this.coverRequest!==request)return;
@@ -113,7 +118,7 @@ class SlidePresentation{
   this.coverRequest=null;
   if(!this.coverUrl)return;
   this.coverTurntable().src=this.coverPoster;
-  URL.revokeObjectURL(this.coverUrl);
+  if(this.coverUrl!=='direct')URL.revokeObjectURL(this.coverUrl);
   this.coverUrl=null;
  }
  lightReplay(){return this.slides[this.current].matches('.light-slide[data-replay]');}
