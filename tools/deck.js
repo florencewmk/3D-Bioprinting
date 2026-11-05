@@ -43,7 +43,7 @@ class SlidePresentation{
    const cover=upcoming.querySelector('.cover-turntable');
    if(cover&&!matchMedia('(prefers-reduced-motion: reduce)').matches)this.loadCoverAnimation(cover).catch(()=>{});
   }
- }this.stage.parentElement.classList.toggle('profile-glow-on',this.slides[next].classList.contains('profile-slide'));history.replaceState(null,'',`#${next+1}`);this.updateCounter();document.getElementById('progress').style.width=`${(next+1)/this.slides.length*100}%`;document.title=`${next+1} · ${slidesData[next].title} — Bioprinting`;document.querySelectorAll('.thumb').forEach((b,i)=>b.classList.toggle('selected',i===next));this.updateNotes();const chart=this.chartActive();const turntable=this.coverTurntable();
+ }this.stage.parentElement.classList.toggle('profile-glow-on',this.slides[next].classList.contains('profile-slide'));history.replaceState(null,'',`#${next+1}`);this.updateCounter();document.getElementById('progress').style.width=`${(next+1)/this.slides.length*100}%`;document.title='3D Bioprinting';document.querySelectorAll('.thumb').forEach((b,i)=>b.classList.toggle('selected',i===next));this.updateNotes();const chart=this.chartActive();const turntable=this.coverTurntable();
  document.getElementById('chartReplay').hidden=!(chart||turntable||this.lightReplay());
  if(entering&&turntable&&!matchMedia('(prefers-reduced-motion: reduce)').matches)this.playCover();window.publicationTimeline?.activate(this.slides[next].contains(document.getElementById('publicationChart')));window.organTimeline?.activate(this.slides[next].contains(document.getElementById('organChart')));}
  startIntroCharacter(){
