@@ -721,8 +721,9 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
 .light-slide .s-hull[data-cur]:not([data-cur="0"]) .hook h2{font-size:2.4cqw;color:var(--fg)}
 .light-slide .s-hull[data-cur]:not([data-cur="0"]) .hook p{font-size:1.7cqw}
 .light-slide .warp{position:absolute;inset:0;pointer-events:none;overflow:hidden}
-.light-slide .warp-lines{position:absolute;inset:0;width:100%;height:100%}
-.light-slide .warp-lines line{stroke-linecap:round;opacity:0;transform-box:view-box;transform-origin:800px 450px}
+.light-slide .warp-clock{position:absolute;inset:0;width:100%;height:100%;opacity:0}
+.light-slide .warp-clock .tick{stroke:var(--fg);stroke-linecap:round}
+.light-slide .warp-clock .hand{stroke-linecap:round}
 .light-slide .warp-year{position:absolute;left:0;right:0;top:56%;text-align:center;font-size:11cqw;font-weight:600;letter-spacing:.03em;font-variant-numeric:tabular-nums;line-height:1;opacity:0;background:linear-gradient(90deg,var(--rose),var(--lav) 50%,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent;will-change:transform,opacity,filter}
 .light-slide .s-hull .hull.on{transition-delay:1.35s,1.35s}
 .light-slide .hull{position:absolute;left:10.5cqw;bottom:6.6cqw;width:23.5cqw;margin:0;transform:translateX(-140%);opacity:0;transition:transform .9s cubic-bezier(.2,.75,.2,1),opacity .6s}
@@ -822,7 +823,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
   <div class="hook">
     <h2>Printing with light</h2>
   </div>
-  <div class="warp" aria-hidden="true"><svg class="warp-lines" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"></svg><div class="warp-year"></div></div>
+  <div class="warp" aria-hidden="true"><svg class="warp-clock" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice"></svg><div class="warp-year"></div></div>
   <figure class="hull" data-s="1">
     <figcaption><b>Chuck Hull</b><span>United States · 87 years old</span></figcaption>
     <img data-media-src="../materials/images/fb6bdf9f863889360d812cb9e338dba8ed28228d5a436b96f57f3c1a27db28b9.png" alt="Illustration of Chuck Hull presenting">
@@ -1288,27 +1289,52 @@ const anims={12:[bottomUp(document.getElementById('ls-bu')),topDown(document.get
 
 
 
-/* ---------- slide 10: time travel back to 1984 ---------- */
+/* ---------- slide 8 (template 10): rewind clock 2026 → 1984 ---------- */
 const warp=(()=>{const box=document.querySelector('.light-slide .s-hull .warp');if(!box)return{run(){},reset(){},still(){}};
-  const svg=box.querySelector('.warp-lines'),year=box.querySelector('.warp-year');let seed=11;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
-  const cols=['var(--lav)','var(--cyan)','var(--rose)','var(--fg)'];
-  const lines=[];for(let i=0;i<46;i++){const a=rnd()*Math.PI*2,r0=120+rnd()*260,len=90+rnd()*220;
-    lines.push(mk('line',{x1:800+Math.cos(a)*r0,y1:450+Math.sin(a)*r0,x2:800+Math.cos(a)*(r0+len),y2:450+Math.sin(a)*(r0+len),stroke:cols[i%4],'stroke-width':1.2+rnd()*2.2},svg))}
-  const FROM=new Date().getFullYear(),TO=1984;let raf=0,anims=[];
-  const set=(n,o,sc,bl)=>{year.textContent=n;year.style.opacity=o;year.style.transform=`translateY(-50%) scale(${sc})`;year.style.filter=bl?`blur(${bl}px)`:'none'};
-  function reset(){cancelAnimationFrame(raf);anims.forEach(a=>a.cancel());anims=[];year.textContent='';year.style.opacity=0}
+  const svg=box.querySelector('.warp-clock'),year=box.querySelector('.warp-year');
+  const CX=800,CY=504,R=290,TAU=Math.PI*2;
+  const defs=mk('defs',{},svg);
+  const g=mk('linearGradient',{id:'ls-clockGrad',x1:0,y1:0,x2:1,y2:0},defs);
+  [['0','var(--rose)'],['.5','var(--lav)'],['1','var(--cyan)']].forEach(([o,c])=>mk('stop',{offset:o,style:`stop-color:${c}`},g));
+  const rg=mk('radialGradient',{id:'ls-clockFace',cx:.5,cy:.5,r:.5},defs);
+  mk('stop',{offset:'0',style:'stop-color:#050506;stop-opacity:.0'},rg);mk('stop',{offset:'1',style:'stop-color:#B49AD8;stop-opacity:.07'},rg);
+  const face=mk('g',{},svg);
+  mk('circle',{cx:CX,cy:CY,r:R,fill:'url(#ls-clockFace)',stroke:'var(--line)','stroke-width':1.5},face);
+  mk('circle',{cx:CX,cy:CY,r:R+18,fill:'none',stroke:'var(--faint)','stroke-width':1},face);
+  for(let i=0;i<60;i++){const a=i/60*TAU,maj=i%5===0,r1=maj?R-34:R-16;
+    mk('line',{class:'tick',x1:CX+Math.sin(a)*r1,y1:CY-Math.cos(a)*r1,x2:CX+Math.sin(a)*(R-6),y2:CY-Math.cos(a)*(R-6),'stroke-width':maj?3.2:1.2,opacity:maj?.75:.35},face)}
+  /* rewind progress ring (fills counter‑clockwise as the years go back) and the minute‑hand speed trail */
+  const ring=mk('path',{fill:'none',stroke:'url(#ls-clockGrad)','stroke-width':4,'stroke-linecap':'round'},face);
+  const trail=mk('path',{fill:'url(#ls-clockGrad)',opacity:.22},face);
+  const hourH=mk('line',{class:'hand',x1:CX,y1:CY+26,x2:CX,y2:CY-150,stroke:'var(--fg)','stroke-width':9,opacity:.8},face);
+  const minH=mk('line',{class:'hand',x1:CX,y1:CY+34,x2:CX,y2:CY-238,stroke:'var(--cyan)','stroke-width':4.5},face);
+  mk('circle',{cx:CX,cy:CY,r:11,fill:'var(--rose)'},face);
+  const pt=(a,r)=>`${(CX+Math.sin(a)*r).toFixed(1)} ${(CY-Math.cos(a)*r).toFixed(1)}`;
+  const arc=(a0,a1,r)=>{const sweep=a1-a0;if(Math.abs(sweep)<1e-3)return'';const big=Math.abs(sweep)>Math.PI?1:0;return`M${pt(a0,r)} A${r} ${r} 0 ${big} ${sweep>0?1:0} ${pt(a1,r)}`};
+  const MIN0=8/60*TAU,HR0=(10+8/60)/12*TAU,TURNS=6;  /* hands rest at 10:08 */
+  let lastMin=MIN0;
+  const hands=(m,h,spd)=>{minH.setAttribute('transform',`rotate(${m*360/TAU} ${CX} ${CY})`);hourH.setAttribute('transform',`rotate(${h*360/TAU} ${CX} ${CY})`);
+    const len=Math.min(spd,2.3);trail.setAttribute('d',len>.02?`M${CX} ${CY} L${pt(m,236)} A236 236 0 ${len>Math.PI?1:0} 1 ${pt(m+len,236)} Z`:'')};
+  const prog=u=>{const a=Math.min(u,.9999)*TAU;ring.setAttribute('d',u>0?arc(0,-a,R+18):'')};
+  const clock=(o,sc)=>{svg.style.opacity=o;face.setAttribute('transform',`translate(${CX} ${CY}) scale(${sc}) translate(${-CX} ${-CY})`)};
+  const FROM=new Date().getFullYear(),TO=1984;let raf=0;
+  const set=(n,o,sc,bl)=>{year.textContent=n;year.style.opacity=o;year.style.transform=`translateY(-50%) scale(${sc})`;const h=+svg.style.opacity||0;year.style.filter=(bl?`blur(${bl}px) `:'')+(h>.05?`drop-shadow(0 0 .6cqw rgba(5,5,6,${h})) drop-shadow(0 0 1.4cqw rgba(5,5,6,${h}))`:'')||'none'};
+  function reset(){cancelAnimationFrame(raf);year.textContent='';year.style.opacity=0;clock(0,1);hands(MIN0,HR0,0);prog(0)}
   function still(){reset();set(TO,.07,2.1,0)}
   function run(){reset();if(reduce){still();return}
-    lines.forEach((l,i)=>anims.push(l.animate([{transform:'scale(2.6)',opacity:0},{opacity:.85,offset:.3},{transform:'scale(.04)',opacity:0}],{duration:900+((i*37)%5)*120,delay:(i*53)%700,easing:'cubic-bezier(.55,0,.85,.35)',fill:'both'})));
     const t0=performance.now();
     const tick=now=>{const t=(now-t0)/1000;
-      if(t<.2)set(FROM,t/.2,.86+.14*t/.2,6);
-      else if(t<1.5){const u=ease((t-.2)/1.3);set(Math.round(FROM-(FROM-TO)*u),1,1,4*(1-u))}
-      else if(t<1.8)set(TO,1,1+.05*Math.sin((t-1.5)/.3*Math.PI),0);
-      else if(t<3){const u=ease((t-1.8)/1.2);set(TO,1-.93*u,1+1.1*u,0)}
-      else{set(TO,.07,2.1,0);return}
+      if(t<.2){const u=t/.2;clock(u,.82+.18*ease(u));set(FROM,u,.86+.14*u,6);hands(MIN0,HR0,0);prog(0)}
+      else if(t<1.5){const u=ease((t-.2)/1.3),m=MIN0-u*TURNS*TAU,h=HR0-u*TAU;
+        const spd=Math.abs(lastMin-m)*2.2;lastMin=m;
+        set(Math.round(FROM-(FROM-TO)*u),1,1,4*(1-u));clock(1,1);hands(m,h,spd);prog(u)}
+      else if(t<1.8){const k=(t-1.5)/.3,wob=Math.sin(k*Math.PI*2)*(1-k)*.12;  /* hands overshoot and settle */
+        set(TO,1,1+.05*Math.sin(k*Math.PI),0);clock(1,1+.02*Math.sin(k*Math.PI));hands(MIN0+wob,HR0+wob*.3,0);prog(1)}
+      else if(t<3){const u=ease((t-1.8)/1.2);clock(1-u,1+.7*u);set(TO,1-.93*u,1+1.1*u,0);hands(MIN0,HR0,0);prog(1)}
+      else{clock(0,1);set(TO,.07,2.1,0);return}
       raf=requestAnimationFrame(tick)};
-    raf=requestAnimationFrame(tick)}
+    lastMin=MIN0;raf=requestAnimationFrame(tick)}
+  reset();
   return{run,reset,still}})();
 let hullPrev=0;
 const stages=[...document.querySelectorAll('.light-slide .ls-stage')];
