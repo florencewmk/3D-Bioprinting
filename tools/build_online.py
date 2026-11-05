@@ -6,6 +6,7 @@ import html
 import re
 
 from archive_materials import DECK, MIMES, ROOT
+from update_footers import normalize as normalize_footers
 
 ONLINE = DECK.with_name("index.html")
 SLIDE = re.compile(r'<section\b[^>]*\bid="slide-\d+"[^>]*>.*?</section>', re.S)
@@ -47,7 +48,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    document = online_document(DECK.read_text())
+    source = DECK.read_text()
+    if normalize_footers(source) != source:
+        if args.check:
+            raise SystemExit("Footers are stale. Run tools/build_online.py (or tools/update_footers.py).")
+        source = normalize_footers(source)
+        DECK.write_text(source)
+    document = online_document(source)
     if args.check:
         if not ONLINE.exists() or ONLINE.read_text() != document:
             raise SystemExit("Online deck is stale. Run tools/build_online.py.")

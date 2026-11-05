@@ -2,8 +2,9 @@
 
 A ring closes in four arcs, one per takeaway (Why, How, Today, Next); the first
 point shows with the title, Left/Right steps the rest, and the fourth point
-closes the ring. The Readily3D volumetric printing loop
-plays dimmed and slowed in the background (tools/conclusion-slide/).
+closes the ring. The Readily3D volumetric printing loop plays on its own,
+looping, in a card on the right (three columns: ring, points, video;
+tools/conclusion-slide/).
 
 First run replaces "Precision is a beginning" with this slide and deletes the
 old backup diagram "Layers to living tissue", renumbering every later slide
@@ -28,7 +29,6 @@ REPLACES = "Precision is a beginning"
 REMOVES = "Layers to living tissue"
 TITLE = "Take-home summary"
 TITLE_HTML = 'Take-home <em class="gradient">summary</em>'
-VIDEO_OPACITY = 0.45  # user choice "Medium"
 
 # label in ring, ring word, headline, detail, colour
 POINTS = [
@@ -43,11 +43,11 @@ POINTS = [
 ]
 FINAL = "Not yet. But closer."
 SOURCE = ("Source: EDQM–ONT Newsletter Transplant (2026) · Wyss Institute (2024) · 3DBio (2022) · "
-          "Skylar-Scott, Stanford, via 3DPrint.com (2025) · Background: Readily3D, Tomolite")
+          "Skylar-Scott, Stanford, via 3DPrint.com (2025) · Video: Readily3D, Tomolite")
 PROVENANCE = {
     "bg-volumetric.mp4": "Readily3D Tomolite volumetric bioprinting animation (20200930_PROZESS_ANIMATION_LOOP_01, "
                          "also on the former slide 'Precision is a beginning'); audio removed and re-encoded "
-                         "(H.264, CRF 28) on 4 November 2026 as the conclusion background. Credited on the slide.",
+                         "(H.264, CRF 28) on 4 November 2026; shown as a looping card beside the conclusion ring since 5 November 2026. Credited on the slide.",
 }
 NOTES = """To take home:
 
@@ -68,25 +68,25 @@ def xy(deg):
 
 
 STYLE = """<style id="ring-slide-style">
-.ring-slide .rs-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:%OPACITY%;filter:saturate(.45) blur(2px);z-index:0;pointer-events:none}
-.ring-slide .rs-shade{position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,#05050659 0%,#0505068c 45%,#050506d9 70%,#050506e6 100%)}
+.ring-slide .rs-card{position:absolute;left:1310px;top:236px;width:550px;height:668px;margin:0;border-radius:28px;overflow:hidden;z-index:2;background:#02040c;box-shadow:0 0 90px #3a4cff40,inset 0 0 0 1px #F1F5F526}
+.ring-slide .rs-card video{width:100%;height:100%;object-fit:cover;object-position:52% 50%;pointer-events:none}
 .ring-slide .rs-step{display:none}
 .ring-slide h1.rs-title{position:absolute;left:110px;top:96px;margin:0;font-size:68px;font-weight:400;line-height:1.1;color:#F1F5F5;z-index:2}
 .ring-slide h1.rs-title em{font-style:normal}
-.ring-slide svg.rs-ring{position:absolute;left:120px;top:250px;width:640px;height:640px;z-index:2;overflow:visible}
+.ring-slide svg.rs-ring{position:absolute;left:60px;top:300px;width:540px;height:540px;z-index:2;overflow:visible}
 .ring-slide svg.rs-ring text{font-family:'Jost',sans-serif}
-.ring-slide .rs-points{position:absolute;left:880px;right:110px;top:250px;height:640px;display:flex;flex-direction:column;justify-content:center;gap:44px;z-index:2}
+.ring-slide .rs-points{position:absolute;left:610px;width:670px;top:236px;height:668px;display:flex;flex-direction:column;justify-content:center;gap:44px;z-index:2}
 .ring-slide .rs-pt{opacity:0;transform:translateX(24px);transition:opacity .6s ease,transform .6s ease}
 .ring-slide .rs-pt.on{opacity:1;transform:none}
 .ring-slide .rs-pt.on.past{opacity:.38}
-.ring-slide .rs-pt b{display:block;font-size:42px;font-weight:500;line-height:1.2}
-.ring-slide .rs-pt span{display:block;font-size:27px;line-height:1.35;color:#F1F5F5;opacity:.72;margin-top:8px}
+.ring-slide .rs-pt b{display:block;font-size:36px;font-weight:500;line-height:1.2}
+.ring-slide .rs-pt span{display:block;font-size:23px;line-height:1.35;color:#F1F5F5;opacity:.72;margin-top:8px}
 .ring-slide .refs{position:absolute;left:70px;right:70px;bottom:60px;margin:0;font-size:16px;line-height:1.45;color:#84919D;z-index:2}
 @media(prefers-reduced-motion:reduce){.ring-slide .rs-pt{transition:none}}
-</style>""".replace("%OPACITY%", str(VIDEO_OPACITY))
+</style>"""
 
 SCRIPT = """<script>(()=>{const s=document.querySelector('.ring-slide');if(!s)return;
-const P=%s,FINAL=%s,R=%d,v=s.querySelector('video.rs-bg'),spot=s.querySelector('.rs-spot'),c1=s.querySelector('.rs-c1'),c2=s.querySelector('.rs-c2');
+const P=%s,FINAL=%s,R=%d,v=s.querySelector('.rs-card video'),spot=s.querySelector('.rs-spot'),c1=s.querySelector('.rs-c1'),c2=s.querySelector('.rs-c2');
 const arcs=[...s.querySelectorAll('.rs-arc')],pts=[...s.querySelectorAll('.rs-pt')];let deg=0,raf,active=false;
 const xy=d=>{const a=(d-90)*Math.PI/180;return[150+R*Math.cos(a),150+R*Math.sin(a)]};
 const paint=()=>{const[x,y]=xy(deg);spot.setAttribute('cx',x);spot.setAttribute('cy',y);arcs.forEach((a,i)=>{const k=Math.max(0,Math.min(1,(deg-i*90-4)/82));a.setAttribute('stroke-dashoffset',1-k);a.style.opacity=k>0.005?1:0})};
@@ -95,7 +95,7 @@ const f=t=>{const k=still?1:Math.min(1,(t-t0)/1100);deg=from+(to-from)*(1-Math.p
 const sync=()=>{const n=s.querySelectorAll('.rs-step.revealed').length,fin=false;s.dataset.rs=n;
 pts.forEach((p,i)=>{p.classList.toggle('on',fin||i<=n);p.classList.toggle('past',!fin&&i<n)});
 c1.textContent=fin?'':P[n][0];c1.setAttribute('fill',fin?'#F1F5F5':P[n][4]);c2.textContent=fin?FINAL:P[n][1];go(fin?360:(n+1)*90)};
-const slow=()=>{if(v)v.playbackRate=.6};v?.addEventListener('loadedmetadata',slow);v?.addEventListener('play',slow);
+const slow=()=>{if(v)v.playbackRate=1};v?.addEventListener('ended',()=>{v.currentTime=0;v.play().catch(()=>{})});v?.addEventListener('loadedmetadata',slow);v?.addEventListener('play',slow);
 const watch=()=>{const a=s.classList.contains('active');if(a&&!active){deg=0;paint();sync();if(v){slow();v.play().catch(()=>{})}}if(!a&&active&&v)v.pause();active=a};
 const mo=new MutationObserver(sync);s.querySelectorAll('.rs-step').forEach(m=>mo.observe(m,{attributes:true,attributeFilter:['class']}));
 new MutationObserver(watch).observe(s,{attributes:true,attributeFilter:['class']});paint();sync();watch();})();</script>"""
@@ -124,9 +124,8 @@ def render(number, total, conclusion, date, presenter):
     section = (
         f'<section class="slide ring-slide" data-rs="0" id="slide-{number}" aria-label="{number}. {html.escape(TITLE)}" aria-hidden="true">'
         + nav + STYLE
-        + f'<video class="rs-bg" autoplay muted loop playsinline preload="auto" aria-hidden="true" src="{video}"></video>'
-        + '<div class="rs-shade"></div>'
         + f'<h1 class="rs-title">{TITLE_HTML}</h1>{ring}<div class="rs-points">{points}</div>'
+        + f'<figure class="rs-card" aria-hidden="true"><video autoplay muted loop playsinline preload="auto" src="{video}"></video></figure>'
         + f'<p class="refs">{html.escape(SOURCE)}</p>' + markers
         + f'<div class="sr-only">{html.escape(text)}</div><!-- Speaker notes: {html.escape(NOTES)} -->'
         + f'<footer><span>{date}</span><span>{presenter}</span><span>{number:02d} / {total}</span></footer>'

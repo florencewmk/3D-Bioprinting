@@ -1,6 +1,6 @@
 {
   "source": "presentation/offline.html",
-  "source_sha256": "3630954f059ffcd8bd6c6076144d2256443aba7e6b0fceb43d238ed6d751f320",
+  "source_sha256": "10835eb26e39e97cd44e6090f1cafe1f430d14359de87fc35f5467d43d44299c",
   "slides": 59,
   "asset_count": 174,
   "assets": [
@@ -1868,10 +1868,10 @@
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
-      "path": "materials/interactive/59fe7129ded39c252b6af546ddb33a418676ff27a4def029e3f9a969f1218a59.html",
+      "path": "materials/interactive/88c63ba49200f06dca15fcafa5cb3cf810d3163f7b6e3c346a71753f434cb284.html",
       "mime": "text/html",
-      "bytes": 182686,
-      "sha256": "59fe7129ded39c252b6af546ddb33a418676ff27a4def029e3f9a969f1218a59",
+      "bytes": 183341,
+      "sha256": "88c63ba49200f06dca15fcafa5cb3cf810d3163f7b6e3c346a71753f434cb284",
       "slides": [
         4
       ],
@@ -1909,7 +1909,7 @@
         17
       ],
       "source": "presentation/offline.html",
-      "provenance": "Readily3D Tomolite volumetric bioprinting animation (20200930_PROZESS_ANIMATION_LOOP_01, also on the former slide 'Precision is a beginning'); audio removed and re-encoded (H.264, CRF 28) on 4 November 2026 as the conclusion background. Credited on the slide."
+      "provenance": "Readily3D Tomolite volumetric bioprinting animation (20200930_PROZESS_ANIMATION_LOOP_01, also on the former slide 'Precision is a beginning'); audio removed and re-encoded (H.264, CRF 28) on 4 November 2026; shown as a looping card beside the conclusion ring since 5 November 2026. Credited on the slide."
     },
     {
       "path": "materials/videos/6cdb0634ac501d851999dcf7ff8fd9748b5625f90dff5be517c1a61e55a2b0ee.mp4",

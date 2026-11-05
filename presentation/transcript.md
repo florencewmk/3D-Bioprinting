@@ -343,7 +343,7 @@ Lab successes, first steps in patients
 Printed vessels in the lab · a bioprinted ear implanted (2022)
 Tissues in ~10 years, organs in 20–30
 AI may speed up development
-Source: EDQM–ONT Newsletter Transplant (2026) · Wyss Institute (2024) · 3DBio (2022) · Skylar-Scott, Stanford, via 3DPrint.com (2025) · Background: Readily3D, Tomolite
+Source: EDQM–ONT Newsletter Transplant (2026) · Wyss Institute (2024) · 3DBio (2022) · Skylar-Scott, Stanford, via 3DPrint.com (2025) · Video: Readily3D, Tomolite
 
 ### Speaker notes
 

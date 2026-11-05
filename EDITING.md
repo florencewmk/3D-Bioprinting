@@ -105,3 +105,11 @@ python3 tools/build_online.py
 Each slide reveals one point per Down/click through hidden `.ls-step` markers
 handled by the deck controller. Up hides the last point. Sources sit in one
 “Source:” line above the footer; slides cite papers only.
+
+## Footers
+
+Every slide footer shows `footer_label` from `presentation/settings.json`
+("Speak Out for Engineering 2026") on the left and only the page number on the
+right; no date and no presenter name. `tools/update_footers.py` enforces this and
+`tools/build_online.py` runs it automatically, so slide generators that still
+emit the old footer are corrected on every build.
