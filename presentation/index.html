@@ -317,6 +317,11 @@ svg[data-beat=&quot;7&quot;] .street{animation-play-state:paused}
 @keyframes appear{from{opacity:0}to{opacity:1}}@keyframes passing{to{transform:translateX(-570px)}}
 @keyframes sway{from{rotate:-4deg}to{rotate:4deg}}@keyframes board{from{transform:translateX(-225px);opacity:0}to{transform:translateX(0);opacity:1}}
 @keyframes trace{to{stroke-dashoffset:0}}@keyframes open{to{transform:translateX(var(--shift))}}
+.focus-ring .ring-spin{transform-box:fill-box;transform-origin:center;animation:ring-in .7s cubic-bezier(.2,1.6,.4,1) both,ring-spin 9s linear .7s infinite}
+.focus-ring .ring-pulse{transform-box:fill-box;transform-origin:center;animation:ring-pulse 1.8s ease-out .5s infinite}
+@keyframes ring-in{from{transform:scale(2.2) rotate(-90deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
+@keyframes ring-spin{to{transform:rotate(360deg)}}
+@keyframes ring-pulse{0%{transform:scale(1);opacity:.85}100%{transform:scale(1.55);opacity:0}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.route{stroke-dashoffset:0}.left-door,.right-door{transform:translateX(var(--shift))}}
 &lt;/style&gt;
 &lt;style&gt;@font-face {
@@ -538,9 +543,12 @@ svg{border-radius:0}nav{display:none}
   &lt;path d=&quot;M24 31v36m41-36v36&quot; stroke=&quot;#826253&quot; stroke-width=&quot;5&quot;/&gt;
  &lt;/g&gt;
 &lt;/g&gt;
-&lt;g class=&quot;scene on&quot; data-scenes=&quot;0 1 2 3 4 5&quot; fill=&quot;none&quot; stroke-dasharray=&quot;9 7&quot;&gt;
- &lt;circle cx=&quot;903&quot; cy=&quot;423&quot; r=&quot;58&quot; stroke=&quot;#3b2632&quot; stroke-width=&quot;7&quot;/&gt;
- &lt;circle cx=&quot;903&quot; cy=&quot;423&quot; r=&quot;58&quot; stroke=&quot;#64dfff&quot; stroke-width=&quot;4&quot;/&gt;
+&lt;g class=&quot;scene focus-ring&quot; data-scenes=&quot;5&quot; fill=&quot;none&quot;&gt;
+ &lt;circle class=&quot;ring-pulse&quot; cx=&quot;903&quot; cy=&quot;423&quot; r=&quot;58&quot; stroke=&quot;#64dfff&quot; stroke-width=&quot;3&quot;/&gt;
+ &lt;g class=&quot;ring-spin&quot; stroke-dasharray=&quot;9 7&quot;&gt;
+  &lt;circle cx=&quot;903&quot; cy=&quot;423&quot; r=&quot;58&quot; stroke=&quot;#3b2632&quot; stroke-width=&quot;7&quot;/&gt;
+  &lt;circle cx=&quot;903&quot; cy=&quot;423&quot; r=&quot;58&quot; stroke=&quot;#64dfff&quot; stroke-width=&quot;4&quot;/&gt;
+ &lt;/g&gt;
 &lt;/g&gt;
 &lt;defs&gt;
  &lt;g id=&quot;courier-face&quot;&gt;
