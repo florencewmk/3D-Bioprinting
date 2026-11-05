@@ -17,4 +17,5 @@ def render_publication_slide():
 <div class="pub-legend" id="publicationLegend"></div>
 <div class="pub-timeline" aria-label="Publication year selection"><label class="sr-only" for="publicationSlider">Select year from 2000 to 2026</label><input id="publicationSlider" type="range" min="2000" max="2026" value="2000" step="1"><output id="publicationSliderYear">2000</output></div>
 <p class="pub-source">Source: Scopus (Elsevier), retrieved 27 October 2026 · *2026 partial</p>
+<div class="pub-focus" data-reveal-step aria-hidden="true" inert><p class="pub-focus-label">Stereolithography</p><p class="pub-focus-big"><b>10×</b> in ten years</p><p class="pub-focus-line">19 papers in 2015 → <strong>201</strong> in 2025<br>2026 already at <strong>232</strong>, by October</p></div>
 <script id="publicationData" type="application/json">'''+json.dumps(data,ensure_ascii=False).replace('</','<\\/')+'''</script></div>'''
