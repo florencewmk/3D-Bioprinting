@@ -11,6 +11,10 @@ from update_footers import normalize as normalize_footers
 ONLINE = DECK.with_name("index.html")
 SLIDE = re.compile(r'<section\b[^>]*\bid="slide-\d+"[^>]*>.*?</section>', re.S)
 MEDIA = re.compile(r'(?<![\w:-])(?:xlink:)?(src|href|poster)="data:([^;,"]+);base64,([A-Za-z0-9+/=\s]+)"')  # SVG xlink:href becomes plain data-media-href
+FONT = re.compile(r'url\((["\']?)data:(font/[\w-]+);base64,([A-Za-z0-9+/=\s]+)\1\)')
+# Faster first open (5 Nov 2026): slide media above ~3 KB and the embedded fonts are served as
+# separate, cacheable files instead of base64 inside index.html. Slide media still loads per slide.
+INLINE_LIMIT = 4_096
 MAP = re.compile(r'(<iframe class="offline-map-frame"[^>]*?)\bdata-srcdoc="([^"]+)"')
 
 
@@ -25,10 +29,15 @@ def archived_url(mime, blob):
 
 def externalize(match):
     attribute, mime, encoded = match.groups()
-    if len(encoded) < 65_536 and mime != "video/mp4":
+    if len(encoded) < INLINE_LIMIT and mime != "video/mp4":
         return match[0]
     blob = base64.b64decode(re.sub(r"\s", "", encoded), validate=True)
     return f'data-media-{attribute}="{archived_url(mime, blob)}"'
+
+
+def externalize_font(match):
+    blob = base64.b64decode(re.sub(r"\s", "", match[3]), validate=True)
+    return f'url("{archived_url(match[2], blob)}")'
 
 
 def externalize_map(match):
@@ -39,6 +48,7 @@ def externalize_map(match):
 def online_document(document):
     document = SLIDE.sub(lambda slide: MEDIA.sub(externalize, slide[0]), document)
     document = MAP.sub(externalize_map, document)
+    document = FONT.sub(externalize_font, document)
     if document.count('<html lang="en">') != 1:
         raise ValueError("Expected one deck document element")
     return document.replace('<html lang="en">', '<html lang="en" data-offline-source="offline.html">', 1)
