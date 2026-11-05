@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The woman on the tram</title>
 <style>
-:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#151d26;color:#f8efe0}
+:root{color-scheme:dark;font-family:'Jost',system-ui,sans-serif;background:#050506;color:#f8efe0}
 *{box-sizing:border-box}body{margin:0;min-height:100dvh;display:grid;place-items:center;padding:16px}
 main{width:min(100%,calc((100dvh - 120px)*16/9),1440px)}
-svg{width:100%;height:auto;display:block;border-radius:12px;background:#233648}
+svg{width:100%;height:auto;display:block;border-radius:0;background:#050506}text{font-family:'Jost',system-ui,sans-serif}
 nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;flex-wrap:wrap}
 button{font:inherit;padding:.5em .85em;border:1px solid #697a88;border-radius:8px;background:#263849;color:inherit;cursor:pointer}
 button:disabled{opacity:.45;cursor:default}button:focus-visible{outline:2px solid #f7b0c4;outline-offset:3px}
@@ -35,9 +35,9 @@ svg[data-beat="7"] .street{animation-play-state:paused}
 <title id="art-title">The woman on the tram</title>
 <desc id="art-desc">An illustrated story of a chance encounter with a stem cell courier on a Munich tram.</desc>
 <defs>
- <linearGradient id="cabin" x2="0" y2="1"><stop stop-color="#416176"/><stop offset="1" stop-color="#22394d"/></linearGradient>
- <linearGradient id="floor" x2="0" y2="1"><stop stop-color="#3c535d"/><stop offset="1" stop-color="#182836"/></linearGradient>
- <linearGradient id="hoodie" x2=".9" y2="1"><stop stop-color="#f5abc0"/><stop offset=".55" stop-color="#dc7598"/><stop offset="1" stop-color="#b74e79"/></linearGradient>
+ <linearGradient id="cabin" x2="0" y2="1"><stop stop-color="#2f4659"/><stop offset="1" stop-color="#16222e"/></linearGradient>
+ <linearGradient id="floor" x2="0" y2="1"><stop stop-color="#253540"/><stop offset="1" stop-color="#0b1218"/></linearGradient>
+ <linearGradient id="hoodie" x2=".9" y2="1"><stop stop-color="#f0b3c8"/><stop offset=".55" stop-color="#e394ad"/><stop offset="1" stop-color="#b8708e"/></linearGradient>
  <linearGradient id="denim" x2="1" y2="1"><stop stop-color="#8b8e95"/><stop offset="1" stop-color="#5d6570"/></linearGradient>
  <linearGradient id="silver" x2="1" y2="1"><stop stop-color="#fbebdd"/><stop offset="1" stop-color="#9495a2"/></linearGradient>
  <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#acd0d3"/><stop offset="1" stop-color="#ffdeb2"/></linearGradient>
@@ -142,6 +142,9 @@ svg[data-beat="7"] .street{animation-play-state:paused}
       <stop stop-color="#ce827d" stop-opacity=".37" /><stop offset="1" stop-color="#ce827d" stop-opacity="0" />
     </radialGradient>
 
+<linearGradient id="deckgrad" x1="0" x2="1"><stop stop-color="#e394ad"/><stop offset=".5" stop-color="#b49ad8"/><stop offset="1" stop-color="#64dfff"/></linearGradient>
+ <linearGradient id="deckgrad-text" gradientUnits="userSpaceOnUse" x1="453" x2="1030"><stop stop-color="#e394ad"/><stop offset=".5" stop-color="#b49ad8"/><stop offset="1" stop-color="#64dfff"/></linearGradient>
+ <radialGradient id="vignette" cx=".5" cy=".5" r=".75"><stop offset=".62" stop-color="#050506" stop-opacity="0"/><stop offset="1" stop-color="#050506" stop-opacity=".92"/></radialGradient>
 </defs>
 <rect width="1280" height="720" fill="url(#cabin)"/>
 <path d="M0 580H1280V720H0Z" fill="url(#floor)"/>
@@ -168,7 +171,7 @@ svg[data-beat="7"] .street{animation-play-state:paused}
  <g id="door-half"><rect x="30" y="133" width="97" height="463" fill="#3c6279" stroke="#243c4e" stroke-width="4"/><rect x="43" y="170" width="70" height="223" rx="10" fill="#9ebac2"/><path d="M48 351 111 265v-37l-63 87Z" fill="#d8e5dd" opacity=".55"/><path d="M39 445h78" stroke="#eac383" stroke-width="7"/></g>
  <g id="doors"><use href="#door-half"/><use href="#door-half" x="98"/></g>
 </defs>
-<rect x="45" y="87" width="165" height="28" rx="5" fill="#172b38"/><text id="door-label" x="127" y="107" text-anchor="middle" fill="#f5cf90" font-size="13" letter-spacing="3">MÜNCHEN</text>
+<rect x="45" y="87" width="165" height="28" rx="5" fill="#172b38"/><text id="door-label" x="127" y="107" text-anchor="middle" fill="#b4bec8" font-size="13" letter-spacing="3">MÜNCHEN</text>
 <g id="riders" opacity=".87">
  <use href="#rider" transform="translate(303 165) scale(.85)" color="#968276"/>
  <use href="#rider" transform="translate(568 132) scale(1.02)" color="#7a8a84"/>
@@ -176,9 +179,9 @@ svg[data-beat="7"] .street{animation-play-state:paused}
  <use href="#rider" transform="translate(1069 145) scale(1.04)" color="#738993"/>
  <use href="#rider" transform="translate(1198 195) scale(.86)" color="#a28c69"/>
 </g>
-<path d="M248 106H1241M249 103v495m766-493v473m226-473v496" fill="none" stroke="#d6a872" stroke-width="8"/>
-<path d="M248 104H1241" stroke="#ffdc9b" stroke-width="2"/>
-<g stroke="#e5c397" stroke-width="5" fill="none">
+<path d="M248 106H1241M249 103v495m766-493v473m226-473v496" fill="none" stroke="#8d8aa0" stroke-width="8"/>
+<path d="M248 104H1241" stroke="#c6c2d6" stroke-width="2"/>
+<g stroke="#a6a2b8" stroke-width="5" fill="none">
  <g transform="translate(332 106)"><path class="hanging" d="M0 0v17l-12 10q-4 8 2 12h20q6-4 2-12L0 17"/></g>
  <g transform="translate(572 106)"><path class="hanging" d="M0 0v17l-12 10q-4 8 2 12h20q6-4 2-12L0 17"/></g>
  <g transform="translate(913 106)"><path class="hanging" d="M0 0v17l-12 10q-4 8 2 12h20q6-4 2-12L0 17"/></g>
@@ -228,7 +231,7 @@ svg[data-beat="7"] .street{animation-play-state:paused}
 </g>
 <g class="scene on" data-scenes="0 1 2 3 4 5" fill="none" stroke-dasharray="9 7">
  <circle cx="903" cy="423" r="58" stroke="#3b2632" stroke-width="7"/>
- <circle cx="903" cy="423" r="58" stroke="#ff565b" stroke-width="4"/>
+ <circle cx="903" cy="423" r="58" stroke="#64dfff" stroke-width="4"/>
 </g>
 <defs>
  <g id="courier-face">
@@ -246,40 +249,40 @@ svg[data-beat="7"] .street{animation-play-state:paused}
  <path id="florence-bubble" d="M267 79h430q15 0 15 15v40q0 15-15 15H471l-16 23-6-23H267q-15 0-15-15V94q0-15 15-15Z"/>
 </defs>
 <g class="scene" data-scenes="1">
- <use href="#courier-bubble" fill="#fff2df"/>
- <text x="757" y="148" text-anchor="middle" fill="#233746" font-size="23">Where did you get your pink jacket?</text>
+ <use href="#courier-bubble" fill="#0e1115" fill-opacity=".94" stroke="#64dfff" stroke-width="2"/>
+ <text x="757" y="148" text-anchor="middle" fill="#f1f5f5" font-size="23">Where did you get your pink jacket?</text>
 </g>
 <g class="scene" data-scenes="2">
- <use href="#florence-bubble" fill="#ffe2eb"/>
- <text x="482" y="108" text-anchor="middle" fill="#432c41" font-size="21"><tspan x="482">Uniqlo!</tspan><tspan x="482" dy="26">Are you coming back from a holiday?</tspan></text>
+ <use href="#florence-bubble" fill="#0e1115" fill-opacity=".94" stroke="#e394ad" stroke-width="2"/>
+ <text x="482" y="108" text-anchor="middle" fill="#f1f5f5" font-size="21"><tspan x="482">Uniqlo!</tspan><tspan x="482" dy="26">Are you coming back from a holiday?</tspan></text>
 </g>
 <g class="scene" data-scenes="3">
- <use href="#courier-bubble" fill="#fff2df"/>
- <text x="757" y="148" text-anchor="middle" fill="#233746" font-size="24">No, I’m coming back from work!</text>
+ <use href="#courier-bubble" fill="#0e1115" fill-opacity=".94" stroke="#64dfff" stroke-width="2"/>
+ <text x="757" y="148" text-anchor="middle" fill="#f1f5f5" font-size="24">No, I’m coming back from work!</text>
 </g>
 <g class="scene" data-scenes="4">
- <use href="#florence-bubble" fill="#ffe2eb"/>
- <text x="482" y="123" text-anchor="middle" fill="#432c41" font-size="23">Work? What do you do for a living?</text>
+ <use href="#florence-bubble" fill="#0e1115" fill-opacity=".94" stroke="#e394ad" stroke-width="2"/>
+ <text x="482" y="123" text-anchor="middle" fill="#f1f5f5" font-size="23">Work? What do you do for a living?</text>
 </g>
 <g class="scene" data-scenes="5">
- <use href="#courier-bubble" fill="#fff2df"/>
- <text x="757" y="133" text-anchor="middle" fill="#233746" font-size="21">
+ <use href="#courier-bubble" fill="#0e1115" fill-opacity=".94" stroke="#64dfff" stroke-width="2"/>
+ <text x="757" y="133" text-anchor="middle" fill="#f1f5f5" font-size="21">
   <tspan x="757">I’m a stem cell courier,</tspan><tspan x="757" dy="26">and I’m 82 years old!</tspan>
  </text>
 </g>
 <g class="scene" data-scenes="6">
  <rect x="0" y="73" width="1280" height="647" fill="#172936" opacity=".96"/>
- <rect x="252" y="132" width="772" height="299" rx="24" fill="#203a51" stroke="#f0c590" stroke-width="2"/>
+ <rect x="252" y="132" width="772" height="299" rx="24" fill="#203a51" stroke="#64dfff" stroke-opacity=".5" stroke-width="2"/>
  <path d="M269 238l23-21 44-10 21-24 53 3 24-21 49 17 40-4-7 22-40 22-19 24-45 3-18 28-31 12-14 25-27-11-14-28-37-12Z
  M782 203l43-16 30 12 20-23 37-13 27 20-24 37-40 5-19 23-31-1-10 23-30-4-12-31Z
  M698 164l32-14 50 13-10 28-45 19-30-17Z
  M846 277l41-18 45 13 38 27-23 15-22 56-36 25-27-25-5-36-20-22Z" fill="#597d84" stroke="#779c9e" stroke-width="2"/>
- <path class="route" pathLength="1" d="M880 216C789 118 551 151 402 220" fill="none" stroke="#ffd69c" stroke-width="4"/>
- <g fill="#ffd69c"><circle cx="880" cy="216" r="7"/><circle cx="402" cy="220" r="7"/></g>
+ <path class="route" pathLength="1" d="M880 216C789 118 551 151 402 220" fill="none" stroke="#64dfff" stroke-width="4"/>
+ <g fill="#64dfff"><circle cx="880" cy="216" r="7"/><circle cx="402" cy="220" r="7"/></g>
  <g fill="#fff3dc" font-size="23" font-weight="650"><text x="890" y="245">Poland</text><text x="296" y="255">USA</text></g>
  <use href="#courier-face" transform="translate(757 476) scale(.78)"/>
- <path d="M357 478h357q15 0 15 15v48q0 15-15 15H357q-15 0-15-15v-48q0-15 15-15Zm370 30 29 9-29 11Z" fill="#fff2df"/>
- <text x="535" y="510" text-anchor="middle" fill="#233746" font-size="19">
+ <path d="M357 478h357q15 0 15 15v48q0 15-15 15H357q-15 0-15-15v-48q0-15 15-15Zm370 30 29 9-29 11Z" fill="#0e1115" stroke="#64dfff" stroke-width="2"/>
+ <text x="535" y="510" text-anchor="middle" fill="#f1f5f5" font-size="19">
   <tspan x="535">I was carrying stem cells from Poland</tspan>
   <tspan x="535" dy="24">to the USA for a critically ill patient.</tspan>
  </text>
@@ -294,14 +297,15 @@ svg[data-beat="7"] .street{animation-play-state:paused}
   <path d="m-5 4 5 6 5-6m-5 6v9" fill="none" stroke="#a16a30" stroke-width="2"/>
   <path d="M-8 24H8m-12 5h8M0-32v-5m-22 13-4-4m48 4 4-4m-52 23h-5m57 0h5" fill="none" stroke="#ffda81" stroke-width="3"/>
  </g>
- <path d="M437 202h587q24 0 24 24v186q0 24-24 24H437q-24 0-24-24v-64l-36-25 36-4v-93q0-24 24-24Z" fill="#ffe2eb"/>
- <g fill="#432c41" font-size="29">
-  <text x="453" y="256">What if we could <tspan font-weight="700">manufacture</tspan></text>
-  <text x="453" y="297"><tspan font-weight="700">living human tissues</tspan>, and perhaps</text>
-  <text x="453" y="338">one day even <tspan font-weight="700">entire organs</tspan>,</text>
-  <text x="453" y="379">instead of waiting for a <tspan font-weight="700">suitable donor</tspan>? 🧐</text>
+ <path d="M437 202h587q24 0 24 24v186q0 24-24 24H437q-24 0-24-24v-64l-36-25 36-4v-93q0-24 24-24Z" fill="#0e1115" stroke="url(#deckgrad)" stroke-width="2.5"/>
+ <g fill="#f1f5f5" font-size="30">
+  <text x="453" y="256">What if we could <tspan font-weight="600" fill="url(#deckgrad-text)">manufacture</tspan></text>
+  <text x="453" y="297"><tspan font-weight="600" fill="url(#deckgrad-text)">living human tissues</tspan>, and perhaps</text>
+  <text x="453" y="338">one day even <tspan font-weight="600" fill="url(#deckgrad-text)">entire organs</tspan>,</text>
+  <text x="453" y="379">instead of waiting for a <tspan font-weight="600" fill="url(#deckgrad-text)">suitable donor</tspan>? 🧐</text>
  </g>
 </g>
+<rect width="1280" height="720" fill="url(#vignette)" pointer-events="none"/>
 </svg>
 <nav aria-label="Story controls">
  <div><button id="back">← Back</button> <button id="next">Next →</button></div>

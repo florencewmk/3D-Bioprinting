@@ -20,6 +20,14 @@ title = 'The tram encounter'
 notes = ('Advance through eight cues. Introduce the crowded Saturday tram during Oktoberfest, '
          'let the jacket and holiday exchange play out, then pause on the courier’s age and the trip '
          'from Poland to the USA. End with the question about manufacturing living tissues and organs.')
+head = DECK.read_text().split('<section', 1)[0]
+fonts = {}
+for face in re.findall(r'@font-face \{.*?\}', head, flags=re.S):
+    weight = re.search(r'font-weight: (\d+)', face)
+    if weight and weight[1] in ('400', '600'):
+        fonts.setdefault(weight[1], face)
+assert len(fonts) == 2, 'Jost 400/600 not found in deck head'
+FRAME_CSS = '<style>' + '\n'.join(fonts.values()) + '</style>' + FRAME_CSS
 story = SOURCE.read_text().replace('</head>', FRAME_CSS + '</head>', 1).replace(
     'show(0);\n</script>', '''window.tramStory = {
   reset: () => document.querySelector('#replay').click(),
@@ -32,17 +40,22 @@ story = SOURCE.read_text().replace('</head>', FRAME_CSS + '</head>', 1).replace(
 };
 show(0);
 </script>''', 1)
+iframe = (
+    '<iframe class="tram-story-frame" title="Animated tram encounter" tabindex="-1" '
+    'style="position:absolute;width:1920px;height:1080px;left:0;top:0;border:0;pointer-events:none" '
+    f'srcdoc="{html.escape(story, quote=True)}"></iframe>'
+)
 section = (
     f'<!-- SLIDE 02: {title} -->\n'
     f'<section class="slide tram-story-slide" id="slide-2" aria-label="2. {title}" aria-hidden="true">'
-    '<iframe class="tram-story-frame" title="Animated tram encounter" tabindex="-1" '
-    'style="position:absolute;width:1728px;height:972px;left:96px;top:54px;border:0;pointer-events:none" '
-    f'srcdoc="{html.escape(story, quote=True)}"></iframe></section>'
+    + iframe + '</section>'
 )
 document = DECK.read_text()
 if 'class="slide tram-story-slide"' in document:
-    document = re.sub(r'<!-- SLIDE 02: The tram encounter -->\n<section\b.*?</section>',
-                      lambda _: section, document, count=1, flags=re.S)
+    # Refresh only the animation frame; keep the slide's current number and position.
+    document, count = re.subn(r'(<section class="slide tram-story-slide"[^>]*>)<iframe\b.*?</iframe>',
+                              lambda m: m[1] + iframe, document, count=1, flags=re.S)
+    assert count == 1
 else:
     pattern = r'(<!-- SLIDE )(\d+)(:.*?-->\s*<section\b.*?</section>)'
 
