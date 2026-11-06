@@ -6,6 +6,16 @@ Florence Mei Kuan Wong · Speak Out for Engineering 2026 · Düsseldorf · 5 Nov
 
 ![Presentation cover](presentation/cover.jpg)
 
+## Versions
+
+| Branch | Version |
+| --- | --- |
+| `main` = `v2` | 3Blue1Brown-style animated version (6 November 2026), 26 slides |
+| `v1-competition` (also `v1`) | Exactly as presented at Speak Out for Engineering, 5 November 2026 |
+| `v1.1-cleaned` | The competition talk after clean-up: no on-slide sources, technical backup removed |
+
+To view an older version, open `presentation/offline.html` from that branch.
+
 ## View the slides
 
 Open [the presentation](presentation/index.html) in a browser. The web deck loads large media as you approach the relevant slides. Use **Help → Download HTML** or **Ctrl/Cmd+S** to save a portable copy with the fonts, videos, lung animation and interactive map included. No installation is required.
