@@ -71,7 +71,7 @@ The conversation didn’t last long, and I had to get off the tram. At that poin
 
 ## 05. 3D Bioprinting
 
-SOfE · Düsseldorf · 5 November 2026
+Speak Out for Engineering 2026 · Düsseldorf · 5 November 2026
 
 3D Bioprinting
 

@@ -18,7 +18,9 @@ COVER_NOTES = ('Welcome to the world of 3D printing, a technology that is shapin
 
 def render_cover(*, external_animation=False):
     c = settings()
-    event = html.escape(f'{c["event"]["name"]} · {c["event"]["city"].upper()} · {c["event"]["date"].upper()}')
+    # Full event name on its own line, city and date below (5 November 2026).
+    event = (html.escape(c["event"]["name"]) + '<br>'
+             + html.escape(f'{c["event"]["city"].upper()} · {c["event"]["date"].upper()}'))
     animation = ('../' + LUNG_ANIMATION.relative_to(ROOT).as_posix() if external_animation else
                  f'data:image/{LUNG_ANIMATION.suffix[1:]};base64,' + base64.b64encode(LUNG_ANIMATION.read_bytes()).decode())
     poster = 'data:image/webp;base64,' + base64.b64encode(LUNG_POSTER.read_bytes()).decode()

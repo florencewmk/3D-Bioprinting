@@ -1,7 +1,7 @@
 """Normalize every slide footer in presentation/offline.html.
 
-Footers show the event label from settings.json ("footer_label") on the left,
-nothing in the middle (no presenter name, as requested on 5 November 2026) and
+Footers show the event label from settings.json ("footer_label", empty since
+5 November 2026 at Florence's request) on the left, nothing in the middle (no presenter name, as requested on 5 November 2026) and
 only the current page number on the right (no "/ total").
 
 Slide generators still emit the older "date · presenter · NN / total" footer;
@@ -18,6 +18,12 @@ ROOT = Path(__file__).resolve().parents[1]
 DECK = ROOT / "presentation/offline.html"
 SECTION = re.compile(r'(<section\b[^>]*\bid="slide-(\d+)"[^>]*>)(.*?)(</section>)', re.S)
 FOOTER = re.compile(r'<footer>.*?</footer>', re.S)
+# On-slide source notes were removed on 5 November 2026 at Florence's request;
+# the reference slides keep the full citations. Generators still emit them,
+# so this strips them on every build.
+SOURCE_NOTES = re.compile(
+    r'\s*<p class="(?:organ-source|pub-source|refs)">.*?</p>'
+    r'|<div class="textline editable" data-edit="(?:s17-[0-8]|s18-[01])"[^>]*>.*?</div>', re.S)
 
 
 def footer(number, label):
@@ -26,7 +32,10 @@ def footer(number, label):
 
 def normalize(document):
     label = json.loads((ROOT / "presentation/settings.json").read_text())["footer_label"]
-    return SECTION.sub(lambda m: m[1] + FOOTER.sub(lambda _: footer(int(m[2]), label), m[3]) + m[4], document)
+    def section(m):
+        body = SOURCE_NOTES.sub('', m[3])
+        return m[1] + FOOTER.sub(lambda _: footer(int(m[2]), label), body) + m[4]
+    return SECTION.sub(section, document)
 
 
 def main():

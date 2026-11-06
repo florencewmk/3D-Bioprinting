@@ -2,7 +2,7 @@
 
 **where engineering revolutionizes medicine**
 
-Florence Mei Kuan Wong · SOfE Düsseldorf · 5 November 2026
+Florence Mei Kuan Wong · Speak Out for Engineering 2026 · Düsseldorf · 5 November 2026
 
 ![Presentation cover](presentation/cover.jpg)
 
