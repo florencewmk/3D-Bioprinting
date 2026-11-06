@@ -115,3 +115,4 @@ right; no date and no presenter name. `tools/update_footers.py` enforces this an
 emit the old footer are corrected on every build.
 
 - Slide 15 "How far can oxygen reach?" (organ → tissue zoom, vessels and oxygen reach) is rendered by `python3 tools/vessel_slide.py`; rerun it after editing that file, then `python3 tools/build_online.py`.
+- Slide 7 "Behind the numbers" (organ-shortage dots, one dot = 1,000) is rendered by `python3 tools/dots_slide.py` (insertion helper: `tools/slide_insert.py`); rerun it after editing, then `python3 tools/build_online.py`.

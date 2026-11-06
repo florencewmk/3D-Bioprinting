@@ -41,11 +41,11 @@
     },
     {
       "label": "Printing methods",
-      "slide": 8
+      "slide": 9
     },
     {
       "label": "Conclusion",
-      "slide": 19
+      "slide": 20
     }
   ],
   "opening_order": [
@@ -54,5 +54,5 @@
     "contents",
     "question"
   ],
-  "slide_count": 25
+  "slide_count": 26
 }
