@@ -1,7 +1,7 @@
 {
   "source": "presentation/offline.html",
-  "source_sha256": "605356566e50236959c8b519e691c33cfac9ae6451f02365fc8cd432dc5e5c66",
-  "slides": 24,
+  "source_sha256": "ce5a7541ad96f8158c7ff81a310a3647710b67601a52f5b23fa9723db4ecde36",
+  "slides": 25,
   "asset_count": 43,
   "assets": [
     {
@@ -54,7 +54,7 @@
       "bytes": 1299,
       "sha256": "23005c5fdbaaa05ef0de567644990fc55a3632e81e8a737f620bffffe600d65c",
       "slides": [
-        17
+        18
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -270,7 +270,7 @@
       "bytes": 52510,
       "sha256": "28364e2b7254ce62a606838c7033e041ee66ba4735162b42c8a7a65038adc726",
       "slides": [
-        15
+        16
       ],
       "source": "presentation/offline.html",
       "provenance": "Before/after ear photo, Microtia-Congenital Ear Institute and 3DBio Therapeutics, 2022 (references [24], [49], [50]); taken from the user's SoFe pptx."
@@ -281,7 +281,7 @@
       "bytes": 1474,
       "sha256": "2ff7225decd6f332136f17aaf751c416b40edc6244f8c27a8147c5d527af5fb3",
       "slides": [
-        19
+        20
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -292,7 +292,7 @@
       "bytes": 26,
       "sha256": "3b7b8a4b411ddf8db9bacc2f3aabf406f8e4c0c087829b336ca331c40adfdff1",
       "slides": [
-        16
+        17
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -325,8 +325,8 @@
       "bytes": 186181,
       "sha256": "8a7dce691a1be21999447304bdf0497a8297aae0e248313fb58b9607d1acf8bc",
       "slides": [
-        18,
-        19
+        19,
+        20
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
@@ -348,7 +348,7 @@
       "bytes": 126948,
       "sha256": "9e1e5e580aedde32d4281aa0955d61b9615cb118a8dc0b4a40bf0bc4b49ab20a",
       "slides": [
-        15
+        16
       ],
       "source": "presentation/offline.html",
       "provenance": "Meniscus bioprinted in the BioFabrication Facility, NASA (reference [18]); existing deck asset."
@@ -381,7 +381,7 @@
       "bytes": 166955,
       "sha256": "d5f8533bcd3cf12d0f43945d70153b6bc5ba4fecbc455850d6a4ac0d7980dc53",
       "slides": [
-        15
+        16
       ],
       "source": "presentation/offline.html",
       "provenance": "Matthias Maurer running Bioprint FirstAid on the ISS, DLR 2022 (reference [19]); existing deck asset."
@@ -392,7 +392,7 @@
       "bytes": 78676,
       "sha256": "d90e15ff191e982ed4250bdbaf87e10351185c506e508c3febd4c0b64069f479",
       "slides": [
-        15
+        16
       ],
       "source": "presentation/offline.html",
       "provenance": "co-SWIFT vessel image from Harvard SEAS / Wyss Institute news, 12 Aug 2024 (reference [15]); taken from the user's SoFe pptx."
@@ -403,7 +403,7 @@
       "bytes": 69471,
       "sha256": "df0d104737d7dec2e7ff2ba64ffb45150d6768892cfcd1acc9c3fbd0e7102a28",
       "slides": [
-        15
+        16
       ],
       "source": "presentation/offline.html",
       "provenance": "Original background generated in Python for this talk (faded nebula and planet edge in the deck palette); tools/progress_slide.py."
@@ -414,7 +414,7 @@
       "bytes": 16286,
       "sha256": "f6ef09f9895d76084490b19d9527c36d7d385251e7b094870ea1ad4924a8e39a",
       "slides": [
-        15
+        16
       ],
       "source": "presentation/offline.html",
       "provenance": "Printed heart photo, Tel Aviv University, 2019 (reference [20]); taken from the user's SoFe pptx."
@@ -447,7 +447,7 @@
       "bytes": 7301137,
       "sha256": "c9ad5d5baf20cd73e21d6740fba68aafd2d03f1c5a87b50e46cfe3fe790378cc",
       "slides": [
-        16
+        17
       ],
       "source": "presentation/offline.html",
       "provenance": "Bundled bioprinting globe and map, built by tools/offline_map_slide.py from map/ and archived Natural Earth boundaries."
@@ -469,7 +469,7 @@
       "bytes": 392429,
       "sha256": "0c44e396ec25a44a5e6bc0d33e81cd5b4b8de21e863019ef225a1e4f28b63667",
       "slides": [
-        17
+        18
       ],
       "source": "presentation/offline.html",
       "provenance": "Readily3D Tomolite volumetric bioprinting animation (20200930_PROZESS_ANIMATION_LOOP_01, also on the former slide 'Precision is a beginning'); audio removed and re-encoded (H.264, CRF 28) on 4 November 2026; shown as a looping card beside the conclusion ring since 5 November 2026. Credited on the slide."

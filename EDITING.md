@@ -113,3 +113,5 @@ Every slide footer shows `footer_label` from `presentation/settings.json`
 right; no date and no presenter name. `tools/update_footers.py` enforces this and
 `tools/build_online.py` runs it automatically, so slide generators that still
 emit the old footer are corrected on every build.
+
+- Slide 15 "How far can oxygen reach?" (organ → tissue zoom, vessels and oxygen reach) is rendered by `python3 tools/vessel_slide.py`; rerun it after editing that file, then `python3 tools/build_online.py`.

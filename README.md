@@ -10,12 +10,12 @@ Florence Mei Kuan Wong · Speak Out for Engineering 2026 · Düsseldorf · 5 Nov
 
 Open [the presentation](presentation/index.html) in a browser. The web deck loads large media as you approach the relevant slides. Use **Help → Download HTML** or **Ctrl/Cmd+S** to save a portable copy with the fonts, videos, lung animation and interactive map included. No installation is required.
 
-The deck contains **24 slides**:
+The deck contains **25 slides**:
 
 | Slides | Content |
 | --- | --- |
-| 1–19 | Main talk |
-| 20–24 | References and image credits |
+| 1–20 | Main talk |
+| 21–25 | References and image credits |
 
 [Transcript and speaker notes](presentation/transcript.md)
 

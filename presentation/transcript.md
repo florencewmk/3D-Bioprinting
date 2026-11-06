@@ -1,6 +1,6 @@
 # 3D Bioprinting
 
-24 slides · 5 November 2026
+25 slides · 5 November 2026
 
 ## 01. Hi, I'm Florence :)
 
@@ -289,7 +289,20 @@ The problem with bioprinting is that the cells don’t get enough oxygen, since 
 
 Think of being in a small, crowded room. The people near the window get fresh air, but the people in the middle are stuck and suffocate. That’s exactly the situation for bioprinted cells in the incubator.
 
-## 15. Where are we today?
+## 15. How far can oxygen reach?
+
+How far can oxygen reach?
+An organ measures centimetres. Let’s zoom in.
+It is packed with living cells. Every single one needs oxygen.
+Oxygen only reaches about 0.2 mm from the nearest blood vessel.
+Any cell further away starves. A solid printed block dies from the inside.
+So we have to print the vessels too. A network close enough to reach every cell.
+
+### Speaker notes
+
+Let’s zoom in. An organ is a few centimetres big, but it is made of millions of cells, and every one of them needs oxygen. In our body, oxygen comes from the blood vessels, and it only reaches about 0.2 millimetres, one or two sheets of paper. Any cell further away starves. So if we print a solid block of tissue, it dies from the inside. That’s why we also have to print the blood vessels, a network close enough to reach every cell.
+
+## 16. Where are we today?
 
 Where are we today?
 In the lab
@@ -318,7 +331,7 @@ NASA also printed a human meniscus in space, aiming to benefit their astronauts 
 
 Bioprinting is still a new technology and not ready for hospital use. Maybe in the next 10 years, or even longer for a functional organ.
 
-## 16. Bioprinting around the world
+## 17. Bioprinting around the world
 
 Interactive world map of bioprinting research and companies. The globe tours the five leading publication countries, 2000–2025. Press Down Arrow to open the map.
 
@@ -332,7 +345,7 @@ If you’re interested in the research institutes and companies that sell biopri
 
 Source: OpenAlex publication counts, 2000–2025 (1 USA 2,555 · 2 China 2,106 · 3 India 838 · 4 South Korea 655 · 5 Germany 637).
 
-## 17. Take-home summary
+## 18. Take-home summary
 
 Take-home summary
 Transplant demand outpaces donors
@@ -351,7 +364,7 @@ I wish I could share these findings with the woman I met on the tram in Munich.
 
 With this technology, we could save a lot of transplant costs and solve the donor shortage problem. How cool would it be if one day you could even print your own organ and achieve longevity?
 
-## 18. Engineering tomorrow’s possibilities
+## 19. Engineering tomorrow’s possibilities
 
 Engineering tomorrow’s possibilities.
 
@@ -361,7 +374,7 @@ With that, I’ll leave you with a quote, from me to all of you: engineering tom
 
 Stay curious, stay motivated.
 
-## 19. Thank You!
+## 20. Thank You!
 
 Thank You!
 https://github.com/florencewmk/3D-Bioprinting
@@ -374,7 +387,7 @@ I’ve also uploaded this presentation and all the sources to my GitHub.
 
 [Press Down to reveal the GitHub link and QR code.]
 
-## 20. Scientific references · 1
+## 21. Scientific references · 1
 
 Scientific references
 
@@ -384,7 +397,7 @@ Scientific references
 [4] P. J. Bártolo, Ed., Stereolithography: Materials, Processes and Applications. Boston, MA, USA: Springer, 2011. doi: 10.1007/978-0-387-92904-0.
 [5] S. O’Halloran, A. Pandit, A. Heise, and A. Kellett, “Two-photon polymerization: Fundamentals, materials, and chemical modification strategies,” Adv. Sci., vol. 10, no. 7, Art. no. 2204072, Mar. 2023. doi: 10.1002/advs.202204072.
 
-## 21. Scientific references · 2
+## 22. Scientific references · 2
 
 Scientific references
 
@@ -416,7 +429,7 @@ Supporting literature
 [42] Y. Sang, Z. Zhao, M. Zhao, P. Hao, Y. Leng, and H. Liu, “From UV to near-infrared, WS₂ nanosheet: A novel photocatalyst for full solar light spectrum photodegradation,” Adv. Mater., vol. 27, no. 2, pp. 363–369, 2015. doi: 10.1002/adma.201403264.
 [43] W. K. Swainson, “Method, medium and apparatus for producing three-dimensional figure product,” U.S. Patent 4 041 476, Aug. 9, 1977.
 
-## 22. Data and online sources · 1
+## 23. Data and online sources · 1
 
 Data and online sources
 
@@ -426,7 +439,7 @@ Data and online sources
 [14] Rice University. (2019). Organ bioprinting gets a breath of fresh air. https://news.rice.edu/news/2019/organ-bioprinting-gets-breath-fresh-air (accessed 14 October 2026).
 [15] Harvard SEAS / Wyss Institute. (2024). 3D-printed blood vessels bring artificial organs closer to reality. https://seas.harvard.edu/news/2024/08/3d-printed-blood-vessels-bring-artificial-organs-closer-reality (accessed 14 October 2026).
 
-## 23. Data and online sources · 2
+## 24. Data and online sources · 2
 
 Data and online sources
 
@@ -448,7 +461,7 @@ YouTube videos
 [46] Protolabs, “How Does Stereolithography 3D Printing Work?,” YouTube. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=0kHDXPQDSYY
 [47] EPFL, “Printing tiny, high-precision objects in a matter of seconds,” YouTube, Feb. 12, 2020. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=ONBHkzimRbg
 
-## 24. Image references
+## 25. Image references
 
 Images
 
