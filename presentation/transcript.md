@@ -209,23 +209,18 @@ For top-down, the light scans from above, and the platform moves down. The downs
 
 Which light?
 UV, near-infrared, or both
-stops
 UV / violet
 ≈ 365–405 nm
 Fast, well-known photoinitiators
 Fine detail
 Shallow: under 1 mm in tissue
 DNA and proteins absorb it, so it can harm cells
-deeper
 Near-infrared (NIR)
 ≈ 700–1700 nm
 Deeper: millimetres, over 1 cm in some studies
 Gentler on cells
 Needs special NIR-sensitive initiators
 Water absorbs it and heats up
-cures only where both meet
-IR heat
-UV
 Stereo-thermal lithography
 UV light + infrared heat
 Photoinitiator and thermal initiator work together
