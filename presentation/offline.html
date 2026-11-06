@@ -1159,6 +1159,8 @@ function bottomUp(svg){
   const arm=mk('polyline',{fill:'none',stroke:'rgba(241,245,245,.55)','stroke-width':3},svg);
   const plate=mk('rect',{x:120,width:160,height:10,rx:2,fill:'var(--fg)','fill-opacity':.85},svg);
   const arrow=mk('path',{d:'M0 10 L0 -8 M-6 -2 L0 -8 L6 -2',stroke:'var(--cyan)','stroke-width':2,fill:'none',opacity:0},svg);
+  const strain=[0,1,2,3,4].map(()=>mk('path',{fill:'none',stroke:'var(--rose)','stroke-width':1.6,'stroke-linecap':'round',opacity:0},svg));
+  const pullTxt=mk('text',{x:324,y:0,class:'lbl','font-size':13,style:'fill:var(--rose)',opacity:0},svg);pullTxt.textContent='peel pulls';
   const pos=k=>floor-(k+1)*lh-10;
   return t=>{
     let tc=t%cycle,py,shown,newest=-1,glow=0,beamOn=0,arrowOp=0,fade=1;
@@ -1172,6 +1174,10 @@ function bottomUp(svg){
       r.setAttribute('fill-opacity',(j===newest?.25+.7*glow:.6)*vis*fade);r.setAttribute('fill',j===newest?'#E6DAFF':'var(--lav)')});
     const w=newest>=0?W[newest]:0;beam.setAttribute('points',`192,350 208,350 ${200+w/2},301 ${200-w/2},301`);beam.setAttribute('fill-opacity',beamOn);
     arrow.setAttribute('transform',`translate(300 ${py-28})`);arrow.setAttribute('opacity',arrowOp);
+    let sOp=0,bot=0,sw=0;if(tc<N*T){const k=Math.floor(tc/T),p=(tc-k*T)/T;if(p>=.45&&p<.66){sOp=Math.sin((p-.45)/.21*Math.PI);bot=py+10+(k+1)*lh;sw=W[k]}}
+    strain.forEach((e,i)=>{if(sOp<=0){e.setAttribute('opacity',0);return}const x=200-sw/2+sw*(i+.5)/5,h=floor-bot,z=4*sOp;
+      e.setAttribute('d',`M${x} ${bot} q${z} ${h/4} 0 ${h/2} q${-z} ${h/4} 0 ${h/2}`);e.setAttribute('opacity',sOp)});
+    pullTxt.setAttribute('y',bot+ (floor-bot)/2+4);pullTxt.setAttribute('opacity',sOp);
   };
 }
 /* ---------- top-down printer ---------- */
