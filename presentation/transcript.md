@@ -128,19 +128,11 @@ Back in 1984, a man in the USA called Chuck Hull, who is now 87 years old, inven
 
 Two words to know
 Bioink & curing
-STATE: LIQUID
-Bioink
-The “ink” of a bioprinter: living cells floating in a water-rich gel precursor (for example GelMA), plus a photoinitiator that reacts to light.
-cells
-polymer chains
-photoinitiator
-Curing
-Light hits the photoinitiator. It splits into radicals, very reactive molecules that link the chains together.
-light
-→photoinitiator
-→radicals
-→crosslinks
-The liquid turns into a gel, and the cells are held in place inside it.
+Bioink: living cells in a liquid gelPolymer chains and a photoinitiator float around them.
+Light hits a photoinitiatorIt splits into two radicals, very reactive molecules.
+Radicals link the chains togetherOnly where the light shines.
+Curing: the liquid turns into a gelThe cells are held in place inside it.
+Wash away the restOne printed layer. Repeat, layer by layer, to build in 3D.
 Source: Li et al., iScience, 26, 106039 (2023)
 
 ### Speaker notes

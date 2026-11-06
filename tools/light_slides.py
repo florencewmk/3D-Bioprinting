@@ -59,7 +59,7 @@ def visible_text(body):
 
 
 def nav(conclusion, printing=FIRST):
-    return ('<nav class="section-nav" aria-label="Talk sections"><button data-goto="3" class="">Introduction</button>'
+    return ('<nav class="section-nav" aria-label="Talk sections"><button data-goto="2" class="">Introduction</button>'
             f'<button data-goto="{printing}" class="current">Printing methods</button><button data-goto="{conclusion}" class="">'
             'Conclusion</button><span></span></nav>')
 

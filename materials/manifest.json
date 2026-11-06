@@ -1,8 +1,8 @@
 {
   "source": "presentation/offline.html",
-  "source_sha256": "f3256159366e95db61cedaaa13fd51d29e09f79798a015bc38e253d8228b5ae4",
+  "source_sha256": "e68528d33896ec20aea0c251a401f9e68e9cce7c5efa76ab9f640c334d5d5337",
   "slides": 25,
-  "asset_count": 42,
+  "asset_count": 41,
   "assets": [
     {
       "path": "materials/diagrams/008c09b793c6c0bb3b34019eb11ba4b75fcf08529ec84e0b4d77b5ad4c59fabb.svg",
@@ -157,17 +157,6 @@
       ],
       "source": "presentation/offline.html",
       "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
-    },
-    {
-      "path": "materials/diagrams/bc25bdb983dc54ebfe00d82d6030cb743f1fbc44c5f860b9a1f6b602dfc66c3b.svg",
-      "mime": "image/svg+xml",
-      "bytes": 131,
-      "sha256": "bc25bdb983dc54ebfe00d82d6030cb743f1fbc44c5f860b9a1f6b602dfc66c3b",
-      "slides": [
-        9
-      ],
-      "source": "presentation/offline.html",
-      "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
     },
     {
       "path": "materials/diagrams/da904fd4d29c8e3e09f795dd7fcada836ff8be31cb2cd898810e12aab28a1e41.svg",

@@ -123,6 +123,14 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
 .light-slide .s-womb.t3 .col-t{opacity:1}
 .light-slide .takeaway{position:absolute;left:6cqw;right:6cqw;bottom:8.6cqw;text-align:center;font-size:1.3cqw;color:#D3D9DD}
 .light-slide .takeaway small{display:block;font-size:1cqw;color:var(--muted);margin-top:.4cqw}
+.light-slide .s-ink .ink-cv{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.light-slide .s-ink>.ls-eyebrow,.light-slide .s-ink>h2{position:relative;z-index:1}
+.light-slide .s-ink .ink-caps{position:relative;z-index:1;margin-top:1.6cqw;height:6cqw;width:60cqw}
+.light-slide .s-ink .ink-cap{position:absolute;inset:0;opacity:0;transform:translateY(.5cqw);transition:opacity .5s,transform .5s}
+.light-slide .s-ink .ink-cap.on{opacity:1;transform:none}
+.light-slide .s-ink .ink-cap b{display:block;font-weight:500;font-size:2.1cqw;line-height:1.2}
+.light-slide .s-ink .ink-cap span{display:block;font-size:1.5cqw;line-height:1.35;color:#c3c0cb;margin-top:.3cqw}
+@media print{.light-slide .s-ink .ink-cap{opacity:0!important}.light-slide .s-ink .ink-cap[data-c="4"]{opacity:1!important;transform:none!important}}
 </style>
 <!--LS 10 2 How it started-->
 <div class="ls-stage s-hull" data-ls="10">
@@ -288,26 +296,17 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
   </div>
   <p class="refs">Source: Chen et al., Advanced Science, 7, 1903783 (2020) · Bártolo &amp; Mitchell, Rapid Prototyping Journal, 9, 150–156 (2003)</p>
 </div>
-<!--LS 14 2 Bioink and curing-->
+<!--LS 14 4 Bioink and curing-->
 <div class="ls-stage s-ink" data-ls="14">
+  <canvas class="ink-cv" id="ls-ink" role="img" aria-label="Animation: bioink with cells, polymer chains and photoinitiator; light splits a photoinitiator into radicals, which link the chains where the light shines; that region becomes a gel holding the cells, and the rest is washed away."></canvas>
   <div class="ls-eyebrow">Two words to know</div>
   <h2>Bioink &amp; curing</h2>
-  <svg class="lens" id="ls-lens" viewBox="0 0 500 500" aria-label="Zoom into bioink: cells, polymer chains and photoinitiator"></svg>
-  <div class="state" id="ls-inkState">STATE: <b>LIQUID</b></div>
-  <div class="ink-text">
-    <div class="r" data-s="0">
-      <h3>Bioink</h3>
-      <p>The “ink” of a bioprinter: living cells floating in a water-rich gel precursor (for example GelMA), plus a photoinitiator that reacts to light.</p>
-      <div class="legend"><span><i style="border:2px solid var(--mint)"></i>cells</span><span><i style="background:var(--lav)"></i>polymer chains</span><span><i style="background:var(--cyan)"></i>photoinitiator</span></div>
-    </div>
-    <div class="r" data-s="1">
-      <h3>Curing</h3>
-      <p>Light hits the photoinitiator. It splits into radicals, very reactive molecules that link the chains together.</p>
-      <div class="chain"><span>light</span><em>→</em><span>photoinitiator</span><em>→</em><span>radicals</span><em>→</em><span>crosslinks</span></div>
-    </div>
-    <div class="r" data-s="2">
-      <p style="font-size:1.6cqw;color:var(--fg)">The liquid turns into a gel, and the cells are held in place inside it.</p>
-    </div>
+  <div class="ink-caps">
+    <div class="ink-cap" data-c="0"><b>Bioink: living cells in a liquid gel</b><span>Polymer chains and a photoinitiator float around them.</span></div>
+    <div class="ink-cap" data-c="1"><b>Light hits a photoinitiator</b><span>It splits into two radicals, very reactive molecules.</span></div>
+    <div class="ink-cap" data-c="2"><b>Radicals link the chains together</b><span>Only where the light shines.</span></div>
+    <div class="ink-cap" data-c="3"><b>Curing: the liquid turns into a gel</b><span>The cells are held in place inside it.</span></div>
+    <div class="ink-cap" data-c="4"><b>Wash away the rest</b><span>One printed layer. Repeat, layer by layer, to build in 3D.</span></div>
   </div>
   <p class="refs">Source: Li et al., iScience, 26, 106039 (2023)</p>
 </div>
@@ -436,36 +435,97 @@ function topDown(svg){
     if(bladeX!==null){blade.setAttribute('x',bladeX-11);blade.setAttribute('opacity',1)}else blade.setAttribute('opacity',0);
   };
 }
-/* ---------- bioink lens ---------- */
-function lens(svg){
-  let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
-  const defs=mk('defs',{},svg);const cp=mk('clipPath',{id:'ls-lensClip'},defs);mk('circle',{cx:250,cy:250,r:230},cp);
-  const g=mk('g',{'clip-path':'url(#ls-lensClip)'},svg);
-  mk('circle',{cx:250,cy:250,r:230,fill:'rgba(180,154,216,.06)'},g);
-  const wash=mk('rect',{x:0,y:0,width:500,height:500,fill:'var(--lav)',opacity:0},g);
-  const chains=[];for(let c=0;c<15;c++){const x0=40+rnd()*420,y0=40+rnd()*420,a=rnd()*Math.PI*2,pts=[];let x=x0,y=y0,ang=a;
-    for(let i=0;i<9;i++){pts.push({x,y,ph:rnd()*6.28});ang+=(rnd()-.5)*1.2;x+=Math.cos(ang)*24;y+=Math.sin(ang)*24}
-    chains.push({pts,el:mk('polyline',{fill:'none',stroke:'var(--lav)','stroke-width':3,'stroke-linecap':'round','stroke-linejoin':'round','stroke-opacity':.85},g)})}
-  const links=[];chains.forEach((A,i)=>chains.forEach((B,j)=>{if(j<=i)return;A.pts.forEach((p,a)=>B.pts.forEach((q,b)=>{const d=Math.hypot(p.x-q.x,p.y-q.y);if(d<30&&links.length<46&&rnd()<.5)links.push({i,a,j,b})}))}));
-  links.forEach(l=>l.el=mk('line',{stroke:'var(--cyan)','stroke-width':2.4,'stroke-linecap':'round',opacity:0},g));
-  const cells=[[150,170],[330,140],[260,300],[130,340],[370,330],[240,110]].map(([x,y])=>{const grp=mk('g',{},g);mk('circle',{r:30,fill:'rgba(112,194,188,.08)',stroke:'var(--mint)','stroke-width':2.4},grp);mk('circle',{r:10,fill:'var(--mint)','fill-opacity':.55},grp);return{x,y,ph:rnd()*6,grp}});
-  const pis=[];for(let i=0;i<22;i++){const x=40+rnd()*420,y=40+rnd()*420;const grp=mk('g',{},g);const dot=mk('circle',{r:4.5,fill:'var(--cyan)'},grp);
-    const spark=mk('path',{d:'M-9 0H9M0 -9V9M-6 -6L6 6M-6 6L6 -6',stroke:'#fff','stroke-width':1.6,opacity:0},grp);pis.push({x,y,ph:rnd()*6,grp,dot,spark})}
-  mk('circle',{cx:250,cy:250,r:230,fill:'none',stroke:'rgba(241,245,245,.5)','stroke-width':2},svg);
-  const state=document.getElementById('ls-inkState');let stepAt={1:null,2:null},last=-1,prevT=0;
+/* ---------- bioink & curing (canvas) ---------- */
+function ink(cv){
+  if(!cv)return()=>{};
+  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const caps=[...cv.parentNode.querySelectorAll('.ink-cap')];
+  const LV='180,154,216',MI='112,194,188',PK='227,148,173',CY='100,223,255',WH='241,245,245',BG='5,5,6';
+  const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let seed=11;const rnd=()=>(seed=seed*16807%2147483647)/2147483647;
+  const RC={x:1240,y:705},RO=300,RI=135,Y0=380,Y1=1060,C={x:960,y:720};
+  const ring=(x,y)=>{const d=Math.hypot(x-RC.x,y-RC.y);return d>RI&&d<RO};
+  const cl=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+  const chains=[];const chain=(x,y)=>{let a=rnd()*6.28;const n=[];
+    for(let i=0;i<13;i++){n.push({x,y,ph:rnd()*6.28,r:ring(x,y)});a+=(rnd()-.5)*1.1;
+      let nx=x+Math.cos(a)*30,ny=y+Math.sin(a)*30;if(ny<Y0+10||ny>Y1-10||nx<10||nx>W-10){a+=Math.PI;nx=x+Math.cos(a)*30;ny=y+Math.sin(a)*30}x=nx;y=ny}
+    chains.push(n)};
+  for(let c=0;c<34;c++)chain(40+rnd()*1840,Y0+30+rnd()*(Y1-Y0-60));
+  for(let c=0;c<12;c++){const a=rnd()*6.28,r=RI+25+rnd()*(RO-RI-50);chain(RC.x+Math.cos(a)*r,RC.y+Math.sin(a)*r)}
+  const at=(a,r)=>({x:RC.x+Math.cos(a*Math.PI/180)*r,y:RC.y+Math.sin(a*Math.PI/180)*r});
+  const cells=[at(210,215),at(330,218),at(95,215),{x:330,y:640},{x:560,y:930},{x:800,y:520},{x:1720,y:470},{x:1760,y:910},{x:960,y:990},{x:1240,y:705}]
+    .map(p=>({x:p.x,y:p.y,ph:rnd()*6.28,r:ring(p.x,p.y)}));
+  const free=(x,y)=>cells.every(c=>Math.hypot(c.x-x,c.y-y)>62);
+  const pis=[];const addPi=(x,y)=>{if(free(x,y))pis.push({x,y,ph:rnd()*6.28,a:rnd()*6.28,r:ring(x,y)})};
+  const P0=at(5,222);pis.push({x:P0.x,y:P0.y,ph:0,a:2.2,r:true});
+  for(let i=0;i<46;i++)addPi(30+rnd()*1860,Y0+20+rnd()*(Y1-Y0-40));
+  for(let i=0;i<16;i++){const a=rnd()*6.28,r=RI+20+rnd()*(RO-RI-40),p={x:RC.x+Math.cos(a)*r,y:RC.y+Math.sin(a)*r};
+    if(pis.every(q=>Math.hypot(q.x-p.x,q.y-p.y)>55))addPi(p.x,p.y)}
+  const used=new Set(),key=(c,i)=>c+':'+i;
+  pis.forEach(p=>{p.links=[];if(!p.r)return;const near=[];
+    chains.forEach((n,c)=>n.forEach((q,i)=>{if(q.r&&Math.hypot(q.x-p.x,q.y-p.y)<170)near.push([c,i])}));
+    const pairs=[];near.forEach(A=>near.forEach(B=>{if(A[0]>=B[0])return;const a=chains[A[0]][A[1]],b=chains[B[0]][B[1]],d=Math.hypot(a.x-b.x,a.y-b.y);
+      if(d>14&&d<85)pairs.push({A,B,s:Math.hypot((a.x+b.x)/2-p.x,(a.y+b.y)/2-p.y)})}));
+    pairs.sort((u,v)=>u.s-v.s);for(const q of pairs){if(p.links.length>=2)break;if(used.has(key(...q.A))||used.has(key(...q.B)))continue;used.add(key(...q.A));used.add(key(...q.B));p.links.push(q)}});
+  const D=[0,2.8,3.4,2.2,2.2];let st=[0,null,null,null,null],last=0,prevT=-1,shown=-1;
+  const prog=(k,t,step)=>rm?(k<=step?1:0):(st[k]==null?0:cl((t-st[k])/D[k]));
+  const pill=(x,y,w,h)=>{cx.fillStyle='rgba('+BG+',.85)';cx.beginPath();cx.roundRect(x,y,w,h,12);cx.fill()};
+  const label=(text,x,y,col,a,tx,ty)=>{if(a<=.01)return;cx.globalAlpha=a;cx.font='500 30px Jost, sans-serif';const w=cx.measureText(text).width;
+    if(tx!==undefined){cx.strokeStyle='rgba('+WH+',.6)';cx.lineWidth=2;cx.beginPath();cx.moveTo(x,y);cx.lineTo(tx,ty);cx.stroke()}
+    pill(x-w/2-14,y-24,w+28,46);cx.fillStyle=col;cx.textAlign='center';cx.fillText(text,x,y+10);cx.globalAlpha=1};
+  const ringPath=()=>{cx.beginPath();cx.arc(RC.x,RC.y,RO,0,Math.PI*2);cx.moveTo(RC.x+RI,RC.y);cx.arc(RC.x,RC.y,RI,Math.PI*2,0,true)};
   return (t,step)=>{
-    if(t<prevT){stepAt={1:null,2:null};last=-1}prevT=t;
-    if(step!==last){if(step>=1&&stepAt[1]===null)stepAt[1]=t;if(step<1)stepAt[1]=null;if(step>=2&&stepAt[2]===null)stepAt[2]=t;if(step<2)stepAt[2]=null;last=step}
-    const s2=stepAt[1]===null?-1:t-stepAt[1], s3=stepAt[2]===null?-1:t-stepAt[2];
-    const gel=s3<0?0:Math.min(1,s3/2.5), amp=7*(1-gel);
-    wash.setAttribute('opacity',s2<0?0:Math.max(0,.22*Math.cos(Math.min(s2,1.6)/1.6*Math.PI/2)));
-    chains.forEach(c=>{c.cur=c.pts.map(p=>[p.x+Math.sin(t*1.7+p.ph)*amp,p.y+Math.cos(t*1.3+p.ph*1.3)*amp]);c.el.setAttribute('points',c.cur.map(p=>p.join(',')).join(' '))});
-    links.forEach((l,n)=>{const on=s3<0?0:Math.max(0,Math.min(1,(s3*18-n)/3));const p=chains[l.i].cur[l.a],q=chains[l.j].cur[l.b];
-      l.el.setAttribute('x1',p[0]);l.el.setAttribute('y1',p[1]);l.el.setAttribute('x2',q[0]);l.el.setAttribute('y2',q[1]);l.el.setAttribute('opacity',on)});
-    cells.forEach(c=>c.grp.setAttribute('transform',`translate(${c.x+Math.sin(t*.9+c.ph)*amp*.8} ${c.y+Math.cos(t*.8+c.ph)*amp*.8})`));
-    pis.forEach((p,n)=>{const burst=s2<0?0:Math.max(0,Math.min(1,(s2*8-n*.25)));p.grp.setAttribute('transform',`translate(${p.x+Math.sin(t*2.2+p.ph)*amp*1.3} ${p.y+Math.cos(t*2+p.ph)*amp*1.3}) rotate(${t*90%360})`);
-      p.dot.setAttribute('opacity',1-burst);p.spark.setAttribute('opacity',burst*(s3<0?(.55+.45*Math.sin(t*9+n)):Math.max(0,1-s3/1.5)))});
-    state.innerHTML='STATE: <b>'+(gel>=.6?'GEL':'LIQUID')+'</b>';
+    if(t<prevT){st=[0,null,null,null,null];last=0}prevT=t;
+    if(step!==last){if(step>last){for(let k=last+1;k<=step;k++)st[k]=k===step?t:-1e9}else{for(let k=step+1;k<5;k++)st[k]=null;if(step)st[step]=-1e9}last=step}
+    if(shown!==step){caps.forEach(c=>c.classList.toggle('on',+c.dataset.c===step));shown=step}
+    const p1=prog(1,t,step),p2=prog(2,t,step),p3=prog(3,t,step),p4=prog(4,t,step);
+    const m=ease(p1/.3)*(1-ease(p2/.22)),s=1+2.6*m,F={x:C.x+(P0.x-C.x)*m,y:C.y+(P0.y-C.y)*m};
+    const scr=p=>({x:C.x+(p.x-F.x)*s,y:C.y+(p.y-F.y)*s});
+    const stiff=ease(p3),out=ease(p4),front=Y0-40+(Y1-Y0+80)*ease((p2-.18)/.45),lightA=cl((p2-.15)*6)*(1-stiff*.85);
+    const fade=r=>r?1:1-out,drop=r=>r?0:150*out;
+    const pos=(q,amp)=>{const A=amp*(q.r?1-stiff:1);return{x:q.x+A*Math.sin(t*1.6+q.ph),y:q.y+A*Math.cos(t*1.3+q.ph*1.3)+drop(q.r)}};
+    cx.setTransform(Q,0,0,Q,0,0);cx.clearRect(0,0,W,H);
+    cx.save();cx.translate(C.x,C.y);cx.scale(s,s);cx.translate(-F.x,-F.y);
+    if(stiff>0){ringPath();cx.fillStyle='rgba('+LV+','+(.13*stiff)+')';cx.fill('evenodd')}
+    if(lightA>0){cx.save();cx.beginPath();cx.rect(0,0,W,front);cx.clip();ringPath();cx.fillStyle='rgba('+CY+','+(.16*lightA)+')';cx.fill('evenodd');
+      cx.lineWidth=3;cx.strokeStyle='rgba('+CY+','+(.6*lightA)+')';cx.stroke();cx.restore();
+      if(p2<1&&front<Y1+30){cx.save();ringPath();cx.clip('evenodd');cx.fillStyle='rgba('+CY+','+(.55*lightA)+')';cx.fillRect(0,front-5,W,10);cx.restore()}}
+    if(out>0){cx.globalAlpha=out;cx.lineWidth=3;cx.strokeStyle='rgba('+WH+',.55)';ringPath();cx.stroke();cx.globalAlpha=1}
+    const cur=chains.map(n=>n.map(q=>pos(q,9)));
+    cx.lineCap='round';cx.lineWidth=4;
+    chains.forEach((n,c)=>{for(let i=1;i<n.length;i++){const a=fade(n[i-1].r&&n[i].r);if(a<=0)continue;
+      cx.strokeStyle='rgba('+LV+','+(.85*a)+')';cx.beginPath();cx.moveTo(cur[c][i-1].x,cur[c][i-1].y);cx.lineTo(cur[c][i].x,cur[c][i].y);cx.stroke()}});
+    const fy=p=>cl((p.y-Y0)/(Y1-Y0));
+    pis.forEach((p,n)=>{const hit=n===0?(p1>=.66?.12:9):.18+.45*fy(p);const pp=n===0&&p2===0?0:p2;
+      const split=n===0?cl((p1-.66)/.18):(p.r?cl((p2-hit)/.06):0);
+      if(split<1){const a=fade(p.r)*(1-split);if(a>0){cx.fillStyle='rgba('+WH+','+(.92*a)+')';cx.beginPath();cx.arc(p.x+5*Math.sin(t*2+p.ph),p.y+5*Math.cos(t*1.8+p.ph)+drop(p.r),6,0,7);cx.fill()}}
+      if(n===0&&p1>.6&&p1<.9){const f=cl((p1-.66)/.24);cx.strokeStyle='rgba('+WH+','+(1-f)+')';cx.lineWidth=2;cx.beginPath();cx.arc(p.x,p.y,6+40*f,0,7);cx.stroke()}
+      if(split<=0)return;
+      [0,1].forEach(k=>{const ang=p.a+k*Math.PI,sep=26*ease(split),r0={x:p.x+Math.cos(ang)*sep,y:p.y+Math.sin(ang)*sep};
+        const L=p.links[k];let tr=0,g=0,mid=r0;
+        if(L){const a=cur[L.A[0]][L.A[1]],b=cur[L.B[0]][L.B[1]];mid={x:(a.x+b.x)/2,y:(a.y+b.y)/2};
+          tr=ease((pp-hit-.05)/.16);g=ease((pp-hit-.18)/.14);
+          if(g>0){cx.strokeStyle='rgba('+PK+',.95)';cx.lineWidth=4.5;cx.beginPath();cx.moveTo(mid.x+(a.x-mid.x)*g,mid.y+(a.y-mid.y)*g);cx.lineTo(mid.x+(b.x-mid.x)*g,mid.y+(b.y-mid.y)*g);cx.stroke()}}
+        const ra=(1-g)*(L||!p2?1:1-cl((pp-hit-.2)/.2));if(ra<=0)return;
+        const x=r0.x+(mid.x-r0.x)*tr,y=r0.y+(mid.y-r0.y)*tr,pulse=1+.25*Math.sin(t*9+k*3+n);
+        cx.fillStyle='rgba('+PK+','+ra+')';cx.beginPath();cx.arc(x,y,6.5,0,7);cx.fill();
+        cx.strokeStyle='rgba('+PK+','+(.45*ra)+')';cx.lineWidth=2;cx.beginPath();cx.arc(x,y,12*pulse,0,7);cx.stroke()})});
+    cells.forEach(c=>{const a=fade(c.r);if(a<=0)return;const q=pos(c,6);cx.fillStyle='rgba('+MI+','+(.1*a)+')';cx.strokeStyle='rgba('+MI+','+a+')';cx.lineWidth=3.5;
+      cx.beginPath();cx.arc(q.x,q.y,40,0,7);cx.fill();cx.stroke();cx.fillStyle='rgba('+MI+','+(.55*a)+')';cx.beginPath();cx.arc(q.x,q.y,13,0,7);cx.fill()});
+    if(p1>.2&&p1<.66){const ph=cl((p1-.3)/.36),hy=P0.y-300+300*ph;cx.strokeStyle='rgba('+CY+','+cl((p1-.25)*12)+')';cx.lineWidth=3;cx.beginPath();
+      for(let y=Math.max(P0.y-300,hy-170);y<=hy;y+=2){const x=P0.x+9*Math.sin(y*.16-t*12);y===Math.max(P0.y-300,hy-170)?cx.moveTo(x,y):cx.lineTo(x,y)}cx.stroke()}
+    cx.restore();
+    cx.fillStyle='rgb('+BG+')';cx.fillRect(0,0,W,Y0-70);const gr=cx.createLinearGradient(0,Y0-70,0,Y0+20);gr.addColorStop(0,'rgba('+BG+',1)');gr.addColorStop(1,'rgba('+BG+',0)');cx.fillStyle=gr;cx.fillRect(0,Y0-71,W,92);
+    const l0=1-cl(p1*5);
+    if(l0>0){const c0=scr(cells[3]),ch=chains.map(n=>n[6]).reduce((b,q)=>Math.hypot(q.x-560,q.y-760)<Math.hypot(b.x-560,b.y-760)?q:b),
+      pi=pis.slice(1).reduce((b,q)=>Math.hypot(q.x-820,q.y-720)<Math.hypot(b.x-820,b.y-720)?q:b);
+      label('cell',c0.x,c0.y-110,'rgb('+MI+')',l0,c0.x,c0.y-42);const h=scr(pos(ch,9));label('polymer chain',h.x-40,h.y+130,'rgb('+LV+')',l0,h.x,h.y+6);
+      const p=scr(pi);label('photoinitiator',p.x+60,p.y-120,'rgb('+WH+')',l0,p.x,p.y-8)}
+    const sp=scr(P0);label('photoinitiator',sp.x,sp.y-120,'rgb('+WH+')',cl((p1-.25)*6)*(1-cl((p1-.62)*10)),sp.x,sp.y-30);
+    label('2 radicals',sp.x,sp.y+130,'rgb('+PK+')',cl((p1-.8)*8)*(1-cl(p2*5)),sp.x,sp.y+50);
+    const gl=cl((p3-.4)*3);label('gel',RC.x+RO+90,RC.y-RO+70,'rgb('+LV+')',gl*(1-out*.0),RC.x+RO*.72,RC.y-RO*.6);
+    label('still liquid',340,450,'rgb(153,163,174)',gl*(1-out));
+    label('one printed layer',RC.x,RC.y+RO+38,'rgb('+WH+')',cl((p4-.5)*3));
   };
 }
 /* ---------- womb ---------- */
@@ -511,7 +571,7 @@ function tissue(svg){
 const segs=document.getElementById('ls-segs');
 for(let i=0;i<5;i++)mk('line',{x1:100+i*200+66,y1:110,x2:100+(i+1)*200-66,y2:110,class:'seg','data-s':i+1},segs);
 
-const anims={12:[bottomUp(document.getElementById('ls-bu')),topDown(document.getElementById('ls-td'))],14:[lens(document.getElementById('ls-lens'))],16:[womb(document.getElementById('ls-womb')),tissue(document.getElementById('ls-tissue'))]};
+const anims={12:[bottomUp(document.getElementById('ls-bu')),topDown(document.getElementById('ls-td'))],14:[ink(document.getElementById('ls-ink'))],16:[womb(document.getElementById('ls-womb')),tissue(document.getElementById('ls-tissue'))]};
 
 
 
