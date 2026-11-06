@@ -142,6 +142,8 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
 .light-slide .s-light .lt-card li{padding-left:1.6cqw}
 @media print{.light-slide .s-light .lt-card{opacity:0!important}.light-slide .s-light .lt-card[data-c="2"]{opacity:1!important;transform:none!important}}
 .light-slide .s-obs .vox-cv{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.light-slide .s-journey .punch{bottom:4.6cqw}
+.light-slide .s-journey .jr-cv{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 </style>
 <!--LS 10 2 How it started-->
 <div class="ls-stage s-hull" data-ls="10">
@@ -159,6 +161,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
 </div>
 <!--LS 11 6 From patient to print-->
 <div class="ls-stage s-journey" data-ls="11">
+  <canvas class="jr-cv" id="ls-journey" role="img" aria-label="Animation: one of the patient’s cells is taken, doubles twenty times to about a million cells, is mixed into bioink, printed layer by layer into a small tube, matured at 37 °C and returned to the same patient."></canvas>
   <div class="ls-eyebrow">Imagine it for bioprinting</div>
   <h2>From patient to print</h2>
   <svg class="journey" viewBox="0 0 1200 300" aria-label="Process: biopsy, grow cells, bioink, print, mature, back to patient">
@@ -590,6 +593,58 @@ function voxels(cv){
     cx.globalAlpha=1;
   };
 }
+/* ---------- one cell, from patient to print ---------- */
+function journeyStory(cv){
+  if(!cv)return()=>{};
+  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const MI='112,194,188',LV='180,154,216',PK='227,148,173',CY='100,223,255',WH='241,245,245',MU='153,163,174';
+  const X=[0,1,2,3,4,5].map(k=>76.8+(100+200*k)*1.472),Y=770;
+  const cl=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+  let seed=9;const rnd=()=>(seed=seed*16807%2147483647)/2147483647;
+  const sun=(n,R)=>{const a=[];for(let i=0;i<n;i++){const r=R*Math.sqrt((i+.5)/n),th=i*2.39996;a.push([Math.cos(th)*r,Math.sin(th)*r])}return a};
+  const cluster=sun(160,72),mix=[...Array(36)].map(()=>[(rnd()-.5)*130,(rnd()-.5)*104]),from=mix.map((_,i)=>cluster[(i*4)%160]);
+  const chains=[...Array(7)].map(()=>{let x=(rnd()-.5)*110,y=(rnd()-.5)*90,a=rnd()*6.28;const p=[];for(let i=0;i<7;i++){p.push([x,y]);a+=(rnd()-.5)*1.2;x=Math.max(-68,Math.min(68,x+Math.cos(a)*16));y=Math.max(-55,Math.min(55,y+Math.sin(a)*16))}return p});
+  let st=[0,null,null,null,null,null],last=0,prevT=-1;
+  const local=(k,t)=>rm?99:(st[k]==null?0:t-st[k]);
+  const dot=(x,y,r,col,a)=>{cx.fillStyle='rgba('+col+','+a+')';cx.beginPath();cx.arc(x,y,r,0,7);cx.fill()};
+  const cell=(x,y,r,a)=>{cx.strokeStyle='rgba('+MI+','+a+')';cx.fillStyle='rgba('+MI+','+(.15*a)+')';cx.lineWidth=Math.max(1.5,r/5);cx.beginPath();cx.arc(x,y,r,0,7);cx.fill();cx.stroke();dot(x,y,r*.35,MI,.7*a)};
+  const label=(s,x,a,col)=>{if(a<=0)return;cx.globalAlpha=a;cx.font='500 26px Jost, sans-serif';cx.textAlign='center';cx.fillStyle=col||'rgb('+WH+')';cx.fillText(s,x,Y-98);cx.globalAlpha=1};
+  const blob=(x,y,a,glow)=>{cx.beginPath();for(let i=0;i<=40;i++){const th=i/40*6.283,r=56+8*Math.sin(3*th+1)+5*Math.cos(5*th);const px=x+Math.cos(th)*r,py=y+Math.sin(th)*r*.82;i?cx.lineTo(px,py):cx.moveTo(px,py)}
+    cx.closePath();cx.fillStyle='rgba('+PK+','+(.5*a+.3*glow)+')';cx.fill();if(glow>0){cx.strokeStyle='rgba('+PK+','+glow+')';cx.lineWidth=3;cx.stroke()}};
+  const tube=(x,y,n,a,warm)=>{for(let i=0;i<n;i++){const yy=y+52-i*13;cx.strokeStyle='rgba('+LV+','+(.8*a)+')';cx.fillStyle='rgba(5,5,6,'+a+')';cx.lineWidth=2.5;
+      cx.beginPath();cx.ellipse(x,yy,52,15,0,0,7);cx.fill();cx.stroke();for(let j=0;j<5;j++){const th=(j/5)*6.283+i;dot(x+Math.cos(th)*44,yy+Math.sin(th)*11,3.4,MI,.9*a)}}
+    if(n>0){const yy=y+52-(n-1)*13;cx.fillStyle='rgba('+LV+','+(.22*a)+')';cx.beginPath();cx.ellipse(x,yy,52,15,0,0,7);cx.fill();cx.fillStyle='rgba(5,5,6,'+a+')';cx.beginPath();cx.ellipse(x,yy,24,7,0,0,7);cx.fill()}
+    if(warm>0){cx.strokeStyle='rgba('+PK+','+(.35*warm*a)+')';cx.lineWidth=10;cx.beginPath();cx.ellipse(x,y+10,92,84,0,0,7);cx.stroke()}};
+  function stage(k,e,a,isCur){
+    if(k===0){blob(X[0],Y+8,a,0);if(isCur){const p=ease((e-.4)/.9);cell(X[0]+60*p,Y+8-48*p,14,1);label('1 cell',X[0],cl(e-1),'rgb('+MI+')')}else label('the patient',X[0],a*1.5,'rgb('+MU+')')}
+    if(k===1){const d=isCur?Math.floor(20*ease((e-.9)/2.6)):20,n=Math.min(2**d,160),r=Math.max(3.4,14*Math.pow(n,-.32));
+      if(isCur&&e<.9){const p=ease(e/.8);cell(X[0]+60+(X[1]-X[0]-60)*p,Y-40+40*p,14,1)}
+      else{const pts=sun(n,n===1?0:72*Math.sqrt(n/160));pts.forEach(([px,py])=>cell(X[1]+px,Y+py,r,a))}
+      if(isCur&&e>=.9)label((2**d).toLocaleString('en-US')+(d===1?' cell':' cells'),X[1],1,'rgb('+MI+')');else if(!isCur)label('',X[1],0)}
+    if(k===2){cx.globalAlpha=a;cx.strokeStyle='rgba('+WH+',.35)';cx.lineWidth=2;cx.fillStyle='rgba('+LV+',.1)';cx.beginPath();cx.roundRect(X[2]-80,Y-64,160,128,14);cx.fill();cx.stroke();
+      const cp=isCur?ease((e-.5)/.8):1;chains.forEach(c=>{cx.strokeStyle='rgba('+LV+','+(.8*cp)+')';cx.lineWidth=3;cx.beginPath();c.forEach(([px,py],i)=>{const w=isCur?3*Math.sin(e*2+i+px):0;i?cx.lineTo(X[2]+px+w,Y+py):cx.moveTo(X[2]+px+w,Y+py)});cx.stroke()});
+      const mp=isCur?ease(e/1.1):1;mix.forEach(([px,py],i)=>{const [fx,fy]=from[i];cell(X[1]+fx+(X[2]+px-X[1]-fx)*mp,Y+fy+(py-fy)*mp,6,1)});
+      cx.globalAlpha=1;if(isCur)label('cells + gel',X[2],cl(e-1),'rgb('+LV+')')}
+    if(k===3){const lp=isCur?cl((e-.2)/.7):1,n=isCur?Math.floor(8*ease((e-.9)/1.8)):8;cx.globalAlpha=a;
+      if(lp>0&&n<1){cx.strokeStyle='rgba('+CY+','+lp+')';cx.lineWidth=10;cx.beginPath();cx.ellipse(X[3],Y+52,46,13,0,0,7*lp);cx.stroke()}
+      tube(X[3],Y,n,1,0);cx.globalAlpha=1;if(isCur)label('layer by layer',X[3],cl(e-.9),'rgb('+CY+')')}
+    if(k===4){const p=isCur?ease(e/.9):1,x=X[3]+(X[4]-X[3])*p;tube(x,Y,8,a,isCur?(.6+.4*Math.sin(e*3))*cl(e-.9):.4);if(isCur)label('37 °C · days in a bioreactor',X[4],cl(e-1),'rgb('+PK+')')}
+    if(k===5){const p=ease(e/1.8),x=X[4]+(X[0]-X[4])*p,y=Y-170*Math.sin(Math.PI*p);
+      cx.setLineDash([6,10]);cx.strokeStyle='rgba('+WH+',.35)';cx.lineWidth=2;cx.beginPath();for(let i=0;i<=40*p;i++){const q=i/40;const xx=X[4]+(X[0]-X[4])*q,yy=Y-170*Math.sin(Math.PI*q);i?cx.lineTo(xx,yy):cx.moveTo(xx,yy)}cx.stroke();cx.setLineDash([]);
+      const s=1-.45*ease((e-1.6)/.6);cx.save();cx.translate(x,y);cx.scale(s,s);tube(0,0,8,1,0);cx.restore();
+      blob(X[0],Y+8,.9,cl((e-1.8)*2)*(.6+.4*Math.sin(e*3)));label('back to the same patient',X[0],cl((e-1.9)*2),'rgb('+PK+')')}
+  }
+  return (t,step)=>{
+    if(t<prevT){st=[0,null,null,null,null,null];last=0}prevT=t;const sg=Math.min(step,5),lg=Math.min(last,5);
+    if(sg!==lg){if(sg>lg){for(let k=lg+1;k<=sg;k++)st[k]=k===sg?t:-1e9}else{for(let k=sg+1;k<6;k++)st[k]=null;if(sg)st[sg]=-1e9}}last=step;
+    cx.setTransform(Q,0,0,Q,0,0);cx.clearRect(0,0,W,H);
+    for(let k=0;k<sg;k++){if(sg===5&&k===0)continue;if(k===3&&sg>=4){cx.globalAlpha=.22;cx.strokeStyle='rgba('+CY+',1)';cx.lineWidth=6;cx.beginPath();cx.ellipse(X[3],Y+52,46,13,0,0,7);cx.stroke();cx.globalAlpha=1;continue}
+      if(k===4&&sg===5){cx.globalAlpha=.22;cx.strokeStyle='rgba('+PK+',1)';cx.lineWidth=6;cx.beginPath();cx.ellipse(X[4],Y+10,92,84,0,0,7);cx.stroke();cx.globalAlpha=1;continue}
+      stage(k,99,.25,false)}
+    stage(sg,local(sg,t),1,true);
+  };
+}
 /* ---------- womb ---------- */
 function womb(svg){
   mk('path',{d:'M180 24 C290 24 336 110 330 190 C324 270 260 322 180 322 C100 322 36 270 30 190 C24 110 70 24 180 24Z',fill:'rgba(227,148,173,.05)',stroke:'var(--rose)','stroke-width':2.4},svg);
@@ -633,7 +688,7 @@ function tissue(svg){
 const segs=document.getElementById('ls-segs');
 for(let i=0;i<5;i++)mk('line',{x1:100+i*200+66,y1:110,x2:100+(i+1)*200-66,y2:110,class:'seg','data-s':i+1},segs);
 
-const anims={15:[voxels(document.getElementById('ls-vox'))],13:[lights(document.getElementById('ls-lights'))],12:[bottomUp(document.getElementById('ls-bu')),topDown(document.getElementById('ls-td'))],14:[ink(document.getElementById('ls-ink'))],16:[womb(document.getElementById('ls-womb')),tissue(document.getElementById('ls-tissue'))]};
+const anims={11:[journeyStory(document.getElementById('ls-journey'))],15:[voxels(document.getElementById('ls-vox'))],13:[lights(document.getElementById('ls-lights'))],12:[bottomUp(document.getElementById('ls-bu')),topDown(document.getElementById('ls-td'))],14:[ink(document.getElementById('ls-ink'))],16:[womb(document.getElementById('ls-womb')),tissue(document.getElementById('ls-tissue'))]};
 
 
 
