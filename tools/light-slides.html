@@ -141,6 +141,7 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
 .light-slide .s-light .lt-card ul{font-size:1.45cqw;gap:.5cqw}
 .light-slide .s-light .lt-card li{padding-left:1.6cqw}
 @media print{.light-slide .s-light .lt-card{opacity:0!important}.light-slide .s-light .lt-card[data-c="2"]{opacity:1!important;transform:none!important}}
+.light-slide .s-obs .vox-cv{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 </style>
 <!--LS 10 2 How it started-->
 <div class="ls-stage s-hull" data-ls="10">
@@ -275,8 +276,9 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
   </div>
   <p class="refs">Source: Li et al., iScience, 26, 106039 (2023)</p>
 </div>
-<!--LS 15 3 What is still in the way-->
+<!--LS 15 4 What is still in the way-->
 <div class="ls-stage s-obs" data-ls="15">
+  <canvas class="vox-cv" id="ls-vox" role="img" aria-label="Three cubes: halving the voxel size gives 8 times the voxels and printing time, 64 to 512 to 4,096 voxels."></canvas>
   <h2>What’s still in the way?</h2>
   <div class="obs">
     <div class="ob r" data-s="0">
@@ -284,17 +286,17 @@ body.editing .light-slide [data-s],body.editing .light-slide .col-t{opacity:1!im
       <h3>Fine detail or big size</h3>
       <p>The sharper the detail, the slower the print. Building a whole organ at cell-level detail would take far too long.</p>
     </div>
-    <div class="ob r" data-s="1">
+    <div class="ob r" data-s="2">
       <svg viewBox="0 0 64 64" fill="none" stroke="var(--fg)" stroke-width="2" stroke-linecap="round"><line x1="32" y1="10" x2="32" y2="56"/><line x1="20" y1="56" x2="44" y2="56"/><g class="tilt"><line x1="10" y1="18" x2="54" y2="18"/><path d="M10 18 l-6 14 h12z M54 18 l-6 14 h12z" stroke="var(--lav)"/></g></svg>
       <h3>Laws lag behind</h3>
       <p>Regulators still struggle to classify printed tissue, and it does not fit today’s clinical-trial rules.</p>
     </div>
-    <div class="ob r" data-s="2">
+    <div class="ob r" data-s="3">
       <svg viewBox="0 0 64 64" fill="none" stroke="var(--fg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M32 6 L60 56 H4 Z"/><line class="blink" x1="32" y1="24" x2="32" y2="40" stroke="var(--rose)" stroke-width="3"/><circle class="blink" cx="32" cy="48" r="1.8" fill="var(--rose)" stroke="none"/></svg>
       <h3>Room for misuse</h3>
       <p>Without joint regulation, a new black market in printed organs could appear.</p>
     </div>
-    <div class="ob r" data-s="3">
+    <div class="ob r" data-s="4">
       <svg viewBox="0 0 64 64" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="32" cy="32" r="24" stroke="var(--faint)"/><path class="ecg" pathLength="100" d="M4 34 h14 l5 -12 l6 22 l6 -26 l5 16 h20" stroke="var(--rose)"/></svg>
       <h3>Keeping cells alive</h3>
       <p>The biggest hurdle: without blood vessels, tissue cannot grow beyond 100–200 µm.</p>
@@ -555,6 +557,39 @@ function lights(cv){
     label('IR heat',B.x+20,IY+80,'rgb('+PK+')',aS,'left');
   };
 }
+/* ---------- voxels: detail vs time (slide "What is still in the way") ---------- */
+function voxels(cv){
+  if(!cv)return()=>{};
+  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const cl=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+  const CUBES=[{n:4,x:520,col:'100,223,255'},{n:8,x:960,col:'180,154,216'},{n:16,x:1400,col:'227,148,173'}],A=100,CY=862,C30=Math.cos(Math.PI/6);
+  let start=null,prevT=-1,dimAt=null;
+  const P=(c,x,y,z)=>{const u=A/c.n,X=(x-y)*C30*u,Y=(x+y)*.5*u-z*u,o=c.n/2;return[c.x+X-((o-o)*C30*u),CY+Y-((o+o)*.5*u-o*u)]};
+  function face(c,kind,p){const n=c.n,cnt=Math.floor(p*n*n),alpha={top:.42,left:.26,right:.16}[kind];
+    for(let a=0;a<n;a++)for(let b=0;b<n;b++){const idx=a*n+b;const pts=kind==='top'?[[a,b,n],[a+1,b,n],[a+1,b+1,n],[a,b+1,n]]:kind==='right'?[[n,a,b],[n,a+1,b],[n,a+1,b+1],[n,a,b+1]]:[[a,n,b],[a+1,n,b],[a+1,n,b+1],[a,n,b+1]];
+      const q=pts.map(v=>P(c,...v));cx.beginPath();cx.moveTo(...q[0]);q.slice(1).forEach(v=>cx.lineTo(...v));cx.closePath();
+      if(idx<cnt){cx.fillStyle='rgba('+c.col+','+alpha+')';cx.fill()}
+      cx.strokeStyle='rgba('+c.col+','+(n>8?.55:.8)+')';cx.lineWidth=n>8?1:1.6;cx.stroke()}}
+  const txt=(s,x,y,size,col,w)=>{cx.font=(w||400)+' '+size+'px Jost, sans-serif';cx.textAlign='center';cx.fillStyle=col;cx.fillText(s,x,y)};
+  return (t,step)=>{
+    if(t<prevT){start=null;dimAt=null}prevT=t;
+    if(step>=1&&start===null)start=t;if(step<1)start=null;if(step>=2&&dimAt===null)dimAt=t;if(step<2)dimAt=null;
+    cx.setTransform(Q,0,0,Q,0,0);cx.clearRect(0,0,W,H);if(start===null)return;
+    const e=rm?99:t-start,dim=dimAt===null?1:1-.7*ease((t-dimAt)/.8);cx.globalAlpha=dim;
+    CUBES.forEach((c,i)=>{const t0=i*1.9,p=ease((e-t0)/1.3);if(e<t0)return;
+      cx.globalAlpha=dim*cl((e-t0)*3);['left','right','top'].forEach(k=>face(c,k,p));
+      const vox=Math.round(Math.pow(c.n,3)*p),mult=Math.round(Math.pow(c.n/4,3)*p)||1;
+      cx.font='500 30px Jost, sans-serif';const s1=vox.toLocaleString('en-US')+' voxels  ·  ',s2=mult+'× the time',w1=cx.measureText(s1).width,w2=cx.measureText(s2).width;
+      cx.textAlign='left';cx.fillStyle='rgb(241,245,245)';cx.fillText(s1,c.x-(w1+w2)/2,CY+A+58);cx.fillStyle='rgb('+c.col+')';cx.fillText(s2,c.x-(w1+w2)/2+w1,CY+A+58);
+      if(i>0){const a=cl((e-t0+.4)*2);cx.globalAlpha=dim*a;const x0=CUBES[i-1].x+130,x1=c.x-130;
+        cx.strokeStyle='rgba(241,245,245,.6)';cx.lineWidth=2;cx.beginPath();cx.moveTo(x0,CY);cx.lineTo(x1,CY);cx.lineTo(x1-12,CY-8);cx.moveTo(x1,CY);cx.lineTo(x1-12,CY+8);cx.stroke();
+        txt('½ the size',(x0+x1)/2,CY-16,24,'rgb(153,163,174)')}
+      cx.globalAlpha=dim});
+    const fa=cl((e-5.2)*1.5);if(fa>0){cx.globalAlpha=dim*fa;txt('Half the detail size  →  8× the voxels  →  8× the printing time (curing point by point)',960,CY-A-34,30,'rgb(241,245,245)',500)}
+    cx.globalAlpha=1;
+  };
+}
 /* ---------- womb ---------- */
 function womb(svg){
   mk('path',{d:'M180 24 C290 24 336 110 330 190 C324 270 260 322 180 322 C100 322 36 270 30 190 C24 110 70 24 180 24Z',fill:'rgba(227,148,173,.05)',stroke:'var(--rose)','stroke-width':2.4},svg);
@@ -598,7 +633,7 @@ function tissue(svg){
 const segs=document.getElementById('ls-segs');
 for(let i=0;i<5;i++)mk('line',{x1:100+i*200+66,y1:110,x2:100+(i+1)*200-66,y2:110,class:'seg','data-s':i+1},segs);
 
-const anims={13:[lights(document.getElementById('ls-lights'))],12:[bottomUp(document.getElementById('ls-bu')),topDown(document.getElementById('ls-td'))],14:[ink(document.getElementById('ls-ink'))],16:[womb(document.getElementById('ls-womb')),tissue(document.getElementById('ls-tissue'))]};
+const anims={15:[voxels(document.getElementById('ls-vox'))],13:[lights(document.getElementById('ls-lights'))],12:[bottomUp(document.getElementById('ls-bu')),topDown(document.getElementById('ls-td'))],14:[ink(document.getElementById('ls-ink'))],16:[womb(document.getElementById('ls-womb')),tissue(document.getElementById('ls-tissue'))]};
 
 
 

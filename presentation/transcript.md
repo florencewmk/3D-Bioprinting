@@ -255,6 +255,8 @@ Source: Van Ombergen et al., Adv. Healthcare Mater., 12, 2300443 (2023) · Verme
 
 The biggest challenge for bioprinting is to print with high resolution and accuracy.
 
+Here’s why: if we make every printed point half as big, we need eight times as many of them, and that means eight times the printing time. Halve it again, and it’s sixty-four times.
+
 Not to mention, right now there is no law about bioprinting. Authorities will have to make legal decisions on that.
 
 We also have to consider that people may misuse this technology and sell it on the black market.
