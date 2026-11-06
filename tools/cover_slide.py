@@ -18,9 +18,8 @@ COVER_NOTES = ('Welcome to the world of 3D printing, a technology that is shapin
 
 def render_cover(*, external_animation=False):
     c = settings()
-    # Full event name on its own line, city and date below (5 November 2026).
-    event = (html.escape(c["event"]["name"]) + '<br>'
-             + html.escape(f'{c["event"]["city"].upper()} · {c["event"]["date"].upper()}'))
+    # Since 6 Nov 2026 the cover shows only the title and tagline: no event line, city, date,
+    # presenter name or VDI logo (Florence's request). vdi_logo() is kept for reuse.
     animation = ('../' + LUNG_ANIMATION.relative_to(ROOT).as_posix() if external_animation else
                  f'data:image/{LUNG_ANIMATION.suffix[1:]};base64,' + base64.b64encode(LUNG_ANIMATION.read_bytes()).decode())
     poster = 'data:image/webp;base64,' + base64.b64encode(LUNG_POSTER.read_bytes()).decode()
@@ -29,11 +28,9 @@ def render_cover(*, external_animation=False):
         f'<img class="cover-turntable" src="{poster}" data-turntable-src="{animation}" '
         'width="1200" height="967" alt="Rotating blue and cream branching lung model">'
         '</figure><div class="hero">'
-        f'<p class="eyebrow editable" data-edit="cover-event-nov5">{event}</p>'
         f'<h1><em class="editable gradient cover-focus" data-edit="cover-title-3d">{COVER_TITLE}</em></h1>'
         f'<p class="hero-sub editable" data-edit="cover-tagline-medicine">{html.escape(c["cover_tagline"])}</p>'
-        f'</div><p class="signature editable" data-edit="cover-author">{html.escape(c["presenter"])}</p>'
-        + vdi_logo()
+        '</div>'
     )
 
 
