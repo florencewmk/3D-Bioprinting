@@ -37,7 +37,12 @@
     const plan = [];
     const name = title(slide);
     let kind = 'evidence';
-    if (slide.querySelector('.hero')) {
+    if (slide.matches('.progress-slide,.ring-slide,.end-slide,.vessel-slide,.canvas-step-slide')) {
+      kind = 'self';
+      // These slides run their own step animations; only fade the title and canvas in,
+      // never their photos or captions (a WAAPI fade would override their hidden state).
+      add(plan, select(slide, ':scope > h1,:scope > canvas'), 0, 700);
+    } else if (slide.querySelector('.hero')) {
       kind = 'cover';
       add(plan, select(slide, '.eyebrow'), 0, 800, 10);
       add(plan, select(slide, '.cover-descriptor'), 160, 900, 14);
@@ -76,9 +81,9 @@
       kind = 'data';
       add(plan, select(slide, '#publicationChart,#organChart'), 0, 650);
       // Preserve chart-owned year progression, scales and the 6-second reveal.
-    } else if (slide.querySelector('.references')) {
+    } else if (slide.querySelector('.references,.refx')) {
       kind = 'references';
-      add(plan, select(slide, '.references'), 0, 750);
+      add(plan, select(slide, '.references,.refx'), 0, 750);
     } else if (slide.querySelector('.closing-scene')) {
       kind = 'closing';
       add(plan, select(slide, '.closing-scene'), 0, 800);
