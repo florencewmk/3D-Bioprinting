@@ -1,8 +1,8 @@
 {
   "source": "presentation/offline.html",
-  "source_sha256": "ba51b938de0b2eab65987f97cef2a1cde99efce529f12b85b02ed95413fcfe93",
+  "source_sha256": "c7e4004d2f8104b82e281307103342b07d3e6049a92493806f42eaac20f5101a",
   "slides": 23,
-  "asset_count": 33,
+  "asset_count": 29,
   "assets": [
     {
       "path": "materials/diagrams/008c09b793c6c0bb3b34019eb11ba4b75fcf08529ec84e0b4d77b5ad4c59fabb.svg",
@@ -36,17 +36,6 @@
       ],
       "source": "presentation/offline.html",
       "provenance": "Original animated SVG schematic drawn for this talk; template tools/light-slides.html, rendered by tools/light_slides.py."
-    },
-    {
-      "path": "materials/diagrams/23005c5fdbaaa05ef0de567644990fc55a3632e81e8a737f620bffffe600d65c.svg",
-      "mime": "image/svg+xml",
-      "bytes": 1299,
-      "sha256": "23005c5fdbaaa05ef0de567644990fc55a3632e81e8a737f620bffffe600d65c",
-      "slides": [
-        16
-      ],
-      "source": "presentation/offline.html",
-      "provenance": "Exported web asset; original credits are in the deck and transcript. Asset-level original attribution is not independently resolved."
     },
     {
       "path": "materials/diagrams/249b5fd42caa90e0e5b7f2d56a46bba06101d67bc1ef1f6e5f0121d950954038.svg",
@@ -273,17 +262,6 @@
       "provenance": "Meniscus bioprinted in the BioFabrication Facility, NASA (reference [18]); existing deck asset."
     },
     {
-      "path": "materials/images/d5f8533bcd3cf12d0f43945d70153b6bc5ba4fecbc455850d6a4ac0d7980dc53.jpg",
-      "mime": "image/jpeg",
-      "bytes": 166955,
-      "sha256": "d5f8533bcd3cf12d0f43945d70153b6bc5ba4fecbc455850d6a4ac0d7980dc53",
-      "slides": [
-        14
-      ],
-      "source": "presentation/offline.html",
-      "provenance": "Matthias Maurer running Bioprint FirstAid on the ISS, DLR 2022 (reference [19]); existing deck asset."
-    },
-    {
       "path": "materials/images/d90e15ff191e982ed4250bdbaf87e10351185c506e508c3febd4c0b64069f479.jpg",
       "mime": "image/jpeg",
       "bytes": 78676,
@@ -293,17 +271,6 @@
       ],
       "source": "presentation/offline.html",
       "provenance": "co-SWIFT vessel image from Harvard SEAS / Wyss Institute news, 12 Aug 2024 (reference [15]); taken from the user's SoFe pptx."
-    },
-    {
-      "path": "materials/images/df0d104737d7dec2e7ff2ba64ffb45150d6768892cfcd1acc9c3fbd0e7102a28.jpg",
-      "mime": "image/jpeg",
-      "bytes": 69471,
-      "sha256": "df0d104737d7dec2e7ff2ba64ffb45150d6768892cfcd1acc9c3fbd0e7102a28",
-      "slides": [
-        14
-      ],
-      "source": "presentation/offline.html",
-      "provenance": "Original background generated in Python for this talk (faded nebula and planet edge in the deck palette); tools/progress_slide.py."
     },
     {
       "path": "materials/images/f6ef09f9895d76084490b19d9527c36d7d385251e7b094870ea1ad4924a8e39a.jpg",
@@ -348,17 +315,6 @@
       ],
       "source": "presentation/offline.html",
       "provenance": "Original Blender render of a top-down SLA cutaway printing the Baby Groot mesh by Byambaa (Thingiverse 2014307, CC BY-NC-ND 4.0, credited on the slide); burned-in caption and credit removed with FFmpeg delogo on 4 November 2026. Rendered by tools/light_slides.py."
-    },
-    {
-      "path": "materials/videos/0c44e396ec25a44a5e6bc0d33e81cd5b4b8de21e863019ef225a1e4f28b63667.mp4",
-      "mime": "video/mp4",
-      "bytes": 392429,
-      "sha256": "0c44e396ec25a44a5e6bc0d33e81cd5b4b8de21e863019ef225a1e4f28b63667",
-      "slides": [
-        16
-      ],
-      "source": "presentation/offline.html",
-      "provenance": "Readily3D Tomolite volumetric bioprinting animation (20200930_PROZESS_ANIMATION_LOOP_01, also on the former slide 'Precision is a beginning'); audio removed and re-encoded (H.264, CRF 28) on 4 November 2026; shown as a looping card beside the conclusion ring since 5 November 2026. Credited on the slide."
     }
   ]
 }

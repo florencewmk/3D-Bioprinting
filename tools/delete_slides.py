@@ -61,6 +61,11 @@ def main(drop):
         if isinstance(ref.get("reference_slide"), int):
             ref["reference_slide"] = new_of[ref["reference_slide"]]
     catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
+    notes_path = ROOT / "presentation/speaker-notes.json"
+    if notes_path.exists():
+        notes = json.loads(notes_path.read_text())
+        notes = {(str(new_of[int(k)]) if k.isdigit() else k): v for k, v in notes.items() if not k.isdigit() or int(k) not in drop}
+        notes_path.write_text(json.dumps(notes, ensure_ascii=False, indent=2) + "\n")
     print("Deleted", drop, "→", new_total, "slides")
 
 

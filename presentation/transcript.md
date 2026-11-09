@@ -258,12 +258,12 @@ In a patient
 A printed ear
 In 2022, a woman born with microtia received an ear printed from her own cartilage cells. It was the first clinical trial of its kind.
 In space
-Printing on the space station
-NASA’s BioFabrication Facility printed a human knee meniscus on the ISS (2023). Germany tested a handheld bio-plaster printer there (2022).
+Printing without gravity
+NASA’s BioFabrication Facility printed a human knee meniscus on the ISS (2023).
 In medicine
 Ready for hospitals?
 Not yet. Maybe in the next 10 years, starting with simple tissues like skin and cartilage. Whole organs will take longer.
-Source: Harvard SEAS / Wyss Institute (2024) · Tel Aviv University (2019) · CELLINK / 3DBio (2022) · NASA (2023) · DLR (2022)
+Source: Harvard SEAS / Wyss Institute (2024) · Tel Aviv University (2019) · CELLINK / 3DBio (2022) · NASA (2023)
 
 ### Speaker notes
 
@@ -273,7 +273,7 @@ Harvard, for example, printed blood vessels, and Tel Aviv University printed a h
 
 A successful example: a group in the US printed an ear for a patient using the patient’s own cells.
 
-NASA also printed a human meniscus in space, aiming to benefit their astronauts on deep-space missions in the future. And Germany printed a bio-plaster. It’s not close to printing organs, but in a medical sense it’s also useful.
+NASA also printed a human meniscus in space, aiming to benefit their astronauts on deep-space missions in the future.
 
 Bioprinting is still a new technology and not ready for hospital use. Maybe in the next 10 years, or even longer for a functional organ.
 
@@ -302,7 +302,7 @@ Lab successes, first steps in patients
 Printed vessels in the lab · a bioprinted ear implanted (2022)
 Tissues in ~10 years, organs in 20–30
 AI may speed up development
-Source: EDQM–ONT Newsletter Transplant (2026) · Wyss Institute (2024) · 3DBio (2022) · Skylar-Scott, Stanford, via 3DPrint.com (2025) · Video: Readily3D, Tomolite
+Source: EDQM–ONT Newsletter Transplant (2026) · Wyss Institute (2024) · 3DBio (2022) · Skylar-Scott, Stanford, via 3DPrint.com (2025)
 
 ### Speaker notes
 
