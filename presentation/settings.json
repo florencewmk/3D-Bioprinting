@@ -37,15 +37,15 @@
   "sections": [
     {
       "label": "Introduction",
-      "slide": 3
+      "slide": 2
     },
     {
       "label": "Printing methods",
-      "slide": 9
+      "slide": 6
     },
     {
       "label": "Conclusion",
-      "slide": 20
+      "slide": 17
     }
   ],
   "opening_order": [
@@ -54,5 +54,5 @@
     "contents",
     "question"
   ],
-  "slide_count": 26
+  "slide_count": 23
 }

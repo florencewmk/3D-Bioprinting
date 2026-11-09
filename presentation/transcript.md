@@ -1,6 +1,6 @@
 # 3D Bioprinting
 
-26 slides · 5 November 2026
+23 slides · 5 November 2026
 
 ## 01. Hi, I'm Florence :)
 
@@ -18,58 +18,7 @@ Hi, I’m Florence. I was born in Kuala Lumpur, Malaysia. I’m currently in the
 
 The topic today has nothing to do with fluids or combustion. But I guarantee it’ll be an exciting one!
 
-## 02. What comes to your mind?
-
-What comes to your mind
-when we mention additive manufacturing,
-or 3D printing?
-
-### Speaker notes
-
-Before I start my presentation, I just want to ask you: what comes to your mind when someone mentions 3D printing?
-
-[Pause for a moment.]
-
-## 03. From everyday objects to living tissue
-
-Everyday life
-Hobby printing
-
-Engineering
-SpaceX Raptor 3
-Additive manufacturing helps integrate components into a more compact engine.
-
-Built environment
-A printed house
-Eindhoven concrete house (illustration). The Dutch have printed bridges, too.
-
-### Speaker notes
-
-Well, for me, I always thought of printing small little decorations at home.
-
-But from an engineering perspective, I think of something big, something that can print complex designs. For example, SpaceX integrated additive manufacturing into their latest rocket engine, the Raptor 3, to make it more compact.
-
-And what about buildings? Do you think we can print houses? Of course! The Dutch printed this house in Eindhoven back in 2021. They also printed a bridge in Amsterdam.
-
-Well, until now we’re still talking about things we can see and touch after being printed.
-
-## 04. The tram encounter
-
-Munich tram encounter · Poland to USA
-
-### Speaker notes
-
-[Click through the eight cues as you tell the story.]
-
-So the other day I was in Munich for Oktoberfest. In a crowded tram, I met a woman who looked over 60 years old. She started the conversation by asking where I got my pink jacket. She really liked it. I told her it was from Uniqlo.
-
-I asked her if she was coming back from a holiday, because she had a cabin luggage and a backpack with her. What I didn’t notice was a bag that looked like a box on top of her cabin luggage. She told me she had just come back from work. I was quite shocked, because it was a Saturday.
-
-I asked what she works as, and how old she is. She told me she is 82 years old, and she is a stem cell courier! She was transporting stem cells from Poland to the USA for a dying patient. I was really just so in shock!
-
-The conversation didn’t last long, and I had to get off the tram. At that point I had already signed up for this competition. I wish I could have told her that I’m going to present a topic today that scientists are researching to save thousands of patients.
-
-## 05. 3D Bioprinting
+## 02. 3D Bioprinting
 
 3D Bioprinting
 
@@ -79,7 +28,7 @@ where engineering revolutionizes medicine
 
 That is… 3D Bioprinting.
 
-## 06. The organ shortage persists
+## 03. The organ shortage persists
 
 The organ shortage persists
 2015–2025
@@ -97,7 +46,7 @@ So, in the last decade, scientists started looking for an alternative way to sol
 
 Source: EDQM–ONT Newsletter Transplant 2026 (2025 data): 183,879 transplants, 49,169 deceased donors; 532,905 waiting-list entries and 40,019 deaths summed across six organ lists (entries, not deduplicated patients).
 
-## 07. Behind the numbers
+## 04. Behind the numbers
 
 Behind the numbers
 Every dot is 1,000 entries on organ waiting lists Worldwide reports, end of 2025.
@@ -109,7 +58,7 @@ There are not enough organs. What if we could print them?
 
 Let’s look at what these numbers mean. Every dot is a thousand entries on organ waiting lists at the end of 2025, more than half a million. In the whole year, about 184,000 transplants were done, roughly one for every three still waiting. And 40,000 deaths were reported on waiting lists, about 110 every day. There simply are not enough organs. So what if we could print them?
 
-## 08. Bioprinting publications · 2000–2026
+## 05. Bioprinting publications · 2000–2026
 
 Scopus (Elsevier), 2000–2026. Retrieved 27 October 2026. Categories overlap; 2026 is partial.
 
@@ -123,7 +72,7 @@ Due to time constraints, I’d like to focus only on the SLA method.
 
 Source: Scopus, 2000–2026, retrieved 27 October 2026. Categories overlap; 2026 is partial.
 
-## 09. How it started
+## 06. How it started
 
 Printing with light
 Chuck HullUnited States · 87 years old
@@ -136,7 +85,7 @@ SLA printing is basically printing with light.
 
 Back in 1984, a man in the USA called Chuck Hull, who is now 87 years old, invented a method called stereolithography. It uses light to harden a liquid resin and prints the object layer by layer.
 
-## 10. Bioink and curing
+## 07. Bioink and curing
 
 Two words to know
 Bioink & curing
@@ -155,7 +104,7 @@ First, the bioink. Bioink is basically just like the ink in a normal printer, bu
 
 Second, curing, which is the printing process. When the light hits the photoinitiator, a chemical compound, it splits into free radicals. Because they’re very reactive, they eventually link together into chains. Curing means turning the liquid bioink into a gel by forming this polymer network. The light makes selected areas of the liquid bioink turn into a gel. By controlling where that happens, we build the three-dimensional structure.
 
-## 11. From patient to print
+## 08. From patient to print
 
 Imagine it for bioprinting
 From patient to print
@@ -183,7 +132,7 @@ After printing, we need to take care of its growing environment. When it has mat
 
 Theoretically, the patient is less likely to reject the new organ, since it’s grown from their own cells.
 
-## 12. Two ways to build
+## 09. Two ways to build
 
 Two ways to build
 Light from below, or from above
@@ -205,7 +154,7 @@ For bottom-up, the light shines from below through a clear window, and each laye
 
 For top-down, the light scans from above, and the platform moves down. The downside is that the vat has to be big enough for the object you’re printing.
 
-## 13. Which light?
+## 10. Which light?
 
 Which light?
 UV, near-infrared, or both
@@ -238,7 +187,7 @@ Near-infrared light penetrates deeper and is therefore gentler on cells, but it 
 
 Stereo-thermal lithography uses both at the same time, with heat generated by the NIR light. The downside is that the heat must be controlled so it doesn’t damage the cells.
 
-## 14. What is still in the way
+## 11. What is still in the way
 
 What’s still in the way?
 Fine detail or big size
@@ -263,7 +212,7 @@ We also have to consider that people may misuse this technology and sell it on t
 
 Last but not least, it is also very challenging to keep the cells alive. Why?
 
-## 15. Why cells struggle
+## 12. Why cells struggle
 
 Why is it so hard?
 Think of a baby in the womb
@@ -286,7 +235,7 @@ The problem with bioprinting is that the cells don’t get enough oxygen, since 
 
 Think of being in a small, crowded room. The people near the window get fresh air, but the people in the middle are stuck and suffocate. That’s exactly the situation for bioprinted cells in the incubator.
 
-## 16. How far can oxygen reach?
+## 13. How far can oxygen reach?
 
 How far can oxygen reach?
 An organ measures centimetres. Let’s zoom in.
@@ -299,7 +248,7 @@ So we have to print the vessels too. A network close enough to reach every cell.
 
 Let’s zoom in. An organ is a few centimetres big, but it is made of millions of cells, and every one of them needs oxygen. In our body, oxygen comes from the blood vessels, and it only reaches about 0.2 millimetres, one or two sheets of paper. Any cell further away starves. So if we print a solid block of tissue, it dies from the inside. That’s why we also have to print the blood vessels, a network close enough to reach every cell.
 
-## 17. Where are we today?
+## 14. Where are we today?
 
 Where are we today?
 In the lab
@@ -328,7 +277,7 @@ NASA also printed a human meniscus in space, aiming to benefit their astronauts 
 
 Bioprinting is still a new technology and not ready for hospital use. Maybe in the next 10 years, or even longer for a functional organ.
 
-## 18. Bioprinting around the world
+## 15. Bioprinting around the world
 
 Interactive world map of bioprinting research and companies. The globe tours the five leading publication countries, 2000–2025. Press Down Arrow to open the map.
 
@@ -342,7 +291,7 @@ If you’re interested in the research institutes and companies that sell biopri
 
 Source: OpenAlex publication counts, 2000–2025 (1 USA 2,555 · 2 China 2,106 · 3 India 838 · 4 South Korea 655 · 5 Germany 637).
 
-## 19. Take-home summary
+## 16. Take-home summary
 
 Take-home summary
 Transplant demand outpaces donors
@@ -361,7 +310,7 @@ I wish I could share these findings with the woman I met on the tram in Munich.
 
 With this technology, we could save a lot of transplant costs and solve the donor shortage problem. How cool would it be if one day you could even print your own organ and achieve longevity?
 
-## 20. Engineering tomorrow’s possibilities
+## 17. Engineering tomorrow’s possibilities
 
 Engineering tomorrow’s possibilities.
 
@@ -371,7 +320,7 @@ With that, I’ll leave you with a quote, from me to all of you: engineering tom
 
 Stay curious, stay motivated.
 
-## 21. Thank You!
+## 18. Thank You!
 
 Thank You!
 https://github.com/florencewmk/3D-Bioprinting
@@ -384,7 +333,7 @@ I’ve also uploaded this presentation and all the sources to my GitHub.
 
 [Press Down to reveal the GitHub link and QR code.]
 
-## 22. Scientific references · 1
+## 19. Scientific references · 1
 
 Scientific references
 
@@ -394,7 +343,7 @@ Scientific references
 [4] P. J. Bártolo, Ed., Stereolithography: Materials, Processes and Applications. Boston, MA, USA: Springer, 2011. doi: 10.1007/978-0-387-92904-0.
 [5] S. O’Halloran, A. Pandit, A. Heise, and A. Kellett, “Two-photon polymerization: Fundamentals, materials, and chemical modification strategies,” Adv. Sci., vol. 10, no. 7, Art. no. 2204072, Mar. 2023. doi: 10.1002/advs.202204072.
 
-## 23. Scientific references · 2
+## 20. Scientific references · 2
 
 Scientific references
 
@@ -426,7 +375,7 @@ Supporting literature
 [42] Y. Sang, Z. Zhao, M. Zhao, P. Hao, Y. Leng, and H. Liu, “From UV to near-infrared, WS₂ nanosheet: A novel photocatalyst for full solar light spectrum photodegradation,” Adv. Mater., vol. 27, no. 2, pp. 363–369, 2015. doi: 10.1002/adma.201403264.
 [43] W. K. Swainson, “Method, medium and apparatus for producing three-dimensional figure product,” U.S. Patent 4 041 476, Aug. 9, 1977.
 
-## 24. Data and online sources · 1
+## 21. Data and online sources · 1
 
 Data and online sources
 
@@ -436,7 +385,7 @@ Data and online sources
 [14] Rice University. (2019). Organ bioprinting gets a breath of fresh air. https://news.rice.edu/news/2019/organ-bioprinting-gets-breath-fresh-air (accessed 14 October 2026).
 [15] Harvard SEAS / Wyss Institute. (2024). 3D-printed blood vessels bring artificial organs closer to reality. https://seas.harvard.edu/news/2024/08/3d-printed-blood-vessels-bring-artificial-organs-closer-reality (accessed 14 October 2026).
 
-## 25. Data and online sources · 2
+## 22. Data and online sources · 2
 
 Data and online sources
 
@@ -458,7 +407,7 @@ YouTube videos
 [46] Protolabs, “How Does Stereolithography 3D Printing Work?,” YouTube. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=0kHDXPQDSYY
 [47] EPFL, “Printing tiny, high-precision objects in a matter of seconds,” YouTube, Feb. 12, 2020. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=ONBHkzimRbg
 
-## 26. Image references
+## 23. Image references
 
 Images
 
