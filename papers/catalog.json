@@ -462,7 +462,7 @@
       "number": 1,
       "citation": "S. Soleymani Eil Bakhtiari et al., “3-Dimensional printing of hydrogel-based nanocomposites: A comprehensive review on the technology description, properties, and applications,” *Adv. Eng. Mater.*, vol. 23, no. 10, Art. no. 2100477, Oct. 2021. doi: 10.1002/adem.202100477.",
       "doi": "10.1002/adem.202100477",
-      "reference_slide": 19,
+      "reference_slide": 18,
       "status": "full_text_missing",
       "paths": []
     },
@@ -470,7 +470,7 @@
       "number": 2,
       "citation": "X. He et al., “Cyanine/iodonium salt as a broad-absorbing photoinitiating system for radical photopolymerization under near-UV, visible and NIR light,” *Polym. Chem.*, vol. 14, no. 13, pp. 1543–1553, 2023. doi: 10.1039/D2PY01466A.",
       "doi": "10.1039/D2PY01466A",
-      "reference_slide": 19,
+      "reference_slide": 18,
       "status": "full_text_missing",
       "paths": []
     },
@@ -478,7 +478,7 @@
       "number": 3,
       "citation": "P. J. Bártolo and G. Mitchell, “Stereo-thermal-lithography: A new principle for rapid prototyping,” *Rapid Prototyping J.*, vol. 9, no. 3, pp. 150–156, 2003. doi: 10.1108/13552540310477454.",
       "doi": "10.1108/13552540310477454",
-      "reference_slide": 19,
+      "reference_slide": 18,
       "status": "archived",
       "paths": [
         "papers/cited/Bartolo-Mitchell-2003-Stereo-thermal-lithography.pdf"
@@ -488,7 +488,7 @@
       "number": 4,
       "citation": "P. J. Bártolo, Ed., *Stereolithography: Materials, Processes and Applications*. Boston, MA, USA: Springer, 2011. doi: 10.1007/978-0-387-92904-0.",
       "doi": "10.1007/978-0-387-92904-0",
-      "reference_slide": 19,
+      "reference_slide": 18,
       "status": "archived",
       "paths": [
         "papers/cited/Bartolo-2011-Stereolithography-Materials-Processes-Applications.pdf"
@@ -498,7 +498,7 @@
       "number": 5,
       "citation": "S. O’Halloran, A. Pandit, A. Heise, and A. Kellett, “Two-photon polymerization: Fundamentals, materials, and chemical modification strategies,” *Adv. Sci.*, vol. 10, no. 7, Art. no. 2204072, Mar. 2023. doi: 10.1002/advs.202204072.",
       "doi": "10.1002/advs.202204072",
-      "reference_slide": 19,
+      "reference_slide": 18,
       "status": "full_text_missing",
       "paths": []
     },
@@ -506,7 +506,7 @@
       "number": 6,
       "citation": "G. Chen et al., “Advanced near-infrared light for monitoring and modulating the spatiotemporal dynamics of cell functions in living systems,” *Adv. Sci.*, vol. 7, Art. no. 1903783, 2020. doi: 10.1002/advs.201903783.",
       "doi": "10.1002/advs.201903783",
-      "reference_slide": 20,
+      "reference_slide": 19,
       "status": "archived",
       "paths": [
         "papers/cited/Chen-2020-Advanced-NIR-Light-Cell-Functions.pdf"
@@ -516,7 +516,7 @@
       "number": 7,
       "citation": "S. Santoni, S. G. Gugliandolo, M. Sponchioni, D. Moscatelli, and B. M. Colosimo, “3D bioprinting: Current status and trends—a guide to the literature and industrial practice,” *Bio-Des. Manuf.*, vol. 5, pp. 14–42, 2022. doi: 10.1007/s42242-021-00165-0.",
       "doi": "10.1007/s42242-021-00165-0",
-      "reference_slide": 20,
+      "reference_slide": 19,
       "status": "archived",
       "paths": [
         "papers/cited/Santoni-2022-3D-Bioprinting-Current-Status-Trends.pdf"
@@ -526,7 +526,7 @@
       "number": 8,
       "citation": "A. Van Ombergen et al., “3D bioprinting in microgravity: Opportunities, challenges, and possible applications in space,” *Adv. Healthcare Mater.*, vol. 12, no. 23, Art. no. 2300443, Sep. 2023. doi: 10.1002/adhm.202300443.",
       "doi": "10.1002/adhm.202300443",
-      "reference_slide": 20,
+      "reference_slide": 19,
       "status": "archived",
       "paths": [
         "papers/cited/Van-Ombergen-2023-3D-Bioprinting-in-Microgravity.pdf"
@@ -536,7 +536,7 @@
       "number": 9,
       "citation": "A. Barbora, O. Bohar, A. A. Sivan, E. Magory, A. Nause, and R. Minnes, “Higher pulse frequency of near-infrared laser irradiation increases penetration depth for novel biomedical applications,” *PLoS One*, vol. 16, no. 1, Art. no. e0245350, Jan. 2021. doi: 10.1371/journal.pone.0245350.",
       "doi": "10.1371/journal.pone.0245350",
-      "reference_slide": 20,
+      "reference_slide": 19,
       "status": "full_text_missing",
       "paths": []
     },
@@ -544,7 +544,7 @@
       "number": 10,
       "citation": "B. Grigoryan et al., “Multivascular networks and functional intravascular topologies within biocompatible hydrogels,” *Science*, vol. 364, no. 6439, pp. 458–464, May 2019. doi: 10.1126/science.aav9750.",
       "doi": "10.1126/science.aav9750",
-      "reference_slide": 20,
+      "reference_slide": 19,
       "status": "full_text_missing",
       "paths": []
     }

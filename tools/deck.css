@@ -90,10 +90,15 @@ nav.deck-controls #chartReplay{font-size:18px}
 nav.deck-controls #chartReplay[hidden]{display:none}
 .dc-pos{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:74px;height:36px;gap:4px}
 .dc-pos #counter{font-size:14px;min-width:0;padding:0;color:#F1F5F5;line-height:1}
-#pointDots{display:flex;gap:4px;height:5px}
+#pointDots{display:flex;gap:0;height:12px;align-items:center;margin-top:-2px}
 #pointDots:empty{display:none}
-#pointDots i{width:5px;height:5px;border-radius:50%;background:#3a3f49;transition:background .25s}
-#pointDots i.on{background:var(--cyan)}
+nav.deck-controls #pointDots button{width:13px;height:12px;padding:0;border-radius:6px;background:none;display:grid;place-items:center;cursor:pointer}
+nav.deck-controls #pointDots button::before{content:"";width:6px;height:6px;border-radius:50%;background:#3a3f49;transition:background .2s,transform .2s}
+nav.deck-controls #pointDots button.on::before{background:var(--cyan)}
+nav.deck-controls #pointDots button.now::before{box-shadow:0 0 0 2px rgba(100,223,255,.25)}
+nav.deck-controls #pointDots button:hover{background:none}
+nav.deck-controls #pointDots button:hover::before{transform:scale(1.7);background:#F1F5F5}
+.dc-pos{height:38px;gap:3px}
 #moreMenu{position:absolute;right:0;bottom:calc(100% + 10px);min-width:210px;padding:6px;border-radius:16px;background:rgba(12,13,17,.95);border:1px solid #23262d;box-shadow:0 12px 36px rgba(0,0,0,.55);display:flex;flex-direction:column}
 #moreMenu[hidden]{display:none}
 nav.deck-controls #moreMenu button{width:auto;height:auto;display:flex;justify-content:space-between;gap:24px;padding:10px 14px;border-radius:10px;font-size:15px;text-align:left}

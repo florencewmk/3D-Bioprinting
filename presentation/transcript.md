@@ -1,6 +1,6 @@
 # 3D Bioprinting
 
-23 slides · 5 November 2026
+22 slides · 5 November 2026
 
 ## 01. Hi, I'm Florence :)
 
@@ -313,6 +313,8 @@ With this technology, we could save a lot of transplant costs and solve the dono
 ## 17. Engineering tomorrow’s possibilities
 
 Engineering tomorrow’s possibilities.
+Florence Wong
+https://github.com/florencewmk/3D-Bioprinting
 
 ### Speaker notes
 
@@ -320,20 +322,9 @@ With that, I’ll leave you with a quote, from me to all of you: engineering tom
 
 Stay curious, stay motivated.
 
-## 18. Thank You!
+[Next: the GitHub link and QR code.] Thank you for today, and I hope you enjoyed it. I’ve also uploaded this presentation and all the sources to my GitHub.
 
-Thank You!
-https://github.com/florencewmk/3D-Bioprinting
-
-### Speaker notes
-
-Thank you for today, and I hope you enjoyed it.
-
-I’ve also uploaded this presentation and all the sources to my GitHub.
-
-[Press Down to reveal the GitHub link and QR code.]
-
-## 19. Scientific references · 1
+## 18. Scientific references · 1
 
 Scientific references
 
@@ -343,7 +334,7 @@ Scientific references
 [4] P. J. Bártolo, Ed., Stereolithography: Materials, Processes and Applications. Boston, MA, USA: Springer, 2011. doi: 10.1007/978-0-387-92904-0.
 [5] S. O’Halloran, A. Pandit, A. Heise, and A. Kellett, “Two-photon polymerization: Fundamentals, materials, and chemical modification strategies,” Adv. Sci., vol. 10, no. 7, Art. no. 2204072, Mar. 2023. doi: 10.1002/advs.202204072.
 
-## 20. Scientific references · 2
+## 19. Scientific references · 2
 
 Scientific references
 
@@ -375,7 +366,7 @@ Supporting literature
 [42] Y. Sang, Z. Zhao, M. Zhao, P. Hao, Y. Leng, and H. Liu, “From UV to near-infrared, WS₂ nanosheet: A novel photocatalyst for full solar light spectrum photodegradation,” Adv. Mater., vol. 27, no. 2, pp. 363–369, 2015. doi: 10.1002/adma.201403264.
 [43] W. K. Swainson, “Method, medium and apparatus for producing three-dimensional figure product,” U.S. Patent 4 041 476, Aug. 9, 1977.
 
-## 21. Data and online sources · 1
+## 20. Data and online sources · 1
 
 Data and online sources
 
@@ -385,7 +376,7 @@ Data and online sources
 [14] Rice University. (2019). Organ bioprinting gets a breath of fresh air. https://news.rice.edu/news/2019/organ-bioprinting-gets-breath-fresh-air (accessed 14 October 2026).
 [15] Harvard SEAS / Wyss Institute. (2024). 3D-printed blood vessels bring artificial organs closer to reality. https://seas.harvard.edu/news/2024/08/3d-printed-blood-vessels-bring-artificial-organs-closer-reality (accessed 14 October 2026).
 
-## 22. Data and online sources · 2
+## 21. Data and online sources · 2
 
 Data and online sources
 
@@ -407,7 +398,7 @@ YouTube videos
 [46] Protolabs, “How Does Stereolithography 3D Printing Work?,” YouTube. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=0kHDXPQDSYY
 [47] EPFL, “Printing tiny, high-precision objects in a matter of seconds,” YouTube, Feb. 12, 2020. Accessed: Nov. 4, 2026. [Online Video]. Available: https://www.youtube.com/watch?v=ONBHkzimRbg
 
-## 23. Image references
+## 22. Image references
 
 Images
 
