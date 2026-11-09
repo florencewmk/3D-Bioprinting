@@ -80,3 +80,21 @@ dialog{width:min(1100px,94vw);max-height:88vh;overflow:auto;background:#111218;c
 
 /* === SOURCE LINES: one style on every talk slide, one line above the footer === */
 section.slide .organ-source,section.slide .pub-source,section.slide.light-slide .refs,section.slide.progress-slide .refs,section.slide .media-credit{position:absolute!important;left:70px!important;right:70px!important;top:auto!important;bottom:60px!important;width:auto!important;margin:0!important;padding:0!important;transform:none!important;font-family:'Jost',sans-serif!important;font-size:16px!important;font-weight:400!important;line-height:1.45!important;letter-spacing:0!important;text-transform:none!important;text-align:left!important;color:#84919D!important;opacity:1}
+
+/* Controls, 9 Nov 2026: one "next", compact corner toolbar */
+nav.deck-controls{position:fixed;left:auto;right:22px;bottom:20px;top:auto;transform:none;flex-wrap:nowrap;gap:4px;padding:5px;border-radius:999px;background:rgba(12,13,17,.82);border:1px solid #23262d;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 8px 30px rgba(0,0,0,.45);z-index:50}
+.menu-open .deck-controls{opacity:1}
+nav.deck-controls button{background:transparent;border:0;border-radius:999px;color:#c9d0d6;padding:0;width:36px;height:36px;font-size:20px;line-height:1;display:grid;place-items:center}
+nav.deck-controls button:hover{background:#1d2027;color:#F1F5F5}
+nav.deck-controls #chartReplay{font-size:18px}
+nav.deck-controls #chartReplay[hidden]{display:none}
+.dc-pos{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:74px;height:36px;gap:4px}
+.dc-pos #counter{font-size:14px;min-width:0;padding:0;color:#F1F5F5;line-height:1}
+#pointDots{display:flex;gap:4px;height:5px}
+#pointDots:empty{display:none}
+#pointDots i{width:5px;height:5px;border-radius:50%;background:#3a3f49;transition:background .25s}
+#pointDots i.on{background:var(--cyan)}
+#moreMenu{position:absolute;right:0;bottom:calc(100% + 10px);min-width:210px;padding:6px;border-radius:16px;background:rgba(12,13,17,.95);border:1px solid #23262d;box-shadow:0 12px 36px rgba(0,0,0,.55);display:flex;flex-direction:column}
+#moreMenu[hidden]{display:none}
+nav.deck-controls #moreMenu button{width:auto;height:auto;display:flex;justify-content:space-between;gap:24px;padding:10px 14px;border-radius:10px;font-size:15px;text-align:left}
+#moreMenu kbd{font-family:inherit;font-size:12px;color:#84919D;border:1px solid #2f343c;border-radius:5px;padding:1px 6px}
