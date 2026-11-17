@@ -1,4 +1,4 @@
-(()=>{const s=document.querySelector('.progress-slide');if(!s)return;const cv=s.querySelector('canvas.wt-canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=1.5;cv.width=W*Q;cv.height=H*Q;
+(()=>{const s=document.querySelector('.progress-slide');if(!s)return;const cv=s.querySelector('canvas.wt-canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:1.5;cv.width=W*Q;cv.height=H*Q;
 const CY='100,223,255',LV='180,154,216',PK='227,148,173',MT='112,194,188',WH='241,245,245',GR='132,145,157';
 const ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2,cl=x=>Math.max(0,Math.min(1,x));
 let seed=11;const rnd=()=>(seed=seed*16807%2147483647)/2147483647;

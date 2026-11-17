@@ -58,7 +58,7 @@ STYLE = """<style id="dots-slide-style">
 </style>"""
 
 SCRIPT = r"""<script>(()=>{const s=document.querySelector('.dots-slide');if(!s)return;
-const cv=s.querySelector('canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=2;cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+const cv=s.querySelector('canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2;cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
 const LV='180,154,216',CY='100,223,255',PK='227,148,173',WH='#F1F5F5',MU='#99A3AE';
 const N=[__W__,__T__,__D__],K=N.map(n=>Math.round(n/1000)),G=28,R=10,TOP=430;
 const grids=[{x:110,cols:26,col:LV,label:'waiting-list entries',sub:'end of 2025'},{x:980,cols:14,col:CY,label:'transplants',sub:'in 2025'},{x:1480,cols:8,col:PK,label:'deaths on waiting lists',sub:'in 2025'}];

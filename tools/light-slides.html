@@ -415,7 +415,7 @@ function topDown(svg){
 /* ---------- bioink & curing (canvas) ---------- */
 function ink(cv){
   if(!cv)return()=>{};
-  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
   const caps=[...cv.parentNode.querySelectorAll('.ink-cap')];
   const LV='180,154,216',MI='112,194,188',PK='227,148,173',CY='100,223,255',WH='241,245,245',BG='5,5,6';
   const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -508,7 +508,7 @@ function ink(cv){
 /* ---------- which light (canvas) ---------- */
 function lights(cv){
   if(!cv)return()=>{};
-  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
   const cards=[...cv.parentNode.querySelectorAll('.lt-card')];
   const LV='180,154,216',PK='227,148,173',MI='112,194,188',WH='241,245,245',MU='153,163,174';
   const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -564,7 +564,7 @@ function lights(cv){
 /* ---------- voxels: detail vs time (slide "What is still in the way") ---------- */
 function voxels(cv){
   if(!cv)return()=>{};
-  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
   const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const cl=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
   const CUBES=[{n:4,x:520,col:'100,223,255'},{n:8,x:960,col:'180,154,216'},{n:16,x:1400,col:'227,148,173'}],A=100,CY=862,C30=Math.cos(Math.PI/6);
@@ -597,7 +597,7 @@ function voxels(cv){
 /* ---------- laws + misuse scenes (slide "What is still in the way", 10 Nov 2026) ---------- */
 function rules(cv){
   if(!cv)return()=>{};
-  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
   const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const cl=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
   const CY_='100,223,255',LV='180,154,216',PK='227,148,173',MT='112,194,188',WH='241,245,245',GR='132,145,157';
@@ -676,7 +676,7 @@ function rules(cv){
 /* ---------- one cell, from patient to print ---------- */
 function journeyStory(cv){
   if(!cv)return()=>{};
-  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
   const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const MI='112,194,188',LV='180,154,216',PK='227,148,173',CY='100,223,255',WH='241,245,245',MU='153,163,174';
   const X=[0,1,2,3,4,5].map(k=>76.8+(100+200*k)*1.472),Y=770;

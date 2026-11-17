@@ -1,7 +1,7 @@
 /* ---------- laws + misuse scenes (slide "What is still in the way", 10 Nov 2026) ---------- */
 function rules(cv){
   if(!cv)return()=>{};
-  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
   const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const cl=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
   const CY_='100,223,255',LV='180,154,216',PK='227,148,173',MT='112,194,188',WH='241,245,245',GR='132,145,157';

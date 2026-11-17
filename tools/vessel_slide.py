@@ -64,7 +64,7 @@ STYLE = """<style id="vessel-slide-style">
 </style>"""
 
 SCRIPT = r"""<script>(()=>{const s=document.querySelector('.vessel-slide');if(!s)return;
-const cv=s.querySelector('canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=2;cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+const cv=s.querySelector('canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2;cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
 const PINK='#E394AD',CY='100,223,255',LV='180,154,216',WH='#F1F5F5',GR='#84919D',R=170,VY=650;
 const T=[{z:0,v:0,b:0,d:0,br:0,bb:0},{z:1,v:0,b:0,d:0,br:0,bb:0},{z:1,v:1,b:1,d:0,br:0,bb:0},{z:1,v:1,b:1,d:1,br:0,bb:0},{z:1,v:1,b:1,d:1,br:1,bb:1}];
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,DUR=reduce?1:1500;

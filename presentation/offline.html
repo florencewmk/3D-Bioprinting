@@ -333,7 +333,7 @@ Every dot is 1,000 entries on organ waiting lists Worldwide reports, end of 2025
 183,879 transplants in the whole year Roughly one for every three entries still waiting.
 40,019 deaths on waiting lists About 110 every day.
 There are not enough organs. What if we could print them?</div><!-- Speaker notes: Let’s look at what these numbers mean. Every dot is a thousand entries on organ waiting lists at the end of 2025, more than half a million. In the whole year, about 184,000 transplants were done, roughly one for every three still waiting. And 40,000 deaths were reported on waiting lists, about 110 every day. There simply are not enough organs. So what if we could print them? --><footer><span></span><span></span><span>04</span></footer><script>(()=>{const s=document.querySelector('.dots-slide');if(!s)return;
-const cv=s.querySelector('canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=2;cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+const cv=s.querySelector('canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2;cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
 const LV='180,154,216',CY='100,223,255',PK='227,148,173',WH='#F1F5F5',MU='#99A3AE';
 const N=[532905,183879,40019],K=N.map(n=>Math.round(n/1000)),G=28,R=10,TOP=430;
 const grids=[{x:110,cols:26,col:LV,label:'waiting-list entries',sub:'end of 2025'},{x:980,cols:14,col:CY,label:'transplants',sub:'in 2025'},{x:1480,cols:8,col:PK,label:'deaths on waiting lists',sub:'in 2025'}];
@@ -847,7 +847,7 @@ function topDown(svg){
 /* ---------- bioink & curing (canvas) ---------- */
 function ink(cv){
   if(!cv)return()=>{};
-  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
   const caps=[...cv.parentNode.querySelectorAll('.ink-cap')];
   const LV='180,154,216',MI='112,194,188',PK='227,148,173',CY='100,223,255',WH='241,245,245',BG='5,5,6';
   const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -940,7 +940,7 @@ function ink(cv){
 /* ---------- which light (canvas) ---------- */
 function lights(cv){
   if(!cv)return()=>{};
-  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
   const cards=[...cv.parentNode.querySelectorAll('.lt-card')];
   const LV='180,154,216',PK='227,148,173',MI='112,194,188',WH='241,245,245',MU='153,163,174';
   const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -996,7 +996,7 @@ function lights(cv){
 /* ---------- voxels: detail vs time (slide "What is still in the way") ---------- */
 function voxels(cv){
   if(!cv)return()=>{};
-  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
   const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const cl=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
   const CUBES=[{n:4,x:520,col:'100,223,255'},{n:8,x:960,col:'180,154,216'},{n:16,x:1400,col:'227,148,173'}],A=100,CY=862,C30=Math.cos(Math.PI/6);
@@ -1029,7 +1029,7 @@ function voxels(cv){
 /* ---------- laws + misuse scenes (slide "What is still in the way", 10 Nov 2026) ---------- */
 function rules(cv){
   if(!cv)return()=>{};
-  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
   const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const cl=x=>Math.max(0,Math.min(1,x)),ease=x=>{x=cl(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
   const CY_='100,223,255',LV='180,154,216',PK='227,148,173',MT='112,194,188',WH='241,245,245',GR='132,145,157';
@@ -1108,7 +1108,7 @@ function rules(cv){
 /* ---------- one cell, from patient to print ---------- */
 function journeyStory(cv){
   if(!cv)return()=>{};
-  const W=1920,H=1080,Q=2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+  const W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2,cx=cv.getContext('2d');cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
   const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
   const MI='112,194,188',LV='180,154,216',PK='227,148,173',CY='100,223,255',WH='241,245,245',MU='153,163,174';
   const X=[0,1,2,3,4,5].map(k=>76.8+(100+200*k)*1.472),Y=770;
@@ -1295,7 +1295,7 @@ It is packed with living cells. Every single one needs oxygen.
 Oxygen only reaches about 0.2 mm from the nearest blood vessel.
 Any cell further away starves. A solid printed block dies from the inside.
 So we have to print the vessels too. A network close enough to reach every cell.</div><!-- Speaker notes: Let’s zoom in. An organ is a few centimetres big, but it is made of millions of cells, and every one of them needs oxygen. In our body, oxygen comes from the blood vessels, and it only reaches about 0.2 millimetres, one or two sheets of paper. Any cell further away starves. So if we print a solid block of tissue, it dies from the inside. That’s why we also have to print the blood vessels, a network close enough to reach every cell. --><footer><span></span><span></span><span>13</span></footer><script>(()=>{const s=document.querySelector('.vessel-slide');if(!s)return;
-const cv=s.querySelector('canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=2;cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
+const cv=s.querySelector('canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:2;cv.width=W*Q;cv.height=H*Q;cx.scale(Q,Q);
 const PINK='#E394AD',CY='100,223,255',LV='180,154,216',WH='#F1F5F5',GR='#84919D',R=170,VY=650;
 const T=[{z:0,v:0,b:0,d:0,br:0,bb:0},{z:1,v:0,b:0,d:0,br:0,bb:0},{z:1,v:1,b:1,d:0,br:0,bb:0},{z:1,v:1,b:1,d:1,br:0,bb:0},{z:1,v:1,b:1,d:1,br:1,bb:1}];
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,DUR=reduce?1:1500;
@@ -1367,7 +1367,7 @@ NASA’s BioFabrication Facility printed a human knee meniscus on the ISS (2023)
 In medicine
 Ready for hospitals?
 Not yet. Maybe in the next 10 years, starting with simple tissues like skin and cartilage. Whole organs will take longer.
-Source: Harvard SEAS / Wyss Institute (2024) · Tel Aviv University (2019) · CELLINK / 3DBio (2022) · NASA (2023)</div><!-- Speaker notes: Right now, there are already many scientists and research groups working on this technology. Harvard, for example, printed blood vessels, and Tel Aviv University printed a heart. A successful example: a group in the US printed an ear for a patient using the patient’s own cells. NASA also printed a human meniscus in space, aiming to benefit their astronauts on deep-space missions in the future. Bioprinting is still a new technology and not ready for hospital use. Maybe in the next 10 years, or even longer for a functional organ. --><footer><span></span><span></span><span>14</span></footer><script>(()=>{const s=document.querySelector('.progress-slide');if(!s)return;const cv=s.querySelector('canvas.wt-canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=1.5;cv.width=W*Q;cv.height=H*Q;
+Source: Harvard SEAS / Wyss Institute (2024) · Tel Aviv University (2019) · CELLINK / 3DBio (2022) · NASA (2023)</div><!-- Speaker notes: Right now, there are already many scientists and research groups working on this technology. Harvard, for example, printed blood vessels, and Tel Aviv University printed a heart. A successful example: a group in the US printed an ear for a patient using the patient’s own cells. NASA also printed a human meniscus in space, aiming to benefit their astronauts on deep-space missions in the future. Bioprinting is still a new technology and not ready for hospital use. Maybe in the next 10 years, or even longer for a functional organ. --><footer><span></span><span></span><span>14</span></footer><script>(()=>{const s=document.querySelector('.progress-slide');if(!s)return;const cv=s.querySelector('canvas.wt-canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:1.5;cv.width=W*Q;cv.height=H*Q;
 const CY='100,223,255',LV='180,154,216',PK='227,148,173',MT='112,194,188',WH='241,245,245',GR='132,145,157';
 const ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2,cl=x=>Math.max(0,Math.min(1,x));
 let seed=11;const rnd=()=>(seed=seed*16807%2147483647)/2147483647;
@@ -1860,7 +1860,7 @@ Lab successes, first steps in patients
 Printed vessels in the lab · a bioprinted ear implanted (2022)
 Tissues in ~10 years, organs in 20–30
 AI may speed up development
-Source: EDQM–ONT Newsletter Transplant (2026) · Wyss Institute (2024) · 3DBio (2022) · Skylar-Scott, Stanford, via 3DPrint.com (2025)</div><!-- Speaker notes: I wish I could share these findings with the woman I met on the tram in Munich. With this technology, we could save a lot of transplant costs and solve the donor shortage problem. How cool would it be if one day you could even print your own organ and achieve longevity? --><footer><span></span><span></span><span>16</span></footer><script>(()=>{const s=document.querySelector('.ring-slide');if(!s)return;const cv=s.querySelector('canvas.sm-canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=1.5;cv.width=W*Q;cv.height=H*Q;
+Source: EDQM–ONT Newsletter Transplant (2026) · Wyss Institute (2024) · 3DBio (2022) · Skylar-Scott, Stanford, via 3DPrint.com (2025)</div><!-- Speaker notes: I wish I could share these findings with the woman I met on the tram in Munich. With this technology, we could save a lot of transplant costs and solve the donor shortage problem. How cool would it be if one day you could even print your own organ and achieve longevity? --><footer><span></span><span></span><span>16</span></footer><script>(()=>{const s=document.querySelector('.ring-slide');if(!s)return;const cv=s.querySelector('canvas.sm-canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:1.5;cv.width=W*Q;cv.height=H*Q;
 const CY='100,223,255',LV='180,154,216',PK='227,148,173',MT='112,194,188',WH='241,245,245',GR='132,145,157';
 const COL=[PK,LV,CY,MT],LAB=[['WHY','Need'],['HOW','Build'],['TODAY','Progress'],['NEXT','Future']];
 const ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2,cl=x=>Math.max(0,Math.min(1,x));
@@ -1940,7 +1940,7 @@ document.fonts.ready.then(()=>{active=s.classList.contains('active');go(count(),
 </style><canvas class="es-canvas" role="img" aria-label="Engineering tomorrow’s possibilities. written in coloured dots"></canvas><div class="es-name">Florence Wong</div><div class="es-qr"><a href="https://github.com/florencewmk/3D-Bioprinting" target="_blank" rel="noopener"><div class="es-card"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUgAAAFICAIAAAC9dvBkAAAFiUlEQVR42u3dQYobSxBF0demF2CD979Cg90Dzb0CDwSVjhdV54w/7f6SLimIjqyPr9crwL188xKAsAFhA8IGhA0IG4QNCBsQNiBsQNggbEDYgLABYQPCBoQNwgaEDQgbEDYgbBA2IGxA2ICwAWEDwgZhA8IGhA2c83n6H/j5/ceKF+LXn9+X/H/96+e8+9+ffv3f/T1Pv85XvT53/bw5sQFhg7ABYQPCBoQNCBtijp3tc7wcnnNeNY/dMr+96v2amudv/7w5sQFhg7ABYQPCBoQNCBtijj3m9Jz59O/z7r+7fV69Zf95y+fNiQ0IG4QNCBsQNiBsQNhA3xx7i6l97Kl7yNvuCW+bGzuxAWEDwgaEDcIGhA0IG4g5djr3eKf2wLN8H9u82okNCBuEDQgbEDYgbEDYQErn2Fvmlqf3q9vm5Kd/n6nX4a5zcic2CBsQNiBsQNiAsEHYQMyxs2XfOMv3up/23/u8ObEBYYOwAWEDwgaEDQgbYo6dZ+5Xp2z+nCV75m2vj3vIndggbEDYgLABYQPCBmEDMcfO/5lnZmh+e9XvefrnTN3X3TY33vJccSc2IGxA2CBsQNiAsAFhA7ntveJt91G37V2fnutu2TM//fcFba+PExt8FQeEDQgbEDYgbBA2sNjH1+sVz6O+bq44taedJXvFbfex3/V+eCc2+CoOCBsQNiBsQNggbCD2sbPlXvF3542n7/1u+/mn9+Tb5uRt95M7sQFhg7ABYQPCBoQNCBvYs4+9fa541X5v233sbe/L1N8RtO1pO7HBV3FA2ICwAWEDwgZhAzHHztR+bNt8OGXz2Kmfs+VzMnWPgOdjA8IGhA3CBoQNCBsQNpC6OXaG9mmn5sbb77s+/fcCbe972967ExsQNggbEDYgbEDYgLAh5thpuz98ah84Q/PP2OsefV562361ExsQNggbEDYgbEDYgLAh5thrtO3lbn/udNvfC7S9j1P7505sQNggbEDYgLABYQPChgf5zJL587tzv6vmhNv3rtueE95237h7xQFfxQFhA8IGhA3CBoQNxD52OveQn2Zq7j31HPKn3TfuxAZfxQFhA8IGhA0IG4QNxBw7bc/Bbrv/ectedNt94Ftez7Y9bSc2+CoOCBsQNiBsQNggbCDuFU/b/vZV88yr9m+37z9vuSf8rvvVTmxA2CBsQNiAsAFhA8KG2MdO23Ow255XvGXfe+p1yJI97e3vuxMbfBUHhA0IGxA2IGxA2BBz7Dztfu8tz/E+PRedmse2PX+77fVxYoOv4oCwAWEDwgaEDQgbYo6dtrlx2z3PU89t3nK/95b7z7f8fYETG3wVB4QNCBsQNiBsQNgQz8fO1Bw4Q3PjtvuiUzbfPj1/vmrOPLXX7V5xQNiAsEHYgLABYQPCBlK3j73d9n3dLb9/2/O9tzyn3YkNvooDwgaEDQgbEDYgbIh97LTNUXN4Htu2X336dT593/vpz8PU/nPb58SJDb6KA8IGhA0IGxA2CBuIOXa2zP223Fs+9bzx03PgLXvOp+8/t48NCBsQNggbEDYgbEDYQG77fOwsua/79Px2an4+9fpM7flP7Zk7sQFhg7ABYQPCBoQNCBtijk3uMeec2hvPTe9F3/K+O7HBV3FA2ICwAWEDwgZhAzHHjnl1KufSbfecn763fGpPvu356k5s8FUcEDYgbEDYgLBB2EDMsbN9Pty239t2f/i7c9otzyFvuw/ciQ0IG4QNCBsQNiBsQNhAPr5er2y4Lzple85T8/bT89vt94dP3Zfe9jlxYoOv4oCwAWEDwgaEDcIGYo4NOLEBYQPCBmEDwgaEDQgbEDYgbBA2IGxA2ICwAWGDsAFhA8IGhA0IGxA2CBsQNiBsQNiAsEHYgLABYQPCBoQNCBue4S/c/PBf36JZsQAAAABJRU5ErkJggg==" alt="QR code for the 3D Bioprinting GitHub repository"></div><p>Slides, sources and the bioprinting map</p><span>github.com/florencewmk/3D-Bioprinting</span></a></div><i class="es-step" data-reveal-step="1" aria-hidden="true" inert></i><div class="sr-only">Engineering tomorrow’s possibilities.
 Florence Wong
 https://github.com/florencewmk/3D-Bioprinting</div><!-- Speaker notes: With that, I’ll leave you with a quote, from me to all of you: engineering tomorrow’s possibilities. Stay curious, stay motivated. [Next: the GitHub link and QR code.] Thank you for today, and I hope you enjoyed it. I’ve also uploaded this presentation and all the sources to my GitHub. --><footer><span></span><span></span><span>17</span></footer><script>(()=>{const s=document.querySelector('.end-slide');if(!s)return;
-const cv=s.querySelector('canvas.es-canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=1.5;cv.width=W*Q;cv.height=H*Q;
+const cv=s.querySelector('canvas.es-canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:1.5;cv.width=W*Q;cv.height=H*Q;
 const LINES=["Engineering", "tomorrow’s", "possibilities."],FS=140,LH=168,TOP=330,SHIFT=330,name=s.querySelector('.es-name'),qr=s.querySelector('.es-qr');
 const cl=x=>Math.max(0,Math.min(1,x)),ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
 let seed=3;const rnd=()=>(seed=seed*16807%2147483647)/2147483647;

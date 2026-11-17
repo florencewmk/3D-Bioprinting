@@ -44,7 +44,7 @@ STYLE = """<style id="end-slide-style">
 </style>"""
 
 SCRIPT = r"""<script>(()=>{const s=document.querySelector('.end-slide');if(!s)return;
-const cv=s.querySelector('canvas.es-canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=1.5;cv.width=W*Q;cv.height=H*Q;
+const cv=s.querySelector('canvas.es-canvas'),cx=cv.getContext('2d'),W=1920,H=1080,Q=(matchMedia('(pointer:coarse)').matches&&Math.max(screen.width,screen.height)<1100)?1:1.5;cv.width=W*Q;cv.height=H*Q;
 const LINES=__LINES__,FS=140,LH=168,TOP=330,SHIFT=330,name=s.querySelector('.es-name'),qr=s.querySelector('.es-qr');
 const cl=x=>Math.max(0,Math.min(1,x)),ease=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
 let seed=3;const rnd=()=>(seed=seed*16807%2147483647)/2147483647;
